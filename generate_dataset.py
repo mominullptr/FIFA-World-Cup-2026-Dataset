@@ -153,7 +153,7 @@ referees_data = [
 # ==========================================
 # 5. SQUADS & PLAYERS DATA GENERATOR
 # ==========================================
-players_headers = ["player_id", "team_id", "player_name", "position", "club_team", "market_value_eur", "caps"]
+players_headers = ["player_id", "team_id", "player_name", "position", "club_team", "market_value_eur", "caps", "date_of_birth", "height_cm", "goals"]
 star_players = {
     "Argentina": [
         ("Lionel Messi", "FWD", "Inter Miami", 10000000, 185),
@@ -250,7 +250,16 @@ for team in teams_data:
             base_val = max(100000, int(150000000 / (rank ** 0.85)))
             val = int(random.uniform(0.4, 1.6) * base_val)
             
-        player_row = [player_id, team_id, name, pos, club, val, caps]
+        # Convert DOB to YYYY-MM-DD
+        dob_iso = ""
+        if player_data.get("dob"):
+            parts = player_data["dob"].split("/")
+            if len(parts) == 3:
+                dob_iso = f"{parts[2]}-{parts[1]}-{parts[0]}"
+            else:
+                dob_iso = player_data["dob"]
+                
+        player_row = [player_id, team_id, name, pos, club, val, caps, dob_iso, player_data.get("height", 0), player_data.get("goals", 0)]
         players_data.append(player_row)
         team_player_map[team_id].append(player_id)
         player_id_counter += 1

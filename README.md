@@ -71,6 +71,9 @@ erDiagram
         string club_team
         int market_value_eur
         int caps
+        string date_of_birth
+        int height_cm
+        int goals
     }
     MATCH_EVENTS {
         int event_id PK
@@ -100,7 +103,7 @@ erDiagram
 4. **`referees.csv`**: International referees with their historical card-per-game stats.
 5. **`matches.csv`**: Match outcomes, dates, times, scores, xG metrics, and statuses using relational IDs (`stage_id`, `venue_id`, etc.) for clean database modeling.
 6. **`matches_detailed.csv`**: A denormalized, user-friendly version of `matches.csv` that displays human-readable names (e.g. `home_team_name`, `stadium_name`, `city`, `referee_name`) instead of IDs. Ideal for quick analysis without SQL joins!
-7. **`squads_and_players.csv`**: Detailed player registries (1,248 rows) mapped relationally to teams.
+7. **`squads_and_players.csv`**: Detailed player registries (1,248 rows) containing verified player names (preserved with native accents), positions, clean club teams, market values, international caps, dates of birth (in YYYY-MM-DD format), heights in centimeters, and international goals.
 8. **`match_events.csv`**: Time-series game events (goals, cards, VAR reviews) mapped to matches and players.
 
 
