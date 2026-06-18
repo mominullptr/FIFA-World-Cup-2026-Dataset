@@ -2,7 +2,8 @@ import os
 import csv
 
 # Directory and files
-workspace_dir = r"C:\Users\ASUS\.gemini\antigravity\scratch\fifa-wc2026-dataset"
+workspace_dir = os.path.dirname(os.path.abspath(__file__))
+
 matches_path = os.path.join(workspace_dir, "matches.csv")
 events_path = os.path.join(workspace_dir, "match_events.csv")
 players_path = os.path.join(workspace_dir, "squads_and_players.csv")

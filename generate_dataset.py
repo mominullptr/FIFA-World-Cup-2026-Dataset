@@ -6,9 +6,8 @@ import random
 random.seed(42)
 
 # Define directories
-output_dir = "C:\\Users\\ASUS\\.gemini\\antigravity\\scratch\\fifa-wc2026-dataset"
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir)
+output_dir = os.path.dirname(os.path.abspath(__file__))
+
 
 # ==========================================
 # 1. TEAMS DATA
