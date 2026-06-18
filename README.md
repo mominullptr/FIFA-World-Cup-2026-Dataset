@@ -98,9 +98,11 @@ erDiagram
 2. **`venues.csv`**: Geolocation, capacities, and elevation details of all 16 stadiums.
 3. **`tournament_stages.csv`**: Lookup table for stages (Group Stage, Round of 32, etc.).
 4. **`referees.csv`**: International referees with their historical card-per-game stats.
-5. **`matches.csv`**: Match outcomes, date, times, venues, scores, xG metrics, and statuses (Scheduled vs. Completed).
-6. **`squads_and_players.csv`**: Detailed player registries (1,248 rows) mapped relationally to teams.
-7. **`match_events.csv`**: Time-series game events associated with completed matches.
+5. **`matches.csv`**: Match outcomes, dates, times, scores, xG metrics, and statuses using relational IDs (`stage_id`, `venue_id`, etc.) for clean database modeling.
+6. **`matches_detailed.csv`**: A denormalized, user-friendly version of `matches.csv` that displays human-readable names (e.g. `home_team_name`, `stadium_name`, `city`, `referee_name`) instead of IDs. Ideal for quick analysis without SQL joins!
+7. **`squads_and_players.csv`**: Detailed player registries (1,248 rows) mapped relationally to teams.
+8. **`match_events.csv`**: Time-series game events (goals, cards, VAR reviews) mapped to matches and players.
+
 
 ---
 
