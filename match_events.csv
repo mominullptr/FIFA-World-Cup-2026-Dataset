@@ -1,0 +1,155 @@
+event_id,match_id,minute,event_type,team_id,player_id
+1,1,4,Goal,1,3
+2,1,20,Yellow Card,1,23
+3,1,21,Yellow Card,1,20
+4,1,28,Yellow Card,1,4
+5,1,80,Goal,1,2
+6,1,86,Yellow Card,1,20
+7,1,87,Yellow Card,2,48
+8,2,10,Goal,3,67
+9,2,12,Yellow Card,4,103
+10,2,14,Yellow Card,4,84
+11,2,47,Yellow Card,4,91
+12,2,55,Goal,4,101
+13,2,82,Goal,3,61
+14,3,34,Goal,5,110
+15,3,55,Yellow Card,5,124
+16,3,57,Goal,6,133
+17,3,67,Yellow Card,5,125
+18,3,74,Yellow Card,5,109
+19,3,83,Yellow Card,6,137
+20,4,5,Goal,13,315
+21,4,10,Goal,13,331
+22,4,14,Goal,13,336
+23,4,24,Yellow Card,14,347
+24,4,34,Goal,13,321
+25,4,58,Goal,14,339
+26,4,72,Red Card,14,354
+27,4,78,Yellow Card,14,351
+28,4,86,Yellow Card,13,333
+29,4,90,Yellow Card,13,314
+30,5,9,Goal,7,174
+31,5,29,Goal,8,183
+32,5,43,Yellow Card,8,193
+33,5,73,Yellow Card,7,168
+34,5,77,Yellow Card,8,186
+35,5,85,Yellow Card,8,184
+36,6,10,Yellow Card,9,226
+37,6,29,Yellow Card,10,256
+38,6,38,Goal,10,255
+39,6,59,Goal,9,233
+40,7,14,Goal,12,307
+41,7,29,Yellow Card,12,310
+42,7,29,Yellow Card,11,262
+43,7,69,Red Card,11,276
+44,7,78,VAR Review,12,302
+45,7,85,Yellow Card,12,289
+46,8,3,Goal,15,366
+47,8,10,Yellow Card,16,416
+48,8,58,Goal,15,375
+49,9,10,Yellow Card,18,462
+50,9,20,Goal,17,440
+51,9,59,Goal,17,435
+52,9,63,Goal,18,463
+53,9,67,Goal,17,424
+54,9,69,Goal,17,419
+55,9,84,Goal,17,418
+56,9,86,Goal,17,440
+57,9,87,Goal,17,421
+58,10,2,Goal,21,541
+59,10,13,Goal,22,561
+60,10,19,Yellow Card,21,524
+61,10,23,Goal,21,522
+62,10,40,Goal,22,566
+63,10,83,Yellow Card,22,566
+64,11,20,Yellow Card,20,497
+65,11,27,Yellow Card,19,487
+66,11,32,Yellow Card,19,479
+67,11,55,Goal,19,479
+68,11,78,Yellow Card,20,498
+69,12,5,Yellow Card,23,573
+70,12,22,Goal,23,580
+71,12,48,Goal,23,591
+72,12,57,Goal,23,574
+73,12,65,Yellow Card,24,612
+74,12,67,Yellow Card,23,573
+75,12,71,Goal,23,577
+76,12,81,Goal,24,618
+77,12,88,Yellow Card,23,575
+78,12,90,Goal,23,576
+79,13,9,Yellow Card,29,748
+80,13,35,Yellow Card,30,768
+81,13,63,VAR Review,30,766
+82,13,68,Yellow Card,29,751
+83,14,1,Goal,25,642
+84,14,31,Goal,26,657
+85,14,51,Yellow Card,25,644
+86,15,24,Yellow Card,31,806
+87,15,29,Yellow Card,32,808
+88,15,60,Goal,32,831
+89,15,65,Goal,31,788
+90,16,6,Goal,28,704
+91,16,18,Yellow Card,28,704
+92,16,60,Yellow Card,28,709
+93,16,61,Goal,27,682
+94,16,64,Goal,27,682
+95,16,83,Yellow Card,28,713
+96,16,86,Goal,28,723
+97,17,4,Goal,33,848
+98,17,10,Goal,34,866
+99,17,17,Yellow Card,34,866
+100,17,19,Yellow Card,34,866
+101,17,21,Goal,33,849
+102,17,23,Goal,33,836
+103,17,30,Yellow Card,34,872
+104,17,57,Yellow Card,33,856
+105,18,7,Goal,36,924
+106,18,9,Yellow Card,36,915
+107,18,29,Goal,35,887
+108,18,29,Yellow Card,35,899
+109,18,30,Yellow Card,36,919
+110,18,52,Yellow Card,35,897
+111,18,61,Goal,36,915
+112,18,63,Goal,36,917
+113,18,69,VAR Review,35,888
+114,18,75,Goal,36,930
+115,19,22,Goal,37,961
+116,19,54,Goal,37,947
+117,19,57,Yellow Card,37,939
+118,19,59,Goal,37,944
+119,19,75,Yellow Card,37,955
+120,19,86,Yellow Card,37,962
+121,20,24,Yellow Card,39,1007
+122,20,28,Goal,39,1003
+123,20,55,Goal,40,1038
+124,20,60,Yellow Card,39,999
+125,20,61,Goal,39,997
+126,20,76,Goal,39,989
+127,21,6,Goal,42,1082
+128,21,6,Yellow Card,41,1058
+129,21,17,Yellow Card,42,1082
+130,21,21,Yellow Card,42,1073
+131,21,35,Yellow Card,42,1082
+132,21,54,Goal,41,1042
+133,21,72,Yellow Card,41,1054
+134,22,3,Goal,45,1154
+135,22,12,Goal,45,1150
+136,22,14,Yellow Card,45,1165
+137,22,52,Yellow Card,45,1170
+138,22,56,Yellow Card,45,1167
+139,22,62,Goal,45,1167
+140,22,74,Goal,46,1171
+141,22,75,Goal,46,1185
+142,22,86,Goal,45,1159
+143,22,86,Yellow Card,46,1193
+144,23,12,Yellow Card,48,1246
+145,23,15,Yellow Card,47,1222
+146,23,39,Yellow Card,48,1247
+147,23,68,Goal,47,1198
+148,24,15,Goal,44,1133
+149,24,31,Yellow Card,43,1110
+150,24,35,Yellow Card,43,1103
+151,24,47,Goal,43,1094
+152,24,47,Goal,44,1138
+153,24,50,Goal,44,1120
+154,24,87,Yellow Card,44,1124

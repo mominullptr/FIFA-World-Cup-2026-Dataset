@@ -1,0 +1,49 @@
+team_id,team_name,fifa_code,group_letter,confederation,fifa_ranking_pre_tournament,elo_rating,manager_name
+1,Mexico,MEX,A,CONCACAF,14,1810,Javier Aguirre
+2,South Africa,RSA,A,CAF,60,1620,Hugo Broos
+3,South Korea,KOR,A,AFC,22,1800,Hong Myung-bo
+4,Czechia,CZE,A,UEFA,40,1740,Miroslav Koubek
+5,Canada,CAN,B,CONCACAF,33,1795,Jesse Marsch
+6,Bosnia and Herzegovina,BIH,B,UEFA,64,1645,Sergej Barbarez
+7,Qatar,QAT,B,AFC,56,1600,Julen Lopetegui
+8,Switzerland,SUI,B,UEFA,19,1860,Murat Yakin
+9,Brazil,BRA,C,CONMEBOL,6,2030,Carlo Ancelotti
+10,Morocco,MAR,C,CAF,7,1920,Walid Regragui
+11,Haiti,HAI,C,CONCACAF,83,1530,Sébastien Migné
+12,Scotland,SCO,C,UEFA,39,1720,Steve Clarke
+13,USA,USA,D,CONCACAF,17,1850,Mauricio Pochettino
+14,Paraguay,PAR,D,CONMEBOL,54,1725,Gustavo Alfaro
+15,Australia,AUS,D,AFC,27,1790,Tony Popovic
+16,Türkiye,TUR,D,UEFA,26,1780,Vincenzo Montella
+17,Germany,GER,E,UEFA,10,1970,Julian Nagelsmann
+18,Curaçao,CUW,E,CONCACAF,82,1520,Dick Advocaat
+19,Côte d'Ivoire,CIV,E,CAF,38,1750,Emerse Faé
+20,Ecuador,ECU,E,CONMEBOL,23,1870,Sebastián Beccacece
+21,Netherlands,NED,F,UEFA,8,1980,Ronald Koeman
+22,Japan,JPN,F,AFC,18,1880,Hajime Moriyasu
+23,Sweden,SWE,F,UEFA,25,1815,Jon Dahl Tomasson
+24,Tunisia,TUN,F,CAF,45,1710,Hervé Renard
+25,Belgium,BEL,G,UEFA,9,1950,Domenico Tedesco
+26,Egypt,EGY,G,CAF,36,1730,Hossam Hassan
+27,IR Iran,IRN,G,AFC,20,1820,Amir Ghalenoei
+28,New Zealand,NZL,G,OFC,85,1510,Darren Bazeley
+29,Spain,ESP,H,UEFA,2,2120,Luis de la Fuente
+30,Cabo Verde,CPV,H,CAF,67,1640,Bubista
+31,Saudi Arabia,KSA,H,AFC,58,1660,Georgios Donis
+32,Uruguay,URU,H,CONMEBOL,16,1960,Marcelo Bielsa
+33,France,FRA,I,UEFA,3,2100,Didier Deschamps
+34,Senegal,SEN,I,CAF,15,1840,Pape Thiaw
+35,Iraq,IRQ,I,AFC,55,1630,Graham Arnold
+36,Norway,NOR,I,UEFA,44,1775,Ståle Solbakken
+37,Argentina,ARG,J,CONMEBOL,1,2150,Lionel Scaloni
+38,Algeria,ALG,J,CAF,28,1760,Vladimir Petković
+39,Austria,AUT,J,UEFA,24,1830,Ralf Rangnick
+40,Jordan,JOR,J,AFC,63,1610,Jamal Sellami
+41,Portugal,POR,K,UEFA,5,2010,Roberto Martínez
+42,Congo DR,COD,K,CAF,61,1670,Sébastien Desabre
+43,Uzbekistan,UZB,K,AFC,50,1650,Fabio Cannavaro
+44,Colombia,COL,K,CONMEBOL,13,1990,Néstor Lorenzo
+45,England,ENG,L,UEFA,4,2050,Thomas Tuchel
+46,Croatia,CRO,L,UEFA,11,1940,Zlatko Dalić
+47,Ghana,GHA,L,CAF,49,1690,Carlos Queiroz
+48,Panama,PAN,L,CONCACAF,34,1680,Thomas Christiansen
