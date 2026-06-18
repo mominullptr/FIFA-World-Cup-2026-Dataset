@@ -1,0 +1,12 @@
+# Virtual Environment
+venv/
+venv_new/
+
+# Kaggle build directory
+kaggle_dist/
+
+# Local cache/credentials
+.kaggle/
+.vscode/
+*.pyc
+__pycache__/
