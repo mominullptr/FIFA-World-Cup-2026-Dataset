@@ -124,5 +124,20 @@ python update_dataset.py
 
 ---
 
+## 🏷️ Citation
+
+If you use this dataset in your research, publications, or projects, please cite it as follows:
+
+```bibtex
+@dataset{fifa_world_cup_2026,
+  author = {Mominul Islam},
+  title = {FIFA World Cup 2026 Relational Dataset},
+  year = {2026},
+  publisher = {Kaggle}
+}
+```
+
+---
+
 ## 📄 License
 This project is licensed under the **Creative Commons Zero v1.0 Universal** (CC0-1.0) Public Domain Dedication. Feel free to copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission.
