@@ -404,6 +404,53 @@ for idx, event in enumerate(events_data):
     event[0] = idx + 1
 
 # ==========================================
+# 8. DENORMALIZED DETAILED MATCHES GENERATOR
+# ==========================================
+# Build lookups to map IDs to Names for a denormalized/readable export
+team_lookup = {row[0]: (row[1], row[2]) for row in teams_data}
+venue_lookup = {row[0]: (row[1], row[2], row[3]) for row in venues_data}
+stage_lookup = {row[0]: row[1] for row in stages_data}
+referee_lookup = {row[0]: row[1] for row in referees_data}
+
+detailed_matches_headers = [
+    "match_id", "date", "kickoff_time_utc", "stage_name", 
+    "stadium_name", "city", "country", 
+    "home_team_name", "home_fifa_code", 
+    "away_team_name", "away_fifa_code", 
+    "home_score", "away_score", "status", "home_xg", "away_xg", "referee_name"
+]
+detailed_matches_data = []
+
+for match in matches_data:
+    m_id = match[0]
+    date = match[1]
+    time = match[2]
+    stg_id = match[3]
+    ven_id = match[4]
+    h_id = match[5]
+    a_id = match[6]
+    h_score = match[7]
+    a_score = match[8]
+    status = match[9]
+    h_xg = match[10]
+    a_xg = match[11]
+    ref_id = match[12]
+    
+    stg_name = stage_lookup.get(stg_id, "Unknown")
+    stadium, city, country = venue_lookup.get(ven_id, ("Unknown", "Unknown", "Unknown"))
+    home_name, home_code = team_lookup.get(h_id, ("Unknown", "UNK"))
+    away_name, away_code = team_lookup.get(a_id, ("Unknown", "UNK"))
+    ref_name = referee_lookup.get(ref_id, "Unknown")
+    
+    detailed_matches_data.append([
+        m_id, date, time, stg_name,
+        stadium, city, country,
+        home_name, home_code,
+        away_name, away_code,
+        h_score, a_score, status, h_xg, a_xg, ref_name
+    ])
+
+# ==========================================
 # EXPORT DATA TO CSV (BUILT-IN)
 # ==========================================
 def export_csv(filename, headers, rows):
@@ -419,6 +466,7 @@ export_csv("tournament_stages.csv", stages_headers, stages_data)
 export_csv("referees.csv", referees_headers, referees_data)
 export_csv("squads_and_players.csv", players_headers, players_data)
 export_csv("matches.csv", matches_headers, matches_data)
+export_csv("matches_detailed.csv", detailed_matches_headers, detailed_matches_data)
 export_csv("match_events.csv", events_headers, events_data)
 
-print("All 7 datasets generated successfully using pure Python in:", output_dir)
+print("All 8 datasets generated successfully in:", output_dir)

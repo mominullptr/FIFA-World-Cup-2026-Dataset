@@ -2,7 +2,7 @@ import os
 import csv
 
 # Directory and files
-workspace_dir = "C:\\Users\\ASUS\\.gemini\antigravity\\scratch\\fifa-wc2026-dataset"
+workspace_dir = r"C:\Users\ASUS\.gemini\antigravity\scratch\fifa-wc2026-dataset"
 matches_path = os.path.join(workspace_dir, "matches.csv")
 events_path = os.path.join(workspace_dir, "match_events.csv")
 players_path = os.path.join(workspace_dir, "squads_and_players.csv")
@@ -10,7 +10,7 @@ teams_path = os.path.join(workspace_dir, "teams.csv")
 
 def load_csv(path):
     if not os.path.exists(path):
-        return []
+        return [], []
     with open(path, "r", newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         headers = next(reader)
@@ -22,6 +22,7 @@ def save_csv(path, headers, rows):
         writer = csv.writer(f)
         writer.writerow(headers)
         writer.writerows(rows)
+
 
 def main():
     print("====================================================")
@@ -186,6 +187,65 @@ def main():
         for idx, row in enumerate(events):
             row[0] = str(idx + 1)
 
+    # Load stages, venues, and referees to build the detailed matches
+    try:
+        stages_path = os.path.join(workspace_dir, "tournament_stages.csv")
+        venues_path = os.path.join(workspace_dir, "venues.csv")
+        referees_path = os.path.join(workspace_dir, "referees.csv")
+        
+        stg_headers, stages = load_csv(stages_path)
+        ven_headers, venues = load_csv(venues_path)
+        ref_headers, referees = load_csv(referees_path)
+        
+        # Build lookups
+        team_lookup = {row[0]: (row[1], row[2]) for row in teams}
+        venue_lookup = {row[0]: (row[1], row[2], row[3]) for row in venues}
+        stage_lookup = {row[0]: row[1] for row in stages}
+        referee_lookup = {row[0]: row[1] for row in referees}
+        
+        detailed_matches_headers = [
+            "match_id", "date", "kickoff_time_utc", "stage_name", 
+            "stadium_name", "city", "country", 
+            "home_team_name", "home_fifa_code", 
+            "away_team_name", "away_fifa_code", 
+            "home_score", "away_score", "status", "home_xg", "away_xg", "referee_name"
+        ]
+        detailed_matches_data = []
+
+        for match in matches:
+            m_id_val = match[0]
+            date_val = match[1]
+            time_val = match[2]
+            stg_id_val = match[3]
+            ven_id_val = match[4]
+            h_id_val = match[5]
+            a_id_val = match[6]
+            h_score_val = match[7]
+            a_score_val = match[8]
+            status_val = match[9]
+            h_xg_val = match[10]
+            a_xg_val = match[11]
+            ref_id_val = match[12]
+            
+            stg_name = stage_lookup.get(stg_id_val, "Unknown")
+            stadium, city, country = venue_lookup.get(ven_id_val, ("Unknown", "Unknown", "Unknown"))
+            home_name_val, home_code_val = team_lookup.get(h_id_val, ("Unknown", "UNK"))
+            away_name_val, away_code_val = team_lookup.get(a_id_val, ("Unknown", "UNK"))
+            ref_name = referee_lookup.get(ref_id_val, "Unknown")
+            
+            detailed_matches_data.append([
+                m_id_val, date_val, time_val, stg_name,
+                stadium, city, country,
+                home_name_val, home_code_val,
+                away_name_val, away_code_val,
+                h_score_val, a_score_val, status_val, h_xg_val, a_xg_val, ref_name
+            ])
+            
+        detailed_path = os.path.join(workspace_dir, "matches_detailed.csv")
+        save_csv(detailed_path, detailed_matches_headers, detailed_matches_data)
+    except Exception as ex:
+        print(f"Warning: Could not regenerate matches_detailed.csv: {ex}")
+
     # Save back to CSV
     save_csv(matches_path, m_headers, matches)
     save_csv(events_path, e_headers, events)
@@ -195,3 +255,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
