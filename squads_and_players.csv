@@ -1,1249 +1,1249 @@
 player_id,team_id,player_name,position,club_team,market_value_eur,caps
-1,1,Mateo Smith,GK,Liverpool,20531713,27
-2,1,Mateo Park,GK,Real Madrid,8027758,42
-3,1,Lucas Santos,GK,Los Angeles FC,10811243,59
-4,1,Carlos Park,DEF,AC Milan,14380498,45
-5,1,Daniel Silva,DEF,Liverpool,19702503,35
-6,1,Carlos Horvat,DEF,Benfica,8319463,39
-7,1,Ali Schmidt,DEF,Los Angeles FC,21784336,70
-8,1,Mateo Ibrahim,DEF,Kaizer Chiefs,7872299,31
-9,1,Ali Onyango,DEF,Juventus,10040079,11
-10,1,James Garcia,DEF,Porto,22704818,82
-11,1,Andrej Sato,DEF,Benfica,18509530,37
-12,1,Ali Santos,MID,Manchester City,19168349,68
-13,1,Oliver Silva,MID,Boca Juniors,16569894,27
-14,1,Hassan Schmidt,MID,Los Angeles FC,25268325,62
-15,1,Thomas Horvat,MID,Juventus,22466705,74
-16,1,David Horvat,MID,Club América,14029892,10
-17,1,Mohammed Santos,MID,Boca Juniors,18886862,40
-18,1,Alex Schmidt,MID,Los Angeles FC,9034235,72
-19,1,Andrej Onyango,MID,Benfica,14550767,57
-20,1,Thomas Rodriguez,MID,Barcelona,16099741,13
-21,1,Mateo Rodriguez,FWD,Galatasaray,18352166,76
-22,1,Oliver Garcia,FWD,Boca Juniors,13716679,58
-23,1,Diego Schmidt,FWD,Real Madrid,24916001,82
-24,1,Mateo Park,FWD,Ajax,20709877,74
-25,1,Mateo Kovacic,FWD,AC Milan,14671706,45
-26,1,Diego Silva,FWD,Inter Milan,16064507,14
-27,2,Diego Santos,GK,Los Angeles FC,2695469,73
-28,2,Diego Smith,GK,Arsenal,5168794,48
-29,2,Ali Kovacic,GK,Club América,3175674,26
-30,2,Lucas Garcia,DEF,Los Angeles FC,5905976,78
-31,2,Alex Rodriguez,DEF,Bayern Munich,5505920,90
-32,2,Andrej Lee,DEF,Paris Saint-Germain,6685087,43
-33,2,Marcus Santos,DEF,Benfica,5800865,40
-34,2,Luis Lee,DEF,Manchester City,4351246,27
-35,2,Mohammed Smith,DEF,Juventus,5109826,25
-36,2,Daniel Garcia,DEF,Manchester City,5772545,10
-37,2,David Horvat,DEF,Flamengo,2240939,26
-38,2,Carlos Park,MID,Club América,2581659,89
-39,2,Samuel Kim,MID,Galatasaray,3195328,47
-40,2,Carlos Martinez,MID,Galatasaray,2385498,43
-41,2,Youssef Sato,MID,Arsenal,6637426,9
-42,2,David Ibrahim,MID,Arsenal,5885496,77
-43,2,Thomas Santos,MID,Galatasaray,2902656,45
-44,2,John Schmidt,MID,Manchester City,4413020,83
-45,2,Luis Park,MID,Los Angeles FC,2390919,63
-46,2,Daniel Garcia,MID,Bayern Munich,6984111,81
-47,2,Youssef Kim,FWD,Barcelona,4516866,82
-48,2,John Ibrahim,FWD,Boca Juniors,1860037,40
-49,2,James Nakamura,FWD,Los Angeles FC,5710175,70
-50,2,Juan Rodriguez,FWD,Barcelona,2900931,24
-51,2,Samuel Park,FWD,Barcelona,2186052,33
-52,2,Samuel Kim,FWD,Bayern Munich,4636023,81
-53,3,David Lee,GK,Kaizer Chiefs,5378123,21
-54,3,Lucas Müller,GK,Club América,9588371,89
-55,3,Thomas Onyango,GK,Galatasaray,12069579,60
-56,3,Samuel Onyango,DEF,Paris Saint-Germain,11136426,89
-57,3,Mohammed Müller,DEF,Inter Milan,7791161,16
-58,3,Luis Horvat,DEF,Real Madrid,16420771,89
-59,3,Luis Onyango,DEF,Paris Saint-Germain,17293329,11
-60,3,Diego Schmidt,DEF,Manchester City,6059032,36
-61,3,Thomas Abdel,DEF,Los Angeles FC,8043165,44
-62,3,James Lee,DEF,Inter Milan,4437790,78
-63,3,Mateo Rodriguez,DEF,Los Angeles FC,7776220,85
-64,3,Alex Schmidt,MID,Ajax,8001135,23
-65,3,Carlos Schmidt,MID,Barcelona,10910428,27
-66,3,Lucas Nakamura,MID,Ajax,15124253,8
-67,3,Alex Schmidt,MID,Galatasaray,6437898,44
-68,3,Marcus Smith,MID,Liverpool,5791291,90
-69,3,Marcus Jones,MID,Liverpool,15192505,57
-70,3,Youssef Rodriguez,MID,Barcelona,4880139,37
-71,3,Ali Santos,MID,Benfica,13208405,65
-72,3,Marcus Nakamura,MID,Juventus,17003777,72
-73,3,John Silva,FWD,Ajax,15801559,7
-74,3,Youssef Müller,FWD,Arsenal,7806656,75
-75,3,Hassan Jones,FWD,Boca Juniors,15504676,25
-76,3,Ali Kovacic,FWD,Juventus,15009630,83
-77,3,Daniel Santos,FWD,Manchester City,9519304,30
-78,3,Andrej Abdel,FWD,Los Angeles FC,12680472,40
-79,4,Mohammed Smith,GK,Bayern Munich,3511182,92
-80,4,Samuel Schmidt,GK,Benfica,2907944,58
-81,4,Mohammed Nakamura,GK,Porto,7352546,51
-82,4,Samuel Santos,DEF,Real Madrid,4601930,68
-83,4,Diego Park,DEF,Paris Saint-Germain,7983673,89
-84,4,Ali Nakamura,DEF,Ajax,3156148,64
-85,4,Oliver Horvat,DEF,Inter Milan,7800007,16
-86,4,Diego Kovacic,DEF,Inter Milan,7827439,34
-87,4,Marcus Rodriguez,DEF,Porto,4109833,64
-88,4,John Onyango,DEF,Real Madrid,4963690,54
-89,4,James Kovacic,DEF,Kaizer Chiefs,4253376,75
-90,4,Mohammed Sato,MID,Al Hilal,6065827,65
-91,4,Juan Silva,MID,Kaizer Chiefs,7764504,30
-92,4,Mohammed Garcia,MID,Inter Milan,9013267,72
-93,4,Thomas Santos,MID,Flamengo,3761699,9
-94,4,Oliver Garcia,MID,Club América,6172492,84
-95,4,Carlos Ibrahim,MID,Real Madrid,6477388,26
-96,4,Mateo Nakamura,MID,Al Hilal,4321134,77
-97,4,Luis Jones,MID,Arsenal,6970629,87
-98,4,Luis Rodriguez,MID,Los Angeles FC,8880177,65
-99,4,Oliver Horvat,FWD,Kaizer Chiefs,10043252,85
-100,4,Diego Nakamura,FWD,Bayern Munich,9108315,54
-101,4,Juan Sato,FWD,AC Milan,4636903,27
-102,4,Diego Kim,FWD,Manchester City,7513282,29
-103,4,James Müller,FWD,Los Angeles FC,4734908,33
-104,4,Lucas Rodriguez,FWD,Liverpool,3788907,39
-105,5,Carlos Garcia,GK,Boca Juniors,6895313,34
-106,5,Youssef Jones,GK,Club América,4978107,42
-107,5,Daniel Onyango,GK,Benfica,6577487,5
-108,5,James Ibrahim,DEF,Galatasaray,10937203,90
-109,5,Marcus Park,DEF,Flamengo,10443420,85
-110,5,Thomas Schmidt,DEF,Ajax,7088552,7
-111,5,Hassan Silva,DEF,Kaizer Chiefs,10817929,87
-112,5,Marcus Smith,DEF,Real Madrid,11430076,58
-113,5,Lucas Nakamura,DEF,Barcelona,4322538,46
-114,5,Andrej Ibrahim,DEF,Ajax,6088786,45
-115,5,Hassan Schmidt,DEF,AC Milan,10002364,79
-116,5,Lucas Kim,MID,Benfica,3250585,53
-117,5,Thomas Garcia,MID,Real Madrid,10271681,63
-118,5,Thomas Santos,MID,Juventus,10806162,60
-119,5,Alex Kim,MID,Paris Saint-Germain,9241587,55
-120,5,Luis Schmidt,MID,Kaizer Chiefs,10139573,20
-121,5,Mateo Silva,MID,Real Madrid,11962678,14
-122,5,James Onyango,MID,Porto,9314285,91
-123,5,Carlos Garcia,MID,Juventus,8528639,79
-124,5,Mateo Kovacic,MID,Arsenal,10908130,59
-125,5,Samuel Jones,FWD,Benfica,6271731,43
-126,5,Lucas Lee,FWD,Galatasaray,9039616,6
-127,5,Juan Martinez,FWD,Boca Juniors,7067240,37
-128,5,Alex Nakamura,FWD,AC Milan,4695204,51
-129,5,Oliver Park,FWD,Club América,10210934,46
-130,5,Andrej Horvat,FWD,Manchester City,10921216,79
-131,6,Andrej Sato,GK,Kaizer Chiefs,3029307,46
-132,6,Hassan Horvat,GK,Bayern Munich,1900063,81
-133,6,Juan Santos,GK,AC Milan,3611668,28
-134,6,Oliver Schmidt,DEF,Paris Saint-Germain,4666400,51
-135,6,Lucas Müller,DEF,Juventus,5528612,48
-136,6,Juan Kim,DEF,Inter Milan,4101595,6
-137,6,Thomas Ibrahim,DEF,Club América,5380150,32
-138,6,Ali Kim,DEF,Los Angeles FC,4654234,35
-139,6,Mohammed Abdel,DEF,AC Milan,5438237,29
-140,6,Thomas Martinez,DEF,Los Angeles FC,5534960,33
-141,6,John Santos,DEF,Club América,2885090,48
-142,6,Diego Kovacic,MID,Inter Milan,6895460,79
-143,6,Thomas Abdel,MID,Los Angeles FC,2691201,6
-144,6,Alex Schmidt,MID,Inter Milan,1988317,9
-145,6,Alex Kim,MID,Inter Milan,2287848,6
-146,6,Juan Kim,MID,Barcelona,4061153,21
-147,6,Andrej Kim,MID,Flamengo,2348201,10
-148,6,Lucas Onyango,MID,Liverpool,5052963,9
-149,6,Samuel Kovacic,MID,Los Angeles FC,2196492,27
-150,6,Youssef Müller,MID,Boca Juniors,5820517,39
-151,6,James Onyango,FWD,Kaizer Chiefs,6945428,32
-152,6,David Martinez,FWD,Paris Saint-Germain,6722684,23
-153,6,Andrej Garcia,FWD,Manchester City,2573721,20
-154,6,John Smith,FWD,Flamengo,3893463,67
-155,6,James Jones,FWD,Boca Juniors,2964295,68
-156,6,Lucas Müller,FWD,Club América,6598408,75
-157,7,Carlos Nakamura,GK,Liverpool,2634492,25
-158,7,Andrej Rodriguez,GK,Inter Milan,2379535,19
-159,7,Oliver Onyango,GK,Boca Juniors,7375513,44
-160,7,James Ibrahim,DEF,Flamengo,7501818,50
-161,7,Luis Garcia,DEF,Ajax,5475639,85
-162,7,Oliver Schmidt,DEF,Club América,2111770,25
-163,7,Samuel Smith,DEF,AC Milan,7836318,65
-164,7,Samuel Jones,DEF,Al Hilal,6446120,20
-165,7,Luis Schmidt,DEF,Flamengo,3026705,57
-166,7,Lucas Kim,DEF,Arsenal,4005414,34
-167,7,John Horvat,DEF,Porto,4379820,49
-168,7,Marcus Jones,MID,Ajax,4633685,33
-169,7,Mateo Ibrahim,MID,Real Madrid,7044624,79
-170,7,Marcus Sato,MID,Benfica,4389241,21
-171,7,Oliver Kim,MID,Paris Saint-Germain,5636563,73
-172,7,Andrej Park,MID,Flamengo,2729951,30
-173,7,Mateo Smith,MID,Juventus,7680958,59
-174,7,John Kovacic,MID,Manchester City,5198158,54
-175,7,Thomas Martinez,MID,Liverpool,4672617,15
-176,7,Juan Kovacic,MID,Flamengo,4951429,29
-177,7,Juan Müller,FWD,Paris Saint-Germain,4645212,18
-178,7,Oliver Lee,FWD,Manchester City,6347254,17
-179,7,Andrej Nakamura,FWD,AC Milan,3957876,75
-180,7,Daniel Kovacic,FWD,Club América,6228251,80
-181,7,Juan Rodriguez,FWD,Ajax,4585015,48
-182,7,Marcus Park,FWD,Paris Saint-Germain,4177372,88
-183,8,Thomas Onyango,GK,Galatasaray,10554299,82
-184,8,David Horvat,GK,Porto,15884231,68
-185,8,Hassan Rodriguez,GK,Al Hilal,12209822,8
-186,8,Samuel Horvat,DEF,Boca Juniors,17725957,83
-187,8,Mateo Lee,DEF,Liverpool,18326256,6
-188,8,Youssef Rodriguez,DEF,AC Milan,6014008,75
-189,8,Mohammed Ibrahim,DEF,Los Angeles FC,14486402,81
-190,8,Hassan Horvat,DEF,Flamengo,14146959,84
-191,8,Marcus Jones,DEF,Inter Milan,14009344,26
-192,8,Thomas Garcia,DEF,Arsenal,11305762,13
-193,8,Luis Silva,DEF,Barcelona,15137139,86
-194,8,Mohammed Jones,MID,Liverpool,9234053,38
-195,8,Thomas Lee,MID,Bayern Munich,10982788,66
-196,8,John Silva,MID,Kaizer Chiefs,6075010,83
-197,8,Thomas Kim,MID,Boca Juniors,18361432,17
-198,8,Andrej Sato,MID,Boca Juniors,8673542,5
-199,8,James Park,MID,Benfica,7239134,44
-200,8,Samuel Kovacic,MID,AC Milan,14325827,43
-201,8,Luis Kovacic,MID,Flamengo,7846800,39
-202,8,Mateo Müller,MID,Inter Milan,10530628,37
-203,8,James Smith,FWD,AC Milan,19320868,64
-204,8,Daniel Onyango,FWD,Barcelona,17657694,75
-205,8,Oliver Kim,FWD,Juventus,17182827,86
-206,8,Oliver Abdel,FWD,AC Milan,8138357,22
-207,8,Alex Martinez,FWD,Inter Milan,18222556,63
-208,8,Luis Jones,FWD,Manchester City,13451122,70
-209,9,Vinícius Júnior,FWD,Real Madrid,150000000,28
-210,9,Rodrygo,FWD,Real Madrid,100000000,24
-211,9,Bruno Guimarães,MID,Newcastle United,85000000,22
-212,9,Marquinhos,DEF,Paris Saint-Germain,55000000,84
-213,9,Alisson Becker,GK,Liverpool,28000000,65
-214,9,James Horvat,DEF,Liverpool,42422374,20
-215,9,Marcus Abdel,DEF,Bayern Munich,33919622,87
-216,9,Andrej Kim,DEF,Ajax,51053660,31
-217,9,Mateo Sato,DEF,Juventus,50877395,17
-218,9,Hassan Park,DEF,Real Madrid,27440273,76
-219,9,Andrej Park,DEF,AC Milan,17934367,38
-220,9,Samuel Ibrahim,DEF,Arsenal,45363658,89
-221,9,Thomas Kim,DEF,Los Angeles FC,14065689,84
-222,9,Mohammed Müller,DEF,Boca Juniors,38504067,62
-223,9,James Nakamura,DEF,Barcelona,17663037,9
-224,9,James Kim,DEF,Los Angeles FC,17641235,26
-225,9,Alex Ibrahim,MID,Los Angeles FC,30889154,65
-226,9,Youssef Onyango,MID,Galatasaray,42217807,18
-227,9,Mateo Kim,MID,AC Milan,37248049,89
-228,9,David Abdel,MID,Juventus,21611380,45
-229,9,Ali Martinez,MID,Benfica,51585253,38
-230,9,David Ibrahim,MID,Boca Juniors,23911915,92
-231,9,Lucas Santos,MID,Real Madrid,38270610,58
-232,9,David Horvat,MID,Club América,22643635,16
-233,9,Carlos Garcia,MID,Club América,45654132,54
-234,9,Carlos Müller,FWD,Kaizer Chiefs,25979551,18
-235,10,Daniel Schmidt,GK,Liverpool,41031791,18
-236,10,Marcus Schmidt,GK,Real Madrid,38969689,14
-237,10,Alex Smith,GK,Club América,23811065,75
-238,10,Mohammed Smith,DEF,Galatasaray,17476049,9
-239,10,Diego Martinez,DEF,Benfica,37150105,47
-240,10,Diego Onyango,DEF,Kaizer Chiefs,15231471,50
-241,10,David Lee,DEF,Real Madrid,21861906,62
-242,10,David Kim,DEF,Arsenal,40649355,43
-243,10,Juan Sato,DEF,Kaizer Chiefs,14007021,12
-244,10,Alex Garcia,DEF,Club América,15821520,61
-245,10,Marcus Horvat,DEF,Inter Milan,24591326,58
-246,10,Luis Lee,MID,Arsenal,32321670,13
-247,10,Marcus Santos,MID,Galatasaray,26284104,84
-248,10,Mohammed Sato,MID,Ajax,25205071,70
-249,10,Youssef Horvat,MID,Liverpool,34376499,38
-250,10,Juan Garcia,MID,Galatasaray,14617608,12
-251,10,Mateo Abdel,MID,Club América,39426077,55
-252,10,Marcus Park,MID,Benfica,22826490,16
-253,10,Youssef Jones,MID,Benfica,44818852,59
-254,10,Mateo Onyango,MID,Flamengo,28947023,18
-255,10,Thomas Martinez,FWD,Arsenal,23531207,55
-256,10,Andrej Onyango,FWD,Los Angeles FC,19263419,43
-257,10,Oliver Park,FWD,AC Milan,12380647,88
-258,10,Daniel Silva,FWD,Ajax,20885469,73
-259,10,Ali Smith,FWD,Porto,17722547,17
-260,10,Lucas Rodriguez,FWD,Manchester City,36988413,92
-261,11,Diego Santos,GK,Bayern Munich,2985557,45
-262,11,Ali Kovacic,GK,Club América,4438941,74
-263,11,Oliver Garcia,GK,Kaizer Chiefs,5119538,19
-264,11,David Garcia,DEF,Flamengo,2547560,64
-265,11,Oliver Sato,DEF,Al Hilal,3145409,24
-266,11,Mateo Abdel,DEF,Club América,3211597,30
-267,11,Juan Lee,DEF,Porto,4209769,9
-268,11,Oliver Jones,DEF,Paris Saint-Germain,1434948,32
-269,11,Alex Schmidt,DEF,Flamengo,2620541,15
-270,11,Youssef Silva,DEF,Juventus,1946192,52
-271,11,Diego Park,DEF,Manchester City,4909199,77
-272,11,Hassan Jones,MID,Manchester City,3238132,46
-273,11,Mohammed Onyango,MID,Galatasaray,3208949,41
-274,11,James Martinez,MID,Bayern Munich,3106902,91
-275,11,Oliver Sato,MID,Manchester City,4903609,87
-276,11,Youssef Martinez,MID,Al Hilal,2426432,57
-277,11,Lucas Ibrahim,MID,Juventus,5065604,72
-278,11,Mohammed Silva,MID,Al Hilal,1723993,61
-279,11,Diego Santos,MID,Liverpool,5214553,36
-280,11,Thomas Martinez,MID,Kaizer Chiefs,2018812,22
-281,11,Alex Garcia,FWD,Flamengo,2148000,74
-282,11,Luis Onyango,FWD,Club América,4600021,45
-283,11,Oliver Horvat,FWD,Liverpool,5039189,61
-284,11,Luis Garcia,FWD,AC Milan,3375733,61
-285,11,Samuel Jones,FWD,Boca Juniors,2883509,11
-286,11,Luis Jones,FWD,Manchester City,1641985,79
-287,12,Lucas Lee,GK,Barcelona,5739586,57
-288,12,Luis Onyango,GK,Flamengo,7877330,33
-289,12,Diego Rodriguez,GK,Ajax,10323156,45
-290,12,Lucas Lee,DEF,Boca Juniors,7831671,8
-291,12,Luis Lee,DEF,Benfica,6845144,19
-292,12,James Ibrahim,DEF,Kaizer Chiefs,5933781,35
-293,12,David Horvat,DEF,Porto,3192326,13
-294,12,James Schmidt,DEF,Kaizer Chiefs,8452205,64
-295,12,Alex Horvat,DEF,Benfica,3316983,64
-296,12,James Ibrahim,DEF,Manchester City,3696386,68
-297,12,James Park,DEF,Liverpool,5677192,76
-298,12,Diego Garcia,MID,Benfica,7830853,43
-299,12,Daniel Abdel,MID,Ajax,5134964,90
-300,12,Juan Santos,MID,Manchester City,4476717,17
-301,12,James Martinez,MID,Al Hilal,6724739,53
-302,12,David Horvat,MID,Kaizer Chiefs,9672853,60
-303,12,Hassan Rodriguez,MID,Kaizer Chiefs,3962614,79
-304,12,John Sato,MID,Juventus,3014661,37
-305,12,Luis Kovacic,MID,Juventus,8681348,75
-306,12,Marcus Müller,MID,Flamengo,5139776,77
-307,12,Carlos Abdel,FWD,Boca Juniors,8088977,56
-308,12,Luis Kovacic,FWD,Galatasaray,8887105,50
-309,12,John Santos,FWD,AC Milan,9072092,17
-310,12,David Kim,FWD,Arsenal,9654656,54
-311,12,Diego Martinez,FWD,AC Milan,4944637,73
-312,12,Luis Lee,FWD,Juventus,3843486,44
-313,13,Christian Pulisic,FWD,AC Milan,35000000,68
-314,13,Weston McKennie,MID,Juventus,25000000,53
-315,13,Folarin Balogun,FWD,Monaco,30000000,12
-316,13,Antonee Robinson,DEF,Fulham,20000000,41
-317,13,Matt Turner,GK,Crystal Palace,7000000,40
-318,13,Luis Abdel,DEF,Porto,20467795,42
-319,13,Diego Abdel,DEF,Benfica,9216970,94
-320,13,Thomas Smith,DEF,Ajax,10559677,13
-321,13,Alex Rodriguez,DEF,Flamengo,6018791,87
-322,13,Alex Kim,DEF,Manchester City,12663724,5
-323,13,Daniel Schmidt,DEF,Kaizer Chiefs,8891065,18
-324,13,Diego Nakamura,DEF,Inter Milan,7199169,30
-325,13,Mateo Jones,DEF,Kaizer Chiefs,9260073,62
-326,13,Luis Garcia,DEF,Kaizer Chiefs,7193842,86
-327,13,Marcus Smith,DEF,Liverpool,15633202,56
-328,13,James Nakamura,DEF,Club América,5423792,36
-329,13,Youssef Silva,MID,Benfica,16158197,12
-330,13,Lucas Lee,MID,Al Hilal,14210066,75
-331,13,Marcus Smith,MID,Porto,11722000,47
-332,13,Ali Schmidt,MID,Manchester City,17501527,37
-333,13,Ali Müller,MID,Club América,17268709,61
-334,13,Mohammed Rodriguez,MID,Bayern Munich,6116490,54
-335,13,Luis Kim,MID,Manchester City,15629654,78
-336,13,Luis Jones,MID,Paris Saint-Germain,10150868,8
-337,13,David Horvat,MID,Los Angeles FC,20514747,51
-338,13,Juan Schmidt,FWD,Inter Milan,5991544,63
-339,14,Ali Jones,GK,Arsenal,7271175,34
-340,14,Ali Nakamura,GK,Porto,7414813,71
-341,14,Mohammed Silva,GK,Al Hilal,5030061,49
-342,14,Andrej Garcia,DEF,Kaizer Chiefs,6430037,12
-343,14,John Park,DEF,Ajax,3802545,14
-344,14,James Kovacic,DEF,Bayern Munich,4725133,69
-345,14,Luis Abdel,DEF,Benfica,4732494,70
-346,14,Oliver Nakamura,DEF,Barcelona,3686055,93
-347,14,Lucas Ibrahim,DEF,Bayern Munich,4224243,77
-348,14,Daniel Rodriguez,DEF,Boca Juniors,7167310,66
-349,14,David Rodriguez,DEF,Benfica,2428916,75
-350,14,Ali Ibrahim,MID,Liverpool,7778518,7
-351,14,Luis Abdel,MID,Club América,4277011,73
-352,14,Alex Lee,MID,AC Milan,4246308,33
-353,14,Thomas Martinez,MID,Al Hilal,2178364,21
-354,14,Hassan Park,MID,Boca Juniors,2735301,74
-355,14,Carlos Kovacic,MID,Paris Saint-Germain,6229324,94
-356,14,Mateo Rodriguez,MID,Boca Juniors,7192517,45
-357,14,Lucas Horvat,MID,Los Angeles FC,6070814,68
-358,14,Marcus Kovacic,MID,Bayern Munich,7426002,81
-359,14,Ali Lee,FWD,Liverpool,3380967,93
-360,14,Thomas Kim,FWD,Benfica,2180612,54
-361,14,Luis Park,FWD,Manchester City,2808127,84
-362,14,James Ibrahim,FWD,Al Hilal,8082478,69
-363,14,Youssef Nakamura,FWD,Ajax,7013717,11
-364,14,Lucas Sato,FWD,Liverpool,4845906,51
-365,15,Marcus Onyango,GK,Galatasaray,5632101,91
-366,15,Diego Jones,GK,Inter Milan,12730233,51
-367,15,John Silva,GK,Benfica,7169901,68
-368,15,Diego Kovacic,DEF,Los Angeles FC,12889184,27
-369,15,Andrej Rodriguez,DEF,Manchester City,10474661,60
-370,15,Diego Silva,DEF,Bayern Munich,10111639,57
-371,15,Oliver Horvat,DEF,Real Madrid,12851982,55
-372,15,Lucas Jones,DEF,AC Milan,14010728,74
-373,15,Carlos Onyango,DEF,Flamengo,8196496,62
-374,15,Marcus Kovacic,DEF,Juventus,10659211,32
-375,15,Hassan Kovacic,DEF,Bayern Munich,8600434,66
-376,15,Luis Nakamura,MID,Kaizer Chiefs,8936056,23
-377,15,Alex Horvat,MID,Benfica,13059158,33
-378,15,Hassan Rodriguez,MID,Arsenal,11957212,51
-379,15,Mohammed Müller,MID,Juventus,8741739,29
-380,15,Alex Martinez,MID,Kaizer Chiefs,4196382,90
-381,15,Youssef Müller,MID,Ajax,14165265,86
-382,15,Samuel Horvat,MID,Al Hilal,5718129,19
-383,15,Luis Kim,MID,Manchester City,13251420,49
-384,15,Hassan Lee,MID,Club América,8640727,26
-385,15,Ali Jones,FWD,Flamengo,4195673,49
-386,15,James Park,FWD,Liverpool,3732653,14
-387,15,Andrej Abdel,FWD,Porto,11992097,37
-388,15,David Onyango,FWD,Inter Milan,9783836,37
-389,15,Lucas Ibrahim,FWD,AC Milan,9154701,73
-390,15,Oliver Martinez,FWD,Benfica,5049544,13
-391,16,Mohammed Park,GK,Paris Saint-Germain,14359141,72
-392,16,Oliver Lee,GK,Barcelona,8292151,8
-393,16,Alex Horvat,GK,Liverpool,12835708,51
-394,16,Oliver Lee,DEF,Ajax,5339630,88
-395,16,John Ibrahim,DEF,Inter Milan,14942263,71
-396,16,Samuel Horvat,DEF,Flamengo,9487667,50
-397,16,Samuel Kovacic,DEF,Ajax,9121744,6
-398,16,Mateo Nakamura,DEF,Real Madrid,10349783,76
-399,16,Oliver Kim,DEF,Club América,6758855,64
-400,16,Samuel Müller,DEF,Bayern Munich,11903860,57
-401,16,Diego Ibrahim,DEF,Barcelona,5429860,66
-402,16,Samuel Martinez,MID,Galatasaray,5915261,44
-403,16,Alex Nakamura,MID,Kaizer Chiefs,11555121,41
-404,16,Juan Jones,MID,Los Angeles FC,11727516,51
-405,16,Mohammed Kim,MID,Bayern Munich,9692648,33
-406,16,Luis Park,MID,AC Milan,7625591,36
-407,16,Oliver Kim,MID,Los Angeles FC,5931962,27
-408,16,James Müller,MID,Inter Milan,14387774,93
-409,16,Carlos Kim,MID,AC Milan,7340207,36
-410,16,James Martinez,MID,Porto,10234378,53
-411,16,Ali Rodriguez,FWD,Manchester City,7040130,30
-412,16,Ali Sato,FWD,Paris Saint-Germain,11165431,72
-413,16,Carlos Park,FWD,AC Milan,6822083,55
-414,16,Alex Martinez,FWD,Juventus,10710656,57
-415,16,David Lee,FWD,Arsenal,6309003,25
-416,16,Youssef Horvat,FWD,Liverpool,11858241,14
-417,17,Daniel Park,GK,Flamengo,33339265,19
-418,17,Juan Santos,GK,Inter Milan,27694774,30
-419,17,David Garcia,GK,Barcelona,25060361,25
-420,17,John Nakamura,DEF,Barcelona,30906899,20
-421,17,Hassan Kim,DEF,Inter Milan,13212324,72
-422,17,David Smith,DEF,Ajax,16062048,59
-423,17,James Sato,DEF,Flamengo,33623747,53
-424,17,Alex Lee,DEF,Arsenal,20374969,22
-425,17,Mohammed Silva,DEF,Bayern Munich,27064425,63
-426,17,Daniel Horvat,DEF,Paris Saint-Germain,28581027,56
-427,17,John Ibrahim,DEF,Manchester City,29502000,51
-428,17,Hassan Martinez,MID,Ajax,13173412,17
-429,17,Thomas Smith,MID,AC Milan,15105867,26
-430,17,Mohammed Kovacic,MID,AC Milan,23284683,56
-431,17,Ali Müller,MID,Inter Milan,10054778,15
-432,17,John Ibrahim,MID,Inter Milan,25919110,88
-433,17,Mateo Kovacic,MID,Liverpool,17820277,24
-434,17,Juan Rodriguez,MID,Benfica,20043365,93
-435,17,Youssef Park,MID,Paris Saint-Germain,31683702,73
-436,17,Thomas Garcia,MID,Benfica,21836586,52
-437,17,Lucas Onyango,FWD,Al Hilal,11328209,79
-438,17,Carlos Onyango,FWD,Al Hilal,22120172,19
-439,17,Luis Martinez,FWD,Flamengo,25772191,69
-440,17,Lucas Lee,FWD,Liverpool,19801923,10
-441,17,Diego Nakamura,FWD,Boca Juniors,20089635,10
-442,17,James Smith,FWD,Paris Saint-Germain,18542488,78
-443,18,Samuel Garcia,GK,Manchester City,1609673,36
-444,18,Marcus Jones,GK,Flamengo,5390402,11
-445,18,David Kovacic,GK,Galatasaray,3155381,74
-446,18,Ali Ibrahim,DEF,Porto,3324034,87
-447,18,Hassan Garcia,DEF,Los Angeles FC,4319680,64
-448,18,Alex Abdel,DEF,Porto,1921484,94
-449,18,Diego Rodriguez,DEF,Real Madrid,4511536,25
-450,18,Daniel Kovacic,DEF,Galatasaray,3385538,69
-451,18,Marcus Ibrahim,DEF,Benfica,4917553,27
-452,18,Alex Schmidt,DEF,Arsenal,2218432,83
-453,18,David Nakamura,DEF,Real Madrid,4031406,89
-454,18,Thomas Santos,MID,Boca Juniors,1703208,58
-455,18,Oliver Jones,MID,Boca Juniors,2457588,8
-456,18,Thomas Park,MID,Barcelona,2340824,82
-457,18,Alex Lee,MID,Club América,5640812,26
-458,18,Mohammed Onyango,MID,Ajax,3959108,65
-459,18,Thomas Kovacic,MID,Al Hilal,5142442,93
-460,18,Thomas Nakamura,MID,Club América,2694675,10
-461,18,John Nakamura,MID,Benfica,3780265,9
-462,18,Hassan Lee,MID,Liverpool,2772192,42
-463,18,James Ibrahim,FWD,Juventus,2198870,53
-464,18,Thomas Kovacic,FWD,Boca Juniors,5062869,17
-465,18,David Park,FWD,Al Hilal,3171581,42
-466,18,Alex Ibrahim,FWD,Manchester City,2449614,23
-467,18,Luis Abdel,FWD,Paris Saint-Germain,1810229,70
-468,18,David Schmidt,FWD,Barcelona,3020616,59
-469,19,Lucas Santos,GK,Los Angeles FC,9302346,57
-470,19,Carlos Kim,GK,Inter Milan,4432348,86
-471,19,Daniel Santos,GK,Arsenal,10385530,91
-472,19,Juan Müller,DEF,Porto,8411137,68
-473,19,Thomas Park,DEF,Boca Juniors,5353816,30
-474,19,Marcus Abdel,DEF,Flamengo,5245973,37
-475,19,Luis Martinez,DEF,Ajax,9287355,70
-476,19,Carlos Abdel,DEF,Juventus,5282755,9
-477,19,Alex Smith,DEF,Club América,4856477,89
-478,19,Youssef Kovacic,DEF,Porto,3970676,34
-479,19,Samuel Müller,DEF,Ajax,6806298,63
-480,19,Andrej Kim,MID,Flamengo,10625437,62
-481,19,Luis Silva,MID,Liverpool,8714783,36
-482,19,Marcus Kim,MID,Barcelona,4229285,85
-483,19,Diego Jones,MID,Barcelona,9583692,11
-484,19,Daniel Nakamura,MID,Manchester City,3848715,61
-485,19,Alex Smith,MID,Barcelona,4512707,46
-486,19,Oliver Kim,MID,Los Angeles FC,8114063,6
-487,19,Marcus Nakamura,MID,AC Milan,2821677,52
-488,19,Marcus Kovacic,MID,Galatasaray,2864933,78
-489,19,John Martinez,FWD,Juventus,10229310,52
-490,19,Carlos Lee,FWD,Porto,4788172,36
-491,19,Lucas Abdel,FWD,Juventus,10566496,46
-492,19,Thomas Kovacic,FWD,Barcelona,8316439,81
-493,19,Lucas Ibrahim,FWD,Barcelona,5825062,54
-494,19,Daniel Silva,FWD,Ajax,3400713,81
-495,20,Samuel Martinez,GK,Juventus,15383183,87
-496,20,Carlos Onyango,GK,Manchester City,10131249,9
-497,20,Andrej Park,GK,Ajax,11233635,7
-498,20,Daniel Santos,DEF,Porto,11528319,72
-499,20,Lucas Kovacic,DEF,Porto,6210062,26
-500,20,Marcus Horvat,DEF,Manchester City,8983213,71
-501,20,Diego Abdel,DEF,Manchester City,4847839,44
-502,20,Mohammed Ibrahim,DEF,AC Milan,16311709,34
-503,20,Luis Kim,DEF,Porto,7032855,54
-504,20,Youssef Silva,DEF,Manchester City,12688940,64
-505,20,Oliver Kovacic,DEF,Manchester City,14171492,69
-506,20,Andrej Rodriguez,MID,Liverpool,8935036,75
-507,20,Hassan Horvat,MID,Inter Milan,8693292,13
-508,20,Luis Abdel,MID,Manchester City,13711688,14
-509,20,John Nakamura,MID,Galatasaray,9797355,54
-510,20,Mateo Smith,MID,Kaizer Chiefs,5297794,54
-511,20,Oliver Horvat,MID,Galatasaray,14993970,6
-512,20,Hassan Garcia,MID,Juventus,13254465,55
-513,20,Samuel Lee,MID,Liverpool,6299404,39
-514,20,Andrej Kovacic,MID,Bayern Munich,7537247,18
-515,20,Youssef Schmidt,FWD,Manchester City,9449874,48
-516,20,Ali Schmidt,FWD,Flamengo,16002345,69
-517,20,Oliver Santos,FWD,Real Madrid,9910312,17
-518,20,Hassan Horvat,FWD,Ajax,14717091,39
-519,20,Luis Horvat,FWD,Kaizer Chiefs,9569042,79
-520,20,Alex Kovacic,FWD,Paris Saint-Germain,8191823,90
-521,21,Juan Horvat,GK,Ajax,15705143,40
-522,21,James Kim,GK,Ajax,39990375,75
-523,21,Hassan Schmidt,GK,Arsenal,35340999,40
-524,21,Samuel Santos,DEF,Los Angeles FC,28447935,54
-525,21,Daniel Sato,DEF,Inter Milan,39228488,23
-526,21,Lucas Nakamura,DEF,Inter Milan,30929878,17
-527,21,Thomas Schmidt,DEF,Porto,30489903,69
-528,21,Lucas Sato,DEF,Porto,40695381,48
-529,21,Marcus Lee,DEF,Galatasaray,38629779,83
-530,21,Marcus Jones,DEF,Los Angeles FC,34548824,37
-531,21,Oliver Garcia,DEF,Benfica,13606869,27
-532,21,John Jones,MID,Porto,27556386,63
-533,21,Mohammed Nakamura,MID,Juventus,13501603,13
-534,21,Diego Lee,MID,Juventus,27395734,66
-535,21,Luis Abdel,MID,Club América,22267164,74
-536,21,Diego Rodriguez,MID,Arsenal,20848186,7
-537,21,James Nakamura,MID,Liverpool,38539163,12
-538,21,Ali Kovacic,MID,Al Hilal,20789766,75
-539,21,Juan Abdel,MID,Boca Juniors,24880587,44
-540,21,Mohammed Garcia,MID,Arsenal,19474189,77
-541,21,Daniel Horvat,FWD,Bayern Munich,30161243,65
-542,21,Thomas Lee,FWD,Los Angeles FC,15607279,19
-543,21,Youssef Sato,FWD,Bayern Munich,17371591,41
-544,21,John Nakamura,FWD,Paris Saint-Germain,22403883,71
-545,21,Luis Onyango,FWD,Paris Saint-Germain,23447996,5
-546,21,Carlos Schmidt,FWD,Manchester City,33368706,77
-547,22,Samuel Martinez,GK,Benfica,17476633,53
-548,22,Mohammed Santos,GK,Flamengo,12201227,28
-549,22,Diego Horvat,GK,Club América,14352112,60
-550,22,Mateo Abdel,DEF,Bayern Munich,10572633,46
-551,22,James Onyango,DEF,Arsenal,6449941,17
-552,22,Thomas Kovacic,DEF,Liverpool,6946654,38
-553,22,Diego Ibrahim,DEF,Porto,11594758,17
-554,22,Youssef Silva,DEF,Bayern Munich,12650467,53
-555,22,Marcus Silva,DEF,Ajax,12696315,17
-556,22,Luis Jones,DEF,Flamengo,18495144,90
-557,22,Alex Santos,DEF,Al Hilal,17719052,91
-558,22,Juan Nakamura,MID,Boca Juniors,15705488,42
-559,22,Juan Silva,MID,Juventus,6417831,7
-560,22,James Jones,MID,Bayern Munich,9382691,53
-561,22,Luis Onyango,MID,Los Angeles FC,16597520,73
-562,22,Diego Martinez,MID,Los Angeles FC,13977894,29
-563,22,Ali Park,MID,Boca Juniors,17833137,8
-564,22,Marcus Santos,MID,Juventus,20412044,14
-565,22,James Jones,MID,Manchester City,12080615,36
-566,22,Luis Martinez,MID,Club América,17108372,26
-567,22,Ali Nakamura,FWD,Paris Saint-Germain,7703098,17
-568,22,Carlos Jones,FWD,Kaizer Chiefs,13937171,52
-569,22,Marcus Silva,FWD,Inter Milan,10135556,68
-570,22,Samuel Schmidt,FWD,Arsenal,19835395,51
-571,22,Alex Nakamura,FWD,Liverpool,19316595,94
-572,22,Alex Müller,FWD,Juventus,7398590,33
-573,23,Hassan Kim,GK,Galatasaray,5548537,61
-574,23,Hassan Sato,GK,Manchester City,4770754,76
-575,23,Hassan Lee,GK,Benfica,12638814,67
-576,23,Luis Kim,DEF,Manchester City,7708624,5
-577,23,Luis Abdel,DEF,Porto,13809233,76
-578,23,Carlos Nakamura,DEF,Ajax,13514497,49
-579,23,James Horvat,DEF,Flamengo,10275992,16
-580,23,Mohammed Jones,DEF,Boca Juniors,4425671,61
-581,23,Daniel Martinez,DEF,Boca Juniors,14734873,19
-582,23,Daniel Nakamura,DEF,Liverpool,6250371,66
-583,23,James Silva,DEF,Manchester City,14092983,83
-584,23,Ali Schmidt,MID,Bayern Munich,4851318,64
-585,23,David Ibrahim,MID,Juventus,11189580,70
-586,23,Youssef Garcia,MID,Flamengo,12100835,5
-587,23,Lucas Rodriguez,MID,Boca Juniors,10817059,51
-588,23,Daniel Smith,MID,Galatasaray,12006308,78
-589,23,Alex Kim,MID,Arsenal,4716051,39
-590,23,Mateo Horvat,MID,Porto,8178552,31
-591,23,Alex Rodriguez,MID,Kaizer Chiefs,4687851,55
-592,23,John Sato,MID,Liverpool,7987489,24
-593,23,Youssef Sato,FWD,Arsenal,13924243,12
-594,23,Alex Martinez,FWD,Galatasaray,10769152,39
-595,23,Mohammed Rodriguez,FWD,Juventus,6780927,63
-596,23,Marcus Kovacic,FWD,Inter Milan,12979159,67
-597,23,Carlos Lee,FWD,Porto,10971639,21
-598,23,James Jones,FWD,Juventus,13035542,76
-599,24,Juan Ibrahim,GK,Kaizer Chiefs,3158287,49
-600,24,Lucas Lee,GK,Benfica,8652339,6
-601,24,Mohammed Rodriguez,GK,Galatasaray,5098915,80
-602,24,Ali Park,DEF,Manchester City,7195371,73
-603,24,Daniel Onyango,DEF,Barcelona,2838186,28
-604,24,David Ibrahim,DEF,Al Hilal,5946919,61
-605,24,Youssef Nakamura,DEF,Los Angeles FC,7328963,12
-606,24,Marcus Rodriguez,DEF,Al Hilal,4324556,32
-607,24,Carlos Rodriguez,DEF,Manchester City,6157763,40
-608,24,James Nakamura,DEF,Barcelona,7528253,81
-609,24,Thomas Garcia,DEF,Kaizer Chiefs,8906539,15
-610,24,Oliver Jones,MID,Bayern Munich,4549863,71
-611,24,Mateo Smith,MID,Bayern Munich,7372081,68
-612,24,Juan Abdel,MID,AC Milan,6062997,75
-613,24,John Abdel,MID,AC Milan,3258732,75
-614,24,Mateo Smith,MID,Al Hilal,4731971,43
-615,24,Lucas Schmidt,MID,Manchester City,7403394,56
-616,24,Juan Sato,MID,Club América,5976453,9
-617,24,John Abdel,MID,Club América,3473822,74
-618,24,Mateo Müller,MID,Real Madrid,7604871,5
-619,24,Thomas Jones,FWD,Liverpool,5700205,39
-620,24,John Jones,FWD,Galatasaray,6274406,87
-621,24,Thomas Horvat,FWD,Ajax,4117784,87
-622,24,Andrej Garcia,FWD,Barcelona,6406600,15
-623,24,John Müller,FWD,Porto,8054871,93
-624,24,Lucas Sato,FWD,Inter Milan,8491675,74
-625,25,Mohammed Garcia,GK,Paris Saint-Germain,24649505,5
-626,25,James Onyango,GK,Juventus,31084666,71
-627,25,Luis Abdel,GK,Paris Saint-Germain,25722873,49
-628,25,Marcus Müller,DEF,Real Madrid,13456177,88
-629,25,Thomas Park,DEF,Real Madrid,18902535,80
-630,25,Mohammed Smith,DEF,Inter Milan,30373397,38
-631,25,Mateo Santos,DEF,Flamengo,24002226,26
-632,25,David Rodriguez,DEF,Juventus,29058737,13
-633,25,Diego Nakamura,DEF,Manchester City,28758259,38
-634,25,Samuel Martinez,DEF,Porto,23324086,62
-635,25,Lucas Onyango,DEF,Liverpool,25059096,44
-636,25,Thomas Kovacic,MID,Porto,16526840,33
-637,25,Mohammed Horvat,MID,Paris Saint-Germain,21859452,26
-638,25,Alex Onyango,MID,Boca Juniors,12299553,14
-639,25,Luis Horvat,MID,Paris Saint-Germain,20573473,53
-640,25,Luis Kovacic,MID,Manchester City,22153902,81
-641,25,John Kovacic,MID,Barcelona,32249241,67
-642,25,Carlos Horvat,MID,Benfica,13393816,69
-643,25,Hassan Lee,MID,Bayern Munich,10630468,31
-644,25,Daniel Ibrahim,MID,Los Angeles FC,33033827,55
-645,25,Thomas Martinez,FWD,Liverpool,22117658,77
-646,25,Mateo Smith,FWD,Juventus,10984144,75
-647,25,Alex Santos,FWD,Manchester City,32173791,38
-648,25,Samuel Onyango,FWD,Real Madrid,16466489,78
-649,25,Lucas Santos,FWD,Liverpool,34365675,44
-650,25,Lucas Horvat,FWD,Barcelona,12676483,89
-651,26,John Onyango,GK,Flamengo,6560269,70
-652,26,Daniel Ibrahim,GK,Paris Saint-Germain,8700465,20
-653,26,John Schmidt,GK,Barcelona,5248182,84
-654,26,Oliver Müller,DEF,Los Angeles FC,8392907,49
-655,26,Juan Jones,DEF,Galatasaray,3603745,39
-656,26,Carlos Lee,DEF,Los Angeles FC,4985367,94
-657,26,Daniel Ibrahim,DEF,Los Angeles FC,9545248,37
-658,26,Juan Abdel,DEF,Porto,10664414,50
-659,26,Andrej Silva,DEF,Real Madrid,3076018,58
-660,26,Andrej Jones,DEF,Benfica,9774095,47
-661,26,Samuel Müller,DEF,Juventus,11189095,14
-662,26,Andrej Park,MID,Barcelona,9839410,87
-663,26,Thomas Onyango,MID,Benfica,10098058,76
-664,26,John Silva,MID,Benfica,4877554,33
-665,26,Samuel Smith,MID,Club América,8873696,36
-666,26,Samuel Rodriguez,MID,Flamengo,7672513,21
-667,26,Marcus Kovacic,MID,Barcelona,4355513,8
-668,26,Thomas Müller,MID,Ajax,3023510,48
-669,26,Oliver Santos,MID,Bayern Munich,9755193,35
-670,26,Mohammed Jones,MID,Liverpool,3040498,57
-671,26,Mateo Lee,FWD,Benfica,10219289,91
-672,26,Hassan Onyango,FWD,Liverpool,3717668,32
-673,26,John Nakamura,FWD,Ajax,9630210,91
-674,26,John Park,FWD,Benfica,8789028,88
-675,26,Thomas Onyango,FWD,Inter Milan,9823740,39
-676,26,Alex Silva,FWD,Club América,9090903,90
-677,27,Hassan Onyango,GK,Kaizer Chiefs,5158709,59
-678,27,Thomas Onyango,GK,Ajax,6170481,49
-679,27,Lucas Müller,GK,Manchester City,9593951,33
-680,27,Mohammed Sato,DEF,Manchester City,4862669,23
-681,27,Ali Schmidt,DEF,Barcelona,15803454,69
-682,27,Hassan Sato,DEF,Galatasaray,15035598,92
-683,27,Juan Ibrahim,DEF,Flamengo,9656314,38
-684,27,Samuel Müller,DEF,Barcelona,6996322,11
-685,27,James Smith,DEF,Manchester City,9197675,90
-686,27,Mohammed Silva,DEF,Manchester City,17226885,19
-687,27,Marcus Garcia,DEF,Flamengo,9468981,93
-688,27,Daniel Nakamura,MID,Galatasaray,17995805,19
-689,27,John Jones,MID,Paris Saint-Germain,6130245,23
-690,27,Youssef Park,MID,AC Milan,14886833,70
-691,27,James Kovacic,MID,Club América,8052728,9
-692,27,Marcus Kim,MID,Galatasaray,6868430,37
-693,27,Lucas Kovacic,MID,Flamengo,16323637,61
-694,27,Carlos Martinez,MID,Inter Milan,5064947,20
-695,27,Lucas Kim,MID,Porto,16603943,32
-696,27,Juan Kim,MID,Los Angeles FC,17324867,28
-697,27,Hassan Silva,FWD,Bayern Munich,9935458,39
-698,27,Luis Jones,FWD,Juventus,8415919,46
-699,27,Andrej Onyango,FWD,Arsenal,5571396,72
-700,27,Lucas Abdel,FWD,Club América,16101934,42
-701,27,Thomas Park,FWD,Al Hilal,5562148,39
-702,27,Youssef Park,FWD,Club América,14393552,89
-703,28,Thomas Kim,GK,Barcelona,2606818,40
-704,28,Diego Onyango,GK,Kaizer Chiefs,5087530,77
-705,28,Alex Martinez,GK,Bayern Munich,5288756,45
-706,28,Carlos Santos,DEF,Galatasaray,1894829,43
-707,28,Carlos Rodriguez,DEF,Manchester City,4813949,28
-708,28,Lucas Ibrahim,DEF,AC Milan,3668670,54
-709,28,Diego Sato,DEF,Kaizer Chiefs,5156421,6
-710,28,Samuel Lee,DEF,Liverpool,4597784,15
-711,28,Alex Onyango,DEF,Arsenal,3798849,73
-712,28,Mateo Onyango,DEF,Los Angeles FC,4588956,75
-713,28,Ali Nakamura,DEF,Club América,2463669,63
-714,28,Oliver Kim,MID,Liverpool,1528991,29
-715,28,Oliver Ibrahim,MID,Ajax,1534421,85
-716,28,Thomas Jones,MID,Benfica,4449603,87
-717,28,Daniel Horvat,MID,AC Milan,4744995,32
-718,28,Juan Martinez,MID,Inter Milan,5384594,25
-719,28,Luis Horvat,MID,Manchester City,2485455,42
-720,28,Carlos Sato,MID,Flamengo,2246170,79
-721,28,Diego Abdel,MID,Bayern Munich,4759969,51
-722,28,Lucas Kovacic,MID,Al Hilal,4300413,41
-723,28,Samuel Smith,FWD,Paris Saint-Germain,2090907,83
-724,28,David Müller,FWD,Benfica,1510869,9
-725,28,Carlos Schmidt,FWD,Porto,2893401,46
-726,28,Mateo Smith,FWD,Boca Juniors,2372133,48
-727,28,John Kim,FWD,Bayern Munich,3794504,36
-728,28,Andrej Garcia,FWD,Bayern Munich,2549985,39
-729,29,Samuel Santos,GK,Paris Saint-Germain,118879280,63
-730,29,Andrej Nakamura,GK,Real Madrid,84543990,82
-731,29,Juan Rodriguez,GK,Real Madrid,97934417,59
-732,29,Thomas Schmidt,DEF,AC Milan,94037065,89
-733,29,Youssef Ibrahim,DEF,Paris Saint-Germain,118327545,46
-734,29,Luis Kovacic,DEF,Porto,100912740,79
-735,29,Samuel Martinez,DEF,Benfica,34020821,94
-736,29,Marcus Kovacic,DEF,Manchester City,63093263,14
-737,29,Mohammed Schmidt,DEF,AC Milan,97257677,82
-738,29,James Santos,DEF,Barcelona,48259211,73
-739,29,Oliver Ibrahim,DEF,Real Madrid,99248469,66
-740,29,Juan Kovacic,MID,Porto,59193716,42
-741,29,David Onyango,MID,Paris Saint-Germain,103995736,56
-742,29,Mohammed Müller,MID,Flamengo,101823669,62
-743,29,Ali Lee,MID,Los Angeles FC,63264915,20
-744,29,John Kovacic,MID,AC Milan,43033848,16
-745,29,Marcus Silva,MID,Manchester City,127848038,85
-746,29,Thomas Abdel,MID,Galatasaray,55588890,83
-747,29,Mohammed Abdel,MID,Arsenal,59306855,31
-748,29,Juan Jones,MID,Kaizer Chiefs,119806210,57
-749,29,Lucas Kim,FWD,Porto,122106284,50
-750,29,Diego Kovacic,FWD,Liverpool,74540491,83
-751,29,Alex Santos,FWD,Boca Juniors,67506527,93
-752,29,Alex Horvat,FWD,Manchester City,119406822,21
-753,29,Juan Horvat,FWD,Barcelona,96302806,20
-754,29,Daniel Sato,FWD,Bayern Munich,60601918,73
-755,30,Samuel Silva,GK,Manchester City,4153951,73
-756,30,Alex Nakamura,GK,Flamengo,4880393,41
-757,30,Hassan Smith,GK,Benfica,1873058,22
-758,30,Daniel Horvat,DEF,Real Madrid,5503101,52
-759,30,Daniel Müller,DEF,Inter Milan,2824787,83
-760,30,Alex Martinez,DEF,Bayern Munich,3618742,57
-761,30,Lucas Jones,DEF,Al Hilal,3187914,31
-762,30,Oliver Lee,DEF,Liverpool,3387976,84
-763,30,Mohammed Kim,DEF,Porto,3496080,21
-764,30,Daniel Müller,DEF,Paris Saint-Germain,2814972,93
-765,30,Daniel Onyango,DEF,Barcelona,4229954,16
-766,30,Hassan Schmidt,MID,Kaizer Chiefs,5575800,61
-767,30,David Martinez,MID,Arsenal,4981755,6
-768,30,Youssef Sato,MID,Flamengo,3602100,54
-769,30,Alex Santos,MID,Inter Milan,5191870,61
-770,30,Youssef Martinez,MID,Kaizer Chiefs,5026759,29
-771,30,Alex Nakamura,MID,Kaizer Chiefs,5875659,14
-772,30,Mateo Kovacic,MID,Paris Saint-Germain,2258147,14
-773,30,Oliver Santos,MID,Paris Saint-Germain,5609667,79
-774,30,Ali Nakamura,MID,Flamengo,3173522,8
-775,30,Carlos Kim,FWD,Manchester City,3351472,5
-776,30,Mateo Onyango,FWD,Manchester City,5059767,18
-777,30,Diego Garcia,FWD,AC Milan,5335086,14
-778,30,Thomas Sato,FWD,Boca Juniors,6673291,31
-779,30,David Martinez,FWD,Inter Milan,5787451,83
-780,30,Ali Horvat,FWD,Barcelona,3832997,15
-781,31,Daniel Rodriguez,GK,Benfica,5687456,20
-782,31,Luis Schmidt,GK,Ajax,6915010,13
-783,31,John Martinez,GK,AC Milan,4189096,91
-784,31,Hassan Kim,DEF,Bayern Munich,6466625,63
-785,31,Mateo Rodriguez,DEF,Bayern Munich,5874709,10
-786,31,Mateo Nakamura,DEF,Club América,7101900,48
-787,31,Luis Silva,DEF,Kaizer Chiefs,5390544,75
-788,31,Daniel Rodriguez,DEF,Galatasaray,4658741,48
-789,31,Luis Jones,DEF,Real Madrid,2263535,63
-790,31,Diego Onyango,DEF,Ajax,6032226,25
-791,31,Diego Lee,DEF,Galatasaray,5829468,60
-792,31,Thomas Kim,MID,Porto,3875086,65
-793,31,Alex Park,MID,Real Madrid,6992538,60
-794,31,John Lee,MID,Bayern Munich,6745931,81
-795,31,Lucas Kim,MID,AC Milan,3731768,34
-796,31,David Lee,MID,Porto,3172960,62
-797,31,Thomas Garcia,MID,Boca Juniors,4521874,77
-798,31,Lucas Kim,MID,Flamengo,4453246,15
-799,31,Daniel Martinez,MID,Los Angeles FC,4204287,8
-800,31,Daniel Garcia,MID,Inter Milan,6420313,91
-801,31,Diego Park,FWD,Ajax,3082484,65
-802,31,Ali Jones,FWD,Ajax,6561862,80
-803,31,Marcus Kim,FWD,Boca Juniors,5991622,37
-804,31,Mateo Martinez,FWD,Ajax,6235066,24
-805,31,Ali Kovacic,FWD,Arsenal,5027434,38
-806,31,David Silva,FWD,Galatasaray,4712053,78
-807,32,Mateo Schmidt,GK,Porto,16100065,21
-808,32,Carlos Sato,GK,Ajax,19744077,22
-809,32,Mateo Nakamura,GK,Club América,6476852,61
-810,32,Mateo Sato,DEF,Al Hilal,13483228,58
-811,32,Alex Kim,DEF,Los Angeles FC,5757901,71
-812,32,Youssef Onyango,DEF,Bayern Munich,13918801,50
-813,32,Samuel Silva,DEF,Porto,18140193,16
-814,32,Oliver Horvat,DEF,Kaizer Chiefs,14279926,39
-815,32,Thomas Schmidt,DEF,Inter Milan,12468340,35
-816,32,Luis Rodriguez,DEF,Al Hilal,8040156,59
-817,32,James Park,DEF,Los Angeles FC,20360558,69
-818,32,Carlos Santos,MID,Benfica,9259917,69
-819,32,Alex Silva,MID,Ajax,14276232,67
-820,32,Mateo Abdel,MID,Galatasaray,15271832,57
-821,32,Marcus Kovacic,MID,Real Madrid,20646512,43
-822,32,Diego Martinez,MID,Barcelona,6114872,18
-823,32,Carlos Schmidt,MID,Inter Milan,18475949,19
-824,32,Andrej Rodriguez,MID,Inter Milan,19996916,67
-825,32,Carlos Park,MID,Arsenal,6234819,78
-826,32,Oliver Park,MID,Los Angeles FC,20431049,71
-827,32,Hassan Müller,FWD,Inter Milan,14396087,76
-828,32,David Ibrahim,FWD,Ajax,12292445,91
-829,32,Marcus Jones,FWD,Kaizer Chiefs,5905017,27
-830,32,Luis Müller,FWD,Benfica,21226429,68
-831,32,Samuel Park,FWD,Paris Saint-Germain,18275846,22
-832,32,James Sato,FWD,Bayern Munich,8709369,66
-833,33,Kylian Mbappé,FWD,Real Madrid,180000000,80
-834,33,Antoine Griezmann,FWD,Atlético Madrid,25000000,129
-835,33,Aurélien Tchouaméni,MID,Real Madrid,90000000,34
-836,33,William Saliba,DEF,Arsenal,80000000,17
-837,33,Mike Maignan,GK,AC Milan,38000000,18
-838,33,John Lee,DEF,AC Milan,32027098,8
-839,33,Marcus Schmidt,DEF,AC Milan,32785011,57
-840,33,Daniel Horvat,DEF,Barcelona,56575362,89
-841,33,Alex Horvat,DEF,Kaizer Chiefs,65811554,74
-842,33,James Kim,DEF,Manchester City,79468054,54
-843,33,Mohammed Lee,DEF,Manchester City,39145014,21
-844,33,Diego Silva,DEF,Manchester City,53009613,53
-845,33,Ali Müller,DEF,Ajax,86082263,64
-846,33,Ali Kovacic,DEF,Al Hilal,39037707,72
-847,33,Juan Park,DEF,Real Madrid,81857966,93
-848,33,Mateo Abdel,DEF,Kaizer Chiefs,55113401,86
-849,33,Oliver Müller,MID,Ajax,91423807,66
-850,33,Hassan Martinez,MID,Inter Milan,50883234,53
-851,33,Daniel Lee,MID,Al Hilal,81746230,38
-852,33,Luis Kim,MID,Paris Saint-Germain,26685407,85
-853,33,Mohammed Lee,MID,Los Angeles FC,29408799,13
-854,33,Marcus Smith,MID,Paris Saint-Germain,67937752,23
-855,33,Youssef Martinez,MID,Galatasaray,38127472,79
-856,33,Lucas Rodriguez,MID,Barcelona,25263446,69
-857,33,Lucas Garcia,MID,Los Angeles FC,27422356,76
-858,33,Lucas Onyango,FWD,Galatasaray,81711581,86
-859,34,Hassan Sato,GK,Real Madrid,17356791,43
-860,34,Hassan Martinez,GK,Kaizer Chiefs,15638624,62
-861,34,Lucas Onyango,GK,Benfica,6824367,81
-862,34,Diego Martinez,DEF,Kaizer Chiefs,11225389,66
-863,34,Lucas Kovacic,DEF,Porto,19789622,44
-864,34,Daniel Kim,DEF,Porto,8820368,24
-865,34,Marcus Kovacic,DEF,Benfica,23299707,17
-866,34,Daniel Park,DEF,Barcelona,21761954,17
-867,34,Daniel Onyango,DEF,Manchester City,16752220,53
-868,34,James Santos,DEF,Benfica,19483797,86
-869,34,Carlos Nakamura,DEF,Liverpool,22317866,81
-870,34,John Silva,MID,Paris Saint-Germain,9981590,80
-871,34,Mateo Silva,MID,Barcelona,18091028,56
-872,34,Marcus Sato,MID,Manchester City,17617215,11
-873,34,Andrej Martinez,MID,Ajax,9560611,57
-874,34,Ali Rodriguez,MID,Inter Milan,18096750,26
-875,34,Oliver Garcia,MID,Boca Juniors,22218623,33
-876,34,Mohammed Kovacic,MID,Club América,18495972,18
-877,34,Ali Horvat,MID,Ajax,23273131,20
-878,34,Thomas Müller,MID,AC Milan,18833560,62
-879,34,Ali Rodriguez,FWD,Flamengo,18245983,34
-880,34,Luis Sato,FWD,Los Angeles FC,12466600,32
-881,34,Mateo Silva,FWD,AC Milan,17633014,12
-882,34,Alex Park,FWD,Manchester City,9542856,71
-883,34,Lucas Smith,FWD,Club América,21308384,61
-884,34,Samuel Ibrahim,FWD,Barcelona,19860343,24
-885,35,Marcus Schmidt,GK,Flamengo,5234389,94
-886,35,Alex Abdel,GK,Club América,4333114,85
-887,35,James Rodriguez,GK,Porto,4764154,50
-888,35,Ali Lee,DEF,Kaizer Chiefs,2053184,26
-889,35,John Lee,DEF,Club América,2827947,19
-890,35,Samuel Rodriguez,DEF,Benfica,6383292,48
-891,35,David Müller,DEF,AC Milan,6535837,25
-892,35,Ali Müller,DEF,Benfica,2245514,23
-893,35,Hassan Kim,DEF,Barcelona,7469700,84
-894,35,Mohammed Martinez,DEF,AC Milan,6191161,51
-895,35,Andrej Onyango,DEF,Porto,5239647,20
-896,35,Ali Onyango,MID,Al Hilal,5890281,80
-897,35,Andrej Ibrahim,MID,Porto,7796682,25
-898,35,Ali Abdel,MID,Kaizer Chiefs,4896449,48
-899,35,Daniel Lee,MID,Juventus,7255575,44
-900,35,Lucas Lee,MID,Bayern Munich,5831421,24
-901,35,John Abdel,MID,Juventus,5583930,78
-902,35,Youssef Horvat,MID,Flamengo,6289779,48
-903,35,Juan Santos,MID,Galatasaray,5516893,63
-904,35,Daniel Müller,MID,Bayern Munich,2247519,56
-905,35,Alex Lee,FWD,Barcelona,2223917,56
-906,35,John Schmidt,FWD,Porto,7496833,51
-907,35,Oliver Onyango,FWD,Inter Milan,5796472,84
-908,35,Lucas Santos,FWD,Flamengo,4671635,94
-909,35,John Müller,FWD,Club América,6947108,59
-910,35,John Lee,FWD,Ajax,3569105,70
-911,36,Luis Onyango,GK,Liverpool,2902378,39
-912,36,Mateo Smith,GK,Al Hilal,3865846,82
-913,36,Youssef Rodriguez,GK,Kaizer Chiefs,6775342,20
-914,36,Oliver Jones,DEF,Arsenal,8740024,52
-915,36,Lucas Kim,DEF,Los Angeles FC,7164189,86
-916,36,Daniel Nakamura,DEF,Barcelona,6172989,38
-917,36,Diego Nakamura,DEF,Porto,4061690,77
-918,36,Ali Onyango,DEF,Club América,8212256,86
-919,36,Mateo Nakamura,DEF,Juventus,3371753,47
-920,36,Lucas Kovacic,DEF,AC Milan,6723247,53
-921,36,Carlos Smith,DEF,Club América,7523263,76
-922,36,Diego Martinez,MID,Paris Saint-Germain,6156517,38
-923,36,Mohammed Nakamura,MID,Club América,5019947,18
-924,36,Andrej Schmidt,MID,Benfica,8575659,43
-925,36,Oliver Schmidt,MID,Paris Saint-Germain,9563058,40
-926,36,Youssef Park,MID,Benfica,8061914,48
-927,36,Marcus Park,MID,Club América,5896705,93
-928,36,Ali Ibrahim,MID,Arsenal,7715470,81
-929,36,Thomas Sato,MID,Arsenal,8057012,90
-930,36,Carlos Lee,MID,Los Angeles FC,5296282,35
-931,36,Oliver Jones,FWD,Real Madrid,3565556,91
-932,36,Lucas Rodriguez,FWD,Manchester City,5809444,59
-933,36,Lucas Schmidt,FWD,Barcelona,4006006,12
-934,36,Hassan Ibrahim,FWD,Kaizer Chiefs,6836356,51
-935,36,David Silva,FWD,Paris Saint-Germain,7026341,44
-936,36,Diego Kovacic,FWD,Al Hilal,3810985,75
-937,37,Lionel Messi,FWD,Inter Miami,10000000,185
-938,37,Lautaro Martínez,FWD,Inter Milan,80000000,62
-939,37,Alexis Mac Allister,MID,Liverpool,70000000,28
-940,37,Enzo Fernández,MID,Chelsea,75000000,24
-941,37,Emiliano Martínez,GK,Aston Villa,28000000,39
-942,37,Diego Müller,DEF,Benfica,170734197,65
-943,37,Thomas Smith,DEF,AC Milan,235616262,12
-944,37,Hassan Abdel,DEF,Paris Saint-Germain,180539168,41
-945,37,Diego Smith,DEF,Manchester City,192646597,11
-946,37,Marcus Kovacic,DEF,Club América,190704967,55
-947,37,Ali Abdel,DEF,Kaizer Chiefs,233391779,29
-948,37,Carlos Sato,DEF,AC Milan,227348491,56
-949,37,John Nakamura,DEF,Al Hilal,151122857,55
-950,37,James Horvat,DEF,AC Milan,230462783,77
-951,37,Marcus Onyango,DEF,Porto,105025468,44
-952,37,Samuel Kim,DEF,Boca Juniors,198594094,73
-953,37,Luis Onyango,MID,AC Milan,215164190,48
-954,37,Lucas Ibrahim,MID,Juventus,174059123,94
-955,37,Mohammed Nakamura,MID,Real Madrid,231980223,51
-956,37,Andrej Müller,MID,Ajax,111712124,40
-957,37,Lucas Park,MID,Benfica,227651323,47
-958,37,Carlos Onyango,MID,Paris Saint-Germain,108433640,90
-959,37,Juan Santos,MID,AC Milan,102275046,26
-960,37,Carlos Müller,MID,Kaizer Chiefs,96497980,27
-961,37,Ali Rodriguez,MID,Manchester City,200208926,15
-962,37,Juan Smith,FWD,Barcelona,197563958,53
-963,38,Juan Abdel,GK,Club América,10109667,49
-964,38,Andrej Kim,GK,Al Hilal,5470291,73
-965,38,Andrej Ibrahim,GK,Barcelona,5885920,56
-966,38,Diego Nakamura,DEF,Al Hilal,8601194,53
-967,38,Ali Ibrahim,DEF,Boca Juniors,12650144,74
-968,38,Mateo Lee,DEF,Real Madrid,8407801,67
-969,38,Carlos Ibrahim,DEF,Kaizer Chiefs,9689393,34
-970,38,Andrej Silva,DEF,Flamengo,9345571,26
-971,38,Oliver Horvat,DEF,Paris Saint-Germain,7410120,49
-972,38,Youssef Abdel,DEF,Boca Juniors,7401153,41
-973,38,John Onyango,DEF,Juventus,4922073,56
-974,38,Mateo Schmidt,MID,Porto,12053393,54
-975,38,Carlos Rodriguez,MID,Flamengo,12010473,71
-976,38,Daniel Silva,MID,Al Hilal,7999283,17
-977,38,Marcus Horvat,MID,Los Angeles FC,11854648,32
-978,38,Samuel Jones,MID,Barcelona,7754291,67
-979,38,Carlos Schmidt,MID,Boca Juniors,8582324,61
-980,38,Mohammed Schmidt,MID,AC Milan,7357535,55
-981,38,Ali Smith,MID,Kaizer Chiefs,7895858,36
-982,38,Carlos Onyango,MID,Bayern Munich,9635202,63
-983,38,James Abdel,FWD,Boca Juniors,6977398,50
-984,38,Lucas Ibrahim,FWD,Liverpool,10035448,46
-985,38,John Horvat,FWD,Porto,8002418,60
-986,38,Lucas Garcia,FWD,Ajax,5249104,25
-987,38,James Schmidt,FWD,Boca Juniors,9947716,40
-988,38,Ali Onyango,FWD,Bayern Munich,9052797,45
-989,39,John Smith,GK,AC Milan,5537480,26
-990,39,Lucas Santos,GK,Manchester City,6043306,14
-991,39,Juan Park,GK,Al Hilal,4677157,74
-992,39,Lucas Martinez,DEF,Porto,7197520,18
-993,39,James Müller,DEF,Liverpool,7015636,30
-994,39,Alex Lee,DEF,Benfica,14156808,7
-995,39,Mohammed Kim,DEF,AC Milan,9670942,83
-996,39,Marcus Sato,DEF,Los Angeles FC,5659193,90
-997,39,John Onyango,DEF,Club América,11246156,61
-998,39,Youssef Lee,DEF,Benfica,11755991,53
-999,39,Juan Park,DEF,Inter Milan,6770783,13
-1000,39,Ali Nakamura,MID,Real Madrid,7165564,32
-1001,39,Diego Rodriguez,MID,Real Madrid,8181285,47
-1002,39,Juan Kim,MID,Inter Milan,7646419,73
-1003,39,Oliver Müller,MID,Paris Saint-Germain,13652433,54
-1004,39,Youssef Park,MID,Porto,9307468,27
-1005,39,Hassan Müller,MID,Juventus,7203899,43
-1006,39,Diego Schmidt,MID,AC Milan,7466009,71
-1007,39,Youssef Santos,MID,Inter Milan,14337587,21
-1008,39,Mateo Sato,MID,Kaizer Chiefs,11489525,29
-1009,39,Juan Santos,FWD,Los Angeles FC,7900515,18
-1010,39,Daniel Silva,FWD,Liverpool,15773388,30
-1011,39,Luis Smith,FWD,Flamengo,6839426,18
-1012,39,Carlos Horvat,FWD,Flamengo,9103747,75
-1013,39,Ali Sato,FWD,Manchester City,12446383,7
-1014,39,Alex Jones,FWD,Los Angeles FC,7246463,40
-1015,40,Juan Silva,GK,Porto,2795290,80
-1016,40,Daniel Martinez,GK,Porto,6956938,69
-1017,40,Luis Müller,GK,Boca Juniors,5696435,8
-1018,40,Mateo Lee,DEF,Porto,5315533,23
-1019,40,James Horvat,DEF,Los Angeles FC,2616672,70
-1020,40,Diego Martinez,DEF,Paris Saint-Germain,3120392,62
-1021,40,Ali Jones,DEF,Arsenal,6366839,24
-1022,40,Thomas Nakamura,DEF,AC Milan,3499111,20
-1023,40,Samuel Martinez,DEF,Barcelona,3878331,26
-1024,40,Samuel Kim,DEF,Manchester City,5434672,18
-1025,40,Thomas Silva,DEF,Ajax,4432101,66
-1026,40,David Jones,MID,Los Angeles FC,3664024,18
-1027,40,Mateo Rodriguez,MID,Los Angeles FC,4367866,33
-1028,40,Ali Sato,MID,Porto,5672871,6
-1029,40,Ali Rodriguez,MID,Boca Juniors,3106475,8
-1030,40,Marcus Kovacic,MID,Club América,4659835,49
-1031,40,John Park,MID,AC Milan,3622253,70
-1032,40,Oliver Park,MID,Boca Juniors,2625884,52
-1033,40,James Schmidt,MID,Al Hilal,4653834,45
-1034,40,Hassan Silva,MID,Benfica,6469362,60
-1035,40,Oliver Müller,FWD,Los Angeles FC,3478796,10
-1036,40,Hassan Santos,FWD,Los Angeles FC,4560558,49
-1037,40,Alex Kovacic,FWD,Arsenal,3488934,62
-1038,40,Mateo Lee,FWD,Liverpool,5277678,8
-1039,40,John Jones,FWD,Arsenal,2847878,48
-1040,40,David Onyango,FWD,Flamengo,5186513,39
-1041,41,Diego Onyango,GK,Kaizer Chiefs,27006213,37
-1042,41,Lucas Smith,GK,Flamengo,57907990,23
-1043,41,Lucas Sato,GK,Los Angeles FC,51987188,10
-1044,41,Youssef Abdel,DEF,Kaizer Chiefs,51676903,10
-1045,41,Andrej Lee,DEF,Inter Milan,17139727,11
-1046,41,Lucas Santos,DEF,Juventus,59300103,13
-1047,41,Marcus Ibrahim,DEF,Juventus,23959534,52
-1048,41,Samuel Silva,DEF,Arsenal,40869039,55
-1049,41,Samuel Abdel,DEF,Galatasaray,46188462,68
-1050,41,Mateo Silva,DEF,Al Hilal,51594960,54
-1051,41,Mohammed Silva,DEF,Benfica,39745155,58
-1052,41,Mohammed Park,MID,Benfica,60715155,34
-1053,41,Youssef Nakamura,MID,Juventus,53139121,34
-1054,41,Samuel Park,MID,AC Milan,25080885,73
-1055,41,Ali Sato,MID,Barcelona,35785428,40
-1056,41,James Smith,MID,Inter Milan,38998536,94
-1057,41,Daniel Kovacic,MID,Ajax,60391204,24
-1058,41,Daniel Schmidt,MID,Club América,57399327,51
-1059,41,Samuel Rodriguez,MID,Liverpool,19597761,46
-1060,41,Alex Schmidt,MID,Juventus,32099938,57
-1061,41,Andrej Kovacic,FWD,Paris Saint-Germain,19488594,40
-1062,41,Lucas Horvat,FWD,Club América,51615244,20
-1063,41,Mateo Kovacic,FWD,Porto,16989334,77
-1064,41,Lucas Jones,FWD,Galatasaray,57525790,35
-1065,41,Youssef Martinez,FWD,Kaizer Chiefs,55138746,25
-1066,41,Daniel Ibrahim,FWD,Ajax,17757274,52
-1067,42,Marcus Onyango,GK,Juventus,2640044,50
-1068,42,Alex Jones,GK,Boca Juniors,5505008,94
-1069,42,Oliver Onyango,GK,Inter Milan,4581614,24
-1070,42,Hassan Rodriguez,DEF,Club América,2544969,12
-1071,42,David Park,DEF,Al Hilal,4004647,12
-1072,42,Youssef Rodriguez,DEF,Paris Saint-Germain,5988270,48
-1073,42,Juan Ibrahim,DEF,Kaizer Chiefs,5388088,22
-1074,42,Diego Müller,DEF,Galatasaray,3147019,28
-1075,42,Mohammed Onyango,DEF,Galatasaray,2312110,65
-1076,42,Ali Abdel,DEF,Real Madrid,2863694,36
-1077,42,James Silva,DEF,Boca Juniors,7221710,60
-1078,42,Oliver Rodriguez,MID,Juventus,4230278,88
-1079,42,Carlos Abdel,MID,Manchester City,2675094,70
-1080,42,Mateo Jones,MID,Liverpool,3151027,60
-1081,42,James Smith,MID,Inter Milan,3698938,77
-1082,42,Luis Kim,MID,Los Angeles FC,1946665,23
-1083,42,Carlos Santos,MID,Los Angeles FC,4809557,72
-1084,42,Juan Rodriguez,MID,Porto,5622196,65
-1085,42,Samuel Lee,MID,Inter Milan,2060016,20
-1086,42,Carlos Schmidt,MID,Real Madrid,2112516,63
-1087,42,Lucas Ibrahim,FWD,Benfica,5432504,64
-1088,42,Mateo Smith,FWD,Porto,3421351,84
-1089,42,Thomas Ibrahim,FWD,Ajax,4602449,68
-1090,42,Juan Park,FWD,Boca Juniors,2303505,22
-1091,42,Marcus Smith,FWD,Inter Milan,2039626,88
-1092,42,Mohammed Kim,FWD,Benfica,3972986,19
-1093,43,Ali Abdel,GK,Al Hilal,6205392,26
-1094,43,Andrej Jones,GK,Real Madrid,6209026,84
-1095,43,Marcus Schmidt,GK,Porto,3618216,35
-1096,43,Alex Garcia,DEF,Kaizer Chiefs,6882913,51
-1097,43,Thomas Nakamura,DEF,Inter Milan,3713884,18
-1098,43,Oliver Horvat,DEF,Liverpool,5065633,16
-1099,43,Samuel Park,DEF,Liverpool,6586156,23
-1100,43,James Lee,DEF,Liverpool,8046051,43
-1101,43,Samuel Silva,DEF,Arsenal,4213230,55
-1102,43,John Horvat,DEF,Real Madrid,7592636,18
-1103,43,Mohammed Nakamura,DEF,AC Milan,8380307,32
-1104,43,Alex Santos,MID,Kaizer Chiefs,2849076,21
-1105,43,Oliver Schmidt,MID,Kaizer Chiefs,6078337,60
-1106,43,Thomas Müller,MID,Flamengo,6607708,37
-1107,43,Alex Lee,MID,Benfica,7635464,47
-1108,43,John Ibrahim,MID,Paris Saint-Germain,5339314,17
-1109,43,Thomas Jones,MID,AC Milan,4802932,92
-1110,43,Youssef Müller,MID,Paris Saint-Germain,6963685,93
-1111,43,Lucas Silva,MID,Kaizer Chiefs,8159601,93
-1112,43,Juan Horvat,MID,Galatasaray,7769058,84
-1113,43,Hassan Jones,FWD,Ajax,6093391,79
-1114,43,Hassan Onyango,FWD,Barcelona,6001957,52
-1115,43,Diego Martinez,FWD,Barcelona,5081431,79
-1116,43,Thomas Lee,FWD,Barcelona,5639843,93
-1117,43,Marcus Ibrahim,FWD,Barcelona,5499091,61
-1118,43,Carlos Kovacic,FWD,Inter Milan,5003387,84
-1119,44,Luis Silva,GK,Barcelona,15375347,60
-1120,44,Diego Rodriguez,GK,Manchester City,16211797,63
-1121,44,Diego Martinez,GK,Los Angeles FC,10438224,57
-1122,44,Alex Ibrahim,DEF,Bayern Munich,15194234,45
-1123,44,Luis Onyango,DEF,Boca Juniors,25021214,85
-1124,44,Lucas Schmidt,DEF,Bayern Munich,13373826,63
-1125,44,Mateo Garcia,DEF,Benfica,9103575,45
-1126,44,Lucas Lee,DEF,Al Hilal,21169453,70
-1127,44,Oliver Silva,DEF,Bayern Munich,14484647,39
-1128,44,Mohammed Onyango,DEF,Bayern Munich,24506283,82
-1129,44,Alex Silva,DEF,Inter Milan,22428247,9
-1130,44,James Sato,MID,Liverpool,12655826,21
-1131,44,Carlos Smith,MID,Boca Juniors,19445997,27
-1132,44,Juan Kim,MID,Flamengo,17837675,5
-1133,44,Thomas Santos,MID,Galatasaray,18760469,47
-1134,44,Luis Garcia,MID,Los Angeles FC,19011795,5
-1135,44,Andrej Park,MID,Bayern Munich,23465033,23
-1136,44,Alex Jones,MID,Barcelona,20070871,8
-1137,44,Samuel Kovacic,MID,Arsenal,13516968,12
-1138,44,Youssef Silva,MID,Kaizer Chiefs,10063173,30
-1139,44,Samuel Park,FWD,Club América,10390374,45
-1140,44,Ali Jones,FWD,Benfica,8675580,31
-1141,44,Hassan Garcia,FWD,Manchester City,22210273,80
-1142,44,James Kim,FWD,AC Milan,9518188,67
-1143,44,Mohammed Lee,FWD,Paris Saint-Germain,15198274,23
-1144,44,Oliver Jones,FWD,Al Hilal,9004652,70
-1145,45,Harry Kane,FWD,Bayern Munich,110000000,93
-1146,45,Jude Bellingham,MID,Real Madrid,180000000,32
-1147,45,Bukayo Saka,FWD,Arsenal,130000000,36
-1148,45,Declan Rice,MID,Arsenal,110000000,52
-1149,45,Jordan Pickford,GK,Everton,22000000,64
-1150,45,Lucas Kim,DEF,Inter Milan,58581957,59
-1151,45,Youssef Horvat,DEF,Kaizer Chiefs,32852721,56
-1152,45,Ali Rodriguez,DEF,Flamengo,52499751,49
-1153,45,Juan Silva,DEF,Inter Milan,67423457,25
-1154,45,Carlos Smith,DEF,Arsenal,25016018,46
-1155,45,Carlos Nakamura,DEF,Los Angeles FC,41405665,35
-1156,45,Carlos Smith,DEF,AC Milan,53958380,67
-1157,45,Lucas Kovacic,DEF,Real Madrid,35103349,54
-1158,45,Mateo Horvat,DEF,Kaizer Chiefs,37379109,70
-1159,45,Daniel Silva,DEF,Flamengo,29215919,80
-1160,45,Juan Jones,DEF,Boca Juniors,54237266,48
-1161,45,Marcus Horvat,MID,Barcelona,44088700,78
-1162,45,Diego Kovacic,MID,Los Angeles FC,49765834,66
-1163,45,Marcus Smith,MID,Benfica,30005218,66
-1164,45,Lucas Rodriguez,MID,Porto,34005071,7
-1165,45,Marcus Silva,MID,Kaizer Chiefs,50100404,40
-1166,45,Mateo Kovacic,MID,Barcelona,57539969,33
-1167,45,Andrej Nakamura,MID,Benfica,23275893,83
-1168,45,Luis Kovacic,MID,Arsenal,30441639,32
-1169,45,Ali Jones,MID,Boca Juniors,61557918,87
-1170,45,Diego Smith,FWD,Liverpool,62734363,86
-1171,46,Carlos Horvat,GK,Al Hilal,29472275,70
-1172,46,James Horvat,GK,Al Hilal,11175542,83
-1173,46,Alex Santos,GK,Al Hilal,24804755,46
-1174,46,Mateo Smith,DEF,Kaizer Chiefs,15107295,8
-1175,46,Lucas Horvat,DEF,Al Hilal,18762567,9
-1176,46,James Smith,DEF,Paris Saint-Germain,21357782,33
-1177,46,Mohammed Santos,DEF,Ajax,12330324,29
-1178,46,Luis Martinez,DEF,Arsenal,14208636,19
-1179,46,Daniel Park,DEF,Benfica,19868912,23
-1180,46,Marcus Horvat,DEF,Inter Milan,14171071,89
-1181,46,Samuel Müller,DEF,Ajax,11831589,33
-1182,46,Marcus Sato,MID,Barcelona,9005073,7
-1183,46,Mateo Ibrahim,MID,Bayern Munich,9077142,43
-1184,46,Oliver Onyango,MID,Boca Juniors,22574940,67
-1185,46,Oliver Abdel,MID,Los Angeles FC,15141512,78
-1186,46,Lucas Sato,MID,Boca Juniors,21128692,13
-1187,46,Mateo Sato,MID,Boca Juniors,15093470,62
-1188,46,Juan Müller,MID,Kaizer Chiefs,30030585,17
-1189,46,Andrej Abdel,MID,Ajax,17008750,67
-1190,46,Mohammed Sato,MID,Arsenal,19246300,10
-1191,46,Ali Kim,FWD,Benfica,18630461,20
-1192,46,Oliver Onyango,FWD,Arsenal,10802709,14
-1193,46,Mohammed Park,FWD,Los Angeles FC,23043429,76
-1194,46,Luis Ibrahim,FWD,Juventus,21662034,26
-1195,46,Marcus Silva,FWD,Ajax,30650607,39
-1196,46,Carlos Onyango,FWD,Club América,17924864,93
-1197,47,Mohammed Park,GK,Manchester City,6766646,20
-1198,47,Samuel Kim,GK,Ajax,2948155,58
-1199,47,Marcus Martinez,GK,Porto,7608898,20
-1200,47,Lucas Martinez,DEF,Porto,6709847,58
-1201,47,Mohammed Kim,DEF,Paris Saint-Germain,6442995,10
-1202,47,Alex Onyango,DEF,Real Madrid,8143878,62
-1203,47,Alex Rodriguez,DEF,Kaizer Chiefs,5178432,31
-1204,47,Samuel Sato,DEF,Ajax,3483865,66
-1205,47,James Onyango,DEF,Galatasaray,7426627,66
-1206,47,Ali Garcia,DEF,Al Hilal,6032951,60
-1207,47,Hassan Rodriguez,DEF,Los Angeles FC,7809645,10
-1208,47,David Smith,MID,Benfica,6827373,78
-1209,47,Mateo Kovacic,MID,Club América,7896409,26
-1210,47,Hassan Horvat,MID,Galatasaray,6882822,41
-1211,47,Marcus Santos,MID,Paris Saint-Germain,6558235,47
-1212,47,Marcus Ibrahim,MID,Galatasaray,7749205,37
-1213,47,Alex Kovacic,MID,Liverpool,8764257,65
-1214,47,Daniel Garcia,MID,Flamengo,6465387,17
-1215,47,Youssef Rodriguez,MID,Galatasaray,2752825,62
-1216,47,Luis Nakamura,MID,Galatasaray,6299816,45
-1217,47,Marcus Sato,FWD,Galatasaray,4728890,25
-1218,47,Oliver Smith,FWD,Juventus,6001416,81
-1219,47,Diego Schmidt,FWD,Benfica,4900931,54
-1220,47,David Jones,FWD,Arsenal,5936948,68
-1221,47,Samuel Kim,FWD,Al Hilal,8529025,12
-1222,47,Andrej Sato,FWD,Kaizer Chiefs,5599757,52
-1223,48,Lucas Müller,GK,Manchester City,7239932,71
-1224,48,Marcus Onyango,GK,Ajax,5802774,9
-1225,48,Marcus Smith,GK,Flamengo,7207741,51
-1226,48,Samuel Horvat,DEF,Inter Milan,6777788,91
-1227,48,James Silva,DEF,Inter Milan,3312385,88
-1228,48,Samuel Schmidt,DEF,Bayern Munich,3546816,47
-1229,48,Samuel Jones,DEF,Kaizer Chiefs,8891979,31
-1230,48,Daniel Kovacic,DEF,Manchester City,7350525,16
-1231,48,Andrej Schmidt,DEF,AC Milan,4185835,30
-1232,48,Daniel Martinez,DEF,Liverpool,8420284,86
-1233,48,Luis Abdel,DEF,Juventus,10253385,28
-1234,48,Juan Silva,MID,Ajax,10177294,82
-1235,48,Lucas Rodriguez,MID,Flamengo,8345912,78
-1236,48,Youssef Ibrahim,MID,Bayern Munich,5132926,44
-1237,48,Carlos Onyango,MID,AC Milan,9593175,36
-1238,48,Mateo Jones,MID,Inter Milan,4500861,40
-1239,48,Juan Park,MID,Porto,5094415,66
-1240,48,Juan Schmidt,MID,Real Madrid,4299144,83
-1241,48,James Sato,MID,Al Hilal,6427267,33
-1242,48,David Martinez,MID,Galatasaray,11240574,62
-1243,48,Oliver Schmidt,FWD,Arsenal,6004645,29
-1244,48,Andrej Onyango,FWD,Juventus,6509476,74
-1245,48,Samuel Santos,FWD,Bayern Munich,7666724,65
-1246,48,Mohammed Park,FWD,Manchester City,3090024,5
-1247,48,Daniel Nakamura,FWD,Boca Juniors,3872799,14
-1248,48,Ali Müller,FWD,Barcelona,9511318,27
+1,1,José Raúl Rangel,GK,CD Guadalajara,8933646,15
+2,1,Jorge Eduardo Sanchez,DEF,PAOK Saloniki,24628639,59
+3,1,César Jasib Montes,DEF,FC Lokomotiv Moscow,10912552,69
+4,1,Edson Omar Alvarez,DEF,Fenerbahçe SK,10875943,100
+5,1,Johan Felipe Vasquez,DEF,Genoa CFC,18265363,47
+6,1,Erik Antonio Lira,MID,CF Cruz Azul,21520963,26
+7,1,Luis Francisco Romo,MID,CD Guadalajara,12552748,62
+8,1,Álvaro Fidalgo,MID,Real Betis,10697494,5
+9,1,Raúl Alonso Jimenez,FWD,Fulham FC,15211168,127
+10,1,Ernesto Alexis Vega,FWD,Deportivo Toluca FC,17281661,53
+11,1,Santiago Tomás Gimenez,FWD,AC Milan,15008163,47
+12,1,Carlos Acevedo,GK,Club Santos Laguna,15432043,7
+13,1,Francisco Guillermo Ochoa,GK,AEL Limassol,11314518,153
+14,1,Armando Gonzalez,FWD,CD Guadalajara,8407678,8
+15,1,Israel Reyes,DEF,Club América,24804521,35
+16,1,Julián Andrés Quinones,FWD,Al Qadsiah FC,13272677,23
+17,1,Orbelín Pineda,MID,AEK Athens,16337698,92
+18,1,Obed Goméz Vargas,MID,Atlético De Madrid,9829511,6
+19,1,Gilberto Rafael Mora,MID,Club Tijuana,19301116,9
+20,1,Mateo Chavez,DEF,AZ Alkmaar,23666035,10
+21,1,César Saúl Huerta,FWD,RSC Anderlecht,9517865,26
+22,1,Guillermo Martinez,FWD,Pumas UNAM,24670186,12
+23,1,Jesús Daniel Gallardo,DEF,Deportivo Toluca FC,24033269,123
+24,1,Luis Gerardo Chavez,MID,FC Dynamo Moscow,19973810,46
+25,1,Roberto Carlos Alvarado,FWD,CD Guadalajara,13567593,69
+26,1,Brian Gutierrez,MID,CD Guadalajara,20641369,8
+27,2,Ronwen Hayden Williams,GK,Mamelodi Sundowns FC,5443527,65
+28,2,Tholo Thabang Matuludi,DEF,Polokwane City FC,2474352,3
+29,2,Khulumani Ndamane,DEF,Mamelodi Sundowns FC,4887004,5
+30,2,Teboho Mokoena,MID,Mamelodi Sundowns FC,4836898,58
+31,2,Thalente Wandile Mbatha,MID,Orlando Pirates FC,1916161,17
+32,2,Aubrey Maphosa Modiba,DEF,Mamelodi Sundowns FC,2277334,49
+33,2,Oswin Reagan Appollis,FWD,Orlando Pirates FC,5010139,28
+34,2,Tshepang Moremi,FWD,Orlando Pirates FC,4780645,10
+35,2,Lyle Brent Foster,FWD,Burnley FC,4890195,32
+36,2,Relebohile Mofokeng,FWD,Orlando Pirates FC,3670490,14
+37,2,Themba Zwane,MID,Mamelodi Sundowns FC,5629301,56
+38,2,Thapelo Maseko,FWD,AEL Limassol,5393498,8
+39,2,Sphephelo S'miso Sithole,MID,CD Tondela,3011558,30
+40,2,Mbekezeli Mfanufikile Mbokazi,DEF,Chicago Fire FC,4390724,11
+41,2,Iqraam Rayners,FWD,Mamelodi Sundowns FC,3960567,21
+42,2,Sipho Justin Chaine,GK,Orlando Pirates FC,5393238,4
+43,2,Sekotori Evidence Makgopa,FWD,Orlando Pirates FC,2061829,28
+44,2,Samukele Alucious Kabini,DEF,Molde FK,4113118,6
+45,2,Nkosinathi Emmanuel Sibisi,DEF,Orlando Pirates FC,3355437,22
+46,2,Khuliso Johnson Mudau,DEF,Mamelodi Sundowns FC,6772880,35
+47,2,Ime Daniel Okon,DEF,Hannover 96,3798816,9
+48,2,Stuart Ricardo Goss,GK,Siwelele FC,4887219,7
+49,2,Jayden Oswin Adams,MID,Mamelodi Sundowns FC,2218910,9
+50,2,Olwethu Mpilwenhle Makhanya,DEF,Philadelphia Union,4606562,1
+51,2,Kamogelo Michael Sebelebele,FWD,Orlando Pirates FC,3198214,9
+52,2,Bradley Paul Cross,DEF,Kaizer Chiefs FC,7272345,1
+53,3,Seunggyu Kim,GK,FC Tokyo,12363852,87
+54,3,Hanbeom Lee,DEF,FC Midtjylland,16220768,9
+55,3,Gihyuk Lee,MID,Gangwon FC,5511174,4
+56,3,Minjae Kim,DEF,FC Bayern München,16900781,80
+57,3,Taehyeon Kim,DEF,Kashima Antlers,4889725,7
+58,3,Inbeom Hwang,MID,Feyenoord Rotterdam,11890562,74
+59,3,Heung Min Son,FWD,LAFC,7252249,145
+60,3,Seungho Paik,MID,Birmingham City FC,8340001,28
+61,3,Guesung Cho,FWD,FC Midtjylland,10768359,44
+62,3,Jae Sung Lee,MID,1. FSV Mainz 05,16407415,106
+63,3,Hee Chan Hwang,MID,Wolverhampton Wanderers FC,10126433,80
+64,3,Bumkeun Song,GK,Jeonbuk Hyundai Motors FC,10529931,3
+65,3,Taeseok Lee,DEF,FK Austria Wien,9731050,16
+66,3,Wije Cho,DEF,Jeonbuk Hyundai Motors FC,5257115,1
+67,3,Moonhwan Kim,DEF,Daejeon Hana Citizen FC,5308950,36
+68,3,Jinseob Park,DEF,Zhejiang FC,13983715,15
+69,3,Junho Bae,MID,Stoke City FC,13236688,13
+70,3,Hyeongyu Oh,FWD,Be ş ikta ş  JK,16170378,28
+71,3,Kangin Lee,MID,Paris Saint-Germain,8547436,48
+72,3,Hyunjun Yang,MID,Celtic FC,5291166,9
+73,3,Hyeonwoo Jo,GK,Ulsan HD,7975888,48
+74,3,Youngwoo Seol,DEF,FK Crvena Zvezda,15519443,35
+75,3,Jens Castrop,DEF,Borussia Mönchengladbach,10200656,7
+76,3,Jingyu Kim,MID,Jeonbuk Hyundai Motors FC,9156257,23
+77,3,Jisung Eom,MID,Swansea City AFC,14730983,10
+78,3,Donggyeong Lee,MID,Ulsan HD,14930824,18
+79,4,Mat ě j Kovar,GK,PSV Eindhoven,3745909,21
+80,4,David Zima,DEF,SK Slavia Praha,4733156,25
+81,4,Tomáš Holes,DEF,SK Slavia Praha,6567878,41
+82,4,Robin Hranac,DEF,TSG Hoffenheim,3741091,15
+83,4,Vladimír Coufal,DEF,TSG Hoffenheim,6491310,63
+84,4,ě pán Chaloupek,DEF,SK Slavia Praha,8333277,6
+85,4,Ladislav Krejci,DEF,Wolverhampton Wanderers FC,4170471,28
+86,4,Vladimír Darida,MID,FC Hradec Králové,8802776,79
+87,4,Adam Hlozek,FWD,TSG Hoffenheim,3750750,44
+88,4,Patrik Schick,FWD,Bayer 04 Leverkusen,5719172,54
+89,4,Jan Kuchta,FWD,AC Sparta Praha,3243145,31
+90,4,Lukáš Cerv,MID,FC Viktoria Plze ň,4202413,17
+91,4,Mojmír Chytil,FWD,SK Slavia Praha,3262160,23
+92,4,David Jurasek,DEF,SK Slavia Praha,5903512,18
+93,4,Pavel Sulc,FWD,Olympique Lyonnais,9748253,22
+94,4,Jind ř ich Stanek,GK,SK Slavia Praha,6887644,14
+95,4,Lukáš Provod,MID,SK Slavia Praha,8557328,39
+96,4,Michal Sadilek,MID,SK Slavia Praha,5508704,36
+97,4,Tomáš Chory,FWD,SK Slavia Praha,4130940,23
+98,4,Jaroslav Zeleny,DEF,AC Sparta Praha,5397610,24
+99,4,David Doudera,DEF,SK Slavia Praha,5769955,17
+100,4,Tomáš Soucek,MID,West Ham United FC,3748515,91
+101,4,Lukáš Hornicek,GK,SC Braga,7156460,1
+102,4,Alexandr Sojka,MID,FC Viktoria Plze ň,3768095,3
+103,4,Hugo Sochurek,MID,AC Sparta Praha,10270278,1
+104,4,Denis Visinsky,FWD,FC Viktoria Plze ň,10120893,2
+105,5,Dayne Tristan St. Clair,GK,Inter Miami CF,11164387,20
+106,5,Alistair William Johnston,DEF,Celtic FC,9621509,59
+107,5,Alfie Charles Jones,DEF,Middlesbrough FC,5343493,2
+108,5,Luc De Fougerolles,DEF,FCV Dender EH,4274807,14
+109,5,Joel Robert Waterman,DEF,Chicago Fire FC,5648548,17
+110,5,Mathieu Choiniere,MID,LAFC,11681974,24
+111,5,Stephen Eustaquio,MID,LAFC,10695035,57
+112,5,Ismaël Kenneth Jordan Kone,MID,US Sassuolo,7507050,41
+113,5,Cyle Christopher Larin,FWD,Southampton FC,3353544,91
+114,5,Jonathan Christian David,FWD,Juventus FC,5292378,78
+115,5,Liam Alan Millar,MID,Hull City FC,11328457,42
+116,5,Tanitoluwa Oluwatimilehin Oluwaseyi,FWD,Villarreal CF,10641463,25
+117,5,Derek Austin Cornelius,DEF,Rangers FC,5284706,45
+118,5,Jacob Everett Shaffelburg,MID,LAFC,9624260,32
+119,5,Moïse Bombito Bombito,DEF,OGC Nice,11608716,20
+120,5,Maxime Crepeau,GK,Orlando City SC,7817545,33
+121,5,Tajon Trevor Buchanan,FWD,Villarreal CF,3876509,61
+122,5,Owen Olamidayo Goodman,GK,Barnsley,7772208,0
+123,5,Alphonso Boyle Davies,DEF,FC Bayern München,3554526,58
+124,5,Ali Ahmed,FWD,Norwich City FC,11926367,25
+125,5,Jonathan Osorio,MID,Toronto FC,11366757,92
+126,5,Richmond Mamah Laryea,DEF,Toronto FC,8348735,77
+127,5,Niko Kristian Sigur,DEF,HNK Hajduk Split,3482755,19
+128,5,Promise Oluwatobi Emmanuel David,FWD,Royale Union Saint-Gilloise,11735169,11
+129,5,Nathan-Dylan Saliba,MID,RSC Anderlecht,8473343,15
+130,5,Jayden Nelson,FWD,Austin FC,7862149,15
+131,6,Nikola Vasilj,GK,FC St. Pauli,3404938,27
+132,6,Nihad Mujakic,DEF,Gaziantep FK,3913991,12
+133,6,Dennis Hadzikadunic,DEF,UC Sampdoria,4341223,32
+134,6,Tarik Muharemovic,DEF,US Sassuolo,4290242,15
+135,6,Sead Kolasinac,DEF,Atalanta Bergamo,5263364,66
+136,6,Benjamin Tahirovic,MID,Brøndby IF,4770974,29
+137,6,Amar Dedic,DEF,SL Benfica,2129239,29
+138,6,Armin Gigovic,MID,BSC Young Boys,2764650,21
+139,6,Samed Bazdar,FWD,Jagiellonia Bia ł ystok,1757362,14
+140,6,Ermedin Demirovic,FWD,VfB Stuttgart,5798985,41
+141,6,Edin Dzeko,FWD,FC Schalke 04,4464497,148
+142,6,Mladen Jurkas,GK,FK Borac Banja Luka,4807041,0
+143,6,Ivan Basic,MID,FC Astana,6506353,18
+144,6,Ivan Sunjic,MID,Pafos FC,4102082,12
+145,6,Amar Memic,MID,FC Viktoria Plze ň,6317963,14
+146,6,Amir Hadziahmetovic,MID,Hull City FC,2449221,36
+147,6,Dzenis Burnic,MID,Karlsruher SC,4925923,21
+148,6,Nikola Katic,DEF,FC Schalke 04,3867139,18
+149,6,Kerim Alajbegovic,FWD,FC Red Bull Salzburg,2122631,11
+150,6,Esmir Bajraktarevic,FWD,PSV Eindhoven,6073032,17
+151,6,Stjepan Radeljic,DEF,HNK Rijeka,5457755,5
+152,6,Martin Zlomislic,GK,HNK Rijeka,6880464,3
+153,6,Haris Tabakovic,FWD,Borussia Mönchengladbach,6962938,10
+154,6,Arjan Malic,DEF,SK Sturm Graz,2815590,8
+155,6,Jovo Lukic,FWD,Universitatea Cluj,4798108,4
+156,6,Ermin Mahmic,MID,FC Slovan Liberec,4309454,2
+157,7,Ibrahim Mahmoud Abunada,GK,Al Rayyan SC,5555635,7
+158,7,Miguel Pedro,DEF,Al Sadd SC,5982512,112
+159,7,Michel Lucas,DEF,Al Wakrah SC,4279139,28
+160,7,Gueye Issa Laye,DEF,Al Arabi SC,2680118,5
+161,7,Gaber Jassem,DEF,Al Rayyan SC,5006329,38
+162,7,Hatim Abdulaziz Hatem,MID,Al Rayyan SC,2275441,132
+163,7,Alaaeldin Ahmed,FWD,Al Rayyan SC,5142787,78
+164,7,Junior Edmilson,FWD,Al Duhail SC,2520193,17
+165,7,Mohammed Mohammed Muntari,FWD,Al Gharafa SC,2058624,74
+166,7,Khalid Hassan Alhaydos,FWD,Al Sadd SC,3010391,190
+167,7,Hassan Akram,FWD,Al Sadd SC,3305021,137
+168,7,Karim Karim Boudiaf,MID,Al Duhail SC,6342945,129
+169,7,Mohamed Ayoub Aloui,DEF,Al Gharafa SC,3461985,8
+170,7,Elamin Homam,DEF,Cultural Leonesa,6588938,77
+171,7,Abdurisag Yusuf Abdurisag,FWD,Al Wakrah SC,6554586,45
+172,7,KHOUKHIBoualem Boualem,DEF,Al Sadd SC,4032215,129
+173,7,Mohamed Ahmed Alganehi,MID,Al Gharafa SC,3865289,15
+174,7,Hussain Sultan,DEF,Al Duhail SC,6687129,20
+175,7,Ali Zainelabdeen Almoez,FWD,Al Duhail SC,4569800,128
+176,7,Fathy Ahmed Fathy,MID,Al Arabi SC,2134313,55
+177,7,Zakaria Salah Zakaria,GK,Al Duhail SC,7649760,10
+178,7,Aissa Meshaal Barsham,GK,Al Sadd SC,7536773,60
+179,7,Omer Assim Madibo,MID,Al Wakrah SC,7259746,65
+180,7,Mohammad Tahsin,FWD,Al Duhail SC,2807711,5
+181,7,Alhussein Alhashmi,DEF,Al Arabi SC,5375137,10
+182,7,Naceur Mohamed Manai,FWD,Al Shamal SC,4617459,12
+183,8,Gregor Kobel,GK,Borussia Dortmund,6501954,22
+184,8,Miro Max Maria Muheim,DEF,Hamburger SV,8976940,11
+185,8,Silvan Dominic Widmer,DEF,1. FSV Mainz 05,18175703,60
+186,8,Nico Elvedi,DEF,Borussia Mönchengladbach,9955034,68
+187,8,Manuel Obafemi Akanji,DEF,FC Internazionale Milano,10086728,82
+188,8,Denis Lemi Zakaria,MID,AS Monaco,16546670,66
+189,8,Breel Donald Embolo,FWD,Stade Rennais FC,12034546,87
+190,8,Remo Marco Freuler,MID,Bologna FC,6010458,89
+191,8,Johan Kula Manzambi,MID,SC Freiburg,16097438,13
+192,8,Granit Xhaka,MID,Sunderland AFC,10412338,147
+193,8,Dan Ndoye,FWD,Nottingham Forest FC,13189130,32
+194,8,Yvon Landry Mvogo,GK,FC Lorient,16918384,13
+195,8,Ricardo Ivan Rodriguez,DEF,Real Betis,13686061,139
+196,8,Ardon Jashari,MID,AC Milan,14479960,9
+197,8,Djibril Ibrahima Sow,MID,Sevilla FC,12866209,52
+198,8,Christian Andreas Fassnacht,FWD,BSC Young Boys,5692068,23
+199,8,Ruben Estephan Vargas,FWD,Sevilla FC,9983709,62
+200,8,Eray Ervin Coemert,DEF,Valencia CF,5583485,22
+201,8,Noah Arinzechukwu Okafor,FWD,Leeds United FC,5900171,25
+202,8,Michel Aebischer,MID,Pisa SC,16166784,41
+203,8,Marvin Keller,GK,BSC Young Boys,6248726,1
+204,8,Fabian Rieder,MID,FC Augsburg,10759632,29
+205,8,Mohamed Zeki Amdouni,FWD,Burnley FC,11312324,30
+206,8,Aurèle Florian Amenda,DEF,Eintracht Frankfurt,5038881,7
+207,8,Luca Antony Jaquez,DEF,VfB Stuttgart,12366714,3
+208,8,Cedric Jan Itten,FWD,Fortuna Düsseldorf,9023272,15
+209,9,Ramsés Alisson,GK,Liverpool FC,34947424,79
+210,9,José Ederson Silva,MID,Atalanta Bergamo,28183265,3
+211,9,Gabriel Gabriel Magalhaes,DEF,Arsenal FC,35255847,18
+212,9,MARQUINHOSMarcos,DEF,Paris Saint-Germain,28636933,106
+213,9,Henrique,MID,Manchester United FC,19055262,87
+214,9,Sandro Alex,DEF,CR Flamengo,33387037,45
+215,9,José Vinicius,FWD,Real Madrid C. F.,14812332,50
+216,9,GUIMARAESBruno Bruno,MID,Newcastle United FC,46789953,44
+217,9,Matheus Matheus Cunha,FWD,Manchester United FC,50776605,24
+218,9,Neymar Neymar Jr,FWD,Santos FC,24872801,128
+219,9,Raphael Raphinha,FWD,FC Barcelona,40488999,40
+220,9,Weverton Weverton,GK,Grêmio FBPA,42423364,11
+221,9,Luiz Danilo,DEF,CR Flamengo,22718179,71
+222,9,Bremer Bremer,DEF,Juventus FC,43652307,8
+223,9,PEREIRALeonardo Leo,DEF,CR Flamengo,26118600,4
+224,9,Douglas Douglas Santos,DEF,FC Zenit St. Petersburg,15586988,8
+225,9,Henrique Fabinho,MID,Al Ittihad,40560501,34
+226,9,Danilo Danilo Santos,MID,Botafogo,32082648,5
+227,9,Felipe Endrick,FWD,Olympique Lyonnais,28746648,17
+228,9,Lucas Lucas Paqueta,MID,CR Flamengo,49178835,64
+229,9,Henrique André Luiz,FWD,FC Zenit St. Petersburg,33839304,16
+230,9,MARTINELLIGabriel Gabriel,FWD,Arsenal FC,40754816,23
+231,9,Ederson Ederson,GK,Fenerbahçe SK,46623295,32
+232,9,IBANEZRoger Roger,DEF,Al Ahli FC,24113577,8
+233,9,Thiago Igor Thiago,FWD,Brentford FC,39870944,5
+234,9,Vitor Rayan,FWD,AFC Bournemouth,26501330,2
+235,10,Yassine Bounou,GK,Al Hilal SC,23417732,91
+236,10,Achraf Hakimi,DEF,Paris Saint-Germain,34656691,97
+237,10,Noussair Mazraoui,DEF,Manchester United FC,32910396,46
+238,10,Sofyan Amrabat,MID,Real Betis,38878468,75
+239,10,Marwane Saadane,DEF,Al Fateh SC,15564191,17
+240,10,Ayyoub Bouaddi,MID,Lille OSC,41221578,4
+241,10,Chemsdine Talbi,MID,Sunderland AFC,35170081,6
+242,10,Azz-Eddine Ounahi,MID,Girona FC,23023088,50
+243,10,Soufiane Rahimi,FWD,Al Ain FC,45149220,38
+244,10,Brahim Diaz,FWD,Real Madrid C. F.,44054154,27
+245,10,Ismael Saibari,MID,PSV Eindhoven,15808726,31
+246,10,Monir El Kajoui,GK,RS Berkane,43396064,52
+247,10,Zakaria El Ouahdi,DEF,KRC Genk,27254497,3
+248,10,Issa Laye Lucas Jean Diop,DEF,Fulham FC,40286937,5
+249,10,Samir El Mourabet,MID,RC Strasbourg,20810331,5
+250,10,Gessime Ben Youssef Mustapha Yassine,MID,RC Strasbourg,24820352,4
+251,10,Mohamed Amine Sbai,FWD,Angers SCO,26790771,2
+252,10,Chadi Riad,DEF,Crystal Palace FC,38226492,7
+253,10,Youssef Belammari,DEF,Al Ahly FC,30006807,18
+254,10,Ayoub El Kaabi,FWD,Olympiacos FC,24381280,71
+255,10,Ayoube Amaimouni,FWD,Eintracht Frankfurt,13380648,3
+256,10,Ahmed Reda Tagnaouti,GK,ASFAR,28307927,3
+257,10,Bilal El Khannouss,MID,VfB Stuttgart,22393292,38
+258,10,Neil Yoni El Aynaoui,MID,AS Roma,33982276,17
+259,10,Redouane Halhal,DEF,KV Mechelen,12838883,3
+260,10,Anass Salah Eddine,DEF,PSV Eindhoven,18730162,10
+261,11,Johny Placide,GK,SC Bastia,3226190,84
+262,11,Carlens Jean Fedlaire Ruby Arcus,DEF,Angers SCO,2720473,57
+263,11,Keeto Thermoncy,DEF,BSC Young Boys,4525291,1
+264,11,Ricardo Ade,DEF,LDU Quito,4019399,62
+265,11,Hannes Piterson Delcroix,DEF,FC Lugano,4808049,8
+266,11,Carl Fred Sainte,MID,El Paso Locomotive FC,5467599,26
+267,11,Derrick Burckley Etienne,FWD,Toronto FC,2234420,50
+268,11,Martin Yves Roberns Didier Experience,DEF,AS Nancy,4581058,22
+269,11,Duckens Nazon,FWD,Esteghlal Tehran FC,1570407,83
+270,11,Jean Ricner Bellegarde,MID,Wolverhampton Wanderers FC,4966164,11
+271,11,Don Deedson Deedson,FWD,FC Dallas,3437369,33
+272,11,Alexandre Jr Pierre,GK,FC Sochaux-Montbéliard,5521433,17
+273,11,Markhus Lacroix,DEF,Colorado Springs Switchbacks FC,2210754,16
+274,11,Garven-Michee Metusala,DEF,Colorado Springs Switchbacks FC,2010566,15
+275,11,Ruben Fritzner Providence,FWD,Almere City FC,4599040,16
+276,11,Lenny Alvin Pico Joseph,FWD,Ferencvárosi TC,2971845,3
+277,11,Danley Jean Jacques,MID,Philadelphia Union,5195620,32
+278,11,Wilson Isidor,FWD,Sunderland AFC,5218455,5
+279,11,Yassin Enzo Fortune,FWD,FC Vizela,3129668,5
+280,11,Frantzdy Pierrot,FWD,Çaykur Rizespor,2705279,54
+281,11,Josue Jeremie Casimir,FWD,AJ Auxerre,1486130,8
+282,11,Jean-Kévin Duverne,DEF,KAA Gent,4229061,17
+283,11,Josue Duverger,GK,FC Cosmos Koblenz,4452771,7
+284,11,Wilguens Raphael Polynice Paugain,DEF,SV Zulte Waregem,1540714,8
+285,11,Dominique Celidor Simon,MID,FC Tatran Pre š ov,3846530,2
+286,11,Olivier Woodensky Pierre,MID,Violette AC,3472046,1
+287,12,Angus Fraser James Gunn,GK,Nottingham Forest FC,7110969,23
+288,12,Aaron Buchanan Hickey,DEF,Brentford FC,10140931,22
+289,12,Andrew Henry Robertson,DEF,Liverpool FC,9457221,95
+290,12,Mc,MID,SSC Napoli,7004649,71
+291,12,Grant Campbell Hanley,DEF,Hibernian FC,7930104,69
+292,12,Kieran Tierney,DEF,Celtic FC,8806229,56
+293,12,Mc,MID,Aston Villa FC,6483977,87
+294,12,Tyler Robert Fletcher,MID,Manchester United FC,4073121,2
+295,12,Lyndon John Dykes,FWD,Charlton Athletic FC,9558462,52
+296,12,Che Sac Everton Fred Adams,FWD,Torino FC,3249514,48
+297,12,Ryan Christie,MID,AFC Bournemouth,6866640,69
+298,12,Liam Patrick Kelly,GK,Rangers FC,4310940,3
+299,12,Jack William Hendry,DEF,Al Ettifaq FC,5576445,39
+300,12,Ross Cameron Stewart,FWD,Southampton FC,7444419,3
+301,12,John Francis Souttar,DEF,Rangers FC,5853548,24
+302,12,Dominic John Hyam,DEF,Wrexham AFC,10382979,4
+303,12,Ben Gannon Gannon-Doak,FWD,AFC Bournemouth,2918431,15
+304,12,George David Eric Hirst,FWD,Ipswich Town FC,3735776,10
+305,12,Lewis Ferguson,MID,Bologna FC,4125281,25
+306,12,Lawrence Shankland,FWD,Heart Of Midlothian FC,6102260,21
+307,12,Craig Sinclair Gordon,GK,Heart Of Midlothian FC,7764545,84
+308,12,Nathan Kenneth Patterson,DEF,Everton FC,4163580,27
+309,12,Mc,MID,Norwich City FC,3172623,59
+310,12,Anthony Ralston,DEF,Celtic FC,7071490,27
+311,12,Findlay Kenneth Curtis,FWD,Kilmarnock FC,9225476,4
+312,12,Mc,DEF,GNK Dinamo Zagreb,7865734,50
+313,13,Matthew Charles Turner,GK,New England Revolution,14542416,54
+314,13,Sergiño Gianni Dest,DEF,PSV Eindhoven,8579734,40
+315,13,Christopher Jeffrey Richards,DEF,Crystal Palace FC,12037981,37
+316,13,Tyler Shaan Adams,MID,AFC Bournemouth,5825715,55
+317,13,Antonee Robinson,DEF,Fulham FC,20000000,55
+318,13,Auston Levi-Jesaiah Trusty,DEF,Celtic FC,16713146,8
+319,13,Giovanni Alejandro Reyna,MID,Borussia Mönchengladbach,8280216,39
+320,13,Mc,MID,Juventus FC,12613979,67
+321,13,Ricardo Daniel Pepi,FWD,PSV Eindhoven,9859625,38
+322,13,Christian Mate Pulisic,FWD,AC Milan,19545672,87
+323,13,Brenden Russell Aaronson,FWD,Leeds United FC,17270325,58
+324,13,Miles Gordon Robinson,DEF,FC Cincinnatti,14955190,40
+325,13,Timothy Michael Ream,DEF,Charlotte FC,14318119,83
+326,13,Sebastian Matthew Berhalter,MID,Vancouver Whitecaps FC,7089945,14
+327,13,Cristian Roldan,MID,Seattle Sounders FC,19375174,47
+328,13,Alexander Michael Freeman,DEF,Villarreal CF,15796990,18
+329,13,Malik Leon Tillman,MID,Bayer 04 Leverkusen,18839613,31
+330,13,Maximilian Michael Arfsten,DEF,Columbus Crew,20801142,20
+331,13,Haji Amir Wright,FWD,Coventry City FC,18932920,20
+332,13,Folarin Jolaoluwa Balogun,FWD,AS Monaco,9428433,28
+333,13,Timothy Tarpeh Weah,FWD,Olympique Marseille,14384223,52
+334,13,Mc,DEF,Toulouse FC,20375657,29
+335,13,Joseph Michael Scally,DEF,Borussia Mönchengladbach,7739498,26
+336,13,Matthew Andrew Geary Freese,GK,New York City FC,5500913,16
+337,13,Christopher Keith Brady,GK,Chicago Fire FC,8667640,1
+338,13,Alejandro Zendejas,FWD,Club América,7172409,14
+339,14,Roberto Junior Fernandez,GK,Cerro Porteño,2877652,30
+340,14,Victor Gustavo Velazquez,DEF,Cerro Porteño,4446693,14
+341,14,Omar Federico Alderete,DEF,Sunderland AFC,5552187,37
+342,14,Juan Jose Caceres,DEF,FC Dynamo Moscow,2753622,18
+343,14,Fabián Cornelio Balbuena,DEF,Grêmio FBPA,3158476,47
+344,14,Júnior Osmar Ignacio Alonso,DEF,Atlético Mineiro,4302887,72
+345,14,Ramón Sosa,MID,SE Palmeiras,6694280,30
+346,14,Diego Alexander Gomez,MID,Brighton & Hove Albion FC,5416942,25
+347,14,Arnaldo Antonio Sanabria,FWD,US Cremonese,4145033,49
+348,14,Miguel Angel Almiron,MID,Atlanta United FC,7309787,77
+349,14,Mauricio Mauricio,MID,SE Palmeiras,4506196,4
+350,14,Orlando Daniel Gill,GK,CA San Lorenzo,7417578,7
+351,14,Jose Maria Canale,DEF,CA Lanús,7223563,2
+352,14,Adrián Andrés Cubas,MID,Vancouver Whitecaps FC,7408225,34
+353,14,Gustavo Raul Gomez,DEF,SE Palmeiras,2612757,90
+354,14,Damián Josue Bobadilla,MID,São Paulo FC,3318143,20
+355,14,Alejandro Sebastian Romero Gamarra,FWD,Al Ain FC,2986333,35
+356,14,Alex Adrian Arce,FWD,CS Independiente Rivadavia,5962068,16
+357,14,Julio Cesar Enciso,FWD,RC Strasbourg,3137207,33
+358,14,Braian Oscar Ojeda,MID,Orlando City SC,6658672,17
+359,14,Gabriel Avalos,FWD,CA Independiente,2585416,23
+360,14,Gastón Hernán Olveira,GK,Club Olimpia,7598750,1
+361,14,Matias Galarza,MID,Atlanta United FC,7556755,15
+362,14,Gustavo Ruben Caballero,MID,Portsmouth FC,6673780,2
+363,14,Isidro Miguel Pitta,FWD,Red Bull Bragantino,6753451,5
+364,14,Alexandro Maidana,DEF,CA Talleres,6775453,2
+365,15,Mathew David Ryan,GK,Levante UD,11038757,104
+366,15,Milos Degenek,DEF,APOEL FC,4396626,57
+367,15,Alessandro Circati,DEF,Parma,4020516,14
+368,15,Jacob Michael Italiano,DEF,Grazer AK,13228854,6
+369,15,Jordan Jacob Bos,DEF,Feyenoord Rotterdam,12059803,28
+370,15,Jason Kato Geria,DEF,Albirex Niigata,5001436,15
+371,15,Mathew Allan Leckie,FWD,Melbourne City FC,7039019,81
+372,15,Connor Isaac Metcalfe,MID,FC St. Pauli,4924405,37
+373,15,Mohamed Toure,FWD,Norwich City FC,4015299,11
+374,15,Ajdin Hrustic,FWD,SC Heracles Almelo,7267734,37
+375,15,Awer Bul Mabil,FWD,CD Castellón,6197716,38
+376,15,Paul David Izzo,GK,Randers FC,10991225,4
+377,15,Aiden Connor Oneill,MID,New York City FC,6273594,32
+378,15,Cameron Peter Devlin,MID,Heart Of Midlothian FC,3891729,5
+379,15,Kai Clifton Trewin,DEF,New York City FC,3984381,6
+380,15,Aziz Behich,DEF,Melbourne City FC,13719613,85
+381,15,Nestory Irankunda,FWD,Watford FC,8882946,16
+382,15,Patrick Thomas Beach,GK,Melbourne City FC,4262920,3
+383,15,Harry James Souttar,DEF,Leicester City FC,9285190,39
+384,15,Cristian Volpato,FWD,US Sassuolo,10687732,1
+385,15,Cameron Robert Burgess,DEF,Swansea City AFC,13759682,28
+386,15,Jackson Alexander Irvine,MID,FC St. Pauli,10441192,83
+387,15,Nishan Matthew Velupillay,FWD,Melbourne Victory FC,8454579,8
+388,15,Paul Michael Junior Okon-Engstler,MID,Sydney FC,12423510,7
+389,15,Lucas Herrington,DEF,Colorado Rapids,10954018,4
+390,15,Tete Owen Yengi,FWD,FC Machida Zelvia,9844660,2
+391,16,Fehmi Mert Gunok,GK,Fenerbahçe SK,9324082,37
+392,16,Mehmet Zeki Celik,DEF,AS Roma,10706129,62
+393,16,Merih Demiral,DEF,Al Ahli FC,7981888,64
+394,16,Ça ğ lar Soyuncu,DEF,Fenerbahçe SK,14812148,60
+395,16,Salih Ozcan,MID,Borussia Dortmund,7945587,31
+396,16,Orkun Kokcu,MID,Be ş ikta ş  JK,4331702,51
+397,16,Muhammed Kerem Akturkoglu,FWD,Fenerbahçe SK,5124305,53
+398,16,Arda Guler,FWD,Real Madrid C. F.,14261934,31
+399,16,Deniz Daniel Gul,FWD,FC Porto,4159630,9
+400,16,Hakan Calhanoglu,MID,FC Internazionale Milano,7234634,107
+401,16,Kenan Yildiz,FWD,Juventus FC,9378998,29
+402,16,Altay Bayindir,GK,Manchester United FC,13038193,12
+403,16,Evren Eren Elmali,DEF,Galatasaray SK,6579537,23
+404,16,Abdülker Bardakci,DEF,Galatasaray SK,4748975,28
+405,16,Ozan Muhammed Kabak,DEF,TSG Hoffenheim,4253329,30
+406,16,Ismailİsma Yuksek,MID,Fenerbahçe SK,8513692,33
+407,16,Can İrfan Kahveci,FWD,Kasımpa ş a SK,11191281,47
+408,16,Mert Muldur,DEF,Fenerbahçe SK,12772005,46
+409,16,Yunus Akgun,FWD,Galatasaray SK,13083435,20
+410,16,Ferdi Erenay Kadioglu,DEF,Brighton & Hove Albion FC,5422054,31
+411,16,Barı ş Alper Yilmaz,FWD,Galatasaray SK,6205279,36
+412,16,Kaan Ayhan,MID,Galatasaray SK,7006645,73
+413,16,Ugurcan Cakir,GK,Galatasaray SK,13027312,40
+414,16,Oguz Aydin,FWD,Fenerbahçe SK,8529183,11
+415,16,Samet Akaydin,DEF,Çaykur Rizespor,12511237,19
+416,16,Can Yılmaz Uzun,FWD,Eintracht Frankfurt,6624079,6
+417,17,Manuel Peter Neuer,GK,FC Bayern München,32147561,125
+418,17,Antonio Ruediger,DEF,Real Madrid C. F.,16677344,83
+419,17,Waldemar Anton,DEF,Borussia Dortmund,24348322,14
+420,17,Jonathan Glao Tah,DEF,FC Bayern München,9145023,48
+421,17,Aleksandar Pavlovic,MID,FC Bayern München,25114799,12
+422,17,Joshua Walter Kimmich,DEF,FC Bayern München,18288405,111
+423,17,Kai Lukas Havertz,FWD,Arsenal FC,16688176,59
+424,17,Leon Christoph Goretzka,MID,FC Bayern München,22753887,71
+425,17,Jamie Jaleel Jeremy Leweling,MID,VfB Stuttgart,19128984,5
+426,17,Jamal Musiala,MID,FC Bayern München,12628325,43
+427,17,Nick Woltemade,FWD,Newcastle United FC,12636577,11
+428,17,Oliver Baumann,GK,TSG Hoffenheim,14956406,13
+429,17,Pascal Alexander GROß GROß Gross,MID,Brighton & Hove Albion FC,23591065,18
+430,17,Maximilian Beier,FWD,Borussia Dortmund,15389729,9
+431,17,Nico Cédric Schlotterbeck,DEF,Borussia Dortmund,33078566,28
+432,17,Angelo Nicolas Stiller,MID,VfB Stuttgart,23309486,8
+433,17,Florian Richard Wirtz,MID,Liverpool FC,13538288,42
+434,17,Nathaniel Christopher Brown,DEF,Eintracht Frankfurt,17675938,6
+435,17,Leroy Aziz Sane,MID,Galatasaray SK,33498406,77
+436,17,Nadiem Amiri,MID,1. FSV Mainz 05,18193520,11
+437,17,Alexander Nuebel,GK,VfB Stuttgart,21973220,3
+438,17,David Raum,DEF,RB Leipzig,13765221,38
+439,17,Felix Kalu Nmecha,MID,Borussia Dortmund,18742525,9
+440,17,Malick Thiaw,DEF,Newcastle United FC,11634569,5
+441,17,Forzan Assan Ouedraogo,MID,RB Leipzig,12995396,1
+442,17,Deniz Undav,FWD,VfB Stuttgart,17791389,10
+443,18,Eloy Victor Room,GK,Miami FC,4633851,73
+444,18,Shurandy Ruggerio Sambo,DEF,Sparta Rotterdam,2730360,8
+445,18,Juriën Godfried Juan Gaari,DEF,Abha Club,3758886,60
+446,18,Róshón Felix Romar Jordan Van Eijma,DEF,RKC Waalwijk,4764373,28
+447,18,Sherel Constancio Floranus,DEF,PEC Zwolle,3164532,28
+448,18,Godfried Roemeratoe,MID,RKC Waalwijk,2609115,29
+449,18,Juninho Gracielo Bacuna,MID,FC Volendam,2226976,51
+450,18,Livano Shyron Liomar Comenencia,MID,FC Zürich,1826712,21
+451,18,Jürgen Leonardo Locadia,FWD,Miami FC,1588904,14
+452,18,Leandro Jones Johan Bacuna,MID,I ğ dır FK,2867974,73
+453,18,Jeremy Cornelis Jacobus Antonisse,FWD,AE Kifisia FC,2425074,28
+454,18,Juniffer Naigelino Hansen,FWD,Middlesbrough FC,2705885,7
+455,18,Tyrese Yurvencey Noslin,FWD,SC Telstar,5269789,7
+456,18,Kenji Joël Gorre,FWD,Maccabi Haifa FC,4598028,38
+457,18,Jainel Archenir Martha,MID,Rotherham United FC,4611989,9
+458,18,Jearl Erwin Margaritha,FWD,SK Beveren,1720157,23
+459,18,Brandley Mack-Olien Kuwas,FWD,FC Volendam,5495404,36
+460,18,Armando Maria Obispo,DEF,PSV Eindhoven,2685007,7
+461,18,Gervane Zjandric Adonnis Kastaneer,FWD,Terengganu FC,4478971,30
+462,18,Joshua Benjamin Brenet,DEF,Kayserispor,3936832,18
+463,18,Tahith Jose Girigorio Djorkaef Chong,MID,Shefield United FC,2283885,7
+464,18,Kevin Antonio Felida,MID,FC Den Bosch,2573171,19
+465,18,Riechedly Guillermo Bazoer,DEF,Konyaspor,2232022,6
+466,18,Deveron Lenny Fonville,DEF,NEC Nijmegen,5239519,3
+467,18,Tyrick Jeremy Bodak,GK,SC Telstar,2490500,4
+468,18,Trevor Irving Doornbusch,GK,VVV Venlo,5650213,8
+469,19,Yahia Fofana,GK,Çaykur Rizespor,4895387,37
+470,19,Ousmane Diomande,DEF,Sporting CP,3062182,16
+471,19,N'clomande Ghislain Konan,DEF,Gil Vicente FC,10752666,55
+472,19,Jean Michael Seri,MID,NK Maribor,9951605,65
+473,19,Wilfried Stephane Singo,DEF,Galatasaray SK,5474089,36
+474,19,Seko Mohamed Fofana,MID,FC Porto,3293902,33
+475,19,Odilon Dorgeless Kossounou,DEF,Atalanta Bergamo,10688600,37
+476,19,Franck Yannick Kessie,MID,Al Ahli FC,6795310,105
+477,19,Ange-Yoan Laurent Bonny,FWD,FC Internazionale Milano,7765721,2
+478,19,Simon Adingra,FWD,AS Monaco,10606173,29
+479,19,Yan Diomande,FWD,RB Leipzig,10224624,11
+480,19,Elye Delmas Wahi,FWD,OGC Nice,5936106,3
+481,19,Christopher Tea Domoraud Operi,DEF,Ba ş ak ş ehir FK,8266947,12
+482,19,Oumar Diakite,FWD,Cercle Brugge,6984485,29
+483,19,Amad Diallo,FWD,Manchester United FC,7054838,20
+484,19,Mohamed Kone,GK,Sporting Charleroi,7399771,0
+485,19,Guela Maho-Lewis Doue,DEF,RC Strasbourg,3868799,21
+486,19,Ibrahim Sangare,MID,Nottingham Forest FC,4134342,56
+487,19,Nicolas Pepe,FWD,Villarreal CF,9416217,57
+488,19,Emmanuel Elysee Djedje Agbadou,DEF,Be ş ikta ş  JK,3641636,22
+489,19,Obite Evan Ndicka,DEF,AS Roma,10399853,29
+490,19,Evann Ludovic Vidjannagni Guessand,FWD,Crystal Palace FC,10092901,21
+491,19,Alban-Marc Lafont,GK,Panathinaikos FC,6776133,4
+492,19,Bazoumana Toure,FWD,TSG Hoffenheim,9309563,7
+493,19,Parfait Guiagon,MID,Sporting Charleroi,10055647,5
+494,19,Christ Ravynel Inao Oulai,MID,Trabzonspor,7849507,10
+495,20,Hernán Ismael Galindez,GK,CA Huracán,12749802,36
+496,20,Félix Eduardo Torres,DEF,SC Internacional,13319015,49
+497,20,Piero Martin Hincapie,DEF,Arsenal FC,7459595,53
+498,20,Joel Leandro Ordonez,DEF,Club Brugge,10213280,18
+499,20,Jordy Jose Alcivar,MID,Independiente Del Valle,5599619,11
+500,20,Willian Joel Pacho,DEF,Paris Saint-Germain,14162504,35
+501,20,Pervis Josue Estupinan,DEF,AC Milan,12184475,54
+502,20,Anthony Lenin Valencia,MID,Royal Antwerp FC,10507076,3
+503,20,John Yeboah,FWD,Venezia FC,6316718,23
+504,20,Ray Kendry Paez,MID,CA River Plate,9973651,26
+505,20,Kevin Jose Rodriguez,FWD,Royale Union Saint-Gilloise,6049189,32
+506,20,Wellington Moisés Ramirez,GK,AE Kifisia FC,13662114,7
+507,20,Enner Remberto Valencia,FWD,CF Pachuca,10214695,106
+508,20,Alan Steve Minda,MID,Atlético Mineiro,10962005,21
+509,20,Pedro Jeampierre Vite,MID,Pumas UNAM,13002779,18
+510,20,Jordy Josue Caicedo,FWD,CA Huracán,12750109,20
+511,20,Ángelo Smit Preciado,DEF,Atlético Mineiro,5533861,57
+512,20,Denil Daniel Castillo,MID,FC Midtjylland,4413076,5
+513,20,Gonzalo Jordy Plata,FWD,CR Flamengo,4381410,51
+514,20,Nilson David Angulo,FWD,Sunderland AFC,8661312,15
+515,20,Alan Steven Franco,MID,Atlético Mineiro,6237924,59
+516,20,Gonzalo Roberto Valle,GK,LDU Quito,14382507,4
+517,20,Moisés Isaac Caicedo,MID,Chelsea FC,14347943,62
+518,20,Jeremy Alberto Arevalo,FWD,VfB Stuttgart,15938236,4
+519,20,Jackson Gabriel Porozo,DEF,Club Tijuana,11733933,10
+520,20,Yaimar Abel Medina,DEF,KRC Genk,16480262,6
+521,21,Bart Verbruggen,GK,Brighton & Hove Albion FC,13314152,30
+522,21,Lutsharel Emiliano Geertruida,DEF,Sunderland AFC,12600926,21
+523,21,Marten Elco De Roon,MID,Atalanta Bergamo,40267012,43
+524,21,Virgil Van Dijk,DEF,Liverpool FC,17170290,93
+525,21,Nathan Benjamin Ake,DEF,Manchester City FC,35655506,60
+526,21,Paul Jan-Paul Van Hecke,DEF,Brighton & Hove Albion FC,40926235,13
+527,21,Justin Dean Kluivert,MID,AFC Bournemouth,40295335,12
+528,21,Ryan Jiro Gravenberch,MID,Liverpool FC,34320899,28
+529,21,Wout François Maria Weghorst,FWD,AFC Ajax,30227225,52
+530,21,Memphis Depay,FWD,SC Corinthians,37252813,110
+531,21,Cody Mathès Gakpo,FWD,Liverpool FC,37972659,51
+532,21,Mats Henrik Berne Wieffer,DEF,Brighton & Hove Albion FC,16690036,15
+533,21,Robin Gerardus Petrus Roefs,GK,Sunderland AFC,21851254,1
+534,21,Tijjani Martinus Jan Reijnders,MID,Manchester City FC,23225134,33
+535,21,Micky Van De Ven,DEF,Tottenham Hotspur FC,14572023,22
+536,21,Guus Berend Til,MID,PSV Eindhoven,33105705,7
+537,21,Noa Noëll Lang,FWD,Galatasaray SK,32583821,15
+538,21,Donyell Malen,FWD,AS Roma,18569314,54
+539,21,Brian Ebenezer Adjei Brobbey,FWD,Sunderland AFC,19360579,13
+540,21,Teun Koopmeiners,MID,Juventus FC,29091311,29
+541,21,Frenkie De Jong,MID,FC Barcelona,21270615,67
+542,21,Denzel Justus Morris Dumfries,DEF,FC Internazionale Milano,25015773,73
+543,21,Mark Maria Hubertus Flekken,GK,Bayer 04 Leverkusen,36170987,12
+544,21,Crysencio Jilbert Sylverio Cir Summerville,FWD,West Ham United FC,30700705,3
+545,21,Jorrel Evan Hato,DEF,Chelsea FC,16850514,8
+546,21,Quinten Ryan Crispito Timber,MID,Olympique Marseille,10680971,12
+547,22,Zion Suzuki,GK,Parma,5842072,26
+548,22,Yukinari Sugawara,DEF,SV Werder Bremen,19870917,23
+549,22,Shogo Taniguchi,DEF,Sint-Truiden VV,19427047,40
+550,22,Kou Itakura,DEF,AFC Ajax,18098534,41
+551,22,Yuto Nagatomo,DEF,FC Tokyo,13043622,145
+552,22,Shuto Machino,FWD,Borussia Mönchengladbach,5469993,14
+553,22,Ao Tanaka,MID,Leeds United FC,12421736,38
+554,22,Takefusa Kubo,MID,Real Sociedad,13093161,50
+555,22,Keisuke Goto,FWD,Sint-Truiden VV,8125246,4
+556,22,Ritsu Doan,MID,Eintracht Frankfurt,15770093,67
+557,22,Daizen Maeda,MID,Celtic FC,5522882,29
+558,22,Keisuke Osako,GK,Sanfrecce Hiroshima,20391605,11
+559,22,Keito Nakamura,MID,Stade Reims,5381950,27
+560,22,Junya Ito,MID,KRC Genk,16878674,70
+561,22,Daichi Kamada,MID,Crystal Palace FC,14284189,50
+562,22,Tsuyoshi Watanabe,DEF,Feyenoord Rotterdam,16500933,13
+563,22,Yuito Suzuki,MID,SC Freiburg,13195381,6
+564,22,Ayase Ueda,FWD,Feyenoord Rotterdam,19432372,41
+565,22,Koki Ogawa,FWD,NEC Nijmegen,19630632,16
+566,22,Ayumu Seko,DEF,Le Havre AC,17433729,14
+567,22,Hiroki Ito,DEF,FC Bayern München,7336945,26
+568,22,Takehiro Tomiyasu,DEF,AFC Ajax,6716143,44
+569,22,Tomoki Hayakawa,GK,Kashima Antlers,14694496,4
+570,22,Kaishu Sano,MID,1. FSV Mainz 05,6318711,15
+571,22,Junnosuke Suzuki,DEF,FC København,7496721,6
+572,22,Kento Shiogai,FWD,VfL Wolfsburg,19722696,3
+573,23,Jacob Mikael Widell Zetterstrom,GK,Derby County FC,12013148,3
+574,23,Gustaf Johan Lagerbielke,DEF,SC Braga,7521057,12
+575,23,Victor Jörgen Lindelof,DEF,Aston Villa FC,7447445,77
+576,23,Isak Malcolm Kwaku Hien,DEF,Atalanta Bergamo,12808430,30
+577,23,Gabriel Johan Gudmundsson,DEF,Leeds United FC,8459418,25
+578,23,Herman Nils Johansson,DEF,FC Dallas,12799567,3
+579,23,Lucas Erik Holger Bergvall,MID,Tottenham Hotspur FC,7577521,11
+580,23,Daniel Jonathan Svensson,DEF,Borussia Dortmund,10000217,14
+581,23,Alexander Isak,FWD,Liverpool FC,12190941,59
+582,23,Erik Benjamin Nygren,MID,Celtic FC,6280395,12
+583,23,Anthony David Junior Elanga,FWD,Newcastle United FC,10166985,31
+584,23,Tobias Viktor Johansson,GK,Stoke City FC,10839930,12
+585,23,Ken Sema,MID,Pafos FC,4617967,32
+586,23,Hjalmar Ekdal,DEF,Burnley FC,12495840,13
+587,23,Carl Anders Theodor Starfelt,DEF,RC Celta Vigo,14300073,18
+588,23,Jesper Kewe Karlstrom,MID,Udinese,12351728,25
+589,23,Viktor Einar Gyokeres,FWD,Arsenal FC,5297607,34
+590,23,Yasin Ayari,MID,Brighton & Hove Albion FC,4182582,22
+591,23,Mattias Olof Svanberg,MID,VfL Wolfsburg,10292073,41
+592,23,Eric Anders Smith,DEF,FC St. Pauli,4737032,2
+593,23,Alexander Olof Bernhardsson,DEF,Holstein Kiel,14660997,12
+594,23,Besfort Zeneli,MID,Royale Union Saint-Gilloise,5357089,8
+595,23,Bo Kristoffer Nordfeldt,GK,AIK Stockholm,15487971,22
+596,23,Elliot Karl Stroud,DEF,Mjällby AIF,8606899,2
+597,23,Håkan Gustaf Nilsson,FWD,Club Brugge,5074323,9
+598,23,Taha Abdi Ali,FWD,Malmö FF,13824589,2
+599,24,Abdelmouhib Chamakh,GK,Club Africain,7367319,4
+600,24,Ali Abdi,DEF,OGC Nice,9019352,47
+601,24,Montassar Omar Talbi,DEF,FC Lorient,3724174,65
+602,24,Omar Rekik,DEF,NK Maribor,5201154,7
+603,24,Adam Arous,DEF,Kasımpa ş a SK,3526822,2
+604,24,Dylan Daniel Mahmoud Bronn,DEF,Servette FC,2813957,52
+605,24,Mohamed Elyes Achouri,FWD,FC København,3579382,31
+606,24,Elias Saad,FWD,Hannover 96,7565085,16
+607,24,Hazem Mastouri,FWD,FC Dynamo Makhachkala,7299937,19
+608,24,Hannibal Mejbri,MID,Burnley FC,3289814,46
+609,24,Ismael Seifallah Gharbi,MID,FC Augsburg,6819817,18
+610,24,Ahmed Mortadha Ben Ouanes,DEF,Kasımpa ş a SK,5509447,18
+611,24,Rani Khedira,MID,1. FC Union Berlin,6209063,4
+612,24,Khalil Ayari,MID,Paris Saint-Germain,8203906,4
+613,24,Mohamed Hadj Mahmoud,MID,FC Lugano,4322938,10
+614,24,Aymen Dahmen,GK,CS Sfaxien,4157324,37
+615,24,Ellyes Joris Skhiri,MID,Eintracht Frankfurt,3996117,84
+616,24,Rayan Elloumi,FWD,Vancouver Whitecaps FC,2548985,4
+617,24,Firas Chaouat,FWD,Club Africain,7268763,31
+618,24,Yan Valery,DEF,BSC Young Boys,5615148,23
+619,24,Mohamed Amine Ben Hmida,DEF,Espérance De Tunisie,5962452,14
+620,24,Sabri Ben Hessen,GK,Étoile Du Sahel,3941856,1
+621,24,Moutaz Neffati,DEF,IFK Norrköping FK,4585304,5
+622,24,Raed Chikhaoui,DEF,US Monastir,4452977,0
+623,24,Anis Slimane,MID,Norwich City FC,2680368,41
+624,24,Sebastian Tounekti,MID,Celtic FC,3699570,13
+625,25,Thibaut Nicolas Courtois,GK,Real Madrid C. F.,37022500,110
+626,25,Zeno Koen Debast,DEF,Sporting CP,19432223,26
+627,25,Arthur Nicolas Theate,DEF,Eintracht Frankfurt,35104832,33
+628,25,Brandon Erik Mechele,DEF,Club Brugge,33683631,10
+629,25,Maxim Peter De Cuyper,DEF,Brighton & Hove Albion FC,10770288,20
+630,25,Axel Laurent Witsel,MID,Girona FC,36911237,138
+631,25,Kevin De Bruyne,MID,SSC Napoli,31297040,120
+632,25,Youri Marion Tielemans,MID,Aston Villa FC,19479392,86
+633,25,Romelu Lukaku,FWD,SSC Napoli,10505775,127
+634,25,Leandro Trossard,FWD,Arsenal FC,12821281,52
+635,25,Jeremy Baffour Doku,FWD,Manchester City FC,18879570,44
+636,25,Senne Lammens,GK,Manchester United FC,14825257,2
+637,25,Mike Louis Penders,GK,RC Strasbourg,22924448,0
+638,25,Dodi Lukebakio,FWD,SL Benfica,26818771,30
+639,25,Thomas Andre Meunier,DEF,Lille OSC,28954891,81
+640,25,Koni De Winter,DEF,AC Milan,9773288,8
+641,25,Charles Marc De Ketelaere,FWD,Atalanta Bergamo,19898799,31
+642,25,Joaquin Ronny Seys,DEF,Club Brugge,27635200,5
+643,25,Diego Manuel Moreira,MID,RC Strasbourg,24580742,3
+644,25,Hans Vanaken,MID,Club Brugge,22772895,35
+645,25,Timothy Castagne,DEF,Fulham FC,14751915,64
+646,25,Alexis Jesse Saelemaekers,MID,AC Milan,25194117,24
+647,25,Nicolas Thierry Raskin,MID,Rangers FC,34430929,14
+648,25,Amadou Ba Onana,MID,Aston Villa FC,27121973,30
+649,25,Nathan Ngoy,DEF,Lille OSC,19245257,5
+650,25,Matias Fernandez-Pardo,FWD,Lille OSC,17998240,3
+651,26,Elsayed Mohamed Mohamed Elshenawy,GK,Al Ahly FC,3226767,77
+652,26,Ahmed Ibrahim Yasser,DEF,Al Ahly FC,4084367,19
+653,26,Hany Gamal Mohamed Hany,DEF,Al Ahly FC,9185220,44
+654,26,Abdelmegeed Abdelsalam Hossam Abdelmaguid,DEF,Zamalek SC,8500477,13
+655,26,Abdelaziz Moustafa Ramy Rabia,DEF,Al Ain FC,9869546,48
+656,26,Abdelmoneim Elsayed Mohamed,DEF,OGC Nice,8549809,36
+657,26,Ahmed Ibrahim Trezeguet,FWD,Al Ahly FC,7946604,96
+658,26,Ashour Metwaly Emam,MID,Al Ahly FC,4161395,30
+659,26,Mohamed Abdelkarim Hamza,FWD,FC Barcelona,9057086,3
+660,26,Hamed Mahrous Mohamed Salah,FWD,Liverpool FC,2991024,117
+661,26,Mohamed Zaky Mostafa Zico,MID,Pyramids FC,10781673,3
+662,26,Yousry Fouad Haissem Hassan,FWD,Real Oviedo,8284369,4
+663,26,Mohamed Aboelfetouh Ahmed Fatouh,DEF,Zamalek SC,10458281,40
+664,26,Fathy Abdelhalim Hamdy Fathy,MID,Al Wakrah SC,9580178,65
+665,26,Hafez Ramadan Karim Hafez,DEF,Pyramids FC,7314242,10
+666,26,Mohamed Soliman Mahdy Soliman,GK,Zamalek SC,6756808,0
+667,26,Mostafa Ahmed Mohanad Lashin,MID,Pyramids FC,3736043,24
+668,26,Aly Elmahdy Nabil,MID,Al Najmah SC,6807358,12
+669,26,Attia Fahim Marawan Attia,MID,Al Ahly FC,5436592,36
+670,26,Adel Aly Mohamed Ibrahim,FWD,FC Nordsjælland,7688182,25
+671,26,Saber Abdelmohsen Mahmoud,MID,ZED FC,9717210,15
+672,26,Mohamed Abdelsalam Omar,FWD,Manchester City FC,3005275,51
+673,26,Abdelaziz Mohame Mostafa,GK,Al Ahly FC,7386810,11
+674,26,Abdelghaffar Abdel Tarek Alaa,DEF,ZED FC,6326828,3
+675,26,Mostafa Mohamed Zizo,FWD,Al Ahly FC,4620676,65
+676,26,Alaaeldin Soliman Mohamed Alaa,GK,El Gouna FC,3110003,0
+677,27,Ali Reza Beiranvand,GK,Tractor Sazi Tabriz FC,13579782,88
+678,27,Saleh Hardani,DEF,Esteghlal Tehran FC,6250097,18
+679,27,Ehsan Hajisafi,DEF,Sepahan SC,17606596,147
+680,27,Shojae Khalilzadeh,DEF,Tractor Sazi Tabriz FC,13341409,59
+681,27,Milad Mohammadi,DEF,Persepolis FC,10538861,78
+682,27,Saeid Ezatolahi,MID,Shabab Al Ahli Club,12163085,85
+683,27,Alireza Jahanbakhsh,MID,FCV Dender EH,10308691,99
+684,27,Mohammad Mohebbi,MID,FC Rostov,10174268,38
+685,27,Mehdi Taremi,FWD,Olympiacos FC,8899392,107
+686,27,Mehdi Ghayedi,FWD,Al Nasr SC,18599764,31
+687,27,Ali Alipour,FWD,Persepolis FC,10423449,15
+688,27,Seyedpayam Niazmand,GK,Persepolis FC,16074990,15
+689,27,Mohammadhossein Kanani,DEF,Persepolis FC,13284748,65
+690,27,Seyed Saman Ghoddos,MID,Al Ittihad Kalba SCC,9307706,69
+691,27,Roozbeh Cheshmi,MID,Esteghlal Tehran FC,14425798,41
+692,27,Mahdi Torabi,MID,Tractor Sazi Tabriz FC,17029655,52
+693,27,Arya Yousefi,DEF,Sepahan SC,11498184,15
+694,27,Amirhossein Hosseinzadeh,FWD,Tractor Sazi Tabriz FC,14618632,19
+695,27,Ali Nemati,DEF,Foolad Khuzestan FC,9376918,19
+696,27,Shahriyar Moghanloo,FWD,Al Ittihad Kalba SCC,7067388,22
+697,27,Mohammad Ghorbani,MID,Al Wahda SC,6631404,16
+698,27,Seyedhossein Hosseini,GK,Sepahan SC,16831013,14
+699,27,Ramin Rezaeian,DEF,Foolad Khuzestan FC,9879173,75
+700,27,Dennis Dargahi,FWD,Standard Liège,7046509,0
+701,27,Danial Iri,DEF,Malavan Anzali FC,15240914,0
+702,27,Amirmohammad Razaghinia,MID,Esteghlal Tehran FC,15498009,4
+703,28,Maxime Teremoana Crocombe,GK,Millwall FC,1581208,25
+704,28,Timothy John Payne,DEF,Wellington Phoenix FC,4841933,53
+705,28,Francis De Vries,DEF,Auckland FC,4590846,20
+706,28,Tyler Grant Bindon,DEF,Shefield United FC,3950105,26
+707,28,Michael Joseph Boxall,DEF,Minnesota United FC,1447262,65
+708,28,Joe Zen Robert Bell,MID,Viking Stavanger,1887496,33
+709,28,Logan Tipene Rogerson,FWD,Auckland FC,3577102,18
+710,28,Marko Seufatu Nikola Stamenic,MID,Swansea City AFC,2943837,41
+711,28,Christopher Grant Wood,FWD,Nottingham Forest FC,3909412,91
+712,28,Sarpreet Singh,MID,Wellington Phoenix FC,2576572,29
+713,28,Elijah Henry Just,MID,Motherwell FC,2983079,45
+714,28,Alexander Noah Paulsen,GK,Lechia Gda ń sk,4563711,8
+715,28,Liberato Gianpaolo Cacace,DEF,Wrexham AFC,3490510,38
+716,28,Alex Arthur Rufer,MID,Wellington Phoenix FC,2049012,26
+717,28,Nando Zen Pijnaker,DEF,Auckland FC,2356563,26
+718,28,Finn Surman,DEF,Portland Timbers,2447716,20
+719,28,Kosta Barbarouses,FWD,WS Wanderers FC,2514216,76
+720,28,Benjamin Peter Waine,FWD,Port Vale FC,4456328,31
+721,28,Benjamin Craig Old,MID,AS Saint-Etienne,2006947,25
+722,28,Mc,MID,Silkeborg IF,3891480,34
+723,28,Jesse Carmichael Randall,FWD,Auckland FC,3611908,12
+724,28,Michael Cornelis Woud,GK,Auckland FC,4983768,7
+725,28,Ryan Jared Thomas,MID,PEC Zwolle,1727091,26
+726,28,Callan Rennie Elliot,DEF,Auckland FC,2460345,12
+727,28,Lachlan Ryan Bayliss,MID,Newcastle United Jets FC,4990733,4
+728,28,Thomas Jefferson Smith,DEF,Braintree Town FC,5162696,57
+729,29,David Raya,GK,Arsenal FC,103314131,13
+730,29,Marc Pubill,DEF,Atlético De Madrid,63571647,2
+731,29,Alejandro Grimaldo,DEF,Bayer 04 Leverkusen,105387534,14
+732,29,Eric Garcia,DEF,FC Barcelona,99421304,21
+733,29,Marcos Llorente,DEF,Atlético De Madrid,74918931,25
+734,29,Mikel Merino,MID,Arsenal FC,101203363,44
+735,29,Ferran Torres,FWD,FC Barcelona,75804430,58
+736,29,Fabian Ruiz,MID,Paris Saint-Germain,58551285,43
+737,29,Pablo Gavi,MID,FC Barcelona,33564565,31
+738,29,Daniel Olmo,FWD,FC Barcelona,118381173,51
+739,29,Yeremy Jesús Pino,FWD,Crystal Palace FC,52741595,23
+740,29,Pedro Antonio Porro,DEF,Tottenham Hotspur FC,90689035,18
+741,29,Joan Garcia,GK,FC Barcelona,55340404,2
+742,29,Aymeric Laporte,DEF,Athletic Club,74740097,47
+743,29,Alejandro Baena,MID,Atlético De Madrid,103201022,17
+744,29,Rodrigo Rodri,MID,Manchester City FC,64140986,63
+745,29,Nicholas Williams,FWD,Athletic Club,55314594,31
+746,29,Martin Zubimendi,MID,Arsenal FC,75607454,26
+747,29,Lamine Yamal Yamal,FWD,FC Barcelona,63098417,26
+748,29,Pedro Pedri,MID,FC Barcelona,40425796,42
+749,29,Mikel Oyarzabal,FWD,Real Sociedad,109224504,54
+750,29,Pau Cubarsi,DEF,FC Barcelona,65912987,13
+751,29,Unai Simon,GK,Athletic Club,108528435,59
+752,29,Marc Cucurella,DEF,Chelsea FC,84859270,25
+753,29,Victor Munoz,FWD,CA Osasuna,109657580,2
+754,29,Borja Iglesias,FWD,RC Celta Vigo,51199903,8
+755,30,José Vozinha,GK,GD Chaves,6093165,91
+756,30,Ianique Stopira,DEF,SCU Torreense,4000564,61
+757,30,Alberto Diney,DEF,Al Bataeh Club,3683541,33
+758,30,Carlos Pico Lopes,DEF,Shamrock Rovers FC,3354880,46
+759,30,Evans Logan Costa,DEF,Villarreal CF,1980703,28
+760,30,Lenini Kevin Pina,MID,FC Krasnodar,2359912,32
+761,30,Eduardo Jovane,MID,CF Estrela Da Amadora,2818590,30
+762,30,Paulo Joao Paulo,MID,FC FCSB,6534349,42
+763,30,BENCHIMOLGilson Gilson,FWD,FC Akron Tolyatti,4816424,21
+764,30,Gregory Jamiro Monteiro,MID,PEC Zwolle,6722740,56
+765,30,RODRIGUESGarry Garry,MID,Apollon Limassol,1851678,61
+766,30,Salomão Marcio,GK,PFC Montana,3088031,11
+767,30,CABRALSidny Sidny Lopes,DEF,SL Benfica,5929945,12
+768,30,Deroy Deroy Duarte,MID,PFC Ludogorets Razgrad,2124154,34
+769,30,Michael Laros Duarte,MID,Puskás Akadémia FC,1740475,21
+770,30,SEMEDOJair Yannick,MID,SC Farense,3606772,11
+771,30,Johnson Willy,MID,AC Omonia,6596233,39
+772,30,Emanuel Telmo,MID,Vitória SC,2210275,17
+773,30,Dailon Dailon Livramento,FWD,Casa Pia AC,2550605,23
+774,30,Isaac Ryan,FWD,I ğ dır FK,3205680,99
+775,30,Miguel Nuno Da Costa,MID,Ba ş ak ş ehir FK,4137438,10
+776,30,MOREIRASteven Steven,DEF,Columbus Crew,3956667,21
+777,30,Joaquim Cj Dos Santos,GK,San Diego FC,2840276,1
+778,30,Fabricio Wagner Pina,DEF,Trabzonspor,1897398,14
+779,30,PIRESKelvin Kelvin,DEF,SJK,4525251,6
+780,30,Sandro Helio Varela,MID,Maccabi Tel-Aviv FC,2700705,21
+781,31,Dhahi Nawaf Alaqidi,GK,Al Nassr FC,3121699,24
+782,31,Hassan Ali Majrashi,DEF,Al Ahli FC,5720290,21
+783,31,Mohammed Ali Lajami,DEF,Al Hilal SC,5037792,25
+784,31,Ali Abdulelah Alamri,DEF,Al Nassr FC,4371885,45
+785,31,Mohammed Hassan Altambakti,DEF,Al Hilal SC,4842620,55
+786,31,Essa Nasser Aldawsari,MID,Al Hilal SC,6510709,48
+787,31,Fahad Musab Aljuwayr,MID,Al Qadsiah FC,3650357,38
+788,31,Yahya Aiman Yahya,FWD,Al Nassr FC,5249832,26
+789,31,Tariq Feras,FWD,Al Ahli FC,4633539,73
+790,31,Mohammed Salem Aldawsari,FWD,Al Hilal SC,5551491,112
+791,31,Khalid Saleh,FWD,Al Ittihad,5756198,59
+792,31,Abdullah Saud Abdulhamid,DEF,RC Lens,5163218,56
+793,31,Meshari Nawaf Bu Washl,DEF,Al Nassr FC,6459488,28
+794,31,Kadish Hassan,DEF,Al Ittihad,3657719,21
+795,31,Mohammed Abdullah Alkhaibari,MID,Al Nassr FC,4189131,43
+796,31,Mubarak Ziyad Aljohani,MID,Al Ahli FC,5104225,12
+797,31,Essa Khalid Alghannam,FWD,Al Ettifaq FC,7060029,7
+798,31,Mohsen Ala Alhajji,MID,Neom SC,4250106,4
+799,31,Abdulrahman Abdullah Alhamddan,FWD,Al Nassr FC,6888825,53
+800,31,Ahmed Sultan Mandash,FWD,Al Hilal SC,5733150,7
+801,31,Khalil Mohammed Alowais,GK,Al Ula Saudi FC,2502052,66
+802,31,Ali Ahmed,GK,Al Qadsiah FC,5032883,9
+803,31,Ibrahim Mohamed,MID,Al Hilal SC,2525082,80
+804,31,Saad Moteb Alharbi,DEF,Al Hilal SC,4634772,14
+805,31,Abdullatif Jehad Thikri,DEF,Al Qadsiah FC,4721565,8
+806,31,Waheeb Mohammed Abu Alshamat,DEF,Al Qadsiah FC,7172554,9
+807,32,Sergio Ramón Rochet,GK,SC Internacional,11951490,35
+808,32,José María Gimenez,DEF,Atlético De Madrid,11897295,99
+809,32,Sebastián Enzo Caceres,DEF,Club América,6541600,24
+810,32,Ronald Federico Araujo,DEF,FC Barcelona,17869812,27
+811,32,Manuel Ugarte,MID,Manchester United FC,7236734,36
+812,32,Rodrigo Bentancur,MID,Tottenham Hotspur FC,6218107,74
+813,32,Diego Nicolás De La Cruz,MID,CR Flamengo,20939811,35
+814,32,Federico Santiago Valverde,MID,Real Madrid C. F.,15930790,74
+815,32,Darwin Gabriel Nunez,FWD,Al Hilal SC,20956263,39
+816,32,Giorgian Daniel De Arrascaeta,MID,CR Flamengo,8415319,59
+817,32,Facundo Pellistri,FWD,Panathinaikos FC,7858419,39
+818,32,Santiago Andres Mele,GK,CF Monterrey,13696698,8
+819,32,Guillermo Varela,DEF,CR Flamengo,11888803,28
+820,32,Agustin Canobbio,MID,Fluminense FC,9377324,15
+821,32,Emiliano Martinez,MID,SE Palmeiras,28000000,10
+822,32,Mathías Olivera,DEF,SSC Napoli,21369652,36
+823,32,Matías Nicolas Vina,DEF,CA River Plate,11419482,44
+824,32,Paul Brian Rodriguez,FWD,Club América,16680069,34
+825,32,Rodrigo Sebastian Aguirre,FWD,Tigres UANL,10296030,11
+826,32,Maximiliano Javier Araujo,MID,Sporting CP,15118771,29
+827,32,Federico Sebastian Vinas,FWD,Real Oviedo,11769867,12
+828,32,Joaquin Piquerez,MID,SE Palmeiras,9074323,19
+829,32,Nestor Fernando Muslera,GK,Estudiantes LP,9200709,135
+830,32,Santiago Ignacio Bueno,DEF,Wolverhampton Wanderers FC,7486470,8
+831,32,Juan Manuel Sanabria,MID,Real Salt Lake,8367423,6
+832,32,Radrigo Zalazar,MID,SC Braga,18162393,7
+833,33,Brice Lauriche Samba,GK,Stade Rennais FC,63706330,4
+834,33,Malo Arthur Gusto,DEF,Chelsea FC,44482412,11
+835,33,Lucas Digne,DEF,Aston Villa FC,67237653,58
+836,33,Dayotchanculle Oswald Upamecano,DEF,FC Bayern München,52429901,39
+837,33,Jules Olivier Kounde,DEF,FC Barcelona,62888691,49
+838,33,Emmanuel Boris Kone,MID,AS Roma,59527837,14
+839,33,Masour Ousmane Dembele,FWD,Paris Saint-Germain,67342337,60
+840,33,Aurélien Djani Tchouameni,MID,Real Madrid C. F.,38253080,47
+841,33,Marcus Lilian Thuram,FWD,FC Internazionale Milano,64453524,34
+842,33,Kylian Mbappe,FWD,Real Madrid C. F.,180000000,99
+843,33,Michael Akpovie Olise,FWD,FC Bayern München,70658641,18
+844,33,Bradley Jean-Manuel Essolisa Barcola,FWD,Paris Saint-Germain,69223108,21
+845,33,N'golo Kante,MID,Fenerbahçe SK,27548521,69
+846,33,Adrien Thibault Marie Rabiot,MID,AC Milan,30821467,60
+847,33,Ibrahima Konate,DEF,Liverpool FC,51142590,28
+848,33,Mike Peterson Maignan,GK,AC Milan,83015005,41
+849,33,William Alain André Gabriel Saliba,DEF,Arsenal FC,23793973,33
+850,33,Warren Marie Jean-Pierre Zaire-Emery,MID,Paris Saint-Germain,81773269,11
+851,33,Théo Bernard François Hernandez,DEF,Al Hilal SC,64603775,45
+852,33,Désiré Nonka-Maho Doue,FWD,Paris Saint-Germain,81131519,8
+853,33,Lucas Francois Bernard Hernandez,DEF,Paris Saint-Germain,52215652,42
+854,33,Jean-Philippe Mateta,FWD,Crystal Palace FC,88394523,4
+855,33,Robin François Philippe Risser,GK,RC Lens,41206589,0
+856,33,Mathis Rayan Cherki,MID,Manchester City FC,38953810,8
+857,33,Maghnes Akliouche,MID,AS Monaco,91750508,9
+858,33,Maxence Guy Lacroix,DEF,Crystal Palace FC,61022513,4
+859,34,Yehvann Djibril Victor Diouf,GK,OGC Nice,16316341,2
+860,34,Mamadou Sarr,DEF,Chelsea FC,8494671,8
+861,34,Kalidou Koulibaly,DEF,Al Hilal SC,21393086,105
+862,34,Abdoulaye Seck,DEF,Maccabi Haifa FC,16181914,23
+863,34,Idrissa Gana Gueye,MID,Everton FC,16479091,137
+864,34,Ismaila Pathe Ciss,MID,Rayo Vallecano,11512743,32
+865,34,Assane Diao,FWD,Como,13213656,5
+866,34,Lamine Camara,MID,AS Monaco,22637484,46
+867,34,Ahmadou Bamba Mbacke Dieng,FWD,FC Lorient,20840266,24
+868,34,Sadio Mane,FWD,Al Nassr FC,13240169,131
+869,34,Nicolas Jackson,FWD,FC Bayern München,13454698,35
+870,34,Pape Cherif Ndiaye,FWD,Samsunspor,10413238,19
+871,34,Iliman Cheikh Baroy Ndiaye,FWD,Everton FC,12270943,42
+872,34,Ismail Joshua Jakobs,DEF,Galatasaray SK,15864335,31
+873,34,Krepin Diatta,DEF,AS Monaco,8542291,63
+874,34,Edouard Osoque Mendy,GK,Al Ahli FC,15359968,59
+875,34,Pape Matar Sarr,MID,Tottenham Hotspur FC,15070902,41
+876,34,Ismaila Sarr,FWD,Crystal Palace FC,18925557,85
+877,34,Moussa Niakhate,DEF,Olympique Lyonnais,9987537,33
+878,34,Ibrahim Mbaye,FWD,Paris Saint-Germain,20435498,12
+879,34,Habib Mbacke Diarra,MID,Sunderland AFC,7404851,22
+880,34,Bara Sapoko Ndiaye,MID,FC Bayern München,23967041,1
+881,34,Mory Diaw,GK,Le Havre AC,18064221,5
+882,34,Antoine Alpha Mendy,DEF,OGC Nice,23964577,7
+883,34,El Hadji Malick Diouf,DEF,West Ham United FC,16023291,21
+884,34,Pape Alassane Gueye,MID,Villarreal CF,20986079,43
+885,35,Talib Raheem Fahad Talib,GK,Al Talaba SC,4191494,21
+886,35,Ghareeb Solaka Rebin Sulaka,DEF,Port FC,3130321,56
+887,35,Haydar Hussein Hussein,DEF,Pogo ń  Szczecin,4940702,28
+888,35,Tahseen Abd Zaid Zaid,DEF,Pakhtakor Tashkent FK,2466618,29
+889,35,Hashim Rahman Akam Hashim,DEF,Al Zawra'a SC,5802861,15
+890,35,Younus Hashim Munaf Younus,DEF,Al Shorta SC,2278760,34
+891,35,Wali Faeq Youssef Amyn,MID,AEK Larnaca FC,7933218,27
+892,35,Bayesh Kamil Ibrahim Bayesh,MID,Al Dhafra SCC,3339731,77
+893,35,Ibrahim Karim Ali Alhamadi,FWD,Luton Town FC,4997506,21
+894,35,Ali Kadhim Mohanad Ali,FWD,Dibba FC,4631293,73
+895,35,Ihab Ahmed Ahmed,FWD,Nashville SC,5858031,4
+896,35,Hasan Hachim Jalal Hassan,GK,Al Zawra'a SC,3176574,105
+897,35,Yousif Hashim Ali Yousif,FWD,Al Talaba SC,2275529,7
+898,35,Aamar Iqbal Zidane,MID,FC Utrecht,4486768,26
+899,35,Hasan Maknazi Ahmed Maknazi,DEF,Al Karma SC,6828960,7
+900,35,Fouad Aboud Amir Alammari,MID,KS Cracovia,7581781,52
+901,35,Jasim Elaibi Ali Jasim,FWD,Al Najmah SC,4564274,37
+902,35,Hussein Ghadhban Aymen,FWD,Al Karma SC,7872504,96
+903,35,Yakob William Kevin Yakob,MID,Aarhus GF,2241455,9
+904,35,Hazar Anwar Aimar,MID,Sarpsborg 08 FF,6237716,7
+905,35,Jabbar Hussein Marko Farji,FWD,Venezia FC,6073820,13
+906,35,Basil Fadhil Ahmed,GK,Al Shorta SC,1997031,16
+907,35,Ghazi Salih Merchas,DEF,FC Viktoria Plze ň,6178241,32
+908,35,Ismael Khaleel Zaid Ismael,MID,Al Talaba SC,5849632,7
+909,35,Saadoon Abbood Mustafa,DEF,Al Shorta SC,3219520,18
+910,35,Dhia Jirjis Frans,DEF,Persib Bandung,5714241,28
+911,36,Ørjan Haskjold Nyland,GK,Sevilla FC,5705550,72
+912,36,Morten Thorsby,MID,US Cremonese,6204102,31
+913,36,Kristoffer Vassbakk Köpp Ajer,DEF,Brentford FC,3088074,53
+914,36,Leo Skiri Ostigard,DEF,Genoa CFC,2823601,39
+915,36,David Møller Moller Wolfe,DEF,Wolverhampton Wanderers FC,3655296,23
+916,36,Patrick Berg,MID,FK Bodø/Glimt,7345975,44
+917,36,Alexander Sorloth,FWD,Atlético De Madrid,8599491,73
+918,36,Sander Gard Bolin Berge,MID,Fulham FC,8707996,67
+919,36,Erling Braut Haaland,FWD,Manchester City FC,7293185,51
+920,36,Martín Odegaard,MID,Arsenal FC,6777131,69
+921,36,Jørgen Strand Strand Larsen,FWD,Crystal Palace FC,9498964,28
+922,36,Sander Tangvik,GK,Hamburger SV,2767629,0
+923,36,Egil Selvik,GK,Watford FC,8274046,7
+924,36,Fredrik Aursnes,MID,SL Benfica,6483670,23
+925,36,Fredrik André Bjorkan,DEF,FK Bodø/Glimt,9608913,21
+926,36,Marcus Holmgren Holmgren Pedersen,DEF,Torino FC,7064063,32
+927,36,Torbjørn Lysaker Heggem,DEF,Bologna FC,6991554,16
+928,36,Kristian Thorstvedt,MID,US Sassuolo,4610749,38
+929,36,Thelonious Gerard Aasgaard,MID,Rangers FC,3800773,8
+930,36,Antonio Eromonsele Nordby Nusa,FWD,RB Leipzig,9273081,25
+931,36,Andreas Rædergård Schjelderup,MID,SL Benfica,8222363,13
+932,36,Oscar Bobb,MID,Fulham FC,6134631,21
+933,36,Jens Petter Hauge,MID,FK Bodø/Glimt,6224256,15
+934,36,Sondre Klingen Langas,DEF,Derby County FC,5735442,3
+935,36,Henrik Sælebakke Falchener,DEF,Viking Stavanger,8344448,1
+936,36,Julian Ryerson,FWD,Borussia Dortmund,3522622,44
+937,37,Juan Agustín Musso,GK,Atlético De Madrid,156610144,4
+938,37,Marcos Nicolás Senesi,DEF,AFC Bournemouth,140833138,3
+939,37,Nicolás Alejandro Tagliafico,DEF,Olympique Lyonnais,225171233,76
+940,37,Gonzalo Ariel Montiel,DEF,CA River Plate,124571690,40
+941,37,Leandro Daniel Paredes,MID,CA Boca Juniors,124410074,77
+942,37,Lisandro Martinez,DEF,Manchester United FC,236051544,29
+943,37,Rodrigo Javier De Paul,MID,Inter Miami CF,157464136,88
+944,37,Valentin Barco,MID,RC Strasbourg,62118586,4
+945,37,Julián Alvarez,FWD,Atlético De Madrid,138366047,52
+946,37,Lionel Andrés Messi,FWD,Inter Miami CF,66056639,200
+947,37,Giovani Lo Celso,MID,Real Betis,95822043,67
+948,37,Geronimo Rulli,GK,Olympique Marseille,153940752,8
+949,37,Cristian Gabriel Romero,DEF,Tottenham Hotspur FC,120514714,52
+950,37,Exequiel Alejandro Palacios,MID,Bayer 04 Leverkusen,98196480,40
+951,37,Nicolas Ivan Gonzalez,MID,Atlético De Madrid,195663584,52
+952,37,Thiago Ezequiel Almada,FWD,Atlético De Madrid,80604827,17
+953,37,Giuliano Simeone,FWD,Atlético De Madrid,60731280,13
+954,37,Nicolas Paz,FWD,Como,91126651,10
+955,37,Nicolas Hernan Gonzalo Otamendi,DEF,SL Benfica,179666789,133
+956,37,Alexis Mac Allister,MID,Liverpool FC,70000000,47
+957,37,Jose Manuel Alberto Lopez,FWD,SE Palmeiras,143270978,5
+958,37,Lautaro Javier Martinez,FWD,FC Internazionale Milano,118103085,78
+959,37,Damián Emiliano Martinez,GK,Aston Villa FC,145468193,60
+960,37,Enzo Jeremías Fernandez,MID,Chelsea FC,129887760,43
+961,37,Facundo Axel Medina,DEF,Olympique Marseille,175352212,10
+962,37,Nahuel Molina,DEF,Atlético De Madrid,105579655,59
+963,38,Melvin Feycal Mastil,GK,FC Stade Nyonnais,14084729,2
+964,38,Aissa Mandi,DEF,Lille OSC,12322974,120
+965,38,Achref Abada,DEF,USM Alger,5969617,10
+966,38,Mohamed Amine Tougai,DEF,Espérance De Tunisie,3882487,30
+967,38,Zineddine Belaid,DEF,JS Kabylie,14112301,18
+968,38,Ramiz Larbi Zerrouki,MID,FC Twente,12056597,54
+969,38,Riyad Karim Mahrez,FWD,Al Ahli FC,7537574,117
+970,38,Houssem-Eddine Chaabane Aouar,MID,Al Ittihad,12335099,24
+971,38,Amine Ferid Gouiri,FWD,Olympique Marseille,6320339,24
+972,38,Fares Chaibi,MID,Eintracht Frankfurt,11232006,32
+973,38,Anis Hadj Moussa,FWD,Feyenoord Rotterdam,5177011,16
+974,38,Ahmed Nadhir Benbouali,FWD,Györi ETO FC,13104219,4
+975,38,Jaouen Djimmy Hadjam,DEF,BSC Young Boys,8775437,18
+976,38,Hicham Boudaoui,MID,OGC Nice,12215845,35
+977,38,Rayan Ait-Nouri,DEF,Manchester City FC,10212490,31
+978,38,Oussama Benbot,GK,USM Alger,14001838,3
+979,38,Rafik Belghali,DEF,Hellas Verona FC,8493379,14
+980,38,Mohammed Elamine Amoura,FWD,VfL Wolfsburg,8058078,48
+981,38,Nabil Bentaleb,MID,Lille OSC,13257422,61
+982,38,Adil Boulbina,FWD,Al Duhail SC,8882522,12
+983,38,Selmane Rami Bensebaini,DEF,Borussia Dortmund,10557657,83
+984,38,Ibrahim Maza,MID,Bayer 04 Leverkusen,11977740,18
+985,38,Luca Zinedine Zidane,GK,Granada CF,7038418,8
+986,38,Yassine Titraoui,MID,Sporting Charleroi,4812864,5
+987,38,Fares Ghedjemis,FWD,Frosinone,9178045,1
+988,38,Samir Sophian Chergui,DEF,Paris FC,13631391,5
+989,39,Alexander Schlager,GK,FC Red Bull Salzburg,14505180,27
+990,39,David Leopold Affengruber,DEF,Elche CF,13846984,1
+991,39,Kevin Danso,DEF,Tottenham Hotspur FC,5806258,33
+992,39,Xaver Schlager,MID,RB Leipzig,15819850,52
+993,39,Stefan Posch,DEF,1. FSV Mainz 05,4769751,53
+994,39,Nicolas Seiwald,MID,RB Leipzig,15482614,48
+995,39,Marko Arnautovic,FWD,FK Crvena Zvezda,6223014,134
+996,39,David Alaba,DEF,Real Madrid C. F.,15086251,114
+997,39,Marcel Sabitzer,MID,Borussia Dortmund,9652887,99
+998,39,Florian Grillitsch,MID,SC Braga,6018269,59
+999,39,Michael Gregoritsch,FWD,FC Augsburg,13466142,75
+1000,39,Florian Wiegele,GK,FC Viktoria Plze ň,13417937,1
+1001,39,Patrick Pentz,GK,Brøndby IF,13651027,18
+1002,39,Saša Kalajdzic,FWD,LASK Linz,10320340,23
+1003,39,Philipp Lienhart,DEF,SC Freiburg,10035151,42
+1004,39,Phillip Mwene,DEF,1. FSV Mainz 05,9114400,31
+1005,39,Carney Chibueze Chukwuemeka,MID,Borussia Dortmund,9863230,4
+1006,39,Romano Schmid,MID,SV Werder Bremen,8214327,35
+1007,39,Dejan Ljubicic,MID,FC Schalke 04,14367274,9
+1008,39,Konrad Laimer,MID,FC Bayern München,10306755,58
+1009,39,Patrick Wimmer,FWD,VfL Wolfsburg,6203762,31
+1010,39,Alexander Prass,MID,TSG Hoffenheim,12133138,19
+1011,39,Marco Friedl,DEF,SV Werder Bremen,8459575,11
+1012,39,Paul Wanner,MID,PSV Eindhoven,8115942,4
+1013,39,Michael Svoboda,DEF,Venezia FC,14966333,4
+1014,39,Alessandro Andre Schoepf,MID,Wolfsberger AC,10255013,35
+1015,40,Mo'ien Hasan Yazeed Abulaila,GK,Al Hussein SC,2324916,77
+1016,40,Ali Hasan Mohammad,DEF,Al Karma SC,3713575,56
+1017,40,Mousa Musallam Abdallah Nasib,DEF,Al Zawra'a SC,4333148,66
+1018,40,Ali Mohammad Husam Abudahab,DEF,Al Faisaly SC,3868569,17
+1019,40,Mousa Mahmoud Yazan Alarab,DEF,FC Seoul,1955254,81
+1020,40,Rasem Adel Amer Jamous,MID,Al Zawra'a SC,2372465,19
+1021,40,Faisal Yousef Mohammad,FWD,Raja Casablanca,4598054,40
+1022,40,Mahmoud Ali Noor Alrawabdeh,MID,Selangor FC,2477372,69
+1023,40,Iyad Ali Ali Olwan,FWD,Al Sailiya SC,4371693,67
+1024,40,Mohammad Mousa Mousa Altamari,FWD,Stade Rennais FC,6012559,93
+1025,40,Burhan Shehadeh Odeh Fakhoury,FWD,Pyramids FC,2889178,11
+1026,40,Zaid Khaleel Nour Baniateyah,GK,Al Faisaly SC,1909067,5
+1027,40,Nayef Ahmad Mahmoud Almardi,FWD,Al Hussein SC,1880939,88
+1028,40,Ayed Fadel Rajaei Ayed,MID,Al Hussein SC,4233608,73
+1029,40,Mohammad Sami Ibrahim,MID,Al Karma SC,4988036,57
+1030,40,Majed Jamil Mohammad Abualnadi,DEF,Selangor FC,6868044,19
+1031,40,Amer Saleem Saleem,DEF,Al Hussein SC,5501173,13
+1032,40,Ahmed Mohammad Mohammad,MID,Al Hussein SC,3830062,0
+1033,40,Ahmad Salameh Saed,DEF,Al Hussein SC,6871766,22
+1034,40,Mahmoud Saleh Mohannad Abutaha,MID,Al-Quwa Al-Jawiya,6151046,31
+1035,40,Mahmoud Ahmed Nizar Alrashdan,MID,Qatar SC,5818965,48
+1036,40,Ra'ed Mahmoud Abdallah Alfakhori,GK,Al Wahdat SC,3985266,16
+1037,40,Manel Farhan Ehsan Haddad,DEF,Al Hussein SC,2221236,91
+1038,40,Ahmad Ali Ali Azaizeh,FWD,Al Shabab FC,2374004,5
+1039,40,Ratib Mohammad Mohammad Aldaoud,MID,Al Wahdat SC,5368311,14
+1040,40,Said Ghazi Anas Badawi,DEF,Al Faisaly SC,3393660,1
+1041,41,Diogo Diogo Costa,GK,FC Porto,35586005,44
+1042,41,SEMEDONélson Nelson,DEF,Fenerbahçe SK,26711630,51
+1043,41,Rúben Ruben Dias,DEF,Manchester City FC,59075240,76
+1044,41,Tomás Tomas Araujo,DEF,SL Benfica,51844007,6
+1045,41,Diogo Diogo Dalot,DEF,Manchester United FC,57423538,35
+1046,41,Luiz Matheus,MID,Manchester City FC,36409816,20
+1047,41,Ronaldo Cristiano Ronaldo,FWD,Al Nassr FC,18895933,229
+1048,41,Miguel Bruno,MID,Manchester United FC,27556372,90
+1049,41,RAMOSGonçalo Goncalo,FWD,Paris Saint-Germain,61031905,26
+1050,41,Bernardo Bernardo Silva,MID,Manchester City FC,30034592,110
+1051,41,João Joao Felix,FWD,Al Nassr FC,17430671,54
+1052,41,Pedro Jose Sa,GK,Wolverhampton Wanderers FC,58279443,5
+1053,41,Renato Renato Veiga,DEF,Villarreal CF,49776200,14
+1054,41,Gonçalo Goncalo Inacio,DEF,Sporting CP,20977953,22
+1055,41,Pedro Joao Neves,MID,Paris Saint-Germain,19231801,23
+1056,41,António Francisco Trincao,FWD,Sporting CP,20400208,18
+1057,41,Alexandre Rafael Leao,FWD,AC Milan,53612030,45
+1058,41,Pedro Pedro Neto,FWD,Chelsea FC,29098003,26
+1059,41,Manuel Goncalo,FWD,Real Sociedad,17183625,35
+1060,41,Pedro Joao Cancelo,DEF,FC Barcelona,26500207,69
+1061,41,Diogo Ruben,MID,Al Hilal SC,39746889,67
+1062,41,Tiago Rui Silva,GK,Sporting CP,20596872,3
+1063,41,Vitor Vitinha,MID,Paris Saint-Germain,24401600,39
+1064,41,Samuel Samu Costa,DEF,RCD Mallorca,26660545,6
+1065,41,Alexandre Nuno,DEF,Paris Saint-Germain,56220388,45
+1066,41,Francisco Francisco Conceicao,FWD,Juventus FC,55985253,18
+1067,42,Lionel Nzau Mpasi,GK,Le Havre AC,1902631,29
+1068,42,Wan Wan-Bissaka,DEF,West Ham United FC,4122558,13
+1069,42,Steve Nkanu Kapuadi,DEF,Widzew Ł ód ź,7019095,4
+1070,42,Axel Tuanzebe,DEF,Burnley FC,3722090,14
+1071,42,Dylan Buduka Batubinsika,DEF,AEL FC,2433556,15
+1072,42,Ngal’ayel Mukau,MID,Lille OSC,6277710,15
+1073,42,Nathanaël Mbuku,MID,Montpellier HSC,3577866,19
+1074,42,Samuel Alain Moutoussamy,MID,Atromitos FC,6248355,59
+1075,42,Kibambe Brian Cipenga,FWD,CD Castellón,4207837,8
+1076,42,Theo Mbulofeko Batombo Bongonda,MID,FC Spartak Moscow,3773632,38
+1077,42,Gaël Roméo Kakuta,FWD,AEL FC,5503691,31
+1078,42,Joris Kayembe,DEF,KRC Genk,2340458,27
+1079,42,Meschack Lina Elia,FWD,Alanyaspor,4757396,68
+1080,42,Noah Junior Sadiki,MID,Sunderland AFC,6173618,21
+1081,42,Tshibola Tshibola,MID,Kilmarnock FC,4416794,17
+1082,42,Timothy Bruce Munzoko Fayulu,GK,FC Noah,2860814,3
+1083,42,Cedric Bakambu,FWD,Real Betis,3002186,71
+1084,42,Charles Monginda Pickel,MID,RCD Espanyol,5351123,35
+1085,42,Mayele Fiston Mayele,FWD,Pyramids FC,5339714,36
+1086,42,Yoane Wissa,FWD,Newcastle United FC,6826464,39
+1087,42,Matthieu Luka Epolo,GK,Standard Liège,2914679,1
+1088,42,Mangulu Chancel Mbemba,DEF,Lille OSC,4739533,110
+1089,42,Simon Bokote Banza,FWD,Al Jazira,3531211,16
+1090,42,Gédéon Tchingoma Kyatengwa Kalulu,DEF,Aris Limassol FC,4298211,29
+1091,42,Edo Kayembe Kayembe,MID,Watford FC,3787863,43
+1092,42,Arthur Fuka Masuaku,DEF,RC Lens,5114623,45
+1093,43,Utkir Yusupov,GK,PFC Navbahor Namangan,4353091,46
+1094,43,Abdukodir Khusanov,DEF,Manchester City FC,5675324,28
+1095,43,Khojiakbar Alijonov,DEF,Pakhtakor Tashkent FK,3539702,52
+1096,43,Farrukh Sayfiev,DEF,FK Neftchi Farg'ona,6256146,72
+1097,43,Rustamjon Ashurmatov,DEF,Esteghlal Tehran FC,5563773,52
+1098,43,Akmal Mozgovoy,MID,Pakhtakor Tashkent FK,3300831,26
+1099,43,Otabek Shukurov,MID,Baniyas Club,4775658,91
+1100,43,Jamshid Iskanderov,MID,FK Neftchi Farg'ona,8490200,46
+1101,43,Odiljon Xamrobekov,MID,Tractor Sazi Tabriz FC,4476913,76
+1102,43,Ruslanbek Jiyanov,MID,PFC Navbahor Namangan,6886666,8
+1103,43,Oston Urunov,MID,Persepolis FC,4755561,46
+1104,43,Abduvakhid Nematov,GK,Nasaf Qarshi FC,3801413,15
+1105,43,Sherzod Nasrullaev,DEF,Pakhtakor Tashkent FK,7104599,41
+1106,43,Eldor Shomurodov,FWD,Ba ş ak ş ehir FK,5116416,94
+1107,43,Umarbek Eshmurodov,DEF,Nasaf Qarshi FC,6444666,40
+1108,43,Botirali Ergashev,GK,FK Neftchi Farg'ona,3742658,5
+1109,43,Dostonbek Khamdamov,MID,Pakhtakor Tashkent FK,4668535,38
+1110,43,Abdulla Abdullaev,DEF,Dibba FC,5244220,30
+1111,43,Azizjon Ganiev,MID,Al Bataeh Club,3566544,24
+1112,43,Azizbek Amonov,FWD,FK Dinamo Samarkand,3979781,14
+1113,43,Igor Sergeev,FWD,Persepolis FC,2337743,86
+1114,43,Abbosbek Fayzullaev,MID,Ba ş ak ş ehir FK,5586994,33
+1115,43,Sherzod Esanov,MID,FK Buxoro,3902956,1
+1116,43,Behruzjon Karimov,DEF,Surkhon FK,7372518,3
+1117,43,Avazbek Ulmasaliyev,DEF,OKMK FK,5129791,0
+1118,43,Jakhongir Urozov,DEF,FK Dinamo Samarkand,3645244,5
+1119,44,David Ospina,GK,Atlético Nacional,7934073,130
+1120,44,Daniel Munoz,DEF,Crystal Palace FC,18918178,47
+1121,44,Jhon Janer Lucumi,DEF,Bologna FC,19289403,38
+1122,44,Santiago Arias,DEF,CA Independiente,16223392,68
+1123,44,Kevin Duvan Castano,MID,CA River Plate,12480297,26
+1124,44,Richard Rios,MID,SL Benfica,25316192,33
+1125,44,Luis Fernando Diaz,FWD,FC Bayern München,9859579,75
+1126,44,Jorge Andres Carrascal,MID,CR Flamengo,12205018,25
+1127,44,Jhon Andrés Cordoba,FWD,FC Krasnodar,16910822,21
+1128,44,James David Rodriguez,MID,Minnesota United FC,8304482,127
+1129,44,Jhon Adolfo Arias,MID,SE Palmeiras,24767140,39
+1130,44,Camilo Andres Vargas,GK,Atlas FC,17816016,43
+1131,44,Yerry Fernando Mina,DEF,Cagliari,26019704,54
+1132,44,Gustavo Adolfo Puerta,DEF,Racing Santander,17774632,7
+1133,44,Juan Camilo Portilla,MID,Athletico Paranaense,15070035,10
+1134,44,Jefferson Andrés Lerma,MID,Crystal Palace FC,27021837,66
+1135,44,Johan Andrés Mojica,DEF,RCD Mallorca,17857738,46
+1136,44,Willer Emilio Ditta,DEF,CF Cruz Azul,7452566,5
+1137,44,Juan Camilo Hernandez,FWD,Real Betis,14899221,10
+1138,44,Juan Fernando Quintero,MID,CA River Plate,12654849,49
+1139,44,Jaminton Leandro Campaz,FWD,CA Rosario Central,24992947,11
+1140,44,Deiver Machado,DEF,FC Nantes,25905532,15
+1141,44,Davinson Sanchez,DEF,Galatasaray SK,14979336,80
+1142,44,Álvaro David Montero,GK,CA Vélez Sarsfield,8143442,12
+1143,44,Luis Javier Suarez,FWD,Sporting CP,20333903,13
+1144,44,Carlos Andrés Gomez,FWD,CR Vasco Da Gama,17165551,9
+1145,45,Jordan Lee Pickford,GK,Everton FC,29288151,85
+1146,45,Ezri Ngoyo Konsa,DEF,Aston Villa FC,58098019,21
+1147,45,Nico Oreilly,DEF,Manchester City FC,67443617,6
+1148,45,Declan Rice,MID,Arsenal FC,110000000,74
+1149,45,John Stones,DEF,Manchester City FC,50093736,90
+1150,45,Keaninkin Marc-Isreal Guehi,DEF,Manchester City FC,26097995,30
+1151,45,Bukayo Ayoyinka Saka,FWD,Arsenal FC,26172687,50
+1152,45,Elliot Junior Anderson,MID,Nottingham Forest FC,49657139,10
+1153,45,Harry Edward Kane,FWD,FC Bayern München,22009299,115
+1154,45,Jude Victor William Bellingham,MID,Real Madrid C. F.,72302542,49
+1155,45,Marcus Rashford,FWD,FC Barcelona,28920866,73
+1156,45,Trevoh Tom Chalobah,DEF,Chelsea FC,52155162,1
+1157,45,Dean Bradley Henderson,GK,Crystal Palace FC,50181700,5
+1158,45,Jordan Brian Henderson,MID,Brentford FC,60417736,90
+1159,45,Daniel Johnson Burn,DEF,Newcastle United FC,28906702,8
+1160,45,Kobbie Boateng Mainoo,MID,Manchester United FC,43060573,14
+1161,45,Morgan Elliot Rogers,MID,Aston Villa FC,71831773,16
+1162,45,Anthony Michael Gordon,FWD,Newcastle United FC,44639114,20
+1163,45,George Arthur Watkins,FWD,Aston Villa FC,21916589,22
+1164,45,Azuka Tristan Madueke,FWD,Arsenal FC,27690961,12
+1165,45,Eberechi Oluchi Eze,MID,Arsenal FC,63755045,17
+1166,45,Ivan Benjamin Elijah Toney,FWD,Al Ahli FC,54689154,8
+1167,45,James Harrington Trafford,GK,Manchester City FC,63438225,2
+1168,45,Reece Lewis James,DEF,Chelsea FC,52155474,25
+1169,45,Tehuti Djed-Hotep Spence,DEF,Tottenham Hotspur FC,65469734,7
+1170,45,Jarell Amorin Quansah,DEF,Bayer 04 Leverkusen,21000260,3
+1171,46,Dominik Livakovic,GK,GNK Dinamo Zagreb,24789245,76
+1172,46,Josip Stanisic,DEF,FC Bayern München,20641517,32
+1173,46,Marin Pongracic,DEF,ACF Fiorentina,17597721,20
+1174,46,Joško Gvardiol,DEF,Manchester City FC,12971573,49
+1175,46,Duje Caleta-Car,DEF,Real Sociedad,18007898,38
+1176,46,Josip Sutalo,DEF,AFC Ajax,26160089,34
+1177,46,Nikola Moro,MID,Bologna FC,17022560,10
+1178,46,Mateo Kovacic,MID,Manchester City FC,21752421,114
+1179,46,Andrej Kramaric,FWD,TSG Hoffenheim,21172697,117
+1180,46,Luka Modric,MID,AC Milan,16846328,199
+1181,46,Ante Budimir,FWD,CA Osasuna,16318972,38
+1182,46,Ivor Pandur,GK,Hull City FC,23631533,0
+1183,46,Nikola Vlasic,MID,Torino FC,16546913,64
+1184,46,Ivan Perisic,FWD,PSV Eindhoven,19813667,155
+1185,46,Mario Pasalic,MID,Atalanta Bergamo,13840268,86
+1186,46,Martin Baturina,MID,Como,13997867,20
+1187,46,Petar Sucic,MID,FC Internazionale Milano,24841942,18
+1188,46,Kristijan Jakic,DEF,FC Augsburg,21478504,17
+1189,46,Toni Fruk,MID,HNK Rijeka,21112151,7
+1190,46,Igor Matanovic,FWD,SC Freiburg,18377183,10
+1191,46,Luka Sucic,MID,Real Sociedad,17522509,21
+1192,46,Luka Vuskovic,DEF,Hamburger SV,25279685,6
+1193,46,Dominik Kotarski,GK,FC København,15043057,4
+1194,46,Marco Pasalic,FWD,Orlando City SC,22488299,16
+1195,46,Martin Erlic,DEF,FC Midtjylland,14969363,13
+1196,46,Petar Musa,FWD,FC Dallas,11724896,12
+1197,47,Lawrence Ati Zigi,GK,FC St. Gallen,8267464,31
+1198,47,Alidu Seidu,DEF,Stade Rennais FC,4280545,24
+1199,47,Caleb Marfo Yirenkyi,MID,FC Nordsjælland,8287865,12
+1200,47,Jonas Adjei Adjetey,DEF,VfL Wolfsburg,8479377,11
+1201,47,Thomas Teye Partey,MID,Villarreal CF,3471729,59
+1202,47,Abdul Mumin Mumin,DEF,Rayo Vallecano,4241887,5
+1203,47,Abdul Fatawu Fatawu,FWD,Leicester City FC,7555311,29
+1204,47,Kwasi Sibo,MID,Real Oviedo,4700419,9
+1205,47,Jordan Pierre Ayew,FWD,Leicester City FC,6494595,121
+1206,47,Brandon Michael Clarke Thomas-Asante,FWD,Coventry City FC,4396065,9
+1207,47,Antoine Serlom Semenyo,MID,Manchester City FC,6891531,35
+1208,47,Joseph Tetteh Anang,GK,St Patrick's Athletic FC,2381980,1
+1209,47,Christopher Bonsu Bonsu Baah,FWD,Al Qadsiah FC,7649098,9
+1210,47,Gideon Mensah,DEF,AJ Auxerre,2679044,41
+1211,47,Elisha Owusu,MID,AJ Auxerre,4118153,21
+1212,47,Benjamin Asare,GK,Hearts Of Oak SC,7397717,14
+1213,47,Abdul Rahman Rahman,DEF,PAOK Saloniki,5582511,53
+1214,47,Jerome Opoku,DEF,Ba ş ak ş ehir FK,8726492,12
+1215,47,Inaki Williams,FWD,Athletic Club,5099385,26
+1216,47,Augustine Boakye,MID,AS Saint-Etienne,5694015,0
+1217,47,Kojo Peprah Oppong,DEF,OGC Nice,8518384,4
+1218,47,Kamal Deen Sulemana,FWD,Atalanta Bergamo,5771259,29
+1219,47,Derrick Luckassen,DEF,Pafos FC,7853337,1
+1220,47,Ernest Nuamah Nuamah,FWD,Olympique Lyonnais,3963480,20
+1221,47,Prince Kwabena Adu,FWD,FC Viktoria Plze ň,2585793,6
+1222,47,Marvin Elom Senaya,DEF,AJ Auxerre,5943105,3
+1223,48,Luis Ricardo Mejia,GK,Club Nacional,11521424,56
+1224,48,Cesar Rodolfo Blackman,DEF,Š K Slovan Bratislava,3927703,41
+1225,48,Jose Angel Cordoba,DEF,Norwich City FC,6373119,33
+1226,48,Fidel Escobar,DEF,Deportivo Saprissa,7099067,99
+1227,48,Edgardo Issac Farina,DEF,FC Pari Nizhny Novgorod,8512682,18
+1228,48,Cristian Jesus Martinez,MID,Hapoel Kiryat Shmona FC,4096948,68
+1229,48,Jose Luis Rodriguez,MID,FC Juárez,4137985,71
+1230,48,Adalberto Eliecer Carrasquilla,MID,Pumas UNAM,7966885,73
+1231,48,Tomas Abdiel Rodriguez,FWD,Deportivo Saprissa,6398309,13
+1232,48,Ismael Diaz,MID,Club León,8182784,57
+1233,48,Edgar Yoel Barcenas,MID,Mazatlán FC,5818242,105
+1234,48,Cesar Jair Samudio,GK,CD Marathón,11678513,5
+1235,48,Jiovany Javier Ramos,DEF,Puerto Cabello CF,11158259,24
+1236,48,Carlos Miguel Harvey,DEF,Minnesota United FC,7787286,29
+1237,48,Eric Javier Davis,DEF,CD Plaza Amador,4330871,107
+1238,48,Andres Alberto Andrade,DEF,LASK Linz,3229804,51
+1239,48,Jose Fajardo,FWD,CD Universidad Católica,3666045,70
+1240,48,Cecilio Alfonso Waterman,FWD,CD Universidad De Concepción,8816235,56
+1241,48,Alberto Abdiel Quintero,MID,CD Plaza Amador,8402030,141
+1242,48,Anibal Casis Godoy,MID,San Diego FC,3706253,160
+1243,48,Cesar Augusto Yanis,MID,CD Cobresal,9547230,55
+1244,48,Orlando Mosquera,GK,Al Fayha FC,5464401,50
+1245,48,Michael Amir Murillo,DEF,Be ş ikta ş  JK,7830169,94
+1246,48,Azarías Emmanuel Londono,FWD,CD Universidad Católica,4490434,13
+1247,48,Roderick Alonso Miller,DEF,Turan Tovuz,9948860,49
+1248,48,Jorge Abdiel Gutierrez,DEF,Deportivo La Guaira,8097757,18

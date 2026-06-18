@@ -1,6 +1,9 @@
 import os
 import csv
 import random
+import re
+import json
+import unicodedata
 
 # Set random seed for reproducibility
 random.seed(42)
@@ -189,19 +192,32 @@ star_players = {
     ]
 }
 
-positions = ["GK", "DEF", "MID", "FWD"]
-first_names = ["Daniel", "David", "Lucas", "Mateo", "Alex", "John", "Carlos", "Thomas", "Andrej", "James", 
-               "Mohammed", "Ali", "Hassan", "Youssef", "Luis", "Juan", "Diego", "Marcus", "Samuel", "Oliver"]
-last_names = ["Smith", "Jones", "Garcia", "Martinez", "Rodriguez", "Silva", "Santos", "Müller", "Schmidt", 
-              "Kovacic", "Horvat", "Abdel", "Ibrahim", "Nakamura", "Sato", "Kim", "Lee", "Park", "Onyango"]
-clubs = ["Real Madrid", "Barcelona", "Manchester City", "Arsenal", "Liverpool", "Bayern Munich", 
-         "Paris Saint-Germain", "Juventus", "AC Milan", "Inter Milan", "Ajax", "Benfica", "Porto", 
-         "Galatasaray", "Boca Juniors", "Flamengo", "Al Hilal", "Los Angeles FC", "Club América", "Kaizer Chiefs"]
+# Read parsed players
+json_path = os.path.join(output_dir, "parsed_players.json")
+if os.path.exists(json_path):
+    with open(json_path, "r", encoding="utf-8") as f:
+        parsed_players_data = json.load(f)
+else:
+    parsed_players_data = []
+
+# Group parsed players by team_id
+players_by_team = {}
+for p in parsed_players_data:
+    t_id = p["team_id"]
+    if t_id not in players_by_team:
+        players_by_team[t_id] = []
+    players_by_team[t_id].append(p)
+
+# Star players mapping for quick lookup of specific values
+star_players_lookup = {}
+for nation, stars in star_players.items():
+    for name, pos, club, val, caps in stars:
+        norm_name = unicodedata.normalize('NFD', name)
+        norm_name_clean = "".join(c for c in norm_name if unicodedata.category(c) != 'Mn')
+        star_players_lookup[norm_name_clean.lower()] = val
 
 players_data = []
 player_id_counter = 1
-
-# Map to quickly lookup players per team later
 team_player_map = {}
 
 for team in teams_data:
@@ -209,42 +225,34 @@ for team in teams_data:
     team_name = team[1]
     rank = team[5]
     
-    team_stars = star_players.get(team_name, [])
-    added_count = 0
     team_player_map[team_id] = []
+    squad = players_by_team.get(team_id, [])
     
-    # Add star players
-    for name, pos, club, val, caps in team_stars:
-        player_row = [player_id_counter, team_id, name, pos, club, val, caps]
-        players_data.append(player_row)
-        team_player_map[team_id].append(player_id_counter)
-        player_id_counter += 1
-        added_count += 1
+    for idx_in_squad, player_data in enumerate(squad):
+        player_id = player_id_counter
+        name = player_data["name"]
+        pos = player_data["position"]
+        # Strip country code from club for csv
+        club = re.sub(r"\s*\([A-Z]{3}\)$", "", player_data["club"]).strip()
+        caps = player_data["caps"]
         
-    # Generate generic players to complete 26-man squads
-    needed = 26 - added_count
-    for i in range(needed):
-        # Determine position based on index (roughly: 3 GKs, 9 DEFs, 9 MIDs, 5 FWDs)
-        if i < 3 - added_count if added_count < 3 else 0:
-            pos = "GK"
-        elif i < 11:
-            pos = "DEF"
-        elif i < 20:
-            pos = "MID"
+        # Determine market value
+        val = None
+        norm_name = unicodedata.normalize('NFD', name)
+        norm_name_clean = "".join(c for c in norm_name if unicodedata.category(c) != 'Mn')
+        
+        # Check if they are a star player
+        if norm_name_clean.lower() in star_players_lookup:
+            val = star_players_lookup[norm_name_clean.lower()]
         else:
-            pos = "FWD"
+            # Set seed based on player_id for reproducible generation
+            random.seed(player_id)
+            base_val = max(100000, int(150000000 / (rank ** 0.85)))
+            val = int(random.uniform(0.4, 1.6) * base_val)
             
-        name = f"{random.choice(first_names)} {random.choice(last_names)}"
-        
-        # Scale value and caps relationally
-        base_val = max(100000, int(150000000 / (rank ** 0.85)))
-        val = int(random.uniform(0.4, 1.6) * base_val)
-        caps = int(random.uniform(5, 95))
-        club = random.choice(clubs)
-        
-        player_row = [player_id_counter, team_id, name, pos, club, val, caps]
+        player_row = [player_id, team_id, name, pos, club, val, caps]
         players_data.append(player_row)
-        team_player_map[team_id].append(player_id_counter)
+        team_player_map[team_id].append(player_id)
         player_id_counter += 1
 
 # ==========================================
