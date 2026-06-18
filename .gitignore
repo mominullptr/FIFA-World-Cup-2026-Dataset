@@ -10,3 +10,9 @@ kaggle_dist/
 .vscode/
 *.pyc
 __pycache__/
+
+# Internal Kaggle deployment tools
+deploy_kaggle.py
+dataset-metadata.json
+.kaggleignore
+
