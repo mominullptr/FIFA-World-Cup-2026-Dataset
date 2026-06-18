@@ -1,0 +1,10 @@
+# Ignore Python scripts
+*.py
+
+# Ignore virtual environments and configuration folders
+venv/
+.git/
+.github/
+dataset-metadata.json
+dataset_schema.md
+.kaggleignore
