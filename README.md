@@ -1,4 +1,5 @@
 # FIFA World Cup 2026 Relational Dataset
+https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset
 
 A pristine, authentic, and dynamically updated relational dataset for the **FIFA World Cup 2026** (June 11 – July 19, 2026). This dataset features the first-ever 48-team tournament configuration, complete with real-world group configurations, host venues with coordinates and altitudes, referee strictness averages, comprehensive squads and rosters (26 players per team), and granular match events (Goals, Yellow/Red Cards, and VAR Reviews).
 
