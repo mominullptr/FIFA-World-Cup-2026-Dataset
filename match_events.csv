@@ -163,3 +163,26 @@ event_id,match_id,minute,event_type,team_id,player_id
 162,24,61,Goal,44,1143
 163,24,73,Goal,43,1112
 164,24,73,Goal,44,1132
+165,25,2,Goal,3,68
+166,25,21,Goal,1,4
+167,25,43,Yellow Card,1,2
+168,25,56,Goal,1,12
+169,25,87,Yellow Card,1,14
+170,26,41,Goal,4,95
+171,26,66,Goal,4,92
+172,26,78,Yellow Card,2,41
+173,27,10,Goal,5,122
+174,27,26,Yellow Card,5,116
+175,27,36,Goal,5,115
+176,27,41,Yellow Card,7,166
+177,27,65,Yellow Card,7,159
+178,27,67,Goal,5,106
+179,27,67,Yellow Card,5,122
+180,27,73,VAR Review,5,130
+181,27,76,Goal,7,179
+182,27,77,Yellow Card,7,182
+183,28,30,Yellow Card,6,134
+184,28,41,Goal,8,205
+185,28,47,VAR Review,6,142
+186,28,57,Yellow Card,8,207
+187,28,72,Yellow Card,6,147
