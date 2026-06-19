@@ -1,9 +1,9 @@
-# FIFA World Cup 2026 Relational Dataset
+# FIFA World Cup 2026  Dataset
 https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset
 
 A pristine, authentic, and dynamically updated relational dataset for the **FIFA World Cup 2026** (June 11 – July 19, 2026). This dataset features the first-ever 48-team tournament configuration, complete with real-world group configurations, host venues with coordinates and altitudes, referee strictness averages, comprehensive squads and rosters (26 players per team), and granular match events (Goals, Yellow/Red Cards, and VAR Reviews).
 
-## 🚀 Key Features
+##  Key Features
 
 * **Real-World Group Configurations**: Reflects the actual 12 groups (Groups A to L) with zero qualifiers placeholders.
 * **Geographical & Altitude Details**: Includes coordinates (Latitude/Longitude) and exact elevations in meters for all 16 host stadiums in the USA, Canada, and Mexico.
@@ -14,7 +14,7 @@ A pristine, authentic, and dynamically updated relational dataset for the **FIFA
 
 ---
 
-## 📊 Relational Database Schema
+## Database Schema
 
 ```mermaid
 erDiagram
@@ -96,7 +96,7 @@ erDiagram
 
 ---
 
-## 📂 CSV Files Description
+##  CSV Files Description
 
 1. **`teams.csv`**: Information on all 48 participating countries.
 2. **`venues.csv`**: Geolocation, capacities, and elevation details of all 16 stadiums.
@@ -131,8 +131,8 @@ If you use this dataset in your research, publications, or projects, please cite
 
 ```bibtex
 @dataset{fifa_world_cup_2026,
-  author = {Mominul Islam},
-  title = {FIFA World Cup 2026 Relational Dataset},
+  author = {MD Mominul Islam},
+  title = {FIFA World Cup 2026 Dataset},
   year = {2026},
   publisher = {Kaggle}
 }
