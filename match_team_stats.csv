@@ -1,0 +1,9 @@
+match_id,team_id,possession_pct,total_shots,shots_on_target,corners,fouls,offsides,saves,data_source,last_updated
+29,9,59,7,,,,,,theguardian.com,2026-06-20
+29,11,41,2,0,,,,,theguardian.com,2026-06-20
+30,12,41,6,0,2,,,,sofascore.com,2026-06-20
+30,10,59,12,,5,,,,sofascore.com,2026-06-20
+31,13,62,9,,,,,,sofascore.com,2026-06-20
+31,15,38,2,,,,,,sofascore.com,2026-06-20
+32,16,79,32,,12,,,,sofascore.com,2026-06-20
+32,14,21,7,,0,,,,sofascore.com,2026-06-20

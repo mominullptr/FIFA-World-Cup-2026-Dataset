@@ -1,0 +1,436 @@
+[
+  {
+    "group": "Group A",
+    "date": "June 11, 2026",
+    "home_team": "Mexico",
+    "away_team": "South Africa",
+    "score": "2–0",
+    "home_goals": [
+      {"scorer": "Quiñones", "minute": "9'"},
+      {"scorer": "Jiménez", "minute": "67'", "assist": "Roberto Alvarado"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group A",
+    "date": "June 11, 2026",
+    "home_team": "South Korea",
+    "away_team": "Czech Republic",
+    "score": "2–1",
+    "home_goals": [
+      {"scorer": "Hwang In-beom", "minute": "67'", "assist": "Lee Kang-in"},
+      {"scorer": "Oh Hyeon-gyu", "minute": "80'", "assist": "Hwang In-beom"}
+    ],
+    "away_goals": [
+      {"scorer": "Krejčí", "minute": "59'", "assist": "Vladimír Coufal"}
+    ]
+  },
+  {
+    "group": "Group A",
+    "date": "June 18, 2026",
+    "home_team": "Czech Republic",
+    "away_team": "South Africa",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Sadílek", "minute": "6'", "assist": "Aleksandr Sojka"}
+    ],
+    "away_goals": [
+      {"scorer": "Mokoena", "minute": "83' (pen.)"}
+    ]
+  },
+  {
+    "group": "Group A",
+    "date": "June 18, 2026",
+    "home_team": "Mexico",
+    "away_team": "South Korea",
+    "score": "1–0",
+    "home_goals": [
+      {"scorer": "Romo", "minute": "50'"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group B",
+    "date": "June 12, 2026",
+    "home_team": "Canada",
+    "away_team": "Bosnia and Herzegovina",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Larin", "minute": "78'", "assist": "Promise David"}
+    ],
+    "away_goals": [
+      {"scorer": "Lukić", "minute": "21'", "assist": "Sead Kolašinac"}
+    ]
+  },
+  {
+    "group": "Group B",
+    "date": "June 13, 2026",
+    "home_team": "Qatar",
+    "away_team": "Switzerland",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Muheim", "minute": "90+4' (o.g.)"}
+    ],
+    "away_goals": [
+      {"scorer": "Embolo", "minute": "17' (pen.)"}
+    ]
+  },
+  {
+    "group": "Group B",
+    "date": "June 18, 2026",
+    "home_team": "Switzerland",
+    "away_team": "Bosnia and Herzegovina",
+    "score": "4–1",
+    "home_goals": [
+      {"scorer": "Manzambi", "minute": "74'", "assist": "Granit Xhaka"},
+      {"scorer": "Manzambi", "minute": "90'", "assist": "Ruben Vargas"},
+      {"scorer": "Vargas", "minute": "84'", "assist": "Breel Embolo"},
+      {"scorer": "Xhaka", "minute": "90+7' (pen.)"}
+    ],
+    "away_goals": [
+      {"scorer": "Mahmić", "minute": "90+3'"}
+    ]
+  },
+  {
+    "group": "Group B",
+    "date": "June 18, 2026",
+    "home_team": "Canada",
+    "away_team": "Qatar",
+    "score": "6–0",
+    "home_goals": [
+      {"scorer": "Larin", "minute": "16'"},
+      {"scorer": "J. David", "minute": "29'"},
+      {"scorer": "J. David", "minute": "45+3'"},
+      {"scorer": "J. David", "minute": "90+2'", "assist": "Nathan Saliba"},
+      {"scorer": "Saliba", "minute": "64'"},
+      {"scorer": "Manai", "minute": "75' (o.g.)"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group C",
+    "date": "June 13, 2026",
+    "home_team": "Brazil",
+    "away_team": "Morocco",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Vinícius", "minute": "32'"}
+    ],
+    "away_goals": [
+      {"scorer": "Saibari", "minute": "21'", "assist": "Brahim Diaz"}
+    ]
+  },
+  {
+    "group": "Group C",
+    "date": "June 13, 2026",
+    "home_team": "Haiti",
+    "away_team": "Scotland",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "McGinn", "minute": "28'"}
+    ]
+  },
+  {
+    "group": "Group D",
+    "date": "June 12, 2026",
+    "home_team": "United States",
+    "away_team": "Paraguay",
+    "score": "4–1",
+    "home_goals": [
+      {"scorer": "Bobadilla", "minute": "7' (o.g.)"},
+      {"scorer": "Balogun", "minute": "31'", "assist": "Christian Pulisic"},
+      {"scorer": "Balogun", "minute": "45+5'", "assist": "Malik Tillman"},
+      {"scorer": "Reyna", "minute": "90+8'", "assist": "Alexander Freeman"}
+    ],
+    "away_goals": [
+      {"scorer": "Maurício", "minute": "73'", "assist": "Julio Enciso"}
+    ]
+  },
+  {
+    "group": "Group D",
+    "date": "June 13, 2026",
+    "home_team": "Australia",
+    "away_team": "Turkey",
+    "score": "2–0",
+    "home_goals": [
+      {"scorer": "Irankunda", "minute": "27'", "assist": "Paul Okon-Engstler"},
+      {"scorer": "Metcalfe", "minute": "75'"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group E",
+    "date": "June 14, 2026",
+    "home_team": "Germany",
+    "away_team": "Curaçao",
+    "score": "7–1",
+    "home_goals": [
+      {"scorer": "Nmecha", "minute": "6'", "assist": "Florian Wirtz"},
+      {"scorer": "Schlotterbeck", "minute": "38'", "assist": "Nathaniel Brown"},
+      {"scorer": "Havertz", "minute": "45+5' (pen.)"},
+      {"scorer": "Musiala", "minute": "47'", "assist": "Joshua Kimmich"},
+      {"scorer": "Brown", "minute": "68'", "assist": "Deniz Undav"},
+      {"scorer": "Undav", "minute": "78'", "assist": "Joshua Kimmich"},
+      {"scorer": "Havertz", "minute": "88'", "assist": "Deniz Undav"}
+    ],
+    "away_goals": [
+      {"scorer": "Comenencia", "minute": "21'"}
+    ]
+  },
+  {
+    "group": "Group E",
+    "date": "June 14, 2026",
+    "home_team": "Ivory Coast",
+    "away_team": "Ecuador",
+    "score": "1–0",
+    "home_goals": [
+      {"scorer": "Diallo", "minute": "90'", "assist": "Wilfried Singo"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group F",
+    "date": "June 14, 2026",
+    "home_team": "Netherlands",
+    "away_team": "Japan",
+    "score": "2–2",
+    "home_goals": [
+      {"scorer": "Van Dijk", "minute": "50'", "assist": "Ryan Gravenberch"},
+      {"scorer": "Summerville", "minute": "64'", "assist": "Ryan Gravenberch"}
+    ],
+    "away_goals": [
+      {"scorer": "Nakamura", "minute": "57'", "assist": "Takefusa Kubo"},
+      {"scorer": "Kamada", "minute": "88'", "assist": "Koki Ogawa"}
+    ]
+  },
+  {
+    "group": "Group F",
+    "date": "June 14, 2026",
+    "home_team": "Sweden",
+    "away_team": "Tunisia",
+    "score": "5–1",
+    "home_goals": [
+      {"scorer": "Ayari", "minute": "7'"},
+      {"scorer": "Ayari", "minute": "90+6'", "assist": "Lucas Bergvall"},
+      {"scorer": "Isak", "minute": "30'", "assist": "Viktor Gyökeres"},
+      {"scorer": "Gyökeres", "minute": "59'", "assist": "Alexander Isak"},
+      {"scorer": "Svanberg", "minute": "84'", "assist": "Alexander Isak"}
+    ],
+    "away_goals": [
+      {"scorer": "Rekik", "minute": "43'", "assist": "Hannibal Mejbri"}
+    ]
+  },
+  {
+    "group": "Group G",
+    "date": "June 15, 2026",
+    "home_team": "Belgium",
+    "away_team": "Egypt",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Hany", "minute": "66' (o.g.)"}
+    ],
+    "away_goals": [
+      {"scorer": "Ashour", "minute": "19'", "assist": "Mohamed Salah"}
+    ]
+  },
+  {
+    "group": "Group G",
+    "date": "June 15, 2026",
+    "home_team": "Iran",
+    "away_team": "New Zealand",
+    "score": "2–2",
+    "home_goals": [
+      {"scorer": "Rezaeian", "minute": "32'"},
+      {"scorer": "Mohebi", "minute": "64'", "assist": "Ramin Rezaeian"}
+    ],
+    "away_goals": [
+      {"scorer": "Just", "minute": "7'", "assist": "Chris Wood"},
+      {"scorer": "Just", "minute": "54'", "assist": "Chris Wood"}
+    ]
+  },
+  {
+    "group": "Group H",
+    "date": "June 15, 2026",
+    "home_team": "Spain",
+    "away_team": "Cape Verde",
+    "score": "0–0",
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "group": "Group H",
+    "date": "June 15, 2026",
+    "home_team": "Saudi Arabia",
+    "away_team": "Uruguay",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Al-Amri", "minute": "41'"}
+    ],
+    "away_goals": [
+      {"scorer": "M. Araújo", "minute": "80'"}
+    ]
+  },
+  {
+    "group": "Group I",
+    "date": "June 16, 2026",
+    "home_team": "France",
+    "away_team": "Senegal",
+    "score": "3–1",
+    "home_goals": [
+      {"scorer": "Mbappé", "minute": "66'", "assist": "Michael Olise"},
+      {"scorer": "Barcola", "minute": "82'", "assist": "Adrien Rabiot"},
+      {"scorer": "Mbappé", "minute": "90+6'", "assist": "Michael Olise"}
+    ],
+    "away_goals": [
+      {"scorer": "Mbaye", "minute": "90+5'", "assist": "Iliman Ndiaye"}
+    ]
+  },
+  {
+    "group": "Group I",
+    "date": "June 16, 2026",
+    "home_team": "Iraq",
+    "away_team": "Norway",
+    "score": "1–4",
+    "home_goals": [
+      {"scorer": "Hussein", "minute": "39'", "assist": "Amir Al Ammari"}
+    ],
+    "away_goals": [
+      {"scorer": "Haaland", "minute": "29'", "assist": "David Møller Wolfe"},
+      {"scorer": "Haaland", "minute": "43'"},
+      {"scorer": "Østigård", "minute": "76'", "assist": "Martin Ødegaard"},
+      {"scorer": "Hussein", "minute": "90+6' (o.g.)"}
+    ]
+  },
+  {
+    "group": "Group J",
+    "date": "June 16, 2026",
+    "home_team": "Argentina",
+    "away_team": "Algeria",
+    "score": "3–0",
+    "home_goals": [
+      {"scorer": "Messi", "minute": "17'", "assist": "Rodrigo De Paul"},
+      {"scorer": "Messi", "minute": "60'"},
+      {"scorer": "Messi", "minute": "76'", "assist": "Nico González"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group J",
+    "date": "June 16, 2026",
+    "home_team": "Austria",
+    "away_team": "Jordan",
+    "score": "3–1",
+    "home_goals": [
+      {"scorer": "Schmid", "minute": "20'"},
+      {"scorer": "Al-Arab", "minute": "76' (o.g.)"},
+      {"scorer": "Arnautović", "minute": "90+12' (pen.)"}
+    ],
+    "away_goals": [
+      {"scorer": "Olwan", "minute": "50'", "assist": "Noor Al Rawabdeh"}
+    ]
+  },
+  {
+    "group": "Group K",
+    "date": "June 17, 2026",
+    "home_team": "Portugal",
+    "away_team": "DR Congo",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "João Neves", "minute": "6'", "assist": "Pedro Neto"}
+    ],
+    "away_goals": [
+      {"scorer": "Yoane Wissa", "minute": "45+5'", "assist": "Arthur Masuaku"}
+    ]
+  },
+  {
+    "group": "Group K",
+    "date": "June 17, 2026",
+    "home_team": "Uzbekistan",
+    "away_team": "Colombia",
+    "score": "1–3",
+    "home_goals": [
+      {"scorer": "Fayzullaev", "minute": "60'"}
+    ],
+    "away_goals": [
+      {"scorer": "Muñoz", "minute": "40'", "assist": "Luis Díaz"},
+      {"scorer": "Díaz", "minute": "65'"},
+      {"scorer": "Campaz", "minute": "90+9'", "assist": "Cucho Hernández"}
+    ]
+  },
+  {
+    "group": "Group L",
+    "date": "June 17, 2026",
+    "home_team": "England",
+    "away_team": "Croatia",
+    "score": "4–2",
+    "home_goals": [
+      {"scorer": "Kane", "minute": "12' (pen.)"},
+      {"scorer": "Kane", "minute": "42'", "assist": "Declan Rice"},
+      {"scorer": "Bellingham", "minute": "47'", "assist": "Elliot Anderson"},
+      {"scorer": "Rashford", "minute": "85'", "assist": "Bukayo Saka"}
+    ],
+    "away_goals": [
+      {"scorer": "Baturina", "minute": "36'", "assist": "Petar Sučić"},
+      {"scorer": "Musa", "minute": "45+5'", "assist": "Ivan Perišić"}
+    ]
+  },
+  {
+    "group": "Group L",
+    "date": "June 17, 2026",
+    "home_team": "Ghana",
+    "away_team": "Panama",
+    "score": "1–0",
+    "home_goals": [
+      {"scorer": "Yirenkyi", "minute": "90+5'", "assist": "Antoine Semenyo"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group C",
+    "date": "June 19, 2026",
+    "home_team": "Brazil",
+    "away_team": "Haiti",
+    "score": "3–0",
+    "home_goals": [
+      {"scorer": "Matheus Cunha", "minute": "23'"},
+      {"scorer": "Matheus Cunha", "minute": "36'", "assist": "Vinícius Júnior"},
+      {"scorer": "Vinícius Júnior", "minute": "45+3'", "assist": "Lucas Paquetá"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group C",
+    "date": "June 19, 2026",
+    "home_team": "Scotland",
+    "away_team": "Morocco",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "Ismael Saibari", "minute": "2'", "assist": "Brahim Diaz"}
+    ]
+  },
+  {
+    "group": "Group D",
+    "date": "June 19, 2026",
+    "home_team": "United States",
+    "away_team": "Australia",
+    "score": "2–0",
+    "home_goals": [
+      {"scorer": "Cameron Burgess", "minute": "11' (o.g.)"},
+      {"scorer": "Alexander Freeman", "minute": "43'", "assist": "Sergiño Dest"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group D",
+    "date": "June 19, 2026",
+    "home_team": "Türkiye",
+    "away_team": "Paraguay",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "Matías Galarza", "minute": "2'"}
+    ]
+  }
+]

@@ -296,14 +296,14 @@ matches_data = [
     [24, "2026-06-17", "23:59", 1, 16, 43, 44, 1, 3, "Completed", 0.95, 2.10],
 
     # Round 2 Scheduled/Completed matches
-    [25, "2026-06-18", "15:00", 1, 9, 1, 3, 2, 1, "Completed", 1.65, 1.10],
-    [26, "2026-06-18", "18:00", 1, 3, 4, 2, 2, 0, "Completed", 1.88, 0.65],
-    [27, "2026-06-18", "21:00", 1, 5, 5, 7, 3, 1, "Completed", 2.25, 0.85],
-    [28, "2026-06-18", "23:59", 1, 1, 8, 6, 1, 0, "Completed", 1.20, 0.95],
-    [29, "2026-06-19", "15:00", 1, 2, 9, 11, "", "", "Scheduled", "", ""],
-    [30, "2026-06-19", "18:00", 1, 4, 12, 10, "", "", "Scheduled", "", ""],
-    [31, "2026-06-19", "21:00", 1, 6, 13, 15, "", "", "Scheduled", "", ""],
-    [32, "2026-06-19", "23:59", 1, 8, 16, 14, "", "", "Scheduled", "", ""],
+    [25, "2026-06-18", "15:00", 1, 9, 1, 3, 1, 0, "Completed", 1.62, 0.58],
+    [26, "2026-06-18", "18:00", 1, 3, 4, 2, 1, 1, "Completed", 1.35, 1.15],
+    [27, "2026-06-18", "21:00", 1, 5, 5, 7, 6, 0, "Completed", 3.82, 0.22],
+    [28, "2026-06-18", "23:59", 1, 1, 8, 6, 4, 1, "Completed", 2.45, 0.88],
+    [29, "2026-06-19", "15:00", 1, 2, 9, 11, 3, 0, "Completed", 1.16, 0.90],
+    [30, "2026-06-19", "18:00", 1, 4, 12, 10, 0, 1, "Completed", 0.97, 0.54],
+    [31, "2026-06-19", "21:00", 1, 6, 13, 15, 2, 0, "Completed", 1.21, 0.32],
+    [32, "2026-06-19", "23:59", 1, 8, 16, 14, 0, 1, "Completed", 0.40, 0.30],
     [33, "2026-06-20", "15:00", 1, 10, 17, 19, "", "", "Scheduled", "", ""],
     [34, "2026-06-20", "18:00", 1, 12, 20, 18, "", "", "Scheduled", "", ""],
     [35, "2026-06-20", "21:00", 1, 14, 21, 23, "", "", "Scheduled", "", ""],
@@ -360,6 +360,135 @@ events_headers = ["event_id", "match_id", "minute", "event_type", "team_id", "pl
 events_data = []
 event_id_counter = 1
 
+# Normalizations and Overrides for event parsing
+team_aliases = {
+    "South Korea": "South Korea",
+    "Korea Republic": "South Korea",
+    "Czech Republic": "Czechia",
+    "United States": "USA",
+    "Turkey": "Türkiye",
+    "Ivory Coast": "Côte d'Ivoire",
+    "Iran": "IR Iran",
+    "Cape Verde": "Cabo Verde",
+    "DR Congo": "Congo DR",
+}
+
+def clean_name(s):
+    s = s.replace("ø", "o").replace("Ø", "o").replace("æ", "ae").replace("Æ", "ae").replace("å", "a").replace("Å", "a")
+    s = unicodedata.normalize('NFKD', s)
+    cleaned = ''.join(c for c in s if not unicodedata.combining(c)).lower().replace("-", " ").replace(".", " ")
+    return " ".join(cleaned.split())
+
+def match_player_to_id(team_id, name_to_match, players_data):
+    cleaned_match = clean_name(name_to_match)
+    
+    overrides = {
+        "j david": "jonathan christian david",
+        "quinones": "julian andres quinones",
+        "jimenez": "raul alonso jimenez",
+        "m araujo": "maximiliano javier araujo",
+        "joao neves": "joao pedro goncalves neves",
+        "oh hyeon gyu": "hyeongyu oh",
+        "yazan al arab": "yazan abu arab",
+        "musa": "petar musa",
+        "mohebi": "mohebbi",
+        "isak": "alexander isak",
+        # "Mc" players direct ID mappings:
+        "mcginn": 293,
+        "mctominay": 290,
+        "mclean": 309,
+        "mckenna": 312,
+        "mckennie": 320,
+        "mckenzie": 334,
+        "mccowatt": 722,
+        # Verified assists overrides
+        "vinicius junior": 215,
+        "vinicius": 215,
+        "matheus cunha": 217,
+        "lucas paqueta": 228,
+        "brahim diaz": 244,
+        "saibari": 245,
+        "ismael saibari": 245,
+        "ismail saibari": 245,
+        "sergino dest": 314,
+    }
+    
+    if cleaned_match in overrides:
+        val = overrides[cleaned_match]
+        if isinstance(val, int):
+            return val
+        cleaned_match = val
+    
+    match_parts = cleaned_match.split()
+    team_players = [p for p in players_data if int(p[1]) == team_id]
+    
+    # 1. Exact match
+    for p in team_players:
+        if cleaned_match == clean_name(p[2]):
+            return int(p[0])
+            
+    # 2. Substring match
+    for p in team_players:
+        p_clean = clean_name(p[2])
+        if cleaned_match in p_clean or p_clean in cleaned_match:
+            return int(p[0])
+            
+    # 3. Parts match
+    for p in team_players:
+        p_clean = clean_name(p[2])
+        if all(part in p_clean for part in match_parts if len(part) > 1):
+            return int(p[0])
+            
+    # 4. Syllable parts concatenation check
+    for p in team_players:
+        p_clean = clean_name(p[2]).replace(" ", "")
+        concatenated_match = "".join(match_parts)
+        if concatenated_match in p_clean or p_clean in concatenated_match:
+            return int(p[0])
+
+    # 5. Last part match
+    if len(match_parts) > 1:
+        last_part = match_parts[-1]
+        for p in team_players:
+            if last_part in clean_name(p[2]):
+                return int(p[0])
+
+    # Fallback
+    print(f"Warning: Fallback used for team {team_id}, name '{name_to_match}'. Assigned player ID {team_players[0][0]} ({team_players[0][2]})")
+    return int(team_players[0][0])
+
+json_path = os.path.join(output_dir, "real_match_details.json")
+with open(json_path, "r", encoding="utf-8") as f:
+    scraped_matches = json.load(f)
+scraped_lookup = {}
+team_name_to_id = {row[1]: int(row[0]) for row in teams_data}
+
+for sm in scraped_matches:
+    home_name = team_aliases.get(sm["home_team"], sm["home_team"])
+    away_name = team_aliases.get(sm["away_team"], sm["away_team"])
+    h_id = team_name_to_id.get(home_name)
+    a_id = team_name_to_id.get(away_name)
+    if h_id and a_id:
+        scraped_lookup[(h_id, a_id)] = sm
+
+real_red_cards = [
+    (1, 2, 39, 55),
+    (1, 2, 37, 84),
+    (1, 1, 3, 86),
+    (27, 7, 170, 60),
+    (27, 7, 179, 85),
+    (28, 6, 134, 80),
+    (32, 14, 348, 45),   # Almirón straight red, mouth-covering rule, 45+3'
+]
+
+real_var_reviews = [
+    (1, 2, 39, 55),
+    (26, 2, 38, 81),
+    (27, 7, 170, 60),
+    (31, 13, 328, 43),   # Freeman goal VAR check (offside review, goal awarded)
+    (32, 14, 348, 45),   # Almirón red card VAR review
+]
+
 for match in matches_data:
     status = match[9]
     if status != "Completed":
@@ -368,49 +497,112 @@ for match in matches_data:
     match_id = match[0]
     home_id = match[5]
     away_id = match[6]
-    home_score = match[7]
-    away_score = match[8]
     
+    # Process scraped goals/assists
+    sm = scraped_lookup.get((home_id, away_id))
+    if sm:
+        # Home goals
+        for g in sm.get("home_goals", []):
+            scorer = g["scorer"]
+            min_str = g["minute"].split("+")[0].split("'")[0].split()[0]
+            m = int(min_str)
+            is_og = "o.g." in g["minute"]
+            match_team_id = away_id if is_og else home_id
+            player_id = match_player_to_id(match_team_id, scorer, players_data)
+            events_data.append([event_id_counter, match_id, m, "Goal", home_id, player_id])
+            event_id_counter += 1
+            
+            # If there is a verified assist in the json
+            if not is_og and "assist" in g and g["assist"]:
+                assist_player = g["assist"]
+                assist_player_id = match_player_to_id(home_id, assist_player, players_data)
+                events_data.append([event_id_counter, match_id, m, "Assist", home_id, assist_player_id])
+                event_id_counter += 1
+                
+        # Away goals
+        for g in sm.get("away_goals", []):
+            scorer = g["scorer"]
+            min_str = g["minute"].split("+")[0].split("'")[0].split()[0]
+            m = int(min_str)
+            is_og = "o.g." in g["minute"]
+            match_team_id = home_id if is_og else away_id
+            player_id = match_player_to_id(match_team_id, scorer, players_data)
+            events_data.append([event_id_counter, match_id, m, "Goal", away_id, player_id])
+            event_id_counter += 1
+            
+            # If there is a verified assist in the json
+            if not is_og and "assist" in g and g["assist"]:
+                assist_player = g["assist"]
+                assist_player_id = match_player_to_id(away_id, assist_player, players_data)
+                events_data.append([event_id_counter, match_id, m, "Assist", away_id, assist_player_id])
+                event_id_counter += 1
+    else:
+        print(f"Warning: Completed match {match_id} not found in real_match_details.json! No goal/assist events will be generated.")
+
+    # Process Disciplinary Events
     home_players = team_player_map[home_id]
     away_players = team_player_map[away_id]
     
-    # Home goals
-    goal_minutes = sorted(random.sample(range(1, 91), home_score)) if home_score > 0 else []
-    for m in goal_minutes:
-        player_id = random.choice(home_players)
-        events_data.append([event_id_counter, match_id, m, "Goal", home_id, player_id])
+    # Red Cards
+    for rc in real_red_cards:
+        if rc[0] == match_id:
+            events_data.append([event_id_counter, match_id, rc[3], "Red Card", rc[1], rc[2]])
+            event_id_counter += 1
+            
+    # VAR Reviews
+    for vr in real_var_reviews:
+        if vr[0] == match_id:
+            events_data.append([event_id_counter, match_id, vr[3], "VAR Review", vr[1], vr[2]])
+            event_id_counter += 1
+            
+    # Yellow Cards (Verified bookings only)
+    if match_id == 26:
+        events_data.append([event_id_counter, 26, 33, "Yellow Card", 2, 30])
         event_id_counter += 1
-        
-    # Away goals
-    goal_minutes_away = sorted(random.sample(range(1, 91), away_score)) if away_score > 0 else []
-    for m in goal_minutes_away:
-        player_id = random.choice(away_players)
-        events_data.append([event_id_counter, match_id, m, "Goal", away_id, player_id])
+        events_data.append([event_id_counter, 26, 40, "Yellow Card", 2, 31])
         event_id_counter += 1
-        
-    # Cards
-    num_yellows = random.randint(1, 5)
-    for _ in range(num_yellows):
-        team_id = random.choice([home_id, away_id])
-        players = home_players if team_id == home_id else away_players
-        player_id = random.choice(players)
-        events_data.append([event_id_counter, match_id, random.randint(5, 90), "Yellow Card", team_id, player_id])
+        events_data.append([event_id_counter, 26, 76, "Yellow Card", 4, 85])
         event_id_counter += 1
-        
-    # Red cards (10% chance)
-    if random.random() < 0.10:
-        team_id = random.choice([home_id, away_id])
-        players = home_players if team_id == home_id else away_players
-        player_id = random.choice(players)
-        events_data.append([event_id_counter, match_id, random.randint(45, 90), "Red Card", team_id, player_id])
+    elif match_id == 25:
+        events_data.append([event_id_counter, 25, 12, "Yellow Card", 3, 56])
         event_id_counter += 1
-
-    # VAR Review (15% chance)
-    if random.random() < 0.15:
-        team_id = random.choice([home_id, away_id])
-        players = home_players if team_id == home_id else away_players
-        player_id = random.choice(players)
-        events_data.append([event_id_counter, match_id, random.randint(10, 85), "VAR Review", team_id, player_id])
+        events_data.append([event_id_counter, 25, 42, "Yellow Card", 1, 4])
+        event_id_counter += 1
+        events_data.append([event_id_counter, 25, 78, "Yellow Card", 1, 6])
+        event_id_counter += 1
+    elif match_id == 27:
+        events_data.append([event_id_counter, 27, 30, "Yellow Card", 7, 168])
+        event_id_counter += 1
+        events_data.append([event_id_counter, 27, 45, "Yellow Card", 5, 112])
+        event_id_counter += 1
+    elif match_id == 28:
+        events_data.append([event_id_counter, 28, 35, "Yellow Card", 8, 192])
+        event_id_counter += 1
+        events_data.append([event_id_counter, 28, 55, "Yellow Card", 6, 146])
+        event_id_counter += 1
+    elif match_id == 29:
+        events_data.append([event_id_counter, 29, 22, "Yellow Card", 11, 262])  # Carlens Arcus
+        event_id_counter += 1
+        events_data.append([event_id_counter, 29, 38, "Yellow Card", 11, 280])  # Frantzdy Pierrot
+        event_id_counter += 1
+        events_data.append([event_id_counter, 29, 65, "Yellow Card", 11, 277])  # Danley Jean Jacques
+        event_id_counter += 1
+        events_data.append([event_id_counter, 29, 72, "Yellow Card", 9, 224])   # Douglas Santos
+        event_id_counter += 1
+    elif match_id == 31:
+        events_data.append([event_id_counter, 31, 16, "Yellow Card", 15, 369])  # Jordan Bos
+        event_id_counter += 1
+        events_data.append([event_id_counter, 31, 32, "Yellow Card", 15, 367])  # Alessandro Circati
+        event_id_counter += 1
+        events_data.append([event_id_counter, 31, 56, "Yellow Card", 13, 317])  # Antonee Robinson
+        event_id_counter += 1
+        events_data.append([event_id_counter, 31, 84, "Yellow Card", 15, 368])  # Jacob Italiano
+        event_id_counter += 1
+        events_data.append([event_id_counter, 31, 88, "Yellow Card", 13, 332])  # Folarin Balogun
+        event_id_counter += 1
+        events_data.append([event_id_counter, 31, 88, "Yellow Card", 15, 383])  # Harry Souttar
+        event_id_counter += 1
+        events_data.append([event_id_counter, 31, 88, "Yellow Card", 13, 315])  # Chris Richards
         event_id_counter += 1
 
 # Sort events chronologically: sort by match_id (index 1) and minute (index 2)
@@ -485,4 +677,34 @@ export_csv("matches.csv", matches_headers, matches_data)
 export_csv("matches_detailed.csv", detailed_matches_headers, detailed_matches_data)
 export_csv("match_events.csv", events_headers, events_data)
 
-print("All 8 datasets generated successfully in:", output_dir)
+# ==========================================
+# 9. MATCH TEAM STATS (VERIFIED DATA ONLY)
+# ==========================================
+# Policy: Only rows with verified stats from authentic sources are included.
+# If a match doesn't have verified stats, it is simply omitted.
+# Columns with unverified values for a given match are left empty.
+match_team_stats_headers = [
+    "match_id", "team_id", "possession_pct", "total_shots",
+    "shots_on_target", "corners", "fouls", "offsides", "saves",
+    "data_source", "last_updated"
+]
+
+# Each entry: [match_id, team_id, poss%, shots, SoT, corners, fouls, offsides, saves, source, date]
+real_match_team_stats_data = [
+    # Match 29: Brazil 3-0 Haiti (June 19) — theguardian.com / sofascore.com
+    [29, 9,  59, 7, "", "", "", "", "", "theguardian.com", "2026-06-20"],
+    [29, 11, 41, 2, 0,  "", "", "", "", "theguardian.com", "2026-06-20"],
+    # Match 30: Scotland 0-1 Morocco (June 19) — sofascore.com
+    [30, 12, 41, 6,  0, 2, "", "", "", "sofascore.com", "2026-06-20"],
+    [30, 10, 59, 12, "", 5, "", "", "", "sofascore.com", "2026-06-20"],
+    # Match 31: USA 2-0 Australia (June 19) — sofascore.com
+    [31, 13, 62, 9, "", "", "", "", "", "sofascore.com", "2026-06-20"],
+    [31, 15, 38, 2, "", "", "", "", "", "sofascore.com", "2026-06-20"],
+    # Match 32: Türkiye 0-1 Paraguay (June 19) — sofascore.com
+    [32, 16, 79, 32, "", 12, "", "", "", "sofascore.com", "2026-06-20"],
+    [32, 14, 21, 7,  "", 0,  "", "", "", "sofascore.com", "2026-06-20"],
+]
+
+export_csv("match_team_stats.csv", match_team_stats_headers, real_match_team_stats_data)
+
+print("All 9 datasets generated successfully in:", output_dir)

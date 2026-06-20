@@ -16,3 +16,9 @@ deploy_kaggle.py
 dataset-metadata.json
 .kaggleignore
 
+# Temporary parsing/scraping debug files
+SquadLists-English.pdf
+pdf_lines_debug.txt
+test_parser_results.txt
+
+

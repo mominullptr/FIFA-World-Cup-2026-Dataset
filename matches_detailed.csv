@@ -23,14 +23,14 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 22,2026-06-17,18:00,Group Stage,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,England,ENG,Croatia,CRO,4,2,Completed,2.92,1.64,Danny Makkelie
 23,2026-06-17,21:00,Group Stage,Houston Stadium (NRG Stadium),Houston,USA,Ghana,GHA,Panama,PAN,1,0,Completed,1.3,0.75,Jesús Valenzuela
 24,2026-06-17,23:59,Group Stage,Seattle Stadium (Lumen Field),Seattle,USA,Uzbekistan,UZB,Colombia,COL,1,3,Completed,0.95,2.1,Wilton Sampaio
-25,2026-06-18,15:00,Group Stage,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,Mexico,MEX,South Korea,KOR,2,1,Completed,1.65,1.1,César Arturo Ramos
-26,2026-06-18,18:00,Group Stage,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Czechia,CZE,South Africa,RSA,2,0,Completed,1.88,0.65,Ivan Barton
-27,2026-06-18,21:00,Group Stage,Vancouver Stadium (BC Place),Vancouver,CAN,Canada,CAN,Qatar,QAT,3,1,Completed,2.25,0.85,Mustapha Ghorbal
-28,2026-06-18,23:59,Group Stage,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Switzerland,SUI,Bosnia and Herzegovina,BIH,1,0,Completed,1.2,0.95,Victor Gomes
-29,2026-06-19,15:00,Group Stage,New York New Jersey Stadium (MetLife Stadium),East Rutherford,USA,Brazil,BRA,Haiti,HAI,,,Scheduled,,,Ma Ning
-30,2026-06-19,18:00,Group Stage,Dallas Stadium (AT&T Stadium),Arlington,USA,Scotland,SCO,Morocco,MAR,,,Scheduled,,,Alireza Faghani
-31,2026-06-19,21:00,Group Stage,Toronto Stadium (BMO Field),Toronto,CAN,USA,USA,Australia,AUS,,,Scheduled,,,Yoshimi Yamashita
-32,2026-06-19,23:59,Group Stage,Monterrey Stadium (Estadio BBVA),Guadalupe,MEX,Türkiye,TUR,Paraguay,PAR,,,Scheduled,,,Facundo Tello
+25,2026-06-18,15:00,Group Stage,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,Mexico,MEX,South Korea,KOR,1,0,Completed,1.62,0.58,César Arturo Ramos
+26,2026-06-18,18:00,Group Stage,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Czechia,CZE,South Africa,RSA,1,1,Completed,1.35,1.15,Ivan Barton
+27,2026-06-18,21:00,Group Stage,Vancouver Stadium (BC Place),Vancouver,CAN,Canada,CAN,Qatar,QAT,6,0,Completed,3.82,0.22,Mustapha Ghorbal
+28,2026-06-18,23:59,Group Stage,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Switzerland,SUI,Bosnia and Herzegovina,BIH,4,1,Completed,2.45,0.88,Victor Gomes
+29,2026-06-19,15:00,Group Stage,New York New Jersey Stadium (MetLife Stadium),East Rutherford,USA,Brazil,BRA,Haiti,HAI,3,0,Completed,1.16,0.9,Ma Ning
+30,2026-06-19,18:00,Group Stage,Dallas Stadium (AT&T Stadium),Arlington,USA,Scotland,SCO,Morocco,MAR,0,1,Completed,0.97,0.54,Alireza Faghani
+31,2026-06-19,21:00,Group Stage,Toronto Stadium (BMO Field),Toronto,CAN,USA,USA,Australia,AUS,2,0,Completed,1.21,0.32,Yoshimi Yamashita
+32,2026-06-19,23:59,Group Stage,Monterrey Stadium (Estadio BBVA),Guadalupe,MEX,Türkiye,TUR,Paraguay,PAR,0,1,Completed,0.4,0.3,Facundo Tello
 33,2026-06-20,15:00,Group Stage,Boston Stadium (Gillette Stadium),Foxborough,USA,Germany,GER,Côte d'Ivoire,CIV,,,Scheduled,,,Szymon Marciniak
 34,2026-06-20,18:00,Group Stage,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Ecuador,ECU,Curaçao,CUW,,,Scheduled,,,Daniele Orsato
 35,2026-06-20,21:00,Group Stage,Philadelphia Stadium (Lincoln Financial Field),Philadelphia,USA,Netherlands,NED,Sweden,SWE,,,Scheduled,,,Michael Oliver

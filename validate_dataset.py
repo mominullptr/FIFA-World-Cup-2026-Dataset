@@ -162,8 +162,47 @@ def main():
     if errors == 0:
         print("  [OK] Denormalized views map correctly.")
 
+    # 6. Match Team Stats Validation
+    print("\n[6/7] Verifying match_team_stats.csv...")
+    stats_path = os.path.join(workspace_dir, "match_team_stats.csv")
+    if os.path.exists(stats_path):
+        stats_headers, stats = load_csv("match_team_stats.csv")
+        match_stats_map = {}
+        for row in stats:
+            s_mid, s_tid = row[0], row[1]
+            if s_mid not in match_ids:
+                print(f"[FAIL] Error: match_team_stats row references non-existent match_id {s_mid}.")
+                errors += 1
+            if s_tid not in team_ids:
+                print(f"[FAIL] Error: match_team_stats row references non-existent team_id {s_tid}.")
+                errors += 1
+            
+            try:
+                m_id_int = int(s_mid)
+                pos_pct = int(row[2]) if row[2] != "" else None
+                match_stats_map.setdefault(m_id_int, []).append(pos_pct)
+            except ValueError:
+                pass
+                
+        # Grouped validations
+        for m_id, poss_list in match_stats_map.items():
+            if len(poss_list) != 2:
+                print(f"[FAIL] Error: Match {m_id} has {len(poss_list)} rows in match_team_stats (expected exactly 2).")
+                errors += 1
+            else:
+                p1, p2 = poss_list[0], poss_list[1]
+                if p1 is not None and p2 is not None:
+                    if p1 + p2 != 100:
+                        print(f"[FAIL] Error: Match {m_id} possession percentages ({p1}% and {p2}%) do not sum to 100%.")
+                        errors += 1
+                        
+        if errors == 0:
+            print(f"  [OK] match_team_stats.csv has {len(stats)} rows with valid FK references, row counts, and possession totals.")
+    else:
+        print("  [SKIP] match_team_stats.csv not found (optional table).")
+
     # Final report
-    print("\n[6/6] Summary:")
+    print("\n[7/7] Summary:")
     if errors == 0:
         print("SUCCESS: The dataset passed all relational integrity constraints!")
         sys.exit(0)
