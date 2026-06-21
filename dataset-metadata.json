@@ -8,18 +8,11 @@
   ],
   "subtitle": "48-team matches, squads, xG, events & team stats — updated daily",
   "keywords": [
-    "football",
-    "soccer",
-    "fifa world cup",
-    "world cup 2026",
-    "sports analytics",
     "sports",
-    "classification",
-    "data visualization",
+    "football",
+    "tabular",
     "exploratory data analysis",
-    "sql",
-    "relational database",
-    "csv"
+    "databases"
   ],
   "resources": [
     {
