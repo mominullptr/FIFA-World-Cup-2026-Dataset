@@ -1,0 +1,62 @@
+{
+  "title": "FIFA World Cup 2026 Dataset",
+  "id": "mominullptr/fifa-world-cup-2026-dataset",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "subtitle": "Complete 48-team World Cup 2026 data: matches, scores, xG, squads, player stats, match events & team statistics — updated daily",
+  "keywords": [
+    "football",
+    "soccer",
+    "fifa world cup",
+    "world cup 2026",
+    "sports analytics",
+    "sports",
+    "classification",
+    "data visualization",
+    "exploratory data analysis",
+    "sql",
+    "relational database",
+    "csv"
+  ],
+  "resources": [
+    {
+      "path": "teams.csv",
+      "description": "All 48 qualified national teams with FIFA ranking, Elo rating, confederation, group, and manager name."
+    },
+    {
+      "path": "venues.csv",
+      "description": "16 host stadiums in USA, Canada, and Mexico with capacity, coordinates, and altitude."
+    },
+    {
+      "path": "tournament_stages.csv",
+      "description": "Tournament stage lookup (Group Stage, Round of 32, Quarter-finals, etc.)."
+    },
+    {
+      "path": "referees.csv",
+      "description": "16 elite match referees with nationality and historical cards-per-game average."
+    },
+    {
+      "path": "matches.csv",
+      "description": "All 72 matches with dates, scores, xG (expected goals), venue/stage/referee references, and live status."
+    },
+    {
+      "path": "matches_detailed.csv",
+      "description": "Denormalized match view with human-readable team names, stadium names, cities, and referee names — no SQL joins needed."
+    },
+    {
+      "path": "squads_and_players.csv",
+      "description": "1,248 players (26-man squads for all 48 teams) with positions, clubs, market values, caps, height, DOB, and international goals."
+    },
+    {
+      "path": "match_events.csv",
+      "description": "Goal, assist, yellow card, red card, and VAR review events with minute-by-minute timestamps."
+    },
+    {
+      "path": "match_team_stats.csv",
+      "description": "Per-team per-match statistics: possession, shots, shots on target, corners, fouls, offsides, saves — sourced from FIFA, Sofascore, and The Guardian."
+    }
+  ]
+}
