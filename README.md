@@ -1,4 +1,4 @@
-# FIFA World Cup 2026 Dataset — Matches, Squads, Players, Stats & Live Results
+# FIFA World Cup 2026 - Live Results & Updated Stats — Matches, Squads, Players, Stats & Live Results
 https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset
 
 **The most complete and actively updated FIFA World Cup 2026 dataset on Kaggle.** A clean, authentic, relational dataset covering the entire tournament (June 11 – July 19, 2026) with the first-ever 48-team format. Includes real match results updated daily, 1,248 players across all 48 squads, expected goals (xG), minute-by-minute match events, and per-team match statistics sourced from FIFA.com and verified providers.
@@ -162,7 +162,7 @@ If you use this dataset in your research, publications, or projects, please cite
 ```bibtex
 @dataset{fifa_world_cup_2026,
   author = {MD Mominul Islam},
-  title = {FIFA World Cup 2026 Dataset},
+  title = {FIFA World Cup 2026 - Live Results & Updated Stats},
   year = {2026},
   publisher = {Kaggle}
 }

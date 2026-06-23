@@ -17,7 +17,7 @@ def load_csv(filename):
 
 def main():
     print("====================================================")
-    print("FIFA World Cup 2026 Dataset - Integrity Verification")
+    print("FIFA World Cup 2026 - Live Results & Updated Stats - Integrity Verification")
     print("====================================================\n")
 
     # Load all tables
