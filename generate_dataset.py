@@ -267,7 +267,7 @@ for team in teams_data:
 # ==========================================
 # 6. MATCHES DATA
 # ==========================================
-matches_headers = ["match_id", "date", "kickoff_time_utc", "stage_id", "venue_id", "home_team_id", "away_team_id", "home_score", "away_score", "status", "home_xg", "away_xg", "referee_id"]
+matches_headers = ["match_id", "date", "kickoff_time_utc", "stage_id", "venue_id", "home_team_id", "away_team_id", "home_score", "away_score", "status", "home_xg", "away_xg", "referee_id", "player_of_the_match_id"]
 matches_data = [
     # Round 1 Completed matches
     [1, "2026-06-11", "19:00", 1, 1, 1, 2, 2, 0, "Completed", 1.84, 0.52],
@@ -304,18 +304,18 @@ matches_data = [
     [30, "2026-06-19", "18:00", 1, 4, 12, 10, 0, 1, "Completed", 0.97, 0.54],
     [31, "2026-06-19", "21:00", 1, 6, 13, 15, 2, 0, "Completed", 1.21, 0.32],
     [32, "2026-06-19", "23:59", 1, 8, 16, 14, 0, 1, "Completed", 0.40, 0.30],
-    [33, "2026-06-20", "15:00", 1, 10, 17, 19, "", "", "Scheduled", "", ""],
-    [34, "2026-06-20", "18:00", 1, 12, 20, 18, "", "", "Scheduled", "", ""],
-    [35, "2026-06-20", "21:00", 1, 14, 21, 23, "", "", "Scheduled", "", ""],
-    [36, "2026-06-20", "23:59", 1, 16, 24, 22, "", "", "Scheduled", "", ""],
-    [37, "2026-06-21", "15:00", 1, 11, 25, 27, "", "", "Scheduled", "", ""],
-    [38, "2026-06-21", "18:00", 1, 13, 28, 26, "", "", "Scheduled", "", ""],
-    [39, "2026-06-21", "21:00", 1, 15, 29, 31, "", "", "Scheduled", "", ""],
-    [40, "2026-06-21", "23:59", 1, 2, 32, 30, "", "", "Scheduled", "", ""],
-    [41, "2026-06-22", "15:00", 1, 4, 33, 35, "", "", "Scheduled", "", ""],
-    [42, "2026-06-22", "18:00", 1, 6, 36, 34, "", "", "Scheduled", "", ""],
-    [43, "2026-06-22", "21:00", 1, 8, 37, 39, "", "", "Scheduled", "", ""],
-    [44, "2026-06-22", "23:59", 1, 10, 40, 38, "", "", "Scheduled", "", ""],
+    [33, "2026-06-20", "15:00", 1, 10, 17, 19, 2, 1, "Completed", 1.85, 0.72],
+    [34, "2026-06-20", "18:00", 1, 12, 20, 18, 0, 0, "Completed", 1.92, 0.08],
+    [35, "2026-06-20", "21:00", 1, 14, 21, 23, 5, 1, "Completed", 3.45, 0.88],
+    [36, "2026-06-20", "23:59", 1, 16, 24, 22, 0, 4, "Completed", 0.35, 3.12],
+    [37, "2026-06-21", "15:00", 1, 11, 25, 27, 0, 0, "Completed", 1.45, 0.62],
+    [38, "2026-06-21", "18:00", 1, 13, 28, 26, 1, 3, "Completed", 0.55, 2.15],
+    [39, "2026-06-21", "21:00", 1, 15, 29, 31, 4, 0, "Completed", 3.28, 0.25],
+    [40, "2026-06-21", "23:59", 1, 2, 32, 30, 2, 2, "Completed", 1.65, 1.10],
+    [41, "2026-06-22", "15:00", 1, 4, 33, 35, 3, 0, "Completed", 2.21, 0.45],
+    [42, "2026-06-22", "18:00", 1, 6, 36, 34, 3, 2, "Completed", 1.95, 1.48],
+    [43, "2026-06-22", "21:00", 1, 8, 37, 39, 2, 0, "Completed", 1.78, 0.55],
+    [44, "2026-06-22", "23:59", 1, 10, 40, 38, 1, 2, "Completed", 0.88, 1.92],
     [45, "2026-06-23", "15:00", 1, 12, 41, 43, "", "", "Scheduled", "", ""],
     [46, "2026-06-23", "18:00", 1, 14, 44, 42, "", "", "Scheduled", "", ""],
     [47, "2026-06-23", "21:00", 1, 16, 45, 47, "", "", "Scheduled", "", ""],
@@ -348,10 +348,61 @@ matches_data = [
     [72, "2026-06-29", "22:00", 1, 11, 46, 47, "", "", "Scheduled", "", ""]
 ]
 
-# Assign referees relationally
+# Player of the match mapping (match_id -> player_id) for completed matches 1-44
+player_of_the_match_mapping = {
+    1: 16,     # Julián Andrés Quinones (MEX)
+    2: 58,     # Inbeom Hwang (KOR)
+    3: 112,    # Ismaïl Kenneth Jordan Kone (CAN)
+    4: 332,    # Folarin Jolaoluwa Balogun (USA)
+    5: 157,    # Ibrahim Mahmoud Abunada (QAT)
+    6: 215,    # José Vinicius (BRA)
+    7: 293,    # John McGinn (SCO)
+    8: 381,    # Nestory Irankunda (AUS)
+    9: 423,    # Kai Lukas Havertz (GER)
+    10: 524,   # Virgil Van Dijk (NED)
+    11: 479,   # Yan Diomande (CIV)
+    12: 581,   # Alexander Isak (SWE)
+    13: 755,   # José Vozinha (CPV)
+    14: 658,   # Ashour Metwaly Emam (EGY)
+    15: 801,   # Khalil Mohammed Alowais (KSA)
+    16: 699,   # Ramin Rezaeian (IRN)
+    17: 843,   # Michael Akpovie Olise (FRA)
+    18: 919,   # Erling Braut Haaland (NOR)
+    19: 946,   # Lionel Andrés Messi (ARG)
+    20: 1023,  # Iyad Ali Ali Olwan (JOR)
+    21: 1055,  # Pedro Joao Neves (POR)
+    22: 1153,  # Harry Edward Kane (ENG)
+    23: 1207,  # Antoine Serlom Semenyo (GHA)
+    24: 1125,  # Luis Fernando Diaz (COL)
+    25: 7,     # Luis Francisco Romo (MEX)
+    26: 96,    # Michal Sadilek (CZE)
+    27: 114,   # Jonathan Christian David (CAN)
+    28: 191,   # Johan Kula Manzambi (SUI)
+    29: 217,   # Matheus Matheus Cunha (BRA)
+    30: 245,   # Ismael Saibari (MAR)
+    31: 332,   # Folarin Jolaoluwa Balogun (USA)
+    32: 361,   # Matias Galarza (PAR)
+    33: 442,   # Deniz Undav (GER)
+    34: 443,   # Eloy Victor Room (CUW)
+    35: 531,   # Cody Mathés Gakpo (NED)
+    36: 564,   # Ayase Ueda (JPN)
+    37: 677,   # Ali Reza Beiranvand (IRN)
+    38: 660,   # Hamed Mahrous Mohamed Salah (EGY)
+    39: 749,   # Mikel Oyarzabal (ESP)
+    40: 755,   # José Vozinha (CPV)
+    41: 842,   # Kylian Mbappe (FRA)
+    42: 919,   # Erling Braut Haaland (NOR)
+    43: 946,   # Lionel Andrés Messi (ARG)
+    44: 984,   # Ibrahim Maza (ALG)
+}
+
+# Assign referees and player of the match relationally/statically
 for idx, match in enumerate(matches_data):
+    m_id = match[0]
+    potm_id = player_of_the_match_mapping.get(m_id, "")
     referee_id = (idx % 16) + 1
     match.append(referee_id)
+    match.append(potm_id)
 
 # ==========================================
 # 7. MATCH EVENTS DATA GENERATOR
@@ -411,6 +462,28 @@ def match_player_to_id(team_id, name_to_match, players_data):
         "ismael saibari": 245,
         "ismail saibari": 245,
         "sergino dest": 314,
+        # June 20-22 match overrides
+        "nadiem amiri": 436,
+        "cody gakpo": 531,
+        "denzel dumfries": 542,
+        "crysencio summerville": 544,
+        "memphis depay": 530,
+        "keito nakamura": 559,
+        "junya ito": 560,
+        "ayase ueda": 564,
+        "tim payne": 704,
+        "mohamed hany": 653,
+        "mostafa zico": 661,
+        "mohamed salah": 660,
+        "mikel oyarzabal": 749,
+        "aymeric laporte": 742,
+        "dani olmo": 738,
+        "marc cucurella": 752,
+        "kevin pina": 760,
+        "helio varela": 780,
+        "federico valverde": 814,
+        "maximiliano araujo": 826,
+        "yan diomande": 479,
     }
     
     if cleaned_match in overrides:
@@ -479,6 +552,7 @@ real_red_cards = [
     (27, 7, 179, 85),
     (28, 6, 134, 80),
     (32, 14, 348, 45),   # Almirón straight red, mouth-covering rule, 45+3'
+    (37, 25, 653, 66),   # Nathan Ngoy straight red for DOGSO on Taremi
 ]
 
 real_var_reviews = [
@@ -604,6 +678,9 @@ for match in matches_data:
         event_id_counter += 1
         events_data.append([event_id_counter, 31, 88, "Yellow Card", 13, 315])  # Chris Richards
         event_id_counter += 1
+    elif match_id == 37:
+        events_data.append([event_id_counter, 37, 1, "Yellow Card", 25, 633])  # Romelu Lukaku
+        event_id_counter += 1
 
 # Sort events chronologically: sort by match_id (index 1) and minute (index 2)
 events_data.sort(key=lambda x: (x[1], x[2]))
@@ -620,12 +697,69 @@ venue_lookup = {row[0]: (row[1], row[2], row[3]) for row in venues_data}
 stage_lookup = {row[0]: row[1] for row in stages_data}
 referee_lookup = {row[0]: row[1] for row in referees_data}
 
+player_info_lookup = {int(p[0]): (p[2], int(p[1])) for p in players_data}
+
+# Known POTM name corrections (for parsing artifacts in squad data)
+potm_name_overrides = {
+    293: "John McGinn",  # Scotland — parsed incorrectly as 'Mc'
+}
+
+# Starting goalkeeper mapping: match_id -> (home_gk_player_id, away_gk_player_id)
+match_goalkeepers = {
+    1:  (13,   27),   # MEX vs RSA: Guillermo Ochoa vs Ronwen Williams
+    2:  (53,   79),   # KOR vs CZE: Seunggyu Kim vs Matej Kovar
+    3:  (120, 131),   # CAN vs BIH: Maxime Crepeau vs Nikola Vasilj
+    4:  (313, 339),   # USA vs PAR: Matt Turner vs Roberto Fernandez
+    5:  (157, 183),   # QAT vs SUI: Ibrahim Abunada vs Gregor Kobel
+    6:  (209, 235),   # BRA vs MAR: Alisson Becker vs Yassine Bounou
+    7:  (261, 287),   # HAI vs SCO: Johny Placide vs Angus Gunn
+    8:  (365, 391),   # AUS vs TUR: Mathew Ryan vs Mert Gunok
+    9:  (417, 443),   # GER vs CUW: Manuel Neuer vs Eloy Room
+    10: (521, 547),   # NED vs JPN: Bart Verbruggen vs Zion Suzuki
+    11: (469, 495),   # CIV vs ECU: Yahia Fofana vs Hernan Galindez
+    12: (573, 614),   # SWE vs TUN: Jacob Widell Zetterstrom vs Aymen Dahmen
+    13: (729, 755),   # ESP vs CPV: David Raya vs Jose Vozinha
+    14: (625, 651),   # BEL vs EGY: Thibaut Courtois vs Elsayed Elshenawy
+    15: (801, 807),   # KSA vs URU: Khalil Al-Owais vs Sergio Rochet
+    16: (677, 703),   # IRN vs NZL: Ali Beiranvand vs Maxime Crocombe
+    17: (848, 874),   # FRA vs SEN: Mike Maignan vs Edouard Mendy
+    18: (885, 911),   # IRQ vs NOR: Talib Raheem vs Orjan Nyland
+    19: (959, 963),   # ARG vs ALG: Emiliano Martinez vs Melvin Mastil
+    20: (989, 1015),  # AUT vs JOR: Alexander Schlager vs Moien Abulaila
+    21: (1041, 1067), # POR vs COD: Diogo Costa vs Lionel Nzau Mpasi
+    22: (1145, 1171), # ENG vs CRO: Jordan Pickford vs Dominik Livakovic
+    23: (1197, 1223), # GHA vs PAN: Lawrence Ati-Zigi vs Luis Mejia
+    24: (1093, 1119), # UZB vs COL: Utkir Yusupov vs David Ospina
+    25: (13,   53),   # MEX vs KOR: Guillermo Ochoa vs Seunggyu Kim
+    26: (79,   27),   # CZE vs RSA: Matej Kovar vs Ronwen Williams
+    27: (120, 157),   # CAN vs QAT: Maxime Crepeau vs Ibrahim Abunada
+    28: (183, 131),   # SUI vs BIH: Gregor Kobel vs Nikola Vasilj
+    29: (209, 261),   # BRA vs HAI: Alisson Becker vs Johny Placide
+    30: (287, 235),   # SCO vs MAR: Angus Gunn vs Yassine Bounou
+    31: (313, 365),   # USA vs AUS: Matt Turner vs Mathew Ryan
+    32: (391, 339),   # TUR vs PAR: Mert Gunok vs Roberto Fernandez
+    33: (417, 469),   # GER vs CIV: Manuel Neuer vs Yahia Fofana
+    34: (495, 443),   # ECU vs CUW: Hernan Galindez vs Eloy Room
+    35: (521, 573),   # NED vs SWE: Bart Verbruggen vs Jacob Widell Zetterstrom
+    36: (614, 547),   # TUN vs JPN: Aymen Dahmen vs Zion Suzuki
+    37: (625, 677),   # BEL vs IRN: Thibaut Courtois vs Ali Beiranvand
+    38: (703, 651),   # NZL vs EGY: Maxime Crocombe vs Elsayed Elshenawy
+    39: (729, 801),   # ESP vs KSA: David Raya vs Khalil Al-Owais
+    40: (807, 755),   # URU vs CPV: Sergio Rochet vs Jose Vozinha
+    41: (848, 885),   # FRA vs IRQ: Mike Maignan vs Talib Raheem
+    42: (911, 874),   # NOR vs SEN: Orjan Nyland vs Edouard Mendy
+    43: (959, 989),   # ARG vs AUT: Emiliano Martinez vs Alexander Schlager
+    44: (1015, 963),  # JOR vs ALG: Moien Abulaila vs Melvin Mastil
+}
+
 detailed_matches_headers = [
     "match_id", "date", "kickoff_time_utc", "stage_name", 
     "stadium_name", "city", "country", 
     "home_team_name", "home_fifa_code", 
     "away_team_name", "away_fifa_code", 
-    "home_score", "away_score", "status", "home_xg", "away_xg", "referee_name"
+    "home_score", "away_score", "status", "home_xg", "away_xg",
+    "home_goalkeeper", "away_goalkeeper",
+    "player_of_the_match_name", "referee_name"
 ]
 detailed_matches_data = []
 
@@ -643,6 +777,7 @@ for match in matches_data:
     h_xg = match[10]
     a_xg = match[11]
     ref_id = match[12]
+    potm_id = match[13]
     
     stg_name = stage_lookup.get(stg_id, "Unknown")
     stadium, city, country = venue_lookup.get(ven_id, ("Unknown", "Unknown", "Unknown"))
@@ -650,12 +785,23 @@ for match in matches_data:
     away_name, away_code = team_lookup.get(a_id, ("Unknown", "UNK"))
     ref_name = referee_lookup.get(ref_id, "Unknown")
     
+    potm_name = ""
+    if potm_id:
+        raw_potm_name, _ = player_info_lookup.get(int(potm_id), ("", None))
+        potm_name = potm_name_overrides.get(int(potm_id), raw_potm_name)
+
+    home_gk_id, away_gk_id = match_goalkeepers.get(m_id, (None, None))
+    home_gk_name = player_info_lookup.get(home_gk_id, ("", None))[0] if home_gk_id else ""
+    away_gk_name = player_info_lookup.get(away_gk_id, ("", None))[0] if away_gk_id else ""
+
     detailed_matches_data.append([
         m_id, date, time, stg_name,
         stadium, city, country,
         home_name, home_code,
         away_name, away_code,
-        h_score, a_score, status, h_xg, a_xg, ref_name
+        h_score, a_score, status, h_xg, a_xg,
+        home_gk_name, away_gk_name,
+        potm_name, ref_name
     ])
 
 # ==========================================
@@ -686,25 +832,159 @@ export_csv("match_events.csv", events_headers, events_data)
 match_team_stats_headers = [
     "match_id", "team_id", "possession_pct", "total_shots",
     "shots_on_target", "corners", "fouls", "offsides", "saves",
-    "data_source", "last_updated"
+    "player_of_the_match", "data_source", "last_updated"
 ]
 
 # Each entry: [match_id, team_id, poss%, shots, SoT, corners, fouls, offsides, saves, source, date]
 real_match_team_stats_data = [
-    # Match 29: Brazil 3-0 Haiti (June 19) — theguardian.com / sofascore.com
-    [29, 9,  59, 7, "", "", "", "", "", "theguardian.com", "2026-06-20"],
-    [29, 11, 41, 2, 0,  "", "", "", "", "theguardian.com", "2026-06-20"],
+    # Match 1: Mexico 2-0 South Africa (June 11) — fifa.com/sofascore.com
+    [1,  1,  57, 16, 4,  6,  11, 2, 1,  "fifa.com", "2026-06-24"],
+    [1,  2,  43, 3,  2,  3,  15, 1, 4,  "fifa.com", "2026-06-24"],
+    # Match 2: South Korea 2-1 Czechia (June 11) — sofascore.com
+    [2,  3,  54, 12, 5,  4,  10, 1, 2,  "sofascore.com", "2026-06-24"],
+    [2,  4,  46, 10, 3,  3,  13, 2, 4,  "sofascore.com", "2026-06-24"],
+    # Match 3: Canada 1-1 Bosnia and Herzegovina (June 12) — fifa.com
+    [3,  5,  52, 13, 4,  9,  12, 2, 3,  "fifa.com", "2026-06-24"],
+    [3,  6,  29, 8,  3,  4,  15, 1, 5,  "fifa.com", "2026-06-24"],
+    # Match 4: USA 4-1 Paraguay (June 12) — fifa.com
+    [4,  13, 59, 16, 6,  3,  13, 2, 1,  "fifa.com", "2026-06-24"],
+    [4,  14, 28, 9,  1,  1,  17, 3, 9,  "fifa.com", "2026-06-24"],
+    # Match 5: Qatar 1-1 Switzerland (June 13) — fifa.com
+    [5,  7,  28, 6,  3,  3,  12, 1, 4,  "fifa.com", "2026-06-24"],
+    [5,  8,  58, 26, 7,  10, 11, 0, 2,  "fifa.com", "2026-06-24"],
+    # Match 6: Brazil 1-1 Morocco (June 13) — fifa.com
+    [6,  9,  55, 12, 5,  6,  16, 0, 3,  "fifa.com", "2026-06-24"],
+    [6,  10, 45, 14, 3,  2,  14, 1, 4,  "fifa.com", "2026-06-24"],
+    # Match 7: Haiti 0-1 Scotland (June 13) — sofascore.com
+    [7,  11, 44, 14, 1,  5,  12, 2, 5,  "sofascore.com", "2026-06-24"],
+    [7,  12, 56, 12, 3,  6,  10, 3, 2,  "sofascore.com", "2026-06-24"],
+    # Match 8: Australia 2-0 Turkiye (June 13) — fifa.com
+    [8,  15, 27, 9,  4,  5,  12, 1, 2,  "fifa.com", "2026-06-24"],
+    [8,  16, 62, 30, 7,  8,  4,  3, 2,  "fifa.com", "2026-06-24"],
+    # Match 9: Germany 7-1 Curacao (June 14) — sofascore.com
+    [9,  17, 63, 25, 12, 8,  10, 1, 1,  "sofascore.com", "2026-06-24"],
+    [9,  18, 37, 8,  1,  1,  12, 2, 5,  "sofascore.com", "2026-06-24"],
+    # Match 10: Netherlands 2-2 Japan (June 14) — fifa.com
+    [10, 21, 61, 10, 5,  5,  7,  2, 3,  "fifa.com", "2026-06-24"],
+    [10, 22, 39, 9,  5,  4,  7,  1, 3,  "fifa.com", "2026-06-24"],
+    # Match 11: Cote d'Ivoire 1-0 Ecuador (June 14) — fifa.com
+    [11, 19, 41, 15, 4,  3,  12, 2, 3,  "fifa.com", "2026-06-24"],
+    [11, 20, 49, 12, 1,  5,  14, 3, 3,  "fifa.com", "2026-06-24"],
+    # Match 12: Sweden 5-1 Tunisia (June 14) — fifa.com
+    [12, 23, 49, 13, 7,  4,  10, 3, 1,  "fifa.com", "2026-06-24"],
+    [12, 24, 51, 6,  2,  2,  8,  1, 6,  "fifa.com", "2026-06-24"],
+    # Match 13: Spain 0-0 Cabo Verde (June 15) — fifa.com
+    [13, 29, 65, 27, 7,  11, 10, 2, 6,  "fifa.com", "2026-06-24"],
+    [13, 30, 25, 6,  1,  1,  1,  3, 7,  "fifa.com", "2026-06-24"],
+    # Match 14: Belgium 1-1 Egypt (June 15) — fifa.com
+    [14, 25, 57, 15, 3,  2,  15, 0, 2,  "fifa.com", "2026-06-24"],
+    [14, 26, 43, 14, 3,  7,  15, 1, 2,  "fifa.com", "2026-06-24"],
+    # Match 15: Saudi Arabia 1-1 Uruguay (June 15) — fifa.com
+    [15, 31, 27, 7,  3,  4,  11, 2, 8,  "fifa.com", "2026-06-24"],
+    [15, 32, 63, 27, 10, 14, 6,  1, 2,  "fifa.com", "2026-06-24"],
+    # Match 16: IR Iran 2-2 New Zealand (June 15) — fifa.com
+    [16, 27, 43, 17, 4,  4,  10, 2, 5,  "fifa.com", "2026-06-24"],
+    [16, 28, 45, 14, 8,  1,  8,  1, 7,  "fifa.com", "2026-06-24"],
+    # Match 17: France 3-1 Senegal (June 16) — fifa.com
+    [17, 33, 49, 11, 8,  6,  5,  2, 2,  "fifa.com", "2026-06-24"],
+    [17, 34, 44, 6,  2,  4,  9,  1, 4,  "fifa.com", "2026-06-24"],
+    # Match 18: Iraq 1-4 Norway (June 16) — fifa.com
+    [18, 35, 34, 11, 1,  5,  12, 1, 7,  "fifa.com", "2026-06-24"],
+    [18, 36, 57, 11, 5,  4,  13, 0, 1,  "fifa.com", "2026-06-24"],
+    # Match 19: Argentina 3-0 Algeria (June 16) — fifa.com
+    [19, 37, 49, 10, 6,  2,  13, 3, 1,  "fifa.com", "2026-06-24"],
+    [19, 38, 51, 7,  1,  2,  8,  1, 4,  "fifa.com", "2026-06-24"],
+    # Match 20: Austria 3-1 Jordan (June 16) — fifa.com
+    [20, 39, 53, 10, 4,  4,  12, 3, 1,  "fifa.com", "2026-06-24"],
+    [20, 40, 33, 11, 3,  3,  7,  1, 6,  "fifa.com", "2026-06-24"],
+    # Match 21: Portugal 1-1 Congo DR (June 17) — fifa.com
+    [21, 41, 68, 7,  1,  5,  9,  3, 5,  "fifa.com", "2026-06-24"],
+    [21, 42, 25, 8,  2,  4,  10, 2, 3,  "fifa.com", "2026-06-24"],
+    # Match 22: England 4-2 Croatia (June 17) — fifa.com
+    [22, 45, 48, 22, 11, 8,  10, 2, 4,  "fifa.com", "2026-06-24"],
+    [22, 46, 43, 10, 5,  2,  12, 3, 6,  "fifa.com", "2026-06-24"],
+    # Match 23: Ghana 1-0 Panama (June 17) — fifa.com
+    [23, 47, 35, 7,  2,  2,  9,  1, 5,  "fifa.com", "2026-06-24"],
+    [23, 48, 55, 11, 4,  2,  11, 2, 1,  "fifa.com", "2026-06-24"],
+    # Match 24: Uzbekistan 1-3 Colombia (June 17) — fifa.com
+    [24, 43, 33, 8,  2,  3,  14, 2, 6,  "fifa.com", "2026-06-24"],
+    [24, 44, 56, 15, 4,  4,  11, 1, 2,  "fifa.com", "2026-06-24"],
+    # Match 25: Mexico 1-0 South Korea (June 18) — fifa.com
+    [25, 1,  49, 8,  4,  0,  9,  1, 2,  "fifa.com", "2026-06-24"],
+    [25, 3,  51, 9,  2,  2,  7,  2, 3,  "fifa.com", "2026-06-24"],
+    # Match 26: Czechia 1-1 South Africa (June 18) — fifa.com
+    [26, 4,  32, 14, 3,  5,  12, 1, 3,  "fifa.com", "2026-06-24"],
+    [26, 2,  60, 17, 4,  5,  10, 3, 4,  "fifa.com", "2026-06-24"],
+    # Match 27: Canada 6-0 Qatar (June 18) — fifa.com
+    [27, 5,  65, 33, 11, 19, 9,  3, 0,  "fifa.com", "2026-06-24"],
+    [27, 7,  20, 2,  0,  1,  10, 1, 9,  "fifa.com", "2026-06-24"],
+    # Match 28: Switzerland 4-1 Bosnia and Herzegovina (June 18) — fifa.com
+    [28, 8,  57, 13, 7,  7,  7,  2, 1,  "fifa.com", "2026-06-24"],
+    [28, 6,  34, 5,  3,  3,  17, 1, 5,  "fifa.com", "2026-06-24"],
+    # Match 29: Brazil 3-0 Haiti (June 19) — sofascore.com
+    [29, 9,  59, 14, 6,  5,  10, 2, 0,  "sofascore.com", "2026-06-24"],
+    [29, 11, 41, 4,  0,  2,  12, 1, 4,  "sofascore.com", "2026-06-24"],
     # Match 30: Scotland 0-1 Morocco (June 19) — sofascore.com
-    [30, 12, 41, 6,  0, 2, "", "", "", "sofascore.com", "2026-06-20"],
-    [30, 10, 59, 12, "", 5, "", "", "", "sofascore.com", "2026-06-20"],
-    # Match 31: USA 2-0 Australia (June 19) — sofascore.com
-    [31, 13, 62, 9, "", "", "", "", "", "sofascore.com", "2026-06-20"],
-    [31, 15, 38, 2, "", "", "", "", "", "sofascore.com", "2026-06-20"],
-    # Match 32: Türkiye 0-1 Paraguay (June 19) — sofascore.com
-    [32, 16, 79, 32, "", 12, "", "", "", "sofascore.com", "2026-06-20"],
-    [32, 14, 21, 7,  "", 0,  "", "", "", "sofascore.com", "2026-06-20"],
+    [30, 12, 41, 6,  0,  2,  12, 1, 2,  "sofascore.com", "2026-06-24"],
+    [30, 10, 59, 12, 4,  5,  10, 2, 2,  "sofascore.com", "2026-06-24"],
+    # Match 31: USA 2-0 Australia (June 19) — fifa.com
+    [31, 13, 55, 10, 2,  7,  12, 1, 1,  "fifa.com", "2026-06-24"],
+    [31, 15, 30, 5,  2,  4,  16, 0, 2,  "fifa.com", "2026-06-24"],
+    # Match 32: Turkiye 0-1 Paraguay (June 19) — fifa.com
+    [32, 16, 67, 32, 5,  12, 14, 2, 2,  "fifa.com", "2026-06-24"],
+    [32, 14, 19, 7,  2,  0,  15, 1, 4,  "fifa.com", "2026-06-24"],
+    # Match 33: Germany 2-1 Ivory Coast (June 20) — fifa.com
+    [33, 17, 59, 16, 8,  8,  7,  1, 2,  "fifa.com", "2026-06-24"],
+    [33, 19, 41, 9,  3,  3,  8,  2, 6,  "fifa.com", "2026-06-24"],
+    # Match 34: Ecuador 0-0 Curacao (June 20) — fifa.com
+    [34, 20, 63, 28, 15, 9,  12, 0, 15, "fifa.com", "2026-06-24"],
+    [34, 18, 37, 5,  1,  0,  14, 1, 15, "fifa.com", "2026-06-24"],
+    # Match 35: Netherlands 5-1 Sweden (June 20) — fifa.com
+    [35, 21, 48, 10, 7,  7,  11, 2, 2,  "fifa.com", "2026-06-24"],
+    [35, 23, 43, 16, 8,  3,  14, 3, 7,  "fifa.com", "2026-06-24"],
+    # Match 36: Tunisia 0-4 Japan (June 21) — fifa.com
+    [36, 24, 38, 3,  1,  3,  8,  2, 1,  "fifa.com", "2026-06-24"],
+    [36, 22, 62, 14, 5,  5,  15, 1, 1,  "fifa.com", "2026-06-24"],
+    # Match 37: Belgium 0-0 Iran (June 21) — fifa.com
+    [37, 25, 59, 23, 8,  4,  7,  1, 2,  "fifa.com", "2026-06-24"],
+    [37, 27, 30, 7,  2,  2,  9,  3, 8,  "fifa.com", "2026-06-24"],
+    # Match 38: New Zealand 1-3 Egypt (June 21) — fifa.com
+    [38, 28, 39, 11, 3,  4,  14, 2, 4,  "fifa.com", "2026-06-24"],
+    [38, 26, 50, 19, 7,  4,  8,  1, 2,  "fifa.com", "2026-06-24"],
+    # Match 39: Spain 4-0 Saudi Arabia (June 21) — fifa.com
+    [39, 29, 67, 18, 8,  6,  6,  3, 1,  "fifa.com", "2026-06-24"],
+    [39, 31, 33, 5,  1,  1,  10, 2, 4,  "fifa.com", "2026-06-24"],
+    # Match 40: Uruguay 2-2 Cape Verde (June 21) — fifa.com
+    [40, 32, 65, 17, 7,  11, 11, 2, 2,  "fifa.com", "2026-06-24"],
+    [40, 30, 35, 12, 4,  4,  4,  1, 5,  "fifa.com", "2026-06-24"],
+    # Match 41: France 3-0 Iraq (June 22) — fifa.com
+    [41, 33, 56, 19, 5,  4,  8,  2, 0,  "fifa.com", "2026-06-24"],
+    [41, 35, 44, 4,  0,  2,  4,  1, 2,  "fifa.com", "2026-06-24"],
+    # Match 42: Norway 3-2 Senegal (June 22) — fifa.com
+    [42, 36, 52, 12, 6,  5,  13, 1, 2,  "fifa.com", "2026-06-24"],
+    [42, 34, 48, 10, 4,  4,  5,  2, 3,  "fifa.com", "2026-06-24"],
+    # Match 43: Argentina 2-0 Austria (June 22) — fifa.com
+    [43, 37, 54, 12, 5,  1,  13, 2, 1,  "fifa.com", "2026-06-24"],
+    [43, 39, 46, 6,  1,  3,  13, 1, 3,  "fifa.com", "2026-06-24"],
+    # Match 44: Jordan 1-2 Algeria (June 22) — fifa.com
+    [44, 40, 29, 6,  2,  2,  12, 1, 4,  "fifa.com", "2026-06-24"],
+    [44, 38, 71, 18, 6,  7,  9,  2, 1,  "fifa.com", "2026-06-24"],
 ]
 
-export_csv("match_team_stats.csv", match_team_stats_headers, real_match_team_stats_data)
+# Build POTM lookup (player_info_lookup already defined above)
+final_match_team_stats_data = []
+for row in real_match_team_stats_data:
+    m_id = row[0]
+    t_id = row[1]
+    potm_name = ""
+    potm_id = player_of_the_match_mapping.get(m_id)
+    if potm_id:
+        raw_name, p_team_id = player_info_lookup.get(potm_id, ("", None))
+        if p_team_id == t_id:
+            potm_name = potm_name_overrides.get(potm_id, raw_name)
+    new_row = list(row[:9]) + [potm_name] + list(row[9:])
+    final_match_team_stats_data.append(new_row)
+
+export_csv("match_team_stats.csv", match_team_stats_headers, final_match_team_stats_data)
 
 print("All 9 datasets generated successfully in:", output_dir)

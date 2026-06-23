@@ -432,5 +432,167 @@
     "away_goals": [
       {"scorer": "Matías Galarza", "minute": "2'"}
     ]
+  },
+  {
+    "group": "Group E",
+    "date": "June 20, 2026",
+    "home_team": "Germany",
+    "away_team": "Ivory Coast",
+    "score": "2–1",
+    "home_goals": [
+      {"scorer": "Undav", "minute": "68'", "assist": "Nadiem Amiri"},
+      {"scorer": "Undav", "minute": "90+4'", "assist": "Felix Nmecha"}
+    ],
+    "away_goals": [
+      {"scorer": "Kessié", "minute": "30'", "assist": "Yan Diomande"}
+    ]
+  },
+  {
+    "group": "Group E",
+    "date": "June 20, 2026",
+    "home_team": "Ecuador",
+    "away_team": "Curaçao",
+    "score": "0–0",
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "group": "Group F",
+    "date": "June 20, 2026",
+    "home_team": "Netherlands",
+    "away_team": "Sweden",
+    "score": "5–1",
+    "home_goals": [
+      {"scorer": "Brobbey", "minute": "5'", "assist": "Cody Gakpo"},
+      {"scorer": "Brobbey", "minute": "17'", "assist": "Denzel Dumfries"},
+      {"scorer": "Gakpo", "minute": "47'", "assist": "Denzel Dumfries"},
+      {"scorer": "Gakpo", "minute": "54'", "assist": "Crysencio Summerville"},
+      {"scorer": "Summerville", "minute": "89'", "assist": "Memphis Depay"}
+    ],
+    "away_goals": [
+      {"scorer": "Elanga", "minute": "59'", "assist": "Alexander Isak"}
+    ]
+  },
+  {
+    "group": "Group F",
+    "date": "June 20, 2026",
+    "home_team": "Tunisia",
+    "away_team": "Japan",
+    "score": "0–4",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "Kamada", "minute": "4'", "assist": "Keito Nakamura"},
+      {"scorer": "Ueda", "minute": "31'"},
+      {"scorer": "Ito", "minute": "69'", "assist": "Ayase Ueda"},
+      {"scorer": "Ueda", "minute": "83'"}
+    ]
+  },
+  {
+    "group": "Group G",
+    "date": "June 21, 2026",
+    "home_team": "Belgium",
+    "away_team": "Iran",
+    "score": "0–0",
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "group": "Group G",
+    "date": "June 21, 2026",
+    "home_team": "New Zealand",
+    "away_team": "Egypt",
+    "score": "1–3",
+    "home_goals": [
+      {"scorer": "Surman", "minute": "15'", "assist": "Tim Payne"}
+    ],
+    "away_goals": [
+      {"scorer": "Mostafa Zico", "minute": "58'", "assist": "Mohamed Hany"},
+      {"scorer": "Salah", "minute": "67'", "assist": "Mostafa Zico"},
+      {"scorer": "Trezeguet", "minute": "82'", "assist": "Mohamed Salah"}
+    ]
+  },
+  {
+    "group": "Group H",
+    "date": "June 21, 2026",
+    "home_team": "Spain",
+    "away_team": "Saudi Arabia",
+    "score": "4–0",
+    "home_goals": [
+      {"scorer": "Yamal", "minute": "10'", "assist": "Mikel Oyarzabal"},
+      {"scorer": "Oyarzabal", "minute": "21'", "assist": "Aymeric Laporte"},
+      {"scorer": "Oyarzabal", "minute": "24'", "assist": "Dani Olmo"},
+      {"scorer": "Altambakti", "minute": "49' (o.g.)"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group H",
+    "date": "June 21, 2026",
+    "home_team": "Uruguay",
+    "away_team": "Cape Verde",
+    "score": "2–2",
+    "home_goals": [
+      {"scorer": "M. Araújo", "minute": "44'", "assist": "Federico Valverde"},
+      {"scorer": "Canobbio", "minute": "45+6'", "assist": "Maximiliano Araújo"}
+    ],
+    "away_goals": [
+      {"scorer": "Kevin Pina", "minute": "21'"},
+      {"scorer": "Helio Varela", "minute": "61'"}
+    ]
+  },
+  {
+    "group": "Group J",
+    "date": "June 22, 2026",
+    "home_team": "Argentina",
+    "away_team": "Austria",
+    "score": "2–0",
+    "home_goals": [
+      {"scorer": "Messi", "minute": "38'"},
+      {"scorer": "Messi", "minute": "90+5'"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group I",
+    "date": "June 22, 2026",
+    "home_team": "France",
+    "away_team": "Iraq",
+    "score": "3–0",
+    "home_goals": [
+      {"scorer": "Mbappe", "minute": "14'", "assist": "Olise"},
+      {"scorer": "Mbappe", "minute": "54'", "assist": "Dembele"},
+      {"scorer": "Dembele", "minute": "66'", "assist": "Olise"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group I",
+    "date": "June 22, 2026",
+    "home_team": "Norway",
+    "away_team": "Senegal",
+    "score": "3–2",
+    "home_goals": [
+      {"scorer": "Pedersen", "minute": "43'"},
+      {"scorer": "Haaland", "minute": "48'", "assist": "Odegaard"},
+      {"scorer": "Haaland", "minute": "58'", "assist": "Patrick Berg"}
+    ],
+    "away_goals": [
+      {"scorer": "Ismaila Sarr", "minute": "53'"},
+      {"scorer": "Ismaila Sarr", "minute": "90+3'", "assist": "Jackson"}
+    ]
+  },
+  {
+    "group": "Group J",
+    "date": "June 22, 2026",
+    "home_team": "Jordan",
+    "away_team": "Algeria",
+    "score": "1–2",
+    "home_goals": [
+      {"scorer": "Alrashdan", "minute": "36'", "assist": "Altamari"}
+    ],
+    "away_goals": [
+      {"scorer": "Benbouali", "minute": "69'", "assist": "Mahrez"},
+      {"scorer": "Gouiri", "minute": "82'"}
+    ]
   }
 ]

@@ -11,8 +11,7 @@
     "sports",
     "football",
     "tabular",
-    "exploratory data analysis",
-    "databases"
+    "exploratory data analysis"
   ],
   "resources": [
     {
@@ -37,7 +36,7 @@
     },
     {
       "path": "matches_detailed.csv",
-      "description": "Denormalized match view with human-readable team names, stadium names, cities, and referee names — no SQL joins needed."
+      "description": "Denormalized match view with human-readable team names, stadium names, cities, starting goalkeepers, and referee names — no SQL joins needed."
     },
     {
       "path": "squads_and_players.csv",
@@ -49,7 +48,7 @@
     },
     {
       "path": "match_team_stats.csv",
-      "description": "Per-team per-match statistics: possession, shots, shots on target, corners, fouls, offsides, saves — sourced from FIFA, Sofascore, and The Guardian."
+      "description": "Per-team per-match statistics: possession, shots, shots on target, corners, fouls, offsides, saves, and player of the match — sourced from FIFA, Sofascore, and The Guardian."
     }
   ]
 }

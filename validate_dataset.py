@@ -113,6 +113,10 @@ def main():
         if ref_id not in referee_ids:
             print(f"[FAIL] Error: Match {m_id} references non-existent referee_id {ref_id}.")
             errors += 1
+        potm_id = row[13] if len(row) > 13 else ""
+        if potm_id != "" and potm_id not in player_ids:
+            print(f"[FAIL] Error: Match {m_id} references non-existent player_of_the_match_id {potm_id}.")
+            errors += 1
 
     # Events
     for row in events:
