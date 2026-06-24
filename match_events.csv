@@ -214,7 +214,7 @@ event_id,match_id,minute,event_type,team_id,player_id
 213,36,69,Assist,22,564
 214,36,83,Goal,22,564
 215,37,1,Yellow Card,25,633
-216,37,66,Red Card,25,653
+216,37,66,Red Card,25,649
 217,38,15,Goal,28,718
 218,38,15,Assist,28,704
 219,38,58,Goal,26,661

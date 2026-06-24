@@ -29,6 +29,7 @@ def main():
     players_headers, players = load_csv("squads_and_players.csv")
     events_headers, events = load_csv("match_events.csv")
     detailed_headers, detailed = load_csv("matches_detailed.csv")
+    lineups_headers, lineups = load_csv("match_lineups.csv")
 
     errors = 0
 
@@ -74,6 +75,7 @@ def main():
     errors += check_pks(matches, "matches.csv")
     errors += check_pks(players, "squads_and_players.csv")
     errors += check_pks(events, "match_events.csv")
+    errors += check_pks(lineups, "match_lineups.csv")
     if errors == 0:
         print("  [OK] All primary keys are unique.")
 
@@ -84,6 +86,9 @@ def main():
     referee_ids = {row[0] for row in referees}
     match_ids = {row[0] for row in matches}
     player_ids = {row[0] for row in players}
+
+    # Map player to team for validation
+    player_to_team = {row[0]: row[1] for row in players}
 
     # 4. Referential Integrity
     print("\n[3/6] Verifying referential integrity (foreign keys)...")
@@ -131,14 +136,48 @@ def main():
             print(f"[FAIL] Error: Event {e_id} references non-existent player_id {p_id}.")
             errors += 1
 
+    # Lineups Referential & Consistency Check
+    match_lineups_count = {}
+    match_starters_count = {}
+    player_match_lineup_exists = {}
+    
+    for row in lineups:
+        l_id, m_id, p_id, t_id, is_start, pos, mins = row[0], row[1], row[2], row[3], row[4], row[5], row[6]
+        if m_id not in match_ids:
+            print(f"[FAIL] Error: Lineup {l_id} references non-existent match_id {m_id}.")
+            errors += 1
+        if p_id not in player_ids:
+            print(f"[FAIL] Error: Lineup {l_id} references non-existent player_id {p_id}.")
+            errors += 1
+        if t_id not in team_ids:
+            print(f"[FAIL] Error: Lineup {l_id} references non-existent team_id {t_id}.")
+            errors += 1
+            
+        # Verify player belongs to the team
+        if p_id in player_to_team and player_to_team[p_id] != t_id:
+            print(f"[FAIL] Error: Lineup {l_id} links player {p_id} to team {t_id}, but player belongs to team {player_to_team[p_id]}.")
+            errors += 1
+            
+        # Track counts per match and team
+        match_lineups_count.setdefault((m_id, t_id), 0)
+        match_lineups_count[(m_id, t_id)] += 1
+        
+        if is_start == "1":
+            match_starters_count.setdefault((m_id, t_id), 0)
+            match_starters_count[(m_id, t_id)] += 1
+            
+        player_match_lineup_exists[(m_id, p_id)] = int(mins)
+
     if errors == 0:
         print("  [OK] Relational integrity is 100% correct.")
 
     # 5. Status & Scores Logic
     print("\n[4/6] Verifying match status and score logic...")
+    completed_match_ids = set()
     for row in matches:
         m_id, h_score, a_score, status, h_xg, a_xg = row[0], row[7], row[8], row[9], row[10], row[11]
         if status == "Completed":
+            completed_match_ids.add(m_id)
             if h_score == "" or a_score == "" or h_xg == "" or a_xg == "":
                 print(f"[FAIL] Error: Match {m_id} is Completed but has empty scores or xG.")
                 errors += 1
@@ -166,8 +205,40 @@ def main():
     if errors == 0:
         print("  [OK] Denormalized views map correctly.")
 
-    # 6. Match Team Stats Validation
-    print("\n[6/7] Verifying match_team_stats.csv...")
+    # 7. Lineup Structure and Playtime Validation
+    print("\n[6/8] Verifying match_lineups.csv structure and minutes...")
+    for m_id in completed_match_ids:
+        # Get home and away teams for this match
+        match_row = [m for m in matches if m[0] == m_id][0]
+        home_team_id, away_team_id = match_row[5], match_row[6]
+        
+        for team_id in [home_team_id, away_team_id]:
+            # Each team must have exactly 26 players registered in the lineup for a match
+            count = match_lineups_count.get((m_id, team_id), 0)
+            if count != 26:
+                print(f"[FAIL] Error: Match {m_id}, Team {team_id} has {count} players in lineup (expected exactly 26).")
+                errors += 1
+                
+            # Each team must have exactly 11 starting players
+            starters = match_starters_count.get((m_id, team_id), 0)
+            if starters != 11:
+                print(f"[FAIL] Error: Match {m_id}, Team {team_id} has {starters} starters (expected exactly 11).")
+                errors += 1
+
+    # Check that players with events have minutes played > 0
+    for row in events:
+        m_id, p_id = row[1], row[5]
+        if m_id in completed_match_ids:
+            mins_played = player_match_lineup_exists.get((m_id, p_id), 0)
+            if mins_played <= 0:
+                print(f"[FAIL] Error: Player {p_id} has events in Match {m_id} but has {mins_played} minutes played in lineups.")
+                errors += 1
+
+    if errors == 0:
+        print("  [OK] Match lineups structure is 100% correct and aligned with match events.")
+
+    # 8. Match Team Stats Validation
+    print("\n[7/8] Verifying match_team_stats.csv...")
     stats_path = os.path.join(workspace_dir, "match_team_stats.csv")
     if os.path.exists(stats_path):
         stats_headers, stats = load_csv("match_team_stats.csv")
@@ -209,7 +280,7 @@ def main():
         print("  [SKIP] match_team_stats.csv not found (optional table).")
 
     # Final report
-    print("\n[7/7] Summary:")
+    print("\n[8/8] Summary:")
     if errors == 0:
         print("SUCCESS: The dataset passed all relational integrity constraints!")
         sys.exit(0)

@@ -49,6 +49,10 @@
     {
       "path": "match_team_stats.csv",
       "description": "Per-team per-match statistics: possession, shots, shots on target, corners, fouls, offsides, saves, and player of the match — sourced from FIFA, Sofascore, and The Guardian."
+    },
+    {
+      "path": "match_lineups.csv",
+      "description": "Tactical lineups for all completed matches: starting XI (11 players per team) and substitutes with actual minutes played."
     }
   ]
 }

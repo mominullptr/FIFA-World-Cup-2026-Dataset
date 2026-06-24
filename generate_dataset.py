@@ -552,7 +552,7 @@ real_red_cards = [
     (27, 7, 179, 85),
     (28, 6, 134, 80),
     (32, 14, 348, 45),   # Almirón straight red, mouth-covering rule, 45+3'
-    (37, 25, 653, 66),   # Nathan Ngoy straight red for DOGSO on Taremi
+    (37, 25, 649, 66),   # Nathan Ngoy straight red for DOGSO on Taremi
 ]
 
 real_var_reviews = [
@@ -805,6 +805,131 @@ for match in matches_data:
     ])
 
 # ==========================================
+# 8. MATCH LINEUPS DATA GENERATOR
+# ==========================================
+lineups_headers = ["lineup_id", "match_id", "player_id", "team_id", "is_starting_xi", "tactical_position", "minutes_played"]
+lineups_data = []
+lineup_id_counter = 1
+
+# Map player_id to their details (team_id, name, position, market_value, caps)
+player_details = {}
+for p in players_data:
+    p_id = int(p[0])
+    p_team_id = int(p[1])
+    p_name = p[2]
+    p_pos = p[3]
+    p_val = int(p[5])
+    p_caps = int(p[6])
+    player_details[p_id] = {
+        "team_id": p_team_id,
+        "name": p_name,
+        "position": p_pos,
+        "market_value": p_val,
+        "caps": p_caps
+    }
+
+# Find which players had events in each match to mark them as active substitutes
+match_active_players = {}
+for event in events_data:
+    m_id = int(event[1])
+    p_id = int(event[5])
+    if m_id not in match_active_players:
+        match_active_players[m_id] = set()
+    match_active_players[m_id].add(p_id)
+
+for match in matches_data:
+    m_id = int(match[0])
+    status = match[9]
+    if status != "Completed":
+        continue
+        
+    home_id = int(match[5])
+    away_id = int(match[6])
+    
+    # Get starting goalkeepers from match_goalkeepers
+    home_gk_id, away_gk_id = match_goalkeepers.get(m_id, (None, None))
+    
+    # Generate lineups for both teams
+    for team_id, gk_id in [(home_id, home_gk_id), (away_id, away_gk_id)]:
+        # Get all players in this team
+        team_players = [pid for pid, det in player_details.items() if det["team_id"] == team_id]
+        
+        # We need to select 11 starters
+        starters = set()
+        
+        # 1. Starting Goalkeeper
+        if gk_id and gk_id in team_players:
+            starters.add(gk_id)
+        else:
+            # Fallback if goalkeeper is missing (should not happen)
+            gks = [pid for pid in team_players if player_details[pid]["position"] == "GK"]
+            if gks:
+                starters.add(gks[0])
+                
+        # 2. Select 10 outfield starters (4 DEF, 4 MID, 2 FWD)
+        # Filter other players
+        outfield_players = [pid for pid in team_players if pid not in starters]
+        
+        # Group outfield players by position
+        defs = [pid for pid in outfield_players if player_details[pid]["position"] == "DEF"]
+        mids = [pid for pid in outfield_players if player_details[pid]["position"] == "MID"]
+        fwds = [pid for pid in outfield_players if player_details[pid]["position"] == "FWD"]
+        
+        # Sort each group by market value descending, then caps descending
+        defs.sort(key=lambda pid: (player_details[pid]["market_value"], player_details[pid]["caps"]), reverse=True)
+        mids.sort(key=lambda pid: (player_details[pid]["market_value"], player_details[pid]["caps"]), reverse=True)
+        fwds.sort(key=lambda pid: (player_details[pid]["market_value"], player_details[pid]["caps"]), reverse=True)
+        
+        # Select target counts
+        selected_defs = defs[:4]
+        selected_mids = mids[:4]
+        selected_fwds = fwds[:2]
+        
+        for pid in selected_defs + selected_mids + selected_fwds:
+            starters.add(pid)
+            
+        # If we still don't have 11 players (e.g. squad composition doesn't have 4/4/2),
+        # fill with remaining outfield players sorted by market value
+        if len(starters) < 11:
+            remaining = [pid for pid in outfield_players if pid not in starters]
+            remaining.sort(key=lambda pid: (player_details[pid]["market_value"], player_details[pid]["caps"]), reverse=True)
+            needed = 11 - len(starters)
+            for pid in remaining[:needed]:
+                starters.add(pid)
+                
+        # Now record every player in the squad (26 players) into lineups
+        # To be absolutely sure, sort player_id to keep ordering clean
+        team_players.sort()
+        
+        active_event_players = match_active_players.get(m_id, set())
+        
+        for pid in team_players:
+            is_start = 1 if pid in starters else 0
+            pos = player_details[pid]["position"]
+            
+            # Determine minutes played:
+            # - Starters: 90 mins
+            # - Substitutes with events (active): 30 mins
+            # - Substitutes without events: 0 mins
+            if is_start == 1:
+                mins = 90
+            elif pid in active_event_players:
+                mins = 30
+            else:
+                mins = 0
+                
+            lineups_data.append([
+                lineup_id_counter,
+                m_id,
+                pid,
+                team_id,
+                is_start,
+                pos,
+                mins
+            ])
+            lineup_id_counter += 1
+
+# ==========================================
 # EXPORT DATA TO CSV (BUILT-IN)
 # ==========================================
 def export_csv(filename, headers, rows):
@@ -822,6 +947,8 @@ export_csv("squads_and_players.csv", players_headers, players_data)
 export_csv("matches.csv", matches_headers, matches_data)
 export_csv("matches_detailed.csv", detailed_matches_headers, detailed_matches_data)
 export_csv("match_events.csv", events_headers, events_data)
+export_csv("match_lineups.csv", lineups_headers, lineups_data)
+
 
 # ==========================================
 # 9. MATCH TEAM STATS (VERIFIED DATA ONLY)

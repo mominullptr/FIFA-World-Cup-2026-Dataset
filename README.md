@@ -87,6 +87,15 @@ erDiagram
         int team_id FK
         int player_id FK
     }
+    MATCH_LINEUPS {
+        int lineup_id PK
+        int match_id FK
+        int player_id FK
+        int team_id FK
+        int is_starting_xi
+        string tactical_position
+        int minutes_played
+    }
 
     TEAMS ||--o{ MATCHES : "hosts/visitors"
     TEAMS ||--o{ SQUADS_AND_PLAYERS : "roster"
@@ -95,6 +104,9 @@ erDiagram
     REFEREES ||--o{ MATCHES : "officiates"
     MATCHES ||--o{ MATCH_EVENTS : "contains"
     SQUADS_AND_PLAYERS ||--o{ MATCH_EVENTS : "triggers"
+    MATCHES ||--o{ MATCH_LINEUPS : "lineups"
+    SQUADS_AND_PLAYERS ||--o{ MATCH_LINEUPS : "plays_in"
+    TEAMS ||--o{ MATCH_LINEUPS : "lineups"
     MATCH_TEAM_STATS {
         int match_id FK
         int team_id FK
@@ -125,6 +137,7 @@ erDiagram
 7. **`squads_and_players.csv`**: Detailed player registries (1,248 rows) containing verified player names (preserved with native accents), positions, clean club teams, market values, international caps, dates of birth (in YYYY-MM-DD format), heights in centimeters, and international goals.
 8. **`match_events.csv`**: Time-series game events (goals, assists, cards, VAR reviews) mapped to matches and players.
 9. **`match_team_stats.csv`**: Per-team per-match statistics (possession %, shots, shots on target, corners, fouls, offsides, saves) with `data_source` and `last_updated` columns for full traceability. Only populated with verified data from authentic sources (FIFA, Sofascore, FBref, etc.).
+10. **`match_lineups.csv`**: Tactical lineups for all completed matches: starting XI (11 players per team) and substitutes with actual minutes played.
 
 ---
 
@@ -153,11 +166,17 @@ As matches conclude every day, you can update the datasets interactively. The sc
 python update_dataset.py
 ```
 
+### SQLite Database Generation
+For researchers and SQL query design, you can package all normalized CSV files into a single, query-optimized SQLite relational database file:
+```bash
+python generate_sqlite.py
+```
+
 ---
 
 ## 🏷️ Citation
 
-If you use this dataset in your research, publications, or projects, please cite it as follows:
+If you use this dataset in your research, publications, or projects, please cite it using the academic metadata provided in [CITATION.cff](file:///c:/Users/ASUS/.gemini/antigravity/scratch/fifa-wc2026-dataset/CITATION.cff) or using the format below:
 
 ```bibtex
 @dataset{fifa_world_cup_2026,
@@ -172,3 +191,4 @@ If you use this dataset in your research, publications, or projects, please cite
 
 ## 📄 License
 This project is licensed under the **Creative Commons Zero v1.0 Universal** (CC0-1.0) Public Domain Dedication. Feel free to copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission.
+
