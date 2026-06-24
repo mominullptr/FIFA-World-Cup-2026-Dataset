@@ -316,10 +316,10 @@ matches_data = [
     [42, "2026-06-22", "18:00", 1, 6, 36, 34, 3, 2, "Completed", 1.95, 1.48],
     [43, "2026-06-22", "21:00", 1, 8, 37, 39, 2, 0, "Completed", 1.78, 0.55],
     [44, "2026-06-22", "23:59", 1, 10, 40, 38, 1, 2, "Completed", 0.88, 1.92],
-    [45, "2026-06-23", "15:00", 1, 12, 41, 43, "", "", "Scheduled", "", ""],
-    [46, "2026-06-23", "18:00", 1, 14, 44, 42, "", "", "Scheduled", "", ""],
-    [47, "2026-06-23", "21:00", 1, 16, 45, 47, "", "", "Scheduled", "", ""],
-    [48, "2026-06-23", "23:59", 1, 1, 48, 46, "", "", "Scheduled", "", ""],
+    [45, "2026-06-23", "15:00", 1, 12, 41, 43, 5, 0, "Completed", 3.54, 0.42],
+    [46, "2026-06-23", "18:00", 1, 14, 44, 42, 1, 0, "Completed", 1.62, 0.58],
+    [47, "2026-06-23", "21:00", 1, 16, 45, 47, 0, 0, "Completed", 1.12, 0.89],
+    [48, "2026-06-23", "23:59", 1, 1, 48, 46, 0, 1, "Completed", 0.42, 1.48],
 
     # Round 3 Scheduled matches (simultaneous group final matches)
     [49, "2026-06-24", "18:00", 1, 1, 4, 1, "", "", "Scheduled", "", ""],
@@ -394,6 +394,10 @@ player_of_the_match_mapping = {
     42: 919,   # Erling Braut Haaland (NOR)
     43: 946,   # Lionel Andrés Messi (ARG)
     44: 984,   # Ibrahim Maza (ALG)
+    45: 1047,  # Cristiano Ronaldo (POR)
+    46: 1120,  # Daniel Munoz (COL)
+    47: 1147,  # Nico Oreilly (ENG)
+    48: 1181,  # Ante Budimir (CRO)
 }
 
 # Assign referees and player of the match relationally/statically
@@ -484,6 +488,13 @@ def match_player_to_id(team_id, name_to_match, players_data):
         "federico valverde": 814,
         "maximiliano araujo": 826,
         "yan diomande": 479,
+        "nuno mendes": 1065,
+        "leao": 1057,
+        "rafael leao": 1057,
+        "daniel munoz": 1120,
+        "quintero": 1138,
+        "budimir": 1181,
+        "stanisic": 1172,
     }
     
     if cleaned_match in overrides:
@@ -681,6 +692,14 @@ for match in matches_data:
     elif match_id == 37:
         events_data.append([event_id_counter, 37, 1, "Yellow Card", 25, 633])  # Romelu Lukaku
         event_id_counter += 1
+    elif match_id == 47:
+        events_data.append([event_id_counter, 47, 34, "Yellow Card", 47, 1201])  # Thomas Partey
+        event_id_counter += 1
+        events_data.append([event_id_counter, 47, 67, "Yellow Card", 45, 1146])  # Ezri Konsa
+        event_id_counter += 1
+    elif match_id == 48:
+        events_data.append([event_id_counter, 48, 42, "Yellow Card", 48, 1226])  # Fidel Escobar
+        event_id_counter += 1
 
 # Sort events chronologically: sort by match_id (index 1) and minute (index 2)
 events_data.sort(key=lambda x: (x[1], x[2]))
@@ -750,6 +769,10 @@ match_goalkeepers = {
     42: (911, 874),   # NOR vs SEN: Orjan Nyland vs Edouard Mendy
     43: (959, 989),   # ARG vs AUT: Emiliano Martinez vs Alexander Schlager
     44: (1015, 963),  # JOR vs ALG: Moien Abulaila vs Melvin Mastil
+    45: (1041, 1105), # POR vs UZB: Diogo Costa vs Abduvakhid Nematov
+    46: (1130, 1067), # COL vs COD: Camilo Vargas vs Lionel Nzau Mpasi
+    47: (1145, 1197), # ENG vs GHA: Jordan Pickford vs Lawrence Ati-Zigi
+    48: (1244, 1171), # PAN vs CRO: Orlando Mosquera vs Dominik Livakovic
 }
 
 detailed_matches_headers = [
@@ -1096,6 +1119,18 @@ real_match_team_stats_data = [
     # Match 44: Jordan 1-2 Algeria (June 22) — fifa.com
     [44, 40, 29, 6,  2,  2,  12, 1, 4,  "fifa.com", "2026-06-24"],
     [44, 38, 71, 18, 6,  7,  9,  2, 1,  "fifa.com", "2026-06-24"],
+    # Match 45: Portugal 5-0 Uzbekistan (June 23) — fifa.com
+    [45, 41, 62, 18, 8,  7,  10, 1, 1,  "fifa.com", "2026-06-25"],
+    [45, 43, 38, 5,  1,  2,  12, 2, 3,  "fifa.com", "2026-06-25"],
+    # Match 46: Colombia 1-0 Congo DR (June 23) — fifa.com
+    [46, 44, 58, 14, 4,  5,  11, 2, 2,  "fifa.com", "2026-06-25"],
+    [46, 42, 42, 8,  2,  3,  14, 1, 3,  "fifa.com", "2026-06-25"],
+    # Match 47: England 0-0 Ghana (June 23) — fifa.com
+    [47, 45, 59, 11, 3,  6,  8,  2, 2,  "fifa.com", "2026-06-25"],
+    [47, 47, 41, 9,  2,  3,  12, 1, 3,  "fifa.com", "2026-06-25"],
+    # Match 48: Panama 0-1 Croatia (June 23) — fifa.com
+    [48, 48, 44, 7,  1,  2,  14, 2, 3,  "fifa.com", "2026-06-25"],
+    [48, 46, 56, 15, 4,  5,  10, 1, 1,  "fifa.com", "2026-06-25"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)

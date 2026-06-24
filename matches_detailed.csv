@@ -43,10 +43,10 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 42,2026-06-22,18:00,Group Stage,Toronto Stadium (BMO Field),Toronto,CAN,Norway,NOR,Senegal,SEN,3,2,Completed,1.95,1.48,Ørjan Haskjold Nyland,Edouard Osoque Mendy,Erling Braut Haaland,Ivan Barton
 43,2026-06-22,21:00,Group Stage,Monterrey Stadium (Estadio BBVA),Guadalupe,MEX,Argentina,ARG,Austria,AUT,2,0,Completed,1.78,0.55,Damián Emiliano Martinez,Alexander Schlager,Lionel Andrés Messi,Mustapha Ghorbal
 44,2026-06-22,23:59,Group Stage,Boston Stadium (Gillette Stadium),Foxborough,USA,Jordan,JOR,Algeria,ALG,1,2,Completed,0.88,1.92,Mo'ien Hasan Yazeed Abulaila,Melvin Feycal Mastil,Ibrahim Maza,Victor Gomes
-45,2026-06-23,15:00,Group Stage,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Portugal,POR,Uzbekistan,UZB,,,Scheduled,,,,,,Ma Ning
-46,2026-06-23,18:00,Group Stage,Philadelphia Stadium (Lincoln Financial Field),Philadelphia,USA,Colombia,COL,Congo DR,COD,,,Scheduled,,,,,,Alireza Faghani
-47,2026-06-23,21:00,Group Stage,Seattle Stadium (Lumen Field),Seattle,USA,England,ENG,Ghana,GHA,,,Scheduled,,,,,,Yoshimi Yamashita
-48,2026-06-23,23:59,Group Stage,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Panama,PAN,Croatia,CRO,,,Scheduled,,,,,,Facundo Tello
+45,2026-06-23,15:00,Group Stage,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Portugal,POR,Uzbekistan,UZB,5,0,Completed,3.54,0.42,Diogo Diogo Costa,Sherzod Nasrullaev,Ronaldo Cristiano Ronaldo,Ma Ning
+46,2026-06-23,18:00,Group Stage,Philadelphia Stadium (Lincoln Financial Field),Philadelphia,USA,Colombia,COL,Congo DR,COD,1,0,Completed,1.62,0.58,Camilo Andres Vargas,Lionel Nzau Mpasi,Daniel Munoz,Alireza Faghani
+47,2026-06-23,21:00,Group Stage,Seattle Stadium (Lumen Field),Seattle,USA,England,ENG,Ghana,GHA,0,0,Completed,1.12,0.89,Jordan Lee Pickford,Lawrence Ati Zigi,Nico Oreilly,Yoshimi Yamashita
+48,2026-06-23,23:59,Group Stage,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Panama,PAN,Croatia,CRO,0,1,Completed,0.42,1.48,Orlando Mosquera,Dominik Livakovic,Ante Budimir,Facundo Tello
 49,2026-06-24,18:00,Group Stage,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Czechia,CZE,Mexico,MEX,,,Scheduled,,,,,,Szymon Marciniak
 50,2026-06-24,18:00,Group Stage,Guadalajara Stadium (Estadio Akron),Zapopan,MEX,South Africa,RSA,South Korea,KOR,,,Scheduled,,,,,,Daniele Orsato
 51,2026-06-24,22:00,Group Stage,Vancouver Stadium (BC Place),Vancouver,CAN,Switzerland,SUI,Canada,CAN,,,Scheduled,,,,,,Michael Oliver

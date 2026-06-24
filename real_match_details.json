@@ -594,5 +594,52 @@
       {"scorer": "Benbouali", "minute": "69'", "assist": "Mahrez"},
       {"scorer": "Gouiri", "minute": "82'"}
     ]
+  },
+  {
+    "group": "Group K",
+    "date": "June 23, 2026",
+    "home_team": "Portugal",
+    "away_team": "Uzbekistan",
+    "score": "5–0",
+    "home_goals": [
+      {"scorer": "Ronaldo", "minute": "6'", "assist": "Joao Cancelo"},
+      {"scorer": "Nuno Mendes", "minute": "17'"},
+      {"scorer": "Ronaldo", "minute": "39'", "assist": "Bruno"},
+      {"scorer": "Khusanov", "minute": "60' (o.g.)"},
+      {"scorer": "Leao", "minute": "87'", "assist": "Vitinha"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group K",
+    "date": "June 23, 2026",
+    "home_team": "Colombia",
+    "away_team": "Congo DR",
+    "score": "1–0",
+    "home_goals": [
+      {"scorer": "Daniel Munoz", "minute": "76'", "assist": "Quintero"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group L",
+    "date": "June 23, 2026",
+    "home_team": "England",
+    "away_team": "Ghana",
+    "score": "0–0",
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "group": "Group L",
+    "date": "June 23, 2026",
+    "home_team": "Panama",
+    "away_team": "Croatia",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "budimir", "minute": "54'", "assist": "stanisic"}
+    ]
   }
 ]
+
