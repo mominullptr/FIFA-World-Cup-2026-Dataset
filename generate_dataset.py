@@ -281,6 +281,22 @@ for nation, stars in star_players.items():
         norm_name_clean = "".join(c for c in norm_name if unicodedata.category(c) != 'Mn')
         star_players_lookup[norm_name_clean.lower()] = val
 
+# Try to load existing market values from squads_and_players.csv to preserve authentic data
+existing_market_values = {}
+players_csv_path = os.path.join(output_dir, "squads_and_players.csv")
+if os.path.exists(players_csv_path):
+    try:
+        import csv
+        with open(players_csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                norm_name = unicodedata.normalize('NFD', row["player_name"])
+                norm_name_clean = "".join(c for c in norm_name if unicodedata.category(c) != 'Mn')
+                key = (norm_name_clean.lower().strip(), int(row["team_id"]))
+                existing_market_values[key] = int(row["market_value_eur"])
+    except Exception as e:
+        print(f"Warning: Could not read existing squads_and_players.csv: {e}")
+
 players_data = []
 player_id_counter = 1
 team_player_map = {}
@@ -307,21 +323,25 @@ for team in teams_data:
         norm_name_clean = "".join(c for c in norm_name if unicodedata.category(c) != 'Mn')
         player_name_lower = norm_name_clean.lower()
         
-        # Check if they are a star player (exact match first, then substring/fuzzy)
-        if player_name_lower in star_players_lookup:
-            val = star_players_lookup[player_name_lower]
+        # 1. Try to load from existing squads_and_players.csv first (authentic values)
+        if (player_name_lower, int(team_id)) in existing_market_values:
+            val = existing_market_values[(player_name_lower, int(team_id))]
         else:
-            # Try substring match: check if any star name is contained in parsed name
-            for star_name_key, star_val in star_players_lookup.items():
-                star_parts = star_name_key.split()
-                # Check if star name is a substring of full name
-                if star_name_key in player_name_lower:
-                    val = star_val
-                    break
-                # Check if all parts of the star name appear in the full name
-                if all(part in player_name_lower.split() for part in star_parts):
-                    val = star_val
-                    break
+            # 2. Check if they are a star player (exact match first, then substring/fuzzy)
+            if player_name_lower in star_players_lookup:
+                val = star_players_lookup[player_name_lower]
+            else:
+                # Try substring match: check if any star name is contained in parsed name
+                for star_name_key, star_val in star_players_lookup.items():
+                    star_parts = star_name_key.split()
+                    # Check if star name is a substring of full name
+                    if star_name_key in player_name_lower:
+                        val = star_val
+                        break
+                    # Check if all parts of the star name appear in the full name
+                    if all(part in player_name_lower.split() for part in star_parts):
+                        val = star_val
+                        break
         
         if val is None:
             # Set seed based on player_id for reproducible generation
@@ -962,6 +982,20 @@ for event in events_data:
         match_active_players[m_id] = set()
     match_active_players[m_id].add(p_id)
 
+# Try to load existing lineups to preserve authentic starting XI and minutes
+existing_lineups = {}
+lineups_csv_path = os.path.join(output_dir, "match_lineups.csv")
+if os.path.exists(lineups_csv_path):
+    try:
+        with open(lineups_csv_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                # Key: (match_id, player_id) -> (is_starting_xi, minutes_played)
+                key = (int(row["match_id"]), int(row["player_id"]))
+                existing_lineups[key] = (int(row["is_starting_xi"]), int(row["minutes_played"]))
+    except Exception as e:
+        print(f"Warning: Could not read existing match_lineups.csv: {e}")
+
 for match in matches_data:
     m_id = int(match[0])
     status = match[9]
@@ -1042,6 +1076,10 @@ for match in matches_data:
                 mins = 30
             else:
                 mins = 0
+                
+            # If we have an existing lineup entry for this match/player, preserve it!
+            if (m_id, pid) in existing_lineups:
+                is_start, mins = existing_lineups[(m_id, pid)]
                 
             lineups_data.append([
                 lineup_id_counter,

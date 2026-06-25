@@ -58,7 +58,7 @@ MANUAL_VALUES = {
     "garven michee metusala":   200_000,    # Haiti DEF, TM Jun 2026
     "olivier woodensky pierre": 100_000,    # Haiti FWD, TM Jun 2026
     "josue duverger":           125_000,    # Haiti MID, TM Jun 2026
-    "martin yves roberns didier experience": 150_000,  # Haiti FWD, TM
+    "martin yves roberns didier experience": 400_000,  # Haiti FWD, TM Jun 2026
     "gabriel avalos":           750_000,    # Paraguay FWD, TM May 2026
     "dominic john hyam":      2_000_000,    # Scotland DEF, TM May 2026
     "mohammad ghorbani":      1_200_000,    # Iran MID, TM May 2026
@@ -66,10 +66,65 @@ MANUAL_VALUES = {
     "ianique stopira":           50_000,    # Cabo Verde DEF, TM Jun 2026
     "carlos pico lopes":        250_000,    # Cabo Verde DEF, TM Jun 2026
     "salomao marcio":           350_000,    # Cabo Verde GK (Márcio Rosa), TM May 2026
-    "semedobjair yannick":      250_000,    # Cabo Verde MID (Yannick Semedo), TM Jun 2026
+    "semedojair yannick":      250_000,    # Cabo Verde MID (Yannick Semedo), TM Jun 2026
     "kibambe brian cipenga":  2_000_000,    # Congo DR DEF, TM Jun 2026
     "azizbek amonov":           500_000,    # Uzbekistan MID, TM Jun 2026
     "behruzjon karimov":        350_000,    # Uzbekistan MID, TM May 2026
+    
+    # 52 unmatched/problem players resolved manually
+    "themba zwane":             250_000,    # South Africa, TM Jun 2026
+    "thapelo maseko":         1_200_000,    # South Africa, TM Jun 2026
+    "ime daniel okon":          450_000,    # South Africa, TM Jun 2026
+    "bradley paul cross":       550_000,    # South Africa, TM Jun 2026
+    "ali ahmed":              3_000_000,    # Canada, TM Jun 2026
+    "dominique celidor simon":  125_000,    # Haiti, TM Jun 2026
+    "victor gustavo velazquez": 1_000_000,  # Paraguay, TM Jun 2026
+    "adrian andres cubas":    4_500_000,    # Paraguay, TM Jun 2026
+    "alejandro sebastian romero gamarra": 3_500_000, # Paraguay, TM Jun 2026
+    "gaston hernan olveira":  1_000_000,    # Paraguay, TM Jun 2026
+    "gustavo ruben caballero":  400_000,    # Paraguay, TM Jun 2026
+    "jordy jose alcivar":     2_500_000,    # Ecuador, TM Jun 2026
+    "gonzalo roberto valle":    350_000,    # Ecuador, TM Jun 2026
+    "abdelmouhib chamakh":      600_000,    # Tunisia, TM Jun 2026
+    "elias saad":             3_000_000,    # Tunisia, TM Jun 2026
+    "khalil ayari":             200_000,    # Tunisia, TM Jun 2026
+    "firas chaouat":            350_000,    # Tunisia, TM Jun 2026
+    "mohamed amine ben hmida":  700_000,    # Tunisia, TM Jun 2026
+    "moutaz neffati":           250_000,    # Tunisia, TM Jun 2026
+    "raed chikhaoui":           150_000,    # Tunisia, TM Jun 2026
+    "mohamed abdelkarim hamza":  800_000,   # Egypt, TM Jun 2026
+    "mohamed zaky mostafa zico": 1_500_000, # Egypt, TM Jun 2026
+    "mohamed soliman mahdy soliman": 150_000, # Egypt, TM Jun 2026
+    "mostafa ahmed mohanad lashin": 1_000_000, # Egypt, TM Jun 2026
+    "attia fahim marawan attia": 2_200_000, # Egypt, TM Jun 2026
+    "abdelghaffar abdel tarek alaa": 400_000, # Egypt, TM Jun 2026
+    "saleh hardani":            750_000,    # Iran, TM Jun 2026
+    "shojae khalilzadeh":       200_000,    # Iran, TM Jun 2026
+    "mohammadhossein kanani":  2_000_000,   # Iran, TM Jun 2026
+    "roozbeh cheshmi":          300_000,    # Iran, TM Jun 2026
+    "mahdi torabi":           1_800_000,    # Iran, TM Jun 2026
+    "arya yousefi":             450_000,    # Iran, TM Jun 2026
+    "seyedhossein hosseini":    550_000,    # Iran, TM Jun 2026
+    "danial iri":               150_000,    # Iran, TM Jun 2026
+    "amirmohammad razaghinia":  150_000,    # Iran, TM Jun 2026
+    "pireskelvin kelvin":       350_000,    # Cabo Verde, TM Jun 2026
+    "hassan ali majrashi":    1_400_000,    # Saudi Arabia, TM Jun 2026
+    "abdulrahman abdullah alhamddan": 350_000, # Saudi Arabia, TM Jun 2026
+    "khalil mohammed alowais":  275_000,    # Saudi Arabia, TM Jun 2026
+    "el hadji malick diouf": 28_000_000,    # Senegal, TM Jun 2026
+    "ahmed mohammad mohammad":  300_000,    # Jordan, TM Jun 2026
+    "ratib mohammad mohammad aldaoud": 150_000, # Jordan, TM Jun 2026
+    "said ghazi anas badawi":   200_000,    # Jordan, TM Jun 2026
+    "timothy bruce munzoko fayulu": 800_000, # Congo DR, TM Jun 2026
+    "mayele fiston mayele":   1_800_000,    # Congo DR, TM Jun 2026
+    "sherzod esanov":           450_000,    # Uzbekistan, TM Jun 2026
+    "brandon michael clarke thomas asante": 16_000_000, # Ghana, TM Jun 2026
+    "benjamin asare":           100_000,    # Ghana, TM Jun 2026
+    "luis ricardo mejia":       150_000,    # Panama, TM Jun 2026
+    "cesar jair samudio":       250_000,    # Panama, TM Jun 2026
+    "jose fajardo":             550_000,    # Panama, TM Jun 2026
+    "cecilio alfonso waterman": 250_000,    # Panama, TM Jun 2026
+
     # Scotland "Mc" parsing artifacts — mapped by club
     "scott mctominay":       40_000_000,    # Scotland MID, Napoli, TM Jun 2026
     "john mcginn":           13_000_000,    # Scotland MID, Aston Villa, TM Jun 2026
@@ -82,13 +137,11 @@ MANUAL_VALUES = {
     "marquinhos":            28_000_000,    # Brazil DEF, PSG, TM Jun 2026
     "casemiro":               6_000_000,    # Brazil MID, Man Utd, TM Jun 2026
     # Qatar players not on TM
-    "hatim abdulaziz hatem":    100_000,
+    "hatim abdulaziz hatem":    250_000,
     "khalid hassan alhaydos":   300_000,
     "alhussein alhashmi":       250_000,
     # Morocco
-    "ahmed reda tagnaouti":     200_000,
-    # Cabo Verde SEMEDOJair parsing
-    "semedojair yannick":       250_000,
+    "ahmed reda tagnaouti":   1_000_000,
 }
 
 # Club-based disambiguation for "Mc" parsing artifacts (team_id -> name mappings)
@@ -256,6 +309,10 @@ def get_market_value(p_clean: str, p_name: str, p_dob_iso: str,
 # MAIN
 # ─────────────────────────────────────────────────────────────────────────────
 def main():
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass  # For python versions where stdout doesn't support reconfigure
     print("=" * 60)
     print("FIFA WC 2026 — Authentic Market Value Updater")
     print("Source: Transfermarkt (dcaribou/transfermarkt-datasets)")
