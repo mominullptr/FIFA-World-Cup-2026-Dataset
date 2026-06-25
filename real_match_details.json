@@ -6,7 +6,7 @@
     "away_team": "South Africa",
     "score": "2–0",
     "home_goals": [
-      {"scorer": "Quiñones", "minute": "9'"},
+      {"scorer": "Quiñones", "minute": "9'", "assist": "Erik Lira"},
       {"scorer": "Jiménez", "minute": "67'", "assist": "Roberto Alvarado"}
     ],
     "away_goals": []
@@ -114,7 +114,7 @@
     "away_team": "Morocco",
     "score": "1–1",
     "home_goals": [
-      {"scorer": "Vinícius", "minute": "32'"}
+      {"scorer": "Vinícius", "minute": "32'", "assist": "Bruno Guimarães"}
     ],
     "away_goals": [
       {"scorer": "Saibari", "minute": "21'", "assist": "Brahim Diaz"}
@@ -322,7 +322,7 @@
     "away_team": "Jordan",
     "score": "3–1",
     "home_goals": [
-      {"scorer": "Schmid", "minute": "20'"},
+      {"scorer": "Schmid", "minute": "20'", "assist": "Xaver Schlager"},
       {"scorer": "Al-Arab", "minute": "76' (o.g.)"},
       {"scorer": "Arnautović", "minute": "90+12' (pen.)"}
     ],
@@ -354,7 +354,7 @@
     ],
     "away_goals": [
       {"scorer": "Muñoz", "minute": "40'", "assist": "Luis Díaz"},
-      {"scorer": "Díaz", "minute": "65'"},
+      {"scorer": "Díaz", "minute": "65'", "assist": "Gustavo Adolfo Puerta"},
       {"scorer": "Campaz", "minute": "90+9'", "assist": "Cucho Hernández"}
     ]
   },
@@ -430,7 +430,7 @@
     "score": "0–1",
     "home_goals": [],
     "away_goals": [
-      {"scorer": "Matías Galarza", "minute": "2'"}
+      {"scorer": "Matías Galarza", "minute": "2'", "assist": "Julio Enciso"}
     ]
   },
   {
@@ -482,9 +482,9 @@
     "home_goals": [],
     "away_goals": [
       {"scorer": "Kamada", "minute": "4'", "assist": "Keito Nakamura"},
-      {"scorer": "Ueda", "minute": "31'"},
+      {"scorer": "Ueda", "minute": "31'", "assist": "Keito Nakamura"},
       {"scorer": "Ito", "minute": "69'", "assist": "Ayase Ueda"},
-      {"scorer": "Ueda", "minute": "83'"}
+      {"scorer": "Ueda", "minute": "83'", "assist": "Kaishu Sano"}
     ]
   },
   {
@@ -547,7 +547,7 @@
     "away_team": "Austria",
     "score": "2–0",
     "home_goals": [
-      {"scorer": "Messi", "minute": "38'"},
+      {"scorer": "Messi", "minute": "38'", "assist": "Facundo Medina"},
       {"scorer": "Messi", "minute": "90+5'"}
     ],
     "away_goals": []
@@ -577,7 +577,7 @@
       {"scorer": "Haaland", "minute": "58'", "assist": "Patrick Berg"}
     ],
     "away_goals": [
-      {"scorer": "Ismaila Sarr", "minute": "53'"},
+      {"scorer": "Ismaila Sarr", "minute": "53'", "assist": "Sadio Mané"},
       {"scorer": "Ismaila Sarr", "minute": "90+3'", "assist": "Jackson"}
     ]
   },
@@ -639,6 +639,59 @@
     "home_goals": [],
     "away_goals": [
       {"scorer": "budimir", "minute": "54'", "assist": "stanisic"}
+    ]
+  },
+  {
+    "group": "Group A",
+    "date": "June 24, 2026",
+    "home_team": "Czechia",
+    "away_team": "Mexico",
+    "score": "0–3",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "Mateo Chavez", "minute": "55'", "assist": "Luis Romo"},
+      {"scorer": "Julian Quiñones", "minute": "61'", "assist": "Jorge Sanchez"},
+      {"scorer": "Alvaro Fidalgo", "minute": "90+4'", "assist": "Roberto Alvarado"}
+    ]
+  },
+  {
+    "group": "Group A",
+    "date": "June 24, 2026",
+    "home_team": "South Africa",
+    "away_team": "South Korea",
+    "score": "1–0",
+    "home_goals": [
+      {"scorer": "Thapelo Maseko", "minute": "63'", "assist": "Tshepang Moremi"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group B",
+    "date": "June 24, 2026",
+    "home_team": "Switzerland",
+    "away_team": "Canada",
+    "score": "2–1",
+    "home_goals": [
+      {"scorer": "Ruben Vargas", "minute": "46'", "assist": "Johan Manzambi"},
+      {"scorer": "Johan Manzambi", "minute": "57'", "assist": "Breel Embolo"}
+    ],
+    "away_goals": [
+      {"scorer": "Promise David", "minute": "76'", "assist": "Saliba"}
+    ]
+  },
+  {
+    "group": "Group B",
+    "date": "June 24, 2026",
+    "home_team": "Bosnia and Herzegovina",
+    "away_team": "Qatar",
+    "score": "3–1",
+    "home_goals": [
+      {"scorer": "Kerim Alajbegovic", "minute": "29'", "assist": "Ivan Basic"},
+      {"scorer": "Mahmoud Abunada", "minute": "34' (o.g.)"},
+      {"scorer": "Ermin Mahmic", "minute": "82'", "assist": "Dennis Hadzikadunic"}
+    ],
+    "away_goals": [
+      {"scorer": "Hassan Al-Haydos", "minute": "42'", "assist": "Junior Edmilson"}
     ]
   }
 ]

@@ -322,10 +322,10 @@ matches_data = [
     [48, "2026-06-23", "23:59", 1, 1, 48, 46, 0, 1, "Completed", 0.42, 1.48],
 
     # Round 3 Scheduled matches (simultaneous group final matches)
-    [49, "2026-06-24", "18:00", 1, 1, 4, 1, "", "", "Scheduled", "", ""],
-    [50, "2026-06-24", "18:00", 1, 7, 2, 3, "", "", "Scheduled", "", ""],
-    [51, "2026-06-24", "22:00", 1, 5, 8, 5, "", "", "Scheduled", "", ""],
-    [52, "2026-06-24", "22:00", 1, 6, 6, 7, "", "", "Scheduled", "", ""],
+    [49, "2026-06-24", "18:00", 1, 1, 4, 1, 0, 3, "Completed", 1.10, 1.27],
+    [50, "2026-06-24", "18:00", 1, 7, 2, 3, 1, 0, "Completed", 1.26, 1.39],
+    [51, "2026-06-24", "22:00", 1, 5, 8, 5, 2, 1, "Completed", 0.71, 1.35],
+    [52, "2026-06-24", "22:00", 1, 6, 6, 7, 3, 1, "Completed", 1.48, 0.95],
     [53, "2026-06-25", "18:00", 1, 2, 12, 9, "", "", "Scheduled", "", ""],
     [54, "2026-06-25", "18:00", 1, 10, 10, 11, "", "", "Scheduled", "", ""],
     [55, "2026-06-25", "22:00", 1, 3, 16, 13, "", "", "Scheduled", "", ""],
@@ -398,6 +398,10 @@ player_of_the_match_mapping = {
     46: 1120,  # Daniel Munoz (COL)
     47: 1147,  # Nico Oreilly (ENG)
     48: 1181,  # Ante Budimir (CRO)
+    49: 20,    # Mateo Chavez (MEX)
+    50: 38,    # Thapelo Maseko (RSA)
+    51: 191,   # Johan Kula Manzambi (SUI)
+    52: 149,   # Kerim Alajbegovic (BIH)
 }
 
 # Assign referees and player of the match relationally/statically
@@ -495,6 +499,21 @@ def match_player_to_id(team_id, name_to_match, players_data):
         "quintero": 1138,
         "budimir": 1181,
         "stanisic": 1172,
+        "gustavo adolfo puerta": 1132,
+        "erik lira": 6,
+        "bruno guimarães": 216,
+        "bruno guimaraes": 216,
+        "xaver schlager": 992,
+        "julio enciso": 357,
+        "kaishu sano": 570,
+        "facundo medina": 961,
+        "sadio mané": 868,
+        "sadio mane": 868,
+        "hassan al-haydos": 166,
+        "hassan al haydos": 166,
+        "al-haydos": 166,
+        "junior edmilson": 164,
+        "edmilson junior": 164,
     }
     
     if cleaned_match in overrides:
@@ -773,6 +792,10 @@ match_goalkeepers = {
     46: (1130, 1067), # COL vs COD: Camilo Vargas vs Lionel Nzau Mpasi
     47: (1145, 1197), # ENG vs GHA: Jordan Pickford vs Lawrence Ati-Zigi
     48: (1244, 1171), # PAN vs CRO: Orlando Mosquera vs Dominik Livakovic
+    49: (79, 1),      # CZE vs MEX: Matej Kovar vs Raul Rangel
+    50: (27, 53),     # RSA vs KOR: Ronwen Williams vs Seunggyu Kim
+    51: (183, 120),   # SUI vs CAN: Gregor Kobel vs Maxime Crepeau
+    52: (131, 157),   # BIH vs QAT: Nikola Vasilj vs Ibrahim Abunada
 }
 
 detailed_matches_headers = [
@@ -1131,6 +1154,18 @@ real_match_team_stats_data = [
     # Match 48: Panama 0-1 Croatia (June 23) — fifa.com
     [48, 48, 44, 7,  1,  2,  14, 2, 3,  "fifa.com", "2026-06-25"],
     [48, 46, 56, 15, 4,  5,  10, 1, 1,  "fifa.com", "2026-06-25"],
+    # Match 49: Czechia 0-3 Mexico (June 24) — sofascore.com
+    [49, 4, 50, 13, 1, 5, 9, 2, 2, "sofascore.com", "2026-06-25"],
+    [49, 1, 50, 11, 5, 1, 13, 1, 1, "sofascore.com", "2026-06-25"],
+    # Match 50: South Africa 1-0 South Korea (June 24) — fifa.com
+    [50, 2, 32, 13, 4, 3, 12, 1, 3, "fifa.com", "2026-06-25"],
+    [50, 3, 68, 8, 3, 6, 9, 2, 3, "fifa.com", "2026-06-25"],
+    # Match 51: Switzerland 2-1 Canada (June 24) — fifa.com
+    [51, 8, 55, 6, 4, 2, 15, 0, 6, "fifa.com", "2026-06-25"],
+    [51, 5, 45, 13, 7, 5, 10, 3, 2, "fifa.com", "2026-06-25"],
+    # Match 52: Bosnia and Herzegovina 3-1 Qatar (June 24) — fifa.com
+    [52, 6, 54, 14, 5, 5, 9, 1, 2, "fifa.com", "2026-06-25"],
+    [52, 7, 46, 9, 3, 5, 14, 3, 3, "fifa.com", "2026-06-25"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)
