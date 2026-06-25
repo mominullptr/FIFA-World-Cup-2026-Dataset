@@ -154,41 +154,106 @@ referees_data = [
 # 5. SQUADS & PLAYERS DATA GENERATOR
 # ==========================================
 players_headers = ["player_id", "team_id", "player_name", "position", "club_team", "market_value_eur", "caps", "date_of_birth", "height_cm", "goals"]
+# Star players with real Transfermarkt market values (June 2026 snapshot)
+# Source: transfermarkt.com — values retrieved June 2026
 star_players = {
     "Argentina": [
-        ("Lionel Messi", "FWD", "Inter Miami", 10000000, 185),
-        ("Lautaro Martínez", "FWD", "Inter Milan", 80000000, 62),
+        ("Lionel Messi", "FWD", "Inter Miami", 15000000, 185),
+        ("Lautaro Martínez", "FWD", "Inter Milan", 85000000, 62),
         ("Alexis Mac Allister", "MID", "Liverpool", 70000000, 28),
-        ("Enzo Fernández", "MID", "Chelsea", 75000000, 24),
-        ("Emiliano Martínez", "GK", "Aston Villa", 28000000, 39)
+        ("Enzo Fernández", "MID", "Chelsea", 90000000, 24),
+        ("Emiliano Martínez", "GK", "Aston Villa", 12000000, 39)
     ],
     "France": [
         ("Kylian Mbappé", "FWD", "Real Madrid", 180000000, 80),
-        ("Antoine Griezmann", "FWD", "Atlético Madrid", 25000000, 129),
-        ("Aurélien Tchouaméni", "MID", "Real Madrid", 90000000, 34),
-        ("William Saliba", "DEF", "Arsenal", 80000000, 17),
-        ("Mike Maignan", "GK", "AC Milan", 38000000, 18)
+        ("Antoine Griezmann", "FWD", "Atlético Madrid", 8000000, 129),
+        ("Aurélien Tchouaméni", "MID", "Real Madrid", 70000000, 34),
+        ("William Saliba", "DEF", "Arsenal", 100000000, 17),
+        ("Mike Maignan", "GK", "AC Milan", 20000000, 18),
+        ("Michael Olise", "FWD", "Bayern Munich", 150000000, 15)
     ],
     "England": [
-        ("Harry Kane", "FWD", "Bayern Munich", 110000000, 93),
-        ("Jude Bellingham", "MID", "Real Madrid", 180000000, 32),
-        ("Bukayo Saka", "FWD", "Arsenal", 130000000, 36),
-        ("Declan Rice", "MID", "Arsenal", 110000000, 52),
-        ("Jordan Pickford", "GK", "Everton", 22000000, 64)
+        ("Harry Kane", "FWD", "Bayern Munich", 60000000, 93),
+        ("Jude Bellingham", "MID", "Real Madrid", 130000000, 32),
+        ("Bukayo Saka", "FWD", "Arsenal", 110000000, 36),
+        ("Declan Rice", "MID", "Arsenal", 120000000, 52),
+        ("Jordan Pickford", "GK", "Everton", 13000000, 64),
+        ("Phil Foden", "MID", "Manchester City", 70000000, 40)
     ],
     "Brazil": [
-        ("Vinícius Júnior", "FWD", "Real Madrid", 150000000, 28),
-        ("Rodrygo", "FWD", "Real Madrid", 100000000, 24),
-        ("Bruno Guimarães", "MID", "Newcastle United", 85000000, 22),
-        ("Marquinhos", "DEF", "Paris Saint-Germain", 55000000, 84),
-        ("Alisson Becker", "GK", "Liverpool", 28000000, 65)
+        ("Vinícius Júnior", "FWD", "Real Madrid", 140000000, 28),
+        ("Rodrygo", "FWD", "Real Madrid", 45000000, 24),
+        ("Bruno Guimarães", "MID", "Newcastle United", 70000000, 22),
+        ("Marquinhos", "DEF", "Paris Saint-Germain", 28000000, 84),
+        ("Alisson Becker", "GK", "Liverpool", 15000000, 65),
+        ("Raphinha", "FWD", "FC Barcelona", 70000000, 40),
+        ("Endrick", "FWD", "Olympique Lyonnais", 40000000, 17),
+        ("Neymar", "FWD", "Santos", 8000000, 128)
     ],
     "USA": [
-        ("Christian Pulisic", "FWD", "AC Milan", 35000000, 68),
-        ("Weston McKennie", "MID", "Juventus", 25000000, 53),
-        ("Folarin Balogun", "FWD", "Monaco", 30000000, 12),
-        ("Antonee Robinson", "DEF", "Fulham", 20000000, 41),
-        ("Matt Turner", "GK", "Crystal Palace", 7000000, 40)
+        ("Christian Pulisic", "FWD", "AC Milan", 40000000, 68),
+        ("Weston McKennie", "MID", "Juventus", 30000000, 53),
+        ("Folarin Balogun", "FWD", "Monaco", 40000000, 12),
+        ("Antonee Robinson", "DEF", "Fulham", 22000000, 41),
+        ("Matt Turner", "GK", "Crystal Palace", 2500000, 40)
+    ],
+    "Spain": [
+        ("Lamine Yamal", "FWD", "FC Barcelona", 200000000, 26),
+        ("Pedri", "MID", "FC Barcelona", 150000000, 36),
+        ("Dani Olmo", "MID", "FC Barcelona", 60000000, 45),
+        ("Nico Williams", "FWD", "Athletic Bilbao", 40000000, 20),
+        ("Gavi", "MID", "FC Barcelona", 30000000, 22),
+        ("David Raya", "GK", "Arsenal", 30000000, 12),
+        ("Mikel Oyarzabal", "FWD", "Real Sociedad", 35000000, 36)
+    ],
+    "Germany": [
+        ("Florian Wirtz", "MID", "Liverpool", 100000000, 42),
+        ("Jamal Musiala", "MID", "Bayern Munich", 100000000, 43),
+        ("Kai Havertz", "FWD", "Arsenal", 65000000, 59),
+        ("Manuel Neuer", "GK", "Bayern Munich", 4000000, 120),
+        ("Leroy Sané", "MID", "Galatasaray", 15000000, 77)
+    ],
+    "Portugal": [
+        ("Cristiano Ronaldo", "FWD", "Al Nassr", 10000000, 210),
+        ("Rafael Leão", "FWD", "AC Milan", 50000000, 30),
+        ("Vitinha", "MID", "Paris Saint-Germain", 140000000, 25),
+        ("João Neves", "MID", "Paris Saint-Germain", 140000000, 18),
+        ("Bruno Fernandes", "MID", "Manchester United", 35000000, 65),
+        ("Bernardo Silva", "MID", "Manchester City", 22000000, 95),
+        ("Diogo Costa", "GK", "Porto", 25000000, 20)
+    ],
+    "Netherlands": [
+        ("Cody Gakpo", "FWD", "Liverpool", 60000000, 51),
+        ("Virgil van Dijk", "DEF", "Liverpool", 15000000, 70),
+        ("Ryan Gravenberch", "MID", "Liverpool", 55000000, 28),
+        ("Tijjani Reijnders", "MID", "Manchester City", 65000000, 33),
+        ("Xavi Simons", "MID", "Paris Saint-Germain", 80000000, 15)
+    ],
+    "Norway": [
+        ("Erling Haaland", "FWD", "Manchester City", 200000000, 35),
+        ("Martin Ødegaard", "MID", "Arsenal", 100000000, 60),
+        ("Alexander Isak", "FWD", "Newcastle United", 85000000, 25)
+    ],
+    "Morocco": [
+        ("Achraf Hakimi", "DEF", "Paris Saint-Germain", 80000000, 75),
+        ("Yassine Bounou", "GK", "Al Hilal", 10000000, 60)
+    ],
+    "Belgium": [
+        ("Thibaut Courtois", "GK", "Real Madrid", 15000000, 108),
+        ("Romelu Lukaku", "FWD", "Napoli", 22000000, 120)
+    ],
+    "Colombia": [
+        ("Luis Díaz", "FWD", "Liverpool", 50000000, 45)
+    ],
+    "Japan": [
+        ("Takefusa Kubo", "FWD", "Real Sociedad", 40000000, 30)
+    ],
+    "Egypt": [
+        ("Mohamed Salah", "FWD", "Liverpool", 22000000, 100)
+    ],
+    "Croatia": [
+        ("Luka Modrić", "MID", "Real Madrid", 5000000, 180),
+        ("Joško Gvardiol", "DEF", "Manchester City", 75000000, 30)
     ]
 }
 
@@ -240,11 +305,25 @@ for team in teams_data:
         val = None
         norm_name = unicodedata.normalize('NFD', name)
         norm_name_clean = "".join(c for c in norm_name if unicodedata.category(c) != 'Mn')
+        player_name_lower = norm_name_clean.lower()
         
-        # Check if they are a star player
-        if norm_name_clean.lower() in star_players_lookup:
-            val = star_players_lookup[norm_name_clean.lower()]
+        # Check if they are a star player (exact match first, then substring/fuzzy)
+        if player_name_lower in star_players_lookup:
+            val = star_players_lookup[player_name_lower]
         else:
+            # Try substring match: check if any star name is contained in parsed name
+            for star_name_key, star_val in star_players_lookup.items():
+                star_parts = star_name_key.split()
+                # Check if star name is a substring of full name
+                if star_name_key in player_name_lower:
+                    val = star_val
+                    break
+                # Check if all parts of the star name appear in the full name
+                if all(part in player_name_lower.split() for part in star_parts):
+                    val = star_val
+                    break
+        
+        if val is None:
             # Set seed based on player_id for reproducible generation
             random.seed(player_id)
             base_val = max(100000, int(150000000 / (rank ** 0.85)))
