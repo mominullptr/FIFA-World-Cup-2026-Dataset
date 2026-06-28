@@ -1759,7 +1759,7 @@ lineup_id,match_id,player_id,team_id,is_starting_xi,tactical_position,minutes_pl
 1758,34,458,18,0,FWD,0
 1759,34,459,18,0,FWD,0
 1760,34,460,18,1,DEF,90
-1761,34,461,18,0,FWD,0
+1761,34,461,18,0,FWD,30
 1762,34,462,18,0,DEF,0
 1763,34,463,18,1,MID,90
 1764,34,464,18,0,MID,0

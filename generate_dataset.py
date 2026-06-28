@@ -925,6 +925,9 @@ for match in matches_data:
         event_id_counter += 1
         events_data.append([event_id_counter, 31, 88, "Yellow Card", 13, 315])  # Chris Richards
         event_id_counter += 1
+    elif match_id == 34:
+        events_data.append([event_id_counter, 34, 90, "Yellow Card", 18, 461])  # Gervane Kastaneer (90+1' = 91')
+        event_id_counter += 1
     elif match_id == 37:
         events_data.append([event_id_counter, 37, 1, "Yellow Card", 25, 633])  # Romelu Lukaku
         event_id_counter += 1
