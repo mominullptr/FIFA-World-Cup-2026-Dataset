@@ -674,6 +674,63 @@ def match_player_to_id(team_id, name_to_match, players_data):
         "alex baena": 743,
         "alejandro baena": 743,
         "marcos llorente": 733,
+        # --- 18 scorer mismatches discovered during deep audit (June 24) ---
+        # m7  Scotland: McGinn
+        "mcginn": 293,
+        # m10 Netherlands: Van Dijk, Summerville
+        "van dijk": 524,
+        "virgil van dijk": 524,
+        "summerville": 544,
+        # m14 Belgium (o.g. from Egypt): Hany scored into own net, player credited is the Egyptian
+        "hany": 653,
+        # m15 Saudi Arabia: Al-Amri ; Uruguay: M. Araújo
+        "al-amri": 784,
+        "ali al-amri": 784,
+        "m. araújo": 826,
+        "maximiliano araujo": 826,
+        # m18 Iraq: Hussein scored 39' (FWD); Haydar Hussein pid 887 only credited for the 90' o.g.
+        "hussein": 902,
+        "haydar hussein": 887,
+        # m18 Norway: Østigård (Leo Skiri Ostigard, pid 914)
+        "østigård": 914,
+        "ostigard": 914,
+        "leo ostigard": 914,
+        # m20 Jordan (o.g.): Al-Arab
+        "al-arab": 1019,
+        "mousa alarab": 1019,
+        # m27 Canada: J. David (Jonathan Christian David), Saliba
+        "j. david": 114,
+        "jonathan david": 114,
+        "saliba": 129,
+        "nathan saliba": 129,
+        # m27 Qatar (o.g.): Manai
+        "manai": 182,
+        # m29 Brazil: Vinícius Júnior (pid 215 — roster name is truncated but PID is correct)
+        "vinícius júnior": 215,
+        "vinicius junior": 215,
+        # m36 Japan: Ito scored 69' — Junya Ito (FWD, pid 560), not Hiroki Ito (DEF, pid 567)
+        "ito": 560,
+        "junya ito": 560,
+        # m38 Egypt: Mostafa Zico
+        "mostafa zico": 661,
+        # m39 Saudi Arabia (o.g.): Altambakti
+        "altambakti": 785,
+        # m45 Portugal: Nuno Mendes (pid 1065 — roster name truncated)
+        "nuno mendes": 1065,
+        # m52 Bosnia (o.g.): Mahmoud Abunada → cred to Bosnian pid 157 (Ibrahim Mahmoud Abunada)
+        "mahmoud abunada": 157,
+        # m52 Qatar: Hassan Al-Haydos
+        "hassan al-haydos": 166,
+        "hassan haydos": 166,
+        # m54 Morocco (o.g.): Yassine Bounou
+        "yassine bounou": 235,
+        # m59 Tunisia (o.g.): Ellyes Skhiri
+        "ellyes skhiri": 615,
+        # m59 Netherlands: Brian Brobbey, Jan Paul van Hecke
+        "brian brobbey": 539,
+        "jan paul van hecke": 526,
+        # m63 Spain: Álex Baena / Alejandro Baena
+        "álex baena": 743,
     }
     
     if cleaned_match in overrides:
@@ -916,7 +973,7 @@ match_goalkeepers = {
     10: (521, 547),   # NED vs JPN: Bart Verbruggen vs Zion Suzuki
     11: (469, 495),   # CIV vs ECU: Yahia Fofana vs Hernan Galindez
     12: (573, 614),   # SWE vs TUN: Jacob Widell Zetterstrom vs Aymen Dahmen
-    13: (729, 755),   # ESP vs CPV: David Raya vs Jose Vozinha
+    13: (751, 755),   # ESP vs CPV: Unai Simon vs Jose Vozinha (correction 2026-06-28)
     14: (625, 651),   # BEL vs EGY: Thibaut Courtois vs Elsayed Elshenawy
     15: (801, 807),   # KSA vs URU: Khalil Al-Owais vs Sergio Rochet
     16: (677, 703),   # IRN vs NZL: Ali Beiranvand vs Maxime Crocombe
@@ -942,7 +999,7 @@ match_goalkeepers = {
     36: (614, 547),   # TUN vs JPN: Aymen Dahmen vs Zion Suzuki
     37: (625, 677),   # BEL vs IRN: Thibaut Courtois vs Ali Beiranvand
     38: (703, 651),   # NZL vs EGY: Maxime Crocombe vs Elsayed Elshenawy
-    39: (729, 801),   # ESP vs KSA: David Raya vs Khalil Al-Owais
+    39: (751, 801),   # ESP vs KSA: Unai Simon vs Khalil Al-Owais (correction 2026-06-28)
     40: (807, 755),   # URU vs CPV: Sergio Rochet vs Jose Vozinha
     41: (848, 885),   # FRA vs IRQ: Mike Maignan vs Talib Raheem
     42: (911, 874),   # NOR vs SEN: Orjan Nyland vs Edouard Mendy
@@ -966,7 +1023,7 @@ match_goalkeepers = {
     60: (547, 573),   # JPN vs SWE: Zion Suzuki vs Jacob Widell Zetterstrom
     61: (703, 625),   # NZL vs BEL: Maxime Crocombe vs Thibaut Courtois
     62: (651, 677),   # EGY vs IRN: Elsayed Elshenawy vs Ali Beiranvand
-    63: (807, 729),   # URU vs ESP: Sergio Rochet vs David Raya
+    63: (807, 751),   # URU vs ESP: Sergio Rochet vs Unai Simon (correction 2026-06-28)
     64: (755, 801),   # CPV vs KSA: Jose Vozinha vs Khalil Al-Owais
 }
 

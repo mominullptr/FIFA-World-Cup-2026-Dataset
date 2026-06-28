@@ -93,12 +93,12 @@ event_id,match_id,minute,event_type,team_id,player_id
 92,17,90,Assist,34,871
 93,18,29,Goal,36,919
 94,18,29,Assist,36,915
-95,18,39,Goal,35,887
+95,18,39,Goal,35,902
 96,18,39,Assist,35,900
 97,18,43,Goal,36,919
 98,18,76,Goal,36,914
 99,18,76,Assist,36,920
-100,18,90,Goal,36,887
+100,18,90,Goal,36,902
 101,19,17,Goal,37,946
 102,19,17,Assist,37,943
 103,19,60,Goal,37,946
@@ -216,7 +216,7 @@ event_id,match_id,minute,event_type,team_id,player_id
 215,36,4,Assist,22,559
 216,36,31,Goal,22,564
 217,36,31,Assist,22,559
-218,36,69,Goal,22,559
+218,36,69,Goal,22,560
 219,36,69,Assist,22,564
 220,36,83,Goal,22,564
 221,36,83,Assist,22,570
