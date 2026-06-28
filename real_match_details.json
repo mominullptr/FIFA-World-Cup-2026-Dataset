@@ -852,6 +852,130 @@
     "score": "0-0",
     "home_goals": [],
     "away_goals": []
+  },
+  {
+    "group": "Group I",
+    "date": "June 26, 2026",
+    "home_team": "Norway",
+    "away_team": "France",
+    "score": "1–4",
+    "home_goals": [
+      {"scorer": "Thelo Aasgaard", "minute": "21'", "assist": "Andreas Schjelderup"}
+    ],
+    "away_goals": [
+      {"scorer": "Ousmane Dembélé", "minute": "7'", "assist": "Kylian Mbappé"},
+      {"scorer": "Ousmane Dembélé", "minute": "20'", "assist": "Kylian Mbappé"},
+      {"scorer": "Ousmane Dembélé", "minute": "32'", "assist": "Aurélien Tchouaméni"},
+      {"scorer": "Désiré Doué", "minute": "90+4'", "assist": "Bradley Barcola"}
+    ]
+  },
+  {
+    "group": "Group I",
+    "date": "June 26, 2026",
+    "home_team": "Senegal",
+    "away_team": "Iraq",
+    "score": "5–0",
+    "home_goals": [
+      {"scorer": "Habib Diarra", "minute": "4'", "assist": "Abdoulaye Seck"},
+      {"scorer": "Ismaïla Sarr", "minute": "56'", "assist": "Lamine Camara"},
+      {"scorer": "Pape Gueye", "minute": "59'", "assist": "Ismaïla Sarr"},
+      {"scorer": "Pape Gueye", "minute": "71'", "assist": "Iliman Ndiaye"},
+      {"scorer": "Iliman Ndiaye", "minute": "82'", "assist": "Pape Gueye"}
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Group J",
+    "date": "June 27, 2026",
+    "home_team": "Jordan",
+    "away_team": "Argentina",
+    "score": "1–3",
+    "home_goals": [
+      {"scorer": "Musa Al-Taamari", "minute": "55'", "assist": "Ihsan Haddad"}
+    ],
+    "away_goals": [
+      {"scorer": "Giovani Lo Celso", "minute": "19'"},
+      {"scorer": "Lautaro Martínez", "minute": "31' (pen.)"},
+      {"scorer": "Lionel Messi", "minute": "80'"}
+    ]
+  },
+  {
+    "group": "Group J",
+    "date": "June 27, 2026",
+    "home_team": "Algeria",
+    "away_team": "Austria",
+    "score": "3–3",
+    "home_goals": [
+      {"scorer": "Rafik Belghali", "minute": "45'", "assist": "Riyad Mahrez"},
+      {"scorer": "Riyad Mahrez", "minute": "60'", "assist": "Houssem Aouar"},
+      {"scorer": "Riyad Mahrez", "minute": "90+3'", "assist": "Houssem Aouar"}
+    ],
+    "away_goals": [
+      {"scorer": "Marko Arnautović", "minute": "28'", "assist": "David Alaba"},
+      {"scorer": "Marcel Sabitzer", "minute": "55'", "assist": "Nicolas Seiwald"},
+      {"scorer": "Saša Kalajdžić", "minute": "90+6'", "assist": "Michael Gregoritsch"}
+    ]
+  },
+  {
+    "group": "Group K",
+    "date": "June 28, 2026",
+    "home_team": "Colombia",
+    "away_team": "Portugal",
+    "score": "0–0",
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "group": "Group K",
+    "date": "June 28, 2026",
+    "home_team": "DR Congo",
+    "away_team": "Uzbekistan",
+    "score": "3–1",
+    "home_goals": [
+      {"scorer": "Yoane Wissa", "minute": "68' (pen.)"},
+      {"scorer": "Fiston Mayele", "minute": "78'"},
+      {"scorer": "Yoane Wissa", "minute": "90+1'", "assist": "Meschack Elia"}
+    ],
+    "away_goals": [
+      {"scorer": "Eldor Shomurodov", "minute": "10'", "assist": "Akmal Mozgovoy"}
+    ]
+  },
+  {
+    "group": "Group L",
+    "date": "June 28, 2026",
+    "home_team": "Panama",
+    "away_team": "England",
+    "score": "0–2",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "Jude Bellingham", "minute": "62'", "assist": "Bukayo Saka"},
+      {"scorer": "Harry Kane", "minute": "67'", "assist": "Jude Bellingham"}
+    ]
+  },
+  {
+    "group": "Group L",
+    "date": "June 28, 2026",
+    "home_team": "Croatia",
+    "away_team": "Ghana",
+    "score": "2–1",
+    "home_goals": [
+      {"scorer": "Petar Sucic", "minute": "31'"},
+      {"scorer": "Nikola Vlasic", "minute": "83'", "assist": "Luka Modric"}
+    ],
+    "away_goals": [
+      {"scorer": "Derrick Luckassen", "minute": "73'", "assist": "Ernest Nuamah"}
+    ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "June 29, 2026",
+    "home_team": "South Africa",
+    "away_team": "Canada",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {"scorer": "Stephen Eustaquio", "minute": "90+2'"}
+    ]
   }
 ]
 

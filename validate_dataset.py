@@ -53,11 +53,11 @@ def main():
     else:
         print("  [OK] Found exactly 1248 registered squad players.")
 
-    if len(matches) != 72:
-        print(f"[FAIL] Error: Expected exactly 72 matches, got {len(matches)}.")
+    if len(matches) != 89:
+        print(f"[FAIL] Error: Expected exactly 89 matches, got {len(matches)}.")
         errors += 1
     else:
-        print("  [OK] Found exactly 72 matches.")
+        print("  [OK] Found exactly 89 matches.")
 
     # 2. Key Uniqueness
     print("\n[2/6] Verifying primary key uniqueness...")
@@ -109,10 +109,10 @@ def main():
         if ven_id not in venue_ids:
             print(f"[FAIL] Error: Match {m_id} references non-existent venue_id {ven_id}.")
             errors += 1
-        if home_id not in team_ids:
+        if home_id != "" and home_id not in team_ids:
             print(f"[FAIL] Error: Match {m_id} references non-existent home_team_id {home_id}.")
             errors += 1
-        if away_id not in team_ids:
+        if away_id != "" and away_id not in team_ids:
             print(f"[FAIL] Error: Match {m_id} references non-existent away_team_id {away_id}.")
             errors += 1
         if ref_id not in referee_ids:
