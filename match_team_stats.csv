@@ -23,8 +23,8 @@ match_id,team_id,possession_pct,total_shots,shots_on_target,corners,fouls,offsid
 11,20,49,12,1,5,14,3,3,,fifa.com,2026-06-24
 12,23,49,13,7,4,10,3,1,Alexander Isak,fifa.com,2026-06-24
 12,24,51,6,2,2,8,1,6,,fifa.com,2026-06-24
-13,29,65,27,7,11,10,2,6,,fifa.com,2026-06-24
-13,30,25,6,1,1,1,3,7,José Vozinha,fifa.com,2026-06-24
+13,29,74,23,8,11,10,2,6,,fifa.com,2026-06-24
+13,30,26,6,1,1,1,3,7,José Vozinha,fifa.com,2026-06-24
 14,25,57,15,3,2,15,0,2,,fifa.com,2026-06-24
 14,26,43,14,3,7,15,1,2,Ashour Metwaly Emam,fifa.com,2026-06-24
 15,31,27,7,3,4,11,2,8,Khalil Mohammed Alowais,fifa.com,2026-06-24
@@ -103,3 +103,7 @@ match_id,team_id,possession_pct,total_shots,shots_on_target,corners,fouls,offsid
 51,5,45,13,7,5,10,3,2,,fifa.com,2026-06-25
 52,6,54,14,5,5,9,1,2,Kerim Alajbegovic,fifa.com,2026-06-25
 52,7,46,9,3,5,14,3,3,,fifa.com,2026-06-25
+56,14,44,8,2,1,9,0,6,Roberto Junior Fernandez,fifa.com,2026-06-28
+56,15,56,12,5,3,6,0,3,,fifa.com,2026-06-28
+64,30,51,15,3,4,10,2,3,José Vozinha,fifa.com,2026-06-28
+64,31,49,6,3,2,16,0,6,,fifa.com,2026-06-28

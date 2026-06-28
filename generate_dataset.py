@@ -1306,8 +1306,8 @@ real_match_team_stats_data = [
     [12, 23, 49, 13, 7,  4,  10, 3, 1,  "fifa.com", "2026-06-24"],
     [12, 24, 51, 6,  2,  2,  8,  1, 6,  "fifa.com", "2026-06-24"],
     # Match 13: Spain 0-0 Cabo Verde (June 15) — fifa.com
-    [13, 29, 65, 27, 7,  11, 10, 2, 6,  "fifa.com", "2026-06-24"],
-    [13, 30, 25, 6,  1,  1,  1,  3, 7,  "fifa.com", "2026-06-24"],
+    [13, 29, 74, 23, 8,  11, 10, 2, 6,  "fifa.com", "2026-06-24"],
+    [13, 30, 26, 6,  1,  1,  1,  3, 7,  "fifa.com", "2026-06-24"],
     # Match 14: Belgium 1-1 Egypt (June 15) — fifa.com
     [14, 25, 57, 15, 3,  2,  15, 0, 2,  "fifa.com", "2026-06-24"],
     [14, 26, 43, 14, 3,  7,  15, 1, 2,  "fifa.com", "2026-06-24"],
@@ -1425,6 +1425,12 @@ real_match_team_stats_data = [
     # Match 52: Bosnia and Herzegovina 3-1 Qatar (June 24) — fifa.com
     [52, 6, 54, 14, 5, 5, 9, 1, 2, "fifa.com", "2026-06-25"],
     [52, 7, 46, 9, 3, 5, 14, 3, 3, "fifa.com", "2026-06-25"],
+    # Match 56: Paraguay 0-0 Australia (June 26) — fifa.com
+    [56, 14, 44, 8,  2, 1, 9, 0, 6, "fifa.com", "2026-06-28"],
+    [56, 15, 56, 12, 5, 3, 6, 0, 3, "fifa.com", "2026-06-28"],
+    # Match 64: Cabo Verde 0-0 Saudi Arabia (June 27) — fifa.com
+    [64, 30, 51, 15, 3, 4, 10, 2, 3, "fifa.com", "2026-06-28"],
+    [64, 31, 49, 6,  3, 2, 16, 0, 6, "fifa.com", "2026-06-28"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)
