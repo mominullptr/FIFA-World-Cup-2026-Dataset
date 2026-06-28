@@ -4,6 +4,14 @@ import random
 import re
 import json
 import unicodedata
+import sys
+
+# Set encoding for standard out to utf-8
+if sys.stdout:
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        pass
 
 # Set random seed for reproducibility
 random.seed(42)
@@ -425,18 +433,18 @@ matches_data = [
     [50, "2026-06-24", "18:00", 1, 7, 2, 3, 1, 0, "Completed", 1.26, 1.39],
     [51, "2026-06-24", "22:00", 1, 5, 8, 5, 2, 1, "Completed", 0.71, 1.35],
     [52, "2026-06-24", "22:00", 1, 6, 6, 7, 3, 1, "Completed", 1.48, 0.95],
-    [53, "2026-06-25", "18:00", 1, 2, 12, 9, "", "", "Scheduled", "", ""],
-    [54, "2026-06-25", "18:00", 1, 10, 10, 11, "", "", "Scheduled", "", ""],
-    [55, "2026-06-25", "22:00", 1, 3, 16, 13, "", "", "Scheduled", "", ""],
-    [56, "2026-06-25", "22:00", 1, 15, 14, 15, "", "", "Scheduled", "", ""],
-    [57, "2026-06-26", "18:00", 1, 9, 20, 17, "", "", "Scheduled", "", ""],
-    [58, "2026-06-26", "18:00", 1, 11, 18, 19, "", "", "Scheduled", "", ""],
-    [59, "2026-06-26", "22:00", 1, 12, 24, 21, "", "", "Scheduled", "", ""],
-    [60, "2026-06-26", "22:00", 1, 16, 22, 23, "", "", "Scheduled", "", ""],
-    [61, "2026-06-27", "18:00", 1, 4, 28, 25, "", "", "Scheduled", "", ""],
-    [62, "2026-06-27", "18:00", 1, 8, 26, 27, "", "", "Scheduled", "", ""],
-    [63, "2026-06-27", "22:00", 1, 13, 32, 29, "", "", "Scheduled", "", ""],
-    [64, "2026-06-27", "22:00", 1, 14, 30, 31, "", "", "Scheduled", "", ""],
+    [53, "2026-06-25", "18:00", 1, 2, 12, 9, 0, 3, "Completed", 0.45, 2.18],
+    [54, "2026-06-25", "18:00", 1, 10, 10, 11, 4, 2, "Completed", 2.35, 1.12],
+    [55, "2026-06-25", "22:00", 1, 3, 16, 13, 3, 2, "Completed", 1.62, 1.45],
+    [56, "2026-06-25", "22:00", 1, 15, 14, 15, 0, 0, "Completed", 0.55, 0.48],
+    [57, "2026-06-26", "18:00", 1, 9, 20, 17, 2, 1, "Completed", 1.28, 1.55],
+    [58, "2026-06-26", "18:00", 1, 11, 18, 19, 0, 2, "Completed", 0.32, 1.68],
+    [59, "2026-06-26", "22:00", 1, 12, 24, 21, 1, 3, "Completed", 0.62, 2.15],
+    [60, "2026-06-26", "22:00", 1, 16, 22, 23, 1, 1, "Completed", 1.12, 0.95],
+    [61, "2026-06-27", "18:00", 1, 4, 28, 25, 1, 5, "Completed", 0.48, 3.25],
+    [62, "2026-06-27", "18:00", 1, 8, 26, 27, 1, 1, "Completed", 0.85, 0.92],
+    [63, "2026-06-27", "22:00", 1, 13, 32, 29, 0, 1, "Completed", 0.78, 1.35],
+    [64, "2026-06-27", "22:00", 1, 14, 30, 31, 0, 0, "Completed", 0.42, 0.38],
     [65, "2026-06-28", "18:00", 1, 10, 36, 33, "", "", "Scheduled", "", ""],
     [66, "2026-06-28", "18:00", 1, 2, 34, 35, "", "", "Scheduled", "", ""],
     [67, "2026-06-28", "22:00", 1, 15, 40, 37, "", "", "Scheduled", "", ""],
@@ -501,6 +509,18 @@ player_of_the_match_mapping = {
     50: 38,    # Thapelo Maseko (RSA)
     51: 191,   # Johan Kula Manzambi (SUI)
     52: 149,   # Kerim Alajbegovic (BIH)
+    53: 215,   # Vinícius Júnior (BRA)
+    54: 236,   # Achraf Hakimi (MAR)
+    55: 398,   # Arda Güler (TUR)
+    56: 339,   # Roberto Junior Fernandez (PAR GK - no POTM found, GK placeholder)
+    57: 514,   # Nilson Angulo (ECU)
+    58: 487,   # Nicolas Pépé (CIV)
+    59: 539,   # Brian Brobbey (NED)
+    60: 557,   # Daizen Maeda (JPN)
+    61: 634,   # Leandro Trossard (BEL)
+    62: 699,   # Ramin Rezaeian (IRN)
+    63: 743,   # Álex Baena (ESP)
+    64: 755,   # José Vozinha (CPV)
 }
 
 # Assign referees and player of the match relationally/statically
@@ -613,6 +633,47 @@ def match_player_to_id(team_id, name_to_match, players_data):
         "al-haydos": 166,
         "junior edmilson": 164,
         "edmilson junior": 164,
+        # June 25-27 match overrides
+        "rayan": 234,
+        "vitor rayan": 234,
+        "achraf hakimi": 236,
+        "soufiane rahimi": 243,
+        "gessime yassine": 250,
+        "wilson isidor": 278,
+        "arda guler": 398,
+        "orkun kokcu": 396,
+        "kaan ayhan": 412,
+        "baris alper yilmaz": 411,
+        "barış alper yılmaz": 411,
+        "barı ş alper yilmaz": 411,
+        "eren elmali": 403,
+        "eren elmalı": 403,
+        "auston trusty": 318,
+        "sebastian berhalter": 326,
+        "nilson angulo": 514,
+        "pedro vite": 509,
+        "gonzalo plata": 513,
+        "moises caicedo": 517,
+        "leroy sane": 435,
+        "florian wirtz": 433,
+        "nicolas pepe": 487,
+        "hazem mastouri": 607,
+        "ellyes skhiri": 615,
+        "brian brobbey": 539,
+        "jan paul van hecke": 526,
+        "daizen maeda": 557,
+        "anthony elanga": 583,
+        "leandro trossard": 634,
+        "kevin de bruyne": 631,
+        "romelu lukaku": 633,
+        "alexis saelemaekers": 646,
+        "elijah just": 713,
+        "mahmoud saber": 671,
+        "saber abdelmohsen": 671,
+        "ramin rezaeian": 699,
+        "alex baena": 743,
+        "alejandro baena": 743,
+        "marcos llorente": 733,
     }
     
     if cleaned_match in overrides:
@@ -895,6 +956,18 @@ match_goalkeepers = {
     50: (27, 53),     # RSA vs KOR: Ronwen Williams vs Seunggyu Kim
     51: (183, 120),   # SUI vs CAN: Gregor Kobel vs Maxime Crepeau
     52: (131, 157),   # BIH vs QAT: Nikola Vasilj vs Ibrahim Abunada
+    53: (287, 209),   # SCO vs BRA: Angus Gunn vs Alisson Becker
+    54: (235, 261),   # MAR vs HAI: Yassine Bounou vs Johny Placide
+    55: (391, 313),   # TUR vs USA: Mert Gunok vs Matt Turner
+    56: (339, 365),   # PAR vs AUS: Roberto Fernandez vs Mathew Ryan
+    57: (495, 417),   # ECU vs GER: Hernan Galindez vs Manuel Neuer
+    58: (443, 469),   # CUW vs CIV: Eloy Room vs Yahia Fofana
+    59: (614, 521),   # TUN vs NED: Aymen Dahmen vs Bart Verbruggen
+    60: (547, 573),   # JPN vs SWE: Zion Suzuki vs Jacob Widell Zetterstrom
+    61: (703, 625),   # NZL vs BEL: Maxime Crocombe vs Thibaut Courtois
+    62: (651, 677),   # EGY vs IRN: Elsayed Elshenawy vs Ali Beiranvand
+    63: (807, 729),   # URU vs ESP: Sergio Rochet vs David Raya
+    64: (755, 801),   # CPV vs KSA: Jose Vozinha vs Khalil Al-Owais
 }
 
 detailed_matches_headers = [
@@ -984,6 +1057,7 @@ for event in events_data:
 
 # Try to load existing lineups to preserve authentic starting XI and minutes
 existing_lineups = {}
+completed_matches_in_lineups = set()
 lineups_csv_path = os.path.join(output_dir, "match_lineups.csv")
 if os.path.exists(lineups_csv_path):
     try:
@@ -991,8 +1065,14 @@ if os.path.exists(lineups_csv_path):
             reader = csv.DictReader(f)
             for row in reader:
                 # Key: (match_id, player_id) -> (is_starting_xi, minutes_played)
-                key = (int(row["match_id"]), int(row["player_id"]))
-                existing_lineups[key] = (int(row["is_starting_xi"]), int(row["minutes_played"]))
+                mid = int(row["match_id"])
+                pid = int(row["player_id"])
+                is_start = int(row["is_starting_xi"])
+                mins = int(row["minutes_played"])
+                key = (mid, pid)
+                existing_lineups[key] = (is_start, mins)
+                if mins > 0 or is_start > 0:
+                    completed_matches_in_lineups.add(mid)
     except Exception as e:
         print(f"Warning: Could not read existing match_lineups.csv: {e}")
 
@@ -1078,8 +1158,10 @@ for match in matches_data:
                 mins = 0
                 
             # If we have an existing lineup entry for this match/player, preserve it!
-            if (m_id, pid) in existing_lineups:
+            if (m_id, pid) in existing_lineups and m_id in completed_matches_in_lineups:
                 is_start, mins = existing_lineups[(m_id, pid)]
+                if mins == 0 and pid in active_event_players:
+                    mins = 30
                 
             lineups_data.append([
                 lineup_id_counter,
