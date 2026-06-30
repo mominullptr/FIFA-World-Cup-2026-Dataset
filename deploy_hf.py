@@ -65,8 +65,17 @@ def main():
         message = " ".join(sys.argv[1:])
 
     # 4. Upload to Hugging Face
-    repo_id = os.environ.get("HF_REPO_ID", "mominullptr/fifa-world-cup-2026-dataset")
     token = os.environ.get("HF_TOKEN")
+    repo_id = os.environ.get("HF_REPO_ID")
+    
+    try:
+        api = HfApi(token=token)
+        if not repo_id:
+            username = api.whoami()["name"]
+            repo_id = f"{username}/fifa-world-cup-2026-dataset"
+    except Exception:
+        if not repo_id:
+            repo_id = "Mominullptr/fifa-world-cup-2026-dataset"
 
     print(f"\nTarget Repository: {repo_id}")
     
