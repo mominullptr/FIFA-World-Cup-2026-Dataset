@@ -976,6 +976,46 @@
     "away_goals": [
       {"scorer": "Stephen Eustaquio", "minute": "90+2'"}
     ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "June 29, 2026",
+    "home_team": "Brazil",
+    "away_team": "Japan",
+    "score": "2–1",
+    "home_goals": [
+      {"scorer": "Casemiro", "minute": "56'", "assist": "Gabriel Magalhães"},
+      {"scorer": "Gabriel Martinelli", "minute": "90+5'", "assist": "Bruno Guimarães"}
+    ],
+    "away_goals": [
+      {"scorer": "Kaishu Sano", "minute": "29'"}
+    ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "June 30, 2026",
+    "home_team": "Germany",
+    "away_team": "Paraguay",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Kai Havertz", "minute": "54'", "assist": "Florian Wirtz"}
+    ],
+    "away_goals": [
+      {"scorer": "Julio Enciso", "minute": "42'", "assist": "Matías Galarza"}
+    ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "June 30, 2026",
+    "home_team": "Netherlands",
+    "away_team": "Morocco",
+    "score": "1–1",
+    "home_goals": [
+      {"scorer": "Cody Gakpo", "minute": "72'", "assist": "Crysencio Summerville"}
+    ],
+    "away_goals": [
+      {"scorer": "Issa Diop", "minute": "90+1'", "assist": "Chemsdine Talbi"}
+    ]
   }
 ]
 

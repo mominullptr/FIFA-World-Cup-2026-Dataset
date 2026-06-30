@@ -30,6 +30,7 @@ def main():
     events_headers, events = load_csv("match_events.csv")
     detailed_headers, detailed = load_csv("matches_detailed.csv")
     lineups_headers, lineups = load_csv("match_lineups.csv")
+    ps_headers, ps_rows = load_csv("player_stats.csv")
 
     errors = 0
 
@@ -76,6 +77,7 @@ def main():
     errors += check_pks(players, "squads_and_players.csv")
     errors += check_pks(events, "match_events.csv")
     errors += check_pks(lineups, "match_lineups.csv")
+    errors += check_pks(ps_rows, "player_stats.csv")
     if errors == 0:
         print("  [OK] All primary keys are unique.")
 
@@ -279,8 +281,158 @@ def main():
     else:
         print("  [SKIP] match_team_stats.csv not found (optional table).")
 
+    # 8. Player Stats Validation
+    print("\n[8/9] Verifying player_stats.csv...")
+    ps_path = os.path.join(workspace_dir, "player_stats.csv")
+    if os.path.exists(ps_path):
+        # a. Row count: should have exactly 1248 rows
+        print(f"  Found {len(ps_rows)} player statistics rows.")
+        if len(ps_rows) != 1248:
+            print(f"[FAIL] Error: Expected exactly 1248 rows in player_stats.csv, got {len(ps_rows)}.")
+            errors += 1
+
+        # b. Uniqueness of player_id (checked via PK check, but double verifying here)
+        ps_ids = set()
+        for row in ps_rows:
+            pid = row[0]
+            if pid in ps_ids:
+                print(f"[FAIL] Error: Duplicate player_id in player_stats: {pid}")
+                errors += 1
+            ps_ids.add(pid)
+        if errors == 0:
+            print("  [OK] Player IDs are unique.")
+
+        # c. Referential integrity
+        for row in ps_rows:
+            pid, pname, tid = row[0], row[1], row[2]
+            if pid not in player_ids:
+                print(f"[FAIL] Error: player_stats row references non-existent player_id {pid}.")
+                errors += 1
+            if tid not in team_ids:
+                print(f"[FAIL] Error: player_stats row references non-existent team_id {tid}.")
+                errors += 1
+
+        # d. Value constraints (no negative numbers, and outfield/goalkeeper rules)
+        player_positions = {row[0]: row[3] for row in players}
+
+        for row in ps_rows:
+            pid = row[0]
+            pos = player_positions.get(pid, "")
+
+            # Check Goalkeeper rules
+            saves_val = row[16]
+            conceded_val = row[17]
+            cs_val = row[15]
+
+            if pos != "GK":
+                if saves_val != "" or conceded_val != "" or cs_val != "":
+                    print(f"[FAIL] Error: Outfield player {pid} ({pos}) has non-NULL goalkeeper statistics: saves='{saves_val}', conceded='{conceded_val}', clean_sheets='{cs_val}'.")
+                    errors += 1
+            else:
+                if saves_val == "" or conceded_val == "" or cs_val == "":
+                    print(f"[FAIL] Error: Goalkeeper {pid} has NULL goalkeeper statistics.")
+                    errors += 1
+
+            # Validate that all unverified columns are NULL (empty)
+            null_cols = [9, 10, 18]
+            for col_idx in null_cols:
+                if row[col_idx] != "":
+                    print(f"[FAIL] Error: Player {pid} has non-NULL value '{row[col_idx]}' in unverified column index {col_idx}.")
+                    errors += 1
+
+            # Check that numeric columns contain no negative values
+            numeric_cols = [4, 5, 6, 7, 8, 11, 12, 13, 14]
+            if pos == "GK":
+                numeric_cols += [15, 16, 17]
+            for col_idx in numeric_cols:
+                val = row[col_idx]
+                if val != "":
+                    try:
+                        int_val = int(val)
+                        if int_val < 0:
+                            print(f"[FAIL] Error: Player {pid} has negative value {int_val} in column index {col_idx}.")
+                            errors += 1
+                    except ValueError:
+                        print(f"[FAIL] Error: Player {pid} has non-integer value '{val}' in numeric column index {col_idx}.")
+                        errors += 1
+
+        # e. Alignment with match_events: goals, assists, yellow_cards, red_cards
+        ps_lookup = {row[0]: row for row in ps_rows}
+        ev_counts = {}
+        for row in events:
+            e_mid, e_pid, e_type = row[1], row[5], row[3]
+            if e_mid not in completed_match_ids:
+                continue
+            ev_counts.setdefault(e_pid, {"Goal": 0, "Assist": 0, "Yellow Card": 0, "Red Card": 0})
+            if e_type in ev_counts[e_pid]:
+                ev_counts[e_pid][e_type] += 1
+
+        for pid, counts in ev_counts.items():
+            ps_row = ps_lookup.get(pid)
+            if not ps_row:
+                print(f"[FAIL] Error: Player {pid} has events but does not exist in player_stats.csv.")
+                errors += 1
+                continue
+            
+            ps_goals = int(ps_row[7]) if ps_row[7] != "" else 0
+            ps_assists = int(ps_row[8]) if ps_row[8] != "" else 0
+            ps_yellows = int(ps_row[11]) if ps_row[11] != "" else 0
+            ps_reds = int(ps_row[12]) if ps_row[12] != "" else 0
+            ps_ogs = int(ps_row[14]) if ps_row[14] != "" else 0
+
+            expected_goals = max(0, counts["Goal"] - ps_ogs)
+            if ps_goals != expected_goals:
+                print(f"[FAIL] Error: Player {pid} goals={ps_goals} but expected {expected_goals} (events={counts['Goal']}, ogs={ps_ogs}).")
+                errors += 1
+            if ps_assists != counts["Assist"]:
+                print(f"[FAIL] Error: Player {pid} assists={ps_assists} but expected {counts['Assist']}.")
+                errors += 1
+            if ps_yellows != counts["Yellow Card"]:
+                print(f"[FAIL] Error: Player {pid} yellow_cards={ps_yellows} but expected {counts['Yellow Card']}.")
+                errors += 1
+            if ps_reds != counts["Red Card"]:
+                print(f"[FAIL] Error: Player {pid} red_cards={ps_reds} but expected {counts['Red Card']}.")
+                errors += 1
+
+        # f. Alignment with match_lineups: minutes_played, matches_played, matches_started
+        lu_counts = {}
+        for row in lineups:
+            m_id, p_id, is_start, mins = row[1], row[2], row[4], row[6]
+            if m_id not in completed_match_ids:
+                continue
+            lu_counts.setdefault(p_id, {"played": 0, "started": 0, "minutes": 0})
+            mins_val = int(mins)
+            if mins_val > 0:
+                lu_counts[p_id]["played"] += 1
+                lu_counts[p_id]["minutes"] += mins_val
+                if is_start == "1":
+                    lu_counts[p_id]["started"] += 1
+
+        for row in ps_rows:
+            pid = row[0]
+            ps_played = int(row[4]) if row[4] != "" else 0
+            ps_started = int(row[5]) if row[5] != "" else 0
+            ps_mins = int(row[6]) if row[6] != "" else 0
+
+            expected = lu_counts.get(pid, {"played": 0, "started": 0, "minutes": 0})
+            if ps_played != expected["played"]:
+                print(f"[FAIL] Error: Player {pid} matches_played={ps_played} but lineups say {expected['played']}.")
+                errors += 1
+            if ps_started != expected["started"]:
+                print(f"[FAIL] Error: Player {pid} matches_started={ps_started} but lineups say {expected['started']}.")
+                errors += 1
+            if ps_mins != expected["minutes"]:
+                print(f"[FAIL] Error: Player {pid} minutes_played={ps_mins} but lineups say {expected['minutes']}.")
+                errors += 1
+
+        if errors == 0:
+            print("  [OK] player_stats.csv passes all integrity checks.")
+    else:
+        print("  [FAIL] player_stats.csv not found.")
+        errors += 1
+
     # Final report
-    print("\n[8/8] Summary:")
+    print("\n[9/9] Summary:")
     if errors == 0:
         print("SUCCESS: The dataset passed all relational integrity constraints!")
         sys.exit(0)

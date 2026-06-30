@@ -15,7 +15,8 @@ csv_files = {
     "squads_and_players": "squads_and_players.csv",
     "match_events": "match_events.csv",
     "match_team_stats": "match_team_stats.csv",
-    "match_lineups": "match_lineups.csv"
+    "match_lineups": "match_lineups.csv",
+    "player_stats": "player_stats.csv"
 }
 
 def build_db():
@@ -73,6 +74,11 @@ def build_db():
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_team_stats_match ON match_team_stats(match_id);")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_lineups_match ON match_lineups(match_id);")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_lineups_player ON match_lineups(player_id);")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_ps_player ON player_stats(player_id);")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_ps_team ON player_stats(team_id);")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_ps_goals ON player_stats(goals);")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_ps_assists ON player_stats(assists);")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_ps_played ON player_stats(matches_played);")
         conn.commit()
         print("  [OK] Indexes successfully generated.")
     except Exception as e:

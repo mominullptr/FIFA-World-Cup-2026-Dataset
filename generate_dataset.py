@@ -454,9 +454,9 @@ matches_data = [
     [71, "2026-06-28", "22:00", 1, 2, 48, 45, 0, 2, "Completed", 0.69, 1.39],
     [72, "2026-06-28", "22:00", 1, 14, 46, 47, 2, 1, "Completed", 0.42, 0.74],
     [73, "2026-06-29", "12:00", 2, 3, 2, 5, 0, 1, "Completed", 0.13, 1.32],
-    [74, "2026-06-29", "23:00", 2, 11, 9, 22, "", "", "Scheduled", "", ""],
-    [75, "2026-06-30", "02:30", 2, 10, 17, 14, "", "", "Scheduled", "", ""],
-    [76, "2026-06-30", "07:00", 2, 8, 21, 10, "", "", "Scheduled", "", ""],
+    [74, "2026-06-29", "23:00", 2, 11, 9, 22, 2, 1, "Completed", 1.69, 0.23],
+    [75, "2026-06-30", "02:30", 2, 10, 17, 14, 1, 1, "Completed", 0.72, 0.42],
+    [76, "2026-06-30", "07:00", 2, 8, 21, 10, 1, 1, "Completed", 0.23, 1.40],
     [77, "2026-06-30", "23:00", 2, 4, 19, 36, "", "", "Scheduled", "", ""],
     [78, "2026-07-01", "03:00", 2, 2, 33, 23, "", "", "Scheduled", "", ""],
     [79, "2026-07-01", "07:00", 2, 1, 1, 20, "", "", "Scheduled", "", ""],
@@ -547,6 +547,9 @@ player_of_the_match_mapping = {
     71: 1154,  # Jude Bellingham (ENG)
     72: 1187,  # Petar Sučić (CRO)
     73: 111,   # Stephen Eustáquio (CAN)
+    74: 213,   # Casemiro (BRA)
+    75: 350,   # Orlando Gill (PAR GK)
+    76: 248,   # Issa Diop (MAR)
 }
 
 # Assign referees and player of the match relationally/statically
@@ -763,6 +766,13 @@ def match_player_to_id(team_id, name_to_match, players_data):
         "jan paul van hecke": 526,
         # m63 Spain: Álex Baena / Alejandro Baena
         "álex baena": 743,
+        # Match 74: Casemiro, Martinelli, Gabriel Magalhães
+        "casemiro": 213,
+        "gabriel martinelli": 230,
+        "gabriel magalhaes": 211,
+        # Match 76: Issa Diop, Chemsdine Talbi
+        "issa diop": 248,
+        "chemsdine talbi": 241,
     }
     
     if cleaned_match in overrides:
@@ -840,8 +850,20 @@ real_var_reviews = [
     (26, 2, 38, 81),
     (27, 7, 170, 60),
     (31, 13, 328, 43),   # Freeman goal VAR check (offside review, goal awarded)
-    (32, 14, 348, 45),   # Almirón red card VAR review
+    (32, 14, 348, 45),
 ]
+
+import json
+# Load authentic lineup/event overrides if available
+overrides_path = os.path.join(output_dir, "scratch", "lineup_event_overrides.json")
+overrides_data = {}
+if os.path.exists(overrides_path):
+    try:
+        with open(overrides_path, "r", encoding="utf-8") as f:
+            overrides_data = json.load(f)
+        print(f"Loaded authentic lineup/event overrides for {len(overrides_data)} matches.")
+    except Exception as e:
+        print(f"Warning: Could not load lineup overrides: {e}")
 
 for match in matches_data:
     status = match[9]
@@ -861,9 +883,10 @@ for match in matches_data:
             min_str = g["minute"].split("+")[0].split("'")[0].split()[0]
             m = int(min_str)
             is_og = "o.g." in g["minute"]
-            match_team_id = away_id if is_og else home_id
-            player_id = match_player_to_id(match_team_id, scorer, players_data)
-            events_data.append([event_id_counter, match_id, m, "Goal", match_team_id, player_id])
+            scorer_team_id = away_id if is_og else home_id
+            benefiting_team_id = home_id
+            player_id = match_player_to_id(scorer_team_id, scorer, players_data)
+            events_data.append([event_id_counter, match_id, m, "Goal", benefiting_team_id, player_id])
             event_id_counter += 1
             
             # If there is a verified assist in the json
@@ -879,9 +902,10 @@ for match in matches_data:
             min_str = g["minute"].split("+")[0].split("'")[0].split()[0]
             m = int(min_str)
             is_og = "o.g." in g["minute"]
-            match_team_id = home_id if is_og else away_id
-            player_id = match_player_to_id(match_team_id, scorer, players_data)
-            events_data.append([event_id_counter, match_id, m, "Goal", match_team_id, player_id])
+            scorer_team_id = home_id if is_og else away_id
+            benefiting_team_id = away_id
+            player_id = match_player_to_id(scorer_team_id, scorer, players_data)
+            events_data.append([event_id_counter, match_id, m, "Goal", benefiting_team_id, player_id])
             event_id_counter += 1
             
             # If there is a verified assist in the json
@@ -910,7 +934,34 @@ for match in matches_data:
             event_id_counter += 1
             
     # Yellow Cards (Verified bookings only)
-    if match_id == 26:
+    m_id_str = str(match_id)
+    if m_id_str in overrides_data:
+        match_ov = overrides_data[m_id_str]
+        # Add home team yellow cards
+        for p_info in match_ov.get("home_lineup", []):
+            p_id = p_info["player_id"]
+            for c_type, c_min in p_info.get("cards", []):
+                if c_type == "Yellow Card":
+                    events_data.append([event_id_counter, match_id, c_min, "Yellow Card", home_id, p_id])
+                    event_id_counter += 1
+                elif c_type == "Red Card":
+                    exists = any(ev[1] == match_id and ev[3] == "Red Card" and ev[5] == p_id for ev in events_data)
+                    if not exists:
+                        events_data.append([event_id_counter, match_id, c_min, "Red Card", home_id, p_id])
+                        event_id_counter += 1
+        # Add away team yellow cards
+        for p_info in match_ov.get("away_lineup", []):
+            p_id = p_info["player_id"]
+            for c_type, c_min in p_info.get("cards", []):
+                if c_type == "Yellow Card":
+                    events_data.append([event_id_counter, match_id, c_min, "Yellow Card", away_id, p_id])
+                    event_id_counter += 1
+                elif c_type == "Red Card":
+                    exists = any(ev[1] == match_id and ev[3] == "Red Card" and ev[5] == p_id for ev in events_data)
+                    if not exists:
+                        events_data.append([event_id_counter, match_id, c_min, "Red Card", away_id, p_id])
+                        event_id_counter += 1
+    elif match_id == 26:
         events_data.append([event_id_counter, 26, 33, "Yellow Card", 2, 30])
         event_id_counter += 1
         events_data.append([event_id_counter, 26, 40, "Yellow Card", 2, 31])
@@ -964,14 +1015,6 @@ for match in matches_data:
     elif match_id == 37:
         events_data.append([event_id_counter, 37, 1, "Yellow Card", 25, 633])  # Romelu Lukaku
         event_id_counter += 1
-    elif match_id == 47:
-        events_data.append([event_id_counter, 47, 34, "Yellow Card", 47, 1201])  # Thomas Partey
-        event_id_counter += 1
-        events_data.append([event_id_counter, 47, 67, "Yellow Card", 45, 1146])  # Ezri Konsa
-        event_id_counter += 1
-    elif match_id == 48:
-        events_data.append([event_id_counter, 48, 42, "Yellow Card", 48, 1226])  # Fidel Escobar
-        event_id_counter += 1
     elif match_id == 65:
         # Norway: Patrick Berg (916) in 10'
         events_data.append([event_id_counter, 65, 10, "Yellow Card", 36, 916])
@@ -989,18 +1032,6 @@ for match in matches_data:
         events_data.append([event_id_counter, 66, 75, "Yellow Card", 35, 900])
         event_id_counter += 1
         events_data.append([event_id_counter, 66, 90, "Yellow Card", 35, 907])
-        event_id_counter += 1
-    elif match_id == 67:
-        # Jordan: Yazan Al-Arab (1019) in 64', Mohannad Abu Taha (1034) in 17', Mohammad Abu Zrayq (1021) in 94'
-        events_data.append([event_id_counter, 67, 17, "Yellow Card", 40, 1034])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 67, 64, "Yellow Card", 40, 1019])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 67, 94, "Yellow Card", 40, 1021])
-        event_id_counter += 1
-    elif match_id == 68:
-        # Austria: Marko Arnautović (995) in 11'
-        events_data.append([event_id_counter, 68, 11, "Yellow Card", 39, 995])
         event_id_counter += 1
     elif match_id == 56:
         # Australia: Jackson Irvine (386) in 46'
@@ -1020,45 +1051,7 @@ for match in matches_data:
         # Cabo Verde: Logan Costa (778) in 8'
         events_data.append([event_id_counter, 64, 8, "Yellow Card", 30, 778])
         event_id_counter += 1
-    elif match_id == 69:
-        # Colombia: Gustavo Puerta (1132) at 86'
-        events_data.append([event_id_counter, 69, 86, "Yellow Card", 44, 1132])
-        event_id_counter += 1
-    elif match_id == 70:
-        # DR Congo: Noah Sadiki (1080) at 21', Nathanaël Mbuku (1073) at 45+4', Samuel Moutoussamy (1074) at 62'
-        events_data.append([event_id_counter, 70, 21, "Yellow Card", 42, 1080])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 70, 49, "Yellow Card", 42, 1073])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 70, 62, "Yellow Card", 42, 1074])
-        event_id_counter += 1
-        # Uzbekistan: Abdukodir Khusanov (1094) at 43', Sherzod Nasrullaev (1105) at 47'
-        events_data.append([event_id_counter, 70, 43, "Yellow Card", 43, 1094])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 70, 47, "Yellow Card", 43, 1105])
-        event_id_counter += 1
-    elif match_id == 71:
-        # Panama: José Fajardo (1239) at 53', Andrés Andrade (1238) at 83'
-        events_data.append([event_id_counter, 71, 53, "Yellow Card", 48, 1239])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 71, 83, "Yellow Card", 48, 1238])
-        event_id_counter += 1
-        # England: Jarell Quansah (1170) at 60'
-        events_data.append([event_id_counter, 71, 60, "Yellow Card", 45, 1170])
-        event_id_counter += 1
-    elif match_id == 72:
-        # Croatia: Ivan Perišić (1184) at 68'
-        events_data.append([event_id_counter, 72, 68, "Yellow Card", 46, 1184])
-        event_id_counter += 1
-        # Ghana: Kojo Peprah Oppong (1217) at 90+4'
-        events_data.append([event_id_counter, 72, 94, "Yellow Card", 47, 1217])
-        event_id_counter += 1
-    elif match_id == 73:
-        # Canada: Nathan Saliba (129) at 54', Niko Sigur (127) at 67'
-        events_data.append([event_id_counter, 73, 54, "Yellow Card", 5, 129])
-        event_id_counter += 1
-        events_data.append([event_id_counter, 73, 67, "Yellow Card", 5, 127])
-        event_id_counter += 1
+
 
 # Sort events chronologically: sort by match_id (index 1) and minute (index 2)
 events_data.sort(key=lambda x: (x[1], x[2]))
@@ -1084,7 +1077,7 @@ potm_name_overrides = {
 
 # Starting goalkeeper mapping: match_id -> (home_gk_player_id, away_gk_player_id)
 match_goalkeepers = {
-    1:  (13,   27),   # MEX vs RSA: Guillermo Ochoa vs Ronwen Williams
+    1:  (1,    27),   # MEX vs RSA: Raul Rangel vs Ronwen Williams
     2:  (53,   79),   # KOR vs CZE: Seunggyu Kim vs Matej Kovar
     3:  (120, 131),   # CAN vs BIH: Maxime Crepeau vs Nikola Vasilj
     4:  (313, 339),   # USA vs PAR: Matt Turner vs Roberto Fernandez
@@ -1102,13 +1095,13 @@ match_goalkeepers = {
     16: (677, 703),   # IRN vs NZL: Ali Beiranvand vs Maxime Crocombe
     17: (848, 874),   # FRA vs SEN: Mike Maignan vs Edouard Mendy
     18: (885, 911),   # IRQ vs NOR: Talib Raheem vs Orjan Nyland
-    19: (959, 963),   # ARG vs ALG: Emiliano Martinez vs Melvin Mastil
+    19: (959, 985),   # ARG vs ALG: Emiliano Martinez vs Luca Zidane
     20: (989, 1015),  # AUT vs JOR: Alexander Schlager vs Moien Abulaila
     21: (1041, 1067), # POR vs COD: Diogo Costa vs Lionel Nzau Mpasi
     22: (1145, 1171), # ENG vs CRO: Jordan Pickford vs Dominik Livakovic
-    23: (1197, 1223), # GHA vs PAN: Lawrence Ati-Zigi vs Luis Mejia
-    24: (1093, 1119), # UZB vs COL: Utkir Yusupov vs David Ospina
-    25: (13,   53),   # MEX vs KOR: Guillermo Ochoa vs Seunggyu Kim
+    23: (1197, 1244), # GHA vs PAN: Lawrence Ati-Zigi vs Orlando Mosquera
+    24: (1093, 1130), # UZB vs COL: Utkir Yusupov vs Camilo Vargas
+    25: (1,    53),   # MEX vs KOR: Raul Rangel vs Seunggyu Kim
     26: (79,   27),   # CZE vs RSA: Matej Kovar vs Ronwen Williams
     27: (120, 157),   # CAN vs QAT: Maxime Crepeau vs Ibrahim Abunada
     28: (183, 131),   # SUI vs BIH: Gregor Kobel vs Nikola Vasilj
@@ -1127,10 +1120,10 @@ match_goalkeepers = {
     41: (848, 885),   # FRA vs IRQ: Mike Maignan vs Talib Raheem
     42: (911, 874),   # NOR vs SEN: Orjan Nyland vs Edouard Mendy
     43: (959, 989),   # ARG vs AUT: Emiliano Martinez vs Alexander Schlager
-    44: (1015, 963),  # JOR vs ALG: Moien Abulaila vs Melvin Mastil
-    45: (1041, 1105), # POR vs UZB: Diogo Costa vs Abduvakhid Nematov
+    44: (1015, 985),  # JOR vs ALG: Moien Abulaila vs Luca Zidane
+    45: (1041, 1104), # POR vs UZB: Diogo Costa vs Abduvakhid Nematov
     46: (1130, 1067), # COL vs COD: Camilo Vargas vs Lionel Nzau Mpasi
-    47: (1145, 1197), # ENG vs GHA: Jordan Pickford vs Lawrence Ati-Zigi
+    47: (1145, 1212), # ENG vs GHA: Jordan Pickford vs Benjamin Asare
     48: (1244, 1171), # PAN vs CRO: Orlando Mosquera vs Dominik Livakovic
     49: (79, 1),      # CZE vs MEX: Matej Kovar vs Raul Rangel
     50: (27, 53),     # RSA vs KOR: Ronwen Williams vs Seunggyu Kim
@@ -1151,12 +1144,15 @@ match_goalkeepers = {
     65: (911, 848),   # NOR vs FRA: Orjan Nyland vs Mike Maignan
     66: (874, 906),   # SEN vs IRQ: Edouard Mendy vs Basil Fadhil Ahmed
     67: (1015, 959),  # JOR vs ARG: Yazeed Abulaila vs Emiliano Martinez
-    68: (963, 989),   # ALG vs AUT: Melvin Mastil vs Alexander Schlager
+    68: (978, 989),   # ALG vs AUT: Oussama Benbot vs Alexander Schlager
     69: (1130, 1041), # COL vs POR: Camilo Vargas vs Diogo Costa
     70: (1067, 1104), # COD vs UZB: Lionel Mpasi vs Abduvakhid Nematov
     71: (1244, 1145), # PAN vs ENG: Orlando Mosquera vs Jordan Pickford
     72: (1171, 1212), # CRO vs GHA: Dominik Livaković vs Benjamin Asare
     73: (27, 120),    # RSA vs CAN: Ronwen Williams vs Maxime Crépeau
+    74: (209, 547),   # BRA vs JPN: Alisson Becker vs Zion Suzuki
+    75: (417, 350),   # GER vs PAR: Manuel Neuer vs Orlando Gill
+    76: (521, 235),   # NED vs MAR: Bart Verbruggen vs Yassine Bounou
 }
 
 detailed_matches_headers = [
@@ -1347,11 +1343,37 @@ for match in matches_data:
                 mins = 0
                 
             # If we have an existing lineup entry for this match/player, preserve it!
-            if (m_id, pid) in existing_lineups and m_id in completed_matches_in_lineups:
+            # Skip preservation for Mexico players in matches 1, 25, 49 to allow goalkeeper updates
+            is_mexico_match_update = (m_id in [1, 25, 49] and team_id == 1)
+            if not is_mexico_match_update and (m_id, pid) in existing_lineups and m_id in completed_matches_in_lineups:
                 is_start, mins = existing_lineups[(m_id, pid)]
                 if mins == 0 and pid in active_event_players:
                     mins = 30
                 
+            # Goalkeeper substitution override for Mexico in Match 49
+            if m_id == 49 and team_id == 1:
+                if pid == 1:
+                    is_start = 1
+                    mins = 78
+                elif pid == 13:
+                    is_start = 0
+                    mins = 12
+
+            # Apply authentic lineup overrides from JSON if available
+            m_id_str = str(m_id)
+            if m_id_str in overrides_data:
+                match_ov = overrides_data[m_id_str]
+                ov_lineup = match_ov["home_lineup"] if team_id == home_id else match_ov["away_lineup"]
+                ov_lookup = {item["player_id"]: item for item in ov_lineup}
+                
+                if pid in ov_lookup:
+                    is_start = ov_lookup[pid]["is_starting_xi"]
+                    mins = ov_lookup[pid]["minutes_played"]
+                    pos = player_details[pid]["position"]
+                else:
+                    is_start = 0
+                    mins = 0
+
             lineups_data.append([
                 lineup_id_counter,
                 m_id,
@@ -1587,6 +1609,15 @@ real_match_team_stats_data = [
     # Match 73: South Africa vs Canada (June 29) — sofascore.com
     [73, 2,  58, 6,  1, 1, 10, 1, 6, "sofascore.com", "2026-06-29"],
     [73, 5,  42, 12, 7, 4, 16, 0, 1, "sofascore.com", "2026-06-29"],
+    # Match 74: Brazil vs Japan (June 29) — sofascore.com
+    [74, 9,  69, 19, 7, 6, 4,  1, 1, "sofascore.com", "2026-06-30"],
+    [74, 22, 31, 5,  2, 2, 13, 0, 4, "sofascore.com", "2026-06-30"],
+    # Match 75: Germany vs Paraguay (June 30) — sofascore.com
+    [75, 17, 76, 21, 6, 16, 18, 4, 2, "sofascore.com", "2026-06-30"],
+    [75, 14, 24, 7,  3, 6,  12, 1, 6, "sofascore.com", "2026-06-30"],
+    # Match 76: Netherlands vs Morocco (June 30) — sofascore.com
+    [76, 21, 30, 6,  2, 5, 18, 3, 5, "sofascore.com", "2026-06-30"],
+    [76, 10, 70, 11, 5, 8, 15, 0, 1, "sofascore.com", "2026-06-30"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)

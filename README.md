@@ -96,6 +96,25 @@ erDiagram
         string tactical_position
         int minutes_played
     }
+    PLAYER_STATS {
+        int player_id PK, FK
+        string player_name
+        int team_id FK
+        int matches_played
+        int matches_started
+        int minutes_played
+        int goals
+        int assists
+        int yellow_cards
+        int red_cards
+        int penalty_scored
+        int own_goals
+        int saves
+        int goals_conceded
+        int clean_sheets
+        string data_source
+        string last_verified
+    }
 
     TEAMS ||--o{ MATCHES : "hosts/visitors"
     TEAMS ||--o{ SQUADS_AND_PLAYERS : "roster"
@@ -107,6 +126,8 @@ erDiagram
     MATCHES ||--o{ MATCH_LINEUPS : "lineups"
     SQUADS_AND_PLAYERS ||--o{ MATCH_LINEUPS : "plays_in"
     TEAMS ||--o{ MATCH_LINEUPS : "lineups"
+    SQUADS_AND_PLAYERS ||--|| PLAYER_STATS : "has"
+    TEAMS ||--o{ PLAYER_STATS : "has"
     MATCH_TEAM_STATS {
         int match_id FK
         int team_id FK
@@ -138,6 +159,7 @@ erDiagram
 8. **`match_events.csv`**: Time-series game events (goals, assists, cards, VAR reviews) mapped to matches and players.
 9. **`match_team_stats.csv`**: Per-team per-match statistics (possession %, shots, shots on target, corners, fouls, offsides, saves) with `data_source` and `last_updated` columns for full traceability. Only populated with verified data from authentic sources (FIFA, Sofascore, FBref, etc.).
 10. **`match_lineups.csv`**: Tactical lineups for all completed matches: starting XI (11 players per team) and substitutes with actual minutes played.
+11. **`player_stats.csv`**: Cumulative tournament statistics for each player (1,248 rows), updated continuously as matches conclude. Outfield players have goalkeeper-specific fields set to NULL, and unverified advanced metrics (such as shots or key passes) are kept NULL to preserve dataset authenticity.
 
 ---
 

@@ -250,6 +250,15 @@ def main():
     # Save back to CSV
     save_csv(matches_path, m_headers, matches)
     save_csv(events_path, e_headers, events)
+    
+    # Re-generate cumulative player statistics
+    try:
+        import generate_player_stats
+        generate_player_stats.main()
+        print("  [OK] Cumulative player statistics (player_stats.csv) updated.")
+    except Exception as ex:
+        print(f"Warning: Could not update player statistics: {ex}")
+
     print("\n====================================================")
     print("Success: Matches and Match Events updated relationally!")
     print("====================================================")
