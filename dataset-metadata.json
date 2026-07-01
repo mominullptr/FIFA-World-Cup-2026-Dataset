@@ -53,6 +53,14 @@
     {
       "path": "match_lineups.csv",
       "description": "Tactical lineups for all completed matches: starting XI (11 players per team) and substitutes with actual minutes played."
+    },
+    {
+      "path": "player_stats.csv",
+      "description": "Cumulative tournament statistics for each player, updated continuously as matches conclude."
+    },
+    {
+      "path": "fifa_world_cup_2026.db",
+      "description": "A single, query-optimized SQLite relational database file containing all normalized tables."
     }
   ]
 }

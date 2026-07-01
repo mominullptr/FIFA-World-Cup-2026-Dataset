@@ -12,8 +12,6 @@ kaggle_dist/
 __pycache__/
 
 # Internal Kaggle deployment tools
-deploy_kaggle.py
-dataset-metadata.json
 .kaggleignore
 
 # Temporary parsing/scraping debug files
