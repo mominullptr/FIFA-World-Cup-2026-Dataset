@@ -11,12 +11,25 @@ kaggle_dist/
 *.pyc
 __pycache__/
 
-# Internal Kaggle deployment tools
+# Deployment tools and cache directories
+deploy_kaggle.py
+deploy_hf.py
+dataset-metadata.json
 .kaggleignore
+hf_dist/
+kaggle_dist/
+.puku/
 
-# Temporary parsing/scraping debug files
+# Internal validation, scraper and helper scripts
+update_market_values.py
+validate_dataset.py
+generate_player_stats.py
+scratch/
+_*.py
+
+# Raw data and temporary/backup files
 SquadLists-English.pdf
-pdf_lines_debug.txt
-test_parser_results.txt
-
-
+*.txt
+*.csv.bak*
+*.bak
+*.db
