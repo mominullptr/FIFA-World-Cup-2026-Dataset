@@ -457,19 +457,19 @@ matches_data = [
     [74, "2026-06-29", "23:00", 2, 11, 9, 22, 2, 1, "Completed", 1.69, 0.23],
     [75, "2026-06-30", "02:30", 2, 10, 17, 14, 1, 1, "Completed", 0.72, 0.42],
     [76, "2026-06-30", "07:00", 2, 8, 21, 10, 1, 1, "Completed", 0.23, 1.40],
-    [77, "2026-06-30", "23:00", 2, 4, 19, 36, "", "", "Scheduled", "", ""],
-    [78, "2026-07-01", "03:00", 2, 2, 33, 23, "", "", "Scheduled", "", ""],
-    [79, "2026-07-01", "07:00", 2, 1, 1, 20, "", "", "Scheduled", "", ""],
-    [80, "2026-07-01", "22:00", 2, 9, 45, 42, "", "", "Scheduled", "", ""],
-    [81, "2026-07-02", "02:00", 2, 16, 25, 34, "", "", "Scheduled", "", ""],
-    [82, "2026-07-02", "06:00", 2, 15, 13, 6, "", "", "Scheduled", "", ""],
+    [77, "2026-06-30", "23:00", 2, 4, 19, 36, 1, 2, "Completed", 1.15, 2.02],
+    [78, "2026-07-01", "03:00", 2, 2, 33, 23, 3, 0, "Completed", 3.17, 0.67],
+    [79, "2026-07-01", "07:00", 2, 1, 1, 20, 2, 0, "Completed", 1.02, 0.73],
+    [80, "2026-07-01", "22:00", 2, 9, 45, 42, 2, 1, "Completed", 2.04, 0.76],
+    [81, "2026-07-02", "02:00", 2, 16, 25, 34, 3, 2, "Completed", 1.74, 3.58],
+    [82, "2026-07-02", "06:00", 2, 15, 13, 6, 2, 0, "Completed", 0.92, 0.25],
     [83, "2026-07-03", "01:00", 2, 3, 29, 39, "", "", "Scheduled", "", ""],
     [84, "2026-07-03", "05:00", 2, 6, 41, 46, "", "", "Scheduled", "", ""],
     [85, "2026-07-03", "09:00", 2, 5, 8, 38, "", "", "Scheduled", "", ""],
     [86, "2026-07-04", "00:00", 2, 4, 15, 26, "", "", "Scheduled", "", ""],
     [87, "2026-07-04", "04:00", 2, 13, 37, 30, "", "", "Scheduled", "", ""],
     [88, "2026-07-04", "07:30", 2, 12, 44, 47, "", "", "Scheduled", "", ""],
-    [89, "2026-07-04", "23:00", 3, 11, 5, "", "", "", "Scheduled", "", ""]
+    [89, "2026-07-04", "23:00", 3, 11, 5, 14, "", "", "Scheduled", "", ""]
 ]
 
 # Player of the match mapping (match_id -> player_id) for completed matches 1-44
@@ -550,6 +550,12 @@ player_of_the_match_mapping = {
     74: 213,   # Casemiro (BRA)
     75: 350,   # Orlando Gill (PAR GK)
     76: 248,   # Issa Diop (MAR)
+    77: 930,   # Antonio Nusa (NOR)
+    78: 842,   # Kylian Mbappe (FRA)
+    79: 16,    # Julián Quiñones (MEX)
+    80: 1153,  # Harry Kane (ENG)
+    81: 632,   # Youri Tielemans (BEL)
+    82: 329,   # Malik Tillman (USA)
 }
 
 # Assign referees and player of the match relationally/statically
@@ -843,6 +849,8 @@ real_red_cards = [
     (32, 14, 348, 45),   # Almirón straight red, mouth-covering rule, 45+3'
     (37, 25, 649, 66),   # Nathan Ngoy straight red for DOGSO on Taremi
     (66, 35, 886, 13),   # Rebin Sulaka red card
+    (79, 20, 497, 95),   # Piero Hincapié straight red, mouth-covering rule, 95'
+    (82, 13, 332, 64),   # Folarin Balogun straight red, 64'
 ]
 
 real_var_reviews = [
@@ -851,6 +859,9 @@ real_var_reviews = [
     (27, 7, 170, 60),
     (31, 13, 328, 43),   # Freeman goal VAR check (offside review, goal awarded)
     (32, 14, 348, 45),
+    (79, 20, 497, 95),   # Piero Hincapié red card check
+    (81, 34, 866, 120),  # Lamine Camara penalty check
+    (82, 13, 332, 64),   # Folarin Balogun red card check
 ]
 
 import json
@@ -1618,6 +1629,24 @@ real_match_team_stats_data = [
     # Match 76: Netherlands vs Morocco (June 30) — sofascore.com
     [76, 21, 30, 6,  2, 5, 18, 3, 5, "sofascore.com", "2026-06-30"],
     [76, 10, 70, 11, 5, 8, 15, 0, 1, "sofascore.com", "2026-06-30"],
+    # Match 77: Cote d'Ivoire vs Norway (June 30) — sofascore.com
+    [77, 19, 52, 14, 5, 14, 6,  2, 1, "sofascore.com", "2026-06-30"],
+    [77, 36, 48, 9,  3, 3,  7,  2, 4, "sofascore.com", "2026-06-30"],
+    # Match 78: France vs Sweden (June 30) — sofascore.com
+    [78, 33, 61, 25, 12, 9, 14, 3, 3, "sofascore.com", "2026-06-30"],
+    [78, 23, 39, 8,  3, 1,  10, 1, 9, "sofascore.com", "2026-06-30"],
+    # Match 79: Mexico vs Ecuador (June 30) — sofascore.com
+    [79, 1,  37, 15, 3, 3,  10, 0, 1, "sofascore.com", "2026-06-30"],
+    [79, 20, 52, 7,  1, 8,  14, 1, 1, "sofascore.com", "2026-06-30"],
+    # Match 80: England vs Congo DR (July 1) — sofascore.com
+    [80, 45, 60, 16, 7, 5,  10, 0, 1, "sofascore.com", "2026-07-01"],
+    [80, 42, 40, 7,  2, 3,  12, 4, 5, "sofascore.com", "2026-07-01"],
+    # Match 81: Belgium vs Senegal (July 1) — sofascore.com
+    [81, 25, 52, 19, 5, 4,  22, 2, 3, "sofascore.com", "2026-07-01"],
+    [81, 34, 48, 19, 5, 2,  12, 2, 2, "sofascore.com", "2026-07-01"],
+    # Match 82: USA vs Bosnia and Herzegovina (July 1) — sofascore.com
+    [82, 13, 48, 8,  2, 4,  7,  3, 3, "sofascore.com", "2026-07-01"],
+    [82, 6,  52, 10, 3, 3,  13, 0, 0, "sofascore.com", "2026-07-01"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)

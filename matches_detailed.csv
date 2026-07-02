@@ -75,16 +75,16 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 74,2026-06-29,23:00,Round of 32,Houston Stadium (NRG Stadium),Houston,USA,Brazil,BRA,Japan,JPN,2,1,Completed,1.69,0.23,Ramsés Alisson,Zion Suzuki,Henrique,Ivan Barton
 75,2026-06-30,02:30,Round of 32,Boston Stadium (Gillette Stadium),Foxborough,USA,Germany,GER,Paraguay,PAR,1,1,Completed,0.72,0.42,Manuel Peter Neuer,Orlando Daniel Gill,Orlando Daniel Gill,Mustapha Ghorbal
 76,2026-06-30,07:00,Round of 32,Monterrey Stadium (Estadio BBVA),Guadalupe,MEX,Netherlands,NED,Morocco,MAR,1,1,Completed,0.23,1.4,Bart Verbruggen,Yassine Bounou,Issa Laye Lucas Jean Diop,Victor Gomes
-77,2026-06-30,23:00,Round of 32,Dallas Stadium (AT&T Stadium),Arlington,USA,Côte d'Ivoire,CIV,Norway,NOR,,,Scheduled,,,,,,Ma Ning
-78,2026-07-01,03:00,Round of 32,New York New Jersey Stadium (MetLife Stadium),East Rutherford,USA,France,FRA,Sweden,SWE,,,Scheduled,,,,,,Alireza Faghani
-79,2026-07-01,07:00,Round of 32,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Mexico,MEX,Ecuador,ECU,,,Scheduled,,,,,,Yoshimi Yamashita
-80,2026-07-01,22:00,Round of 32,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,England,ENG,Congo DR,COD,,,Scheduled,,,,,,Facundo Tello
-81,2026-07-02,02:00,Round of 32,Seattle Stadium (Lumen Field),Seattle,USA,Belgium,BEL,Senegal,SEN,,,Scheduled,,,,,,Szymon Marciniak
-82,2026-07-02,06:00,Round of 32,San Francisco Bay Area Stadium (Levi's Stadium),Santa Clara,USA,USA,USA,Bosnia and Herzegovina,BIH,,,Scheduled,,,,,,Daniele Orsato
+77,2026-06-30,23:00,Round of 32,Dallas Stadium (AT&T Stadium),Arlington,USA,Côte d'Ivoire,CIV,Norway,NOR,1,2,Completed,1.15,2.02,,,Antonio Eromonsele Nordby Nusa,Ma Ning
+78,2026-07-01,03:00,Round of 32,New York New Jersey Stadium (MetLife Stadium),East Rutherford,USA,France,FRA,Sweden,SWE,3,0,Completed,3.17,0.67,,,Kylian Mbappe,Alireza Faghani
+79,2026-07-01,07:00,Round of 32,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Mexico,MEX,Ecuador,ECU,2,0,Completed,1.02,0.73,,,Julián Andrés Quinones,Yoshimi Yamashita
+80,2026-07-01,22:00,Round of 32,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,England,ENG,Congo DR,COD,2,1,Completed,2.04,0.76,,,Harry Edward Kane,Facundo Tello
+81,2026-07-02,02:00,Round of 32,Seattle Stadium (Lumen Field),Seattle,USA,Belgium,BEL,Senegal,SEN,3,2,Completed,1.74,3.58,,,Youri Marion Tielemans,Szymon Marciniak
+82,2026-07-02,06:00,Round of 32,San Francisco Bay Area Stadium (Levi's Stadium),Santa Clara,USA,USA,USA,Bosnia and Herzegovina,BIH,2,0,Completed,0.92,0.25,,,Malik Leon Tillman,Daniele Orsato
 83,2026-07-03,01:00,Round of 32,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Spain,ESP,Austria,AUT,,,Scheduled,,,,,,Michael Oliver
 84,2026-07-03,05:00,Round of 32,Toronto Stadium (BMO Field),Toronto,CAN,Portugal,POR,Croatia,CRO,,,Scheduled,,,,,,Anthony Taylor
 85,2026-07-03,09:00,Round of 32,Vancouver Stadium (BC Place),Vancouver,CAN,Switzerland,SUI,Algeria,ALG,,,Scheduled,,,,,,Clément Turpin
 86,2026-07-04,00:00,Round of 32,Dallas Stadium (AT&T Stadium),Arlington,USA,Australia,AUS,Egypt,EGY,,,Scheduled,,,,,,Danny Makkelie
 87,2026-07-04,04:00,Round of 32,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Argentina,ARG,Cabo Verde,CPV,,,Scheduled,,,,,,Jesús Valenzuela
 88,2026-07-04,07:30,Round of 32,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Colombia,COL,Ghana,GHA,,,Scheduled,,,,,,Wilton Sampaio
-89,2026-07-04,23:00,Round of 16,Houston Stadium (NRG Stadium),Houston,USA,Canada,CAN,Unknown,UNK,,,Scheduled,,,,,,César Arturo Ramos
+89,2026-07-04,23:00,Round of 16,Houston Stadium (NRG Stadium),Houston,USA,Canada,CAN,Paraguay,PAR,,,Scheduled,,,,,,César Arturo Ramos
