@@ -463,9 +463,9 @@ matches_data = [
     [80, "2026-07-01", "22:00", 2, 9, 45, 42, 2, 1, "Completed", 2.04, 0.76],
     [81, "2026-07-02", "02:00", 2, 16, 25, 34, 3, 2, "Completed", 1.74, 3.58],
     [82, "2026-07-02", "06:00", 2, 15, 13, 6, 2, 0, "Completed", 0.92, 0.25],
-    [83, "2026-07-03", "01:00", 2, 3, 29, 39, "", "", "Scheduled", "", ""],
-    [84, "2026-07-03", "05:00", 2, 6, 41, 46, "", "", "Scheduled", "", ""],
-    [85, "2026-07-03", "09:00", 2, 5, 8, 38, "", "", "Scheduled", "", ""],
+    [83, "2026-07-03", "01:00", 2, 3, 29, 39, 3, 0, "Completed", 2.84, 0.32],
+    [84, "2026-07-03", "05:00", 2, 6, 41, 46, 2, 1, "Completed", 2.18, 1.34],
+    [85, "2026-07-03", "09:00", 2, 5, 8, 38, 2, 0, "Completed", 2.52, 0.73],
     [86, "2026-07-04", "00:00", 2, 4, 15, 26, "", "", "Scheduled", "", ""],
     [87, "2026-07-04", "04:00", 2, 13, 37, 30, "", "", "Scheduled", "", ""],
     [88, "2026-07-04", "07:30", 2, 12, 44, 47, "", "", "Scheduled", "", ""],
@@ -553,9 +553,11 @@ player_of_the_match_mapping = {
     77: 930,   # Antonio Nusa (NOR)
     78: 842,   # Kylian Mbappe (FRA)
     79: 16,    # Julián Quiñones (MEX)
-    80: 1153,  # Harry Kane (ENG)
     81: 632,   # Youri Tielemans (BEL)
     82: 329,   # Malik Tillman (USA)
+    83: 749,   # Mikel Oyarzabal (ESP)
+    84: 1047,  # Cristiano Ronaldo (POR)
+    85: 189,   # Breel Embolo (SUI)
 }
 
 # Assign referees and player of the match relationally/statically
@@ -859,9 +861,9 @@ real_var_reviews = [
     (27, 7, 170, 60),
     (31, 13, 328, 43),   # Freeman goal VAR check (offside review, goal awarded)
     (32, 14, 348, 45),
-    (79, 20, 497, 95),   # Piero Hincapié red card check
     (81, 34, 866, 120),  # Lamine Camara penalty check
     (82, 13, 332, 64),   # Folarin Balogun red card check
+    (84, 46, 1174, 103),  # Josko Gvardiol disallowed goal (offside)
 ]
 
 import json
@@ -1164,6 +1166,15 @@ match_goalkeepers = {
     74: (209, 547),   # BRA vs JPN: Alisson Becker vs Zion Suzuki
     75: (417, 350),   # GER vs PAR: Manuel Neuer vs Orlando Gill
     76: (521, 235),   # NED vs MAR: Bart Verbruggen vs Yassine Bounou
+    77: (469, 911),   # CIV vs NOR: Yahia Fofana vs Orjan Nyland
+    78: (848, 573),   # FRA vs SWE: Mike Maignan vs Jacob Widell Zetterstrom
+    79: (1, 495),     # MEX vs ECU: Raul Rangel vs Hernan Galindez
+    80: (1145, 1067), # ENG vs COD: Jordan Pickford vs Lionel Mpasi
+    81: (625, 881),   # BEL vs SEN: Thibaut Courtois vs Mory Diaw
+    82: (336, 131),   # USA vs BIH: Matt Freese vs Nikola Vasilj
+    83: (751, 989),   # ESP vs AUT: Unai Simon vs Alexander Schlager
+    84: (1041, 1171), # POR vs CRO: Diogo Costa vs Dominik Livakovic
+    85: (183, 985),   # SUI vs ALG: Gregor Kobel vs Luca Zidane
 }
 
 detailed_matches_headers = [
@@ -1647,6 +1658,15 @@ real_match_team_stats_data = [
     # Match 82: USA vs Bosnia and Herzegovina (July 1) — sofascore.com
     [82, 13, 48, 8,  2, 4,  7,  3, 3, "sofascore.com", "2026-07-01"],
     [82, 6,  52, 10, 3, 3,  13, 0, 0, "sofascore.com", "2026-07-01"],
+    # Match 83: Spain vs Austria (July 2) — sofascore.com
+    [83, 29, 64, 23, 10, 9, 8,  2, 0, "sofascore.com", "2026-07-03"],
+    [83, 39, 36, 5,  0,  0, 15, 5, 6, "sofascore.com", "2026-07-03"],
+    # Match 84: Portugal vs Croatia (July 2) — sofascore.com
+    [84, 41, 62, 15, 3,  9, 6,  1, 6, "sofascore.com", "2026-07-03"],
+    [84, 46, 38, 13, 7,  5, 11, 4, 1, "sofascore.com", "2026-07-03"],
+    # Match 85: Switzerland vs Algeria (July 2) — sofascore.com
+    [85, 8,  45, 11, 5,  4, 10, 0, 2, "sofascore.com", "2026-07-03"],
+    [85, 38, 55, 8,  2,  2, 12, 2, 3, "sofascore.com", "2026-07-03"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)

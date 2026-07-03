@@ -1983,5 +1983,74 @@
       }
     ],
     "away_goals": []
+  },
+  {
+    "group": "Round of 32",
+    "date": "July 2, 2026",
+    "home_team": "Spain",
+    "away_team": "Austria",
+    "score": "3-0",
+    "home_goals": [
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "36'",
+        "assist": "Marc Cucurella"
+      },
+      {
+        "scorer": "Pedro Porro",
+        "minute": "66'",
+        "assist": "Alex Baena"
+      },
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "89'",
+        "assist": "Marc Cucurella"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "group": "Round of 32",
+    "date": "July 2, 2026",
+    "home_team": "Portugal",
+    "away_team": "Croatia",
+    "score": "2-1",
+    "home_goals": [
+      {
+        "scorer": "Cristiano Ronaldo",
+        "minute": "68' (pen.)"
+      },
+      {
+        "scorer": "Gonçalo Ramos",
+        "minute": "90+4'",
+        "assist": "Rafael Leão"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ivan Perišić",
+        "minute": "53'",
+        "assist": "Josip Stanišić"
+      }
+    ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "July 2, 2026",
+    "home_team": "Switzerland",
+    "away_team": "Algeria",
+    "score": "2-0",
+    "home_goals": [
+      {
+        "scorer": "Breel Embolo",
+        "minute": "10'",
+        "assist": "Johan Manzambi"
+      },
+      {
+        "scorer": "Dan Ndoye",
+        "minute": "46'"
+      }
+    ],
+    "away_goals": []
   }
 ]

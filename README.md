@@ -9,6 +9,38 @@
 
 > **Why this dataset?** Unlike other World Cup datasets, this one is (1) updated daily with real match results as games are played, (2) fully relational with normalized foreign keys for SQL/database modeling, (3) contains zero synthetic data — every stat is sourced and traceable, and (4) includes advanced metrics like xG, match team stats, and VAR events.
 
+---
+
+## 🏆 Tournament Status
+
+- **Tournament:** FIFA World Cup 2026
+- **Format:** 48 Teams
+- **Current Stage:** Round of 16
+- **Matches Completed:** 89
+- **Updated After:** Every Completed Match
+- **Validation:** Relational integrity verified before every release
+
+---
+
+## 👥 Community Recognition
+
+The FIFA World Cup 2026 Dataset has started gaining traction within the data science and developer community.
+
+- Mentioned by **Software with Nick** in an Instagram reel highlighting useful datasets for AI, machine learning, and data science projects.
+- Featured in a LinkedIn post that reached **22,000+ professionals**, generating significant engagement from the data community.
+- Shared and discussed by developers building World Cup prediction models, dashboards, SQL projects, and sports analytics applications.
+- Continuously updated after every completed FIFA World Cup 2026 match.
+
+### Featured Mentions
+
+**Software with Nick (Instagram)**
+- 📹 https://www.instagram.com/softwarewithnick/reel/DaSkFRqx1e1/
+
+**LinkedIn Community Post**
+- 🔗 https://www.linkedin.com/feed/update/urn:li:activity:7473374635284422658/
+
+---
+
 ##  Key Features
 
 * **Real-World Group Configurations**: Reflects the actual 12 groups (Groups A to L) with zero qualifiers placeholders.
