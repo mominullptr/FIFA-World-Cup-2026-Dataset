@@ -2052,5 +2052,73 @@
       }
     ],
     "away_goals": []
+  },
+  {
+    "group": "Round of 32",
+    "date": "July 3, 2026",
+    "home_team": "Australia",
+    "away_team": "Egypt",
+    "score": "1–1",
+    "result_type": "Penalties",
+    "penalty_score": "2–4",
+    "home_goals": [
+      {
+        "scorer": "Mohamed Hany",
+        "minute": "55' (o.g.)"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Emam Ashour",
+        "minute": "13'"
+      }
+    ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "July 3, 2026",
+    "home_team": "Argentina",
+    "away_team": "Cape Verde",
+    "score": "3–2",
+    "result_type": "AET",
+    "home_goals": [
+      {
+        "scorer": "Lionel Messi",
+        "minute": "29'"
+      },
+      {
+        "scorer": "Lisandro Martínez",
+        "minute": "92'"
+      },
+      {
+        "scorer": "Diney",
+        "minute": "111' (o.g.)"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Deroy Duarte",
+        "minute": "59'"
+      },
+      {
+        "scorer": "Sidny Lopes Cabral",
+        "minute": "103'"
+      }
+    ]
+  },
+  {
+    "group": "Round of 32",
+    "date": "July 3, 2026",
+    "home_team": "Colombia",
+    "away_team": "Ghana",
+    "score": "1–0",
+    "home_goals": [
+      {
+        "scorer": "Jhon Arias",
+        "minute": "14'",
+        "assist": "Luis Suárez"
+      }
+    ],
+    "away_goals": []
   }
 ]
