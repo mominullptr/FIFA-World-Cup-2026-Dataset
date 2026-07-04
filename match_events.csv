@@ -576,120 +576,120 @@ event_id,match_id,minute,event_type,team_id,player_id
 575,75,115,Yellow Card,17,426
 576,75,117,Yellow Card,14,361
 577,75,120,Yellow Card,14,344
-578,76,47,Yellow Card,10,248
-579,76,71,Yellow Card,21,525
-580,76,72,Goal,21,531
-581,76,72,Assist,21,544
-582,76,90,Goal,10,248
-583,76,90,Assist,10,241
-584,77,39,Goal,36,930
-585,77,45,Yellow Card,36,930
-586,77,74,Goal,19,483
-587,77,86,Goal,36,919
-588,77,86,Assist,36,916
-589,78,45,Goal,33,842
-590,78,53,Goal,33,844
-591,78,53,Assist,33,843
-592,78,74,Goal,33,842
-593,78,74,Assist,33,843
-594,79,22,Goal,1,16
-595,79,22,Assist,1,25
-596,79,31,Goal,1,9
-597,79,31,Assist,1,16
-598,79,45,Yellow Card,20,515
-599,79,90,Yellow Card,20,517
-600,79,90,Yellow Card,20,504
-601,79,95,Red Card,20,497
-602,80,7,Goal,42,1075
-603,80,19,Yellow Card,45,1154
-604,80,27,Yellow Card,42,1080
-605,80,75,Goal,45,1153
-606,80,75,Assist,45,1162
-607,80,86,Goal,45,1153
-608,80,86,Assist,45,1162
-609,81,25,Goal,34,879
-610,81,51,Goal,34,876
-611,81,51,Assist,34,877
-612,81,64,Yellow Card,25,628
-613,81,67,Yellow Card,34,866
-614,81,86,Goal,25,633
-615,81,86,Assist,25,639
-616,81,89,Goal,25,632
-617,81,89,Assist,25,634
-618,81,120,Goal,25,632
-619,81,120,VAR Review,34,866
-620,82,45,Goal,13,332
-621,82,45,Assist,13,329
-622,82,64,Red Card,13,332
-623,82,64,VAR Review,13,332
-624,82,80,Yellow Card,6,151
-625,82,82,Goal,13,329
-626,83,36,Goal,29,749
-627,83,36,Assist,29,752
-628,83,66,Goal,29,740
-629,83,66,Assist,29,743
-630,83,83,Yellow Card,39,993
-631,83,89,Goal,29,749
-632,83,89,Assist,29,752
-633,84,17,Yellow Card,41,1043
-634,84,53,Goal,46,1184
-635,84,53,Assist,46,1172
-636,84,59,Yellow Card,46,1180
-637,84,68,Goal,41,1047
-638,84,90,Goal,41,1049
-639,84,90,Assist,41,1057
-640,84,97,Yellow Card,46,1184
-641,84,103,VAR Review,46,1174
-642,85,10,Goal,8,189
-643,85,10,Assist,8,191
-644,85,36,Yellow Card,38,972
-645,85,46,Goal,8,193
-646,85,71,Yellow Card,38,976
-647,86,13,Goal,26,658
-648,86,55,Goal,15,653
-649,86,105,Yellow Card,26,662
-650,86,120,Yellow Card,26,652
-651,87,29,Goal,37,946
-652,87,59,Goal,30,768
-653,87,68,Yellow Card,30,760
-654,87,92,Goal,37,942
-655,87,103,Goal,30,767
-656,87,111,Goal,37,757
-657,87,115,Yellow Card,37,940
-658,88,12,Yellow Card,44,1129
-659,88,14,Goal,44,1129
-660,88,14,Assist,44,1143
-661,88,49,Yellow Card,47,1199
-662,88,66,Yellow Card,47,1203
-663,88,76,Yellow Card,47,1198
-664,88,78,Yellow Card,44,1124
-665,75,121,Penalty Shootout Miss,17,423
-666,75,121,Penalty Shootout Goal,14,349
-667,75,121,Penalty Shootout Goal,17,422
-668,75,121,Penalty Shootout Goal,14,353
-669,75,121,Penalty Shootout Goal,17,426
-670,75,121,Penalty Shootout Goal,14,361
-671,75,121,Penalty Shootout Miss,17,427
-672,75,121,Penalty Shootout Miss,14,347
-673,75,121,Penalty Shootout Goal,17,436
-674,75,121,Penalty Shootout Miss,14,343
-675,75,121,Penalty Shootout Miss,17,420
-676,75,121,Penalty Shootout Goal,14,351
-677,76,121,Penalty Shootout Goal,21,540
-678,76,121,Penalty Shootout Miss,10,258
-679,76,121,Penalty Shootout Miss,21,527
-680,76,121,Penalty Shootout Goal,10,243
-681,76,121,Penalty Shootout Goal,21,529
-682,76,121,Penalty Shootout Goal,10,241
-683,76,121,Penalty Shootout Miss,21,546
-684,76,121,Penalty Shootout Miss,10,236
-685,76,121,Penalty Shootout Miss,21,544
-686,76,121,Penalty Shootout Goal,10,245
-687,86,121,Penalty Shootout Miss,15,383
-688,86,121,Penalty Shootout Goal,26,671
-689,86,121,Penalty Shootout Goal,15,386
-690,86,121,Penalty Shootout Goal,26,655
-691,86,121,Penalty Shootout Goal,15,375
-692,86,121,Penalty Shootout Goal,26,660
-693,86,121,Penalty Shootout Miss,15,389
-694,86,121,Penalty Shootout Goal,26,654
+578,75,121,Penalty Shootout Miss,17,423
+579,75,121,Penalty Shootout Goal,14,349
+580,75,121,Penalty Shootout Goal,17,422
+581,75,121,Penalty Shootout Goal,14,353
+582,75,121,Penalty Shootout Goal,17,426
+583,75,121,Penalty Shootout Goal,14,361
+584,75,121,Penalty Shootout Miss,17,427
+585,75,121,Penalty Shootout Miss,14,347
+586,75,121,Penalty Shootout Goal,17,436
+587,75,121,Penalty Shootout Miss,14,343
+588,75,121,Penalty Shootout Miss,17,420
+589,75,121,Penalty Shootout Goal,14,351
+590,76,47,Yellow Card,10,248
+591,76,71,Yellow Card,21,525
+592,76,72,Goal,21,531
+593,76,72,Assist,21,544
+594,76,90,Goal,10,248
+595,76,90,Assist,10,241
+596,76,121,Penalty Shootout Goal,21,540
+597,76,121,Penalty Shootout Miss,10,258
+598,76,121,Penalty Shootout Miss,21,527
+599,76,121,Penalty Shootout Goal,10,243
+600,76,121,Penalty Shootout Goal,21,529
+601,76,121,Penalty Shootout Goal,10,241
+602,76,121,Penalty Shootout Miss,21,546
+603,76,121,Penalty Shootout Miss,10,236
+604,76,121,Penalty Shootout Miss,21,544
+605,76,121,Penalty Shootout Goal,10,245
+606,77,39,Goal,36,930
+607,77,45,Yellow Card,36,930
+608,77,74,Goal,19,483
+609,77,86,Goal,36,919
+610,77,86,Assist,36,916
+611,78,45,Goal,33,842
+612,78,53,Goal,33,844
+613,78,53,Assist,33,843
+614,78,74,Goal,33,842
+615,78,74,Assist,33,843
+616,79,22,Goal,1,16
+617,79,22,Assist,1,25
+618,79,31,Goal,1,9
+619,79,31,Assist,1,16
+620,79,45,Yellow Card,20,515
+621,79,90,Yellow Card,20,517
+622,79,90,Yellow Card,20,504
+623,79,95,Red Card,20,497
+624,80,7,Goal,42,1075
+625,80,19,Yellow Card,45,1154
+626,80,27,Yellow Card,42,1080
+627,80,75,Goal,45,1153
+628,80,75,Assist,45,1162
+629,80,86,Goal,45,1153
+630,80,86,Assist,45,1162
+631,81,25,Goal,34,879
+632,81,51,Goal,34,876
+633,81,51,Assist,34,877
+634,81,64,Yellow Card,25,628
+635,81,67,Yellow Card,34,866
+636,81,86,Goal,25,633
+637,81,86,Assist,25,639
+638,81,89,Goal,25,632
+639,81,89,Assist,25,634
+640,81,120,Goal,25,632
+641,81,120,VAR Review,34,866
+642,82,45,Goal,13,332
+643,82,45,Assist,13,329
+644,82,64,Red Card,13,332
+645,82,64,VAR Review,13,332
+646,82,80,Yellow Card,6,151
+647,82,82,Goal,13,329
+648,83,36,Goal,29,749
+649,83,36,Assist,29,752
+650,83,66,Goal,29,740
+651,83,66,Assist,29,743
+652,83,83,Yellow Card,39,993
+653,83,89,Goal,29,749
+654,83,89,Assist,29,752
+655,84,17,Yellow Card,41,1043
+656,84,53,Goal,46,1184
+657,84,53,Assist,46,1172
+658,84,59,Yellow Card,46,1180
+659,84,68,Goal,41,1047
+660,84,90,Goal,41,1049
+661,84,90,Assist,41,1057
+662,84,97,Yellow Card,46,1184
+663,84,103,VAR Review,46,1174
+664,85,10,Goal,8,189
+665,85,10,Assist,8,191
+666,85,36,Yellow Card,38,972
+667,85,46,Goal,8,193
+668,85,71,Yellow Card,38,976
+669,86,13,Goal,26,658
+670,86,55,Goal,15,653
+671,86,105,Yellow Card,26,662
+672,86,120,Yellow Card,26,652
+673,86,121,Penalty Shootout Miss,15,383
+674,86,121,Penalty Shootout Goal,26,671
+675,86,121,Penalty Shootout Goal,15,386
+676,86,121,Penalty Shootout Goal,26,655
+677,86,121,Penalty Shootout Goal,15,375
+678,86,121,Penalty Shootout Goal,26,660
+679,86,121,Penalty Shootout Miss,15,389
+680,86,121,Penalty Shootout Goal,26,654
+681,87,29,Goal,37,946
+682,87,59,Goal,30,768
+683,87,68,Yellow Card,30,760
+684,87,92,Goal,37,942
+685,87,103,Goal,30,767
+686,87,111,Goal,37,757
+687,87,115,Yellow Card,37,940
+688,88,12,Yellow Card,44,1129
+689,88,14,Goal,44,1129
+690,88,14,Assist,44,1143
+691,88,49,Yellow Card,47,1199
+692,88,66,Yellow Card,47,1203
+693,88,76,Yellow Card,47,1198
+694,88,78,Yellow Card,44,1124
