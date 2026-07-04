@@ -363,31 +363,31 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 362,Gustavo Ruben Caballero,14,MID,1,0,65,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 363,Isidro Miguel Pitta,14,FWD,1,1,46,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 364,Alexandro Maidana,14,DEF,2,1,55,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-365,Mathew David Ryan,15,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
+365,Mathew David Ryan,15,GK,1,0,1,0,0,,,0,0,0,0,0,0,0,,sofascore.com,2026-07-01
 366,Milos Degenek,15,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-367,Alessandro Circati,15,DEF,3,3,270,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+367,Alessandro Circati,15,DEF,4,4,390,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 368,Jacob Michael Italiano,15,DEF,2,2,164,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-369,Jordan Jacob Bos,15,DEF,3,3,263,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+369,Jordan Jacob Bos,15,DEF,4,4,309,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 370,Jason Kato Geria,15,DEF,2,0,60,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 371,Mathew Allan Leckie,15,FWD,1,1,61,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-372,Connor Isaac Metcalfe,15,MID,3,2,224,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-373,Mohamed Toure,15,FWD,2,2,120,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-374,Ajdin Hrustic,15,FWD,1,0,32,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-375,Awer Bul Mabil,15,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
+372,Connor Isaac Metcalfe,15,MID,4,3,315,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+373,Mohamed Toure,15,FWD,3,2,166,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+374,Ajdin Hrustic,15,FWD,2,0,78,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+375,Awer Bul Mabil,15,FWD,1,0,29,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 376,Paul David Izzo,15,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
-377,Aiden Connor Oneill,15,MID,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+377,Aiden Connor Oneill,15,MID,4,4,361,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 378,Cameron Peter Devlin,15,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-379,Kai Clifton Trewin,15,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-380,Aziz Behich,15,DEF,2,1,97,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-381,Nestory Irankunda,15,FWD,3,2,189,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-382,Patrick Thomas Beach,15,GK,3,3,270,0,0,,,0,0,0,0,2,7,2,,sofascore.com,2026-07-01
-383,Harry James Souttar,15,DEF,3,3,270,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-384,Cristian Volpato,15,FWD,2,1,87,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+379,Kai Clifton Trewin,15,DEF,1,0,74,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+380,Aziz Behich,15,DEF,3,2,217,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+381,Nestory Irankunda,15,FWD,4,3,263,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+382,Patrick Thomas Beach,15,GK,4,4,389,0,0,,,0,0,0,0,2,7,3,,sofascore.com,2026-07-01
+383,Harry James Souttar,15,DEF,4,4,390,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+384,Cristian Volpato,15,FWD,3,2,161,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 385,Cameron Robert Burgess,15,DEF,2,2,136,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-386,Jackson Alexander Irvine,15,MID,3,1,103,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+386,Jackson Alexander Irvine,15,MID,4,2,223,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 387,Nishan Matthew Velupillay,15,FWD,2,1,75,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-388,Paul Michael Junior Okon-Engstler,15,MID,3,2,167,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-389,Lucas Herrington,15,DEF,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+388,Paul Michael Junior Okon-Engstler,15,MID,4,2,196,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+389,Lucas Herrington,15,DEF,2,2,210,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 390,Tete Owen Yengi,15,FWD,2,0,22,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 391,Fehmi Mert Gunok,16,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 392,Mehmet Zeki Celik,16,DEF,2,2,164,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
@@ -650,28 +650,28 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 649,Nathan Ngoy,25,DEF,2,2,180,0,0,,,0,1,0,0,,,,,sofascore.com,2026-07-01
 650,Matias Fernandez-Pardo,25,FWD,3,0,41,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 651,Elsayed Mohamed Mohamed Elshenawy,26,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
-652,Ahmed Ibrahim Yasser,26,DEF,3,2,256,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-653,Hany Gamal Mohamed Hany,26,DEF,3,3,270,0,1,,,0,0,0,1,,,,,sofascore.com,2026-07-01
-654,Abdelmegeed Abdelsalam Hossam Abdelmaguid,26,DEF,1,0,6,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-655,Abdelaziz Moustafa Ramy Rabia,26,DEF,3,1,158,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+652,Ahmed Ibrahim Yasser,26,DEF,4,3,376,0,0,,,2,0,0,0,,,,,sofascore.com,2026-07-01
+653,Hany Gamal Mohamed Hany,26,DEF,4,4,390,1,1,,,0,0,0,1,,,,,sofascore.com,2026-07-01
+654,Abdelmegeed Abdelsalam Hossam Abdelmaguid,26,DEF,2,0,59,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+655,Abdelaziz Moustafa Ramy Rabia,26,DEF,4,2,278,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 656,Abdelmoneim Elsayed Mohamed,26,DEF,2,1,15,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-657,Ahmed Ibrahim Trezeguet,26,FWD,2,1,104,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-658,Ashour Metwaly Emam,26,MID,3,3,201,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-659,Mohamed Abdelkarim Hamza,26,FWD,3,0,42,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-660,Hamed Mahrous Mohamed Salah,26,FWD,3,3,217,1,2,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-661,Mohamed Zaky Mostafa Zico,26,MID,3,3,228,1,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-662,Yousry Fouad Haissem Hassan,26,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
+657,Ahmed Ibrahim Trezeguet,26,FWD,3,1,144,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+658,Ashour Metwaly Emam,26,MID,4,4,321,2,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+659,Mohamed Abdelkarim Hamza,26,FWD,4,0,56,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+660,Hamed Mahrous Mohamed Salah,26,FWD,4,4,337,1,2,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+661,Mohamed Zaky Mostafa Zico,26,MID,4,4,295,1,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+662,Yousry Fouad Haissem Hassan,26,FWD,1,0,53,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 663,Mohamed Aboelfetouh Ahmed Fatouh,26,DEF,3,3,268,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-664,Fathy Abdelhalim Hamdy Fathy,26,MID,2,2,129,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-665,Hafez Ramadan Karim Hafez,26,DEF,1,0,2,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+664,Fathy Abdelhalim Hamdy Fathy,26,MID,3,3,196,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+665,Hafez Ramadan Karim Hafez,26,DEF,2,1,82,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 666,Mohamed Soliman Mahdy Soliman,26,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 667,Mostafa Ahmed Mohanad Lashin,26,MID,3,3,270,0,0,,,2,0,0,0,,,,,sofascore.com,2026-07-01
 668,Aly Elmahdy Nabil,26,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-669,Attia Fahim Marawan Attia,26,MID,3,2,224,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+669,Attia Fahim Marawan Attia,26,MID,4,3,343,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 670,Adel Aly Mohamed Ibrahim,26,FWD,1,0,2,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-671,Saber Abdelmohsen Mahmoud,26,MID,1,1,46,1,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-672,Mohamed Abdelsalam Omar,26,FWD,3,2,210,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-673,Abdelaziz Mohame Mostafa,26,GK,3,3,270,0,0,,,0,0,0,0,0,4,3,,sofascore.com,2026-07-01
+671,Saber Abdelmohsen Mahmoud,26,MID,2,1,47,1,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+672,Mohamed Abdelsalam Omar,26,FWD,4,3,316,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+673,Abdelaziz Mohame Mostafa,26,GK,4,4,390,0,0,,,0,0,0,0,0,4,4,,sofascore.com,2026-07-01
 674,Abdelghaffar Abdel Tarek Alaa,26,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 675,Mostafa Mohamed Zizo,26,FWD,3,0,53,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 676,Alaaeldin Soliman Mohamed Alaa,26,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
@@ -753,32 +753,32 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 752,Marc Cucurella,29,DEF,4,4,360,0,2,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 753,Victor Munoz,29,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 754,Borja Iglesias,29,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-755,José Vozinha,30,GK,3,3,270,0,0,,,0,0,0,0,2,15,2,,sofascore.com,2026-07-01
+755,José Vozinha,30,GK,4,4,390,0,0,,,0,0,0,0,2,15,5,,sofascore.com,2026-07-01
 756,Ianique Stopira,30,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-757,Alberto Diney,30,DEF,3,3,270,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-758,Carlos Pico Lopes,30,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+757,Alberto Diney,30,DEF,4,4,390,1,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+758,Carlos Pico Lopes,30,DEF,4,4,390,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 759,Evans Logan Costa,30,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-760,Lenini Kevin Pina,30,MID,3,3,250,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-761,Eduardo Jovane,30,MID,1,1,61,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+760,Lenini Kevin Pina,30,MID,4,4,350,1,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+761,Eduardo Jovane,30,MID,2,2,141,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 762,Paulo Joao Paulo,30,MID,2,1,104,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-763,BENCHIMOLGilson Gilson,30,FWD,1,1,58,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-764,Gregory Jamiro Monteiro,30,MID,3,3,230,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+763,BENCHIMOLGilson Gilson,30,FWD,2,1,78,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+764,Gregory Jamiro Monteiro,30,MID,4,3,283,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 765,RODRIGUESGarry Garry,30,MID,2,1,77,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 766,Salomão Marcio,30,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
-767,CABRALSidny Sidny Lopes,30,DEF,2,2,166,0,0,,,2,0,0,0,,,,,sofascore.com,2026-07-01
-768,Deroy Deroy Duarte,30,MID,3,1,163,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-769,Michael Laros Duarte,30,MID,3,1,100,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-770,SEMEDOJair Yannick,30,MID,1,0,10,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-771,Johnson Willy,30,MID,2,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+767,CABRALSidny Sidny Lopes,30,DEF,3,3,286,1,0,,,2,0,0,0,,,,,sofascore.com,2026-07-01
+768,Deroy Deroy Duarte,30,MID,4,2,263,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+769,Michael Laros Duarte,30,MID,4,2,167,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+770,SEMEDOJair Yannick,30,MID,2,0,30,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+771,Johnson Willy,30,MID,3,1,130,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 772,Emanuel Telmo,30,MID,2,1,57,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-773,Dailon Dailon Livramento,30,FWD,2,2,122,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-774,Isaac Ryan,30,FWD,3,3,251,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-775,Miguel Nuno Da Costa,30,MID,3,0,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-776,MOREIRASteven Steven,30,DEF,3,2,181,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+773,Dailon Dailon Livramento,30,FWD,3,2,175,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+774,Isaac Ryan,30,FWD,4,4,331,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+775,Miguel Nuno Da Costa,30,MID,4,1,157,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+776,MOREIRASteven Steven,30,DEF,4,3,301,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 777,Joaquim Cj Dos Santos,30,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 778,Fabricio Wagner Pina,30,DEF,1,1,90,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 779,PIRESKelvin Kelvin,30,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-780,Sandro Helio Varela,30,MID,2,0,61,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+780,Sandro Helio Varela,30,MID,3,0,101,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 781,Dhahi Nawaf Alaqidi,31,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 782,Hassan Ali Majrashi,31,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 783,Mohammed Ali Lajami,31,DEF,3,1,148,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
@@ -937,30 +937,30 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 936,Julian Ryerson,36,FWD,2,2,103,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 937,Juan Agustín Musso,37,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 938,Marcos Nicolás Senesi,37,DEF,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-939,Nicolás Alejandro Tagliafico,37,DEF,2,1,98,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-940,Gonzalo Ariel Montiel,37,DEF,1,1,46,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-941,Leandro Daniel Paredes,37,MID,2,1,98,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-942,Lisandro Martinez,37,DEF,2,2,180,0,0,,,0,0,1,0,,,,,sofascore.com,2026-07-01
-943,Rodrigo Javier De Paul,37,MID,2,2,172,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+939,Nicolás Alejandro Tagliafico,37,DEF,3,1,133,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+940,Gonzalo Ariel Montiel,37,DEF,2,1,62,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+941,Leandro Daniel Paredes,37,MID,3,1,134,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+942,Lisandro Martinez,37,DEF,3,3,300,1,0,,,0,0,1,0,,,,,sofascore.com,2026-07-01
+943,Rodrigo Javier De Paul,37,MID,3,3,256,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 944,Valentin Barco,37,MID,1,0,19,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-945,Julián Alvarez,37,FWD,3,1,143,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-946,Lionel Andrés Messi,37,FWD,3,2,200,6,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+945,Julián Alvarez,37,FWD,4,1,200,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+946,Lionel Andrés Messi,37,FWD,4,3,320,7,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 947,Giovani Lo Celso,37,MID,1,1,60,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 948,Geronimo Rulli,37,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
-949,Cristian Gabriel Romero,37,DEF,2,2,137,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+949,Cristian Gabriel Romero,37,DEF,3,3,257,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 950,Exequiel Alejandro Palacios,37,MID,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-951,Nicolas Ivan Gonzalez,37,MID,2,0,61,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-952,Thiago Ezequiel Almada,37,FWD,3,2,149,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+951,Nicolas Ivan Gonzalez,37,MID,3,0,118,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+952,Thiago Ezequiel Almada,37,FWD,4,3,212,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 953,Giuliano Simeone,37,FWD,1,1,71,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 954,Nicolas Paz,37,FWD,2,1,70,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 955,Nicolas Hernan Gonzalo Otamendi,37,DEF,3,1,133,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-956,Alexis Mac Allister,37,MID,3,2,210,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+956,Alexis Mac Allister,37,MID,4,3,330,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 957,Jose Manuel Alberto Lopez,37,FWD,1,0,8,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-958,Lautaro Javier Martinez,37,FWD,3,3,179,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-959,Damián Emiliano Martinez,37,GK,3,3,270,0,0,,,0,0,0,0,2,2,1,,sofascore.com,2026-07-01
-960,Enzo Jeremías Fernandez,37,MID,2,2,180,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-961,Facundo Axel Medina,37,DEF,2,2,172,0,1,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-962,Nahuel Molina,37,DEF,2,1,134,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+958,Lautaro Javier Martinez,37,FWD,4,4,242,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+959,Damián Emiliano Martinez,37,GK,4,4,390,0,0,,,0,0,0,0,2,2,3,,sofascore.com,2026-07-01
+960,Enzo Jeremías Fernandez,37,MID,3,3,300,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+961,Facundo Axel Medina,37,DEF,3,3,257,0,1,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+962,Nahuel Molina,37,DEF,3,2,238,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 963,Melvin Feycal Mastil,38,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 964,Aissa Mandi,38,DEF,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 965,Achref Abada,38,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
@@ -1118,30 +1118,30 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 1117,Avazbek Ulmasaliyev,43,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 1118,Jakhongir Urozov,43,DEF,2,1,95,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1119,David Ospina,44,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
-1120,Daniel Munoz,44,DEF,3,2,183,2,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1121,Jhon Janer Lucumi,44,DEF,3,3,270,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1120,Daniel Munoz,44,DEF,4,3,273,2,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1121,Jhon Janer Lucumi,44,DEF,4,4,360,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 1122,Santiago Arias,44,DEF,1,1,87,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1123,Kevin Duvan Castano,44,MID,2,0,15,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1124,Richard Rios,44,MID,3,0,53,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1125,Luis Fernando Diaz,44,FWD,3,3,270,1,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1124,Richard Rios,44,MID,4,0,97,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1125,Luis Fernando Diaz,44,FWD,4,4,360,1,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1126,Jorge Andres Carrascal,44,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-1127,Jhon Andrés Cordoba,44,FWD,2,1,92,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1128,James David Rodriguez,44,MID,3,3,206,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1129,Jhon Adolfo Arias,44,MID,3,3,243,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1130,Camilo Andres Vargas,44,GK,3,3,270,0,0,,,0,0,0,0,2,6,1,,sofascore.com,2026-07-01
+1127,Jhon Andrés Cordoba,44,FWD,3,2,100,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1128,James David Rodriguez,44,MID,4,4,252,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1129,Jhon Adolfo Arias,44,MID,4,4,316,1,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1130,Camilo Andres Vargas,44,GK,4,4,360,0,0,,,0,0,0,0,3,6,1,,sofascore.com,2026-07-01
 1131,Yerry Fernando Mina,44,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-1132,Gustavo Adolfo Puerta,44,DEF,3,3,260,0,1,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1132,Gustavo Adolfo Puerta,44,DEF,4,4,350,0,1,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 1133,Juan Camilo Portilla,44,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-1134,Jefferson Andrés Lerma,44,MID,3,3,240,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
-1135,Johan Andrés Mojica,44,DEF,2,2,180,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1134,Jefferson Andrés Lerma,44,MID,4,4,330,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1135,Johan Andrés Mojica,44,DEF,3,3,270,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 1136,Willer Emilio Ditta,44,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 1137,Juan Camilo Hernandez,44,FWD,1,0,10,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1138,Juan Fernando Quintero,44,MID,2,0,46,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1139,Jaminton Leandro Campaz,44,FWD,1,0,18,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1138,Juan Fernando Quintero,44,MID,3,0,63,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1139,Jaminton Leandro Campaz,44,FWD,2,0,21,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1140,Deiver Machado,44,DEF,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1141,Davinson Sanchez,44,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1141,Davinson Sanchez,44,DEF,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1142,Álvaro David Montero,44,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
-1143,Luis Javier Suarez,44,FWD,3,2,168,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1143,Luis Javier Suarez,44,FWD,4,2,250,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1144,Carlos Andrés Gomez,44,FWD,1,0,1,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1145,Jordan Lee Pickford,45,GK,4,4,360,0,0,,,0,0,0,0,2,9,3,,sofascore.com,2026-07-01
 1146,Ezri Ngoyo Konsa,45,DEF,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
@@ -1195,32 +1195,32 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 1194,Marco Pasalic,46,FWD,3,1,98,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1195,Martin Erlic,46,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 1196,Petar Musa,46,FWD,2,2,112,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1197,Lawrence Ati Zigi,47,GK,1,1,46,0,0,,,0,0,0,0,1,5,0,,sofascore.com,2026-07-01
-1198,Alidu Seidu,47,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-1199,Caleb Marfo Yirenkyi,47,MID,3,2,185,1,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1197,Lawrence Ati Zigi,47,GK,2,2,136,0,0,,,0,0,0,0,1,5,1,,sofascore.com,2026-07-01
+1198,Alidu Seidu,47,DEF,1,0,77,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1199,Caleb Marfo Yirenkyi,47,MID,4,3,264,1,0,,,2,0,0,0,,,,,sofascore.com,2026-07-01
 1200,Jonas Adjei Adjetey,47,DEF,3,3,226,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1201,Thomas Teye Partey,47,MID,2,2,180,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1201,Thomas Teye Partey,47,MID,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1202,Abdul Mumin Mumin,47,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-1203,Abdul Fatawu Fatawu,47,FWD,3,0,100,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1204,Kwasi Sibo,47,MID,3,2,187,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1205,Jordan Pierre Ayew,47,FWD,3,3,224,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1203,Abdul Fatawu Fatawu,47,FWD,4,0,128,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1204,Kwasi Sibo,47,MID,4,3,249,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1205,Jordan Pierre Ayew,47,FWD,4,4,303,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1206,Brandon Michael Clarke Thomas-Asante,47,FWD,2,0,51,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1207,Antoine Serlom Semenyo,47,MID,3,3,270,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1207,Antoine Serlom Semenyo,47,MID,4,4,360,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1208,Joseph Tetteh Anang,47,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 1209,Christopher Bonsu Bonsu Baah,47,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
-1210,Gideon Mensah,47,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1211,Elisha Owusu,47,MID,2,2,124,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1210,Gideon Mensah,47,DEF,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1211,Elisha Owusu,47,MID,3,2,152,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1212,Benjamin Asare,47,GK,3,2,224,0,0,,,0,0,0,0,1,5,2,,sofascore.com,2026-07-01
 1213,Abdul Rahman Rahman,47,DEF,1,0,1,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1214,Jerome Opoku,47,DEF,2,2,180,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1215,Inaki Williams,47,FWD,1,1,66,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
+1214,Jerome Opoku,47,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1215,Inaki Williams,47,FWD,2,2,128,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 1216,Augustine Boakye,47,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-01
 1217,Kojo Peprah Oppong,47,DEF,2,0,47,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 1218,Kamal Deen Sulemana,47,FWD,2,2,129,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1219,Derrick Luckassen,47,DEF,1,1,90,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1220,Ernest Nuamah Nuamah,47,FWD,2,1,77,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1221,Prince Kwabena Adu,47,FWD,2,0,27,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
-1222,Marvin Elom Senaya,47,DEF,3,3,267,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1219,Derrick Luckassen,47,DEF,2,2,180,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1220,Ernest Nuamah Nuamah,47,FWD,3,1,88,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1221,Prince Kwabena Adu,47,FWD,3,0,38,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
+1222,Marvin Elom Senaya,47,DEF,4,4,280,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01
 1223,Luis Ricardo Mejia,48,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-01
 1224,Cesar Rodolfo Blackman,48,DEF,2,2,180,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-01
 1225,Jose Angel Cordoba,48,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-01

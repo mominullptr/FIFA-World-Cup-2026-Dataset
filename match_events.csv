@@ -645,3 +645,21 @@ event_id,match_id,minute,event_type,team_id,player_id
 644,85,36,Yellow Card,38,972
 645,85,46,Goal,8,193
 646,85,71,Yellow Card,38,976
+647,86,13,Goal,26,658
+648,86,55,Goal,15,653
+649,86,105,Yellow Card,26,662
+650,86,120,Yellow Card,26,652
+651,87,29,Goal,37,946
+652,87,59,Goal,30,768
+653,87,68,Yellow Card,30,760
+654,87,92,Goal,37,942
+655,87,103,Goal,30,767
+656,87,111,Goal,37,757
+657,87,115,Yellow Card,37,940
+658,88,12,Yellow Card,44,1129
+659,88,14,Goal,44,1129
+660,88,14,Assist,44,1143
+661,88,49,Yellow Card,47,1199
+662,88,66,Yellow Card,47,1203
+663,88,76,Yellow Card,47,1198
+664,88,78,Yellow Card,44,1124
