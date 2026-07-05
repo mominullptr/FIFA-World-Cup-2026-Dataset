@@ -2120,5 +2120,44 @@
       }
     ],
     "away_goals": []
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 4, 2026",
+    "home_team": "Canada",
+    "away_team": "Morocco",
+    "score": "0–3",
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Azzedine Ounahi",
+        "minute": "50'",
+        "assist": "Achraf Hakimi"
+      },
+      {
+        "scorer": "Azzedine Ounahi",
+        "minute": "82'",
+        "assist": "Brahim Diaz"
+      },
+      {
+        "scorer": "Soufiane Rahimi",
+        "minute": "90+8'",
+        "assist": "Brahim Diaz"
+      }
+    ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 4, 2026",
+    "home_team": "Paraguay",
+    "away_team": "France",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Mbappe",
+        "minute": "70' (pen.)"
+      }
+    ]
   }
 ]

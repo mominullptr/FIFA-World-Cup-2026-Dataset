@@ -87,4 +87,11 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 86,2026-07-04,00:00,Round of 32,Dallas Stadium (AT&T Stadium),Arlington,USA,Australia,AUS,Egypt,EGY,1,1,2,4,Completed,Penalties,0.87,1.36,Patrick Thomas Beach,Abdelaziz Mohame Mostafa,Hamed Mahrous Mohamed Salah,Gustavo Tejera
 87,2026-07-04,04:00,Round of 32,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Argentina,ARG,Cabo Verde,CPV,3,2,,,Completed,AET,2.16,0.46,Damián Emiliano Martinez,José Vozinha,Lionel Andrés Messi,Drew Fischer
 88,2026-07-04,07:30,Round of 32,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Colombia,COL,Ghana,GHA,1,0,,,Completed,Regular,2.19,0.26,Camilo Andres Vargas,Lawrence Ati Zigi,,Clément Turpin
-89,2026-07-04,23:00,Round of 16,Houston Stadium (NRG Stadium),Houston,USA,Canada,CAN,Paraguay,PAR,,,,,Scheduled,,,,,,,César Arturo Ramos
+89,2026-07-04,23:00,Round of 16,Houston Stadium (NRG Stadium),Houston,USA,Canada,CAN,Morocco,MAR,0,3,,,Completed,Regular,0.8,1.2,Maxime Crepeau,Yassine Bounou,Azz-Eddine Ounahi,Michael Oliver
+90,2026-07-04,21:00,Round of 16,Philadelphia Stadium (Lincoln Financial Field),Philadelphia,USA,Paraguay,PAR,France,FRA,0,1,,,Completed,Regular,0.3,1.8,Orlando Daniel Gill,Mike Peterson Maignan,Orlando Daniel Gill,Ma Ning
+91,2026-07-05,20:00,Round of 16,Dallas Stadium (AT&T Stadium),Arlington,USA,Brazil,BRA,Norway,NOR,,,,,Scheduled,,,,,,,Alireza Faghani
+92,2026-07-06,00:00,Round of 16,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Mexico,MEX,England,ENG,,,,,Scheduled,,,,,,,Alireza Faghani
+93,2026-07-06,19:00,Round of 16,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Portugal,POR,Spain,ESP,,,,,Scheduled,,,,,,,Anthony Taylor
+94,2026-07-07,00:00,Round of 16,San Francisco Bay Area Stadium (Levi's Stadium),Santa Clara,USA,USA,USA,Belgium,BEL,,,,,Scheduled,,,,,,,Adham Makhadmeh
+95,2026-07-07,16:00,Round of 16,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Argentina,ARG,Egypt,EGY,,,,,Scheduled,,,,,,,Szymon Marciniak
+96,2026-07-07,20:00,Round of 16,Seattle Stadium (Lumen Field),Seattle,USA,Switzerland,SUI,Colombia,COL,,,,,Scheduled,,,,,,,Danny Makkelie

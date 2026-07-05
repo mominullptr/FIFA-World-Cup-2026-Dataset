@@ -155,8 +155,21 @@ referees_data = [
     [13, "Ma Ning", "China", 5.5],
     [14, "Alireza Faghani", "Australia", 4.2],
     [15, "Yoshimi Yamashita", "Japan", 3.4],
-    [16, "Facundo Tello", "Argentina", 5.0]
+    [16, "Facundo Tello", "Argentina", 5.0],
+    [17, "João Pinheiro", "Portugal", 4.7],
+    [18, "Maurizio Mariani", "Italy", 4.8],
+    [19, "Jalal Jayed", "Morocco", 4.6],
+    [20, "Slavko Vinčić", "Slovenia", 4.1],
+    [21, "Adham Makhadmeh", "Jordan", 4.2],
+    [22, "Saíd Martínez", "Honduras", 4.1],
+    [23, "Raphael Claus", "Brazil", 4.1],
+    [24, "Glenn Nyberg", "Sweden", 3.1],
+    [25, "Espen Eskås", "Norway", 2.9],
+    [26, "Yael Falcón", "Argentina", 5.4],
+    [27, "Gustavo Tejera", "Uruguay", 5.1],
+    [28, "Drew Fischer", "Canada", 3.3]
 ]
+
 
 # ==========================================
 # 5. SQUADS & PLAYERS DATA GENERATOR
@@ -374,7 +387,7 @@ for team in teams_data:
 # ==========================================
 # 6. MATCHES DATA
 # ==========================================
-matches_headers = ["match_id", "date", "kickoff_time_utc", "stage_id", "venue_id", "home_team_id", "away_team_id", "home_score", "away_score", "status", "home_xg", "away_xg", "referee_id", "player_of_the_match_id"]
+matches_headers = ["match_id", "date", "kickoff_time_utc", "stage_id", "venue_id", "home_team_id", "away_team_id", "home_score", "away_score", "home_penalty_score", "away_penalty_score", "status", "result_type", "home_xg", "away_xg", "referee_id", "player_of_the_match_id"]
 matches_data = [
     # Round 1 Completed matches
     [1, "2026-06-11", "19:00", 1, 1, 1, 2, 2, 0, "Completed", 1.84, 0.52],
@@ -466,10 +479,17 @@ matches_data = [
     [83, "2026-07-03", "01:00", 2, 3, 29, 39, 3, 0, "Completed", 2.84, 0.32],
     [84, "2026-07-03", "05:00", 2, 6, 41, 46, 2, 1, "Completed", 2.18, 1.34],
     [85, "2026-07-03", "09:00", 2, 5, 8, 38, 2, 0, "Completed", 2.52, 0.73],
-    [86, "2026-07-04", "00:00", 2, 4, 15, 26, "", "", "Scheduled", "", ""],
-    [87, "2026-07-04", "04:00", 2, 13, 37, 30, "", "", "Scheduled", "", ""],
-    [88, "2026-07-04", "07:30", 2, 12, 44, 47, "", "", "Scheduled", "", ""],
-    [89, "2026-07-04", "23:00", 3, 11, 5, 14, "", "", "Scheduled", "", ""]
+    [86, "2026-07-04", "00:00", 2, 4, 15, 26, 1, 1, "Completed", 0.87, 1.36],
+    [87, "2026-07-04", "04:00", 2, 13, 37, 30, 3, 2, "Completed", 2.16, 0.46],
+    [88, "2026-07-04", "07:30", 2, 12, 44, 47, 1, 0, "Completed", 2.19, 0.26],
+    [89, "2026-07-04", "23:00", 3, 11, 5, 10, 0, 3, "Completed", 0.80, 1.20],
+    [90, "2026-07-04", "21:00", 3, 14, 14, 33, 0, 1, "Completed", 0.30, 1.80],
+    [91, "2026-07-05", "20:00", 3, 4, 9, 36, "", "", "Scheduled", "", ""],
+    [92, "2026-07-06", "00:00", 3, 1, 1, 45, "", "", "Scheduled", "", ""],
+    [93, "2026-07-06", "19:00", 3, 13, 41, 29, "", "", "Scheduled", "", ""],
+    [94, "2026-07-07", "00:00", 3, 15, 13, 25, "", "", "Scheduled", "", ""],
+    [95, "2026-07-07", "16:00", 3, 12, 37, 26, "", "", "Scheduled", "", ""],
+    [96, "2026-07-07", "20:00", 3, 16, 8, 44, "", "", "Scheduled", "", ""]
 ]
 
 # Player of the match mapping (match_id -> player_id) for completed matches 1-44
@@ -558,15 +578,42 @@ player_of_the_match_mapping = {
     83: 749,   # Mikel Oyarzabal (ESP)
     84: 1047,  # Cristiano Ronaldo (POR)
     85: 189,   # Breel Embolo (SUI)
+    86: 660,   # Mohamed Salah (EGY)
+    87: 946,   # Lionel Messi (ARG)
+    89: 242,   # Achraf Hakimi (MAR)
+    90: 350,   # Orlando Gill (PAR)
+}
+
+# Penalty and Result Type mappings for knockout stage matches
+match_penalties = {
+    75: (3, 4), # Germany vs Paraguay
+    76: (2, 3), # Netherlands vs Morocco
+    86: (2, 4), # Australia vs Egypt
+}
+
+match_result_types = {
+    75: "Penalties",
+    76: "Penalties",
+    81: "AET",
+    86: "Penalties",
+    87: "AET",
+}
+
+# Actual referee assignments for knockout matches (73-96)
+actual_referee_ids = {
+    73: 17, 74: 18, 75: 19, 76: 8, 77: 7, 78: 6, 79: 20, 80: 21,
+    81: 22, 82: 23, 83: 24, 84: 25, 85: 26, 86: 27, 87: 28, 88: 5,
+    89: 3, 90: 13, 91: 14, 92: 14, 93: 4, 94: 21, 95: 1, 96: 6
 }
 
 # Assign referees and player of the match relationally/statically
 for idx, match in enumerate(matches_data):
     m_id = match[0]
     potm_id = player_of_the_match_mapping.get(m_id, "")
-    referee_id = (idx % 16) + 1
+    referee_id = actual_referee_ids.get(m_id, (idx % 16) + 1)
     match.append(referee_id)
     match.append(potm_id)
+
 
 # ==========================================
 # 7. MATCH EVENTS DATA GENERATOR
@@ -1065,12 +1112,46 @@ for match in matches_data:
         events_data.append([event_id_counter, 64, 8, "Yellow Card", 30, 778])
         event_id_counter += 1
 
+penalty_shootout_events = [
+    [0, 75, 121, 'Penalty Shootout Miss', 17, 423],
+    [0, 75, 121, 'Penalty Shootout Goal', 14, 349],
+    [0, 75, 121, 'Penalty Shootout Goal', 17, 422],
+    [0, 75, 121, 'Penalty Shootout Goal', 14, 353],
+    [0, 75, 121, 'Penalty Shootout Goal', 17, 426],
+    [0, 75, 121, 'Penalty Shootout Goal', 14, 361],
+    [0, 75, 121, 'Penalty Shootout Miss', 17, 427],
+    [0, 75, 121, 'Penalty Shootout Miss', 14, 347],
+    [0, 75, 121, 'Penalty Shootout Goal', 17, 436],
+    [0, 75, 121, 'Penalty Shootout Miss', 14, 343],
+    [0, 75, 121, 'Penalty Shootout Miss', 17, 420],
+    [0, 75, 121, 'Penalty Shootout Goal', 14, 351],
+    [0, 76, 121, 'Penalty Shootout Goal', 21, 540],
+    [0, 76, 121, 'Penalty Shootout Miss', 10, 258],
+    [0, 76, 121, 'Penalty Shootout Miss', 21, 527],
+    [0, 76, 121, 'Penalty Shootout Goal', 10, 243],
+    [0, 76, 121, 'Penalty Shootout Goal', 21, 529],
+    [0, 76, 121, 'Penalty Shootout Goal', 10, 241],
+    [0, 76, 121, 'Penalty Shootout Miss', 21, 546],
+    [0, 76, 121, 'Penalty Shootout Miss', 10, 236],
+    [0, 76, 121, 'Penalty Shootout Miss', 21, 544],
+    [0, 76, 121, 'Penalty Shootout Goal', 10, 245],
+    [0, 86, 121, 'Penalty Shootout Miss', 15, 383],
+    [0, 86, 121, 'Penalty Shootout Goal', 26, 671],
+    [0, 86, 121, 'Penalty Shootout Goal', 15, 386],
+    [0, 86, 121, 'Penalty Shootout Goal', 26, 655],
+    [0, 86, 121, 'Penalty Shootout Goal', 15, 375],
+    [0, 86, 121, 'Penalty Shootout Goal', 26, 660],
+    [0, 86, 121, 'Penalty Shootout Miss', 15, 389],
+    [0, 86, 121, 'Penalty Shootout Goal', 26, 654]
+]
+events_data.extend(penalty_shootout_events)
 
 # Sort events chronologically: sort by match_id (index 1) and minute (index 2)
 events_data.sort(key=lambda x: (x[1], x[2]))
 # Re-index event IDs
 for idx, event in enumerate(events_data):
     event[0] = idx + 1
+
 
 # ==========================================
 # 8. DENORMALIZED DETAILED MATCHES GENERATOR
@@ -1173,8 +1254,13 @@ match_goalkeepers = {
     81: (625, 881),   # BEL vs SEN: Thibaut Courtois vs Mory Diaw
     82: (336, 131),   # USA vs BIH: Matt Freese vs Nikola Vasilj
     83: (751, 989),   # ESP vs AUT: Unai Simon vs Alexander Schlager
-    84: (1041, 1171), # POR vs CRO: Diogo Costa vs Dominik Livakovic
+    84: (1041, 1171), # PORT vs CRO: Diogo Costa vs Dominik Livakovic
     85: (183, 985),   # SUI vs ALG: Gregor Kobel vs Luca Zidane
+    86: (382, 673),   # AUS vs EGY: Beach vs Shobeir
+    87: (959, 755),   # ARG vs CPV: Emiliano Martinez vs Jose Vozinha
+    88: (1130, 1197), # COL vs GHA: Camilo Vargas vs Lawrence Ati-Zigi
+    89: (120, 235),   # CAN vs MAR: Maxime Crepeau vs Yassine Bounou
+    90: (350, 848),   # PAR vs FRA: Orlando Gill vs Mike Maignan
 }
 
 detailed_matches_headers = [
@@ -1182,7 +1268,7 @@ detailed_matches_headers = [
     "stadium_name", "city", "country", 
     "home_team_name", "home_fifa_code", 
     "away_team_name", "away_fifa_code", 
-    "home_score", "away_score", "status", "home_xg", "away_xg",
+    "home_score", "away_score", "home_penalty_score", "away_penalty_score", "status", "result_type", "home_xg", "away_xg",
     "home_goalkeeper", "away_goalkeeper",
     "player_of_the_match_name", "referee_name"
 ]
@@ -1219,12 +1305,22 @@ for match in matches_data:
     home_gk_name = player_info_lookup.get(home_gk_id, ("", None))[0] if home_gk_id else ""
     away_gk_name = player_info_lookup.get(away_gk_id, ("", None))[0] if away_gk_id else ""
 
+    home_penalty = ""
+    away_penalty = ""
+    if m_id in match_penalties:
+        home_penalty = str(match_penalties[m_id][0])
+        away_penalty = str(match_penalties[m_id][1])
+        
+    result_type = ""
+    if status == "Completed":
+        result_type = match_result_types.get(m_id, "Regular")
+
     detailed_matches_data.append([
         m_id, date, time, stg_name,
         stadium, city, country,
         home_name, home_code,
         away_name, away_code,
-        h_score, a_score, status, h_xg, a_xg,
+        h_score, a_score, home_penalty, away_penalty, status, result_type, h_xg, a_xg,
         home_gk_name, away_gk_name,
         potm_name, ref_name
     ])
@@ -1422,7 +1518,36 @@ export_csv("venues.csv", venues_headers, venues_data)
 export_csv("tournament_stages.csv", stages_headers, stages_data)
 export_csv("referees.csv", referees_headers, referees_data)
 export_csv("squads_and_players.csv", players_headers, players_data)
-export_csv("matches.csv", matches_headers, matches_data)
+
+# Construct matches rows in 17-column format for export
+exported_matches_rows = []
+for match in matches_data:
+    m_id = match[0]
+    status = match[9]
+    
+    # Extract penalty shootout scores
+    home_penalty = ""
+    away_penalty = ""
+    if m_id in match_penalties:
+        home_penalty = str(match_penalties[m_id][0])
+        away_penalty = str(match_penalties[m_id][1])
+        
+    # Determine result type
+    result_type = ""
+    if status == "Completed":
+        result_type = match_result_types.get(m_id, "Regular")
+        
+    ref_id = match[12]
+    potm_id = match[13]
+    
+    new_row = [
+        m_id, match[1], match[2], match[3], match[4], match[5], match[6],
+        match[7], match[8], home_penalty, away_penalty, status, result_type,
+        match[10], match[11], ref_id, potm_id
+    ]
+    exported_matches_rows.append(new_row)
+
+export_csv("matches.csv", matches_headers, exported_matches_rows)
 export_csv("matches_detailed.csv", detailed_matches_headers, detailed_matches_data)
 export_csv("match_events.csv", events_headers, events_data)
 export_csv("match_lineups.csv", lineups_headers, lineups_data)
@@ -1667,6 +1792,21 @@ real_match_team_stats_data = [
     # Match 85: Switzerland vs Algeria (July 2) — sofascore.com
     [85, 8,  45, 11, 5,  4, 10, 0, 2, "sofascore.com", "2026-07-03"],
     [85, 38, 55, 8,  2,  2, 12, 2, 3, "sofascore.com", "2026-07-03"],
+    # Match 86: Australia vs Egypt (July 3) — sofascore.com
+    [86, 15, 42, "", "", "", "", "", "", "sofascore.com", "2026-07-04"],
+    [86, 26, 58, "", "", "", "", "", "", "sofascore.com", "2026-07-04"],
+    # Match 87: Argentina vs Cabo Verde (July 3) — sofascore.com
+    [87, 37, 64, 22, "", "", "", "", "", "sofascore.com", "2026-07-04"],
+    [87, 30, 36, 16, "", "", "", "", 8, "sofascore.com", "2026-07-04"],
+    # Match 88: Colombia vs Ghana (July 3) — sofascore.com
+    [88, 44, 61, 20, 8, 3, 13, 2, 0, "sofascore.com", "2026-07-04"],
+    [88, 47, 39, 8, 0, 2, 9, 0, 7, "sofascore.com", "2026-07-04"],
+    # Match 89: Canada vs Morocco (July 4) — sofascore.com
+    [89, 5, 37, 10, 3, 7, 24, 2, 1, "sofascore.com", "2026-07-04"],
+    [89, 10, 50, 5, 4, 1, 14, 3, 3, "sofascore.com", "2026-07-04"],
+    # Match 90: Paraguay vs France (July 4) — sofascore.com
+    [90, 14, 24, 5, 1, 2, 13, 0, 4, "sofascore.com", "2026-07-04"],
+    [90, 33, 76, 15, 5, 12, 11, 0, 1, "sofascore.com", "2026-07-04"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)

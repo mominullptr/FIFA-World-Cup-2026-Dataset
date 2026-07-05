@@ -669,27 +669,25 @@ event_id,match_id,minute,event_type,team_id,player_id
 668,85,71,Yellow Card,38,976
 669,86,13,Goal,26,658
 670,86,55,Goal,15,653
-671,86,105,Yellow Card,26,662
-672,86,120,Yellow Card,26,652
-673,86,121,Penalty Shootout Miss,15,383
-674,86,121,Penalty Shootout Goal,26,671
-675,86,121,Penalty Shootout Goal,15,386
-676,86,121,Penalty Shootout Goal,26,655
-677,86,121,Penalty Shootout Goal,15,375
-678,86,121,Penalty Shootout Goal,26,660
-679,86,121,Penalty Shootout Miss,15,389
-680,86,121,Penalty Shootout Goal,26,654
-681,87,29,Goal,37,946
-682,87,59,Goal,30,768
-683,87,68,Yellow Card,30,760
-684,87,92,Goal,37,942
-685,87,103,Goal,30,767
-686,87,111,Goal,37,757
-687,87,115,Yellow Card,37,940
-688,88,12,Yellow Card,44,1129
-689,88,14,Goal,44,1129
-690,88,14,Assist,44,1143
-691,88,49,Yellow Card,47,1199
-692,88,66,Yellow Card,47,1203
-693,88,76,Yellow Card,47,1198
-694,88,78,Yellow Card,44,1124
+671,86,121,Penalty Shootout Miss,15,383
+672,86,121,Penalty Shootout Goal,26,671
+673,86,121,Penalty Shootout Goal,15,386
+674,86,121,Penalty Shootout Goal,26,655
+675,86,121,Penalty Shootout Goal,15,375
+676,86,121,Penalty Shootout Goal,26,660
+677,86,121,Penalty Shootout Miss,15,389
+678,86,121,Penalty Shootout Goal,26,654
+679,87,29,Goal,37,946
+680,87,59,Goal,30,768
+681,87,92,Goal,37,942
+682,87,103,Goal,30,767
+683,87,111,Goal,37,757
+684,88,14,Goal,44,1129
+685,88,14,Assist,44,1143
+686,89,50,Goal,10,242
+687,89,50,Assist,10,236
+688,89,82,Goal,10,242
+689,89,82,Assist,10,244
+690,89,90,Goal,10,243
+691,89,90,Assist,10,244
+692,90,70,Goal,33,842
