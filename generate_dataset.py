@@ -573,6 +573,7 @@ player_of_the_match_mapping = {
     77: 930,   # Antonio Nusa (NOR)
     78: 842,   # Kylian Mbappe (FRA)
     79: 16,    # Julián Quiñones (MEX)
+    80: 1153,  # Harry Kane (ENG)
     81: 632,   # Youri Tielemans (BEL)
     82: 329,   # Malik Tillman (USA)
     83: 749,   # Mikel Oyarzabal (ESP)
@@ -580,6 +581,7 @@ player_of_the_match_mapping = {
     85: 189,   # Breel Embolo (SUI)
     86: 660,   # Mohamed Salah (EGY)
     87: 946,   # Lionel Messi (ARG)
+    88: 1129,  # Jhon Arias (COL)
     89: 242,   # Achraf Hakimi (MAR)
     90: 350,   # Orlando Gill (PAR)
 }
@@ -1723,9 +1725,39 @@ real_match_team_stats_data = [
     # Match 52: Bosnia and Herzegovina 3-1 Qatar (June 24) — fifa.com
     [52, 6, 54, 14, 5, 5, 9, 1, 2, "fifa.com", "2026-06-25"],
     [52, 7, 46, 9, 3, 5, 14, 3, 3, "fifa.com", "2026-06-25"],
+    # Match 53: Scotland 0-3 Brazil (June 25) — sofascore.com
+    [53, 12, 35, 6, 2, 2, 12, 1, 6, "sofascore.com", "2026-06-26"],
+    [53, 9, 65, 18, 9, 6, 8, 3, 2, "sofascore.com", "2026-06-26"],
+    # Match 54: Morocco 4-2 Haiti (June 25) — sofascore.com
+    [54, 10, 62, 21, 9, 7, 10, 3, 3, "sofascore.com", "2026-06-26"],
+    [54, 11, 38, 10, 5, 3, 14, 1, 5, "sofascore.com", "2026-06-26"],
+    # Match 55: Türkiye 3-2 USA (June 25) — sofascore.com
+    [55, 16, 48, 14, 7, 4, 11, 2, 3, "sofascore.com", "2026-06-26"],
+    [55, 13, 52, 13, 5, 6, 9, 1, 4, "sofascore.com", "2026-06-26"],
     # Match 56: Paraguay 0-0 Australia (June 26) — fifa.com
     [56, 14, 44, 8,  2, 1, 9, 0, 6, "fifa.com", "2026-06-28"],
     [56, 15, 56, 12, 5, 3, 6, 0, 3, "fifa.com", "2026-06-28"],
+    # Match 57: Ecuador 2-1 Germany (June 26) — sofascore.com
+    [57, 20, 44, 11, 5, 3, 13, 1, 6, "sofascore.com", "2026-06-27"],
+    [57, 17, 56, 16, 7, 6, 10, 2, 3, "sofascore.com", "2026-06-27"],
+    # Match 58: Curaçao 0-2 Côte d'Ivoire (June 26) — sofascore.com
+    [58, 18, 41, 7, 2, 2, 14, 1, 5, "sofascore.com", "2026-06-27"],
+    [58, 19, 59, 16, 7, 6, 11, 3, 2, "sofascore.com", "2026-06-27"],
+    # Match 59: Tunisia 1-3 Netherlands (June 26) — sofascore.com
+    [59, 24, 38, 8, 3, 2, 12, 1, 6, "sofascore.com", "2026-06-27"],
+    [59, 21, 62, 18, 9, 7, 9, 2, 2, "sofascore.com", "2026-06-27"],
+    # Match 60: Japan 1-1 Sweden (June 26) — sofascore.com
+    [60, 22, 51, 13, 5, 5, 9, 2, 3, "sofascore.com", "2026-06-27"],
+    [60, 23, 49, 11, 4, 4, 12, 1, 4, "sofascore.com", "2026-06-27"],
+    # Match 61: New Zealand 1-5 Belgium (June 27) — sofascore.com
+    [61, 28, 35, 6, 2, 2, 10, 1, 7, "sofascore.com", "2026-06-28"],
+    [61, 25, 65, 22, 12, 8, 7, 3, 1, "sofascore.com", "2026-06-28"],
+    # Match 62: Egypt 1-1 IR Iran (June 27) — sofascore.com
+    [62, 26, 47, 11, 4, 4, 12, 1, 3, "sofascore.com", "2026-06-28"],
+    [62, 27, 53, 12, 4, 4, 11, 2, 3, "sofascore.com", "2026-06-28"],
+    # Match 63: Uruguay 0-1 Spain (June 27) — sofascore.com
+    [63, 32, 42, 10, 3, 3, 13, 2, 5, "sofascore.com", "2026-06-28"],
+    [63, 29, 58, 15, 6, 5, 9, 1, 3, "sofascore.com", "2026-06-28"],
     # Match 64: Cabo Verde 0-0 Saudi Arabia (June 27) — fifa.com
     [64, 30, 51, 15, 3, 4, 10, 2, 3, "fifa.com", "2026-06-28"],
     [64, 31, 49, 6,  3, 2, 16, 0, 6, "fifa.com", "2026-06-28"],

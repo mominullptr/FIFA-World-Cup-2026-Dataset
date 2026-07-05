@@ -78,7 +78,7 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 77,2026-06-30,23:00,Round of 32,Dallas Stadium (AT&T Stadium),Arlington,USA,Côte d'Ivoire,CIV,Norway,NOR,1,2,,,Completed,Regular,1.15,2.02,Yahia Fofana,Ørjan Haskjold Nyland,Antonio Eromonsele Nordby Nusa,Jesús Valenzuela
 78,2026-07-01,03:00,Round of 32,New York New Jersey Stadium (MetLife Stadium),East Rutherford,USA,France,FRA,Sweden,SWE,3,0,,,Completed,Regular,3.17,0.67,Mike Peterson Maignan,Jacob Mikael Widell Zetterstrom,Kylian Mbappe,Danny Makkelie
 79,2026-07-01,07:00,Round of 32,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Mexico,MEX,Ecuador,ECU,2,0,,,Completed,Regular,1.02,0.73,José Raúl Rangel,Hernán Ismael Galindez,Julián Andrés Quinones,Slavko Vinčić
-80,2026-07-01,22:00,Round of 32,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,England,ENG,Congo DR,COD,2,1,,,Completed,Regular,2.04,0.76,Jordan Lee Pickford,Lionel Nzau Mpasi,,Adham Makhadmeh
+80,2026-07-01,22:00,Round of 32,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,England,ENG,Congo DR,COD,2,1,,,Completed,Regular,2.04,0.76,Jordan Lee Pickford,Lionel Nzau Mpasi,Harry Edward Kane,Adham Makhadmeh
 81,2026-07-02,02:00,Round of 32,Seattle Stadium (Lumen Field),Seattle,USA,Belgium,BEL,Senegal,SEN,3,2,,,Completed,AET,1.74,3.58,Thibaut Nicolas Courtois,Mory Diaw,Youri Marion Tielemans,Saíd Martínez
 82,2026-07-02,06:00,Round of 32,San Francisco Bay Area Stadium (Levi's Stadium),Santa Clara,USA,USA,USA,Bosnia and Herzegovina,BIH,2,0,,,Completed,Regular,0.92,0.25,Matthew Andrew Geary Freese,Nikola Vasilj,Malik Leon Tillman,Raphael Claus
 83,2026-07-03,01:00,Round of 32,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Spain,ESP,Austria,AUT,3,0,,,Completed,Regular,2.84,0.32,Unai Simon,Alexander Schlager,Mikel Oyarzabal,Glenn Nyberg
@@ -86,7 +86,7 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 85,2026-07-03,09:00,Round of 32,Vancouver Stadium (BC Place),Vancouver,CAN,Switzerland,SUI,Algeria,ALG,2,0,,,Completed,Regular,2.52,0.73,Gregor Kobel,Luca Zinedine Zidane,Breel Donald Embolo,Yael Falcón
 86,2026-07-04,00:00,Round of 32,Dallas Stadium (AT&T Stadium),Arlington,USA,Australia,AUS,Egypt,EGY,1,1,2,4,Completed,Penalties,0.87,1.36,Patrick Thomas Beach,Abdelaziz Mohame Mostafa,Hamed Mahrous Mohamed Salah,Gustavo Tejera
 87,2026-07-04,04:00,Round of 32,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Argentina,ARG,Cabo Verde,CPV,3,2,,,Completed,AET,2.16,0.46,Damián Emiliano Martinez,José Vozinha,Lionel Andrés Messi,Drew Fischer
-88,2026-07-04,07:30,Round of 32,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Colombia,COL,Ghana,GHA,1,0,,,Completed,Regular,2.19,0.26,Camilo Andres Vargas,Lawrence Ati Zigi,,Clément Turpin
+88,2026-07-04,07:30,Round of 32,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Colombia,COL,Ghana,GHA,1,0,,,Completed,Regular,2.19,0.26,Camilo Andres Vargas,Lawrence Ati Zigi,Jhon Adolfo Arias,Clément Turpin
 89,2026-07-04,23:00,Round of 16,Houston Stadium (NRG Stadium),Houston,USA,Canada,CAN,Morocco,MAR,0,3,,,Completed,Regular,0.8,1.2,Maxime Crepeau,Yassine Bounou,Azz-Eddine Ounahi,Michael Oliver
 90,2026-07-04,21:00,Round of 16,Philadelphia Stadium (Lincoln Financial Field),Philadelphia,USA,Paraguay,PAR,France,FRA,0,1,,,Completed,Regular,0.3,1.8,Orlando Daniel Gill,Mike Peterson Maignan,Orlando Daniel Gill,Ma Ning
 91,2026-07-05,20:00,Round of 16,Dallas Stadium (AT&T Stadium),Arlington,USA,Brazil,BRA,Norway,NOR,,,,,Scheduled,,,,,,,Alireza Faghani
