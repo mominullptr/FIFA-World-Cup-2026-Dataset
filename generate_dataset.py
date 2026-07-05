@@ -1825,11 +1825,11 @@ real_match_team_stats_data = [
     [85, 8,  45, 11, 5,  4, 10, 0, 2, "sofascore.com", "2026-07-03"],
     [85, 38, 55, 8,  2,  2, 12, 2, 3, "sofascore.com", "2026-07-03"],
     # Match 86: Australia vs Egypt (July 3) — sofascore.com
-    [86, 15, 42, "", "", "", "", "", "", "sofascore.com", "2026-07-04"],
-    [86, 26, 58, "", "", "", "", "", "", "sofascore.com", "2026-07-04"],
+    [86, 15, 42, 11, 3, 4, 14, 2, 4, "sofascore.com", "2026-07-04"],
+    [86, 26, 58, 16, 5, 6, 12, 1, 2, "sofascore.com", "2026-07-04"],
     # Match 87: Argentina vs Cabo Verde (July 3) — sofascore.com
-    [87, 37, 64, 22, "", "", "", "", "", "sofascore.com", "2026-07-04"],
-    [87, 30, 36, 16, "", "", "", "", 8, "sofascore.com", "2026-07-04"],
+    [87, 37, 64, 22, 11, 8, 9, 3, 3, "sofascore.com", "2026-07-04"],
+    [87, 30, 36, 16, 5, 3, 13, 1, 8, "sofascore.com", "2026-07-04"],
     # Match 88: Colombia vs Ghana (July 3) — sofascore.com
     [88, 44, 61, 20, 8, 3, 13, 2, 0, "sofascore.com", "2026-07-04"],
     [88, 47, 39, 8, 0, 2, 9, 0, 7, "sofascore.com", "2026-07-04"],
