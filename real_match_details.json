@@ -2175,7 +2175,8 @@
     "away_goals": [
       {
         "scorer": "Haaland",
-        "minute": "79'"
+        "minute": "79'",
+        "assist": "Schjelderup"
       },
       {
         "scorer": "Haaland",
@@ -2202,11 +2203,13 @@
     "away_goals": [
       {
         "scorer": "Bellingham",
-        "minute": "36'"
+        "minute": "36'",
+        "assist": "Saka"
       },
       {
         "scorer": "Bellingham",
-        "minute": "38'"
+        "minute": "38'",
+        "assist": "Kane"
       },
       {
         "scorer": "Kane",

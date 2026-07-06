@@ -482,14 +482,22 @@ matches_data = [
     [86, "2026-07-04", "00:00", 2, 4, 15, 26, 1, 1, "Completed", 0.87, 1.36],
     [87, "2026-07-04", "04:00", 2, 13, 37, 30, 3, 2, "Completed", 2.16, 0.46],
     [88, "2026-07-04", "07:30", 2, 12, 44, 47, 1, 0, "Completed", 2.19, 0.26],
-    [89, "2026-07-04", "23:00", 3, 11, 5, 10, 0, 3, "Completed", 0.80, 1.20],
-    [90, "2026-07-04", "21:00", 3, 14, 14, 33, 0, 1, "Completed", 0.30, 1.80],
-    [91, "2026-07-05", "20:00", 3, 4, 9, 36, "", "", "Scheduled", "", ""],
-    [92, "2026-07-06", "00:00", 3, 1, 1, 45, "", "", "Scheduled", "", ""],
+    [89, "2026-07-04", "21:00", 3, 14, 14, 33, 0, 1, "Completed", 0.30, 1.80],
+    [90, "2026-07-04", "23:00", 3, 11, 5, 10, 0, 3, "Completed", 0.80, 1.20],
+    [91, "2026-07-05", "20:00", 3, 4, 9, 36, 1, 2, "Completed", 2.61, 1.05],
+    [92, "2026-07-06", "01:00", 3, 1, 1, 45, 2, 3, "Completed", 1.88, 1.61],
     [93, "2026-07-06", "19:00", 3, 13, 41, 29, "", "", "Scheduled", "", ""],
     [94, "2026-07-07", "00:00", 3, 15, 13, 25, "", "", "Scheduled", "", ""],
     [95, "2026-07-07", "16:00", 3, 12, 37, 26, "", "", "Scheduled", "", ""],
-    [96, "2026-07-07", "20:00", 3, 16, 8, 44, "", "", "Scheduled", "", ""]
+    [96, "2026-07-07", "20:00", 3, 16, 8, 44, "", "", "Scheduled", "", ""],
+    [97, "2026-07-09", "20:00", 4, 10, 33, 10, "", "", "Scheduled", "", ""],
+    [98, "2026-07-10", "19:00", 4, 3, "", "", "", "", "Scheduled", "", ""],
+    [99, "2026-07-11", "21:00", 4, 13, 36, 45, "", "", "Scheduled", "", ""],
+    [100, "2026-07-12", "01:00", 4, 12, "", "", "", "", "Scheduled", "", ""],
+    [101, "2026-07-14", "20:00", 5, 4, "", "", "", "", "Scheduled", "", ""],
+    [102, "2026-07-15", "20:00", 5, 9, "", "", "", "", "Scheduled", "", ""],
+    [103, "2026-07-18", "22:00", 6, 13, "", "", "", "", "Scheduled", "", ""],
+    [104, "2026-07-19", "20:00", 7, 2, "", "", "", "", "Scheduled", "", ""]
 ]
 
 # Player of the match mapping (match_id -> player_id) for completed matches 1-44
@@ -582,8 +590,10 @@ player_of_the_match_mapping = {
     86: 660,   # Mohamed Salah (EGY)
     87: 946,   # Lionel Messi (ARG)
     88: 1129,  # Jhon Arias (COL)
-    89: 242,   # Achraf Hakimi (MAR)
-    90: 350,   # Orlando Gill (PAR)
+    89: 350,   # Orlando Gill (PAR) (swapped)
+    90: 242,   # Achraf Hakimi (MAR) (swapped)
+    91: 919,   # Erling Haaland (NOR)
+    92: 1154,  # Jude Bellingham (ENG)
 }
 
 # Penalty and Result Type mappings for knockout stage matches
@@ -605,7 +615,7 @@ match_result_types = {
 actual_referee_ids = {
     73: 17, 74: 18, 75: 19, 76: 8, 77: 7, 78: 6, 79: 20, 80: 21,
     81: 22, 82: 23, 83: 24, 84: 25, 85: 26, 86: 27, 87: 28, 88: 5,
-    89: 3, 90: 13, 91: 14, 92: 14, 93: 4, 94: 21, 95: 1, 96: 6
+    89: 13, 90: 3, 91: 14, 92: 14, 93: 4, 94: 21, 95: 1, 96: 6
 }
 
 # Assign referees and player of the match relationally/statically
@@ -902,6 +912,7 @@ real_red_cards = [
     (66, 35, 886, 13),   # Rebin Sulaka red card
     (79, 20, 497, 95),   # Piero Hincapié straight red, mouth-covering rule, 95'
     (82, 13, 332, 64),   # Folarin Balogun straight red, 64'
+    (92, 45, 1170, 54),  # Jarell Quansah straight red, 54'
 ]
 
 real_var_reviews = [
@@ -913,6 +924,10 @@ real_var_reviews = [
     (81, 34, 866, 120),  # Lamine Camara penalty check
     (82, 13, 332, 64),   # Folarin Balogun red card check
     (84, 46, 1174, 103),  # Josko Gvardiol disallowed goal (offside)
+    (91, 36, 916, 3),    # Patrick Berg disallowed goal VAR review
+    (91, 9, 217, 14),    # Brazil penalty VAR review
+    (92, 45, 1170, 54),   # Quansah red card VAR review
+    (92, 45, 1153, 69),   # England handball VAR review
 ]
 
 import json
@@ -1149,7 +1164,22 @@ penalty_shootout_events = [
 events_data.extend(penalty_shootout_events)
 
 # Sort events chronologically: sort by match_id (index 1) and minute (index 2)
-events_data.sort(key=lambda x: (x[1], x[2]))
+def parse_minute(m):
+    if isinstance(m, int):
+        return float(m)
+    m_str = str(m).strip()
+    if "+" in m_str:
+        parts = m_str.split("+")
+        try:
+            return float(parts[0]) + 0.1 * float(parts[1])
+        except ValueError:
+            pass
+    try:
+        return float(m_str)
+    except ValueError:
+        return 0.0
+
+events_data.sort(key=lambda x: (x[1], parse_minute(x[2])))
 # Re-index event IDs
 for idx, event in enumerate(events_data):
     event[0] = idx + 1
@@ -1261,8 +1291,10 @@ match_goalkeepers = {
     86: (382, 673),   # AUS vs EGY: Beach vs Shobeir
     87: (959, 755),   # ARG vs CPV: Emiliano Martinez vs Jose Vozinha
     88: (1130, 1197), # COL vs GHA: Camilo Vargas vs Lawrence Ati-Zigi
-    89: (120, 235),   # CAN vs MAR: Maxime Crepeau vs Yassine Bounou
-    90: (350, 848),   # PAR vs FRA: Orlando Gill vs Mike Maignan
+    89: (350, 848),   # PAR vs FRA: Orlando Gill vs Mike Maignan (swapped)
+    90: (120, 235),   # CAN vs MAR: Maxime Crepeau vs Yassine Bounou (swapped)
+    91: (209, 911),   # BRA vs NOR: Alisson Becker vs Orjan Nyland
+    92: (1, 1145),    # MEX vs ENG: Raul Rangel vs Jordan Pickford
 }
 
 detailed_matches_headers = [
@@ -1833,12 +1865,18 @@ real_match_team_stats_data = [
     # Match 88: Colombia vs Ghana (July 3) — sofascore.com
     [88, 44, 61, 20, 8, 3, 13, 2, 0, "sofascore.com", "2026-07-04"],
     [88, 47, 39, 8, 0, 2, 9, 0, 7, "sofascore.com", "2026-07-04"],
-    # Match 89: Canada vs Morocco (July 4) — sofascore.com
-    [89, 5, 37, 10, 3, 7, 24, 2, 1, "sofascore.com", "2026-07-04"],
-    [89, 10, 50, 5, 4, 1, 14, 3, 3, "sofascore.com", "2026-07-04"],
-    # Match 90: Paraguay vs France (July 4) — sofascore.com
-    [90, 14, 24, 5, 1, 2, 13, 0, 4, "sofascore.com", "2026-07-04"],
-    [90, 33, 76, 15, 5, 12, 11, 0, 1, "sofascore.com", "2026-07-04"],
+    # Match 89: Paraguay vs France (July 4) — sofascore.com (swapped)
+    [89, 14, 24, 5, 1, 2, 13, 0, 4, "sofascore.com", "2026-07-04"],
+    [89, 33, 76, 15, 5, 12, 11, 0, 1, "sofascore.com", "2026-07-04"],
+    # Match 90: Canada vs Morocco (July 4) — sofascore.com (swapped)
+    [90, 5, 37, 10, 3, 7, 24, 2, 1, "sofascore.com", "2026-07-04"],
+    [90, 10, 50, 5, 4, 1, 14, 3, 3, "sofascore.com", "2026-07-04"],
+    # Match 91: Brazil vs Norway (July 5) — sofascore.com
+    [91, 9, 34, 14, 4, 5, 7, 1, 3, "sofascore.com", "2026-07-06"],
+    [91, 36, 66, 9, 5, 5, 6, 1, 4, "sofascore.com", "2026-07-06"],
+    # Match 92: Mexico vs England (July 5) — sofascore.com
+    [92, 1, 67, 20, 5, 12, 14, 1, 2, "sofascore.com", "2026-07-06"],
+    [92, 45, 33, 6, 5, 2, 7, 0, 3, "sofascore.com", "2026-07-06"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)
