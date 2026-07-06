@@ -1,4 +1,4 @@
-# FIFA World Cup 2026 - Live Results & Updated Stats — Matches, Squads, Players, Stats & Live Results
+# FIFA World Cup 2026 Dataset- Live & Updated Stats — Matches, Squads, Players, Stats & Live Results
 
 ## 🔗 Dataset Links
 * **Kaggle:** [FIFA World Cup 2026 Dataset](https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset)
@@ -239,7 +239,7 @@ If you use this dataset in your research, publications, or projects, please cite
 ```bibtex
 @dataset{fifa_world_cup_2026,
   author = {MD Mominul Islam},
-  title = {FIFA World Cup 2026 - Live Results & Updated Stats},
+  title = {FIFA World Cup 2026 Dataset- Live & Updated Stats},
   year = {2026},
   publisher = {Kaggle}
 }

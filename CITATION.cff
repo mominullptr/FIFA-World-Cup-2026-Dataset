@@ -3,7 +3,7 @@ message: "If you use this dataset in your research or publications, please cite 
 authors:
   - family-names: "Islam"
     given-names: "MD Mominul"
-title: "FIFA World Cup 2026 - Live Results & Relational Dataset"
+title: "FIFA World Cup 2026 Dataset- Live & Updated Stats"
 version: 1.0.0
 date-released: 2026-06-25
 url: "https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset"

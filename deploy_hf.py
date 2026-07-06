@@ -54,7 +54,7 @@ def main():
             content = f.read()
         
         # Add YAML frontmatter to README if not present
-        frontmatter = "---\ntitle: FIFA World Cup 2026 Dataset\nemoji: ⚽\ncolorFrom: blue\ncolorTo: green\nsdk: static\npinned: false\n---\n\n"
+        frontmatter = "---\ntitle: FIFA World Cup 2026 Dataset- Live & Updated Stats\nemoji: ⚽\ncolorFrom: blue\ncolorTo: green\nsdk: static\npinned: false\n---\n\n"
         if not content.strip().startswith("---"):
             content = frontmatter + content
             
