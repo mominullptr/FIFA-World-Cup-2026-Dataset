@@ -30,7 +30,8 @@ def main():
         "match_lineups.csv",
         "player_stats.csv",
         "match_prediction_features.csv",
-        "fifa_world_cup_2026.db"
+        "fifa_world_cup_2026.db",
+        "schema_relationships.md"
     ]
 
     print("Copying clean dataset files...")
