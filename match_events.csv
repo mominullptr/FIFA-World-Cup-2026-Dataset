@@ -419,7 +419,7 @@ event_id,match_id,minute,event_type,team_id,player_id
 418,55,3,Goal,13,318
 419,55,3,Assist,13,326
 420,55,10,Goal,16,398
-421,55,10,Assist,16,416
+421,55,10,Assist,16,411
 422,55,19,Yellow Card,13,326
 423,55,31,Goal,16,396
 424,55,31,Assist,16,403

@@ -1,30 +1,30 @@
 player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_birth,height_cm,goals
-1,1,José Raúl Rangel,GK,CD Guadalajara,6500000,15,2000-02-25,190,0
-2,1,Jorge Eduardo Sanchez,DEF,PAOK Saloniki,2000000,59,1997-12-10,176,3
-3,1,César Jasib Montes,DEF,FC Lokomotiv Moscow,7500000,69,1997-02-24,191,4
-4,1,Edson Omar Alvarez,DEF,Fenerbahçe SK,15000000,100,1997-10-24,180,7
-5,1,Johan Felipe Vasquez,DEF,Genoa CFC,12000000,47,1998-10-22,182,3
-6,1,Erik Antonio Lira,MID,CF Cruz Azul,12000000,26,2000-05-08,172,0
-7,1,Luis Francisco Romo,MID,CD Guadalajara,3000000,62,1995-06-05,183,4
-8,1,Álvaro Fidalgo,MID,Real Betis,6000000,5,1997-04-09,175,0
-9,1,Raúl Alonso Jimenez,FWD,Fulham FC,3000000,127,1991-05-05,188,46
-10,1,Ernesto Alexis Vega,FWD,Deportivo Toluca FC,8000000,53,1997-11-25,175,7
+1,1,José Raúl Rangel Aguilar,GK,CD Guadalajara,6500000,15,2000-02-25,190,0
+2,1,Jorge Eduardo Sánchez Ramos,DEF,PAOK Saloniki,2000000,59,1997-12-10,176,3
+3,1,César Jasib Montes Castro,DEF,FC Lokomotiv Moscow,7500000,69,1997-02-24,191,4
+4,1,Edson Omar Álvarez Velázquez,DEF,Fenerbahçe SK,15000000,100,1997-10-24,180,7
+5,1,Johan Felipe Vásquez Ibarra,DEF,Genoa CFC,12000000,47,1998-10-22,182,3
+6,1,Erik Antonio Lira Méndez,MID,CF Cruz Azul,12000000,26,2000-05-08,172,0
+7,1,Luis Francisco Romo Barrón,MID,CD Guadalajara,3000000,62,1995-06-05,183,4
+8,1,Álvaro Fidalgo Fernández,MID,Real Betis,6000000,5,1997-04-09,175,0
+9,1,Raúl Alonso Jiménez Rodríguez,FWD,Fulham FC,3000000,127,1991-05-05,188,46
+10,1,Ernesto Alexis Vega Rojas,FWD,Deportivo Toluca FC,8000000,53,1997-11-25,175,7
 11,1,Santiago Tomás Gimenez,FWD,AC Milan,18000000,47,2001-04-18,180,6
-12,1,Carlos Acevedo,GK,Club Santos Laguna,2800000,7,1996-04-19,185,0
-13,1,Francisco Guillermo Ochoa,GK,AEL Limassol,250000,153,1985-07-13,185,0
-14,1,Armando Gonzalez,FWD,CD Guadalajara,15000000,8,2003-04-20,182,1
-15,1,Israel Reyes,DEF,Club América,6500000,35,2000-05-23,181,2
-16,1,Julián Andrés Quinones,FWD,Al Qadsiah FC,14000000,23,1997-03-24,177,3
-17,1,Orbelín Pineda,MID,AEK Athens,7000000,92,1996-03-24,169,12
+12,1,Carlos Acevedo López,GK,Club Santos Laguna,2800000,7,1996-04-19,185,0
+13,1,Francisco Guillermo Ochoa Magaña,GK,AEL Limassol,250000,153,1985-07-13,185,0
+14,1,Armando González Alba,FWD,CD Guadalajara,15000000,8,2003-04-20,182,1
+15,1,Israel Reyes Romero,DEF,Club América,6500000,35,2000-05-23,181,2
+16,1,Julián Andrés Quiñones,FWD,Al Qadsiah FC,14000000,23,1997-03-24,177,3
+17,1,Orbelín Pineda Alvarado,MID,AEK Athens,7000000,92,1996-03-24,169,12
 18,1,Obed Goméz Vargas,MID,Atlético De Madrid,10000000,6,2005-08-05,175,0
-19,1,Gilberto Rafael Mora,MID,Club Tijuana,10000000,9,2008-10-14,175,0
-20,1,Mateo Chavez,DEF,AZ Alkmaar,4000000,10,2004-05-12,178,0
-21,1,César Saúl Huerta,FWD,RSC Anderlecht,3500000,26,2000-12-03,171,3
-22,1,Guillermo Martinez,FWD,Pumas UNAM,1500000,12,1995-03-15,191,3
-23,1,Jesús Daniel Gallardo,DEF,Deportivo Toluca FC,2800000,123,1994-08-15,174,3
-24,1,Luis Gerardo Chavez,MID,FC Dynamo Moscow,6000000,46,1996-01-15,178,5
-25,1,Roberto Carlos Alvarado,FWD,CD Guadalajara,7500000,69,1998-09-07,176,6
-26,1,Brian Gutierrez,MID,CD Guadalajara,8000000,8,2003-06-17,178,2
+19,1,Gilberto Rafael Mora Zambrano,MID,Club Tijuana,10000000,9,2008-10-14,175,0
+20,1,Mateo Chávez García,DEF,AZ Alkmaar,4000000,10,2004-05-12,178,0
+21,1,César Saúl Huerta Valera,FWD,RSC Anderlecht,3500000,26,2000-12-03,171,3
+22,1,Guillermo Martínez Ayala,FWD,Pumas UNAM,1500000,12,1995-03-15,191,3
+23,1,Jesús Daniel Gallardo Vasconcelos,DEF,Deportivo Toluca FC,2800000,123,1994-08-15,174,3
+24,1,Luis Gerardo Chávez Magallón,MID,FC Dynamo Moscow,6000000,46,1996-01-15,178,5
+25,1,Roberto Carlos Alvarado Hernández,FWD,CD Guadalajara,7500000,69,1998-09-07,176,6
+26,1,Brian Gutiérrez,MID,CD Guadalajara,8000000,8,2003-06-17,178,2
 27,2,Ronwen Hayden Williams,GK,Mamelodi Sundowns FC,800000,65,1992-01-21,184,0
 28,2,Tholo Thabang Matuludi,DEF,Polokwane City FC,1200000,3,1999-01-14,189,0
 29,2,Khulumani Ndamane,DEF,Mamelodi Sundowns FC,1200000,5,2004-02-05,183,0
@@ -77,38 +77,38 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 76,3,Jingyu Kim,MID,Jeonbuk Hyundai Motors FC,1200000,23,1997-02-24,177,3
 77,3,Jisung Eom,MID,Swansea City AFC,1800000,10,2002-05-09,177,2
 78,3,Donggyeong Lee,MID,Ulsan HD,1600000,18,1997-09-20,175,4
-79,4,Mat ě j Kovar,GK,PSV Eindhoven,8000000,21,2000-05-17,196,0
+79,4,Matěj Kovář,GK,PSV Eindhoven,8000000,21,2000-05-17,196,0
 80,4,David Zima,DEF,SK Slavia Praha,7000000,25,2000-11-08,190,1
-81,4,Tomáš Holes,DEF,SK Slavia Praha,1000000,41,1993-03-31,180,2
-82,4,Robin Hranac,DEF,TSG Hoffenheim,10000000,15,2000-01-29,189,1
+81,4,Tomáš Holeš,DEF,SK Slavia Praha,1000000,41,1993-03-31,180,2
+82,4,Robin Hranáč,DEF,TSG Hoffenheim,10000000,15,2000-01-29,189,1
 83,4,Vladimír Coufal,DEF,TSG Hoffenheim,2500000,63,1992-08-22,175,2
-84,4,ě pán Chaloupek,DEF,SK Slavia Praha,10000000,6,2003-03-08,188,0
-85,4,Ladislav Krejci,DEF,Wolverhampton Wanderers FC,22000000,28,1999-04-20,191,6
+84,4,Štěpán Chaloupek,DEF,SK Slavia Praha,10000000,6,2003-03-08,188,0
+85,4,Ladislav Krejčí,DEF,Wolverhampton Wanderers FC,22000000,28,1999-04-20,191,6
 86,4,Vladimír Darida,MID,FC Hradec Králové,375000,79,1990-08-08,172,8
-87,4,Adam Hlozek,FWD,TSG Hoffenheim,10000000,44,2002-07-25,188,5
+87,4,Adam Hložek,FWD,TSG Hoffenheim,10000000,44,2002-07-25,188,5
 88,4,Patrik Schick,FWD,Bayer 04 Leverkusen,18000000,54,1996-01-24,191,26
 89,4,Jan Kuchta,FWD,AC Sparta Praha,2700000,31,1997-01-08,185,3
-90,4,Lukáš Cerv,MID,FC Viktoria Plze ň,6000000,17,2001-04-10,182,2
+90,4,Lukáš Červ,MID,FC Viktoria Plze ň,6000000,17,2001-04-10,182,2
 91,4,Mojmír Chytil,FWD,SK Slavia Praha,4000000,23,1999-04-29,187,6
-92,4,David Jurasek,DEF,SK Slavia Praha,5000000,18,2000-08-07,183,1
-93,4,Pavel Sulc,FWD,Olympique Lyonnais,20000000,22,2000-12-29,177,5
-94,4,Jind ř ich Stanek,GK,SK Slavia Praha,2000000,14,1996-04-27,192,0
+92,4,David Jurásek,DEF,SK Slavia Praha,5000000,18,2000-08-07,183,1
+93,4,Pavel Šulc,FWD,Olympique Lyonnais,20000000,22,2000-12-29,177,5
+94,4,Jindřich Staněk,GK,SK Slavia Praha,2000000,14,1996-04-27,192,0
 95,4,Lukáš Provod,MID,SK Slavia Praha,8000000,39,1996-10-23,191,3
-96,4,Michal Sadilek,MID,SK Slavia Praha,8000000,36,1999-05-31,169,1
-97,4,Tomáš Chory,FWD,SK Slavia Praha,2700000,23,1995-01-26,199,7
-98,4,Jaroslav Zeleny,DEF,AC Sparta Praha,600000,24,1992-08-20,190,0
-99,4,David Doudera,DEF,SK Slavia Praha,3500000,17,1998-05-31,175,2
-100,4,Tomáš Soucek,MID,West Ham United FC,10000000,91,1995-02-27,192,17
-101,4,Lukáš Hornicek,GK,SC Braga,18000000,1,2002-07-13,198,0
+96,4,Michal Sadílek,MID,SK Slavia Praha,8000000,36,1999-05-31,169,1
+97,4,Tomáš Chorý,FWD,SK Slavia Praha,2700000,23,1995-01-26,199,7
+98,4,Jaroslav Zelený,DEF,AC Sparta Praha,600000,24,1992-08-20,190,0
+99,4,David Douděra,DEF,SK Slavia Praha,3500000,17,1998-05-31,175,2
+100,4,Tomáš Souček,MID,West Ham United FC,10000000,91,1995-02-27,192,17
+101,4,Lukáš Horníček,GK,SC Braga,18000000,1,2002-07-13,198,0
 102,4,Alexandr Sojka,MID,FC Viktoria Plze ň,2300000,3,2003-04-02,188,0
-103,4,Hugo Sochurek,MID,AC Sparta Praha,3500000,1,2008-06-07,183,0
-104,4,Denis Visinsky,FWD,FC Viktoria Plze ň,3000000,2,2003-03-21,178,1
+103,4,Hugo Sochůrek,MID,AC Sparta Praha,3500000,1,2008-06-07,183,0
+104,4,Denis Višinský,FWD,FC Viktoria Plze ň,3000000,2,2003-03-21,178,1
 105,5,Dayne Tristan St. Clair,GK,Inter Miami CF,3500000,20,1997-05-09,191,0
 106,5,Alistair William Johnston,DEF,Celtic FC,8000000,59,1998-10-08,180,1
 107,5,Alfie Charles Jones,DEF,Middlesbrough FC,6000000,2,1997-10-07,191,0
-108,5,Luc De Fougerolles,DEF,FCV Dender EH,1000000,14,2005-10-12,183,0
+108,5,Rollet de Fougerollesde Fougerolles,DEF,FCV Dender EH,1000000,14,2005-10-12,183,0
 109,5,Joel Robert Waterman,DEF,Chicago Fire FC,2000000,17,1996-01-24,185,0
-110,5,Mathieu Choiniere,MID,LAFC,800000,24,1999-02-07,173,0
+110,5,Mathieu Choinière,MID,LAFC,800000,24,1999-02-07,173,0
 111,5,Stephen Eustaquio,MID,LAFC,6000000,57,1996-12-21,175,4
 112,5,Ismaël Kenneth Jordan Kone,MID,US Sassuolo,25000000,41,2002-06-16,188,4
 113,5,Cyle Christopher Larin,FWD,Southampton FC,3500000,91,1995-04-17,188,31
@@ -117,8 +117,8 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 116,5,Tanitoluwa Oluwatimilehin Oluwaseyi,FWD,Villarreal CF,7000000,25,2000-05-15,187,2
 117,5,Derek Austin Cornelius,DEF,Rangers FC,2500000,45,1997-11-25,186,1
 118,5,Jacob Everett Shaffelburg,MID,LAFC,2500000,32,1999-11-26,181,6
-119,5,Moïse Bombito Bombito,DEF,OGC Nice,7000000,20,2000-03-30,190,0
-120,5,Maxime Crepeau,GK,Orlando City SC,1800000,33,1994-05-11,185,0
+119,5,Moïse Bombito Lumpungu,DEF,OGC Nice,7000000,20,2000-03-30,190,0
+120,5,Maxime Crépeau,GK,Orlando City SC,1800000,33,1994-05-11,185,0
 121,5,Tajon Trevor Buchanan,FWD,Villarreal CF,12000000,61,1999-02-08,183,8
 122,5,Owen Olamidayo Goodman,GK,Barnsley,550000,0,2003-11-27,193,0
 123,5,Alphonso Boyle Davies,DEF,FC Bayern München,40000000,58,2000-11-02,183,15
@@ -127,78 +127,78 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 126,5,Richmond Mamah Laryea,DEF,Toronto FC,1000000,77,1995-01-07,175,1
 127,5,Niko Kristian Sigur,DEF,HNK Hajduk Split,4000000,19,2003-09-09,178,2
 128,5,Promise Oluwatobi Emmanuel David,FWD,Royale Union Saint-Gilloise,17000000,11,2001-07-03,195,3
-129,5,Nathan-Dylan Saliba,MID,RSC Anderlecht,7500000,15,2004-02-07,174,2
+129,5,Nathan-dylan Saliba,MID,RSC Anderlecht,7500000,15,2004-02-07,174,2
 130,5,Jayden Nelson,FWD,Austin FC,2000000,15,2002-09-26,170,3
 131,6,Nikola Vasilj,GK,FC St. Pauli,4500000,27,1995-12-02,193,0
-132,6,Nihad Mujakic,DEF,Gaziantep FK,1200000,12,1998-04-15,189,1
-133,6,Dennis Hadzikadunic,DEF,UC Sampdoria,1200000,32,1998-07-09,191,0
-134,6,Tarik Muharemovic,DEF,US Sassuolo,25000000,15,2003-02-28,192,1
-135,6,Sead Kolasinac,DEF,Atalanta Bergamo,4000000,66,1993-06-20,183,0
+132,6,Nihad Mujakić,DEF,Gaziantep FK,1200000,12,1998-04-15,189,1
+133,6,Dennis Hadžikadunić,DEF,UC Sampdoria,1200000,32,1998-07-09,191,0
+134,6,Tarik Muharemović,DEF,US Sassuolo,25000000,15,2003-02-28,192,1
+135,6,Sead Kolašinac,DEF,Atalanta Bergamo,4000000,66,1993-06-20,183,0
 136,6,Benjamin Tahirovic,MID,Brøndby IF,4500000,29,2003-03-03,191,2
-137,6,Amar Dedic,DEF,SL Benfica,16000000,29,2002-08-18,180,1
-138,6,Armin Gigovic,MID,BSC Young Boys,2500000,21,2002-04-06,187,1
-139,6,Samed Bazdar,FWD,Jagiellonia Bia ł ystok,1500000,14,2004-01-31,189,1
-140,6,Ermedin Demirovic,FWD,VfB Stuttgart,22000000,41,1998-03-25,185,4
-141,6,Edin Dzeko,FWD,FC Schalke 04,1000000,148,1986-03-17,192,73
+137,6,Amar Dedić,DEF,SL Benfica,16000000,29,2002-08-18,180,1
+138,6,Armin Gigović,MID,BSC Young Boys,2500000,21,2002-04-06,187,1
+139,6,Samed Baždar,FWD,Jagiellonia Bia ł ystok,1500000,14,2004-01-31,189,1
+140,6,Ermedin Demirović,FWD,VfB Stuttgart,22000000,41,1998-03-25,185,4
+141,6,Edin Džeko,FWD,FC Schalke 04,1000000,148,1986-03-17,192,73
 142,6,Mladen Jurkas,GK,FK Borac Banja Luka,700000,0,2007-10-07,193,0
-143,6,Ivan Basic,MID,FC Astana,1500000,18,2002-04-30,178,0
-144,6,Ivan Sunjic,MID,Pafos FC,2000000,12,1996-10-09,183,0
-145,6,Amar Memic,MID,FC Viktoria Plze ň,4500000,14,2001-01-20,176,1
-146,6,Amir Hadziahmetovic,MID,Hull City FC,4000000,36,1997-03-08,179,0
-147,6,Dzenis Burnic,MID,Karlsruher SC,1200000,21,1998-05-22,182,0
-148,6,Nikola Katic,DEF,FC Schalke 04,1800000,18,1996-10-10,194,2
-149,6,Kerim Alajbegovic,FWD,FC Red Bull Salzburg,22000000,11,2007-09-21,186,1
-150,6,Esmir Bajraktarevic,FWD,PSV Eindhoven,8000000,17,2005-03-10,175,1
-151,6,Stjepan Radeljic,DEF,HNK Rijeka,2800000,5,1997-09-05,201,0
-152,6,Martin Zlomislic,GK,HNK Rijeka,2000000,3,1998-08-16,189,0
-153,6,Haris Tabakovic,FWD,Borussia Mönchengladbach,3500000,10,1994-06-20,196,4
-154,6,Arjan Malic,DEF,SK Sturm Graz,1800000,8,2005-08-28,188,0
-155,6,Jovo Lukic,FWD,Universitatea Cluj,2200000,4,1998-11-28,190,1
-156,6,Ermin Mahmic,MID,FC Slovan Liberec,5000000,2,2005-03-14,182,0
-157,7,Ibrahim Mahmoud Abunada,GK,Al Rayyan SC,400000,7,2000-02-05,185,0
-158,7,Miguel Pedro,DEF,Al Sadd SC,150000,112,1990-08-06,180,4
-159,7,Michel Lucas,DEF,Al Wakrah SC,350000,28,1990-07-03,179,2
-160,7,Gueye Issa Laye,DEF,Al Arabi SC,200000,5,1997-12-22,178,0
-161,7,Gaber Jassem,DEF,Al Rayyan SC,500000,38,2002-02-20,181,1
-162,7,Hatim Abdulaziz Hatem,MID,Al Rayyan SC,250000,132,1990-01-01,179,11
-163,7,Alaaeldin Ahmed,FWD,Al Rayyan SC,300000,78,1993-01-31,179,10
-164,7,Junior Edmilson,FWD,Al Duhail SC,1800000,17,1994-08-19,180,0
-165,7,Mohammed Mohammed Muntari,FWD,Al Gharafa SC,200000,74,1993-12-20,192,17
-166,7,Khalid Hassan Alhaydos,FWD,Al Sadd SC,300000,190,1990-12-11,174,39
-167,7,Hassan Akram,FWD,Al Sadd SC,8000000,137,1996-11-18,176,40
-168,7,Karim Karim Boudiaf,MID,Al Duhail SC,175000,129,1990-09-16,190,6
-169,7,Mohamed Ayoub Aloui,DEF,Al Gharafa SC,375000,8,2005-03-11,181,0
-170,7,Elamin Homam,DEF,Cultural Leonesa,500000,77,1999-08-25,188,3
-171,7,Abdurisag Yusuf Abdurisag,FWD,Al Wakrah SC,275000,45,1999-08-06,171,3
-172,7,KHOUKHIBoualem Boualem,DEF,Al Sadd SC,200000,129,1990-07-09,185,21
-173,7,Mohamed Ahmed Alganehi,MID,Al Gharafa SC,500000,15,2000-09-22,175,1
-174,7,Hussain Sultan,DEF,Al Duhail SC,300000,20,1996-04-07,178,0
-175,7,Ali Zainelabdeen Almoez,FWD,Al Duhail SC,2500000,128,1996-08-19,180,58
-176,7,Fathy Ahmed Fathy,MID,Al Arabi SC,250000,55,1993-01-25,171,0
-177,7,Zakaria Salah Zakaria,GK,Al Duhail SC,400000,10,1999-04-24,186,0
-178,7,Aissa Meshaal Barsham,GK,Al Sadd SC,700000,60,1998-02-14,180,0
-179,7,Omer Assim Madibo,MID,Al Wakrah SC,350000,65,1996-10-22,168,0
-180,7,Mohammad Tahsin,FWD,Al Duhail SC,200000,5,2006-06-16,166,0
-181,7,Alhussein Alhashmi,DEF,Al Arabi SC,250000,10,2003-08-15,182,0
-182,7,Naceur Mohamed Manai,FWD,Al Shamal SC,500000,12,2002-10-25,180,0
+143,6,Ivan Bašić,MID,FC Astana,1500000,18,2002-04-30,178,0
+144,6,Ivan Šunjić,MID,Pafos FC,2000000,12,1996-10-09,183,0
+145,6,Amar Memić,MID,FC Viktoria Plze ň,4500000,14,2001-01-20,176,1
+146,6,Amir Hadžiahmetović,MID,Hull City FC,4000000,36,1997-03-08,179,0
+147,6,Dženis Burnić,MID,Karlsruher SC,1200000,21,1998-05-22,182,0
+148,6,Nikola Katić,DEF,FC Schalke 04,1800000,18,1996-10-10,194,2
+149,6,Kerim Alajbegović,FWD,FC Red Bull Salzburg,22000000,11,2007-09-21,186,1
+150,6,Esmir Bajraktarević,FWD,PSV Eindhoven,8000000,17,2005-03-10,175,1
+151,6,Stjepan Radeljić,DEF,HNK Rijeka,2800000,5,1997-09-05,201,0
+152,6,Martin Zlomislić,GK,HNK Rijeka,2000000,3,1998-08-16,189,0
+153,6,Haris Tabaković,FWD,Borussia Mönchengladbach,3500000,10,1994-06-20,196,4
+154,6,Arjan Malić,DEF,SK Sturm Graz,1800000,8,2005-08-28,188,0
+155,6,Jovo Lukić,FWD,Universitatea Cluj,2200000,4,1998-11-28,190,1
+156,6,Ermin Mahmić,MID,FC Slovan Liberec,5000000,2,2005-03-14,182,0
+157,7,Mahmoud Ibrahim M Abunada,GK,Al Rayyan SC,400000,7,2000-02-05,185,0
+158,7,Pedro Miguel D D Correia,DEF,Al Sadd SC,150000,112,1990-08-06,180,4
+159,7,Lucas Michel Mendes,DEF,Al Wakrah SC,350000,28,1990-07-03,179,2
+160,7,Gueye Seydinaissalaye,DEF,Al Arabi SC,200000,5,1997-12-22,178,0
+161,7,Jassem Gaber e Abdulsallam,DEF,Al Rayyan SC,500000,38,2002-02-20,181,1
+162,7,Abdelaziz Hatim A Mohamed,MID,Al Rayyan SC,250000,132,1990-01-01,179,11
+163,7,Ahmed Alaaeldin B M Abdelmotaal,FWD,Al Rayyan SC,300000,78,1993-01-31,179,10
+164,7,Edmilson Junior P Dasilva,FWD,Al Duhail SC,1800000,17,1994-08-19,180,0
+165,7,Mohammed Muntari,FWD,Al Gharafa SC,200000,74,1993-12-20,192,17
+166,7,Hasan Khalid H Alhaydos,FWD,Al Sadd SC,300000,190,1990-12-11,174,39
+167,7,Akram Hassan A y Afif,FWD,Al Sadd SC,8000000,137,1996-11-18,176,40
+168,7,Karim Boudiaf,MID,Al Duhail SC,175000,129,1990-09-16,190,6
+169,7,Ayoub Mohamed Aloui,DEF,Al Gharafa SC,375000,8,2005-03-11,181,0
+170,7,Homam Elamin M Ahmed,DEF,Cultural Leonesa,500000,77,1999-08-25,188,3
+171,7,Yusuf Abdurisag Yusuf,FWD,Al Wakrah SC,275000,45,1999-08-06,171,3
+172,7,Boualem Khoukhi,DEF,Al Sadd SC,200000,129,1990-07-09,185,21
+173,7,Ahmed Mohamed H K Alganehi,MID,Al Gharafa SC,500000,15,2000-09-22,175,1
+174,7,Sultan Hussain M H Al-brake,DEF,Al Duhail SC,300000,20,1996-04-07,178,0
+175,7,Almoez Ali Zainelabdeen Mabdulla,FWD,Al Duhail SC,2500000,128,1996-08-19,180,58
+176,7,Ahmed Fathy M Abdoulla,MID,Al Arabi SC,250000,55,1993-01-25,171,0
+177,7,Salah Zakaria M M Hassan,GK,Al Duhail SC,400000,10,1999-04-24,186,0
+178,7,Meshaal Aissa M Barsham,GK,Al Sadd SC,700000,60,1998-02-14,180,0
+179,7,Assim Omer A Madibo,MID,Al Wakrah SC,350000,65,1996-10-22,168,0
+180,7,Tahsin Mohammad Jamshid,FWD,Al Duhail SC,200000,5,2006-06-16,166,0
+181,7,Alhashmi Alhussein A Mohialdin,DEF,Al Arabi SC,250000,10,2003-08-15,182,0
+182,7,Mohamed Naceur Manai,FWD,Al Shamal SC,500000,12,2002-10-25,180,0
 183,8,Gregor Kobel,GK,Borussia Dortmund,40000000,22,1997-12-06,196,0
 184,8,Miro Max Maria Muheim,DEF,Hamburger SV,5000000,11,1998-03-24,182,0
 185,8,Silvan Dominic Widmer,DEF,1. FSV Mainz 05,800000,60,1993-03-05,183,5
 186,8,Nico Elvedi,DEF,Borussia Mönchengladbach,8000000,68,1996-09-30,189,3
 187,8,Manuel Obafemi Akanji,DEF,FC Internazionale Milano,17000000,82,1995-07-19,188,4
-188,8,Denis Lemi Zakaria,MID,AS Monaco,25000000,66,1996-11-20,189,3
+188,8,Denis Lemi Zakaria Lako Lado,MID,AS Monaco,25000000,66,1996-11-20,189,3
 189,8,Breel Donald Embolo,FWD,Stade Rennais FC,15000000,87,1997-02-14,184,25
 190,8,Remo Marco Freuler,MID,Bologna FC,3000000,89,1992-04-15,181,11
 191,8,Johan Kula Manzambi,MID,SC Freiburg,50000000,13,2005-10-14,182,3
 192,8,Granit Xhaka,MID,Sunderland AFC,8000000,147,1992-09-27,183,17
 193,8,Dan Ndoye,FWD,Nottingham Forest FC,32000000,32,2000-10-25,184,8
-194,8,Yvon Landry Mvogo,GK,FC Lorient,2500000,13,1994-06-06,190,0
-195,8,Ricardo Ivan Rodriguez,DEF,Real Betis,1400000,139,1992-08-25,182,9
+194,8,Yvon Landry Mvogo Nganoma,GK,FC Lorient,2500000,13,1994-06-06,190,0
+195,8,Ricardo Ivan Rodriguez Araya,DEF,Real Betis,1400000,139,1992-08-25,182,9
 196,8,Ardon Jashari,MID,AC Milan,25000000,9,2002-07-30,181,0
-197,8,Djibril Ibrahima Sow,MID,Sevilla FC,7500000,52,1997-02-06,183,0
+197,8,Mohameth Djibril Ibrahima Sow,MID,Sevilla FC,7500000,52,1997-02-06,183,0
 198,8,Christian Andreas Fassnacht,FWD,BSC Young Boys,2000000,23,1993-11-11,185,5
-199,8,Ruben Estephan Vargas,FWD,Sevilla FC,12000000,62,1998-08-05,179,11
-200,8,Eray Ervin Coemert,DEF,Valencia CF,2500000,22,1998-02-04,183,0
+199,8,Ruben Estephan Vargas Martinez,FWD,Sevilla FC,12000000,62,1998-08-05,179,11
+200,8,Eray Ervin Cömert,DEF,Valencia CF,2500000,22,1998-02-04,183,0
 201,8,Noah Arinzechukwu Okafor,FWD,Leeds United FC,25000000,25,2000-05-24,185,2
 202,8,Michel Aebischer,MID,Pisa SC,4000000,41,1997-01-06,183,2
 203,8,Marvin Keller,GK,BSC Young Boys,6000000,1,2002-07-03,189,0
@@ -207,32 +207,32 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 206,8,Aurèle Florian Amenda,DEF,Eintracht Frankfurt,10000000,7,2003-07-31,194,0
 207,8,Luca Antony Jaquez,DEF,VfB Stuttgart,10000000,3,2003-06-02,187,0
 208,8,Cedric Jan Itten,FWD,Fortuna Düsseldorf,1800000,15,1996-12-27,190,5
-209,9,Ramsés Alisson,GK,Liverpool FC,15000000,79,1992-10-02,193,0
-210,9,José Ederson Silva,MID,Atalanta Bergamo,45000000,3,1999-07-07,184,0
-211,9,Gabriel Gabriel Magalhaes,DEF,Arsenal FC,75000000,18,1997-12-19,190,1
-212,9,MARQUINHOSMarcos,DEF,Paris Saint-Germain,28000000,106,1994-05-14,183,7
-213,9,Henrique,MID,Manchester United FC,6000000,87,1992-02-23,185,9
-214,9,Sandro Alex,DEF,CR Flamengo,1000000,45,1991-01-26,180,2
-215,9,José Vinicius,FWD,Real Madrid C. F.,140000000,50,2000-07-12,176,10
-216,9,GUIMARAESBruno Bruno,MID,Newcastle United FC,70000000,44,1997-11-16,182,3
-217,9,Matheus Matheus Cunha,FWD,Manchester United FC,75000000,24,1999-05-27,183,1
-218,9,Neymar Neymar Jr,FWD,Santos FC,8000000,128,1992-02-05,175,79
-219,9,Raphael Raphinha,FWD,FC Barcelona,70000000,40,1996-12-14,176,11
-220,9,Weverton Weverton,GK,Grêmio FBPA,700000,11,1987-12-13,189,0
-221,9,Luiz Danilo,DEF,CR Flamengo,2000000,71,1991-07-15,184,1
-222,9,Bremer Bremer,DEF,Juventus FC,35000000,8,1997-03-18,188,1
-223,9,PEREIRALeonardo Leo,DEF,CR Flamengo,12000000,4,1996-01-31,189,0
-224,9,Douglas Douglas Santos,DEF,FC Zenit St. Petersburg,7500000,8,1994-03-22,173,0
-225,9,Henrique Fabinho,MID,Al Ittihad,12000000,34,1993-10-23,188,0
-226,9,Danilo Danilo Santos,MID,Botafogo,32000000,5,2001-04-29,177,2
-227,9,Felipe Endrick,FWD,Olympique Lyonnais,40000000,17,2006-07-21,172,4
-228,9,Lucas Lucas Paqueta,MID,CR Flamengo,32000000,64,1997-08-27,183,13
-229,9,Henrique André Luiz,FWD,FC Zenit St. Petersburg,24000000,16,2001-01-02,182,2
-230,9,MARTINELLIGabriel Gabriel,FWD,Arsenal FC,45000000,23,2001-06-18,178,4
-231,9,Ederson Ederson,GK,Fenerbahçe SK,10000000,32,1993-08-17,188,0
-232,9,IBANEZRoger Roger,DEF,Al Ahli FC,18000000,8,1998-11-23,186,0
-233,9,Thiago Igor Thiago,FWD,Brentford FC,65000000,5,2001-06-26,190,2
-234,9,Vitor Rayan,FWD,AFC Bournemouth,60000000,2,2006-08-03,187,1
+209,9,Álisson Ramsés Becker,GK,Liverpool FC,15000000,79,1992-10-02,193,0
+210,9,Éderson José dos Santos Lourenço da Silva,MID,Atalanta Bergamo,45000000,3,1999-07-07,184,0
+211,9,Gabriel dos Santos Magalhães,DEF,Arsenal FC,75000000,18,1997-12-19,190,1
+212,9,Marcos Aoas Correa,DEF,Paris Saint-Germain,28000000,106,1994-05-14,183,7
+213,9,Carlos Henrique Casimiro,MID,Manchester United FC,6000000,87,1992-02-23,185,9
+214,9,Alex Sandro Lobo Silva,DEF,CR Flamengo,1000000,45,1991-01-26,180,2
+215,9,Vinicius José Paixão de Oliveira Júnior,FWD,Real Madrid C. F.,140000000,50,2000-07-12,176,10
+216,9,Bruno Guimarães Rodriguez Moura,MID,Newcastle United FC,70000000,44,1997-11-16,182,3
+217,9,Matheus Santos Carneiro da Cunha,FWD,Manchester United FC,75000000,24,1999-05-27,183,1
+218,9,Neymar da Silva Santos Júnior,FWD,Santos FC,8000000,128,1992-02-05,175,79
+219,9,Raphael Dias Belloli,FWD,FC Barcelona,70000000,40,1996-12-14,176,11
+220,9,Weverton Pereira da Silva,GK,Grêmio FBPA,700000,11,1987-12-13,189,0
+221,9,Danilo Luiz da Silva,DEF,CR Flamengo,2000000,71,1991-07-15,184,1
+222,9,Gleison Bremer Silva Nascimento,DEF,Juventus FC,35000000,8,1997-03-18,188,1
+223,9,Leonardo Pereira,DEF,CR Flamengo,12000000,4,1996-01-31,189,0
+224,9,Douglas dos Santos Justino de Melo,DEF,FC Zenit St. Petersburg,7500000,8,1994-03-22,173,0
+225,9,Fabio Henrique Tavares,MID,Al Ittihad,12000000,34,1993-10-23,188,0
+226,9,Danilo dos Santos de Oliveira,MID,Botafogo,32000000,5,2001-04-29,177,2
+227,9,Endrick Felipe Moreira de Sousa Pessoa,FWD,Olympique Lyonnais,40000000,17,2006-07-21,172,4
+228,9,Lucas Tolentino Coelho de Lima,MID,CR Flamengo,32000000,64,1997-08-27,183,13
+229,9,Luiz Henrique André Rosa da Silva,FWD,FC Zenit St. Petersburg,24000000,16,2001-01-02,182,2
+230,9,Gabriel Teodoro Martinelli Silva,FWD,Arsenal FC,45000000,23,2001-06-18,178,4
+231,9,Ederson Santana de Moraes,GK,Fenerbahçe SK,10000000,32,1993-08-17,188,0
+232,9,Roger Ibañez da Silva,DEF,Al Ahli FC,18000000,8,1998-11-23,186,0
+233,9,Igor Thiago Nascimento Rodrigues,FWD,Brentford FC,65000000,5,2001-06-26,190,2
+234,9,Rayan Vitor Simplicio Rocha,FWD,AFC Bournemouth,60000000,2,2006-08-03,187,1
 235,10,Yassine Bounou,GK,Al Hilal SC,3000000,91,1991-04-05,192,0
 236,10,Achraf Hakimi,DEF,Paris Saint-Germain,80000000,97,1998-11-04,180,11
 237,10,Noussair Mazraoui,DEF,Manchester United FC,18000000,46,1997-11-14,183,2
@@ -240,39 +240,39 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 239,10,Marwane Saadane,DEF,Al Fateh SC,400000,17,1992-01-17,185,1
 240,10,Ayyoub Bouaddi,MID,Lille OSC,50000000,4,2007-10-02,185,0
 241,10,Chemsdine Talbi,MID,Sunderland AFC,25000000,6,2005-05-09,175,0
-242,10,Azz-Eddine Ounahi,MID,Girona FC,10000000,50,2000-04-19,182,9
+242,10,Azz-eddine Ounahi,MID,Girona FC,10000000,50,2000-04-19,182,9
 243,10,Soufiane Rahimi,FWD,Al Ain FC,6000000,38,1996-06-02,180,12
-244,10,Brahim Diaz,FWD,Real Madrid C. F.,35000000,27,1999-08-03,170,15
+244,10,Brahim Abdelkader Diaz,FWD,Real Madrid C. F.,35000000,27,1999-08-03,170,15
 245,10,Ismael Saibari,MID,PSV Eindhoven,40000000,31,2001-01-28,185,10
-246,10,Monir El Kajoui,GK,RS Berkane,600000,52,1989-05-10,190,0
-247,10,Zakaria El Ouahdi,DEF,KRC Genk,17000000,3,2001-12-31,171,0
+246,10,Monir el Kajoui,GK,RS Berkane,600000,52,1989-05-10,190,0
+247,10,Zakaria el Ouahdi,DEF,KRC Genk,17000000,3,2001-12-31,171,0
 248,10,Issa Laye Lucas Jean Diop,DEF,Fulham FC,8000000,5,1997-01-09,194,0
-249,10,Samir El Mourabet,MID,RC Strasbourg,22000000,5,2005-10-06,187,0
+249,10,Samir el Mourabet,MID,RC Strasbourg,22000000,5,2005-10-06,187,0
 250,10,Gessime Ben Youssef Mustapha Yassine,MID,RC Strasbourg,12000000,4,2005-11-22,172,0
 251,10,Mohamed Amine Sbai,FWD,Angers SCO,4000000,2,2000-11-05,175,0
 252,10,Chadi Riad,DEF,Crystal Palace FC,15000000,7,2003-06-17,186,1
 253,10,Youssef Belammari,DEF,Al Ahly FC,1200000,18,1998-09-20,175,0
-254,10,Ayoub El Kaabi,FWD,Olympiacos FC,4500000,71,1993-06-25,182,36
+254,10,Ayoub el Kaabi,FWD,Olympiacos FC,4500000,71,1993-06-25,182,36
 255,10,Ayoube Amaimouni,FWD,Eintracht Frankfurt,10000000,3,2004-11-30,179,0
 256,10,Ahmed Reda Tagnaouti,GK,ASFAR,1000000,3,1996-04-05,194,0
-257,10,Bilal El Khannouss,MID,VfB Stuttgart,35000000,38,2004-05-10,180,3
-258,10,Neil Yoni El Aynaoui,MID,AS Roma,23000000,17,2001-07-02,185,2
+257,10,Bilal el Khannouss,MID,VfB Stuttgart,35000000,38,2004-05-10,180,3
+258,10,Neil Yoni el Aynaoui,MID,AS Roma,23000000,17,2001-07-02,185,2
 259,10,Redouane Halhal,DEF,KV Mechelen,5000000,3,2003-03-05,189,0
 260,10,Anass Salah Eddine,DEF,PSV Eindhoven,12000000,10,2002-01-18,181,0
 261,11,Johny Placide,GK,SC Bastia,250000,84,1988-01-29,181,0
 262,11,Carlens Jean Fedlaire Ruby Arcus,DEF,Angers SCO,1800000,57,1996-06-28,180,1
 263,11,Keeto Thermoncy,DEF,BSC Young Boys,100000,1,2006-03-29,179,0
 264,11,Ricardo Ade,DEF,LDU Quito,300000,62,1990-05-21,190,2
-265,11,Hannes Piterson Delcroix,DEF,FC Lugano,2000000,8,1999-02-28,183,0
+265,11,Hannes Piterson D Delcroix,DEF,FC Lugano,2000000,8,1999-02-28,183,0
 266,11,Carl Fred Sainte,MID,El Paso Locomotive FC,125000,26,2002-08-09,182,0
-267,11,Derrick Burckley Etienne,FWD,Toronto FC,800000,50,1996-11-25,178,8
+267,11,Derrick Burckley Etienne jr,FWD,Toronto FC,800000,50,1996-11-25,178,8
 268,11,Martin Yves Roberns Didier Experience,DEF,AS Nancy,400000,22,1999-03-09,178,0
 269,11,Duckens Nazon,FWD,Esteghlal Tehran FC,1600000,83,1994-04-07,181,44
 270,11,Jean Ricner Bellegarde,MID,Wolverhampton Wanderers FC,16000000,11,1998-06-27,170,0
-271,11,Don Deedson Deedson,FWD,FC Dallas,1200000,33,2001-02-11,178,10
-272,11,Alexandre Jr Pierre,GK,FC Sochaux-Montbéliard,100000,17,2001-02-25,190,0
+271,11,Don Deedson Louicius,FWD,FC Dallas,1200000,33,2001-02-11,178,10
+272,11,Alexandre jr Pierre,GK,FC Sochaux-Montbéliard,100000,17,2001-02-25,190,0
 273,11,Markhus Lacroix,DEF,Colorado Springs Switchbacks FC,125000,16,1993-10-14,175,3
-274,11,Garven-Michee Metusala,DEF,Colorado Springs Switchbacks FC,200000,15,1999-12-31,186,0
+274,11,Garven-michee Metusala,DEF,Colorado Springs Switchbacks FC,200000,15,1999-12-31,186,0
 275,11,Ruben Fritzner Providence,FWD,Almere City FC,300000,16,2001-07-07,178,3
 276,11,Lenny Alvin Pico Joseph,FWD,Ferencvárosi TC,500000,3,2000-10-12,182,1
 277,11,Danley Jean Jacques,MID,Philadelphia Union,3000000,32,2000-05-20,182,6
@@ -280,7 +280,7 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 279,11,Yassin Enzo Fortune,FWD,FC Vizela,400000,5,1999-01-30,186,0
 280,11,Frantzdy Pierrot,FWD,Çaykur Rizespor,1500000,54,1995-03-29,194,34
 281,11,Josue Jeremie Casimir,FWD,AJ Auxerre,3000000,8,2001-09-24,178,0
-282,11,Jean-Kévin Duverne,DEF,KAA Gent,2000000,17,1997-07-12,184,1
+282,11,Jean-kévin Duverne,DEF,KAA Gent,2000000,17,1997-07-12,184,1
 283,11,Josue Duverger,GK,FC Cosmos Koblenz,125000,7,2000-04-27,187,0
 284,11,Wilguens Raphael Polynice Paugain,DEF,SV Zulte Waregem,800000,8,2001-08-24,180,0
 285,11,Dominique Celidor Simon,MID,FC Tatran Pre š ov,125000,2,2000-07-29,178,0
@@ -288,10 +288,10 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 287,12,Angus Fraser James Gunn,GK,Nottingham Forest FC,1000000,23,1996-01-22,196,0
 288,12,Aaron Buchanan Hickey,DEF,Brentford FC,16000000,22,2002-06-10,185,0
 289,12,Andrew Henry Robertson,DEF,Liverpool FC,7000000,95,1994-03-11,178,4
-290,12,Mc,MID,SSC Napoli,4000000,71,1996-12-08,193,15
+290,12,Scott Francis McTominay,MID,SSC Napoli,4000000,71,1996-12-08,193,15
 291,12,Grant Campbell Hanley,DEF,Hibernian FC,200000,69,1991-11-20,188,2
 292,12,Kieran Tierney,DEF,Celtic FC,8000000,56,1997-06-05,180,2
-293,12,Mc,MID,Aston Villa FC,4000000,87,1994-10-18,178,21
+293,12,John McGinn,MID,Aston Villa FC,4000000,87,1994-10-18,178,21
 294,12,Tyler Robert Fletcher,MID,Manchester United FC,1000000,2,2007-03-19,183,0
 295,12,Lyndon John Dykes,FWD,Charlton Athletic FC,800000,52,1995-10-07,188,10
 296,12,Che Sac Everton Fred Adams,FWD,Torino FC,5000000,48,1996-07-13,175,13
@@ -301,24 +301,24 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 300,12,Ross Cameron Stewart,FWD,Southampton FC,2800000,3,1996-07-11,188,0
 301,12,John Francis Souttar,DEF,Rangers FC,2000000,24,1996-09-25,186,2
 302,12,Dominic John Hyam,DEF,Wrexham AFC,2000000,4,1995-12-20,188,0
-303,12,Ben Gannon Gannon-Doak,FWD,AFC Bournemouth,15000000,15,2005-11-11,173,1
+303,12,Ben Gannon Doak,FWD,AFC Bournemouth,15000000,15,2005-11-11,173,1
 304,12,George David Eric Hirst,FWD,Ipswich Town FC,10000000,10,1999-02-15,191,1
 305,12,Lewis Ferguson,MID,Bologna FC,14000000,25,1999-08-24,181,1
 306,12,Lawrence Shankland,FWD,Heart Of Midlothian FC,3000000,21,1995-08-10,185,7
 307,12,Craig Sinclair Gordon,GK,Heart Of Midlothian FC,50000,84,1982-12-31,193,0
 308,12,Nathan Kenneth Patterson,DEF,Everton FC,10000000,27,2001-10-16,183,1
-309,12,Mc,MID,Norwich City FC,4000000,59,1992-01-08,183,3
+309,12,Kenneth McLean,MID,Norwich City FC,4000000,59,1992-01-08,183,3
 310,12,Anthony Ralston,DEF,Celtic FC,1500000,27,1998-11-16,178,1
 311,12,Findlay Kenneth Curtis,FWD,Kilmarnock FC,2000000,4,2006-06-09,180,1
-312,12,Mc,DEF,GNK Dinamo Zagreb,4000000,50,1996-11-12,189,1
+312,12,Scott Fraser McKenna,DEF,GNK Dinamo Zagreb,4000000,50,1996-11-12,189,1
 313,13,Matthew Charles Turner,GK,New England Revolution,2500000,54,1994-06-24,190,0
 314,13,Sergiño Gianni Dest,DEF,PSV Eindhoven,18000000,40,2000-11-03,173,3
 315,13,Christopher Jeffrey Richards,DEF,Crystal Palace FC,28000000,37,2000-03-28,189,3
 316,13,Tyler Shaan Adams,MID,AFC Bournemouth,25000000,55,1999-02-14,175,2
 317,13,Antonee Robinson,DEF,Fulham FC,22000000,55,1997-08-08,183,5
-318,13,Auston Levi-Jesaiah Trusty,DEF,Celtic FC,6000000,8,1998-08-12,190,0
+318,13,Auston Levi-jesaiah Trusty,DEF,Celtic FC,6000000,8,1998-08-12,190,0
 319,13,Giovanni Alejandro Reyna,MID,Borussia Mönchengladbach,4000000,39,2002-11-13,187,10
-320,13,Mc,MID,Juventus FC,7000000,67,1998-08-28,180,12
+320,13,Weston James Earl McKennie,MID,Juventus FC,7000000,67,1998-08-28,180,12
 321,13,Ricardo Daniel Pepi,FWD,PSV Eindhoven,30000000,38,2003-01-09,185,13
 322,13,Christian Mate Pulisic,FWD,AC Milan,40000000,87,1998-09-18,177,33
 323,13,Brenden Russell Aaronson,FWD,Leeds United FC,22000000,58,2000-10-22,177,9
@@ -332,37 +332,37 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 331,13,Haji Amir Wright,FWD,Coventry City FC,16000000,20,1998-03-27,191,7
 332,13,Folarin Jolaoluwa Balogun,FWD,AS Monaco,40000000,28,2001-07-03,179,11
 333,13,Timothy Tarpeh Weah,FWD,Olympique Marseille,20000000,52,2000-02-22,183,7
-334,13,Mc,DEF,Toulouse FC,7000000,29,1999-02-25,186,0
+334,13,Mark Alexander McKenzie,DEF,Toulouse FC,7000000,29,1999-02-25,186,0
 335,13,Joseph Michael Scally,DEF,Borussia Mönchengladbach,7000000,26,2002-12-31,184,0
 336,13,Matthew Andrew Geary Freese,GK,New York City FC,2000000,16,1998-09-02,198,0
 337,13,Christopher Keith Brady,GK,Chicago Fire FC,2500000,1,2004-03-03,193,0
-338,13,Alejandro Zendejas,FWD,Club América,10000000,14,1998-02-07,167,2
-339,14,Roberto Junior Fernandez,GK,Cerro Porteño,100000,30,1988-03-29,191,0
-340,14,Victor Gustavo Velazquez,DEF,Cerro Porteño,1000000,14,1991-04-17,189,1
-341,14,Omar Federico Alderete,DEF,Sunderland AFC,13000000,37,1996-12-26,190,3
+338,13,Alejandro Zendejas Saavedra,FWD,Club América,10000000,14,1998-02-07,167,2
+339,14,Roberto Junior Fernandez Torres,GK,Cerro Porteño,100000,30,1988-03-29,191,0
+340,14,Victor Gustavo Velazquez Ramos,DEF,Cerro Porteño,1000000,14,1991-04-17,189,1
+341,14,Omar Federico Alderete Fernandez,DEF,Sunderland AFC,13000000,37,1996-12-26,190,3
 342,14,Juan Jose Caceres,DEF,FC Dynamo Moscow,5000000,18,2000-06-01,187,0
-343,14,Fabián Cornelio Balbuena,DEF,Grêmio FBPA,900000,47,1991-08-23,188,2
-344,14,Júnior Osmar Ignacio Alonso,DEF,Atlético Mineiro,1500000,72,1993-02-09,184,3
-345,14,Ramón Sosa,MID,SE Palmeiras,10000000,30,1999-08-31,178,1
-346,14,Diego Alexander Gomez,MID,Brighton & Hove Albion FC,25000000,25,2003-03-27,183,3
-347,14,Arnaldo Antonio Sanabria,FWD,US Cremonese,1800000,49,1996-03-04,180,7
-348,14,Miguel Angel Almiron,MID,Atlanta United FC,7000000,77,1994-02-10,178,10
-349,14,Mauricio Mauricio,MID,SE Palmeiras,15000000,4,2001-06-22,175,1
-350,14,Orlando Daniel Gill,GK,CA San Lorenzo,6000000,7,2000-06-11,190,0
-351,14,Jose Maria Canale,DEF,CA Lanús,2200000,2,1996-07-20,192,0
+343,14,Fabián Cornelio Balbuena González,DEF,Grêmio FBPA,900000,47,1991-08-23,188,2
+344,14,Júnior Osmar Ignacio Alonso Mujica,DEF,Atlético Mineiro,1500000,72,1993-02-09,184,3
+345,14,Ramón Sosa Acosta,MID,SE Palmeiras,10000000,30,1999-08-31,178,1
+346,14,Diego Alexander Gomez Amarilla,MID,Brighton & Hove Albion FC,25000000,25,2003-03-27,183,3
+347,14,Arnaldo Antonio Sanabria Ayala,FWD,US Cremonese,1800000,49,1996-03-04,180,7
+348,14,Miguel Angel Almiron Rejala,MID,Atlanta United FC,7000000,77,1994-02-10,178,10
+349,14,Mauricio Magalhaes Prado,MID,SE Palmeiras,15000000,4,2001-06-22,175,1
+350,14,Orlando Daniel Gill Noldin,GK,CA San Lorenzo,6000000,7,2000-06-11,190,0
+351,14,Jose Maria Canale Dominguez,DEF,CA Lanús,2200000,2,1996-07-20,192,0
 352,14,Adrián Andrés Cubas,MID,Vancouver Whitecaps FC,4500000,34,1996-05-11,166,0
-353,14,Gustavo Raul Gomez,DEF,SE Palmeiras,3500000,90,1993-05-06,179,4
-354,14,Damián Josue Bobadilla,MID,São Paulo FC,6000000,20,2001-07-11,180,1
+353,14,Gustavo Raul Gómez Portillo,DEF,SE Palmeiras,3500000,90,1993-05-06,179,4
+354,14,Damián Josue Bobadilla Benitez,MID,São Paulo FC,6000000,20,2001-07-11,180,1
 355,14,Alejandro Sebastian Romero Gamarra,FWD,Al Ain FC,3500000,35,1995-01-11,165,6
-356,14,Alex Adrian Arce,FWD,CS Independiente Rivadavia,3500000,16,1995-06-16,188,1
-357,14,Julio Cesar Enciso,FWD,RC Strasbourg,25000000,33,2004-01-23,168,4
-358,14,Braian Oscar Ojeda,MID,Orlando City SC,3500000,17,2000-06-27,173,0
-359,14,Gabriel Avalos,FWD,CA Independiente,750000,23,1991-07-09,185,2
-360,14,Gastón Hernán Olveira,GK,Club Olimpia,1000000,1,1993-04-21,191,0
-361,14,Matias Galarza,MID,Atlanta United FC,3000000,15,2002-02-11,175,3
-362,14,Gustavo Ruben Caballero,MID,Portsmouth FC,400000,2,2001-09-21,189,1
-363,14,Isidro Miguel Pitta,FWD,Red Bull Bragantino,7500000,5,1999-08-14,185,0
-364,14,Alexandro Maidana,DEF,CA Talleres,2500000,2,2005-07-26,173,1
+356,14,Alex Adrian Arce Barrios,FWD,CS Independiente Rivadavia,3500000,16,1995-06-16,188,1
+357,14,Julio Cesar Enciso Espinola,FWD,RC Strasbourg,25000000,33,2004-01-23,168,4
+358,14,Braian Oscar Ojeda Rodriguez,MID,Orlando City SC,3500000,17,2000-06-27,173,0
+359,14,Gabriel Avalos Stumpfs,FWD,CA Independiente,750000,23,1991-07-09,185,2
+360,14,Gastón Hernán Olveira Echeverria,GK,Club Olimpia,1000000,1,1993-04-21,191,0
+361,14,Matias Galarza Fonda,MID,Atlanta United FC,3000000,15,2002-02-11,175,3
+362,14,Gustavo Ruben Caballero Gonzalez,MID,Portsmouth FC,400000,2,2001-09-21,189,1
+363,14,Isidro Miguel Pitta Saldivar,FWD,Red Bull Bragantino,7500000,5,1999-08-14,185,0
+364,14,Alexandro Maidana Mendieta,DEF,CA Talleres,2500000,2,2005-07-26,173,1
 365,15,Mathew David Ryan,GK,Levante UD,1800000,104,1992-04-08,184,0
 366,15,Milos Degenek,DEF,APOEL FC,450000,57,1994-04-28,187,1
 367,15,Alessandro Circati,DEF,Parma,12000000,14,2003-10-10,191,1
@@ -371,11 +371,11 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 370,15,Jason Kato Geria,DEF,Albirex Niigata,350000,15,1993-05-10,181,0
 371,15,Mathew Allan Leckie,FWD,Melbourne City FC,300000,81,1991-02-04,181,14
 372,15,Connor Isaac Metcalfe,MID,FC St. Pauli,1500000,37,1999-11-05,183,2
-373,15,Mohamed Toure,FWD,Norwich City FC,8000000,11,2004-03-26,186,2
+373,15,Mohamed A Toure,FWD,Norwich City FC,8000000,11,2004-03-26,186,2
 374,15,Ajdin Hrustic,FWD,SC Heracles Almelo,600000,37,1996-07-05,180,3
 375,15,Awer Bul Mabil,FWD,CD Castellón,1300000,38,1995-09-15,178,10
 376,15,Paul David Izzo,GK,Randers FC,500000,4,1995-01-06,184,0
-377,15,Aiden Connor Oneill,MID,New York City FC,3000000,32,1998-07-04,180,0
+377,15,Aiden Connor O'neill,MID,New York City FC,3000000,32,1998-07-04,180,0
 378,15,Cameron Peter Devlin,MID,Heart Of Midlothian FC,2000000,5,1998-06-07,170,0
 379,15,Kai Clifton Trewin,DEF,New York City FC,1800000,6,2001-05-18,183,0
 380,15,Aziz Behich,DEF,Melbourne City FC,250000,85,1990-12-16,170,3
@@ -386,40 +386,40 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 385,15,Cameron Robert Burgess,DEF,Swansea City AFC,1500000,28,1995-10-21,194,0
 386,15,Jackson Alexander Irvine,MID,FC St. Pauli,1000000,83,1993-03-07,189,14
 387,15,Nishan Matthew Velupillay,FWD,Melbourne Victory FC,650000,8,2001-05-07,181,3
-388,15,Paul Michael Junior Okon-Engstler,MID,Sydney FC,1200000,7,2005-01-24,185,0
+388,15,Paul Michael Junior Okon-engstler,MID,Sydney FC,1200000,7,2005-01-24,185,0
 389,15,Lucas Herrington,DEF,Colorado Rapids,4500000,4,2007-09-05,193,0
 390,15,Tete Owen Yengi,FWD,FC Machida Zelvia,450000,2,2000-11-28,197,1
-391,16,Fehmi Mert Gunok,GK,Fenerbahçe SK,500000,37,1989-03-01,196,0
-392,16,Mehmet Zeki Celik,DEF,AS Roma,14000000,62,1997-02-17,180,3
-393,16,Merih Demiral,DEF,Al Ahli FC,12000000,64,1998-03-05,190,6
-394,16,Ça ğ lar Soyuncu,DEF,Fenerbahçe SK,3500000,60,1996-05-23,185,2
-395,16,Salih Ozcan,MID,Borussia Dortmund,3500000,31,1998-01-11,182,1
-396,16,Orkun Kokcu,MID,Be ş ikta ş  JK,25000000,51,2000-12-29,175,4
-397,16,Muhammed Kerem Akturkoglu,FWD,Fenerbahçe SK,20000000,53,1998-10-21,172,15
-398,16,Arda Guler,FWD,Real Madrid C. F.,90000000,31,2005-02-25,175,6
-399,16,Deniz Daniel Gul,FWD,FC Porto,5000000,9,2004-07-02,192,2
-400,16,Hakan Calhanoglu,MID,FC Internazionale Milano,16000000,107,1994-02-08,178,22
+391,16,Fehmi Mert Günok,GK,Fenerbahçe SK,500000,37,1989-03-01,196,0
+392,16,Mehmet Zeki Çelik,DEF,AS Roma,14000000,62,1997-02-17,180,3
+393,16,Merih Demi̇ral,DEF,Al Ahli FC,12000000,64,1998-03-05,190,6
+394,16,Çağlar Söyüncü,DEF,Fenerbahçe SK,3500000,60,1996-05-23,185,2
+395,16,Salih Özcan,MID,Borussia Dortmund,3500000,31,1998-01-11,182,1
+396,16,Orkun Kökçü,MID,Be ş ikta ş  JK,25000000,51,2000-12-29,175,4
+397,16,Muhammed Kerem Aktürkoğlu,FWD,Fenerbahçe SK,20000000,53,1998-10-21,172,15
+398,16,Arda Güler,FWD,Real Madrid C. F.,90000000,31,2005-02-25,175,6
+399,16,Deniz Daniel Gül,FWD,FC Porto,5000000,9,2004-07-02,192,2
+400,16,Hakan Çalhanoğlu,MID,FC Internazionale Milano,16000000,107,1994-02-08,178,22
 401,16,Kenan Yildiz,FWD,Juventus FC,75000000,29,2005-05-04,187,5
 402,16,Altay Bayindir,GK,Manchester United FC,5000000,12,1998-04-14,198,0
 403,16,Evren Eren Elmali,DEF,Galatasaray SK,5000000,23,2000-07-07,181,0
-404,16,Abdülker Bardakci,DEF,Galatasaray SK,6500000,28,1994-09-07,185,2
+404,16,Abdülkeri̇m Bardakci,DEF,Galatasaray SK,6500000,28,1994-09-07,185,2
 405,16,Ozan Muhammed Kabak,DEF,TSG Hoffenheim,15000000,30,2000-03-25,187,2
-406,16,Ismailİsma Yuksek,MID,Fenerbahçe SK,15000000,33,1999-01-26,183,1
-407,16,Can İrfan Kahveci,FWD,Kasımpa ş a SK,3000000,47,1995-07-15,180,6
-408,16,Mert Muldur,DEF,Fenerbahçe SK,7000000,46,1999-04-03,184,3
-409,16,Yunus Akgun,FWD,Galatasaray SK,18000000,20,2000-07-07,173,4
-410,16,Ferdi Erenay Kadioglu,DEF,Brighton & Hove Albion FC,35000000,31,1999-10-07,174,2
-411,16,Barı ş Alper Yilmaz,FWD,Galatasaray SK,30000000,36,2000-05-23,186,4
+406,16,İsmai̇l Yüksek,MID,Fenerbahçe SK,15000000,33,1999-01-26,183,1
+407,16,İrfan Kahveci̇,FWD,Kasımpa ş a SK,3000000,47,1995-07-15,180,6
+408,16,Mert Müldür,DEF,Fenerbahçe SK,7000000,46,1999-04-03,184,3
+409,16,Yunus Akgün,FWD,Galatasaray SK,18000000,20,2000-07-07,173,4
+410,16,Ferdi Erenay Kadioğlu,DEF,Brighton & Hove Albion FC,35000000,31,1999-10-07,174,2
+411,16,Barış Alper Yilmaz,FWD,Galatasaray SK,30000000,36,2000-05-23,186,4
 412,16,Kaan Ayhan,MID,Galatasaray SK,1500000,73,1994-11-10,185,5
-413,16,Ugurcan Cakir,GK,Galatasaray SK,15000000,40,1996-04-05,191,0
-414,16,Oguz Aydin,FWD,Fenerbahçe SK,7000000,11,2000-10-27,183,0
+413,16,Uğurcan Çakir,GK,Galatasaray SK,15000000,40,1996-04-05,191,0
+414,16,Oğuz Aydin,FWD,Fenerbahçe SK,7000000,11,2000-10-27,183,0
 415,16,Samet Akaydin,DEF,Çaykur Rizespor,1200000,19,1994-03-13,190,1
 416,16,Can Yılmaz Uzun,FWD,Eintracht Frankfurt,45000000,6,2005-11-11,186,1
 417,17,Manuel Peter Neuer,GK,FC Bayern München,4000000,125,1986-03-27,193,0
-418,17,Antonio Ruediger,DEF,Real Madrid C. F.,6000000,83,1993-03-03,190,3
+418,17,Antonio Rüdiger,DEF,Real Madrid C. F.,6000000,83,1993-03-03,190,3
 419,17,Waldemar Anton,DEF,Borussia Dortmund,18000000,14,1996-07-20,189,0
 420,17,Jonathan Glao Tah,DEF,FC Bayern München,28000000,48,1996-02-11,195,1
-421,17,Aleksandar Pavlovic,MID,FC Bayern München,90000000,12,2004-05-03,188,1
+421,17,Aleksandar Pavlović,MID,FC Bayern München,90000000,12,2004-05-03,188,1
 422,17,Joshua Walter Kimmich,DEF,FC Bayern München,35000000,111,1995-02-08,177,10
 423,17,Kai Lukas Havertz,FWD,Arsenal FC,55000000,59,1999-06-11,190,24
 424,17,Leon Christoph Goretzka,MID,FC Bayern München,12000000,71,1995-02-06,189,15
@@ -427,24 +427,24 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 426,17,Jamal Musiala,MID,FC Bayern München,100000000,43,2003-02-26,180,10
 427,17,Nick Woltemade,FWD,Newcastle United FC,55000000,11,2002-02-14,198,4
 428,17,Oliver Baumann,GK,TSG Hoffenheim,2500000,13,1990-06-02,187,0
-429,17,Pascal Alexander GROß GROß Gross,MID,Brighton & Hove Albion FC,2500000,18,1991-06-15,181,1
+429,17,Pascal Alexander Groß,MID,Brighton & Hove Albion FC,2500000,18,1991-06-15,181,1
 430,17,Maximilian Beier,FWD,Borussia Dortmund,40000000,9,2002-10-17,185,0
 431,17,Nico Cédric Schlotterbeck,DEF,Borussia Dortmund,55000000,28,1999-12-01,191,1
 432,17,Angelo Nicolas Stiller,MID,VfB Stuttgart,45000000,8,2001-04-04,183,0
 433,17,Florian Richard Wirtz,MID,Liverpool FC,100000000,42,2003-05-03,176,11
 434,17,Nathaniel Christopher Brown,DEF,Eintracht Frankfurt,40000000,6,2003-06-16,176,1
-435,17,Leroy Aziz Sane,MID,Galatasaray SK,20000000,77,1996-01-11,183,17
+435,17,Leroy Aziz Sané,MID,Galatasaray SK,20000000,77,1996-01-11,183,17
 436,17,Nadiem Amiri,MID,1. FSV Mainz 05,17000000,11,1996-10-27,178,1
-437,17,Alexander Nuebel,GK,VfB Stuttgart,12000000,3,1996-09-30,193,0
+437,17,Alexander Nübel,GK,VfB Stuttgart,12000000,3,1996-09-30,193,0
 438,17,David Raum,DEF,RB Leipzig,25000000,38,1998-04-22,180,1
 439,17,Felix Kalu Nmecha,MID,Borussia Dortmund,50000000,9,2000-10-10,190,2
 440,17,Malick Thiaw,DEF,Newcastle United FC,45000000,5,2001-08-08,194,0
-441,17,Forzan Assan Ouedraogo,MID,RB Leipzig,28000000,1,2006-05-09,191,1
+441,17,Forzan Assan Ouédraogo,MID,RB Leipzig,28000000,1,2006-05-09,191,1
 442,17,Deniz Undav,FWD,VfB Stuttgart,22000000,10,1996-07-19,179,7
 443,18,Eloy Victor Room,GK,Miami FC,200000,73,1989-02-06,190,0
 444,18,Shurandy Ruggerio Sambo,DEF,Sparta Rotterdam,1300000,8,2001-08-19,174,0
 445,18,Juriën Godfried Juan Gaari,DEF,Abha Club,450000,60,1993-12-23,183,1
-446,18,Róshón Felix Romar Jordan Van Eijma,DEF,RKC Waalwijk,375000,28,1998-06-09,186,1
+446,18,Róshón Felix Romar Jordan van Eijma,DEF,RKC Waalwijk,375000,28,1998-06-09,186,1
 447,18,Sherel Constancio Floranus,DEF,PEC Zwolle,800000,28,1998-08-23,181,0
 448,18,Godfried Roemeratoe,MID,RKC Waalwijk,400000,29,1999-08-19,178,1
 449,18,Juninho Gracielo Bacuna,MID,FC Volendam,1700000,51,1997-08-07,178,14
@@ -452,12 +452,12 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 451,18,Jürgen Leonardo Locadia,FWD,Miami FC,1800000,14,1993-11-07,193,1
 452,18,Leandro Jones Johan Bacuna,MID,I ğ dır FK,900000,73,1991-08-21,180,16
 453,18,Jeremy Cornelis Jacobus Antonisse,FWD,AE Kifisia FC,800000,28,2002-03-29,164,4
-454,18,Juniffer Naigelino Hansen,FWD,Middlesbrough FC,3000000,7,2002-05-18,176,1
+454,18,Misjonne Juniffer Naigelino Hansen,FWD,Middlesbrough FC,3000000,7,2002-05-18,176,1
 455,18,Tyrese Yurvencey Noslin,FWD,SC Telstar,750000,7,2002-09-11,182,1
-456,18,Kenji Joël Gorre,FWD,Maccabi Haifa FC,800000,38,1994-09-29,174,6
-457,18,Jainel Archenir Martha,MID,Rotherham United FC,1200000,9,2003-09-04,180,2
+456,18,Kenji Joël Gorré,FWD,Maccabi Haifa FC,800000,38,1994-09-29,174,6
+457,18,Ar'jany Jainel Archenir Martha,MID,Rotherham United FC,1200000,9,2003-09-04,180,2
 458,18,Jearl Erwin Margaritha,FWD,SK Beveren,1500000,23,2000-04-10,181,5
-459,18,Brandley Mack-Olien Kuwas,FWD,FC Volendam,250000,36,1992-09-19,181,2
+459,18,Brandley MacK-olien Kuwas,FWD,FC Volendam,250000,36,1992-09-19,181,2
 460,18,Armando Maria Obispo,DEF,PSV Eindhoven,4000000,7,1999-03-05,185,0
 461,18,Gervane Zjandric Adonnis Kastaneer,FWD,Terengganu FC,200000,30,1996-06-09,189,9
 462,18,Joshua Benjamin Brenet,DEF,Kayserispor,1000000,18,1994-03-20,181,2
@@ -466,65 +466,65 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 465,18,Riechedly Guillermo Bazoer,DEF,Konyaspor,1500000,6,1996-10-12,184,0
 466,18,Deveron Lenny Fonville,DEF,NEC Nijmegen,1500000,3,2003-05-16,188,0
 467,18,Tyrick Jeremy Bodak,GK,SC Telstar,25000,4,2002-05-15,190,0
-468,18,Trevor Irving Doornbusch,GK,VVV Venlo,100000,8,1999-07-06,188,0
+468,18,Trevor Irving Doornbuschdoornbusch,GK,VVV Venlo,100000,8,1999-07-06,188,0
 469,19,Yahia Fofana,GK,Çaykur Rizespor,5000000,37,2000-08-21,194,0
 470,19,Ousmane Diomande,DEF,Sporting CP,42000000,16,2003-12-04,190,1
 471,19,N'clomande Ghislain Konan,DEF,Gil Vicente FC,3000000,55,1995-12-27,176,0
 472,19,Jean Michael Seri,MID,NK Maribor,1500000,65,1991-07-19,168,4
 473,19,Wilfried Stephane Singo,DEF,Galatasaray SK,23000000,36,2000-12-25,182,1
 474,19,Seko Mohamed Fofana,MID,FC Porto,8000000,33,1995-05-07,185,7
-475,19,Odilon Dorgeless Kossounou,DEF,Atalanta Bergamo,15000000,37,2001-01-04,191,0
+475,19,Kouakou Odilon Dorgeless Kossounou,DEF,Atalanta Bergamo,15000000,37,2001-01-04,191,0
 476,19,Franck Yannick Kessie,MID,Al Ahli FC,12000000,105,1996-12-19,183,15
-477,19,Ange-Yoan Laurent Bonny,FWD,FC Internazionale Milano,35000000,2,2003-10-25,189,0
+477,19,Ange-yoan Laurent Bonny,FWD,FC Internazionale Milano,35000000,2,2003-10-25,189,0
 478,19,Simon Adingra,FWD,AS Monaco,22000000,29,2002-01-01,175,5
 479,19,Yan Diomande,FWD,RB Leipzig,90000000,11,2006-11-14,180,3
-480,19,Elye Delmas Wahi,FWD,OGC Nice,18000000,3,2003-01-02,181,0
+480,19,Sepe Elye Delmas Wahi,FWD,OGC Nice,18000000,3,2003-01-02,181,0
 481,19,Christopher Tea Domoraud Operi,DEF,Ba ş ak ş ehir FK,4000000,12,1997-04-29,183,0
 482,19,Oumar Diakite,FWD,Cercle Brugge,5000000,29,2003-12-20,182,6
 483,19,Amad Diallo,FWD,Manchester United FC,45000000,20,2002-07-11,173,7
 484,19,Mohamed Kone,GK,Sporting Charleroi,2000000,0,2002-03-07,186,0
-485,19,Guela Maho-Lewis Doue,DEF,RC Strasbourg,20000000,21,2002-10-17,187,3
+485,19,Guela Maho-lewis Doue,DEF,RC Strasbourg,20000000,21,2002-10-17,187,3
 486,19,Ibrahim Sangare,MID,Nottingham Forest FC,20000000,56,1997-12-02,191,11
 487,19,Nicolas Pepe,FWD,Villarreal CF,6000000,57,1995-05-29,183,12
-488,19,Emmanuel Elysee Djedje Agbadou,DEF,Be ş ikta ş  JK,16000000,22,1997-06-17,185,2
+488,19,Badobre Emmanuel Elysee Djedje Agbadou,DEF,Be ş ikta ş  JK,16000000,22,1997-06-17,185,2
 489,19,Obite Evan Ndicka,DEF,AS Roma,35000000,29,1999-08-20,192,0
 490,19,Evann Ludovic Vidjannagni Guessand,FWD,Crystal Palace FC,25000000,21,2001-07-01,188,4
-491,19,Alban-Marc Lafont,GK,Panathinaikos FC,3000000,4,1999-01-23,196,0
+491,19,Alban-marc Lafont,GK,Panathinaikos FC,3000000,4,1999-01-23,196,0
 492,19,Bazoumana Toure,FWD,TSG Hoffenheim,40000000,7,2006-03-02,178,2
 493,19,Parfait Guiagon,MID,Sporting Charleroi,5000000,5,2001-02-22,165,0
 494,19,Christ Ravynel Inao Oulai,MID,Trabzonspor,23000000,10,2006-04-06,173,0
-495,20,Hernán Ismael Galindez,GK,CA Huracán,300000,36,1987-03-30,189,0
-496,20,Félix Eduardo Torres,DEF,SC Internacional,1000000,49,1997-01-11,187,5
-497,20,Piero Martin Hincapie,DEF,Arsenal FC,50000000,53,2002-01-09,183,2
-498,20,Joel Leandro Ordonez,DEF,Club Brugge,33000000,18,2004-04-21,188,0
-499,20,Jordy Jose Alcivar,MID,Independiente Del Valle,2500000,11,1999-08-05,168,1
-500,20,Willian Joel Pacho,DEF,Paris Saint-Germain,80000000,35,2001-10-16,188,2
-501,20,Pervis Josue Estupinan,DEF,AC Milan,12000000,54,1998-01-21,175,5
-502,20,Anthony Lenin Valencia,MID,Royal Antwerp FC,1800000,3,2003-07-21,173,1
-503,20,John Yeboah,FWD,Venezia FC,1500000,23,2000-06-23,170,3
-504,20,Ray Kendry Paez,MID,CA River Plate,8000000,26,2007-05-04,178,2
-505,20,Kevin Jose Rodriguez,FWD,Royale Union Saint-Gilloise,6000000,32,2000-03-04,190,2
-506,20,Wellington Moisés Ramirez,GK,AE Kifisia FC,800000,7,2000-09-09,185,0
-507,20,Enner Remberto Valencia,FWD,CF Pachuca,1000000,106,1989-11-04,177,49
-508,20,Alan Steve Minda,MID,Atlético Mineiro,3000000,21,2003-05-14,174,2
-509,20,Pedro Jeampierre Vite,MID,Pumas UNAM,6000000,18,2002-03-09,172,1
-510,20,Jordy Josue Caicedo,FWD,CA Huracán,2000000,20,1997-11-18,186,4
-511,20,Ángelo Smit Preciado,DEF,Atlético Mineiro,3500000,57,1998-02-18,174,0
-512,20,Denil Daniel Castillo,MID,FC Midtjylland,7000000,5,2004-03-24,189,0
-513,20,Gonzalo Jordy Plata,FWD,CR Flamengo,9000000,51,2000-11-01,178,8
-514,20,Nilson David Angulo,FWD,Sunderland AFC,17000000,15,2003-06-19,184,2
-515,20,Alan Steven Franco,MID,Atlético Mineiro,4500000,59,1998-08-21,175,1
-516,20,Gonzalo Roberto Valle,GK,LDU Quito,350000,4,1996-02-28,186,0
-517,20,Moisés Isaac Caicedo,MID,Chelsea FC,100000000,62,2001-11-02,178,3
-518,20,Jeremy Alberto Arevalo,FWD,VfB Stuttgart,7000000,4,2005-03-19,182,0
-519,20,Jackson Gabriel Porozo,DEF,Club Tijuana,2500000,10,2000-08-04,192,1
-520,20,Yaimar Abel Medina,DEF,KRC Genk,4000000,6,2004-11-05,173,0
+495,20,Hernán Ismael Galíndez,GK,CA Huracán,300000,36,1987-03-30,189,0
+496,20,Félix Eduardo Torres Caicedo,DEF,SC Internacional,1000000,49,1997-01-11,187,5
+497,20,Piero Martin Hincapié Reyna,DEF,Arsenal FC,50000000,53,2002-01-09,183,2
+498,20,Joel Leandro Ordóñez Guerreroordóñez,DEF,Club Brugge,33000000,18,2004-04-21,188,0
+499,20,Jordy Jose Alcívar MacÍas,MID,Independiente Del Valle,2500000,11,1999-08-05,168,1
+500,20,Willian Joel Pacho Tenorio,DEF,Paris Saint-Germain,80000000,35,2001-10-16,188,2
+501,20,Pervis Josue Estupiñán Tenorio,DEF,AC Milan,12000000,54,1998-01-21,175,5
+502,20,Anthony Lenin Valencia Bajaña,MID,Royal Antwerp FC,1800000,3,2003-07-21,173,1
+503,20,John Yeboah Zamora,FWD,Venezia FC,1500000,23,2000-06-23,170,3
+504,20,Ray Kendry Paez Andrade,MID,CA River Plate,8000000,26,2007-05-04,178,2
+505,20,Kevin Jose Rodríguez Cortez,FWD,Royale Union Saint-Gilloise,6000000,32,2000-03-04,190,2
+506,20,Wellington Moisés Ramírez Preciado,GK,AE Kifisia FC,800000,7,2000-09-09,185,0
+507,20,Enner Remberto Valencia Lastra,FWD,CF Pachuca,1000000,106,1989-11-04,177,49
+508,20,Alan Steve Minda Garcia,MID,Atlético Mineiro,3000000,21,2003-05-14,174,2
+509,20,Pedro Jeampierre Vite Uca,MID,Pumas UNAM,6000000,18,2002-03-09,172,1
+510,20,Jordy Josue Caicedo Medina,FWD,CA Huracán,2000000,20,1997-11-18,186,4
+511,20,Ángelo Smit Preciado Quiñonez,DEF,Atlético Mineiro,3500000,57,1998-02-18,174,0
+512,20,Denil Daniel Castillo Preciado,MID,FC Midtjylland,7000000,5,2004-03-24,189,0
+513,20,Gonzalo Jordy Plata Jimenez,FWD,CR Flamengo,9000000,51,2000-11-01,178,8
+514,20,Nilson David Angulo Ramirez,FWD,Sunderland AFC,17000000,15,2003-06-19,184,2
+515,20,Alan Steven Franco Palma,MID,Atlético Mineiro,4500000,59,1998-08-21,175,1
+516,20,Gonzalo Roberto Valle Bustamante,GK,LDU Quito,350000,4,1996-02-28,186,0
+517,20,Moisés Isaac Caicedo Corozo,MID,Chelsea FC,100000000,62,2001-11-02,178,3
+518,20,Jeremy Alberto Arevalo Mera,FWD,VfB Stuttgart,7000000,4,2005-03-19,182,0
+519,20,Jackson Gabriel Porozo Vernaza,DEF,Club Tijuana,2500000,10,2000-08-04,192,1
+520,20,Yaimar Abel Medina Ortiz,DEF,KRC Genk,4000000,6,2004-11-05,173,0
 521,21,Bart Verbruggen,GK,Brighton & Hove Albion FC,40000000,30,2002-08-18,193,0
 522,21,Lutsharel Emiliano Geertruida,DEF,Sunderland AFC,20000000,21,2000-07-18,185,0
-523,21,Marten Elco De Roon,MID,Atalanta Bergamo,3200000,43,1991-03-29,186,1
-524,21,Virgil Van Dijk,DEF,Liverpool FC,15000000,93,1991-07-08,195,13
+523,21,Marten Elco de Roon,MID,Atalanta Bergamo,3200000,43,1991-03-29,186,1
+524,21,Virgil van Dijk,DEF,Liverpool FC,15000000,93,1991-07-08,195,13
 525,21,Nathan Benjamin Ake,DEF,Manchester City FC,12000000,60,1995-02-18,180,5
-526,21,Paul Jan-Paul Van Hecke,DEF,Brighton & Hove Albion FC,45000000,13,2000-06-08,189,0
+526,21,Jan-paul van Hecke,DEF,Brighton & Hove Albion FC,45000000,13,2000-06-08,189,0
 527,21,Justin Dean Kluivert,MID,AFC Bournemouth,25000000,12,1999-05-05,173,0
 528,21,Ryan Jiro Gravenberch,MID,Liverpool FC,80000000,28,2002-05-16,190,1
 529,21,Wout François Maria Weghorst,FWD,AFC Ajax,2000000,52,1992-08-07,197,14
@@ -533,13 +533,13 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 532,21,Mats Henrik Berne Wieffer,DEF,Brighton & Hove Albion FC,25000000,15,1999-11-16,189,1
 533,21,Robin Gerardus Petrus Roefs,GK,Sunderland AFC,28000000,1,2003-01-17,193,0
 534,21,Tijjani Martinus Jan Reijnders,MID,Manchester City FC,50000000,33,1998-07-29,178,7
-535,21,Micky Van De Ven,DEF,Tottenham Hotspur FC,50000000,22,2001-04-19,193,1
+535,21,Micky van de Ven,DEF,Tottenham Hotspur FC,50000000,22,2001-04-19,193,1
 536,21,Guus Berend Til,MID,PSV Eindhoven,15000000,7,1997-12-22,188,1
 537,21,Noa Noëll Lang,FWD,Galatasaray SK,22000000,15,1999-06-17,176,3
 538,21,Donyell Malen,FWD,AS Roma,45000000,54,1999-01-19,178,13
 539,21,Brian Ebenezer Adjei Brobbey,FWD,Sunderland AFC,30000000,13,2002-02-01,181,1
-540,21,Teun Koopmeiners,MID,Juventus FC,14000000,29,1998-02-28,185,3
-541,21,Frenkie De Jong,MID,FC Barcelona,35000000,67,1997-05-12,181,2
+540,21,Teun Koopmeinerskoopmeiners,MID,Juventus FC,14000000,29,1998-02-28,185,3
+541,21,Frenkie de Jong,MID,FC Barcelona,35000000,67,1997-05-12,181,2
 542,21,Denzel Justus Morris Dumfries,DEF,FC Internazionale Milano,25000000,73,1996-04-18,188,11
 543,21,Mark Maria Hubertus Flekken,GK,Bayer 04 Leverkusen,6000000,12,1993-06-13,195,0
 544,21,Crysencio Jilbert Sylverio Cir Summerville,FWD,West Ham United FC,35000000,3,2001-10-30,172,1
@@ -550,7 +550,7 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 549,22,Shogo Taniguchi,DEF,Sint-Truiden VV,750000,40,1991-07-15,185,1
 550,22,Kou Itakura,DEF,AFC Ajax,8000000,41,1997-01-27,188,3
 551,22,Yuto Nagatomo,DEF,FC Tokyo,100000,145,1986-09-12,170,4
-552,22,Shuto Machino,FWD,Borussia Mönchengladbach,4000000,14,1999-09-30,185,5
+552,22,Shuto MacHino,FWD,Borussia Mönchengladbach,4000000,14,1999-09-30,185,5
 553,22,Ao Tanaka,MID,Leeds United FC,13000000,38,1998-09-10,180,8
 554,22,Takefusa Kubo,MID,Real Sociedad,20000000,50,2001-06-04,173,7
 555,22,Keisuke Goto,FWD,Sint-Truiden VV,10000000,4,2005-06-03,191,0
@@ -571,9 +571,9 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 570,22,Kaishu Sano,MID,1. FSV Mainz 05,40000000,15,2000-12-30,176,0
 571,22,Junnosuke Suzuki,DEF,FC København,3500000,6,2003-07-12,180,0
 572,22,Kento Shiogai,FWD,VfL Wolfsburg,8000000,3,2005-03-26,180,0
-573,23,Jacob Mikael Widell Zetterstrom,GK,Derby County FC,2500000,3,1998-07-11,197,0
+573,23,Jacob Mikael Widell Zetterström,GK,Derby County FC,2500000,3,1998-07-11,197,0
 574,23,Gustaf Johan Lagerbielke,DEF,SC Braga,10000000,12,2000-04-10,193,2
-575,23,Victor Jörgen Lindelof,DEF,Aston Villa FC,5000000,77,1994-07-17,187,3
+575,23,Victor Jörgen Nilsson Lindelöf,DEF,Aston Villa FC,5000000,77,1994-07-17,187,3
 576,23,Isak Malcolm Kwaku Hien,DEF,Atalanta Bergamo,22000000,30,1999-01-13,191,0
 577,23,Gabriel Johan Gudmundsson,DEF,Leeds United FC,20000000,25,1999-04-29,181,0
 578,23,Herman Nils Johansson,DEF,FC Dallas,1800000,3,1997-10-16,190,0
@@ -586,8 +586,8 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 585,23,Ken Sema,MID,Pafos FC,800000,32,1993-09-30,180,5
 586,23,Hjalmar Ekdal,DEF,Burnley FC,5000000,13,1998-10-21,187,0
 587,23,Carl Anders Theodor Starfelt,DEF,RC Celta Vigo,4500000,18,1995-06-01,185,0
-588,23,Jesper Kewe Karlstrom,MID,Udinese,4000000,25,1995-06-21,182,0
-589,23,Viktor Einar Gyokeres,FWD,Arsenal FC,65000000,34,1998-06-04,189,21
+588,23,Jesper Kewe Karlström,MID,Udinese,4000000,25,1995-06-21,182,0
+589,23,Viktor Einar Gyökeres,FWD,Arsenal FC,65000000,34,1998-06-04,189,21
 590,23,Yasin Ayari,MID,Brighton & Hove Albion FC,35000000,22,2003-10-06,172,5
 591,23,Mattias Olof Svanberg,MID,VfL Wolfsburg,8000000,41,1999-01-05,186,3
 592,23,Eric Anders Smith,DEF,FC St. Pauli,5000000,2,1997-01-08,192,0
@@ -598,7 +598,7 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 597,23,Håkan Gustaf Nilsson,FWD,Club Brugge,1800000,9,1997-05-23,197,4
 598,23,Taha Abdi Ali,FWD,Malmö FF,1500000,2,1998-07-01,174,0
 599,24,Abdelmouhib Chamakh,GK,Club Africain,600000,4,2001-08-25,189,0
-600,24,Ali Abdi,DEF,OGC Nice,2000000,47,1993-12-20,177,7
+600,24,Ali Elabdi,DEF,OGC Nice,2000000,47,1993-12-20,177,7
 601,24,Montassar Omar Talbi,DEF,FC Lorient,8000000,65,1998-05-26,190,4
 602,24,Omar Rekik,DEF,NK Maribor,600000,7,2001-12-20,188,1
 603,24,Adam Arous,DEF,Kasımpa ş a SK,4000000,2,2004-07-17,188,0
@@ -611,99 +611,99 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 610,24,Ahmed Mortadha Ben Ouanes,DEF,Kasımpa ş a SK,1500000,18,1994-07-02,188,0
 611,24,Rani Khedira,MID,1. FC Union Berlin,2000000,4,1994-01-27,188,0
 612,24,Khalil Ayari,MID,Paris Saint-Germain,200000,4,2005-02-02,174,0
-613,24,Mohamed Hadj Mahmoud,MID,FC Lugano,2000000,10,2000-04-24,179,0
+613,24,Mohamed Belhadj Mahmoud,MID,FC Lugano,2000000,10,2000-04-24,179,0
 614,24,Aymen Dahmen,GK,CS Sfaxien,800000,37,1997-01-28,188,0
 615,24,Ellyes Joris Skhiri,MID,Eintracht Frankfurt,5000000,84,1995-05-10,185,4
 616,24,Rayan Elloumi,FWD,Vancouver Whitecaps FC,800000,4,2007-09-17,180,0
 617,24,Firas Chaouat,FWD,Club Africain,350000,31,1996-05-08,185,6
 618,24,Yan Valery,DEF,BSC Young Boys,1500000,23,1999-02-22,181,0
 619,24,Mohamed Amine Ben Hmida,DEF,Espérance De Tunisie,700000,14,1995-12-15,181,0
-620,24,Sabri Ben Hessen,GK,Étoile Du Sahel,550000,1,1996-06-13,189,0
+620,24,Sabri Ben Hsan,GK,Étoile Du Sahel,550000,1,1996-06-13,189,0
 621,24,Moutaz Neffati,DEF,IFK Norrköping FK,250000,5,2004-09-04,182,0
 622,24,Raed Chikhaoui,DEF,US Monastir,150000,0,2004-06-09,191,0
-623,24,Anis Slimane,MID,Norwich City FC,2500000,41,2001-03-16,188,4
+623,24,Anis Ben Slimane,MID,Norwich City FC,2500000,41,2001-03-16,188,4
 624,24,Sebastian Tounekti,MID,Celtic FC,5000000,13,2002-07-13,182,1
-625,25,Thibaut Nicolas Courtois,GK,Real Madrid C. F.,15000000,110,1992-05-11,199,0
+625,25,Thibaut Nicolas McOurtois,GK,Real Madrid C. F.,15000000,110,1992-05-11,199,0
 626,25,Zeno Koen Debast,DEF,Sporting CP,28000000,26,2003-10-24,189,1
-627,25,Arthur Nicolas Theate,DEF,Eintracht Frankfurt,17000000,33,2000-05-25,185,1
+627,25,Arthur Nicolas R Theate,DEF,Eintracht Frankfurt,17000000,33,2000-05-25,185,1
 628,25,Brandon Erik Mechele,DEF,Club Brugge,2800000,10,1993-01-28,190,1
-629,25,Maxim Peter De Cuyper,DEF,Brighton & Hove Albion FC,22000000,20,2000-12-22,182,4
-630,25,Axel Laurent Witsel,MID,Girona FC,1200000,138,1989-01-12,186,12
-631,25,Kevin De Bruyne,MID,SSC Napoli,8000000,120,1991-06-28,181,37
-632,25,Youri Marion Tielemans,MID,Aston Villa FC,30000000,86,1997-05-07,176,13
-633,25,Romelu Lukaku,FWD,SSC Napoli,6000000,127,1993-05-13,190,90
+629,25,Maxim Peter M de Cuyper,DEF,Brighton & Hove Albion FC,22000000,20,2000-12-22,182,4
+630,25,Axel Laurent A Witsel,MID,Girona FC,1200000,138,1989-01-12,186,12
+631,25,Kevin de Bruyne,MID,SSC Napoli,8000000,120,1991-06-28,181,37
+632,25,Youri Marion A Tielemans,MID,Aston Villa FC,30000000,86,1997-05-07,176,13
+633,25,Romelu Lukaku Bolingoli,FWD,SSC Napoli,6000000,127,1993-05-13,190,90
 634,25,Leandro Trossard,FWD,Arsenal FC,18000000,52,1994-12-04,172,12
 635,25,Jeremy Baffour Doku,FWD,Manchester City FC,75000000,44,2002-05-27,173,7
 636,25,Senne Lammens,GK,Manchester United FC,35000000,2,2002-07-07,193,0
 637,25,Mike Louis Penders,GK,RC Strasbourg,25000000,0,2005-07-31,200,0
-638,25,Dodi Lukebakio,FWD,SL Benfica,15000000,30,1997-09-24,184,6
-639,25,Thomas Andre Meunier,DEF,Lille OSC,1500000,81,1991-09-12,190,10
-640,25,Koni De Winter,DEF,AC Milan,23000000,8,2002-06-12,191,0
-641,25,Charles Marc De Ketelaere,FWD,Atalanta Bergamo,30000000,31,2001-03-10,192,6
+638,25,Dodi Lukebakio Ngandolilukebakio,FWD,SL Benfica,15000000,30,1997-09-24,184,6
+639,25,Thomas Andre A Meunier,DEF,Lille OSC,1500000,81,1991-09-12,190,10
+640,25,Koni de Winter,DEF,AC Milan,23000000,8,2002-06-12,191,0
+641,25,Charles Marc S de Ketelaere,FWD,Atalanta Bergamo,30000000,31,2001-03-10,192,6
 642,25,Joaquin Ronny Seys,DEF,Club Brugge,20000000,5,2005-03-28,178,0
-643,25,Diego Manuel Moreira,MID,RC Strasbourg,25000000,3,2004-08-06,179,0
+643,25,Diego Manuel J da Silva Moreira,MID,RC Strasbourg,25000000,3,2004-08-06,179,0
 644,25,Hans Vanaken,MID,Club Brugge,5000000,35,1992-08-24,195,7
 645,25,Timothy Castagne,DEF,Fulham FC,8000000,64,1995-12-05,185,2
-646,25,Alexis Jesse Saelemaekers,MID,AC Milan,20000000,24,1999-06-27,180,2
-647,25,Nicolas Thierry Raskin,MID,Rangers FC,12000000,14,2001-02-23,178,2
-648,25,Amadou Ba Onana,MID,Aston Villa FC,45000000,30,2001-08-16,192,1
+646,25,Alexis Jesse M Saelemaekers,MID,AC Milan,20000000,24,1999-06-27,180,2
+647,25,Nicolas Thierry Yraskin,MID,Rangers FC,12000000,14,2001-02-23,178,2
+648,25,Amadou Ba Z Mvom Onana,MID,Aston Villa FC,45000000,30,2001-08-16,192,1
 649,25,Nathan Ngoy,DEF,Lille OSC,25000000,5,2003-06-10,183,0
-650,25,Matias Fernandez-Pardo,FWD,Lille OSC,35000000,3,2005-02-03,188,0
-651,26,Elsayed Mohamed Mohamed Elshenawy,GK,Al Ahly FC,500000,77,1988-12-18,191,0
-652,26,Ahmed Ibrahim Yasser,DEF,Al Ahly FC,275000,19,1993-02-10,185,1
-653,26,Hany Gamal Mohamed Hany,DEF,Al Ahly FC,1500000,44,1996-02-02,175,0
-654,26,Abdelmegeed Abdelsalam Hossam Abdelmaguid,DEF,Zamalek SC,2000000,13,2001-04-30,193,0
-655,26,Abdelaziz Moustafa Ramy Rabia,DEF,Al Ain FC,600000,48,1993-05-20,183,6
-656,26,Abdelmoneim Elsayed Mohamed,DEF,OGC Nice,2500000,36,1999-02-01,184,3
-657,26,Ahmed Ibrahim Trezeguet,FWD,Al Ahly FC,4500000,96,1994-10-01,181,23
-658,26,Ashour Metwaly Emam,MID,Al Ahly FC,2000000,30,1998-02-20,180,1
-659,26,Mohamed Abdelkarim Hamza,FWD,FC Barcelona,800000,3,2008-01-01,182,0
-660,26,Hamed Mahrous Mohamed Salah,FWD,Liverpool FC,22000000,117,1992-06-15,175,67
-661,26,Mohamed Zaky Mostafa Zico,MID,Pyramids FC,1500000,3,1997-04-27,179,2
-662,26,Yousry Fouad Haissem Hassan,FWD,Real Oviedo,3500000,4,2002-02-08,175,0
-663,26,Mohamed Aboelfetouh Ahmed Fatouh,DEF,Zamalek SC,1000000,40,1998-03-22,177,1
-664,26,Fathy Abdelhalim Hamdy Fathy,MID,Al Wakrah SC,1800000,65,1994-09-29,183,4
-665,26,Hafez Ramadan Karim Hafez,DEF,Pyramids FC,600000,10,1996-03-12,174,0
-666,26,Mohamed Soliman Mahdy Soliman,GK,Zamalek SC,150000,0,1987-06-08,189,0
-667,26,Mostafa Ahmed Mohanad Lashin,MID,Pyramids FC,1000000,24,1996-05-29,186,0
-668,26,Aly Elmahdy Nabil,MID,Al Najmah SC,1000000,12,1996-04-06,179,0
-669,26,Attia Fahim Marawan Attia,MID,Al Ahly FC,2200000,36,1998-08-01,176,1
-670,26,Adel Aly Mohamed Ibrahim,FWD,FC Nordsjælland,2500000,25,2001-04-23,178,3
-671,26,Saber Abdelmohsen Mahmoud,MID,ZED FC,1500000,15,2001-07-30,170,1
-672,26,Mohamed Abdelsalam Omar,FWD,Manchester City FC,50000000,51,1999-02-07,180,11
-673,26,Abdelaziz Mohame Mostafa,GK,Al Ahly FC,1200000,11,2000-05-15,195,0
-674,26,Abdelghaffar Abdel Tarek Alaa,DEF,ZED FC,400000,3,2002-01-05,178,0
-675,26,Mostafa Mohamed Zizo,FWD,Al Ahly FC,5000000,65,1996-01-10,175,5
-676,26,Alaaeldin Soliman Mohamed Alaa,GK,El Gouna FC,75000,0,1999-01-01,188,0
-677,27,Ali Reza Beiranvand,GK,Tractor Sazi Tabriz FC,1200000,88,1992-09-21,195,0
-678,27,Saleh Hardani,DEF,Esteghlal Tehran FC,750000,18,1998-12-26,176,1
-679,27,Ehsan Hajisafi,DEF,Sepahan SC,275000,147,1990-02-25,178,7
+650,25,Matias Fernandez-pardo,FWD,Lille OSC,35000000,3,2005-02-03,188,0
+651,26,Mohamed Elsayed Mohamed Elshenawy Gomaa,GK,Al Ahly FC,500000,77,1988-12-18,191,0
+652,26,Yasser Ahmed Ibrahim Elhanafy,DEF,Al Ahly FC,275000,19,1993-02-10,185,1
+653,26,Mohamed Hany Gamal Eldemerdash,DEF,Al Ahly FC,1500000,44,1996-02-02,175,0
+654,26,Hossam Abdelmegeed Abdelsalam Abdelmegeed,DEF,Zamalek SC,2000000,13,2001-04-30,193,0
+655,26,Ramy Hisham Abdelaziz Moustafa Rabia,DEF,Al Ain FC,600000,48,1993-05-20,183,6
+656,26,Ahmed,DEF,OGC Nice,2500000,36,1999-02-01,184,3
+657,26,Mahmoud Ahmed Ibrahim Hassan,FWD,Al Ahly FC,4500000,96,1994-10-01,181,23
+658,26,Emam Ashour Metwaly Abdelghany,MID,Al Ahly FC,2000000,30,1998-02-20,180,1
+659,26,Hamza Mohamed Abdelkarim Eselim,FWD,FC Barcelona,800000,3,2008-01-01,182,0
+660,26,Mohamed Salah Hamed Mahrous Ghaly,FWD,Liverpool FC,22000000,117,1992-06-15,175,67
+661,26,Mostafa Mohamed Zaky Abdelraouf,MID,Pyramids FC,1500000,3,1997-04-27,179,2
+662,26,Haissem Yousry Fouad A Hassan,FWD,Real Oviedo,3500000,4,2002-02-08,175,0
+663,26,Ahmed Mohamed Aboelfetouh Mohamed,DEF,Zamalek SC,1000000,40,1998-03-22,177,1
+664,26,Hamdy Fathy Abdelhalim Abdelfattah,MID,Al Wakrah SC,1800000,65,1994-09-29,183,4
+665,26,Karim Hafez Ramadan Seifeldin,DEF,Pyramids FC,600000,10,1996-03-12,174,0
+666,26,Mahdy Mohamed Soliman Ibrahim,GK,Zamalek SC,150000,0,1987-06-08,189,0
+667,26,Mohanad Mostafa Ahmed A Lashin,MID,Pyramids FC,1000000,24,1996-05-29,186,0
+668,26,Nabil Emad Aly Elmahdy Aly,MID,Al Najmah SC,1000000,12,1996-04-06,179,0
+669,26,Marawan Attia Fahim Ghallab,MID,Al Ahly FC,2200000,36,1998-08-01,176,1
+670,26,Ibrahim Adel Aly Mohamed Hassan,FWD,FC Nordsjælland,2500000,25,2001-04-23,178,3
+671,26,Mahmoud Saber Abdelmohsen Habdelmohsen,MID,ZED FC,1500000,15,2001-07-30,170,1
+672,26,Omar Khaled Mohamed Abdelsalam Marmoush,FWD,Manchester City FC,50000000,51,1999-02-07,180,11
+673,26,Mostafa Ahmed Abdelaziz Mohame Shoubir,GK,Al Ahly FC,1200000,11,2000-05-15,195,0
+674,26,Tarek Alaa Abdelghaffar Abdel Elgebaly,DEF,ZED FC,400000,3,2002-01-05,178,0
+675,26,Ahmed Mostafa Mohamed Sayed,FWD,Al Ahly FC,5000000,65,1996-01-10,175,5
+676,26,Mohamed Alaaeldin Soliman Mahmed,GK,El Gouna FC,75000,0,1999-01-01,188,0
+677,27,Ali Reza Safarbeiranvand,GK,Tractor Sazi Tabriz FC,1200000,88,1992-09-21,195,0
+678,27,Saleh Hardani Kherad,DEF,Esteghlal Tehran FC,750000,18,1998-12-26,176,1
+679,27,Ehsan Haji Safi,DEF,Sepahan SC,275000,147,1990-02-25,178,7
 680,27,Shojae Khalilzadeh,DEF,Tractor Sazi Tabriz FC,200000,59,1989-05-14,183,2
-681,27,Milad Mohammadi,DEF,Persepolis FC,1300000,78,1993-09-29,175,1
-682,27,Saeid Ezatolahi,MID,Shabab Al Ahli Club,900000,85,1996-10-01,189,2
-683,27,Alireza Jahanbakhsh,MID,FCV Dender EH,500000,99,1993-08-11,180,17
+681,27,Milad Mohammadi Keshmarzi,DEF,Persepolis FC,1300000,78,1993-09-29,175,1
+682,27,Saeid Ezatolahi Afagh,MID,Shabab Al Ahli Club,900000,85,1996-10-01,189,2
+683,27,Alireza Jahanbakhsh Jirandeh,MID,FCV Dender EH,500000,99,1993-08-11,180,17
 684,27,Mohammad Mohebbi,MID,FC Rostov,2500000,38,1998-12-20,187,14
 685,27,Mehdi Taremi,FWD,Olympiacos FC,2000000,107,1992-07-18,187,59
 686,27,Mehdi Ghayedi,FWD,Al Nasr SC,4500000,31,1998-12-05,166,10
-687,27,Ali Alipour,FWD,Persepolis FC,1700000,15,1995-11-11,181,1
+687,27,Ali Alipour Ghara,FWD,Persepolis FC,1700000,15,1995-11-11,181,1
 688,27,Seyedpayam Niazmand,GK,Persepolis FC,750000,15,1995-04-06,193,0
-689,27,Mohammadhossein Kanani,DEF,Persepolis FC,2000000,65,1994-03-23,188,6
-690,27,Seyed Saman Ghoddos,MID,Al Ittihad Kalba SCC,2000000,69,1993-09-06,176,3
+689,27,Mohammadhossein Kanani Zadegan,DEF,Persepolis FC,2000000,65,1994-03-23,188,6
+690,27,Seyed Saman Ghoddoos,MID,Al Ittihad Kalba SCC,2000000,69,1993-09-06,176,3
 691,27,Roozbeh Cheshmi,MID,Esteghlal Tehran FC,300000,41,1993-07-24,192,3
 692,27,Mahdi Torabi,MID,Tractor Sazi Tabriz FC,1800000,52,1994-09-10,185,7
 693,27,Arya Yousefi,DEF,Sepahan SC,450000,15,2002-04-22,181,1
-694,27,Amirhossein Hosseinzadeh,FWD,Tractor Sazi Tabriz FC,2200000,19,2000-10-30,178,5
+694,27,Hosseinzadeh Tazehgheshlagh,FWD,Tractor Sazi Tabriz FC,2200000,19,2000-10-30,178,5
 695,27,Ali Nemati,DEF,Foolad Khuzestan FC,25000,19,1996-02-08,182,0
 696,27,Shahriyar Moghanloo,FWD,Al Ittihad Kalba SCC,900000,22,1994-12-21,189,2
 697,27,Mohammad Ghorbani,MID,Al Wahda SC,1200000,16,2001-10-07,190,0
 698,27,Seyedhossein Hosseini,GK,Sepahan SC,550000,14,1992-06-30,189,0
-699,27,Ramin Rezaeian,DEF,Foolad Khuzestan FC,250000,75,1990-03-21,184,9
+699,27,Ramin Rezaeian Semeskandi,DEF,Foolad Khuzestan FC,250000,75,1990-03-21,184,9
 700,27,Dennis Dargahi,FWD,Standard Liège,2000000,0,1997-01-09,182,0
 701,27,Danial Iri,DEF,Malavan Anzali FC,150000,0,2003-10-26,182,0
 702,27,Amirmohammad Razaghinia,MID,Esteghlal Tehran FC,150000,4,2006-04-11,187,0
 703,28,Maxime Teremoana Crocombe,GK,Millwall FC,1000000,25,1993-08-12,190,0
 704,28,Timothy John Payne,DEF,Wellington Phoenix FC,350000,53,1994-01-10,179,3
-705,28,Francis De Vries,DEF,Auckland FC,600000,20,1994-11-28,181,1
+705,28,Francis de Vries,DEF,Auckland FC,600000,20,1994-11-28,181,1
 706,28,Tyler Grant Bindon,DEF,Shefield United FC,3500000,26,2005-01-27,190,2
 707,28,Michael Joseph Boxall,DEF,Minnesota United FC,150000,65,1988-08-18,191,1
 708,28,Joe Zen Robert Bell,MID,Viking Stavanger,3500000,33,1999-04-27,182,1
@@ -717,142 +717,142 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 716,28,Alex Arthur Rufer,MID,Wellington Phoenix FC,600000,26,1996-06-12,180,0
 717,28,Nando Zen Pijnaker,DEF,Auckland FC,400000,26,1999-02-25,185,0
 718,28,Finn Surman,DEF,Portland Timbers,1800000,20,2003-09-23,190,2
-719,28,Kosta Barbarouses,FWD,WS Wanderers FC,300000,76,1990-02-19,171,10
+719,28,Kosta Barbarousesbarbarouses,FWD,WS Wanderers FC,300000,76,1990-02-19,171,10
 720,28,Benjamin Peter Waine,FWD,Port Vale FC,400000,31,2001-06-11,185,9
 721,28,Benjamin Craig Old,MID,AS Saint-Etienne,1800000,25,2002-08-13,173,2
-722,28,Mc,MID,Silkeborg IF,300000,34,1999-04-30,180,5
+722,28,Callum William McCowatt,MID,Silkeborg IF,300000,34,1999-04-30,180,5
 723,28,Jesse Carmichael Randall,FWD,Auckland FC,900000,12,2002-08-19,176,2
 724,28,Michael Cornelis Woud,GK,Auckland FC,400000,7,1999-01-16,196,0
 725,28,Ryan Jared Thomas,MID,PEC Zwolle,650000,26,1994-12-20,176,3
 726,28,Callan Rennie Elliot,DEF,Auckland FC,450000,12,1999-07-07,177,0
 727,28,Lachlan Ryan Bayliss,MID,Newcastle United Jets FC,550000,4,2002-07-24,178,0
 728,28,Thomas Jefferson Smith,DEF,Braintree Town FC,50000,57,1990-03-31,188,2
-729,29,David Raya,GK,Arsenal FC,30000000,13,1995-09-15,186,0
-730,29,Marc Pubill,DEF,Atlético De Madrid,35000000,2,2003-06-20,191,0
-731,29,Alejandro Grimaldo,DEF,Bayer 04 Leverkusen,20000000,14,1995-09-20,171,0
-732,29,Eric Garcia,DEF,FC Barcelona,40000000,21,2001-01-09,183,0
-733,29,Marcos Llorente,DEF,Atlético De Madrid,20000000,25,1995-01-30,183,0
-734,29,Mikel Merino,MID,Arsenal FC,25000000,44,1996-06-22,188,10
-735,29,Ferran Torres,FWD,FC Barcelona,50000000,58,2000-02-29,183,24
-736,29,Fabian Ruiz,MID,Paris Saint-Germain,30000000,43,1996-04-03,188,6
-737,29,Pablo Gavi,MID,FC Barcelona,30000000,31,2004-08-05,173,5
-738,29,Daniel Olmo,FWD,FC Barcelona,60000000,51,1998-05-07,179,12
-739,29,Yeremy Jesús Pino,FWD,Crystal Palace FC,30000000,23,2002-10-20,174,4
-740,29,Pedro Antonio Porro,DEF,Tottenham Hotspur FC,35000000,18,1999-09-13,173,0
-741,29,Joan Garcia,GK,FC Barcelona,45000000,2,2001-05-04,194,0
-742,29,Aymeric Laporte,DEF,Athletic Club,8000000,47,1994-05-27,191,2
-743,29,Alejandro Baena,MID,Atlético De Madrid,40000000,17,2001-07-20,172,2
-744,29,Rodrigo Rodri,MID,Manchester City FC,50000000,63,1996-06-22,190,4
-745,29,Nicholas Williams,FWD,Athletic Club,40000000,31,2002-07-12,181,6
-746,29,Martin Zubimendi,MID,Arsenal FC,75000000,26,1999-02-02,181,3
-747,29,Lamine Yamal Yamal,FWD,FC Barcelona,200000000,26,2007-07-13,183,6
-748,29,Pedro Pedri,MID,FC Barcelona,150000000,42,2002-11-25,174,6
-749,29,Mikel Oyarzabal,FWD,Real Sociedad,25000000,54,1997-04-21,181,25
-750,29,Pau Cubarsi,DEF,FC Barcelona,80000000,13,2007-01-22,183,0
-751,29,Unai Simon,GK,Athletic Club,22000000,59,1997-06-11,190,0
-752,29,Marc Cucurella,DEF,Chelsea FC,50000000,25,1998-07-22,173,1
-753,29,Victor Munoz,FWD,CA Osasuna,30000000,2,2003-07-13,173,1
-754,29,Borja Iglesias,FWD,RC Celta Vigo,2800000,8,1993-01-17,187,0
-755,30,José Vozinha,GK,GD Chaves,50000,91,1986-06-03,189,0
-756,30,Ianique Stopira,DEF,SCU Torreense,50000,61,1988-05-20,178,4
-757,30,Alberto Diney,DEF,Al Bataeh Club,1000000,33,1995-01-17,185,2
-758,30,Carlos Pico Lopes,DEF,Shamrock Rovers FC,250000,46,1992-06-17,186,0
-759,30,Evans Logan Costa,DEF,Villarreal CF,15000000,28,2001-04-01,190,0
-760,30,Lenini Kevin Pina,MID,FC Krasnodar,5000000,32,1997-01-27,177,3
-761,30,Eduardo Jovane,MID,CF Estrela Da Amadora,1000000,30,1998-06-14,174,3
-762,30,Paulo Joao Paulo,MID,FC FCSB,900000,42,1998-05-26,180,1
-763,30,BENCHIMOLGilson Gilson,FWD,FC Akron Tolyatti,1200000,21,2001-12-29,187,6
-764,30,Gregory Jamiro Monteiro,MID,PEC Zwolle,650000,56,1993-11-23,175,5
-765,30,RODRIGUESGarry Garry,MID,Apollon Limassol,325000,61,1990-11-27,173,10
-766,30,Salomão Marcio,GK,PFC Montana,350000,11,1997-02-23,186,0
-767,30,CABRALSidny Sidny Lopes,DEF,SL Benfica,4000000,12,2002-09-18,176,3
-768,30,Deroy Deroy Duarte,MID,PFC Ludogorets Razgrad,1000000,34,1999-07-04,177,0
-769,30,Michael Laros Duarte,MID,Puskás Akadémia FC,1000000,21,1997-02-28,180,1
-770,30,SEMEDOJair Yannick,MID,SC Farense,250000,11,1995-12-29,176,1
-771,30,Johnson Willy,MID,AC Omonia,700000,39,1994-04-27,185,3
-772,30,Emanuel Telmo,MID,Vitória SC,3000000,17,2001-06-21,180,1
-773,30,Dailon Dailon Livramento,FWD,Casa Pia AC,800000,23,2001-05-04,185,7
-774,30,Isaac Ryan,FWD,I ğ dır FK,250000,99,1990-01-08,178,22
-775,30,Miguel Nuno Da Costa,MID,Ba ş ak ş ehir FK,400000,10,1991-02-10,182,2
-776,30,MOREIRASteven Steven,DEF,Columbus Crew,1500000,21,1994-08-13,178,0
-777,30,Joaquim Cj Dos Santos,GK,San Diego FC,1000000,1,2000-08-24,189,0
-778,30,Fabricio Wagner Pina,DEF,Trabzonspor,11000000,14,2002-11-03,180,0
-779,30,PIRESKelvin Kelvin,DEF,SJK,350000,6,2000-06-05,193,1
-780,30,Sandro Helio Varela,MID,Maccabi Tel-Aviv FC,1200000,21,2002-05-03,176,0
-781,31,Dhahi Nawaf Alaqidi,GK,Al Nassr FC,650000,24,2000-05-10,186,0
-782,31,Hassan Ali Majrashi,DEF,Al Ahli FC,1400000,21,1999-10-02,169,0
-783,31,Mohammed Ali Lajami,DEF,Al Hilal SC,750000,25,1996-04-24,177,1
-784,31,Ali Abdulelah Alamri,DEF,Al Nassr FC,1400000,45,1997-01-15,185,2
-785,31,Mohammed Hassan Altambakti,DEF,Al Hilal SC,1800000,55,1999-02-09,183,1
-786,31,Essa Nasser Aldawsari,MID,Al Hilal SC,900000,48,1998-12-19,178,1
-787,31,Fahad Musab Aljuwayr,MID,Al Qadsiah FC,6000000,38,2003-06-20,175,6
-788,31,Yahya Aiman Yahya,FWD,Al Nassr FC,1200000,26,2001-05-14,173,0
-789,31,Tariq Feras,FWD,Al Ahli FC,3500000,73,2000-05-14,185,16
-790,31,Mohammed Salem Aldawsari,FWD,Al Hilal SC,1200000,112,1991-08-19,173,27
-791,31,Khalid Saleh,FWD,Al Ittihad,500000,59,1993-11-01,184,17
-792,31,Abdullah Saud Abdulhamid,DEF,RC Lens,9000000,56,1999-07-18,172,1
-793,31,Meshari Nawaf Bu Washl,DEF,Al Nassr FC,1400000,28,1999-09-16,173,0
-794,31,Kadish Hassan,DEF,Al Ittihad,275000,21,1992-09-26,179,2
-795,31,Mohammed Abdullah Alkhaibari,MID,Al Nassr FC,750000,43,1996-08-16,175,0
-796,31,Mubarak Ziyad Aljohani,MID,Al Ahli FC,800000,12,2001-11-11,180,0
-797,31,Essa Khalid Alghannam,FWD,Al Ettifaq FC,300000,7,2000-11-08,171,0
-798,31,Mohsen Ala Alhajji,MID,Neom SC,300000,4,1995-12-03,178,0
-799,31,Abdulrahman Abdullah Alhamddan,FWD,Al Nassr FC,350000,53,1999-09-13,186,13
-800,31,Ahmed Sultan Mandash,FWD,Al Hilal SC,350000,7,1994-10-17,172,2
-801,31,Khalil Mohammed Alowais,GK,Al Ula Saudi FC,275000,66,1991-10-10,185,0
-802,31,Ali Ahmed,GK,Al Qadsiah FC,3000000,9,1991-05-08,178,0
-803,31,Ibrahim Mohamed,MID,Al Hilal SC,800000,80,1994-09-22,191,8
-804,31,Saad Moteb Alharbi,DEF,Al Hilal SC,1000000,14,2000-02-20,177,0
-805,31,Abdullatif Jehad Thikri,DEF,Al Qadsiah FC,1200000,8,2001-07-21,184,0
-806,31,Waheeb Mohammed Abu Alshamat,DEF,Al Qadsiah FC,1800000,9,2002-08-11,170,0
-807,32,Sergio Ramón Rochet,GK,SC Internacional,1800000,35,1993-03-23,189,0
-808,32,José María Gimenez,DEF,Atlético De Madrid,9000000,99,1995-01-20,186,8
-809,32,Sebastián Enzo Caceres,DEF,Club América,4500000,24,1999-08-18,180,0
-810,32,Ronald Federico Araujo,DEF,FC Barcelona,20000000,27,1999-03-07,185,1
-811,32,Manuel Ugarte,MID,Manchester United FC,25000000,36,2001-04-11,182,1
-812,32,Rodrigo Bentancur,MID,Tottenham Hotspur FC,20000000,74,1997-06-25,187,3
-813,32,Diego Nicolás De La Cruz,MID,CR Flamengo,8000000,35,1997-06-01,167,5
-814,32,Federico Santiago Valverde,MID,Real Madrid C. F.,90000000,74,1998-07-22,182,9
-815,32,Darwin Gabriel Nunez,FWD,Al Hilal SC,20000000,39,1999-06-24,185,13
-816,32,Giorgian Daniel De Arrascaeta,MID,CR Flamengo,14000000,59,1994-06-01,177,13
-817,32,Facundo Pellistri,FWD,Panathinaikos FC,5000000,39,2001-12-20,174,2
-818,32,Santiago Andres Mele,GK,CF Monterrey,2000000,8,1997-09-06,185,0
-819,32,Guillermo Varela,DEF,CR Flamengo,1000000,28,1993-03-24,174,0
+729,29,David Raya Martín,GK,Arsenal FC,30000000,13,1995-09-15,186,0
+730,29,Marc Pubill Pages,DEF,Atlético De Madrid,35000000,2,2003-06-20,191,0
+731,29,Alejandro Grimaldo García,DEF,Bayer 04 Leverkusen,20000000,14,1995-09-20,171,0
+732,29,Eric García Martret,DEF,FC Barcelona,40000000,21,2001-01-09,183,0
+733,29,Marcos Llorente Moreno,DEF,Atlético De Madrid,20000000,25,1995-01-30,183,0
+734,29,Mikel Merino Zazón,MID,Arsenal FC,25000000,44,1996-06-22,188,10
+735,29,Ferran Torres García,FWD,FC Barcelona,50000000,58,2000-02-29,183,24
+736,29,Fabian Ruiz Peña,MID,Paris Saint-Germain,30000000,43,1996-04-03,188,6
+737,29,Pablo Paez Gavira,MID,FC Barcelona,30000000,31,2004-08-05,173,5
+738,29,Daniel Olmo Carvajal,FWD,FC Barcelona,60000000,51,1998-05-07,179,12
+739,29,Yeremy Jesús Pino Santos,FWD,Crystal Palace FC,30000000,23,2002-10-20,174,4
+740,29,Pedro Antonio Porro Sauceda,DEF,Tottenham Hotspur FC,35000000,18,1999-09-13,173,0
+741,29,Joan Garcia Pons,GK,FC Barcelona,45000000,2,2001-05-04,194,0
+742,29,Aymeric Laporte Fevre,DEF,Athletic Club,8000000,47,1994-05-27,191,2
+743,29,Alejandro Baena Rodríguez,MID,Atlético De Madrid,40000000,17,2001-07-20,172,2
+744,29,Rodrigo Hernández Cascante,MID,Manchester City FC,50000000,63,1996-06-22,190,4
+745,29,Nicholas Williams Arthuer,FWD,Athletic Club,40000000,31,2002-07-12,181,6
+746,29,Martin Zubimendi Ibañez,MID,Arsenal FC,75000000,26,1999-02-02,181,3
+747,29,Lamine Yamal Nasraoui Ebana,FWD,FC Barcelona,200000000,26,2007-07-13,183,6
+748,29,Pedro González López,MID,FC Barcelona,150000000,42,2002-11-25,174,6
+749,29,Mikel Oyarzabal Ugarte,FWD,Real Sociedad,25000000,54,1997-04-21,181,25
+750,29,Pau Cubarsi I Paredes,DEF,FC Barcelona,80000000,13,2007-01-22,183,0
+751,29,Unai Simón Mendibil,GK,Athletic Club,22000000,59,1997-06-11,190,0
+752,29,Marc Cucurella Saseta,DEF,Chelsea FC,50000000,25,1998-07-22,173,1
+753,29,Victor Muñoz Villanueva,FWD,CA Osasuna,30000000,2,2003-07-13,173,1
+754,29,Borja Iglesias Quintás,FWD,RC Celta Vigo,2800000,8,1993-01-17,187,0
+755,30,Josimar José Évora Dias,GK,GD Chaves,50000,91,1986-06-03,189,0
+756,30,Ianique dos Santos Tavares,DEF,SCU Torreense,50000,61,1988-05-20,178,4
+757,30,Edilson Alberto Monteiro Sanches Borgesborges,DEF,Al Bataeh Club,1000000,33,1995-01-17,185,2
+758,30,Roberto Carlos Lopes,DEF,Shamrock Rovers FC,250000,46,1992-06-17,186,0
+759,30,Logan Evans Costa,DEF,Villarreal CF,15000000,28,2001-04-01,190,0
+760,30,Kevin Lenini Gonçalves Pereira de Pina,MID,FC Krasnodar,5000000,32,1997-01-27,177,3
+761,30,Jovane Eduardo Borges Cabral,MID,CF Estrela Da Amadora,1000000,30,1998-06-14,174,3
+762,30,João Paulo Moreira Fernandes,MID,FC FCSB,900000,42,1998-05-26,180,1
+763,30,Benchimol Tavares,FWD,FC Akron Tolyatti,1200000,21,2001-12-29,187,6
+764,30,Jamiro Gregory Monteiro Alvarenga,MID,PEC Zwolle,650000,56,1993-11-23,175,5
+765,30,Garry Mendes Rodrigues,MID,Apollon Limassol,325000,61,1990-11-27,173,10
+766,30,Márcio Salomão Brazão da Rosa,GK,PFC Montana,350000,11,1997-02-23,186,0
+767,30,Sidny Lopes Cabral,DEF,SL Benfica,4000000,12,2002-09-18,176,3
+768,30,Deroy D'encarnação Duarte,MID,PFC Ludogorets Razgrad,1000000,34,1999-07-04,177,0
+769,30,Laros Michael D'encarnação Duarte,MID,Puskás Akadémia FC,1000000,21,1997-02-28,180,1
+770,30,Jair Semedo Monteiro,MID,SC Farense,250000,11,1995-12-29,176,1
+771,30,Willy Johnson Semedo Afonso,MID,AC Omonia,700000,39,1994-04-27,185,3
+772,30,Telmo Emanuel Gomes Arcanjo,MID,Vitória SC,3000000,17,2001-06-21,180,1
+773,30,Dailon Rocha Livramento,FWD,Casa Pia AC,800000,23,2001-05-04,185,7
+774,30,Ryan Isaac da Graca Mendes,FWD,I ğ dır FK,250000,99,1990-01-08,178,22
+775,30,Nuno Miguel da Costa Joia,MID,Ba ş ak ş ehir FK,400000,10,1991-02-10,182,2
+776,30,Steven Moreira,DEF,Columbus Crew,1500000,21,1994-08-13,178,0
+777,30,Carlos Joaquim Antunes dos Santos,GK,San Diego FC,1000000,1,2000-08-24,189,0
+778,30,Wagner Fabricio Cardoso de Pina,DEF,Trabzonspor,11000000,14,2002-11-03,180,0
+779,30,Kelvin Spencer Pires,DEF,SJK,350000,6,2000-06-05,193,1
+780,30,Hélio Sandro Oliveira Alves Varela,MID,Maccabi Tel-Aviv FC,1200000,21,2002-05-03,176,0
+781,31,Nawaf Dhahi F Alaqidi,GK,Al Nassr FC,650000,24,2000-05-10,186,0
+782,31,Ali Hassan M Majrashi,DEF,Al Ahli FC,1400000,21,1999-10-02,169,0
+783,31,Ali Mohammed A Lajami,DEF,Al Hilal SC,750000,25,1996-04-24,177,1
+784,31,Abdulelah Ali A Alamri,DEF,Al Nassr FC,1400000,45,1997-01-15,185,2
+785,31,Hassan Mohammed O Altambakti,DEF,Al Hilal SC,1800000,55,1999-02-09,183,1
+786,31,Nasser Essa S Aldawsari,MID,Al Hilal SC,900000,48,1998-12-19,178,1
+787,31,Musab Fahad Z Aljuwayr,MID,Al Qadsiah FC,6000000,38,2003-06-20,175,6
+788,31,Aiman Yahya y Ahmed,FWD,Al Nassr FC,1200000,26,2001-05-14,173,0
+789,31,Feras Tariq N Albrikan,FWD,Al Ahli FC,3500000,73,2000-05-14,185,16
+790,31,Salem Mohammed S Aldawsari,FWD,Al Hilal SC,1200000,112,1991-08-19,173,27
+791,31,Saleh Khalid M Alshehri,FWD,Al Ittihad,500000,59,1993-11-01,184,17
+792,31,Saud Abdullah S Abdulhamid,DEF,RC Lens,9000000,56,1999-07-18,172,1
+793,31,Nawaf Meshari M Bu Washl,DEF,Al Nassr FC,1400000,28,1999-09-16,173,0
+794,31,Hassan Kadish y Mahbub,DEF,Al Ittihad,275000,21,1992-09-26,179,2
+795,31,Abdullah Mohammed Halkhaibari,MID,Al Nassr FC,750000,43,1996-08-16,175,0
+796,31,Ziyad Mubarak e Aljohani,MID,Al Ahli FC,800000,12,2001-11-11,180,0
+797,31,Khalid Essa M Alghannam,FWD,Al Ettifaq FC,300000,7,2000-11-08,171,0
+798,31,Ala Mohsen A Alhajji,MID,Neom SC,300000,4,1995-12-03,178,0
+799,31,Abdullah Abdulrahman A Alhamddan,FWD,Al Nassr FC,350000,53,1999-09-13,186,13
+800,31,Sultan Ahmed M Mandash,FWD,Al Hilal SC,350000,7,1994-10-17,172,2
+801,31,Mohammed Khalil I Alowais,GK,Al Ula Saudi FC,275000,66,1991-10-10,185,0
+802,31,Ahmed Ali H Alkassar,GK,Al Qadsiah FC,3000000,9,1991-05-08,178,0
+803,31,Mohamed Ibrahim A Kanno,MID,Al Hilal SC,800000,80,1994-09-22,191,8
+804,31,Moteb Saad S Alharbi,DEF,Al Hilal SC,1000000,14,2000-02-20,177,0
+805,31,Jehad Abdullatif A Thikri,DEF,Al Qadsiah FC,1200000,8,2001-07-21,184,0
+806,31,Mohammed Waheeb S Abu Alshamat,DEF,Al Qadsiah FC,1800000,9,2002-08-11,170,0
+807,32,Sergio Ramón Rochet Alvarez,GK,SC Internacional,1800000,35,1993-03-23,189,0
+808,32,José María Giménez de Vargas,DEF,Atlético De Madrid,9000000,99,1995-01-20,186,8
+809,32,Sebastián Enzo Cáceres Ramos,DEF,Club América,4500000,24,1999-08-18,180,0
+810,32,Ronald Federico Araújo da Silva,DEF,FC Barcelona,20000000,27,1999-03-07,185,1
+811,32,Manuel Ugarte Ribeiro,MID,Manchester United FC,25000000,36,2001-04-11,182,1
+812,32,Rodrigo Bentancur Colmán,MID,Tottenham Hotspur FC,20000000,74,1997-06-25,187,3
+813,32,Diego Nicolás de la Cruz Arcosa,MID,CR Flamengo,8000000,35,1997-06-01,167,5
+814,32,Federico Santiago Valverde Dipetta,MID,Real Madrid C. F.,90000000,74,1998-07-22,182,9
+815,32,Darwin Gabriel Nuñez Ribeiro,FWD,Al Hilal SC,20000000,39,1999-06-24,185,13
+816,32,de Arrascaeta Benedetti,MID,CR Flamengo,14000000,59,1994-06-01,177,13
+817,32,Facundo Pellistri Rebollo,FWD,Panathinaikos FC,5000000,39,2001-12-20,174,2
+818,32,Santiago Andres Mele Castañero,GK,CF Monterrey,2000000,8,1997-09-06,185,0
+819,32,Guillermo Varela Olivera,DEF,CR Flamengo,1000000,28,1993-03-24,174,0
 820,32,Agustin Canobbio,MID,Fluminense FC,8000000,15,1998-10-01,176,1
-821,32,Emiliano Martinez,MID,SE Palmeiras,6500000,10,1999-08-17,184,0
-822,32,Mathías Olivera,DEF,SSC Napoli,15000000,36,1997-10-31,174,2
-823,32,Matías Nicolas Vina,DEF,CA River Plate,3500000,44,1997-11-09,180,1
-824,32,Paul Brian Rodriguez,FWD,Club América,8000000,34,2000-05-20,175,4
-825,32,Rodrigo Sebastian Aguirre,FWD,Tigres UANL,2300000,11,1994-10-01,182,3
-826,32,Maximiliano Javier Araujo,MID,Sporting CP,35000000,29,2000-02-15,176,4
-827,32,Federico Sebastian Vinas,FWD,Real Oviedo,4000000,12,1998-06-30,181,2
-828,32,Joaquin Piquerez,MID,SE Palmeiras,12000000,19,1998-08-24,185,0
-829,32,Nestor Fernando Muslera,GK,Estudiantes LP,700000,135,1986-06-16,190,0
-830,32,Santiago Ignacio Bueno,DEF,Wolverhampton Wanderers FC,10000000,8,1998-11-09,191,0
-831,32,Juan Manuel Sanabria,MID,Real Salt Lake,4000000,6,2000-03-29,170,1
-832,32,Radrigo Zalazar,MID,SC Braga,30000000,7,1999-08-12,175,2
+821,32,Emiliano Martínez Toranza,MID,SE Palmeiras,6500000,10,1999-08-17,184,0
+822,32,Mathías Olivera Miramontes,DEF,SSC Napoli,15000000,36,1997-10-31,174,2
+823,32,Matías Nicolas Viña Susperreguy,DEF,CA River Plate,3500000,44,1997-11-09,180,1
+824,32,Paul Brian Rodríguez Bravo,FWD,Club América,8000000,34,2000-05-20,175,4
+825,32,Rodrigo Sebastian Aguirre Soto,FWD,Tigres UANL,2300000,11,1994-10-01,182,3
+826,32,Maximiliano Javier Araújo Vilches,MID,Sporting CP,35000000,29,2000-02-15,176,4
+827,32,Federico Sebastian Viñas Barboza,FWD,Real Oviedo,4000000,12,1998-06-30,181,2
+828,32,Joaquin Piquerez Moreira,MID,SE Palmeiras,12000000,19,1998-08-24,185,0
+829,32,Nestor Fernando Muslera Micol,GK,Estudiantes LP,700000,135,1986-06-16,190,0
+830,32,Santiago Ignacio Bueno Sciutto,DEF,Wolverhampton Wanderers FC,10000000,8,1998-11-09,191,0
+831,32,Juan Manuel Sanabria Magolé,MID,Real Salt Lake,4000000,6,2000-03-29,170,1
+832,32,Radrigo Zalazar Martinez,MID,SC Braga,30000000,7,1999-08-12,175,2
 833,33,Brice Lauriche Samba,GK,Stade Rennais FC,7000000,4,1994-04-25,187,0
 834,33,Malo Arthur Gusto,DEF,Chelsea FC,35000000,11,2003-05-19,179,0
 835,33,Lucas Digne,DEF,Aston Villa FC,6000000,58,1993-07-20,178,0
 836,33,Dayotchanculle Oswald Upamecano,DEF,FC Bayern München,70000000,39,1998-10-27,186,2
 837,33,Jules Olivier Kounde,DEF,FC Barcelona,60000000,49,1998-11-12,178,0
-838,33,Emmanuel Boris Kone,MID,AS Roma,50000000,14,2001-05-17,185,0
+838,33,Kouadio Emmanuel Boris Kone,MID,AS Roma,50000000,14,2001-05-17,185,0
 839,33,Masour Ousmane Dembele,FWD,Paris Saint-Germain,100000000,60,1997-05-15,179,7
 840,33,Aurélien Djani Tchouameni,MID,Real Madrid C. F.,70000000,47,2000-01-27,188,3
-841,33,Marcus Lilian Thuram,FWD,FC Internazionale Milano,50000000,34,1997-08-06,192,3
-842,33,Kylian Mbappe,FWD,Real Madrid C. F.,180000000,99,1998-12-20,180,58
+841,33,Marcus Lilian Thuram-ulienthuram,FWD,FC Internazionale Milano,50000000,34,1997-08-06,192,3
+842,33,Kylian Mbappe Lottin,FWD,Real Madrid C. F.,180000000,99,1998-12-20,180,58
 843,33,Michael Akpovie Olise,FWD,FC Bayern München,150000000,18,2001-12-12,184,7
-844,33,Bradley Jean-Manuel Essolisa Barcola,FWD,Paris Saint-Germain,70000000,21,2002-09-02,187,4
+844,33,Bradley Jean-manuel Essolisa Abarcola,FWD,Paris Saint-Germain,70000000,21,2002-09-02,187,4
 845,33,N'golo Kante,MID,Fenerbahçe SK,4000000,69,1991-03-29,171,2
 846,33,Adrien Thibault Marie Rabiot,MID,AC Milan,18000000,60,1995-04-03,191,7
-847,33,Ibrahima Konate,DEF,Liverpool FC,45000000,28,1999-05-25,194,0
+847,33,Ibrahima Konaté,DEF,Liverpool FC,45000000,28,1999-05-25,194,0
 848,33,Mike Peterson Maignan,GK,AC Milan,20000000,41,1995-07-03,191,0
 849,33,William Alain André Gabriel Saliba,DEF,Arsenal FC,100000000,33,2001-03-24,192,0
-850,33,Warren Marie Jean-Pierre Zaire-Emery,MID,Paris Saint-Germain,80000000,11,2006-03-08,176,1
+850,33,Warren Marie Jean-pierre Zaïre-emery,MID,Paris Saint-Germain,80000000,11,2006-03-08,176,1
 851,33,Théo Bernard François Hernandez,DEF,Al Hilal SC,20000000,45,1997-10-06,184,2
-852,33,Désiré Nonka-Maho Doue,FWD,Paris Saint-Germain,120000000,8,2005-06-03,182,2
+852,33,Désiré Nonka-maho Doue,FWD,Paris Saint-Germain,120000000,8,2005-06-03,182,2
 853,33,Lucas Francois Bernard Hernandez,DEF,Paris Saint-Germain,18000000,42,1996-02-14,184,0
-854,33,Jean-Philippe Mateta,FWD,Crystal Palace FC,30000000,4,1997-06-28,192,2
+854,33,Jean-philippe Mateta,FWD,Crystal Palace FC,30000000,4,1997-06-28,192,2
 855,33,Robin François Philippe Risser,GK,RC Lens,30000000,0,2004-12-02,193,0
 856,33,Mathis Rayan Cherki,MID,Manchester City FC,90000000,8,2003-08-17,180,2
 857,33,Maghnes Akliouche,MID,AS Monaco,50000000,9,2002-02-25,183,1
@@ -865,7 +865,7 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 864,34,Ismaila Pathe Ciss,MID,Rayo Vallecano,1800000,32,1994-03-16,186,0
 865,34,Assane Diao,FWD,Como,30000000,5,2005-09-07,185,0
 866,34,Lamine Camara,MID,AS Monaco,40000000,46,2004-01-01,174,7
-867,34,Ahmadou Bamba Mbacke Dieng,FWD,FC Lorient,15000000,24,2000-03-23,178,2
+867,34,Cheikh Ahmadou Bamba Mbacke Dieng,FWD,FC Lorient,15000000,24,2000-03-23,178,2
 868,34,Sadio Mane,FWD,Al Nassr FC,6000000,131,1992-04-10,175,54
 869,34,Nicolas Jackson,FWD,FC Bayern München,40000000,35,2001-06-20,187,8
 870,34,Pape Cherif Ndiaye,FWD,Samsunspor,5000000,19,1996-01-23,190,4
@@ -877,73 +877,73 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 876,34,Ismaila Sarr,FWD,Crystal Palace FC,40000000,85,1998-02-25,185,19
 877,34,Moussa Niakhate,DEF,Olympique Lyonnais,15000000,33,1996-03-08,190,0
 878,34,Ibrahim Mbaye,FWD,Paris Saint-Germain,30000000,12,2008-01-24,175,4
-879,34,Habib Mbacke Diarra,MID,Sunderland AFC,35000000,22,2004-01-03,178,4
+879,34,Mouhamadou Habib Mbacke Diarra,MID,Sunderland AFC,35000000,22,2004-01-03,178,4
 880,34,Bara Sapoko Ndiaye,MID,FC Bayern München,4000000,1,2007-12-31,180,0
 881,34,Mory Diaw,GK,Le Havre AC,900000,5,1993-06-22,197,0
 882,34,Antoine Alpha Mendy,DEF,OGC Nice,10000000,7,2004-05-27,187,0
-883,34,El Hadji Malick Diouf,DEF,West Ham United FC,28000000,21,2004-12-29,177,1
+883,34,el Hadji Malick Diouf,DEF,West Ham United FC,28000000,21,2004-12-29,177,1
 884,34,Pape Alassane Gueye,MID,Villarreal CF,40000000,43,1999-01-24,189,6
-885,35,Talib Raheem Fahad Talib,GK,Al Talaba SC,375000,21,1994-10-21,192,0
-886,35,Ghareeb Solaka Rebin Sulaka,DEF,Port FC,100000,56,1992-04-12,193,1
-887,35,Haydar Hussein Hussein,DEF,Pogo ń  Szczecin,400000,28,2002-03-01,182,1
-888,35,Tahseen Abd Zaid Zaid,DEF,Pakhtakor Tashkent FK,600000,29,2001-01-29,187,1
-889,35,Hashim Rahman Akam Hashim,DEF,Al Zawra'a SC,700000,15,1998-08-16,184,1
-890,35,Younus Hashim Munaf Younus,DEF,Al Shorta SC,300000,34,1996-11-16,184,1
-891,35,Wali Faeq Youssef Amyn,MID,AEK Larnaca FC,550000,27,2003-08-21,172,2
-892,35,Bayesh Kamil Ibrahim Bayesh,MID,Al Dhafra SCC,800000,77,2000-05-01,180,8
-893,35,Ibrahim Karim Ali Alhamadi,FWD,Luton Town FC,1500000,21,2002-03-01,187,5
-894,35,Ali Kadhim Mohanad Ali,FWD,Dibba FC,1200000,73,2000-06-20,183,26
-895,35,Ihab Ahmed Ahmed,FWD,Nashville SC,3500000,4,2003-07-12,183,0
-896,35,Hasan Hachim Jalal Hassan,GK,Al Zawra'a SC,250000,105,1991-05-18,188,0
-897,35,Yousif Hashim Ali Yousif,FWD,Al Talaba SC,200000,7,1996-01-19,180,1
-898,35,Aamar Iqbal Zidane,MID,FC Utrecht,1000000,26,2003-04-27,183,2
-899,35,Hasan Maknazi Ahmed Maknazi,DEF,Al Karma SC,450000,7,2001-09-24,183,0
-900,35,Fouad Aboud Amir Alammari,MID,KS Cracovia,1000000,52,1997-07-27,180,3
-901,35,Jasim Elaibi Ali Jasim,FWD,Al Najmah SC,500000,37,2004-01-20,178,2
-902,35,Hussein Ghadhban Aymen,FWD,Al Karma SC,400000,96,1996-03-22,190,34
-903,35,Yakob William Kevin Yakob,MID,Aarhus GF,850000,9,2000-10-10,180,0
-904,35,Hazar Anwar Aimar,MID,Sarpsborg 08 FF,1500000,7,2002-12-20,180,0
-905,35,Jabbar Hussein Marko Farji,FWD,Venezia FC,1700000,13,2004-03-16,185,0
-906,35,Basil Fadhil Ahmed,GK,Al Shorta SC,450000,16,1996-08-19,184,0
-907,35,Ghazi Salih Merchas,DEF,FC Viktoria Plze ň,1700000,32,1999-12-07,173,1
-908,35,Ismael Khaleel Zaid Ismael,MID,Al Talaba SC,500000,7,2002-01-03,185,0
-909,35,Saadoon Abbood Mustafa,DEF,Al Shorta SC,350000,18,2001-05-25,181,0
-910,35,Dhia Jirjis Frans,DEF,Persib Bandung,325000,28,1993-07-14,182,0
+885,35,Fahad Talib Raheem Raheem,GK,Al Talaba SC,375000,21,1994-10-21,192,0
+886,35,Rebin Ghareeb Solaka Adhamat,DEF,Port FC,100000,56,1992-04-12,193,1
+887,35,Hussein Haydar Hussein Ali,DEF,Pogo ń  Szczecin,400000,28,2002-03-01,182,1
+888,35,Zaid Tahseen Abd Zaid Hantoosh,DEF,Pakhtakor Tashkent FK,600000,29,2001-01-29,187,1
+889,35,Akam Hashim Rahman Rahman,DEF,Al Zawra'a SC,700000,15,1998-08-16,184,1
+890,35,Munaf Younus Hashim Al-tekreeti,DEF,Al Shorta SC,300000,34,1996-11-16,184,1
+891,35,Youssef Wali Faeq Amyn,MID,AEK Larnaca FC,550000,27,2003-08-21,172,2
+892,35,Ibrahim Bayesh Kamil Al-kaabawi,MID,Al Dhafra SCC,800000,77,2000-05-01,180,8
+893,35,Ali Ibrahim Karim Alzubaidi,FWD,Luton Town FC,1500000,21,2002-03-01,187,5
+894,35,Mohanad Ali Kadhim Al-shammari,FWD,Dibba FC,1200000,73,2000-06-20,183,26
+895,35,Ahmed Ihab Ahmed Ahmed,FWD,Nashville SC,3500000,4,2003-07-12,183,0
+896,35,Jalal Hasan Hachim Hachim,GK,Al Zawra'a SC,250000,105,1991-05-18,188,0
+897,35,Ali Yousif Hashim Najatee,FWD,Al Talaba SC,200000,7,1996-01-19,180,1
+898,35,Zidane Aamar Iqbal Iqbal,MID,FC Utrecht,1000000,26,2003-04-27,183,2
+899,35,Ahmed Hasan Maknazi Al-deeshawee,DEF,Al Karma SC,450000,7,2001-09-24,183,0
+900,35,Amir Fouad Aboud Al-ammari,MID,KS Cracovia,1000000,52,1997-07-27,180,3
+901,35,Ali Jasim Elaibi Al-tameemi,FWD,Al Najmah SC,500000,37,2004-01-20,178,2
+902,35,Aymen Hussein Ghadhban Ghadhban,FWD,Al Karma SC,400000,96,1996-03-22,190,34
+903,35,Kevin Enkido Yakob William William,MID,Aarhus GF,850000,9,2000-10-10,180,0
+904,35,Aimar Hazar Anwar Sher,MID,Sarpsborg 08 FF,1500000,7,2002-12-20,180,0
+905,35,Marko Jabbar Hussein Hussein,FWD,Venezia FC,1700000,13,2004-03-16,185,0
+906,35,Ahmed Basil Fadhil Al-fadhli,GK,Al Shorta SC,450000,16,1996-08-19,184,0
+907,35,Merchas Ghazi Salih Salih,DEF,FC Viktoria Plze ň,1700000,32,1999-12-07,173,1
+908,35,Zaid Ismael Khaleel Al-dulaimi,MID,Al Talaba SC,500000,7,2002-01-03,185,0
+909,35,Mustafa Saadoon Abbood Al-korji,DEF,Al Shorta SC,350000,18,2001-05-25,181,0
+910,35,Frans Dhia Jirjis Haddad,DEF,Persib Bandung,325000,28,1993-07-14,182,0
 911,36,Ørjan Haskjold Nyland,GK,Sevilla FC,800000,72,1990-09-10,192,0
 912,36,Morten Thorsby,MID,US Cremonese,2800000,31,1996-05-05,188,0
 913,36,Kristoffer Vassbakk Köpp Ajer,DEF,Brentford FC,18000000,53,1998-04-17,198,2
-914,36,Leo Skiri Ostigard,DEF,Genoa CFC,13000000,39,1999-11-28,183,2
-915,36,David Møller Moller Wolfe,DEF,Wolverhampton Wanderers FC,8000000,23,2002-04-23,185,1
+914,36,Leo Skiri Østigård,DEF,Genoa CFC,13000000,39,1999-11-28,183,2
+915,36,David Møller Wolfe,DEF,Wolverhampton Wanderers FC,8000000,23,2002-04-23,185,1
 916,36,Patrick Berg,MID,FK Bodø/Glimt,8000000,44,1997-11-24,178,0
-917,36,Alexander Sorloth,FWD,Atlético De Madrid,18000000,73,1995-12-05,196,26
+917,36,Alexander Sørloth,FWD,Atlético De Madrid,18000000,73,1995-12-05,196,26
 918,36,Sander Gard Bolin Berge,MID,Fulham FC,25000000,67,1998-02-14,195,1
 919,36,Erling Braut Haaland,FWD,Manchester City FC,200000000,51,2000-07-21,195,57
-920,36,Martín Odegaard,MID,Arsenal FC,65000000,69,1998-12-17,178,5
-921,36,Jørgen Strand Strand Larsen,FWD,Crystal Palace FC,40000000,28,2000-02-06,193,6
+920,36,Martín Ødegaard,MID,Arsenal FC,65000000,69,1998-12-17,178,5
+921,36,Jørgen Strand Larsen,FWD,Crystal Palace FC,40000000,28,2000-02-06,193,6
 922,36,Sander Tangvik,GK,Hamburger SV,3000000,0,2002-11-29,193,0
 923,36,Egil Selvik,GK,Watford FC,1500000,7,1997-07-30,187,0
 924,36,Fredrik Aursnes,MID,SL Benfica,15000000,23,1995-12-10,181,1
-925,36,Fredrik André Bjorkan,DEF,FK Bodø/Glimt,3500000,21,1998-08-21,180,1
-926,36,Marcus Holmgren Holmgren Pedersen,DEF,Torino FC,3500000,32,2000-07-16,184,0
+925,36,Fredrik André Bjørkan,DEF,FK Bodø/Glimt,3500000,21,1998-08-21,180,1
+926,36,Marcus Holmgren Pedersen,DEF,Torino FC,3500000,32,2000-07-16,184,0
 927,36,Torbjørn Lysaker Heggem,DEF,Bologna FC,13000000,16,1999-01-12,192,0
 928,36,Kristian Thorstvedt,MID,US Sassuolo,12000000,38,1999-03-13,189,4
 929,36,Thelonious Gerard Aasgaard,MID,Rangers FC,2800000,8,2002-05-02,188,5
 930,36,Antonio Eromonsele Nordby Nusa,FWD,RB Leipzig,32000000,25,2005-04-17,183,8
-931,36,Andreas Rædergård Schjelderup,MID,SL Benfica,30000000,13,2004-06-01,177,1
+931,36,Andreas Rædergård Schjelderupschjelderup,MID,SL Benfica,30000000,13,2004-06-01,177,1
 932,36,Oscar Bobb,MID,Fulham FC,28000000,21,2003-07-12,177,2
 933,36,Jens Petter Hauge,MID,FK Bodø/Glimt,12000000,15,1999-10-12,184,1
-934,36,Sondre Klingen Langas,DEF,Derby County FC,4000000,3,2001-02-02,190,0
+934,36,Sondre Klingen Langås,DEF,Derby County FC,4000000,3,2001-02-02,190,0
 935,36,Henrik Sælebakke Falchener,DEF,Viking Stavanger,6000000,1,2003-05-08,194,0
 936,36,Julian Ryerson,FWD,Borussia Dortmund,25000000,44,1997-11-17,186,1
 937,37,Juan Agustín Musso,GK,Atlético De Madrid,3000000,4,1994-05-06,193,0
-938,37,Marcos Nicolás Senesi,DEF,AFC Bournemouth,25000000,3,1997-05-10,185,0
+938,37,Marcos Nicolás Senesi Baron,DEF,AFC Bournemouth,25000000,3,1997-05-10,185,0
 939,37,Nicolás Alejandro Tagliafico,DEF,Olympique Lyonnais,4000000,76,1992-08-31,172,1
 940,37,Gonzalo Ariel Montiel,DEF,CA River Plate,4500000,40,1997-01-01,175,2
 941,37,Leandro Daniel Paredes,MID,CA Boca Juniors,5000000,77,1994-06-29,182,5
-942,37,Lisandro Martinez,DEF,Manchester United FC,40000000,29,1998-01-18,175,1
-943,37,Rodrigo Javier De Paul,MID,Inter Miami CF,14000000,88,1994-05-24,178,2
+942,37,Lisandro Martínez,DEF,Manchester United FC,40000000,29,1998-01-18,175,1
+943,37,Rodrigo Javier de Paul,MID,Inter Miami CF,14000000,88,1994-05-24,178,2
 944,37,Valentin Barco,MID,RC Strasbourg,40000000,4,2004-07-23,172,2
-945,37,Julián Alvarez,FWD,Atlético De Madrid,100000000,52,2000-01-31,170,14
+945,37,Julián Álvarez,FWD,Atlético De Madrid,100000000,52,2000-01-31,170,14
 946,37,Lionel Andrés Messi,FWD,Inter Miami CF,15000000,200,1987-06-24,170,120
 947,37,Giovani Lo Celso,MID,Real Betis,8000000,67,1996-04-09,177,4
 948,37,Geronimo Rulli,GK,Olympique Marseille,6000000,8,1992-05-20,189,0
@@ -952,39 +952,39 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 951,37,Nicolas Ivan Gonzalez,MID,Atlético De Madrid,22000000,52,1998-04-06,180,6
 952,37,Thiago Ezequiel Almada,FWD,Atlético De Madrid,15000000,17,2001-04-26,171,5
 953,37,Giuliano Simeone,FWD,Atlético De Madrid,40000000,13,2002-12-18,174,2
-954,37,Nicolas Paz,FWD,Como,80000000,10,2004-09-08,185,1
+954,37,Nicolas Paz Martínez,FWD,Como,80000000,10,2004-09-08,185,1
 955,37,Nicolas Hernan Gonzalo Otamendi,DEF,SL Benfica,1000000,133,1988-02-12,182,8
-956,37,Alexis Mac Allister,MID,Liverpool FC,70000000,47,1998-12-24,176,6
+956,37,Alexis MacAllister,MID,Liverpool FC,70000000,47,1998-12-24,176,6
 957,37,Jose Manuel Alberto Lopez,FWD,SE Palmeiras,25000000,5,2000-12-06,190,0
-958,37,Lautaro Javier Martinez,FWD,FC Internazionale Milano,85000000,78,1997-08-22,175,37
-959,37,Damián Emiliano Martinez,GK,Aston Villa FC,12000000,60,1992-09-02,195,0
-960,37,Enzo Jeremías Fernandez,MID,Chelsea FC,90000000,43,2001-01-17,178,6
+958,37,Lautaro Javier Martínez,FWD,FC Internazionale Milano,85000000,78,1997-08-22,175,37
+959,37,Damián Emiliano Martínez,GK,Aston Villa FC,12000000,60,1992-09-02,195,0
+960,37,Enzo Jeremías Fernández,MID,Chelsea FC,90000000,43,2001-01-17,178,6
 961,37,Facundo Axel Medina,DEF,Olympique Marseille,18000000,10,1999-05-28,184,0
-962,37,Nahuel Molina,DEF,Atlético De Madrid,15000000,59,1998-04-06,179,1
+962,37,Nahuel Molina Lucero,DEF,Atlético De Madrid,15000000,59,1998-04-06,179,1
 963,38,Melvin Feycal Mastil,GK,FC Stade Nyonnais,300000,2,2000-02-19,194,0
 964,38,Aissa Mandi,DEF,Lille OSC,1000000,120,1991-10-22,184,8
 965,38,Achref Abada,DEF,USM Alger,1000000,10,1999-06-15,185,1
 966,38,Mohamed Amine Tougai,DEF,Espérance De Tunisie,1300000,30,2000-01-22,186,2
-967,38,Zineddine Belaid,DEF,JS Kabylie,1800000,18,1999-03-20,186,1
+967,38,Zineddine Belaïd,DEF,JS Kabylie,1800000,18,1999-03-20,186,1
 968,38,Ramiz Larbi Zerrouki,MID,FC Twente,6500000,54,1998-05-26,183,3
 969,38,Riyad Karim Mahrez,FWD,Al Ahli FC,5000000,117,1991-02-21,179,38
-970,38,Houssem-Eddine Chaabane Aouar,MID,Al Ittihad,8000000,24,1998-06-30,175,6
-971,38,Amine Ferid Gouiri,FWD,Olympique Marseille,28000000,24,2000-02-16,180,10
+970,38,Houssem-eddine Chaabane Aouar,MID,Al Ittihad,8000000,24,1998-06-30,175,6
+971,38,Amine Ferid Ghouiri,FWD,Olympique Marseille,28000000,24,2000-02-16,180,10
 972,38,Fares Chaibi,MID,Eintracht Frankfurt,15000000,32,2002-11-28,183,3
 973,38,Anis Hadj Moussa,FWD,Feyenoord Rotterdam,23000000,16,2002-02-11,176,2
 974,38,Ahmed Nadhir Benbouali,FWD,Györi ETO FC,600000,4,2000-04-17,190,1
 975,38,Jaouen Djimmy Hadjam,DEF,BSC Young Boys,7000000,18,2003-03-26,185,3
 976,38,Hicham Boudaoui,MID,OGC Nice,12000000,35,1999-09-23,175,0
-977,38,Rayan Ait-Nouri,DEF,Manchester City FC,40000000,31,2001-06-06,180,0
+977,38,Rayan Aït-nouri,DEF,Manchester City FC,40000000,31,2001-06-06,180,0
 978,38,Oussama Benbot,GK,USM Alger,850000,3,1994-10-11,188,0
 979,38,Rafik Belghali,DEF,Hellas Verona FC,7000000,14,2002-06-07,180,1
 980,38,Mohammed Elamine Amoura,FWD,VfL Wolfsburg,20000000,48,2000-05-09,170,19
 981,38,Nabil Bentaleb,MID,Lille OSC,4500000,61,1994-11-24,189,6
 982,38,Adil Boulbina,FWD,Al Duhail SC,3000000,12,2003-05-02,183,5
-983,38,Selmane Rami Bensebaini,DEF,Borussia Dortmund,7000000,83,1995-04-16,187,9
+983,38,Amir Selmane Rami Bensebaini,DEF,Borussia Dortmund,7000000,83,1995-04-16,187,9
 984,38,Ibrahim Maza,MID,Bayer 04 Leverkusen,45000000,18,2005-11-24,180,2
 985,38,Luca Zinedine Zidane,GK,Granada CF,1000000,8,1998-05-13,183,0
-986,38,Yassine Titraoui,MID,Sporting Charleroi,7000000,5,2003-07-26,180,0
+986,38,Yassine M e G Titraoui,MID,Sporting Charleroi,7000000,5,2003-07-26,180,0
 987,38,Fares Ghedjemis,FWD,Frosinone,600000,1,2002-09-06,183,1
 988,38,Samir Sophian Chergui,DEF,Paris FC,3000000,5,1999-02-06,185,0
 989,39,Alexander Schlager,GK,FC Red Bull Salzburg,2000000,27,1996-02-01,188,0
@@ -1000,73 +1000,73 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 999,39,Michael Gregoritsch,FWD,FC Augsburg,1500000,75,1994-04-18,193,24
 1000,39,Florian Wiegele,GK,FC Viktoria Plze ň,2200000,1,2001-03-21,205,0
 1001,39,Patrick Pentz,GK,Brøndby IF,2200000,18,1997-01-02,183,0
-1002,39,Saša Kalajdzic,FWD,LASK Linz,4000000,23,1997-07-07,200,4
+1002,39,Saša Kalajdžić,FWD,LASK Linz,4000000,23,1997-07-07,200,4
 1003,39,Philipp Lienhart,DEF,SC Freiburg,10000000,42,1996-07-11,189,3
 1004,39,Phillip Mwene,DEF,1. FSV Mainz 05,1500000,31,1994-01-29,170,0
-1005,39,Carney Chibueze Chukwuemeka,MID,Borussia Dortmund,20000000,4,2003-10-20,187,1
+1005,39,Carney Chibueze Chukwuemekachukwuemeka,MID,Borussia Dortmund,20000000,4,2003-10-20,187,1
 1006,39,Romano Schmid,MID,SV Werder Bremen,15000000,35,2000-01-27,168,4
-1007,39,Dejan Ljubicic,MID,FC Schalke 04,5000000,9,1997-10-08,187,1
+1007,39,Dejan Ljubičić,MID,FC Schalke 04,5000000,9,1997-10-08,187,1
 1008,39,Konrad Laimer,MID,FC Bayern München,32000000,58,1997-05-27,180,7
 1009,39,Patrick Wimmer,FWD,VfL Wolfsburg,12000000,31,2001-05-30,182,1
 1010,39,Alexander Prass,MID,TSG Hoffenheim,9000000,19,2001-05-26,180,0
 1011,39,Marco Friedl,DEF,SV Werder Bremen,10000000,11,1998-03-16,187,0
 1012,39,Paul Wanner,MID,PSV Eindhoven,22000000,4,2005-12-23,185,0
 1013,39,Michael Svoboda,DEF,Venezia FC,900000,4,1998-10-15,195,0
-1014,39,Alessandro Andre Schoepf,MID,Wolfsberger AC,800000,35,1994-02-07,178,6
-1015,40,Mo'ien Hasan Yazeed Abulaila,GK,Al Hussein SC,300000,77,1993-01-08,188,0
-1016,40,Ali Hasan Mohammad,DEF,Al Karma SC,400000,56,1995-05-09,179,1
-1017,40,Mousa Musallam Abdallah Nasib,DEF,Al Zawra'a SC,400000,66,1994-02-25,184,2
-1018,40,Ali Mohammad Husam Abudahab,DEF,Al Faisaly SC,350000,17,2000-05-13,186,0
-1019,40,Mousa Mahmoud Yazan Alarab,DEF,FC Seoul,1000000,81,1996-01-31,185,3
-1020,40,Rasem Adel Amer Jamous,MID,Al Zawra'a SC,500000,19,2002-07-03,177,1
-1021,40,Faisal Yousef Mohammad,FWD,Raja Casablanca,700000,40,1997-12-30,170,5
-1022,40,Mahmoud Ali Noor Alrawabdeh,MID,Selangor FC,500000,69,1997-02-24,182,3
-1023,40,Iyad Ali Ali Olwan,FWD,Al Sailiya SC,800000,67,2000-03-26,182,30
-1024,40,Mohammad Mousa Mousa Altamari,FWD,Stade Rennais FC,10000000,93,1997-06-10,176,24
-1025,40,Burhan Shehadeh Odeh Fakhoury,FWD,Pyramids FC,6000000,11,2005-11-22,180,1
-1026,40,Zaid Khaleel Nour Baniateyah,GK,Al Faisaly SC,250000,5,1993-01-25,179,0
-1027,40,Nayef Ahmad Mahmoud Almardi,FWD,Al Hussein SC,350000,88,1993-10-06,173,8
-1028,40,Ayed Fadel Rajaei Ayed,MID,Al Hussein SC,325000,73,1993-07-25,175,0
-1029,40,Mohammad Sami Ibrahim,MID,Al Karma SC,500000,57,2000-04-27,175,3
-1030,40,Majed Jamil Mohammad Abualnadi,DEF,Selangor FC,350000,19,2001-02-08,185,0
-1031,40,Amer Saleem Saleem,DEF,Al Hussein SC,100000,13,1992-01-17,187,0
-1032,40,Ahmed Mohammad Mohammad,MID,Al Hussein SC,300000,0,2005-07-13,182,0
-1033,40,Ahmad Salameh Saed,DEF,Al Hussein SC,450000,22,1997-02-01,186,2
-1034,40,Mahmoud Saleh Mohannad Abutaha,MID,Al-Quwa Al-Jawiya,550000,31,2003-02-02,173,1
-1035,40,Mahmoud Ahmed Nizar Alrashdan,MID,Qatar SC,600000,48,1999-03-23,183,4
-1036,40,Ra'ed Mahmoud Abdallah Alfakhori,GK,Al Wahdat SC,250000,16,2000-01-22,190,0
-1037,40,Manel Farhan Ehsan Haddad,DEF,Al Hussein SC,300000,91,1994-02-05,174,2
-1038,40,Ahmad Ali Ali Azaizeh,FWD,Al Shabab FC,325000,5,2004-04-13,178,0
-1039,40,Ratib Mohammad Mohammad Aldaoud,MID,Al Wahdat SC,150000,14,1992-04-12,185,1
-1040,40,Said Ghazi Anas Badawi,DEF,Al Faisaly SC,200000,1,1997-09-13,174,0
-1041,41,Diogo Diogo Costa,GK,FC Porto,40000000,44,1999-09-19,188,0
-1042,41,SEMEDONélson Nelson,DEF,Fenerbahçe SK,6000000,51,1993-11-16,179,0
-1043,41,Rúben Ruben Dias,DEF,Manchester City FC,55000000,76,1997-05-14,187,3
-1044,41,Tomás Tomas Araujo,DEF,SL Benfica,30000000,6,2002-05-16,187,0
-1045,41,Diogo Diogo Dalot,DEF,Manchester United FC,30000000,35,1999-03-18,184,3
-1046,41,Luiz Matheus,MID,Manchester City FC,50000000,20,1998-08-27,183,2
-1047,41,Ronaldo Cristiano Ronaldo,FWD,Al Nassr FC,10000000,229,1985-02-05,185,143
-1048,41,Miguel Bruno,MID,Manchester United FC,35000000,90,1994-09-08,183,29
-1049,41,RAMOSGonçalo Goncalo,FWD,Paris Saint-Germain,30000000,26,2001-06-20,185,10
-1050,41,Bernardo Bernardo Silva,MID,Manchester City FC,22000000,110,1994-08-10,173,14
-1051,41,João Joao Felix,FWD,Al Nassr FC,28000000,54,1999-11-10,179,12
-1052,41,Pedro Jose Sa,GK,Wolverhampton Wanderers FC,3500000,5,1993-01-17,192,0
-1053,41,Renato Renato Veiga,DEF,Villarreal CF,25000000,14,2003-07-29,188,1
-1054,41,Gonçalo Goncalo Inacio,DEF,Sporting CP,40000000,22,2001-08-25,185,2
-1055,41,Pedro Joao Neves,MID,Paris Saint-Germain,140000000,23,2004-09-27,171,4
-1056,41,António Francisco Trincao,FWD,Sporting CP,40000000,18,1999-12-29,184,3
-1057,41,Alexandre Rafael Leao,FWD,AC Milan,50000000,45,1999-06-10,188,5
-1058,41,Pedro Pedro Neto,FWD,Chelsea FC,60000000,26,2000-03-09,174,3
-1059,41,Manuel Goncalo,FWD,Real Sociedad,6000000,35,1996-11-29,179,8
-1060,41,Pedro Joao Cancelo,DEF,FC Barcelona,8000000,69,1994-05-27,173,12
-1061,41,Diogo Ruben,MID,Al Hilal SC,25000000,67,1997-03-13,183,1
-1062,41,Tiago Rui Silva,GK,Sporting CP,7000000,3,1994-02-07,191,0
-1063,41,Vitor Vitinha,MID,Paris Saint-Germain,140000000,39,2000-02-13,170,0
-1064,41,Samuel Samu Costa,DEF,RCD Mallorca,15000000,6,2000-11-27,185,0
-1065,41,Alexandre Nuno,DEF,Paris Saint-Germain,80000000,45,2002-06-19,177,1
-1066,41,Francisco Francisco Conceicao,FWD,Juventus FC,30000000,18,2002-12-14,166,4
+1014,39,Alessandro Andre Schöpf,MID,Wolfsberger AC,800000,35,1994-02-07,178,6
+1015,40,Yazeed Mo'ien Hasan Abulaila,GK,Al Hussein SC,300000,77,1993-01-08,188,0
+1016,40,Mohammad Ali Hasan Abuhasheesh,DEF,Al Karma SC,400000,56,1995-05-09,179,1
+1017,40,Abdallah Mousa Musallam Nasib,DEF,Al Zawra'a SC,400000,66,1994-02-25,184,2
+1018,40,Husam Ali Mohammad Abudahab,DEF,Al Faisaly SC,350000,17,2000-05-13,186,0
+1019,40,Yazan Mousa Mahmoud Alarab,DEF,FC Seoul,1000000,81,1996-01-31,185,3
+1020,40,Amer Rasem Adel Jamous,MID,Al Zawra'a SC,500000,19,2002-07-03,177,1
+1021,40,Mohammad Faisal Yousef Abu Zraiq,FWD,Raja Casablanca,700000,40,1997-12-30,170,5
+1022,40,Noor Al-deen Mahmoud Ali al Rawabdeh,MID,Selangor FC,500000,69,1997-02-24,182,3
+1023,40,Ali Iyad Ali Olwan,FWD,Al Sailiya SC,800000,67,2000-03-26,182,30
+1024,40,Mousa Mohammad Mousa Suleiman,FWD,Stade Rennais FC,10000000,93,1997-06-10,176,24
+1025,40,Odeh Burhan Shehadeh Fakhoury,FWD,Pyramids FC,6000000,11,2005-11-22,180,1
+1026,40,Noureddin Zaid Khaleel Bani Ateyah,GK,Al Faisaly SC,250000,5,1993-01-25,179,0
+1027,40,Mahmoud Nayef Ahmad Almardi,FWD,Al Hussein SC,350000,88,1993-10-06,173,8
+1028,40,Raja'ei Ayed Fadel Hasan,MID,Al Hussein SC,325000,73,1993-07-25,175,0
+1029,40,Ibrahim Mohammad Sami Sa'deh,MID,Al Karma SC,500000,57,2000-04-27,175,3
+1030,40,Mohammad Majed Jamil Abualnadi,DEF,Selangor FC,350000,19,2001-02-08,185,0
+1031,40,Saleem Amer Saleem Obaid,DEF,Al Hussein SC,100000,13,1992-01-17,187,0
+1032,40,Mohammad Ahmed Mohammad Taha,MID,Al Hussein SC,300000,0,2005-07-13,182,0
+1033,40,Sa'ed Ahmad Salameh Alrosan,DEF,Al Hussein SC,450000,22,1997-02-01,186,2
+1034,40,Mohannad Mahmoud Saleh Abu Taha,MID,Al-Quwa Al-Jawiya,550000,31,2003-02-02,173,1
+1035,40,Nizar Mahmoud Ahmed Al-rashdan,MID,Qatar SC,600000,48,1999-03-23,183,4
+1036,40,Abdallah Ra'ed Mahmoud Alfakhori,GK,Al Wahdat SC,250000,16,2000-01-22,190,0
+1037,40,Ehsan Manel Farhan Haddad,DEF,Al Hussein SC,300000,91,1994-02-05,174,2
+1038,40,Ali Ahmad Ali Azaizeh,FWD,Al Shabab FC,325000,5,2004-04-13,178,0
+1039,40,Mohammad Ratib Mohammad Aldaoud,MID,Al Wahdat SC,150000,14,1992-04-12,185,1
+1040,40,Anas Said Ghazi Badawi,DEF,Al Faisaly SC,200000,1,1997-09-13,174,0
+1041,41,Diogo Meireles da Costa,GK,FC Porto,40000000,44,1999-09-19,188,0
+1042,41,Nélson Cabral Semedo,DEF,Fenerbahçe SK,6000000,51,1993-11-16,179,0
+1043,41,Rúben dos Santos Gato Alves Dias,DEF,Manchester City FC,55000000,76,1997-05-14,187,3
+1044,41,Tomás Lemos Araújo,DEF,SL Benfica,30000000,6,2002-05-16,187,0
+1045,41,José Diogo Dalot Teixeira,DEF,Manchester United FC,30000000,35,1999-03-18,184,3
+1046,41,Matheus Luiz Nunes,MID,Manchester City FC,50000000,20,1998-08-27,183,2
+1047,41,Cristiano Ronaldo dos Santos Aveiro,FWD,Al Nassr FC,10000000,229,1985-02-05,185,143
+1048,41,Bruno Miguel Borges Fernandes,MID,Manchester United FC,35000000,90,1994-09-08,183,29
+1049,41,Gonçalo Matias Ramos,FWD,Paris Saint-Germain,30000000,26,2001-06-20,185,10
+1050,41,Bernardo Mota Veiga de Carvalho e Silva,MID,Manchester City FC,22000000,110,1994-08-10,173,14
+1051,41,João Félix Sequeira,FWD,Al Nassr FC,28000000,54,1999-11-10,179,12
+1052,41,José Pedro Malheiro de Sá,GK,Wolverhampton Wanderers FC,3500000,5,1993-01-17,192,0
+1053,41,Renato da Palma Veiga,DEF,Villarreal CF,25000000,14,2003-07-29,188,1
+1054,41,Gonçalo Bernardo Inácio,DEF,Sporting CP,40000000,22,2001-08-25,185,2
+1055,41,João Pedro Gonçalves Neves,MID,Paris Saint-Germain,140000000,23,2004-09-27,171,4
+1056,41,Francisco António Machado Mota de Castro Trincão,FWD,Sporting CP,40000000,18,1999-12-29,184,3
+1057,41,Rafael Alexandre da Conceição Leão,FWD,AC Milan,50000000,45,1999-06-10,188,5
+1058,41,Pedro Lomba Neto,FWD,Chelsea FC,60000000,26,2000-03-09,174,3
+1059,41,Gonçalo Manuel Ganchinho Guedes,FWD,Real Sociedad,6000000,35,1996-11-29,179,8
+1060,41,João Pedro Cavaco Cancelo,DEF,FC Barcelona,8000000,69,1994-05-27,173,12
+1061,41,Rúben Diogo da Silva Neves,MID,Al Hilal SC,25000000,67,1997-03-13,183,1
+1062,41,Rui Tiago Dantas da Silva,GK,Sporting CP,7000000,3,1994-02-07,191,0
+1063,41,Vitor Machado Ferreira,MID,Paris Saint-Germain,140000000,39,2000-02-13,170,0
+1064,41,Samuel de Almeida Costa,DEF,RCD Mallorca,15000000,6,2000-11-27,185,0
+1065,41,Nuno Alexandre Tavares Mendes,DEF,Paris Saint-Germain,80000000,45,2002-06-19,177,1
+1066,41,Francisco Fernandes da Conceição,FWD,Juventus FC,30000000,18,2002-12-14,166,4
 1067,42,Lionel Nzau Mpasi,GK,Le Havre AC,400000,29,1994-08-01,182,0
-1068,42,Wan Wan-Bissaka,DEF,West Ham United FC,15000000,13,1997-11-26,183,0
+1068,42,Wan Bissaka,DEF,West Ham United FC,15000000,13,1997-11-26,183,0
 1069,42,Steve Nkanu Kapuadi,DEF,Widzew Ł ód ź,2500000,4,1998-04-30,196,0
 1070,42,Axel Tuanzebe,DEF,Burnley FC,5000000,14,1997-11-14,188,1
 1071,42,Dylan Buduka Batubinsika,DEF,AEL FC,600000,15,1996-02-15,185,1
@@ -1075,22 +1075,22 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 1074,42,Samuel Alain Moutoussamy,MID,Atromitos FC,1200000,59,1996-08-12,176,0
 1075,42,Kibambe Brian Cipenga,FWD,CD Castellón,2000000,8,1998-03-11,172,0
 1076,42,Theo Mbulofeko Batombo Bongonda,MID,FC Spartak Moscow,3000000,38,1995-11-20,176,7
-1077,42,Gaël Roméo Kakuta,FWD,AEL FC,250000,31,1991-06-21,174,5
-1078,42,Joris Kayembe,DEF,KRC Genk,2000000,27,1994-08-08,180,1
+1077,42,Mambenga Gaël Roméo Kakuta,FWD,AEL FC,250000,31,1991-06-21,174,5
+1078,42,Joris Kayembe-ditu,DEF,KRC Genk,2000000,27,1994-08-08,180,1
 1079,42,Meschack Lina Elia,FWD,Alanyaspor,1500000,68,1997-08-06,173,12
 1080,42,Noah Junior Sadiki,MID,Sunderland AFC,35000000,21,2004-12-17,165,0
-1081,42,Tshibola Tshibola,MID,Kilmarnock FC,150000,17,1995-01-02,184,1
+1081,42,Tshibola Aaron,MID,Kilmarnock FC,150000,17,1995-01-02,184,1
 1082,42,Timothy Bruce Munzoko Fayulu,GK,FC Noah,800000,3,1999-07-24,192,0
 1083,42,Cedric Bakambu,FWD,Real Betis,1200000,71,1991-04-11,182,21
 1084,42,Charles Monginda Pickel,MID,RCD Espanyol,2500000,35,1997-05-15,187,1
-1085,42,Mayele Fiston Mayele,FWD,Pyramids FC,1800000,36,1994-06-24,185,5
+1085,42,Mayele Fiston Kalala,FWD,Pyramids FC,1800000,36,1994-06-24,185,5
 1086,42,Yoane Wissa,FWD,Newcastle United FC,25000000,39,1996-09-03,176,9
 1087,42,Matthieu Luka Epolo,GK,Standard Liège,8000000,1,2005-01-15,183,0
 1088,42,Mangulu Chancel Mbemba,DEF,Lille OSC,2000000,110,1994-08-08,182,7
 1089,42,Simon Bokote Banza,FWD,Al Jazira,11000000,16,1996-08-13,189,2
 1090,42,Gédéon Tchingoma Kyatengwa Kalulu,DEF,Aris Limassol FC,3500000,29,1997-08-29,178,0
 1091,42,Edo Kayembe Kayembe,MID,Watford FC,4000000,43,1998-06-03,183,2
-1092,42,Arthur Fuka Masuaku,DEF,RC Lens,2000000,45,1993-11-07,179,4
+1092,42,Arthur Fuka Masuaku Kawela,DEF,RC Lens,2000000,45,1993-11-07,179,4
 1093,43,Utkir Yusupov,GK,PFC Navbahor Namangan,500000,46,1991-01-04,185,0
 1094,43,Abdukodir Khusanov,DEF,Manchester City FC,50000000,28,2004-02-29,186,0
 1095,43,Khojiakbar Alijonov,DEF,Pakhtakor Tashkent FK,1300000,52,1997-04-19,180,3
@@ -1117,38 +1117,38 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 1116,43,Behruzjon Karimov,DEF,Surkhon FK,350000,3,2007-08-07,172,0
 1117,43,Avazbek Ulmasaliyev,DEF,OKMK FK,500000,0,2000-03-27,187,0
 1118,43,Jakhongir Urozov,DEF,FK Dinamo Samarkand,600000,5,2004-01-18,190,1
-1119,44,David Ospina,GK,Atlético Nacional,100000,130,1988-08-31,183,0
-1120,44,Daniel Munoz,DEF,Crystal Palace FC,22000000,47,1996-05-26,180,4
-1121,44,Jhon Janer Lucumi,DEF,Bologna FC,22000000,38,1998-06-26,187,1
-1122,44,Santiago Arias,DEF,CA Independiente,1200000,68,1992-01-13,177,0
-1123,44,Kevin Duvan Castano,MID,CA River Plate,5000000,26,2000-09-29,179,0
-1124,44,Richard Rios,MID,SL Benfica,25000000,33,2000-06-02,185,2
-1125,44,Luis Fernando Diaz,FWD,FC Bayern München,70000000,75,1997-01-13,179,23
-1126,44,Jorge Andres Carrascal,MID,CR Flamengo,13000000,25,1998-05-25,180,2
-1127,44,Jhon Andrés Cordoba,FWD,FC Krasnodar,10000000,21,1993-05-11,186,6
-1128,44,James David Rodriguez,MID,Minnesota United FC,1500000,127,1991-07-12,181,31
-1129,44,Jhon Adolfo Arias,MID,SE Palmeiras,15000000,39,1997-09-21,168,6
-1130,44,Camilo Andres Vargas,GK,Atlas FC,450000,43,1989-03-09,183,0
-1131,44,Yerry Fernando Mina,DEF,Cagliari,2500000,54,1994-09-23,195,8
-1132,44,Gustavo Adolfo Puerta,DEF,Racing Santander,10000000,7,2003-07-23,173,1
-1133,44,Juan Camilo Portilla,MID,Athletico Paranaense,5000000,10,1998-09-12,181,0
-1134,44,Jefferson Andrés Lerma,MID,Crystal Palace FC,6000000,66,1994-10-25,180,5
-1135,44,Johan Andrés Mojica,DEF,RCD Mallorca,1500000,46,1992-08-21,184,1
-1136,44,Willer Emilio Ditta,DEF,CF Cruz Azul,5500000,5,1998-01-23,179,0
-1137,44,Juan Camilo Hernandez,FWD,Real Betis,18000000,10,1999-04-20,176,2
-1138,44,Juan Fernando Quintero,MID,CA River Plate,1800000,49,1993-01-18,167,6
+1119,44,David Ospina Ramirez,GK,Atlético Nacional,100000,130,1988-08-31,183,0
+1120,44,Daniel Muñoz Mejia,DEF,Crystal Palace FC,22000000,47,1996-05-26,180,4
+1121,44,Jhon Janer Lucumi Bonilla,DEF,Bologna FC,22000000,38,1998-06-26,187,1
+1122,44,Santiago Arias Naranjo,DEF,CA Independiente,1200000,68,1992-01-13,177,0
+1123,44,Kevin Duvan Castaño Gil,MID,CA River Plate,5000000,26,2000-09-29,179,0
+1124,44,Richard Ríos Montoya,MID,SL Benfica,25000000,33,2000-06-02,185,2
+1125,44,Luis Fernando Díaz Marulanda,FWD,FC Bayern München,70000000,75,1997-01-13,179,23
+1126,44,Jorge Andres Carrascal Guardo,MID,CR Flamengo,13000000,25,1998-05-25,180,2
+1127,44,Jhon Andrés Córdoba Copete,FWD,FC Krasnodar,10000000,21,1993-05-11,186,6
+1128,44,James David Rodríguez Rubio,MID,Minnesota United FC,1500000,127,1991-07-12,181,31
+1129,44,Jhon Adolfo Arias Andrade,MID,SE Palmeiras,15000000,39,1997-09-21,168,6
+1130,44,Camilo Andres Vargas Gil,GK,Atlas FC,450000,43,1989-03-09,183,0
+1131,44,Yerry Fernando Mina Gonzalez,DEF,Cagliari,2500000,54,1994-09-23,195,8
+1132,44,Gustavo Adolfo Puerta Molano,DEF,Racing Santander,10000000,7,2003-07-23,173,1
+1133,44,Juan Camilo Portilla Orozco,MID,Athletico Paranaense,5000000,10,1998-09-12,181,0
+1134,44,Jefferson Andrés Lerma Solis,MID,Crystal Palace FC,6000000,66,1994-10-25,180,5
+1135,44,Johan Andrés Mojica Palacio,DEF,RCD Mallorca,1500000,46,1992-08-21,184,1
+1136,44,Willer Emilio Ditta Perez,DEF,CF Cruz Azul,5500000,5,1998-01-23,179,0
+1137,44,Juan Camilo Hernandez Suarez,FWD,Real Betis,18000000,10,1999-04-20,176,2
+1138,44,Juan Fernando Quintero Paniagua,MID,CA River Plate,1800000,49,1993-01-18,167,6
 1139,44,Jaminton Leandro Campaz,FWD,CA Rosario Central,5500000,11,2000-05-24,166,2
-1140,44,Deiver Machado,DEF,FC Nantes,1800000,15,1993-09-02,173,0
-1141,44,Davinson Sanchez,DEF,Galatasaray SK,16000000,80,1996-06-12,188,4
-1142,44,Álvaro David Montero,GK,CA Vélez Sarsfield,2500000,12,1995-03-29,201,0
-1143,44,Luis Javier Suarez,FWD,Sporting CP,30000000,13,1997-12-02,179,5
-1144,44,Carlos Andrés Gomez,FWD,CR Vasco Da Gama,11000000,9,2002-09-12,170,2
+1140,44,Deiver Machado Mena,DEF,FC Nantes,1800000,15,1993-09-02,173,0
+1141,44,Davinson Sánchez Mina,DEF,Galatasaray SK,16000000,80,1996-06-12,188,4
+1142,44,Álvaro David Montero Perales,GK,CA Vélez Sarsfield,2500000,12,1995-03-29,201,0
+1143,44,Luis Javier Suárez Charris,FWD,Sporting CP,30000000,13,1997-12-02,179,5
+1144,44,Carlos Andrés Gómez Hinestroza,FWD,CR Vasco Da Gama,11000000,9,2002-09-12,170,2
 1145,45,Jordan Lee Pickford,GK,Everton FC,13000000,85,1994-03-07,185,0
 1146,45,Ezri Ngoyo Konsa,DEF,Aston Villa FC,40000000,21,1997-10-23,180,1
-1147,45,Nico Oreilly,DEF,Manchester City FC,70000000,6,2005-03-21,177,0
+1147,45,Nico O'reilly,DEF,Manchester City FC,70000000,6,2005-03-21,177,0
 1148,45,Declan Rice,MID,Arsenal FC,120000000,74,1999-01-14,185,7
 1149,45,John Stones,DEF,Manchester City FC,12000000,90,1994-05-28,188,3
-1150,45,Keaninkin Marc-Isreal Guehi,DEF,Manchester City FC,70000000,30,2000-07-13,183,1
+1150,45,Addji Keaninkin Marc-isreal Guéhi,DEF,Manchester City FC,70000000,30,2000-07-13,183,1
 1151,45,Bukayo Ayoyinka Saka,FWD,Arsenal FC,110000000,50,2001-09-05,178,14
 1152,45,Elliot Junior Anderson,MID,Nottingham Forest FC,75000000,10,2002-11-06,179,0
 1153,45,Harry Edward Kane,FWD,FC Bayern München,60000000,115,1993-07-28,190,81
@@ -1161,89 +1161,89 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 1160,45,Kobbie Boateng Mainoo,MID,Manchester United FC,70000000,14,2005-04-19,183,0
 1161,45,Morgan Elliot Rogers,MID,Aston Villa FC,90000000,16,2002-07-26,187,1
 1162,45,Anthony Michael Gordon,FWD,Newcastle United FC,65000000,20,2001-02-24,182,3
-1163,45,George Arthur Watkins,FWD,Aston Villa FC,25000000,22,1995-12-30,180,7
-1164,45,Azuka Tristan Madueke,FWD,Arsenal FC,50000000,12,2002-03-10,182,1
+1163,45,Oliver George Arthur Watkins,FWD,Aston Villa FC,25000000,22,1995-12-30,180,7
+1164,45,Chukwunonso Azuka Tristan Madueke,FWD,Arsenal FC,50000000,12,2002-03-10,182,1
 1165,45,Eberechi Oluchi Eze,MID,Arsenal FC,65000000,17,1998-06-29,178,3
 1166,45,Ivan Benjamin Elijah Toney,FWD,Al Ahli FC,20000000,8,1996-03-16,185,1
 1167,45,James Harrington Trafford,GK,Manchester City FC,25000000,2,2002-10-10,197,0
 1168,45,Reece Lewis James,DEF,Chelsea FC,60000000,25,1999-12-08,180,1
-1169,45,Tehuti Djed-Hotep Spence,DEF,Tottenham Hotspur FC,30000000,7,2000-08-09,184,0
+1169,45,Diop Tehuti Djed-hotep Spence,DEF,Tottenham Hotspur FC,30000000,7,2000-08-09,184,0
 1170,45,Jarell Amorin Quansah,DEF,Bayer 04 Leverkusen,45000000,3,2003-01-29,190,0
-1171,46,Dominik Livakovic,GK,GNK Dinamo Zagreb,4000000,76,1995-01-09,188,0
-1172,46,Josip Stanisic,DEF,FC Bayern München,40000000,32,2000-04-02,186,0
-1173,46,Marin Pongracic,DEF,ACF Fiorentina,6500000,20,1997-09-11,193,0
+1171,46,Dominik Livaković,GK,GNK Dinamo Zagreb,4000000,76,1995-01-09,188,0
+1172,46,Josip Stanišić,DEF,FC Bayern München,40000000,32,2000-04-02,186,0
+1173,46,Marin Pongračić,DEF,ACF Fiorentina,6500000,20,1997-09-11,193,0
 1174,46,Joško Gvardiol,DEF,Manchester City FC,70000000,49,2002-01-23,185,4
-1175,46,Duje Caleta-Car,DEF,Real Sociedad,2800000,38,1996-09-17,193,1
-1176,46,Josip Sutalo,DEF,AFC Ajax,12000000,34,2000-02-28,185,0
+1175,46,Duje Ćaleta-car,DEF,Real Sociedad,2800000,38,1996-09-17,193,1
+1176,46,Josip Šutalo,DEF,AFC Ajax,12000000,34,2000-02-28,185,0
 1177,46,Nikola Moro,MID,Bologna FC,7000000,10,1998-03-12,183,0
-1178,46,Mateo Kovacic,MID,Manchester City FC,10000000,114,1994-05-06,178,5
-1179,46,Andrej Kramaric,FWD,TSG Hoffenheim,2500000,117,1991-06-19,177,36
-1180,46,Luka Modric,MID,AC Milan,3500000,199,1985-09-09,172,29
+1178,46,Mateo Kovačić,MID,Manchester City FC,10000000,114,1994-05-06,178,5
+1179,46,Andrej Kramarić,FWD,TSG Hoffenheim,2500000,117,1991-06-19,177,36
+1180,46,Luka Modrić,MID,AC Milan,3500000,199,1985-09-09,172,29
 1181,46,Ante Budimir,FWD,CA Osasuna,2800000,38,1991-07-22,190,6
 1182,46,Ivor Pandur,GK,Hull City FC,4500000,0,2000-03-25,187,0
-1183,46,Nikola Vlasic,MID,Torino FC,10000000,64,1997-10-04,179,10
-1184,46,Ivan Perisic,FWD,PSV Eindhoven,1200000,155,1989-02-02,186,38
-1185,46,Mario Pasalic,MID,Atalanta Bergamo,6000000,86,1995-02-09,188,12
+1183,46,Nikola Vlašić,MID,Torino FC,10000000,64,1997-10-04,179,10
+1184,46,Ivan Perišić,FWD,PSV Eindhoven,1200000,155,1989-02-02,186,38
+1185,46,Mario Pašalić,MID,Atalanta Bergamo,6000000,86,1995-02-09,188,12
 1186,46,Martin Baturina,MID,Como,30000000,20,2003-02-16,172,2
-1187,46,Petar Sucic,MID,FC Internazionale Milano,40000000,18,2003-10-25,183,1
-1188,46,Kristijan Jakic,DEF,FC Augsburg,6000000,17,1997-05-14,181,2
+1187,46,Petar Sučić,MID,FC Internazionale Milano,40000000,18,2003-10-25,183,1
+1188,46,Kristijan Jakić,DEF,FC Augsburg,6000000,17,1997-05-14,181,2
 1189,46,Toni Fruk,MID,HNK Rijeka,9000000,7,2001-03-09,177,1
-1190,46,Igor Matanovic,FWD,SC Freiburg,22000000,10,2003-03-31,194,2
-1191,46,Luka Sucic,MID,Real Sociedad,10000000,21,2002-09-08,185,1
-1192,46,Luka Vuskovic,DEF,Hamburger SV,60000000,6,2007-02-24,193,1
+1190,46,Igor Matanović,FWD,SC Freiburg,22000000,10,2003-03-31,194,2
+1191,46,Luka Sučić,MID,Real Sociedad,10000000,21,2002-09-08,185,1
+1192,46,Luka Vušković,DEF,Hamburger SV,60000000,6,2007-02-24,193,1
 1193,46,Dominik Kotarski,GK,FC København,5000000,4,2000-02-10,190,0
-1194,46,Marco Pasalic,FWD,Orlando City SC,6500000,16,2000-09-14,177,1
-1195,46,Martin Erlic,DEF,FC Midtjylland,4000000,13,1998-01-24,192,1
+1194,46,Marco Pašalić,FWD,Orlando City SC,6500000,16,2000-09-14,177,1
+1195,46,Martin Erlić,DEF,FC Midtjylland,4000000,13,1998-01-24,192,1
 1196,46,Petar Musa,FWD,FC Dallas,12000000,12,1998-03-04,190,2
 1197,47,Lawrence Ati Zigi,GK,FC St. Gallen,1500000,31,1996-11-29,188,0
 1198,47,Alidu Seidu,DEF,Stade Rennais FC,6000000,24,2000-06-04,173,1
 1199,47,Caleb Marfo Yirenkyi,MID,FC Nordsjælland,10000000,12,2006-01-15,182,2
 1200,47,Jonas Adjei Adjetey,DEF,VfL Wolfsburg,6000000,11,2003-12-13,188,0
 1201,47,Thomas Teye Partey,MID,Villarreal CF,2000000,59,1993-06-13,185,16
-1202,47,Abdul Mumin Mumin,DEF,Rayo Vallecano,3000000,5,1998-06-06,188,0
-1203,47,Abdul Fatawu Fatawu,FWD,Leicester City FC,20000000,29,2004-03-08,177,3
+1202,47,Abdul Mumin Suleman,DEF,Rayo Vallecano,3000000,5,1998-06-06,188,0
+1203,47,Abdul Fatawu Issahaku,FWD,Leicester City FC,20000000,29,2004-03-08,177,3
 1204,47,Kwasi Sibo,MID,Real Oviedo,1400000,9,1998-06-24,183,0
 1205,47,Jordan Pierre Ayew,FWD,Leicester City FC,1800000,121,1991-09-11,182,34
-1206,47,Brandon Michael Clarke Thomas-Asante,FWD,Coventry City FC,16000000,9,1998-12-29,182,1
+1206,47,Solomon Brandon Michael Clarke Thomas-asante,FWD,Coventry City FC,16000000,9,1998-12-29,182,1
 1207,47,Antoine Serlom Semenyo,MID,Manchester City FC,80000000,35,2000-01-07,185,3
 1208,47,Joseph Tetteh Anang,GK,St Patrick's Athletic FC,350000,1,2000-06-08,190,0
-1209,47,Christopher Bonsu Bonsu Baah,FWD,Al Qadsiah FC,14000000,9,2004-12-14,172,0
+1209,47,Christopher Bonsu Baah,FWD,Al Qadsiah FC,14000000,9,2004-12-14,172,0
 1210,47,Gideon Mensah,DEF,AJ Auxerre,4000000,41,1998-07-18,178,0
 1211,47,Elisha Owusu,MID,AJ Auxerre,4000000,21,1997-11-07,182,0
 1212,47,Benjamin Asare,GK,Hearts Of Oak SC,100000,14,1992-07-13,188,0
-1213,47,Abdul Rahman Rahman,DEF,PAOK Saloniki,2000000,53,1994-07-02,179,1
+1213,47,Abdul Rahman Baba,DEF,PAOK Saloniki,2000000,53,1994-07-02,179,1
 1214,47,Jerome Opoku,DEF,Ba ş ak ş ehir FK,5000000,12,1998-10-14,197,1
-1215,47,Inaki Williams,FWD,Athletic Club,8000000,26,1994-06-15,186,2
+1215,47,Inaki Williams Arthuer,FWD,Athletic Club,8000000,26,1994-06-15,186,2
 1216,47,Augustine Boakye,MID,AS Saint-Etienne,4000000,0,2000-11-03,178,0
 1217,47,Kojo Peprah Oppong,DEF,OGC Nice,10000000,4,2004-06-04,185,0
 1218,47,Kamal Deen Sulemana,FWD,Atalanta Bergamo,17000000,29,2002-02-15,174,1
 1219,47,Derrick Luckassen,DEF,Pafos FC,1200000,1,1995-07-03,188,0
-1220,47,Ernest Nuamah Nuamah,FWD,Olympique Lyonnais,10000000,20,2003-11-01,178,4
+1220,47,Ernest Nuamah Appiah,FWD,Olympique Lyonnais,10000000,20,2003-11-01,178,4
 1221,47,Prince Kwabena Adu,FWD,FC Viktoria Plze ň,3000000,6,2003-09-23,179,0
 1222,47,Marvin Elom Senaya,DEF,AJ Auxerre,3000000,3,2001-01-28,181,0
-1223,48,Luis Ricardo Mejia,GK,Club Nacional,150000,56,1991-03-16,193,0
-1224,48,Cesar Rodolfo Blackman,DEF,Š K Slovan Bratislava,2500000,41,1998-04-02,174,3
-1225,48,Jose Angel Cordoba,DEF,Norwich City FC,5000000,33,2001-06-03,189,1
-1226,48,Fidel Escobar,DEF,Deportivo Saprissa,350000,99,1995-01-09,184,4
-1227,48,Edgardo Issac Farina,DEF,FC Pari Nizhny Novgorod,900000,18,2001-10-19,195,0
+1223,48,Luis Ricardo Mejía Cajar,GK,Club Nacional,150000,56,1991-03-16,193,0
+1224,48,Cesar Rodolfo Blackman Camarena,DEF,Š K Slovan Bratislava,2500000,41,1998-04-02,174,3
+1225,48,Jose Angel Cordoba Chambers,DEF,Norwich City FC,5000000,33,2001-06-03,189,1
+1226,48,Fidel Escobar Mendieta,DEF,Deportivo Saprissa,350000,99,1995-01-09,184,4
+1227,48,Edgardo Issac Fariña Wynter,DEF,FC Pari Nizhny Novgorod,900000,18,2001-10-19,195,0
 1228,48,Cristian Jesus Martinez,MID,Hapoel Kiryat Shmona FC,800000,68,1997-02-06,170,2
-1229,48,Jose Luis Rodriguez,MID,FC Juárez,2500000,71,1998-06-19,180,8
-1230,48,Adalberto Eliecer Carrasquilla,MID,Pumas UNAM,4000000,73,1998-11-28,171,3
-1231,48,Tomas Abdiel Rodriguez,FWD,Deportivo Saprissa,1000000,13,1999-03-09,183,4
-1232,48,Ismael Diaz,MID,Club León,1800000,57,1997-05-12,184,17
-1233,48,Edgar Yoel Barcenas,MID,Mazatlán FC,650000,105,1993-10-23,175,10
-1234,48,Cesar Jair Samudio,GK,CD Marathón,250000,5,1994-02-23,189,0
-1235,48,Jiovany Javier Ramos,DEF,Puerto Cabello CF,450000,24,1997-01-26,188,2
-1236,48,Carlos Miguel Harvey,DEF,Minnesota United FC,600000,29,2000-02-03,184,3
-1237,48,Eric Javier Davis,DEF,CD Plaza Amador,50000,107,1991-03-31,180,9
-1238,48,Andres Alberto Andrade,DEF,LASK Linz,2500000,51,1998-10-16,187,1
-1239,48,Jose Fajardo,FWD,CD Universidad Católica,550000,70,1993-08-18,184,17
-1240,48,Cecilio Alfonso Waterman,FWD,CD Universidad De Concepción,250000,56,1991-04-13,180,15
-1241,48,Alberto Abdiel Quintero,MID,CD Plaza Amador,75000,141,1987-12-18,165,7
-1242,48,Anibal Casis Godoy,MID,San Diego FC,100000,160,1990-02-10,184,4
-1243,48,Cesar Augusto Yanis,MID,CD Cobresal,400000,55,1996-01-28,160,5
+1229,48,Jose Luis Rodriguez Francis,MID,FC Juárez,2500000,71,1998-06-19,180,8
+1230,48,Adalberto Eliecer Carrasquilla Alcazar,MID,Pumas UNAM,4000000,73,1998-11-28,171,3
+1231,48,Tomas Abdiel Rodriguez Mena,FWD,Deportivo Saprissa,1000000,13,1999-03-09,183,4
+1232,48,Ismael Diaz de Leon,MID,Club León,1800000,57,1997-05-12,184,17
+1233,48,Edgar Yoel Barcenas Herrera,MID,Mazatlán FC,650000,105,1993-10-23,175,10
+1234,48,Cesar Jair Samudio Murillo,GK,CD Marathón,250000,5,1994-02-23,189,0
+1235,48,Jiovany Javier Ramos Diaz,DEF,Puerto Cabello CF,450000,24,1997-01-26,188,2
+1236,48,Carlos Miguel Harvey Cesneros,DEF,Minnesota United FC,600000,29,2000-02-03,184,3
+1237,48,Eric Javier Davis Grajales,DEF,CD Plaza Amador,50000,107,1991-03-31,180,9
+1238,48,Andres Alberto Andrade Cedeño,DEF,LASK Linz,2500000,51,1998-10-16,187,1
+1239,48,Jose Fajardo Nelson,FWD,CD Universidad Católica,550000,70,1993-08-18,184,17
+1240,48,Cecilio Alfonso Waterman Ruiz,FWD,CD Universidad De Concepción,250000,56,1991-04-13,180,15
+1241,48,Alberto Abdiel Quintero Medina,MID,CD Plaza Amador,75000,141,1987-12-18,165,7
+1242,48,Anibal Casis Godoy Lemus,MID,San Diego FC,100000,160,1990-02-10,184,4
+1243,48,Cesar Augusto Yanis Velasco,MID,CD Cobresal,400000,55,1996-01-28,160,5
 1244,48,Orlando Mosquera,GK,Al Fayha FC,700000,50,1994-12-25,191,0
-1245,48,Michael Amir Murillo,DEF,Be ş ikta ş  JK,7000000,94,1996-02-11,185,9
-1246,48,Azarías Emmanuel Londono,FWD,CD Universidad Católica,1000000,13,2001-06-21,185,1
-1247,48,Roderick Alonso Miller,DEF,Turan Tovuz,200000,49,1992-04-03,190,2
-1248,48,Jorge Abdiel Gutierrez,DEF,Deportivo La Guaira,800000,18,1998-09-01,171,0
+1245,48,Michael Amir Murillo Bermudez,DEF,Be ş ikta ş  JK,7000000,94,1996-02-11,185,9
+1246,48,Azarías Emmanuel Londoño Gonzalez,FWD,CD Universidad Católica,1000000,13,2001-06-21,185,1
+1247,48,Roderick Alonso Miller Molina,DEF,Turan Tovuz,200000,49,1992-04-03,190,2
+1248,48,Jorge Abdiel Gutierrez Cornejo,DEF,Deportivo La Guaira,800000,18,1998-09-01,171,0
