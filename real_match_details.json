@@ -2159,5 +2159,59 @@
         "minute": "70' (pen.)"
       }
     ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 5, 2026",
+    "home_team": "Brazil",
+    "away_team": "Norway",
+    "score": "1–2",
+    "home_goals": [
+      {
+        "scorer": "Neymar",
+        "minute": "90+10' (pen.)"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Haaland",
+        "minute": "79'"
+      },
+      {
+        "scorer": "Haaland",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 5, 2026",
+    "home_team": "Mexico",
+    "away_team": "England",
+    "score": "2–3",
+    "home_goals": [
+      {
+        "scorer": "Quiñones",
+        "minute": "42'"
+      },
+      {
+        "scorer": "Jiménez",
+        "minute": "69' (pen.)"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Bellingham",
+        "minute": "36'"
+      },
+      {
+        "scorer": "Bellingham",
+        "minute": "38'"
+      },
+      {
+        "scorer": "Kane",
+        "minute": "60' (pen.)"
+      }
+    ]
   }
 ]
