@@ -27,6 +27,7 @@
 The FIFA World Cup 2026 Dataset has started gaining traction within the data science and developer community.
 
 - Mentioned by **Software with Nick** in an Instagram reel highlighting useful datasets for AI, machine learning, and data science projects.
+- Featured in the **Analytics Jobs in Sports** newsletter on Substack, highlighting the dataset for sports analytics.
 - Featured in a LinkedIn post that reached **22,000+ professionals**, generating significant engagement from the data community.
 - Shared and discussed by developers building World Cup prediction models, dashboards, SQL projects, and sports analytics applications.
 - Continuously updated after every completed FIFA World Cup 2026 match.
@@ -35,6 +36,9 @@ The FIFA World Cup 2026 Dataset has started gaining traction within the data sci
 
 **Software with Nick (Instagram)**
 - 📹 https://www.instagram.com/softwarewithnick/reel/DaSkFRqx1e1/
+
+**Analytics Jobs in Sports (Substack)**
+- 📰 https://sportsjobs.substack.com/p/analytics-jobs-in-sports-fifa-world
 
 **LinkedIn Community Post**
 - 🔗 https://www.linkedin.com/feed/update/urn:li:activity:7473374635284422658/
