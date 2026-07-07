@@ -3,7 +3,7 @@ import csv
 import sqlite3
 
 workspace_dir = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(workspace_dir, "fifa_world_cup_2026.db")
+db_path = os.path.join(workspace_dir, "sqlite_fifa_world_cup_2026.db")
 
 # List of CSV files and target table names
 csv_files = {

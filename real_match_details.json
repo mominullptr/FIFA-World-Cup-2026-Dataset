@@ -2216,5 +2216,53 @@
         "minute": "60' (pen.)"
       }
     ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 6, 2026",
+    "home_team": "Portugal",
+    "away_team": "Spain",
+    "score": "0–1",
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Mikel Merino",
+        "minute": "90+1'",
+        "assist": "Ferran Torres"
+      }
+    ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 6, 2026",
+    "home_team": "USA",
+    "away_team": "Belgium",
+    "score": "1–4",
+    "home_goals": [
+      {
+        "scorer": "Malik Tillman",
+        "minute": "31'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Charles De Ketelaere",
+        "minute": "9'",
+        "assist": "Nicolas Raskin"
+      },
+      {
+        "scorer": "Charles De Ketelaere",
+        "minute": "33'",
+        "assist": "Leandro Trossard"
+      },
+      {
+        "scorer": "Hans Vanaken",
+        "minute": "57'"
+      },
+      {
+        "scorer": "Romelu Lukaku",
+        "minute": "90+3'"
+      }
+    ]
   }
 ]

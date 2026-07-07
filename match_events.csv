@@ -714,3 +714,17 @@ event_id,match_id,minute,event_type,team_id,player_id
 713,92,72,Yellow Card,45,1147
 714,92,90+8,Yellow Card,1,5
 715,92,90+8,Yellow Card,45,1158
+716,93,88,Yellow Card,41,1050
+717,93,90+1,Goal,29,734
+718,93,90+1,Assist,29,735
+719,93,90+3,Yellow Card,41,1053
+720,93,90+8,Yellow Card,29,735
+721,94,9,Goal,25,641
+722,94,9,Assist,25,647
+723,94,31,Goal,13,329
+724,94,33,Goal,25,641
+725,94,33,Assist,25,634
+726,94,35,Yellow Card,13,320
+727,94,57,Goal,25,644
+728,94,69,Yellow Card,13,329
+729,94,90+3,Goal,25,633
