@@ -1,0 +1,14 @@
+# Sitemaps and Crawling Rules for FIFA World Cup 2026 Dataset Website
+# Optimized for Googlebot, Bingbot, GPTBot, ClaudeBot, and AI search engines
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/db_schema.png
+Allow: /assets/prediction_cover.png
+Allow: /assets/data_preview.js
+Disallow: /assets/*.css
+Disallow: /assets/*.js
+
+# Sitemap Location
+Sitemap: https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/sitemap.xml

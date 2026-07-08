@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>FIFA World Cup 2026 Dataset - Live CSV, SQL & Player Stats</title>
+  <meta name="title" content="FIFA World Cup 2026 Dataset - Live CSV, SQL & Player Stats">
+  <meta name="description" content="Download the complete, daily updated FIFA World Cup 2026 relational dataset. Sourced from FIFA.com, featuring 1,248 player market values, match events, expected goals (xG), venues, and SQL databases. Sourced and validated daily.">
+  <meta name="keywords" content="FIFA World Cup 2026 dataset, World Cup 2026 CSV, World Cup SQL database, sports analytics dataset, football player market values 2026, expected goals xG database, FIFA 2026 matches, Kaggle World Cup dataset, sports science SQL project">
+  <meta name="author" content="MD Mominul Islam">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/">
+  <meta property="og:title" content="FIFA World Cup 2026 Dataset - Live CSV, SQL & Player Stats">
+  <meta property="og:description" content="Download the most authentic, actively updated relational database for the World Cup 2026. Zero synthetic data. Sourced from FIFA.com and verified providers.">
+  <meta property="og:image" content="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/assets/prediction_cover.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/">
+  <meta property="twitter:title" content="FIFA World Cup 2026 Dataset - Live CSV, SQL & Player Stats">
+  <meta property="twitter:description" content="Download the complete, daily updated FIFA World Cup 2026 relational dataset. Featuring player stats, xG, match lineups, and SQL schemas.">
+  <meta property="twitter:image" content="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/assets/prediction_cover.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/dataset-cover.png">
+
+  <!-- JSON-LD Structured Data for Google Dataset Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Dataset",
+    "name": "FIFA World Cup 2026 Relational Dataset (Live & Daily Updated)",
+    "description": "The most complete and actively updated FIFA World Cup 2026 dataset. Sourced from FIFA.com and verified providers, covering teams, venues, squads, players, match statistics, lineups, match events, expected goals (xG), and referee data. Features fully normalized relational tables (CSV and SQLite formats) with zero synthetic data.",
+    "url": "https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/",
+    "sameAs": [
+      "https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset",
+      "https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset",
+      "https://huggingface.co/datasets/Mominullptr/fifa-world-cup-2026-dataset"
+    ],
+    "keywords": [
+      "FIFA World Cup 2026",
+      "World Cup 2026 Dataset",
+      "Sports Analytics",
+      "Football Player Stats CSV",
+      "Soccer SQL Database",
+      "Expected Goals xG Database",
+      "World Cup 2026 Predictions"
+    ],
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "creator": {
+      "@type": "Person",
+      "name": "MD Mominul Islam",
+      "url": "https://github.com/mominullptr"
+    },
+    "includedInDataCatalog": {
+      "@type": "DataCatalog",
+      "name": "Kaggle Datasets"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "text/csv",
+        "contentUrl": "https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/matches_detailed.csv",
+        "description": "Denormalized matches dataset with team names, stadium names, elevations, and referee details."
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/x-sqlite3",
+        "contentUrl": "https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/sqlite_fifa_world_cup_2026.db",
+        "description": "Fully optimized SQLite relational database featuring all normalized tables and relationships."
+      }
+    ],
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "United States, Canada, Mexico"
+    },
+    "temporalCoverage": "2026-06-11/2026-07-19"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <img src="assets/2026_FIFA_World_Cup_emblem.svg.webp" alt="FIFA World Cup 2026 Emblem">
+        FIFA World Cup 2026 <span>Dataset</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#overview" class="active">Overview</a></li>
+          <li><a href="#schema">Schema</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#project-ideas">Project Ideas</a></li>
+          <li><a href="#links">Links</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a href="https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset" target="_blank" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Dataset
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="overview" class="hero container">
+    <div class="hero-grid">
+      <!-- Left Info -->
+      <div class="hero-info-panel">
+        <div class="hero-badge">
+          <div class="dot"></div>
+          Live & Updated
+        </div>
+        <h1 class="hero-title">
+          Sourced & Verified<br>
+          FIFA World Cup 2026™<br>
+          <span>Live SQL & CSV Dataset</span>
+        </h1>
+        <p class="hero-subtitle">
+          Welcome to the most complete, authentic, and actively updated <strong>FIFA World Cup 2026 Dataset</strong>. As the first World Cup featuring the new <strong>48-team format</strong>, this fully normalized relational database tracking all matches, players, squads, live stats, expected goals (xG), and match events is updated daily as the tournament progresses.
+        </p>
+        <div class="hero-bullets" style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.65rem; color: var(--text-secondary); font-size: 0.95rem;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--theme-green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Sourced directly</strong> from FIFA.com and verified providers.</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--theme-green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Zero Synthetic Data</strong>: Every statistic is verified, accurate, and completely traceable.</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--theme-green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Fully Relational Structure</strong>: Pre-linked with primary and foreign keys for direct import into SQL (SQLite, PostgreSQL, MySQL).</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--theme-green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span><strong>Free & Open Source</strong>: Licensed under Creative Commons Public Domain (CC0-1.0).</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset" target="_blank" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:4px;">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.75 14H6.5v-1.75h6.75V17zm3.25-3.5H6.5v-1.75h10V13.5zm0-3.5H6.5V8.25h10V10z"/>
+            </svg>
+            View on Kaggle
+          </a>
+          <a href="https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset" target="_blank" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+            View on GitHub
+          </a>
+          <a href="https://huggingface.co/datasets/Mominullptr/fifa-world-cup-2026-dataset" target="_blank" class="btn btn-outline">
+            🤗 View on Hugging Face
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right Graphic & Mini Stats -->
+      <div class="hero-graphic-container">
+        <img src="assets/ChatGPT%20Image%20Jul%209,%202026,%2012_18_11%20AM.png" class="hero-image" alt="FIFA World Cup 2026 Database Dashboard Mockup Overview">
+        <div class="hero-stats-panel">
+          <div class="stat-item">
+            <div class="stat-icon red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">48</span>
+              <span class="stat-label">Teams</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">1,248</span>
+              <span class="stat-label">Players</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Updated After</span>
+              <span class="stat-number">Every Match</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KPI Banner -->
+  <section class="kpi-banner container">
+    <div class="kpi-container">
+      <div class="kpi-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+        8,960+ Views
+      </div>
+      <div class="kpi-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        2,780+ Downloads
+      </div>
+      <div class="kpi-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+        </svg>
+        44 Upvotes
+      </div>
+      <div class="kpi-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        Mentioned by Software with Nick
+      </div>
+      <div class="kpi-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+        Featured on LinkedIn
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Dataset Section -->
+  <section id="why" class="why-section container">
+    <div class="section-header">
+      <h2>Why This Dataset?</h2>
+    </div>
+    <div class="why-grid">
+      <!-- Most Datasets (Inactive) -->
+      <div class="why-column glass-card">
+        <h3>Most Datasets</h3>
+        <div class="timeline timeline-most">
+          <div class="timeline-item completed">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">2018</span>
+            </div>
+          </div>
+          <div class="timeline-item completed">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">1,600+</span>
+            </div>
+          </div>
+          <div class="timeline-item stopped">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">Stopped</span>
+              <span class="timeline-status stopped">Not Updated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- This Dataset (Active) -->
+      <div class="why-column glass-card">
+        <h3>This Dataset</h3>
+        <div class="timeline timeline-this">
+          <div class="timeline-item completed">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">2026 Group Stage</span>
+            </div>
+          </div>
+          <div class="timeline-item completed">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">Round of 32</span>
+            </div>
+          </div>
+          <div class="timeline-item active">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title font-gold" style="color:var(--primary-gold); font-weight:700;">Round of 16</span>
+              <span class="timeline-status active">Active</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title" style="opacity:0.6;">Quarter-finals</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title" style="opacity:0.6;">Semi-finals</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-title" style="opacity:0.6; display:flex; align-items:center; gap:6px;">
+                Final
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" style="color:var(--primary-gold-dark);">
+                  <path d="M6 9H4.5A2.5 2.5 0 0 1 2 6.5V6A2.5 2.5 0 0 1 4.5 3.5H6V9zM18 9h1.5a2.5 2.5 0 0 0 2.5-2.5V6a2.5 2.5 0 0 0-2.5-2.5H18V9zM12 2A6 6 0 0 0 6 8v4a6 6 0 0 0 6 6 6 6 0 0 0 6-6V8a6 6 0 0 0-6-6zM10 18v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2h-4zM8 21v1h8v-1H8z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Database Schema Section -->
+  <section id="schema" class="schema-section container">
+    <div class="section-header">
+      <h2>Database Schema & Relational Structure</h2>
+      <p>11 Normalized Tables • SQLite Ready • Foreign Keys • Production Ready</p>
+    </div>
+    <div class="schema-container">
+      <div class="glass-card schema-card" id="schema-container" style="cursor: pointer; position: relative;">
+        <img src="assets/db_schema.png" class="schema-img" alt="FIFA World Cup 2026 Database Schema Diagram Detail">
+        <div class="zoom-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(4,9,7,0.5); opacity:0; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:8px; border-radius:16px; transition: var(--transition-smooth); color: #fff;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="28" height="28">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="11" y1="8" x2="11" y2="14"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <span style="font-weight: 700; font-family: var(--font-title);">Click to Zoom Schema</span>
+        </div>
+      </div>
+     <!-- Relational Database Schema SEO/AEO Hooks -->
+    <div class="db-importance-grid" style="margin-top: 3rem; margin-bottom: 3.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+      <div class="glass-card table-card" style="border-left: 4px solid var(--theme-green); display: flex; flex-direction: column; justify-content: space-between; padding: 1.75rem; background: rgba(0, 245, 212, 0.025);">
+        <div>
+          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--theme-green); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            LLM & AI-Agent Ready (AEO)
+          </h4>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+            Artificial Intelligence search bots and RAG engines crawl semantic schemas. By presenting a fully normalized, pre-linked relational design, AI models can write perfect SQL queries to answer complex, multi-hop sports questions (e.g., player card frequency analysis in high-altitude stadiums) without hallucination.
+          </p>
+        </div>
+      </div>
+      <div class="glass-card table-card" style="border-left: 4px solid var(--theme-blue); display: flex; flex-direction: column; justify-content: space-between; padding: 1.75rem; background: rgba(58, 134, 255, 0.025);">
+        <div>
+          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--theme-blue); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            High-Authority SEO Hook
+          </h4>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+            Search engines reward data consistency and rich relational structures. This SQLite-ready database model links squads, matches, venues, and live events, allowing indexers to crawl clean, non-duplicate schemas and boost authority rankings on World Cup dataset searches.
+          </p>
+        </div>
+      </div>
+      <div class="glass-card table-card" style="border-left: 4px solid var(--theme-purple); display: flex; flex-direction: column; justify-content: space-between; padding: 1.75rem; background: rgba(155, 93, 229, 0.025);">
+        <div>
+          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--theme-purple); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            Zero Duplication Integrity
+          </h4>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+            Flat CSV tables often result in out-of-sync player names, duplicate schedules, or orphaned records. Our fully normalized SQLite database ensures 100% mathematical integrity across all 11 tables, providing a robust, plug-and-play local structure for analytics portfolios.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Structured Schema Description Block for AEO Spiders -->
+    <div class="schema-desc-block" style="margin-top: 3rem;">
+      <h3 style="font-family: var(--font-title); font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--primary-gold);">Relational Schema & Table Definitions</h3>
+      <div class="table-wrapper">
+        <table class="preview-table">
+          <thead>
+            <tr>
+              <th>Table Name</th>
+              <th>Primary Key</th>
+              <th>Key Foreign Keys</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><code>teams</code></strong></td>
+              <td><code>team_id</code></td>
+              <td>-</td>
+              <td>Complete list of all 48 participating countries, FIFA codes, ELO ratings, and managers.</td>
+            </tr>
+            <tr>
+              <td><strong><code>venues</code></strong></td>
+              <td><code>venue_id</code></td>
+              <td>-</td>
+              <td>Information on the 16 host stadiums, including city, capacity, coordinates, and elevations.</td>
+            </tr>
+            <tr>
+              <td><strong><code>matches</code></strong></td>
+              <td><code>match_id</code></td>
+              <td><code>stage_id, venue_id, home_team_id, away_team_id, referee_id</code></td>
+              <td>Match schedules, scorelines, expected goals (xG), and official referees.</td>
+            </tr>
+            <tr>
+              <td><strong><code>squads_and_players</code></strong></td>
+              <td><code>player_id</code></td>
+              <td><code>team_id</code></td>
+              <td>Comprehensive registry of all 1,248 players, club teams, market values, and international caps.</td>
+            </tr>
+            <tr>
+              <td><strong><code>match_events</code></strong></td>
+              <td><code>event_id</code></td>
+              <td><code>match_id, team_id, player_id</code></td>
+              <td>Minute-by-minute timeline of goals, assists, yellow/red cards, and VAR events.</td>
+            </tr>
+            <tr>
+              <td><strong><code>match_team_stats</code></strong></td>
+              <td><code>match_id, team_id</code></td>
+              <td><code>match_id, team_id</code></td>
+              <td>Per-team metrics: possession %, total shots, corners, saves, and fouls.</td>
+            </tr>
+            <tr>
+              <td><strong><code>match_lineups</code></strong></td>
+              <td><code>lineup_id</code></td>
+              <td><code>match_id, player_id, team_id</code></td>
+              <td>Tactical lineups detailing starting XIs, substitutes, and exact minutes played.</td>
+            </tr>
+            <tr>
+              <td><strong><code>player_stats</code></strong></td>
+              <td><code>player_id</code></td>
+              <td><code>player_id, team_id</code></td>
+              <td>Cumulative tournament player statistics (goals, assists, clean sheets, saves, etc.).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Inside the Dataset? Section -->
+  <section id="tables" class="inside-section container">
+    <div class="section-header">
+      <h2>What's Inside the Dataset?</h2>
+    </div>
+    <div class="inside-grid">
+      <!-- 6 Normalized Tables Cards -->
+      <div class="tables-grid">
+        <!-- Teams -->
+        <div class="glass-card table-card red">
+          <div class="table-card-header red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <h4>TEAMS</h4>
+          </div>
+          <ul class="table-fields">
+            <li>team_id (PK)</li>
+            <li>team_name</li>
+            <li>fifa_code</li>
+            <li>group_letter</li>
+            <li>confederation</li>
+            <li>fifa_ranking_pre_tournament</li>
+            <li>elo_rating</li>
+            <li>manager_name</li>
+          </ul>
+        </div>
+        <!-- Squads -->
+        <div class="glass-card table-card blue">
+          <div class="table-card-header blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <h4>SQUADS_AND_PLAYERS</h4>
+          </div>
+          <ul class="table-fields">
+            <li>player_id (PK)</li>
+            <li>team_id (FK)</li>
+            <li>player_name</li>
+            <li>position</li>
+            <li>club_team</li>
+            <li>market_value_eur</li>
+            <li>caps</li>
+            <li>date_of_birth</li>
+            <li>height_cm</li>
+            <li>weight_kg</li>
+          </ul>
+        </div>
+        <!-- Matches -->
+        <div class="glass-card table-card green">
+          <div class="table-card-header green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <h4>MATCHES</h4>
+          </div>
+          <ul class="table-fields">
+            <li>match_id (PK)</li>
+            <li>date</li>
+            <li>kickoff_time_utc</li>
+            <li>stage_id (FK)</li>
+            <li>venue_id (FK)</li>
+            <li>home_team_id (FK)</li>
+            <li>away_team_id (FK)</li>
+            <li>home_score</li>
+            <li>away_score</li>
+            <li>status</li>
+            <li>home_xg</li>
+            <li>away_xg</li>
+            <li>referee_id (FK)</li>
+          </ul>
+        </div>
+        <!-- Match Events -->
+        <div class="glass-card table-card orange">
+          <div class="table-card-header orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <h4>MATCH_EVENTS</h4>
+          </div>
+          <ul class="table-fields">
+            <li>event_id (PK)</li>
+            <li>match_id (FK)</li>
+            <li>minute</li>
+            <li>team_id (FK)</li>
+            <li>player_id (FK)</li>
+            <li>event_type</li>
+            <li>description</li>
+            <li>is_var</li>
+          </ul>
+        </div>
+        <!-- Match Lineups -->
+        <div class="glass-card table-card purple">
+          <div class="table-card-header purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <h4>MATCH_LINEUPS</h4>
+          </div>
+          <ul class="table-fields">
+            <li>lineup_id (PK)</li>
+            <li>match_id (FK)</li>
+            <li>team_id (FK)</li>
+            <li>player_id (FK)</li>
+            <li>is_starter</li>
+            <li>jersey_number</li>
+            <li>position</li>
+            <li>minutes_played</li>
+            <li>is_captain</li>
+          </ul>
+        </div>
+        <!-- Match Team Stats -->
+        <div class="glass-card table-card red">
+          <div class="table-card-header red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            <h4>MATCH_TEAM_STATS</h4>
+          </div>
+          <ul class="table-fields">
+            <li>stat_id (PK)</li>
+            <li>match_id (FK)</li>
+            <li>team_id (FK)</li>
+            <li>possession_pct</li>
+            <li>shots</li>
+            <li>shots_on_target</li>
+            <li>corners</li>
+            <li>fouls</li>
+            <li>offsides</li>
+            <li>saves</li>
+            <li>yellow_cards</li>
+            <li>red_cards</li>
+            <li>expected_goals</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Prediction Card -->
+      <div id="prediction" class="glass-card table-card gold" style="background-image: radial-gradient(circle at 100% 10%, rgba(242, 201, 76, 0.05) 0%, transparent 60%);">
+        <div class="table-card-header gold">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <h4>MATCH_PREDICTION_FEATURES</h4>
+        </div>
+        <p class="prediction-desc" style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+          Skip weeks of feature engineering. Train ML models immediately using ELO ratings, venue altitude, squad quality, rest days, and target labels.
+        </p>
+        <div class="prediction-card-fields">
+          <ul class="table-fields">
+            <li>match_id (PK/FK)</li>
+            <li>date</li>
+            <li>kickoff_time_utc</li>
+            <li>stage_id (FK)</li>
+            <li>is_knockout</li>
+            <li>home_team_id (FK)</li>
+            <li>home_team_name</li>
+            <li>home_fifa_code</li>
+            <li>home_confederation</li>
+            <li>away_team_id (FK)</li>
+            <li>away_team_name</li>
+            <li>away_fifa_code</li>
+            <li>away_confederation</li>
+            <li>venue_id (FK)</li>
+            <li>stadium_name</li>
+            <li>venue_city</li>
+            <li>venue_country</li>
+            <li>venue_capacity</li>
+            <li>venue_elevation_meters</li>
+            <li>referee_id (FK)</li>
+            <li>referee_name</li>
+            <li>referee_avg_cards</li>
+            <li>home_fifa_rank</li>
+            <li>away_fifa_rank</li>
+            <li>home_elo</li>
+            <li>away_elo</li>
+            <li>home_is_host</li>
+            <li>away_is_host</li>
+            <li>home_squad_avg_age</li>
+            <li>away_squad_avg_age</li>
+            <li>home_squad_total_caps</li>
+            <li>away_squad_total_caps</li>
+            <li>home_squad_total_value_eur</li>
+            <li>away_squad_total_value_eur</li>
+            <li>home_squad_avg_value_eur</li>
+            <li>away_squad_avg_value_eur</li>
+            <li>home_rest_days</li>
+            <li>away_rest_days</li>
+            <li>home_prev_avg_goals_scored</li>
+            <li>home_prev_avg_goals_conceded</li>
+            <li>away_prev_avg_goals_scored</li>
+            <li>away_prev_avg_goals_conceded</li>
+            <li>home_prev_avg_possession</li>
+            <li>away_prev_avg_possession</li>
+            <li>home_prev_avg_shots</li>
+            <li>away_prev_avg_shots</li>
+            <li>home_prev_avg_shots_on_target</li>
+            <li>away_prev_avg_shots_on_target</li>
+            <li>home_prev_avg_saves</li>
+            <li>away_prev_avg_saves</li>
+            <li>home_prev_avg_corners</li>
+            <li>away_prev_avg_corners</li>
+            <li>home_prev_avg_fouls</li>
+            <li>away_prev_avg_fouls</li>
+            <li>home_prev_avg_offsides</li>
+            <li>away_prev_avg_offsides</li>
+            <li>home_prev_avg_xg_scored</li>
+            <li>home_prev_avg_xg_conceded</li>
+            <li>away_prev_avg_xg_scored</li>
+            <li>away_prev_avg_xg_conceded</li>
+            <li>home_score</li>
+            <li>away_score</li>
+            <li>result_type</li>
+            <li>home_xg</li>
+            <li>away_xg</li>
+            <li>match_result (Target)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built For Section -->
+  <section class="built-section container">
+    <div class="built-grid">
+      <div class="glass-card built-card red">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          </svg>
+          Machine Learning
+        </h3>
+        <p>Build prediction models with pre-match engineered features and historical trends.</p>
+      </div>
+      
+      <div class="glass-card built-card green">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+          </svg>
+          Sports Analytics
+        </h3>
+        <p>Analyze performance, expected goals (xG), card counts, and team ELO ratings.</p>
+      </div>
+      
+      <div class="glass-card built-card blue">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+          </svg>
+          SQL Practice
+        </h3>
+        <p>Normalized relational database perfect for database courses, portfolio joins & subqueries.</p>
+      </div>
+    </div>
+    
+    <!-- Live Update Pipeline Container -->
+    <div class="glass-card pipeline-panel">
+      <h3>Live Update Pipeline</h3>
+      <div class="pipeline-flow">
+        <div class="pipeline-step">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <span>Official Sources</span>
+        </div>
+        <div class="pipeline-arrow">➔</div>
+        <div class="pipeline-step">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <span>Validation Scripts</span>
+        </div>
+        <div class="pipeline-arrow">➔</div>
+        <div class="pipeline-step">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+          </svg>
+          <span>SQLite Database</span>
+        </div>
+        <div class="pipeline-arrow">➔</div>
+        <div class="pipeline-step">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>CSV Generation</span>
+        </div>
+        <div class="pipeline-arrow">➔</div>
+        <div class="pipeline-step">
+          <div style="font-size:24px; line-height:1.2; font-family:var(--font-title); font-weight:800; color:var(--primary-gold);">k</div>
+          <span>Kaggle</span>
+        </div>
+        <div class="pipeline-arrow">➔</div>
+        <div class="pipeline-step">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+          <span>GitHub</span>
+        </div>
+        <div class="pipeline-arrow">➔</div>
+        <div class="pipeline-step">
+          <div style="font-size:24px; line-height:1.2;">🤗</div>
+          <span>Hugging Face</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- World Cup 2026 Sports Analytics & SQL Project Ideas Section -->
+  <section id="project-ideas" class="project-ideas-section container" style="padding: 4rem 0;">
+    <div class="section-header">
+      <h2>World Cup 2026 Sports Analytics & SQL Project Ideas</h2>
+      <p>Target search queries from data scientists, analysts, and students looking for portfolio project inspiration.</p>
+    </div>
+    
+    <div class="ideas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <div class="glass-card idea-card" style="border-left: 4px solid var(--primary-gold-dark);">
+        <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 1rem; color: #fff; display: flex; align-items: center; gap: 8px;">
+          🏆 1. Build a SQL Data Analytics Portfolio
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+          Practice relational joins, subqueries, and window functions. Here are some SQL query ideas you can build with this dataset:
+        </p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+          <li>
+            <strong>Card Frequency Analysis:</strong> Query which referees award the most yellow and red cards per match, and join with referee overall averages to find strictness percentiles.
+          </li>
+          <li>
+            <strong>Altitude & Possession Correlation:</strong> Join the venues table with match stats to analyze whether matches played in high-altitude stadiums (like Estadio Azteca at 2,200m or Estadio BBVA) exhibit lower possession rates or fewer second-half shots.
+          </li>
+          <li>
+            <strong>Market Value vs. Performance:</strong> Join player market values from transfer market estimates with tournament statistics to find the most cost-effective goalscorers and defenders.
+          </li>
+        </ul>
+      </div>
+
+      <div class="glass-card idea-card" style="border-left: 4px solid var(--theme-blue);">
+        <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 1rem; color: #fff; display: flex; align-items: center; gap: 8px;">
+          📊 2. Predict Match Outcomes with Machine Learning
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
+          Build prediction models using our pre-compiled feature metrics in <code>match_prediction_features.csv</code>.
+        </p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+          <li>
+            <strong>Knockout Stage Classifier:</strong> Train classifiers (e.g., XGBoost, Random Forest) using FIFA rankings, ELO ratings, historical head-to-heads, and squad market values to predict progress.
+          </li>
+          <li>
+            <strong>Expected Goals (xG) Analysis:</strong> Correlate live expected goals (xG) differences with actual scorelines to find teams that outperformed their analytical baseline projections.
+          </li>
+          <li>
+            <strong>Travel & Rest Day Effects:</strong> Analyze how different travel distances between venues and rest intervals affect ELO performance decay curves.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Recognition Section -->
+  <section id="community" class="community-section container">
+    <div class="section-header">
+      <h2>Community Recognition</h2>
+    </div>
+    <div class="community-grid">
+      <!-- Software with Nick -->
+      <div class="glass-card comm-card">
+        <div>
+          <div class="comm-header instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <h4>Software with Nick</h4>
+          </div>
+          <div class="comm-highlight instagram">250K+</div>
+          <p class="comm-text">Mentioned this dataset in his Instagram reel, highlighting its utility for SQL and data portfolio projects.</p>
+        </div>
+        <a href="https://instagram.com" target="_blank" class="comm-link">
+          Watch Reel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 15"></polyline>
+          </svg>
+        </a>
+      </div>
+      
+      <!-- LinkedIn Community -->
+      <div class="glass-card comm-card">
+        <div>
+          <div class="comm-header linkedin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <h4>LinkedIn Community</h4>
+          </div>
+          <div class="comm-highlight linkedin" style="font-size: 2rem; display: flex; flex-direction: column; gap: 4px; line-height: 1.1; margin: 10px 0 15px 0;">
+            <span>32.7K+</span>
+            <span style="font-size: 0.85rem; font-weight: 500; opacity: 0.7; font-family: var(--font-body); text-transform: none; letter-spacing: 0;">Impressions &bull; 22.5K+ Reached</span>
+          </div>
+          <p class="comm-text">Post generated <strong>728 social engagements</strong>, including 338 reactions, 337 saves, 21 comments, and 20 sends.</p>
+        </div>
+        <a href="https://linkedin.com" target="_blank" class="comm-link">
+          View Post
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 15"></polyline>
+          </svg>
+        </a>
+      </div>
+      
+      <!-- Developer Feedback -->
+      <div class="glass-card comm-card" style="background: rgba(0, 245, 212, 0.03); border-color: rgba(0, 245, 212, 0.15);">
+        <div>
+          <div class="comm-header feedback" style="color: var(--theme-green);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <h4>Developer Feedback</h4>
+          </div>
+          <p class="comm-quote" style="font-size: 0.95rem; margin-top: 1rem;">"This dataset made my World Cup prediction project 1000x better. Having ELO ratings, transfer values, and elevations in a relational SQLite file saved me weeks of manual scraping."</p>
+        </div>
+        <span class="comm-author">— Community Developer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Data Preview Section -->
+  <section class="preview-section container">
+    <div class="section-header">
+      <h2>Quick Data Preview</h2>
+      <p>Instant fetch-free preview of key tables directly from the relational database.</p>
+    </div>
+    
+    <!-- Tab Controls -->
+    <div class="tabs-container">
+      <button class="tab-btn active" data-category="matches">matches.csv</button>
+      <button class="tab-btn" data-category="teams">teams.csv</button>
+      <button class="tab-btn" data-category="match_events">match_events.csv</button>
+      <button class="tab-btn" data-category="player_stats">player_stats.csv</button>
+      <button class="tab-btn" data-category="prediction_features">prediction_features.csv</button>
+    </div>
+    
+    <!-- Table Wrapper -->
+    <div class="table-wrapper">
+      <table id="preview-table" class="preview-table">
+        <!-- Rendered dynamically by app.js -->
+      </table>
+    </div>
+  </section>
+
+  <!-- FAQ Section (AEO and Google FAQ Rich Snippets) -->
+  <section id="faq" class="faq-section container" style="padding: 4rem 0;">
+    <div class="section-header">
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <p>Direct factual answers optimizing for AI search summaries and voice crawls.</p>
+    </div>
+    
+    <div class="faq-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 4rem;">
+      <div class="glass-card faq-item">
+        <h3 style="font-family: var(--font-title); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-gold);">How often is the World Cup 2026 dataset updated?</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          The dataset is updated daily, immediately following the conclusion of each World Cup match. Updates include final scorelines, detailed team stats, expected goals (xG), minute-by-minute events, and player statistics.
+        </p>
+      </div>
+      
+      <div class="glass-card faq-item">
+        <h3 style="font-family: var(--font-title); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-gold);">Is there any synthetic or simulated data?</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          No. We enforce a strict <strong>Data Integrity Policy</strong>: no synthetic or estimated match statistics are allowed. If verified data for a specific metric is temporarily unavailable, it remains empty (<code>NULL</code>) rather than filled with simulated stats.
+        </p>
+      </div>
+
+      <div class="glass-card faq-item">
+        <h3 style="font-family: var(--font-title); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-gold);">Can I use this dataset for commercial purposes?</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Yes. The dataset is published under the Creative Commons Zero v1.0 Universal (CC0 1.0) license. It is in the public domain, meaning you can copy, modify, distribute, and perform the work, even for commercial purposes, without asking permission.
+        </p>
+      </div>
+
+      <div class="glass-card faq-item">
+        <h3 style="font-family: var(--font-title); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--primary-gold);">Is this dataset ready for SQL portolio projects?</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+          Yes. The database has been normalized into 11 tables with proper primary and foreign keys. This makes it perfect for SQL practice, Power BI / Tableau dashboards, or data engineering pipelines.
+        </p>
+      </div>
+    </div>
+
+    <!-- Citation Box -->
+    <div class="glass-card citation-block" style="border: 1px solid rgba(242, 201, 76, 0.25); background: rgba(10, 22, 18, 0.65);">
+      <div class="citation-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+        <h4 style="font-family: var(--font-title); font-weight: 700; color: #fff; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-gold)" stroke-width="2" width="18" height="18">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          How to Cite This Dataset
+        </h4>
+        <button id="btn-copy-citation" class="copy-citation-btn" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 6px 12px; border-radius: 6px; font-family: var(--font-title); font-weight: 600; font-size: 0.78rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: var(--transition-smooth);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy BibTeX</span>
+        </button>
+      </div>
+      <div style="background: rgba(4,9,7,0.4); border-radius: 8px; border: 1px solid var(--border-color); padding: 1.25rem; overflow-x: auto;">
+        <pre class="citation-code" id="bibtex-content" style="margin: 0; font-family: monospace; font-size: 0.82rem; color: #cbd5e1; white-space: pre;">@dataset{fifa_world_cup_2026,
+  author = {MD Mominul Islam},
+  title = {FIFA World Cup 2026 Dataset - Live & Updated Stats},
+  year = {2026},
+  publisher = {Kaggle},
+  howpublished = {\url{https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/}}
+}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section id="links" class="cta-section container">
+    <div class="glass-card cta-card">
+      <h2>Get the Complete Dataset Now</h2>
+      <p>Start building your models, SQL analyses, and visualizations with the most complete and authentic FIFA World Cup 2026 dataset.</p>
+      <div class="cta-buttons">
+        <a href="https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset" target="_blank" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:4px;">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.75 14H6.5v-1.75h6.75V17zm3.25-3.5H6.5v-1.75h10V13.5zm0-3.5H6.5V8.25h10V10z"/>
+          </svg>
+          Kaggle
+        </a>
+        <a href="https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset" target="_blank" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://huggingface.co/datasets/Mominullptr/fifa-world-cup-2026-dataset" target="_blank" class="btn btn-outline">
+          🤗 Hugging Face
+        </a>
+        <a href="https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset/raw/main/sqlite_fifa_world_cup_2026.db" class="btn btn-db">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+          </svg>
+          SQLite (DB)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <span class="footer-logo">FIFA World Cup 2026 Dataset</span>
+        <span>Built with ❤️ by MD Mominul Islam</span>
+        <span>Open Source • MIT License</span>
+      </div>
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#schema">Schema</a>
+        <a href="#tables">Tables</a>
+        <a href="#project-ideas">Project Ideas</a>
+        <a href="#links">Links</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/mominullptr" target="_blank" class="social-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/mominulislamsust" target="_blank" class="social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:mominulislamsust@gmail.com" class="social-btn" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="#" class="social-btn" id="scroll-top-btn" aria-label="Scroll to top" style="opacity: 0; pointer-events: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Relational Schema Modal Zoom Container -->
+  <div id="schema-modal" class="schema-modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(4, 9, 7, 0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+    <span class="modal-close" id="schema-close" style="position: fixed; top: 20px; right: 35px; color: var(--text-secondary); font-size: 40px; font-weight: bold; transition: var(--transition-smooth); cursor: pointer; z-index: 2100;">&times;</span>
+    <div class="modal-content-wrap" style="display: flex; justify-content: center; align-items: center; min-height: 100%; padding: 4rem 2rem;">
+      <img class="modal-img" id="schema-modal-img" src="assets/db_schema.png" alt="Zoomed Database Schema Detailed Relational Diagram" style="max-width: 90%; max-height: 85vh; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 20px 50px rgba(0,0,0,0.7); object-fit: contain;">
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/data_preview.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
