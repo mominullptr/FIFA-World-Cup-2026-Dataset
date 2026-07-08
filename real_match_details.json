@@ -2264,5 +2264,49 @@
         "minute": "90+3'"
       }
     ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 7, 2026",
+    "home_team": "Argentina",
+    "away_team": "Egypt",
+    "score": "3–2",
+    "home_goals": [
+      {
+        "scorer": "Cristian Romero",
+        "minute": "26'",
+        "assist": "Lionel Messi"
+      },
+      {
+        "scorer": "Lionel Messi",
+        "minute": "40' (pen.)"
+      },
+      {
+        "scorer": "Julián Alvarez",
+        "minute": "55'",
+        "assist": "Alexis Mac Allister"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Yasser Ibrahim",
+        "minute": "15'",
+        "assist": "Mohamed Salah"
+      },
+      {
+        "scorer": "Mostafa Zico",
+        "minute": "67'",
+        "assist": "Haissem Hassan"
+      }
+    ]
+  },
+  {
+    "group": "Round of 16",
+    "date": "July 7, 2026",
+    "home_team": "Switzerland",
+    "away_team": "Colombia",
+    "score": "0–0",
+    "home_goals": [],
+    "away_goals": []
   }
 ]

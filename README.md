@@ -15,8 +15,8 @@
 
 - **Tournament:** FIFA World Cup 2026
 - **Format:** 48 Teams
-- **Current Stage:** Round of 16
-- **Matches Completed:** 92
+- **Current Stage:** Quarter-finals
+- **Matches Completed:** 96
 - **Updated After:** Every Completed Match
 - **Validation:** Relational integrity verified before every release
 
@@ -42,6 +42,10 @@ The FIFA World Cup 2026 Dataset has started gaining traction within the data sci
 
 **LinkedIn Community Post**
 - 🔗 https://www.linkedin.com/feed/update/urn:li:activity:7473374635284422658/
+
+**Bissantz**
+- 📈 https://www.bissantz.de/forschung/fussball-wm-die-vorrundenspiele-in-der-analyse/
+
 
 ---
 

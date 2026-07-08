@@ -728,3 +728,32 @@ event_id,match_id,minute,event_type,team_id,player_id
 727,94,57,Goal,25,644
 728,94,69,Yellow Card,13,329
 729,94,90+3,Goal,25,633
+730,95,15,Goal,26,652
+731,95,15,Assist,26,660
+732,95,26,Goal,37,949
+733,95,26,Assist,37,946
+734,95,40,Goal,37,946
+735,95,45+2,Yellow Card,26,658
+736,95,55,Goal,37,945
+737,95,55,Assist,37,956
+738,95,67,Goal,26,661
+739,95,67,Assist,26,662
+740,95,90,Yellow Card,26,662
+741,95,90+3,Yellow Card,26,673
+742,95,90+4,Yellow Card,26,664
+743,95,90+8,Yellow Card,26,669
+744,96,51,Yellow Card,8,192
+745,96,59,Yellow Card,8,188
+746,96,60,Yellow Card,44,1143
+747,96,94,Yellow Card,44,1141
+748,96,105,Yellow Card,8,184
+749,96,121,Penalty Shootout Goal,8,192
+750,96,121,Penalty Shootout Goal,44,1138
+751,96,121,Penalty Shootout Goal,8,205
+752,96,121,Penalty Shootout Miss,44,1141
+753,96,121,Penalty Shootout Miss,8,187
+754,96,121,Penalty Shootout Goal,44,1139
+755,96,121,Penalty Shootout Goal,8,208
+756,96,121,Penalty Shootout Miss,44,1137
+757,96,121,Penalty Shootout Goal,8,199
+758,96,121,Penalty Shootout Goal,44,1125

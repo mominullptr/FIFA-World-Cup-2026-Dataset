@@ -93,8 +93,8 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 92,2026-07-06,01:00,Round of 16,Mexico City Stadium (Estadio Azteca),Mexico City,MEX,Mexico,MEX,England,ENG,2,3,,,Completed,Regular,1.88,1.61,José Raúl Rangel,Jordan Lee Pickford,Jude Victor William Bellingham,Alireza Faghani
 93,2026-07-06,19:00,Round of 16,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Portugal,POR,Spain,ESP,0,1,,,Completed,Regular,0.63,1.69,Diogo Diogo Costa,Unai Simon,Mikel Merino,Ismail Elfath
 94,2026-07-07,00:00,Round of 16,San Francisco Bay Area Stadium (Levi's Stadium),Santa Clara,USA,USA,USA,Belgium,BEL,1,4,,,Completed,Regular,0.67,2.15,Matthew Andrew Geary Freese,Thibaut Nicolas Courtois,Charles Marc De Ketelaere,César Arturo Ramos
-95,2026-07-07,16:00,Round of 16,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Argentina,ARG,Egypt,EGY,,,,,Scheduled,,,,,,,Szymon Marciniak
-96,2026-07-07,20:00,Round of 16,Seattle Stadium (Lumen Field),Seattle,USA,Switzerland,SUI,Colombia,COL,,,,,Scheduled,,,,,,,Danny Makkelie
+95,2026-07-07,16:00,Round of 16,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Argentina,ARG,Egypt,EGY,3,2,,,Completed,Regular,2.12,1.54,Damián Emiliano Martinez,Abdelaziz Mohame Mostafa,Lionel Andrés Messi,François Letexier
+96,2026-07-07,20:00,Round of 16,Seattle Stadium (Lumen Field),Seattle,USA,Switzerland,SUI,Colombia,COL,0,0,4,3,Completed,Penalties,1.15,1.46,Gregor Kobel,Camilo Andres Vargas,Gregor Kobel,Ivan Barton
 97,2026-07-09,20:00,Quarter-finals,Boston Stadium (Gillette Stadium),Foxborough,USA,France,FRA,Morocco,MAR,,,,,Scheduled,,,,,,,Szymon Marciniak
 98,2026-07-10,19:00,Quarter-finals,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,,,,,,,,,Scheduled,,,,,,,Daniele Orsato
 99,2026-07-11,21:00,Quarter-finals,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Norway,NOR,England,ENG,,,,,Scheduled,,,,,,,Michael Oliver
