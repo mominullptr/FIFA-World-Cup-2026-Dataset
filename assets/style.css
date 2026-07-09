@@ -1205,15 +1205,12 @@ body {
 }
 
 .faq-item {
-  border-left: 2px solid var(--border-color);
   padding: 1.5rem 2rem;
   background: var(--bg-card);
-  border-radius: 12px;
   transition: var(--transition-smooth);
 }
 
 .faq-item:hover {
-  border-left-color: var(--primary-gold-dark);
   background: var(--bg-card-hover);
 }
 
