@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  // Helper to resolve assets path depending on where the page is hosted
+  const getAssetPath = (filename) => {
+    const isDocsRoot = window.location.hostname.includes("github.io") || window.location.pathname.includes("/docs/");
+    return isDocsRoot ? filename : "docs/" + filename;
+  };
+
   // Column name overrides / formatting helpers
   const formatHeaderName = (colName) => {
     return colName
@@ -165,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'docs/fifa-world-cup.json'
+      path: getAssetPath('fifa-world-cup.json')
     });
   }
 
@@ -175,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Wait until the complete page is loaded before starting video download to safeguard page speed
     window.addEventListener("load", () => {
       const source = document.createElement("source");
-      source.src = "docs/From Klickpin.com- Gentle devotional ideas for people who love beauty for creative people to begin the day well-pin-id-627337423130563852.mp4";
+      source.src = getAssetPath('From Klickpin.com- Gentle devotional ideas for people who love beauty for creative people to begin the day well-pin-id-627337423130563852.mp4');
       source.type = "video/mp4";
       bgVideo.appendChild(source);
       bgVideo.load();
