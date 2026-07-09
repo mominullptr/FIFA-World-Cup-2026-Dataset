@@ -267,78 +267,36 @@
     </div>
     <div class="why-grid">
       <!-- Most Datasets (Inactive) -->
-      <div class="why-column glass-card">
-        <h3>Most Datasets</h3>
-        <div class="timeline timeline-most">
-          <div class="timeline-item completed">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title">2018</span>
-            </div>
+      <div class="why-column glass-card" style="border-color: rgba(255, 77, 77, 0.15); display: flex; flex-direction: column; justify-content: flex-start;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 77, 77, 0.1); border: 1px solid rgba(255, 77, 77, 0.25); display: flex; align-items: center; justify-content: center; color: var(--theme-red);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
           </div>
-          <div class="timeline-item completed">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title">1,600+</span>
-            </div>
-          </div>
-          <div class="timeline-item stopped">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title">Stopped</span>
-              <span class="timeline-status stopped">Not Updated</span>
-            </div>
-          </div>
+          <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">Most Datasets</h3>
         </div>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin: 0;">
+          Most datasets are built using historical or previous World Cup data, providing static archives that are no longer updated.
+        </p>
       </div>
       
       <!-- This Dataset (Active) -->
-      <div class="why-column glass-card">
-        <h3>This Dataset</h3>
-        <div class="timeline timeline-this">
-          <div class="timeline-item completed">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title">2026 Group Stage</span>
-            </div>
+      <div class="why-column glass-card" style="border-color: rgba(0, 245, 212, 0.15); background-image: radial-gradient(circle at 100% 10%, rgba(0, 245, 212, 0.03) 0%, transparent 60%); display: flex; flex-direction: column; justify-content: flex-start;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(0, 245, 212, 0.1); border: 1px solid rgba(0, 245, 212, 0.25); display: flex; align-items: center; justify-content: center; color: var(--theme-green); position: relative;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+            </svg>
           </div>
-          <div class="timeline-item completed">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title">Round of 32</span>
-            </div>
-          </div>
-          <div class="timeline-item active">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title font-gold" style="color:var(--primary-gold); font-weight:700;">Round of 16</span>
-              <span class="timeline-status active">Active</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title" style="opacity:0.6;">Quarter-finals</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title" style="opacity:0.6;">Semi-finals</span>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-title" style="opacity:0.6; display:flex; align-items:center; gap:6px;">
-                Final
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" style="color:var(--primary-gold-dark);">
-                  <path d="M6 9H4.5A2.5 2.5 0 0 1 2 6.5V6A2.5 2.5 0 0 1 4.5 3.5H6V9zM18 9h1.5a2.5 2.5 0 0 0 2.5-2.5V6a2.5 2.5 0 0 0-2.5-2.5H18V9zM12 2A6 6 0 0 0 6 8v4a6 6 0 0 0 6 6 6 6 0 0 0 6-6V8a6 6 0 0 0-6-6zM10 18v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2h-4zM8 21v1h8v-1H8z"/>
-                </svg>
-              </span>
-            </div>
-          </div>
+          <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.5px;">This Dataset</h3>
         </div>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.6; margin: 0;">
+          This dataset is built with real-time, authentic data from the current active World Cup matches, updated daily as the tournament progresses.
+        </p>
       </div>
     </div>
   </section>
@@ -362,54 +320,7 @@
           <span style="font-weight: 700; font-family: var(--font-title);">Click to Zoom Schema</span>
         </div>
       </div>
-     <!-- Relational Database Schema SEO/AEO Hooks -->
-    <div class="db-importance-grid" style="margin-top: 3rem; margin-bottom: 3.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-      <div class="glass-card table-card" style="border-left: 4px solid var(--theme-green); display: flex; flex-direction: column; justify-content: space-between; padding: 1.75rem; background: rgba(0, 245, 212, 0.025);">
-        <div>
-          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--theme-green); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 8px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
-            LLM & AI-Agent Ready (AEO)
-          </h4>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
-            Artificial Intelligence search bots and RAG engines crawl semantic schemas. By presenting a fully normalized, pre-linked relational design, AI models can write perfect SQL queries to answer complex, multi-hop sports questions (e.g., player card frequency analysis in high-altitude stadiums) without hallucination.
-          </p>
-        </div>
-      </div>
-      <div class="glass-card table-card" style="border-left: 4px solid var(--theme-blue); display: flex; flex-direction: column; justify-content: space-between; padding: 1.75rem; background: rgba(58, 134, 255, 0.025);">
-        <div>
-          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--theme-blue); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 8px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            High-Authority SEO Hook
-          </h4>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
-            Search engines reward data consistency and rich relational structures. This SQLite-ready database model links squads, matches, venues, and live events, allowing indexers to crawl clean, non-duplicate schemas and boost authority rankings on World Cup dataset searches.
-          </p>
-        </div>
-      </div>
-      <div class="glass-card table-card" style="border-left: 4px solid var(--theme-purple); display: flex; flex-direction: column; justify-content: space-between; padding: 1.75rem; background: rgba(155, 93, 229, 0.025);">
-        <div>
-          <h4 style="font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--theme-purple); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 8px;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-              <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
-            Zero Duplication Integrity
-          </h4>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
-            Flat CSV tables often result in out-of-sync player names, duplicate schedules, or orphaned records. Our fully normalized SQLite database ensures 100% mathematical integrity across all 11 tables, providing a robust, plug-and-play local structure for analytics portfolios.
-          </p>
-        </div>
-      </div>
-    </div>
+
     </div>
 
     <!-- Structured Schema Description Block for AEO Spiders -->
@@ -822,45 +733,85 @@
       <p>Target search queries from data scientists, analysts, and students looking for portfolio project inspiration.</p>
     </div>
     
-    <div class="ideas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-      <div class="glass-card idea-card" style="border-left: 4px solid var(--primary-gold-dark);">
-        <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 1rem; color: #fff; display: flex; align-items: center; gap: 8px;">
-          🏆 1. Build a SQL Data Analytics Portfolio
+    <div class="ideas-grid">
+      <!-- 1. SQL Data Analytics Portfolio -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          🏆 SQL Data Analytics Portfolio
         </h3>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
-          Practice relational joins, subqueries, and window functions. Here are some SQL query ideas you can build with this dataset:
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Build real-world SQL projects using an 11-table normalized relational database with primary keys, foreign keys, and production-style relationships. Practice complex JOINs, CTEs, window functions, aggregations, ranking queries, and performance optimization while analyzing player statistics, match events, team performance, referees, stadiums, and tournament trends. Perfect for SQL portfolio projects, database management courses, and interview preparation.
         </p>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
-          <li>
-            <strong>Card Frequency Analysis:</strong> Query which referees award the most yellow and red cards per match, and join with referee overall averages to find strictness percentiles.
-          </li>
-          <li>
-            <strong>Altitude & Possession Correlation:</strong> Join the venues table with match stats to analyze whether matches played in high-altitude stadiums (like Estadio Azteca at 2,200m or Estadio BBVA) exhibit lower possession rates or fewer second-half shots.
-          </li>
-          <li>
-            <strong>Market Value vs. Performance:</strong> Join player market values from transfer market estimates with tournament statistics to find the most cost-effective goalscorers and defenders.
-          </li>
-        </ul>
       </div>
 
-      <div class="glass-card idea-card" style="border-left: 4px solid var(--theme-blue);">
-        <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 1rem; color: #fff; display: flex; align-items: center; gap: 8px;">
-          📊 2. Predict Match Outcomes with Machine Learning
+      <!-- 2. Machine Learning Match Prediction -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          🤖 Machine Learning Match Prediction
         </h3>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">
-          Build prediction models using our pre-compiled feature metrics in <code>match_prediction_features.csv</code>.
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Train machine learning models to predict Quarter-finals, Semi-finals, Final, match outcomes, scorelines, and expected goals (xG) using the included <code>match_prediction_features.csv</code>. The feature set already includes rolling team form, FIFA rankings, Elo ratings, squad quality, market value, rest days, venue altitude, and historical performance, allowing you to focus on model development instead of feature engineering.
         </p>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
-          <li>
-            <strong>Knockout Stage Classifier:</strong> Train classifiers (e.g., XGBoost, Random Forest) using FIFA rankings, ELO ratings, historical head-to-heads, and squad market values to predict progress.
-          </li>
-          <li>
-            <strong>Expected Goals (xG) Analysis:</strong> Correlate live expected goals (xG) differences with actual scorelines to find teams that outperformed their analytical baseline projections.
-          </li>
-          <li>
-            <strong>Travel & Rest Day Effects:</strong> Analyze how different travel distances between venues and rest intervals affect ELO performance decay curves.
-          </li>
-        </ul>
+      </div>
+
+      <!-- 3. Sports Analytics & Performance Analysis -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          ⚽ Sports Analytics & Performance Analysis
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Analyze how teams and players performed throughout the FIFA World Cup 2026 using detailed statistics such as possession, shots, expected goals (xG), passing, fouls, corners, cards, substitutions, and match events. Build dashboards, compare teams, discover performance trends, and generate insights for sports analytics, business intelligence, and football research projects.
+        </p>
+      </div>
+
+      <!-- 4. AI & LLM Applications -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          🧠 AI & LLM Applications
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Build AI-powered football assistants using structured tournament data. Create RAG applications, chatbots, match report generators, player search tools, and natural language analytics systems that answer questions about teams, players, fixtures, statistics, and tournament history using the relational dataset.
+        </p>
+      </div>
+
+      <!-- 5. Data Engineering Projects -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          ⚙️ Data Engineering Projects
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Learn how production sports datasets are built by exploring the complete ETL pipeline, automated validation scripts, SQLite database generation, and live update workflow. The project demonstrates data collection, normalization, feature engineering, quality checks, and continuous updates after every completed World Cup match.
+        </p>
+      </div>
+
+      <!-- 6. Interactive Dashboards & Web Apps -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          🖥️ Interactive Dashboards & Web Apps
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Develop modern dashboards and web applications using Streamlit, Dash, Power BI, Tableau, or React. Visualize fixtures, live standings, player rankings, match events, team comparisons, xG trends, and tournament statistics through interactive charts, filters, and searchable interfaces.
+        </p>
+      </div>
+
+      <!-- 7. Sports Research & Academic Studies -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          📚 Sports Research & Academic Studies
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          Use the dataset for research on match prediction, expected goals (xG), player valuation, referee decisions, home advantage, venue altitude, rest-day effects, team rankings, and tournament performance. Suitable for undergraduate projects, master's research, sports analytics studies, and data science publications.
+        </p>
+      </div>
+
+      <!-- 8. Prediction Feature Dataset -->
+      <div class="glass-card idea-card" style="display: flex; flex-direction: column; justify-content: flex-start; padding: 1.75rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 10px; font-weight: 700;">
+          📁 Prediction Feature Dataset
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          The included <code>match_prediction_features.csv</code> provides a ready-to-use machine learning dataset with engineered features including rolling form, xG averages, FIFA rankings, Elo ratings, squad quality, market value, venue altitude, rest days, and target labels. Simply load the CSV into Scikit-learn, XGBoost, LightGBM, CatBoost, or TensorFlow and begin training prediction models without spending hours on preprocessing.
+        </p>
       </div>
     </div>
   </section>
@@ -885,7 +836,7 @@
           <div class="comm-highlight instagram">250K+</div>
           <p class="comm-text">Mentioned this dataset in his Instagram reel, highlighting its utility for SQL and data portfolio projects.</p>
         </div>
-        <a href="https://instagram.com" target="_blank" class="comm-link">
+        <a href="https://www.instagram.com/softwarewithnick/reel/DaSkFRqx1e1/" target="_blank" class="comm-link">
           Watch Reel
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -911,8 +862,51 @@
           </div>
           <p class="comm-text">Post generated <strong>728 social engagements</strong>, including 338 reactions, 337 saves, 21 comments, and 20 sends.</p>
         </div>
-        <a href="https://linkedin.com" target="_blank" class="comm-link">
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7473374635284422658/" target="_blank" class="comm-link">
           View Post
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 15"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Analytics Jobs in Sports -->
+      <div class="glass-card comm-card">
+        <div>
+          <div class="comm-header substack" style="color: #FF5722; display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+            </svg>
+            <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700;">Analytics Jobs in Sports</h4>
+          </div>
+          <div class="comm-highlight substack" style="color: #FF5722; font-family: var(--font-title); font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Newsletter</div>
+          <p class="comm-text">Featured in the "Analytics Jobs in Sports" newsletter on Substack, highlighting the dataset for sports analytics.</p>
+        </div>
+        <a href="https://sportsjobs.substack.com/p/analytics-jobs-in-sports-fifa-world" target="_blank" class="comm-link">
+          Read Newsletter
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 15"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Bissantz Research -->
+      <div class="glass-card comm-card">
+        <div>
+          <div class="comm-header bissantz" style="color: var(--primary-gold); display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700;">Bissantz</h4>
+          </div>
+          <div class="comm-highlight bissantz" style="color: var(--primary-gold); font-family: var(--font-title); font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Research</div>
+          <p class="comm-text">Included in the professional tournament research analysis covering preliminary World Cup matches.</p>
+        </div>
+        <a href="https://www.bissantz.de/forschung/fussball-wm-die-vorrundenspiele-in-der-analyse/" target="_blank" class="comm-link">
+          View Analysis
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 15"></polyline>
@@ -929,9 +923,16 @@
             </svg>
             <h4>Developer Feedback</h4>
           </div>
-          <p class="comm-quote" style="font-size: 0.95rem; margin-top: 1rem;">"This dataset made my World Cup prediction project 1000x better. Having ELO ratings, transfer values, and elevations in a relational SQLite file saved me weeks of manual scraping."</p>
+          <p class="comm-quote" style="font-size: 0.95rem; margin-top: 1rem; color: var(--text-secondary);">"This dataset made my World Cup prediction project 1000x better. Having ELO ratings, transfer values, and elevations in a relational SQLite file saved me weeks of manual scraping."</p>
+          <span class="comm-author" style="display: block; margin-top: 0.5rem; opacity: 0.8; font-size: 0.85rem; color: var(--text-secondary);">— Community Developer</span>
         </div>
-        <span class="comm-author">— Community Developer</span>
+        <a href="https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset/discussion/709716" target="_blank" class="comm-link" style="margin-top: 1rem;">
+          View Discussion
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 15"></polyline>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
@@ -1089,7 +1090,7 @@
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
-        <a href="mailto:mominulislamsust@gmail.com" class="social-btn" aria-label="Email">
+        <a href="mailto:mominulcse11@gmail.com" class="social-btn" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>

@@ -258,3 +258,9 @@ If you use this dataset in your research, publications, or projects, please cite
 ## 📄 License
 This project is licensed under the **Creative Commons Zero v1.0 Universal** (CC0-1.0) Public Domain Dedication. Feel free to copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission.
 
+---
+
+## 🌐 Website
+Explore the interactive database documentation, prediction guides, and sports analytics project ideas at:
+[mominullptr.github.io/FIFA-World-Cup-2026-Dataset/](https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/)
+
