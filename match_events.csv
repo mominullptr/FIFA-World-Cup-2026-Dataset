@@ -757,3 +757,8 @@ event_id,match_id,minute,event_type,team_id,player_id
 756,96,121,Penalty Shootout Miss,44,1137
 757,96,121,Penalty Shootout Goal,8,199
 758,96,121,Penalty Shootout Goal,44,1125
+759,97,60,Goal,33,842
+760,97,60,Assist,33,852
+761,97,63,Yellow Card,10,248
+762,97,66,Goal,33,839
+763,97,66,Assist,33,842

@@ -156,4 +156,42 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // Lottie Animation Logo Initialization
+  const logoContainer = document.getElementById("logo-lottie");
+  if (logoContainer && typeof lottie !== "undefined") {
+    lottie.loadAnimation({
+      container: logoContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'docs/fifa-world-cup.json'
+    });
+  }
+
+  // Progressive Video Background Loading
+  const bgVideo = document.getElementById("bg-video");
+  if (bgVideo) {
+    // Wait until the complete page is loaded before starting video download to safeguard page speed
+    window.addEventListener("load", () => {
+      const source = document.createElement("source");
+      source.src = "docs/From Klickpin.com- Gentle devotional ideas for people who love beauty for creative people to begin the day well-pin-id-627337423130563852.mp4";
+      source.type = "video/mp4";
+      bgVideo.appendChild(source);
+      bgVideo.load();
+      
+      bgVideo.addEventListener("playing", () => {
+        bgVideo.classList.add("loaded");
+      });
+    });
+
+    // Pause video when page is hidden to optimize performance and save battery/CPU
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        bgVideo.pause();
+      } else {
+        bgVideo.play().catch(() => {});
+      }
+    });
+  }
 });

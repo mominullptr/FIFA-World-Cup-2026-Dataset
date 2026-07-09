@@ -89,11 +89,17 @@
 </head>
 <body>
 
+  <!-- Video Background -->
+  <div class="video-bg-container">
+    <video id="bg-video" autoplay loop muted playsinline preload="none" class="bg-video"></video>
+    <div class="video-bg-overlay"></div>
+  </div>
+
   <!-- Navigation Bar -->
   <header class="header">
     <div class="container nav-container">
       <a href="#" class="logo">
-        <img src="assets/2026_FIFA_World_Cup_emblem.svg.webp" alt="FIFA World Cup 2026 Emblem">
+        <div id="logo-lottie" class="logo-lottie"></div>
         FIFA World Cup 2026 <span>Dataset</span>
       </a>
       <nav>
@@ -1097,6 +1103,7 @@
   </div>
 
   <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
   <script src="assets/data_preview.js?v=1.0.2"></script>
   <script src="assets/app.js?v=1.0.2"></script>
 </body>
