@@ -31,6 +31,9 @@ SquadLists-English.pdf
 *.txt
 *.csv.bak*
 *.bak
-*.db
 *.json
 prediction_cover.png
+
+# Site verification and security-sensitive files
+google*.html
+BingSiteAuth.xml
