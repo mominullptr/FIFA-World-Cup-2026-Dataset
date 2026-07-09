@@ -22,7 +22,6 @@ kaggle_dist/
 
 # Internal validation, scraper and helper scripts
 update_market_values.py
-validate_dataset.py
 generate_player_stats.py
 scratch/
 _*.py
