@@ -32,3 +32,5 @@ SquadLists-English.pdf
 *.csv.bak*
 *.bak
 *.db
+*.json
+prediction_cover.png
