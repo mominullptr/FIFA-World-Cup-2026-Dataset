@@ -1273,7 +1273,7 @@ body {
 }
 
 .bg-video.loaded {
-  opacity: 0.25; /* Increased opacity for more video visibility, keeping text readable */
+  opacity: 0.35; /* Increased opacity for more video visibility, keeping text readable */
 }
 
 .video-bg-overlay {
