@@ -1,15 +1,15 @@
 event_id,match_id,minute,event_type,team_id,player_id
-1,1,9,Goal,1,16
-2,1,9,Assist,1,6
-3,1,17,Yellow Card,2,30
-4,1,23,Yellow Card,1,26
-5,1,55,Red Card,2,39
-6,1,55,VAR Review,2,39
-7,1,67,Goal,1,9
-8,1,67,Assist,1,25
-9,1,74,Yellow Card,2,45
-10,1,84,Red Card,2,37
-11,1,86,Red Card,1,3
+1,1,17,Yellow Card,2,30
+2,1,23,Yellow Card,1,26
+3,1,55,Red Card,2,39
+4,1,55,VAR Review,2,39
+5,1,67,Goal,1,9
+6,1,67,Assist,1,25
+7,1,74,Yellow Card,2,45
+8,1,84,Red Card,2,37
+9,1,86,Red Card,1,3
+10,1,9,Goal,1,16
+11,1,9,Assist,1,6
 12,2,59,Goal,4,85
 13,2,59,Assist,4,83
 14,2,67,Goal,3,58
@@ -26,18 +26,18 @@ event_id,match_id,minute,event_type,team_id,player_id
 25,3,78,Goal,5,113
 26,3,78,Assist,5,128
 27,3,90,Yellow Card,6,148
-28,4,7,Goal,13,354
-29,4,9,Yellow Card,14,342
-30,4,31,Goal,13,332
-31,4,31,Assist,13,322
-32,4,45,Goal,13,332
-33,4,45,Assist,13,329
-34,4,53,Yellow Card,14,348
-35,4,59,Yellow Card,13,316
-36,4,73,Goal,14,349
-37,4,73,Assist,14,357
-38,4,79,Yellow Card,14,346
-39,4,88,Yellow Card,14,356
+28,4,31,Goal,13,332
+29,4,31,Assist,13,322
+30,4,45,Goal,13,332
+31,4,45,Assist,13,329
+32,4,53,Yellow Card,14,348
+33,4,59,Yellow Card,13,316
+34,4,7,Goal,13,354
+35,4,73,Goal,14,349
+36,4,73,Assist,14,357
+37,4,79,Yellow Card,14,346
+38,4,88,Yellow Card,14,356
+39,4,9,Yellow Card,14,342
 40,4,90,Goal,13,319
 41,4,90,Assist,13,328
 42,4,90,Yellow Card,14,344
@@ -61,14 +61,14 @@ event_id,match_id,minute,event_type,team_id,player_id
 60,8,27,Assist,15,388
 61,8,75,Goal,15,372
 62,8,86,Yellow Card,16,409
-63,9,6,Goal,17,439
-64,9,6,Assist,17,433
-65,9,21,Goal,18,450
-66,9,38,Goal,17,431
-67,9,38,Assist,17,434
-68,9,45,Goal,17,423
-69,9,47,Goal,17,426
-70,9,47,Assist,17,422
+63,9,21,Goal,18,450
+64,9,38,Goal,17,431
+65,9,38,Assist,17,434
+66,9,45,Goal,17,423
+67,9,47,Goal,17,426
+68,9,47,Assist,17,422
+69,9,6,Goal,17,439
+70,9,6,Assist,17,433
 71,9,68,Goal,17,434
 72,9,68,Assist,17,442
 73,9,78,Goal,17,442
@@ -92,14 +92,14 @@ event_id,match_id,minute,event_type,team_id,player_id
 91,11,73,Yellow Card,20,519
 92,11,90,Goal,19,483
 93,11,90,Assist,19,473
-94,12,7,Goal,23,590
-95,12,30,Goal,23,581
-96,12,30,Assist,23,589
-97,12,43,Goal,24,602
-98,12,43,Assist,24,608
-99,12,54,Yellow Card,24,611
-100,12,59,Goal,23,589
-101,12,59,Assist,23,581
+94,12,30,Goal,23,581
+95,12,30,Assist,23,589
+96,12,43,Goal,24,602
+97,12,43,Assist,24,608
+98,12,54,Yellow Card,24,611
+99,12,59,Goal,23,589
+100,12,59,Assist,23,581
+101,12,7,Goal,23,590
 102,12,84,Goal,23,591
 103,12,84,Assist,23,581
 104,12,90,Goal,23,590
@@ -116,13 +116,13 @@ event_id,match_id,minute,event_type,team_id,player_id
 115,15,41,Goal,31,784
 116,15,44,Yellow Card,31,784
 117,15,80,Goal,32,826
-118,16,7,Goal,28,713
-119,16,7,Assist,28,711
-120,16,32,Goal,27,699
-121,16,54,Goal,28,713
-122,16,54,Assist,28,711
-123,16,64,Goal,27,684
-124,16,64,Assist,27,699
+118,16,32,Goal,27,699
+119,16,54,Goal,28,713
+120,16,54,Assist,28,711
+121,16,64,Goal,27,684
+122,16,64,Assist,27,699
+123,16,7,Goal,28,713
+124,16,7,Assist,28,711
 125,16,89,Yellow Card,27,679
 126,17,66,Goal,33,842
 127,17,66,Assist,33,843
@@ -153,12 +153,12 @@ event_id,match_id,minute,event_type,team_id,player_id
 152,20,76,Goal,39,1019
 153,20,77,Yellow Card,39,997
 154,20,90,Goal,39,995
-155,21,6,Goal,41,1055
-156,21,6,Assist,41,1058
-157,21,13,Yellow Card,41,1050
-158,21,32,Yellow Card,42,1088
-159,21,45,Goal,42,1086
-160,21,45,Assist,42,1092
+155,21,13,Yellow Card,41,1050
+156,21,32,Yellow Card,42,1088
+157,21,45,Goal,42,1086
+158,21,45,Assist,42,1092
+159,21,6,Goal,41,1055
+160,21,6,Assist,41,1058
 161,21,88,Yellow Card,41,1042
 162,21,90,Yellow Card,41,1044
 163,22,12,Goal,45,1153
@@ -177,35 +177,35 @@ event_id,match_id,minute,event_type,team_id,player_id
 176,23,90,Goal,47,1199
 177,23,90,Assist,47,1207
 178,23,90,Yellow Card,48,1236
-179,24,7,Yellow Card,44,1135
-180,24,34,Yellow Card,43,1094
-181,24,40,Goal,44,1120
-182,24,40,Assist,44,1125
-183,24,60,Goal,43,1114
-184,24,65,Goal,44,1125
-185,24,65,Assist,44,1132
+179,24,34,Yellow Card,43,1094
+180,24,40,Goal,44,1120
+181,24,40,Assist,44,1125
+182,24,60,Goal,43,1114
+183,24,65,Goal,44,1125
+184,24,65,Assist,44,1132
+185,24,7,Yellow Card,44,1135
 186,24,90,Goal,44,1139
 187,24,90,Assist,44,1137
 188,25,4,Yellow Card,3,71
 189,25,50,Goal,1,7
 190,25,58,Yellow Card,3,60
-191,26,6,Goal,4,96
-192,26,6,Assist,4,102
-193,26,33,Yellow Card,2,30
-194,26,40,Yellow Card,2,31
+191,26,33,Yellow Card,2,30
+192,26,40,Yellow Card,2,31
+193,26,6,Goal,4,96
+194,26,6,Assist,4,102
 195,26,75,Yellow Card,4,85
 196,26,81,VAR Review,2,38
 197,26,83,Goal,2,30
-198,27,9,Yellow Card,5,117
-199,27,16,Goal,5,113
-200,27,29,Goal,5,114
-201,27,45,Goal,5,114
-202,27,60,Red Card,7,170
-203,27,60,VAR Review,7,170
-204,27,62,Yellow Card,7,176
-205,27,64,Goal,5,129
-206,27,75,Goal,5,182
-207,27,85,Red Card,7,179
+198,27,16,Goal,5,113
+199,27,29,Goal,5,114
+200,27,45,Goal,5,114
+201,27,60,Red Card,7,170
+202,27,60,VAR Review,7,170
+203,27,62,Yellow Card,7,176
+204,27,64,Goal,5,129
+205,27,75,Goal,5,182
+206,27,85,Red Card,7,179
+207,27,9,Yellow Card,5,117
 208,27,90,Goal,5,114
 209,27,90,Assist,5,129
 210,28,59,Yellow Card,6,137
@@ -220,10 +220,10 @@ event_id,match_id,minute,event_type,team_id,player_id
 219,28,90,Assist,8,199
 220,28,90,Goal,8,192
 221,28,90,Goal,6,156
-222,29,4,Yellow Card,11,262
-223,29,23,Goal,9,217
-224,29,36,Goal,9,217
-225,29,36,Assist,9,215
+222,29,23,Goal,9,217
+223,29,36,Goal,9,217
+224,29,36,Assist,9,215
+225,29,4,Yellow Card,11,262
 226,29,45,Goal,9,215
 227,29,45,Assist,9,228
 228,29,45,Yellow Card,11,280
@@ -262,12 +262,12 @@ event_id,match_id,minute,event_type,team_id,player_id
 261,34,56,Yellow Card,18,450
 262,34,75,Yellow Card,18,445
 263,34,90,Yellow Card,18,461
-264,35,5,Goal,21,539
-265,35,5,Assist,21,531
-266,35,17,Goal,21,539
-267,35,17,Assist,21,542
-268,35,47,Goal,21,531
-269,35,47,Assist,21,542
+264,35,17,Goal,21,539
+265,35,17,Assist,21,542
+266,35,47,Goal,21,531
+267,35,47,Assist,21,542
+268,35,5,Goal,21,539
+269,35,5,Assist,21,531
 270,35,53,Yellow Card,23,577
 271,35,54,Goal,21,531
 272,35,54,Assist,21,544
@@ -277,10 +277,10 @@ event_id,match_id,minute,event_type,team_id,player_id
 276,35,80,Yellow Card,23,579
 277,35,89,Goal,21,544
 278,35,89,Assist,21,530
-279,36,4,Goal,22,561
-280,36,4,Assist,22,559
-281,36,31,Goal,22,564
-282,36,31,Assist,22,559
+279,36,31,Goal,22,564
+280,36,31,Assist,22,559
+281,36,4,Goal,22,561
+282,36,4,Assist,22,559
 283,36,69,Goal,22,560
 284,36,69,Assist,22,564
 285,36,83,Goal,22,564
@@ -308,21 +308,21 @@ event_id,match_id,minute,event_type,team_id,player_id
 307,39,30,Yellow Card,31,790
 308,39,49,Goal,29,785
 309,39,60,Yellow Card,31,803
-310,40,5,Yellow Card,30,767
-311,40,20,Yellow Card,32,812
-312,40,21,Goal,30,760
-313,40,44,Goal,32,826
-314,40,44,Assist,32,814
-315,40,45,Goal,32,820
-316,40,45,Assist,32,826
+310,40,20,Yellow Card,32,812
+311,40,21,Goal,30,760
+312,40,44,Goal,32,826
+313,40,44,Assist,32,814
+314,40,45,Goal,32,820
+315,40,45,Assist,32,826
+316,40,5,Yellow Card,30,767
 317,40,58,Yellow Card,32,822
 318,40,61,Goal,30,780
 319,40,90,Yellow Card,30,757
-320,41,6,Yellow Card,35,900
-321,41,14,Goal,33,842
-322,41,14,Assist,33,843
-323,41,54,Goal,33,842
-324,41,54,Assist,33,839
+320,41,14,Goal,33,842
+321,41,14,Assist,33,843
+322,41,54,Goal,33,842
+323,41,54,Assist,33,839
+324,41,6,Yellow Card,35,900
 325,41,66,Goal,33,839
 326,41,66,Assist,33,843
 327,42,43,Goal,36,926
@@ -348,12 +348,12 @@ event_id,match_id,minute,event_type,team_id,player_id
 347,44,69,Goal,38,974
 348,44,69,Assist,38,969
 349,44,82,Goal,38,971
-350,45,6,Goal,41,1047
-351,45,6,Assist,41,1060
-352,45,14,Yellow Card,43,1101
-353,45,17,Goal,41,1065
-354,45,39,Goal,41,1047
-355,45,39,Assist,41,1048
+350,45,14,Yellow Card,43,1101
+351,45,17,Goal,41,1065
+352,45,39,Goal,41,1047
+353,45,39,Assist,41,1048
+354,45,6,Goal,41,1047
+355,45,6,Assist,41,1060
 356,45,60,Goal,41,1094
 357,45,68,Yellow Card,41,1053
 358,45,87,Goal,41,1057
@@ -398,13 +398,13 @@ event_id,match_id,minute,event_type,team_id,player_id
 397,52,82,Goal,6,156
 398,52,82,Assist,6,133
 399,52,82,Yellow Card,6,156
-400,53,7,Goal,9,215
-401,53,7,Assist,9,234
-402,53,45,Goal,9,215
-403,53,45,Assist,9,216
-404,53,60,Goal,9,217
-405,53,60,Assist,9,216
-406,53,62,Yellow Card,9,221
+400,53,45,Goal,9,215
+401,53,45,Assist,9,216
+402,53,60,Goal,9,217
+403,53,60,Assist,9,216
+404,53,62,Yellow Card,9,221
+405,53,7,Goal,9,215
+406,53,7,Assist,9,234
 407,53,82,Yellow Card,9,225
 408,53,89,Yellow Card,12,297
 409,54,10,Goal,11,235
@@ -416,11 +416,11 @@ event_id,match_id,minute,event_type,team_id,player_id
 415,54,80,Yellow Card,11,269
 416,54,89,Goal,10,250
 417,54,90,Yellow Card,11,281
-418,55,3,Goal,13,318
-419,55,3,Assist,13,326
-420,55,10,Goal,16,398
-421,55,10,Assist,16,416
-422,55,19,Yellow Card,13,326
+418,55,10,Goal,16,398
+419,55,10,Assist,16,416
+420,55,19,Yellow Card,13,326
+421,55,3,Goal,13,318
+422,55,3,Assist,13,326
 423,55,31,Goal,16,396
 424,55,31,Assist,16,403
 425,55,49,Goal,13,326
@@ -429,23 +429,23 @@ event_id,match_id,minute,event_type,team_id,player_id
 428,56,77,Yellow Card,14,346
 429,57,2,Goal,17,435
 430,57,2,Assist,17,433
-431,57,9,Goal,20,514
-432,57,9,Assist,20,509
-433,57,43,Yellow Card,20,497
-434,57,44,Yellow Card,17,421
-435,57,50,Yellow Card,20,515
-436,57,77,Goal,20,513
-437,57,77,Assist,20,517
-438,57,89,Yellow Card,20,513
-439,58,7,Goal,19,487
-440,58,34,Yellow Card,19,487
-441,58,64,Goal,19,487
+431,57,43,Yellow Card,20,497
+432,57,44,Yellow Card,17,421
+433,57,50,Yellow Card,20,515
+434,57,77,Goal,20,513
+435,57,77,Assist,20,517
+436,57,89,Yellow Card,20,513
+437,57,9,Goal,20,514
+438,57,9,Assist,20,509
+439,58,34,Yellow Card,19,487
+440,58,64,Goal,19,487
+441,58,7,Goal,19,487
 442,58,75,Yellow Card,18,449
 443,58,83,Yellow Card,18,461
 444,59,3,Goal,21,615
-445,59,7,Goal,21,539
-446,59,54,Goal,24,607
-447,59,62,Goal,21,526
+445,59,54,Goal,24,607
+446,59,62,Goal,21,526
+447,59,7,Goal,21,539
 448,60,32,Yellow Card,23,576
 449,60,56,Goal,22,557
 450,60,62,Goal,23,583
@@ -459,12 +459,12 @@ event_id,match_id,minute,event_type,team_id,player_id
 458,61,84,Goal,28,713
 459,61,86,Goal,25,633
 460,61,90,Goal,25,646
-461,62,5,Goal,26,671
-462,62,14,Goal,27,699
-463,62,19,Yellow Card,26,671
-464,62,19,Yellow Card,27,689
-465,62,41,Yellow Card,26,652
-466,62,43,Yellow Card,27,695
+461,62,14,Goal,27,699
+462,62,19,Yellow Card,26,671
+463,62,19,Yellow Card,27,689
+464,62,41,Yellow Card,26,652
+465,62,43,Yellow Card,27,695
+466,62,5,Goal,26,671
 467,62,79,Yellow Card,27,682
 468,62,90,Yellow Card,26,667
 469,62,90,Yellow Card,27,680
@@ -475,25 +475,25 @@ event_id,match_id,minute,event_type,team_id,player_id
 474,63,58,Yellow Card,32,819
 475,63,90,Yellow Card,32,813
 476,64,4,Yellow Card,31,792
-477,64,8,Yellow Card,30,778
-478,64,67,Yellow Card,31,786
+477,64,67,Yellow Card,31,786
+478,64,8,Yellow Card,30,778
 479,64,90,Yellow Card,31,789
-480,65,7,Goal,33,839
-481,65,7,Assist,33,842
-482,65,10,Yellow Card,36,916
-483,65,20,Goal,33,839
-484,65,20,Assist,33,842
-485,65,21,Goal,36,929
-486,65,21,Assist,36,931
-487,65,32,Goal,33,839
-488,65,32,Assist,33,840
+480,65,10,Yellow Card,36,916
+481,65,20,Goal,33,839
+482,65,20,Assist,33,842
+483,65,21,Goal,36,929
+484,65,21,Assist,36,931
+485,65,32,Goal,33,839
+486,65,32,Assist,33,840
+487,65,7,Goal,33,839
+488,65,7,Assist,33,842
 489,65,74,Yellow Card,33,840
 490,65,90,Goal,33,852
 491,65,90,Assist,33,844
-492,66,4,Goal,34,879
-493,66,4,Assist,34,862
-494,66,13,Red Card,35,886
-495,66,18,Yellow Card,34,862
+492,66,13,Red Card,35,886
+493,66,18,Yellow Card,34,862
+494,66,4,Goal,34,879
+495,66,4,Assist,34,862
 496,66,56,Goal,34,876
 497,66,56,Assist,34,866
 498,66,59,Goal,34,884
@@ -566,44 +566,44 @@ event_id,match_id,minute,event_type,team_id,player_id
 565,74,90,Goal,9,230
 566,74,90,Assist,9,216
 567,74,90,Yellow Card,9,216
-568,75,42,Goal,14,357
-569,75,42,Assist,14,361
-570,75,54,Goal,17,423
-571,75,54,Assist,17,433
-572,75,65,Yellow Card,14,352
-573,75,106,Yellow Card,17,423
-574,75,110,Yellow Card,17,418
-575,75,115,Yellow Card,17,426
-576,75,117,Yellow Card,14,361
-577,75,120,Yellow Card,14,344
-578,75,121,Penalty Shootout Miss,17,423
-579,75,121,Penalty Shootout Goal,14,349
-580,75,121,Penalty Shootout Goal,17,422
-581,75,121,Penalty Shootout Goal,14,353
-582,75,121,Penalty Shootout Goal,17,426
-583,75,121,Penalty Shootout Goal,14,361
-584,75,121,Penalty Shootout Miss,17,427
-585,75,121,Penalty Shootout Miss,14,347
-586,75,121,Penalty Shootout Goal,17,436
-587,75,121,Penalty Shootout Miss,14,343
-588,75,121,Penalty Shootout Miss,17,420
-589,75,121,Penalty Shootout Goal,14,351
-590,76,47,Yellow Card,10,248
-591,76,71,Yellow Card,21,525
-592,76,72,Goal,21,531
-593,76,72,Assist,21,544
-594,76,90,Goal,10,248
-595,76,90,Assist,10,241
-596,76,121,Penalty Shootout Goal,21,540
-597,76,121,Penalty Shootout Miss,10,258
-598,76,121,Penalty Shootout Miss,21,527
-599,76,121,Penalty Shootout Goal,10,243
-600,76,121,Penalty Shootout Goal,21,529
-601,76,121,Penalty Shootout Goal,10,241
-602,76,121,Penalty Shootout Miss,21,546
-603,76,121,Penalty Shootout Miss,10,236
-604,76,121,Penalty Shootout Miss,21,544
-605,76,121,Penalty Shootout Goal,10,245
+568,75,106,Yellow Card,17,423
+569,75,110,Yellow Card,17,418
+570,75,115,Yellow Card,17,426
+571,75,117,Yellow Card,14,361
+572,75,120,Yellow Card,14,344
+573,75,121,Penalty Shootout Miss,17,423
+574,75,121,Penalty Shootout Goal,14,349
+575,75,121,Penalty Shootout Goal,17,422
+576,75,121,Penalty Shootout Goal,14,353
+577,75,121,Penalty Shootout Goal,17,426
+578,75,121,Penalty Shootout Goal,14,361
+579,75,121,Penalty Shootout Miss,17,427
+580,75,121,Penalty Shootout Miss,14,347
+581,75,121,Penalty Shootout Goal,17,436
+582,75,121,Penalty Shootout Miss,14,343
+583,75,121,Penalty Shootout Miss,17,420
+584,75,121,Penalty Shootout Goal,14,351
+585,75,42,Goal,14,357
+586,75,42,Assist,14,361
+587,75,54,Goal,17,423
+588,75,54,Assist,17,433
+589,75,65,Yellow Card,14,352
+590,76,121,Penalty Shootout Goal,21,540
+591,76,121,Penalty Shootout Miss,10,258
+592,76,121,Penalty Shootout Miss,21,527
+593,76,121,Penalty Shootout Goal,10,243
+594,76,121,Penalty Shootout Goal,21,529
+595,76,121,Penalty Shootout Goal,10,241
+596,76,121,Penalty Shootout Miss,21,546
+597,76,121,Penalty Shootout Miss,10,236
+598,76,121,Penalty Shootout Miss,21,544
+599,76,121,Penalty Shootout Goal,10,245
+600,76,47,Yellow Card,10,248
+601,76,71,Yellow Card,21,525
+602,76,72,Goal,21,531
+603,76,72,Assist,21,544
+604,76,90,Goal,10,248
+605,76,90,Assist,10,241
 606,77,39,Goal,36,930
 607,77,45,Yellow Card,36,930
 608,77,74,Goal,19,483
@@ -622,24 +622,24 @@ event_id,match_id,minute,event_type,team_id,player_id
 621,79,90,Yellow Card,20,517
 622,79,90,Yellow Card,20,504
 623,79,95,Red Card,20,497
-624,80,7,Goal,42,1075
-625,80,19,Yellow Card,45,1154
-626,80,27,Yellow Card,42,1080
+624,80,19,Yellow Card,45,1154
+625,80,27,Yellow Card,42,1080
+626,80,7,Goal,42,1075
 627,80,75,Goal,45,1153
 628,80,75,Assist,45,1162
 629,80,86,Goal,45,1153
 630,80,86,Assist,45,1162
-631,81,25,Goal,34,879
-632,81,51,Goal,34,876
-633,81,51,Assist,34,877
-634,81,64,Yellow Card,25,628
-635,81,67,Yellow Card,34,866
-636,81,86,Goal,25,633
-637,81,86,Assist,25,639
-638,81,89,Goal,25,632
-639,81,89,Assist,25,634
-640,81,120,Goal,25,632
-641,81,120,VAR Review,34,866
+631,81,120,Goal,25,632
+632,81,120,VAR Review,34,866
+633,81,25,Goal,34,879
+634,81,51,Goal,34,876
+635,81,51,Assist,34,877
+636,81,64,Yellow Card,25,628
+637,81,67,Yellow Card,34,866
+638,81,86,Goal,25,633
+639,81,86,Assist,25,639
+640,81,89,Goal,25,632
+641,81,89,Assist,25,634
 642,82,45,Goal,13,332
 643,82,45,Assist,13,329
 644,82,64,Red Card,13,332
@@ -653,35 +653,35 @@ event_id,match_id,minute,event_type,team_id,player_id
 652,83,83,Yellow Card,39,993
 653,83,89,Goal,29,749
 654,83,89,Assist,29,752
-655,84,17,Yellow Card,41,1043
-656,84,53,Goal,46,1184
-657,84,53,Assist,46,1172
-658,84,59,Yellow Card,46,1180
-659,84,68,Goal,41,1047
-660,84,90,Goal,41,1049
-661,84,90,Assist,41,1057
-662,84,97,Yellow Card,46,1184
-663,84,103,VAR Review,46,1174
+655,84,103,VAR Review,46,1174
+656,84,17,Yellow Card,41,1043
+657,84,53,Goal,46,1184
+658,84,53,Assist,46,1172
+659,84,59,Yellow Card,46,1180
+660,84,68,Goal,41,1047
+661,84,90,Goal,41,1049
+662,84,90,Assist,41,1057
+663,84,97,Yellow Card,46,1184
 664,85,10,Goal,8,189
 665,85,10,Assist,8,191
 666,85,36,Yellow Card,38,972
 667,85,46,Goal,8,193
 668,85,71,Yellow Card,38,976
-669,86,13,Goal,26,658
-670,86,55,Goal,15,653
-671,86,121,Penalty Shootout Miss,15,383
-672,86,121,Penalty Shootout Goal,26,671
-673,86,121,Penalty Shootout Goal,15,386
-674,86,121,Penalty Shootout Goal,26,655
-675,86,121,Penalty Shootout Goal,15,375
-676,86,121,Penalty Shootout Goal,26,660
-677,86,121,Penalty Shootout Miss,15,389
-678,86,121,Penalty Shootout Goal,26,654
-679,87,29,Goal,37,946
-680,87,59,Goal,30,768
-681,87,92,Goal,37,942
-682,87,103,Goal,30,767
-683,87,111,Goal,37,757
+669,86,121,Penalty Shootout Miss,15,383
+670,86,121,Penalty Shootout Goal,26,671
+671,86,121,Penalty Shootout Goal,15,386
+672,86,121,Penalty Shootout Goal,26,655
+673,86,121,Penalty Shootout Goal,15,375
+674,86,121,Penalty Shootout Goal,26,660
+675,86,121,Penalty Shootout Miss,15,389
+676,86,121,Penalty Shootout Goal,26,654
+677,86,13,Goal,26,658
+678,86,55,Goal,15,653
+679,87,103,Goal,30,767
+680,87,111,Goal,37,757
+681,87,29,Goal,37,946
+682,87,59,Goal,30,768
+683,87,92,Goal,37,942
 684,88,14,Goal,44,1129
 685,88,14,Assist,44,1143
 686,89,70,Goal,33,842
@@ -691,8 +691,8 @@ event_id,match_id,minute,event_type,team_id,player_id
 690,90,82,Assist,10,244
 691,90,90,Goal,10,243
 692,90,90,Assist,10,244
-693,91,3,VAR Review,36,916
-694,91,14,VAR Review,9,217
+693,91,14,VAR Review,9,217
+694,91,3,VAR Review,36,916
 695,91,79,Goal,36,919
 696,91,79,Assist,36,931
 697,91,90,Goal,9,218
@@ -719,14 +719,14 @@ event_id,match_id,minute,event_type,team_id,player_id
 718,93,90+1,Assist,29,735
 719,93,90+3,Yellow Card,41,1053
 720,93,90+8,Yellow Card,29,735
-721,94,9,Goal,25,641
-722,94,9,Assist,25,647
-723,94,31,Goal,13,329
-724,94,33,Goal,25,641
-725,94,33,Assist,25,634
-726,94,35,Yellow Card,13,320
-727,94,57,Goal,25,644
-728,94,69,Yellow Card,13,329
+721,94,31,Goal,13,329
+722,94,33,Goal,25,641
+723,94,33,Assist,25,634
+724,94,35,Yellow Card,13,320
+725,94,57,Goal,25,644
+726,94,69,Yellow Card,13,329
+727,94,9,Goal,25,641
+728,94,9,Assist,25,647
 729,94,90+3,Goal,25,633
 730,95,15,Goal,26,652
 731,95,15,Assist,26,660
@@ -742,23 +742,31 @@ event_id,match_id,minute,event_type,team_id,player_id
 741,95,90+3,Yellow Card,26,673
 742,95,90+4,Yellow Card,26,664
 743,95,90+8,Yellow Card,26,669
-744,96,51,Yellow Card,8,192
-745,96,59,Yellow Card,8,188
-746,96,60,Yellow Card,44,1143
-747,96,94,Yellow Card,44,1141
-748,96,105,Yellow Card,8,184
-749,96,121,Penalty Shootout Goal,8,192
-750,96,121,Penalty Shootout Goal,44,1138
-751,96,121,Penalty Shootout Goal,8,205
-752,96,121,Penalty Shootout Miss,44,1141
-753,96,121,Penalty Shootout Miss,8,187
-754,96,121,Penalty Shootout Goal,44,1139
-755,96,121,Penalty Shootout Goal,8,208
-756,96,121,Penalty Shootout Miss,44,1137
-757,96,121,Penalty Shootout Goal,8,199
-758,96,121,Penalty Shootout Goal,44,1125
+744,96,105,Yellow Card,8,184
+745,96,121,Penalty Shootout Goal,8,192
+746,96,121,Penalty Shootout Goal,44,1138
+747,96,121,Penalty Shootout Goal,8,205
+748,96,121,Penalty Shootout Miss,44,1141
+749,96,121,Penalty Shootout Miss,8,187
+750,96,121,Penalty Shootout Goal,44,1139
+751,96,121,Penalty Shootout Goal,8,208
+752,96,121,Penalty Shootout Miss,44,1137
+753,96,121,Penalty Shootout Goal,8,199
+754,96,121,Penalty Shootout Goal,44,1125
+755,96,51,Yellow Card,8,192
+756,96,59,Yellow Card,8,188
+757,96,60,Yellow Card,44,1143
+758,96,94,Yellow Card,44,1141
 759,97,60,Goal,33,842
 760,97,60,Assist,33,852
 761,97,63,Yellow Card,10,248
 762,97,66,Goal,33,839
 763,97,66,Assist,33,842
+764,98,30,Goal,29,736
+765,98,41,Goal,25,641
+766,98,41,Assist,25,645
+767,98,43,Yellow Card,29,750
+768,98,85,Yellow Card,25,631
+769,98,88,Goal,29,734
+770,98,90+3,Yellow Card,29,742
+771,98,90+5,Yellow Card,25,630

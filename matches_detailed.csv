@@ -96,7 +96,7 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 95,2026-07-07,16:00,Round of 16,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Argentina,ARG,Egypt,EGY,3,2,,,Completed,Regular,2.12,1.54,Damián Emiliano Martinez,Abdelaziz Mohame Mostafa,Lionel Andrés Messi,François Letexier
 96,2026-07-07,20:00,Round of 16,Seattle Stadium (Lumen Field),Seattle,USA,Switzerland,SUI,Colombia,COL,0,0,4,3,Completed,Penalties,1.15,1.46,Gregor Kobel,Camilo Andres Vargas,Gregor Kobel,Ivan Barton
 97,2026-07-09,20:00,Quarter-finals,Boston Stadium (Gillette Stadium),Foxborough,USA,France,FRA,Morocco,MAR,2,0,,,Completed,Regular,3.1,0.13,Mike Peterson Maignan,Yassine Bounou,Kylian Mbappe,Facundo Tello
-98,2026-07-10,19:00,Quarter-finals,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Spain,ESP,Belgium,BEL,,,,,Scheduled,,,,,,,Daniele Orsato
+98,2026-07-10,19:00,Quarter-finals,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Spain,ESP,Belgium,BEL,2,1,,,Completed,Regular,2.08,0.37,Unai Simon,Thibaut Nicolas Courtois,Lamine Yamal Yamal,Michael Oliver
 99,2026-07-11,21:00,Quarter-finals,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Norway,NOR,England,ENG,,,,,Scheduled,,,,,,,Michael Oliver
 100,2026-07-12,01:00,Quarter-finals,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Argentina,ARG,Switzerland,SUI,,,,,Scheduled,,,,,,,Anthony Taylor
 101,2026-07-14,20:00,Semi-finals,Dallas Stadium (AT&T Stadium),Arlington,USA,,,,,,,,,Scheduled,,,,,,,Clément Turpin
