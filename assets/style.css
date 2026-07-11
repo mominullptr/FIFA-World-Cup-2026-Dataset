@@ -900,6 +900,7 @@ body {
   gap: 8px;
   margin-bottom: 1.5rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   padding-bottom: 8px;
 }
 
@@ -931,6 +932,7 @@ body {
 
 .table-wrapper {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   background: rgba(6, 15, 12, 0.96);
@@ -1100,6 +1102,58 @@ body {
   transform: translateY(-2px);
 }
 
+/* Scroll to Top Floating Button */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+#scroll-top-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--primary-gold-dark);
+  color: var(--primary-gold);
+  transform: translateY(-2px);
+}
+
+/* Hamburger Toggle Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1010;
+}
+
+.menu-toggle .bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.mobile-only-download {
+  display: none;
+}
+
 /* Responsive queries */
 @media (max-width: 1024px) {
   .hero-grid {
@@ -1135,16 +1189,89 @@ body {
 }
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: rgba(4, 9, 7, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .nav-links {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+
+  .mobile-only-download {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav-container > .btn {
+    display: none; /* Hide header download button on mobile/tablet */
+  }
+
+  /* Hamburger transition animations */
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   
   .tables-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Stack pipeline flow vertically on mobile */
+  .pipeline-flow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pipeline-arrow {
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    margin: 0.25rem 0;
   }
   
   .footer-content {
@@ -1158,6 +1285,34 @@ body {
   
   .footer-links {
     justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  #scroll-top-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -1273,7 +1428,7 @@ body {
 }
 
 .bg-video.loaded {
-  opacity: 0.25; /* Increased opacity for more video visibility, keeping text readable */
+  opacity: 0.40; /* Increased opacity for more video visibility, keeping text readable */
 }
 
 .video-bg-overlay {

@@ -35,15 +35,12 @@ SquadLists-English.pdf
 prediction_cover.png
 
 # Site verification and security-sensitive files
-google*.html
-BingSiteAuth.xml
-robots.txt
-sitemap.xml
-docs/robots.txt
-docs/sitemap.xml
 generate_prediction_features.py
 validate_dataset.py
 CITATION.cff
 schema_relationships.md
 .github/
 
+# Allow robots.txt even though *.txt is ignored
+!robots.txt
+!docs/robots.txt
