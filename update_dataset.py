@@ -1,268 +1,463 @@
-import os
 import csv
+import json
+import os
 
-# Directory and files
 workspace_dir = os.path.dirname(os.path.abspath(__file__))
 
-matches_path = os.path.join(workspace_dir, "matches.csv")
-events_path = os.path.join(workspace_dir, "match_events.csv")
-players_path = os.path.join(workspace_dir, "squads_and_players.csv")
-teams_path = os.path.join(workspace_dir, "teams.csv")
+def update_matches():
+    matches_path = os.path.join(workspace_dir, "matches.csv")
+    with open(matches_path, "r", newline="", encoding="utf-8") as f:
+        reader = list(csv.reader(f))
+    
+    headers = reader[0]
+    rows = reader[1:]
+    
+    for row in rows:
+        match_id = row[0]
+        if match_id == "99":
+            # 99,2026-07-11,21:00,4,13,36,45,1,2,,,Completed,AET,0.77,0.96,5,1154
+            row[7] = "1"     # home_score
+            row[8] = "2"     # away_score
+            row[9] = ""      # home_penalty_score
+            row[10] = ""     # away_penalty_score
+            row[11] = "Completed"
+            row[12] = "AET"
+            row[13] = "0.77" # home_xg
+            row[14] = "0.96" # away_xg
+            row[15] = "5"    # referee_id
+            row[16] = "1154" # potm_player_id
+        elif match_id == "100":
+            # 100,2026-07-12,01:00,4,12,37,8,3,1,,,Completed,AET,2.0,0.53,17,945
+            row[7] = "3"     # home_score
+            row[8] = "1"     # away_score
+            row[9] = ""      # home_penalty_score
+            row[10] = ""     # away_penalty_score
+            row[11] = "Completed"
+            row[12] = "AET"
+            row[13] = "2.0"  # home_xg
+            row[14] = "0.53" # away_xg
+            row[15] = "17"   # referee_id
+            row[16] = "945"  # potm_player_id
+        elif match_id == "101":
+            # France vs Spain
+            row[5] = "33"    # home_team_id
+            row[6] = "29"    # away_team_id
+        elif match_id == "102":
+            # England vs Argentina
+            row[5] = "45"    # home_team_id
+            row[6] = "37"    # away_team_id
 
-def load_csv(path):
-    if not os.path.exists(path):
-        return [], []
-    with open(path, "r", newline="", encoding="utf-8") as f:
-        reader = csv.reader(f)
-        headers = next(reader)
-        rows = [row for row in reader]
-        return headers, rows
-
-def save_csv(path, headers, rows):
-    with open(path, "w", newline="", encoding="utf-8") as f:
+    with open(matches_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(headers)
         writer.writerows(rows)
+    print("Updated matches.csv")
 
+def update_matches_detailed():
+    matches_detailed_path = os.path.join(workspace_dir, "matches_detailed.csv")
+    with open(matches_detailed_path, "r", newline="", encoding="utf-8") as f:
+        reader = list(csv.reader(f))
+    
+    headers = reader[0]
+    rows = reader[1:]
+    
+    for row in rows:
+        match_id = row[0]
+        if match_id == "99":
+            # Norway vs England
+            row[11] = "1"     # home_score
+            row[12] = "2"     # away_score
+            row[13] = ""      # home_penalty_score
+            row[14] = ""      # away_penalty_score
+            row[15] = "Completed"
+            row[16] = "AET"
+            row[17] = "0.77"  # home_xg
+            row[18] = "0.96"  # away_xg
+            row[19] = "Ørjan Haskjold Nyland"
+            row[20] = "Jordan Lee Pickford"
+            row[21] = "Jude Victor William Bellingham"
+            row[22] = "Clément Turpin"
+        elif match_id == "100":
+            # Argentina vs Switzerland
+            row[11] = "3"     # home_score
+            row[12] = "1"     # away_score
+            row[13] = ""      # home_penalty_score
+            row[14] = ""      # away_penalty_score
+            row[15] = "Completed"
+            row[16] = "AET"
+            row[17] = "2.0"   # home_xg
+            row[18] = "0.53"  # away_xg
+            row[19] = "Damián Emiliano Martinez"
+            row[20] = "Gregor Kobel"
+            row[21] = "Julián Alvarez"
+            row[22] = "João Pinheiro"
+        elif match_id == "101":
+            # France vs Spain
+            row[7] = "France"
+            row[8] = "FRA"
+            row[9] = "Spain"
+            row[10] = "ESP"
+        elif match_id == "102":
+            # England vs Argentina
+            row[7] = "England"
+            row[8] = "ENG"
+            row[9] = "Argentina"
+            row[10] = "ARG"
+
+    with open(matches_detailed_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(rows)
+    print("Updated matches_detailed.csv")
+
+def append_events():
+    events_path = os.path.join(workspace_dir, "match_events.csv")
+    with open(events_path, "r", newline="", encoding="utf-8") as f:
+        reader = list(csv.reader(f))
+    
+    headers = reader[0]
+    rows = reader[1:]
+    
+    start_event_id = int(rows[-1][0]) + 1
+    
+    new_events = [
+        # Match 99
+        (99, "36", "Goal", 36, 931),
+        (99, "36", "Assist", 36, 920),
+        (99, "45+2", "Goal", 45, 1154),
+        (99, "45+2", "Assist", 45, 1162),
+        (99, "93", "Goal", 45, 1154),
+        (99, "117", "Yellow Card", 36, 913),
+        # Match 100
+        (100, "10", "Goal", 37, 956),
+        (100, "10", "Assist", 37, 946),
+        (100, "44", "Yellow Card", 8, 189), # Breel Embolo (189)
+        (100, "67", "Goal", 8, 193),
+        (100, "67", "Assist", 8, 195),
+        (100, "72", "Red Card", 8, 189),
+        (100, "72", "VAR Review", 8, 189),
+        (100, "97", "Yellow Card", 37, 952),
+        (100, "98", "Yellow Card", 37, 958),
+        (100, "112", "Goal", 37, 945),
+        (100, "112", "Assist", 37, 957),
+        (100, "114", "Yellow Card", 37, 957),
+        (100, "120+1", "Goal", 37, 958)
+    ]
+    
+    for mid, minute, etype, tid, pid in new_events:
+        rows.append([str(start_event_id), str(mid), minute, etype, str(tid), str(pid)])
+        start_event_id += 1
+
+    with open(events_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(rows)
+    print(f"Appended events to match_events.csv, last event_id is {start_event_id - 1}")
+
+def append_lineups():
+    lineups_path = os.path.join(workspace_dir, "match_lineups.csv")
+    with open(lineups_path, "r", newline="", encoding="utf-8") as f:
+        reader = list(csv.reader(f))
+    
+    headers = reader[0]
+    rows = reader[1:]
+    
+    start_lineup_id = int(rows[-1][0]) + 1
+    
+    # Match 99 players (Norway (36) and England (45))
+    m99_players = [
+        # Norway
+        (911, 36, 1, "GK", 120),
+        (936, 36, 1, "FWD", 60),
+        (913, 36, 1, "DEF", 120),
+        (927, 36, 1, "DEF", 90),
+        (915, 36, 1, "DEF", 90),
+        (918, 36, 1, "MID", 120),
+        (920, 36, 1, "MID", 120),
+        (916, 36, 1, "MID", 120),
+        (917, 36, 1, "FWD", 68),
+        (919, 36, 1, "FWD", 105),
+        (931, 36, 1, "MID", 68),
+        (924, 36, 0, "MID", 60),
+        (930, 36, 0, "FWD", 52),
+        (932, 36, 0, "MID", 52),
+        (926, 36, 0, "DEF", 30),
+        (914, 36, 0, "DEF", 30),
+        (921, 36, 0, "FWD", 15),
+        (912, 36, 0, "MID", 0),
+        (922, 36, 0, "GK", 0),
+        (923, 36, 0, "GK", 0),
+        (925, 36, 0, "DEF", 0),
+        (928, 36, 0, "MID", 0),
+        (929, 36, 0, "MID", 0),
+        (933, 36, 0, "MID", 0),
+        (934, 36, 0, "DEF", 0),
+        (935, 36, 0, "DEF", 0),
+        # England
+        (1145, 45, 1, "GK", 120),
+        (1147, 45, 1, "DEF", 86),
+        (1150, 45, 1, "DEF", 120),
+        (1149, 45, 1, "DEF", 120),
+        (1146, 45, 1, "DEF", 89),
+        (1148, 45, 1, "MID", 45),
+        (1152, 45, 1, "MID", 120),
+        (1162, 45, 1, "FWD", 71),
+        (1154, 45, 1, "MID", 114),
+        (1164, 45, 1, "FWD", 45),
+        (1153, 45, 1, "FWD", 120),
+        (1151, 45, 0, "FWD", 75),
+        (1165, 45, 0, "MID", 75),
+        (1168, 45, 0, "DEF", 49),
+        (1169, 45, 0, "DEF", 34),
+        (1161, 45, 0, "MID", 31),
+        (1159, 45, 0, "DEF", 6),
+        (1155, 45, 0, "FWD", 0),
+        (1156, 45, 0, "DEF", 0),
+        (1157, 45, 0, "GK", 0),
+        (1158, 45, 0, "MID", 0),
+        (1160, 45, 0, "MID", 0),
+        (1163, 45, 0, "FWD", 0),
+        (1166, 45, 0, "FWD", 0),
+        (1167, 45, 0, "GK", 0),
+        (1170, 45, 0, "DEF", 0)
+    ]
+    
+    for pid, tid, is_start, pos, mins in m99_players:
+        rows.append([str(start_lineup_id), "99", str(pid), str(tid), str(is_start), pos, str(mins)])
+        start_lineup_id += 1
+
+    # Match 100 players (Argentina (37) and Switzerland (8))
+    m100_players = [
+        # Argentina
+        (959, 37, 1, "GK", 120),
+        (962, 37, 1, "DEF", 85),
+        (949, 37, 1, "DEF", 105),
+        (942, 37, 1, "DEF", 120),
+        (939, 37, 1, "DEF", 78),
+        (941, 37, 1, "MID", 110),
+        (943, 37, 1, "MID", 85),
+        (960, 37, 1, "MID", 90),
+        (956, 37, 1, "MID", 120),
+        (946, 37, 1, "FWD", 120),
+        (945, 37, 1, "FWD", 120),
+        (951, 37, 0, "MID", 42),
+        (940, 37, 0, "DEF", 35),
+        (958, 37, 0, "FWD", 35),
+        (952, 37, 0, "FWD", 30),
+        (955, 37, 0, "DEF", 15),
+        (957, 37, 0, "FWD", 10),
+        (937, 37, 0, "GK", 0),
+        (938, 37, 0, "DEF", 0),
+        (944, 37, 0, "MID", 0),
+        (947, 37, 0, "MID", 0),
+        (948, 37, 0, "GK", 0),
+        (950, 37, 0, "MID", 0),
+        (953, 37, 0, "FWD", 0),
+        (954, 37, 0, "FWD", 0),
+        (961, 37, 0, "DEF", 0),
+        # Switzerland
+        (183, 8, 1, "GK", 120),
+        (195, 8, 1, "DEF", 90),
+        (187, 8, 1, "DEF", 120),
+        (186, 8, 1, "DEF", 120),
+        (188, 8, 1, "MID", 96),
+        (192, 8, 1, "MID", 120),
+        (190, 8, 1, "MID", 115),
+        (197, 8, 1, "MID", 86),
+        (204, 8, 1, "MID", 86),
+        (193, 8, 1, "FWD", 86),
+        (189, 8, 1, "FWD", 72),
+        (184, 8, 0, "DEF", 34),
+        (185, 8, 0, "DEF", 34),
+        (205, 8, 0, "FWD", 34),
+        (200, 8, 0, "DEF", 30),
+        (196, 8, 0, "MID", 24),
+        (199, 8, 0, "FWD", 5),
+        (194, 8, 0, "GK", 0),
+        (203, 8, 0, "GK", 0),
+        (191, 8, 0, "MID", 0),
+        (198, 8, 0, "FWD", 0),
+        (201, 8, 0, "FWD", 0),
+        (202, 8, 0, "MID", 0),
+        (206, 8, 0, "DEF", 0),
+        (207, 8, 0, "DEF", 0),
+        (208, 8, 0, "FWD", 0)
+    ]
+    
+    for pid, tid, is_start, pos, mins in m100_players:
+        rows.append([str(start_lineup_id), "100", str(pid), str(tid), str(is_start), pos, str(mins)])
+        start_lineup_id += 1
+
+    with open(lineups_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(rows)
+    print(f"Appended lineups to match_lineups.csv, last lineup_id is {start_lineup_id - 1}")
+
+def append_team_stats():
+    stats_path = os.path.join(workspace_dir, "match_team_stats.csv")
+    with open(stats_path, "r", newline="", encoding="utf-8") as f:
+        reader = list(csv.reader(f))
+    
+    headers = reader[0]
+    rows = reader[1:]
+    
+    new_stats = [
+        # match_id,team_id,possession,shots,shots_on_target,corners,fouls,offsides,saves,potm_name,data_source,last_verified
+        ("99", "36", "47", "13", "5", "7", "10", "1", "6", "", "Sofascore", "2026-07-12"),
+        ("99", "45", "53", "14", "8", "4", "8", "5", "4", "Jude Victor William Bellingham", "Sofascore", "2026-07-12"),
+        ("100", "37", "59", "23", "7", "8", "14", "4", "4", "Julián Alvarez", "Sofascore", "2026-07-12"),
+        ("100", "8", "41", "13", "5", "2", "18", "3", "4", "", "Sofascore", "2026-07-12")
+    ]
+    
+    for row in new_stats:
+        rows.append(list(row))
+
+    with open(stats_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(rows)
+    print("Appended stats to match_team_stats.csv")
+
+def update_real_match_details_json():
+    json_path = os.path.join(workspace_dir, "real_match_details.json")
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    # We want to check if France-Morocco (M97) and Spain-Belgium (M98) are already in there.
+    # Since len(data) was 96, they are not. Let's add them as well to keep the JSON fully up to date!
+    
+    m97 = {
+        "group": "Quarter-finals",
+        "date": "July 9, 2026",
+        "home_team": "France",
+        "away_team": "Morocco",
+        "score": "2–0",
+        "home_goals": [
+          {
+            "scorer": "Kylian Mbappé",
+            "minute": "60'",
+            "assist": "Ousmane Dembélé"
+          },
+          {
+            "scorer": "Bradley Barcola",
+            "minute": "66'",
+            "assist": "Kylian Mbappé"
+          }
+        ],
+        "away_goals": []
+    }
+    
+    m98 = {
+        "group": "Quarter-finals",
+        "date": "July 10, 2026",
+        "home_team": "Spain",
+        "away_team": "Belgium",
+        "score": "2–1",
+        "home_goals": [
+          {
+            "scorer": "Dani Olmo",
+            "minute": "30'"
+          },
+          {
+            "scorer": "Lamine Yamal",
+            "minute": "88'"
+          }
+        ],
+        "away_goals": [
+          {
+            "scorer": "Charles De Ketelaere",
+            "minute": "41'",
+            "assist": "Loïs Openda"
+          }
+        ]
+    }
+    
+    m99 = {
+        "group": "Quarter-finals",
+        "date": "July 11, 2026",
+        "home_team": "Norway",
+        "away_team": "England",
+        "score": "1–2",
+        "home_goals": [
+          {
+            "scorer": "Andreas Schjelderup",
+            "minute": "36'",
+            "assist": "Martin Ødegaard"
+          }
+        ],
+        "away_goals": [
+          {
+            "scorer": "Jude Bellingham",
+            "minute": "45+2'",
+            "assist": "Anthony Gordon"
+          },
+          {
+            "scorer": "Jude Bellingham",
+            "minute": "93'"
+          }
+        ]
+    }
+    
+    m100 = {
+        "group": "Quarter-finals",
+        "date": "July 12, 2026",
+        "home_team": "Argentina",
+        "away_team": "Switzerland",
+        "score": "3–1",
+        "home_goals": [
+          {
+            "scorer": "Alexis Mac Allister",
+            "minute": "10'",
+            "assist": "Lionel Messi"
+          },
+          {
+            "scorer": "Julián Alvarez",
+            "minute": "112'",
+            "assist": "José Manuel López"
+          },
+          {
+            "scorer": "Lautaro Martínez",
+            "minute": "120+1'"
+          }
+        ],
+        "away_goals": [
+          {
+            "scorer": "Dan Ndoye",
+            "minute": "67'",
+            "assist": "Ricardo Rodríguez"
+          }
+        ]
+    }
+    
+    # Avoid duplicate appends if script is run twice
+    match_keys = [(m['home_team'], m['away_team']) for m in data]
+    
+    if ("France", "Morocco") not in match_keys:
+        data.append(m97)
+        print("Appended France vs Morocco to JSON")
+    if ("Spain", "Belgium") not in match_keys:
+        data.append(m98)
+        print("Appended Spain vs Belgium to JSON")
+    if ("Norway", "England") not in match_keys:
+        data.append(m99)
+        print("Appended Norway vs England to JSON")
+    if ("Argentina", "Switzerland") not in match_keys:
+        data.append(m100)
+        print("Appended Argentina vs Switzerland to JSON")
+        
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print("Updated real_match_details.json")
 
 def main():
-    print("====================================================")
-    print("FIFA World Cup 2026 - Interactive Dataset Updater")
-    print("====================================================\n")
-
-    # Load data
-    try:
-        t_headers, teams = load_csv(teams_path)
-        m_headers, matches = load_csv(matches_path)
-        e_headers, events = load_csv(events_path)
-        p_headers, players = load_csv(players_path)
-    except Exception as e:
-        print(f"Error loading files: {e}")
-        return
-
-    # Map team IDs to Names
-    team_map = {row[0]: row[1] for row in teams}
-    # Map player IDs to Names and Roles
-    player_map = {row[0]: (row[2], row[3]) for row in players}
-    # Group players by team_id
-    players_by_team = {}
-    for row in players:
-        p_id, t_id, name, pos = row[0], row[1], row[2], row[3]
-        if t_id not in players_by_team:
-            players_by_team[t_id] = []
-        players_by_team[t_id].append((p_id, name, pos))
-
-    # Find Scheduled matches
-    scheduled_matches = [m for m in matches if m[9] == "Scheduled"]
-
-    if not scheduled_matches:
-        print("No matches are currently marked as 'Scheduled'. All games are completed!")
-        return
-
-    print("Scheduled Matches:")
-    for idx, m in enumerate(scheduled_matches):
-        m_id = m[0]
-        date = m[1]
-        home_name = team_map.get(m[5], "Unknown")
-        away_name = team_map.get(m[6], "Unknown")
-        print(f"[{idx + 1}] Match #{m_id} ({date}): {home_name} vs {away_name}")
-
-    # Select Match
-    try:
-        choice = int(input("\nEnter the number of the match you want to complete: ")) - 1
-        if choice < 0 or choice >= len(scheduled_matches):
-            print("Invalid selection.")
-            return
-    except ValueError:
-        print("Please enter a valid number.")
-        return
-
-    target_match = scheduled_matches[choice]
-    m_id = target_match[0]
-    home_id = target_match[5]
-    away_id = target_match[6]
-    home_name = team_map.get(home_id)
-    away_name = team_map.get(away_id)
-
-    print(f"\nUpdating: {home_name} vs {away_name}")
-    
-    # Input scores & xG
-    try:
-        home_score = int(input(f"Enter goals scored by {home_name}: "))
-        away_score = int(input(f"Enter goals scored by {away_name}: "))
-        home_xg = float(input(f"Enter Expected Goals (xG) for {home_name}: "))
-        away_xg = float(input(f"Enter Expected Goals (xG) for {away_name}: "))
-    except ValueError:
-        print("Invalid input types. Scores must be integers and xG must be floats.")
-        return
-
-    # Update match values in matches.csv list
-    for m in matches:
-        if m[0] == m_id:
-            m[7] = str(home_score)
-            m[8] = str(away_score)
-            m[9] = "Completed"
-            m[10] = f"{home_xg:.2f}"
-            m[11] = f"{away_xg:.2f}"
-            break
-
-    # Add Match Events
-    new_events = []
-    
-    # Helper to add an event
-    def add_event(team_id, team_name, default_type):
-        print(f"\nSelect player from {team_name} for the event:")
-        team_players = players_by_team.get(team_id, [])
-        for p_idx, p in enumerate(team_players):
-            print(f"[{p_idx + 1}] {p[1]} ({p[2]})")
-            
-        try:
-            p_sel = int(input("Select player number: ")) - 1
-            if p_sel < 0 or p_sel >= len(team_players):
-                print("Invalid selection, skipping event.")
-                return
-            p_id = team_players[p_sel][0]
-        except ValueError:
-            print("Invalid input, skipping event.")
-            return
-
-        try:
-            minute = int(input("Enter minute of event (1-90, or 90+ for extra time): "))
-        except ValueError:
-            minute = 45
-            print("Defaulting minute to 45.")
-
-        print("Select Event Type:")
-        print(f"[1] {default_type}")
-        print("[2] Yellow Card")
-        print("[3] Red Card")
-        print("[4] VAR Review")
-        
-        event_choices = {1: default_type, 2: "Yellow Card", 3: "Red Card", 4: "VAR Review"}
-        try:
-            evt_type_choice = int(input("Choice: "))
-            evt_type = event_choices.get(evt_type_choice, default_type)
-        except ValueError:
-            evt_type = default_type
-
-        new_events.append([None, m_id, minute, evt_type, team_id, p_id])
-
-    # Prompt for Goals
-    print("\n--- GOALS DETAILS ---")
-    for g in range(home_score):
-        print(f"\nGoal {g+1} for {home_name}:")
-        add_event(home_id, home_name, "Goal")
-    for g in range(away_score):
-        print(f"\nGoal {g+1} for {away_name}:")
-        add_event(away_id, away_name, "Goal")
-
-    # Ask for Cards / Other events
-    while True:
-        more = input("\nDo you want to add another event (e.g. Card, VAR Review)? (y/n): ").strip().lower()
-        if more != 'y':
-            break
-        team_choice = input(f"Which team? [1] {home_name} [2] {away_name}: ").strip()
-        if team_choice == '1':
-            add_event(home_id, home_name, "Yellow Card")
-        elif team_choice == '2':
-            add_event(away_id, away_name, "Yellow Card")
-        else:
-            print("Invalid team choice.")
-
-    # Save match events
-    if new_events:
-        # Determine current max event_id
-        max_event_id = 0
-        if events:
-            max_event_id = max(int(row[0]) for row in events)
-        
-        for ne in new_events:
-            max_event_id += 1
-            ne[0] = str(max_event_id)
-            events.append(ne)
-            
-        # Re-sort events by match_id and minute
-        # match_id is index 1, minute is index 2
-        events.sort(key=lambda x: (int(x[1]), int(x[2])))
-        # Reassign sequential event IDs
-        for idx, row in enumerate(events):
-            row[0] = str(idx + 1)
-
-    # Load stages, venues, and referees to build the detailed matches
-    try:
-        stages_path = os.path.join(workspace_dir, "tournament_stages.csv")
-        venues_path = os.path.join(workspace_dir, "venues.csv")
-        referees_path = os.path.join(workspace_dir, "referees.csv")
-        
-        stg_headers, stages = load_csv(stages_path)
-        ven_headers, venues = load_csv(venues_path)
-        ref_headers, referees = load_csv(referees_path)
-        
-        # Build lookups
-        team_lookup = {row[0]: (row[1], row[2]) for row in teams}
-        venue_lookup = {row[0]: (row[1], row[2], row[3]) for row in venues}
-        stage_lookup = {row[0]: row[1] for row in stages}
-        referee_lookup = {row[0]: row[1] for row in referees}
-        
-        detailed_matches_headers = [
-            "match_id", "date", "kickoff_time_utc", "stage_name", 
-            "stadium_name", "city", "country", 
-            "home_team_name", "home_fifa_code", 
-            "away_team_name", "away_fifa_code", 
-            "home_score", "away_score", "status", "home_xg", "away_xg", "referee_name"
-        ]
-        detailed_matches_data = []
-
-        for match in matches:
-            m_id_val = match[0]
-            date_val = match[1]
-            time_val = match[2]
-            stg_id_val = match[3]
-            ven_id_val = match[4]
-            h_id_val = match[5]
-            a_id_val = match[6]
-            h_score_val = match[7]
-            a_score_val = match[8]
-            status_val = match[9]
-            h_xg_val = match[10]
-            a_xg_val = match[11]
-            ref_id_val = match[12]
-            
-            stg_name = stage_lookup.get(stg_id_val, "Unknown")
-            stadium, city, country = venue_lookup.get(ven_id_val, ("Unknown", "Unknown", "Unknown"))
-            home_name_val, home_code_val = team_lookup.get(h_id_val, ("Unknown", "UNK"))
-            away_name_val, away_code_val = team_lookup.get(a_id_val, ("Unknown", "UNK"))
-            ref_name = referee_lookup.get(ref_id_val, "Unknown")
-            
-            detailed_matches_data.append([
-                m_id_val, date_val, time_val, stg_name,
-                stadium, city, country,
-                home_name_val, home_code_val,
-                away_name_val, away_code_val,
-                h_score_val, a_score_val, status_val, h_xg_val, a_xg_val, ref_name
-            ])
-            
-        detailed_path = os.path.join(workspace_dir, "matches_detailed.csv")
-        save_csv(detailed_path, detailed_matches_headers, detailed_matches_data)
-    except Exception as ex:
-        print(f"Warning: Could not regenerate matches_detailed.csv: {ex}")
-
-    # Save back to CSV
-    save_csv(matches_path, m_headers, matches)
-    save_csv(events_path, e_headers, events)
-    
-    # Re-generate cumulative player statistics
-    try:
-        import generate_player_stats
-        generate_player_stats.main()
-        print("  [OK] Cumulative player statistics (player_stats.csv) updated.")
-    except Exception as ex:
-        print(f"Warning: Could not update player statistics: {ex}")
-
-    print("\n====================================================")
-    print("Success: Matches and Match Events updated relationally!")
-    print("====================================================")
+    update_matches()
+    update_matches_detailed()
+    append_events()
+    append_lineups()
+    append_team_stats()
+    update_real_match_details_json()
+    print("All CSV and JSON files updated successfully!")
 
 if __name__ == "__main__":
     main()
-
