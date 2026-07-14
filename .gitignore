@@ -31,7 +31,11 @@ SquadLists-English.pdf
 *.txt
 *.csv.bak*
 *.bak
+# JSON files - ignore by default but keep website and source data JSONs
 *.json
+!*predictions.json
+!*fifa-world-cup.json
+!real_match_details.json
 prediction_cover.png
 
 # Site verification and security-sensitive files
