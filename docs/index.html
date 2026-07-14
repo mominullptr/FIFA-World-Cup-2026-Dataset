@@ -1075,6 +1075,51 @@ preds = clf.predict(predict_df[features])
     </div>
   </section>
 
+  <!-- Academic & Research Citations Section -->
+  <section id="citations" class="citations-section container" style="padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.06);">
+    <div class="section-header">
+      <h2>🏷️ Academic & Research Citations</h2>
+      <p>If you are using this dataset in a university assignment, research paper, publication, or sports analytics thesis, please cite it using the formats below.</p>
+    </div>
+    
+    <div class="glass-card" style="padding: 2.5rem; margin-top: 2rem; position: relative;">
+      <!-- Citation Tabs -->
+      <div style="display: flex; gap: 10px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1rem; margin-bottom: 1.5rem; overflow-x: auto;">
+        <button class="tab-btn active" onclick="switchCitation(event, 'bibtex')" style="padding: 6px 16px; font-size: 0.85rem;">BibTeX</button>
+        <button class="tab-btn" onclick="switchCitation(event, 'apa')" style="padding: 6px 16px; font-size: 0.85rem;">APA 7th</button>
+        <button class="tab-btn" onclick="switchCitation(event, 'harvard')" style="padding: 6px 16px; font-size: 0.85rem;">Harvard</button>
+        <button class="tab-btn" onclick="switchCitation(event, 'mla')" style="padding: 6px 16px; font-size: 0.85rem;">MLA 9th</button>
+      </div>
+      
+      <!-- Citation Contents -->
+      <div style="position: relative;">
+        <!-- Copy Button -->
+        <button id="copy-citation-btn" class="btn btn-outline" style="position: absolute; top: 0; right: 0; padding: 6px 14px; font-size: 0.75rem; border-color: rgba(255,255,255,0.15);" onclick="copyCurrentCitation()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12" style="margin-right:4px; vertical-align:middle;">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          Copy Citation
+        </button>
+
+        <div id="citation-bibtex" class="citation-content" style="font-family: monospace; font-size: 0.85rem; color: #cce0d8; background: rgba(4, 9, 7, 0.6); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); line-height: 1.5; white-space: pre-wrap;">@dataset{fifa_world_cup_2026,
+  author = {Islam, MD Mominul},
+  title = {FIFA World Cup 2026 Dataset - Live \& Daily Updated Stats},
+  year = {2026},
+  publisher = {Kaggle},
+  version = {1.0.0},
+  url = {https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset}
+}</div>
+
+        <div id="citation-apa" class="citation-content" style="font-family: monospace; font-size: 0.85rem; color: #cce0d8; background: rgba(4, 9, 7, 0.6); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); line-height: 1.5; display: none; white-space: pre-wrap;">Islam, M. M. (2026). FIFA World Cup 2026 Dataset - Live & Daily Updated Stats (Version 1.0.0) [Data set]. Kaggle. https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset</div>
+
+        <div id="citation-harvard" class="citation-content" style="font-family: monospace; font-size: 0.85rem; color: #cce0d8; background: rgba(4, 9, 7, 0.6); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); line-height: 1.5; display: none; white-space: pre-wrap;">Islam, M. M., 2026. FIFA World Cup 2026 Dataset - Live & Daily Updated Stats, version 1.0.0. [dataset] Kaggle. Available at: &lt;https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset&gt; [Accessed 14 July 2026].</div>
+
+        <div id="citation-mla" class="citation-content" style="font-family: monospace; font-size: 0.85rem; color: #cce0d8; background: rgba(4, 9, 7, 0.6); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); line-height: 1.5; display: none; white-space: pre-wrap;">Islam, MD Mominul. "FIFA World Cup 2026 Dataset - Live & Daily Updated Stats." Kaggle, version 1.0.0, 2026, www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset.</div>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ Section (AEO and Google FAQ Rich Snippets) -->
   <section id="faq" class="faq-section container" style="padding: 4rem 0;">
     <div class="section-header">
@@ -1109,35 +1154,6 @@ preds = clf.predict(predict_df[features])
         <p style="color: var(--text-secondary); font-size: 0.9rem;">
           Yes. The database has been normalized into 11 tables with proper primary and foreign keys. This makes it perfect for SQL practice, Power BI / Tableau dashboards, or data engineering pipelines.
         </p>
-      </div>
-    </div>
-
-    <!-- Citation Box -->
-    <div class="glass-card citation-block" style="border: 1px solid rgba(242, 201, 76, 0.25); background: rgba(10, 22, 18, 0.65);">
-      <div class="citation-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
-        <h4 style="font-family: var(--font-title); font-weight: 700; color: #fff; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-gold)" stroke-width="2" width="18" height="18">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-          </svg>
-          How to Cite This Dataset
-        </h4>
-        <button id="btn-copy-citation" class="copy-citation-btn" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 6px 12px; border-radius: 6px; font-family: var(--font-title); font-weight: 600; font-size: 0.78rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: var(--transition-smooth);">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
-            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-          </svg>
-          <span>Copy BibTeX</span>
-        </button>
-      </div>
-      <div style="background: rgba(4,9,7,0.4); border-radius: 8px; border: 1px solid var(--border-color); padding: 1.25rem; overflow-x: auto;">
-        <pre class="citation-code" id="bibtex-content" style="margin: 0; font-family: monospace; font-size: 0.82rem; color: #cbd5e1; white-space: pre;">@dataset{fifa_world_cup_2026,
-  author = {MD Mominul Islam},
-  title = {FIFA World Cup 2026 Dataset - Live & Updated Stats},
-  year = {2026},
-  publisher = {Kaggle},
-  howpublished = {\url{https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/}}
-}</pre>
       </div>
     </div>
   </section>
