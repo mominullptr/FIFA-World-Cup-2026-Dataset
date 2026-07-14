@@ -58,6 +58,37 @@ The FIFA World Cup 2026 Dataset has started gaining traction within the data sci
 * **Match Events**: Logs every goal, assist, card, and VAR review chronologically by minute.
 * **Match Team Stats**: Per-team per-match statistics (possession, shots, corners, etc.) sourced from verified providers.
 * **Interactive Updater**: Built-in interactive console application to easily record daily match outcomes and populate events without breaking database normalization.
+* **ML-Ready Feature Set**: A curated dataset with 65 pre-calculated features (ELO ratings, FIFA rankings, squad market values, rolling team form, and fatigue) ready to train machine learning classifiers.
+
+---
+
+## 🤖 ML-Ready Match Prediction Dataset
+
+Skip the tedious feature engineering. This repository includes `match_prediction_features.csv`, a dataset engineered specifically for sports analytics and machine learning:
+
+```python
+import pandas as pd
+from xgboost import XGBClassifier
+
+# Load dataset
+df = pd.read_csv("match_prediction_features.csv")
+
+# Train on completed matches (1 to 100), predict upcoming (101+)
+train_df = df[df["match_id"] <= 100]
+predict_df = df[df["match_id"] > 100]
+
+# Features: Elo differences, Squad value ratio, Rolling form xG
+features = ["home_elo", "away_elo", "home_fifa_rank", "away_fifa_rank", 
+            "home_squad_total_value_eur", "home_prev_avg_xg_scored", "away_prev_avg_xg_scored"]
+
+# Fit XGBoost Classifier to predict match result ('H', 'D', 'A')
+clf = XGBClassifier()
+clf.fit(train_df[features], train_df["match_result"])
+
+# Predict upcoming knockout stages (Semi-Finals & Final)
+predictions = clf.predict(predict_df[features])
+print("Forecasted outcomes:", predictions)
+```
 
 ---
 
@@ -204,6 +235,7 @@ erDiagram
 9. **`match_team_stats.csv`**: Per-team per-match statistics (possession %, shots, shots on target, corners, fouls, offsides, saves) with `data_source` and `last_updated` columns for full traceability. Only populated with verified data from authentic sources (FIFA, Sofascore, FBref, etc.).
 10. **`match_lineups.csv`**: Tactical lineups for all completed matches: starting XI (11 players per team) and substitutes with actual minutes played.
 11. **`player_stats.csv`**: Cumulative tournament statistics for each player (1,248 rows), updated continuously as matches conclude. Outfield players have goalkeeper-specific fields set to NULL, and unverified advanced metrics (such as shots or key passes) are kept NULL to preserve dataset authenticity.
+12. **`match_prediction_features.csv`**: A machine-learning-ready features dataset containing 65 pre-calculated predictive features compiled for every match of the World Cup (completed and upcoming knockout stages). Features include team ratings (ELO, FIFA ranking, squad value), rolling team form (possession, shots, goals, xG, corners, saves), player fatigue (rest days), environmental factors (stadium elevation), and final target labels. Load directly into `pandas` or `scikit-learn` for rapid model training.
 
 ---
 

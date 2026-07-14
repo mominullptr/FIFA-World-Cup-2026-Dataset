@@ -1424,7 +1424,7 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bg-video.loaded {
@@ -1450,3 +1450,39 @@ body {
   overflow: hidden;
   flex-shrink: 0;
 }
+
+/* Semi-Final Predictions styling */
+.predictions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  .predictions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.prediction-match-card {
+  border-color: rgba(242, 201, 76, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-smooth);
+}
+
+.prediction-match-card:hover {
+  border-color: rgba(242, 201, 76, 0.4) !important;
+  box-shadow: 0 15px 40px rgba(242, 201, 76, 0.08);
+  transform: translateY(-4px);
+}
+
+.prediction-loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  font-family: var(--font-title);
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
