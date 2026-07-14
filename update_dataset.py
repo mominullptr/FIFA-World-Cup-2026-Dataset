@@ -39,9 +39,19 @@ def update_matches():
             row[15] = "17"   # referee_id
             row[16] = "945"  # potm_player_id
         elif match_id == "101":
-            # France vs Spain
+            # 101,2026-07-14,20:00,5,4,33,29,0,2,,,Completed,Regular,0.3,1.63,10,740
             row[5] = "33"    # home_team_id
             row[6] = "29"    # away_team_id
+            row[7] = "0"     # home_score
+            row[8] = "2"     # away_score
+            row[9] = ""      # home_penalty_score
+            row[10] = ""     # away_penalty_score
+            row[11] = "Completed"
+            row[12] = "Regular"
+            row[13] = "0.3"  # home_xg
+            row[14] = "1.63" # away_xg
+            row[15] = "10"   # referee_id (Ivan Barton)
+            row[16] = "740"  # potm_player_id (Pedro Antonio Porro)
         elif match_id == "102":
             # England vs Argentina
             row[5] = "45"    # home_team_id
@@ -97,6 +107,18 @@ def update_matches_detailed():
             row[8] = "FRA"
             row[9] = "Spain"
             row[10] = "ESP"
+            row[11] = "0"     # home_score
+            row[12] = "2"     # away_score
+            row[13] = ""      # home_penalty_score
+            row[14] = ""      # away_penalty_score
+            row[15] = "Completed"
+            row[16] = "Regular"
+            row[17] = "0.3"   # home_xg
+            row[18] = "1.63"  # away_xg
+            row[19] = "Mike Peterson Maignan"
+            row[20] = "Unai Simon"
+            row[21] = "Pedro Antonio Porro"
+            row[22] = "Ivan Barton"
         elif match_id == "102":
             # England vs Argentina
             row[7] = "England"
@@ -120,28 +142,22 @@ def append_events():
     
     start_event_id = int(rows[-1][0]) + 1
     
+    # Check if Match 101 events are already in rows
+    for row in rows:
+        if row[1] == "101":
+            print("Events for Match 101 already appended.")
+            return
+
     new_events = [
-        # Match 99
-        (99, "36", "Goal", 36, 931),
-        (99, "36", "Assist", 36, 920),
-        (99, "45+2", "Goal", 45, 1154),
-        (99, "45+2", "Assist", 45, 1162),
-        (99, "93", "Goal", 45, 1154),
-        (99, "117", "Yellow Card", 36, 913),
-        # Match 100
-        (100, "10", "Goal", 37, 956),
-        (100, "10", "Assist", 37, 946),
-        (100, "44", "Yellow Card", 8, 189), # Breel Embolo (189)
-        (100, "67", "Goal", 8, 193),
-        (100, "67", "Assist", 8, 195),
-        (100, "72", "Red Card", 8, 189),
-        (100, "72", "VAR Review", 8, 189),
-        (100, "97", "Yellow Card", 37, 952),
-        (100, "98", "Yellow Card", 37, 958),
-        (100, "112", "Goal", 37, 945),
-        (100, "112", "Assist", 37, 957),
-        (100, "114", "Yellow Card", 37, 957),
-        (100, "120+1", "Goal", 37, 958)
+        # Match 101
+        (101, "8", "Yellow Card", 33, 846),
+        (101, "22", "VAR Review", 29, 747),
+        (101, "22", "Goal", 29, 749),
+        (101, "31", "Yellow Card", 29, 752),
+        (101, "58", "Goal", 29, 740),
+        (101, "58", "Assist", 29, 738),
+        (101, "61", "VAR Review", 29, 747),
+        (101, "86", "Yellow Card", 33, 842),
     ]
     
     for mid, minute, etype, tid, pid in new_events:
@@ -164,128 +180,72 @@ def append_lineups():
     
     start_lineup_id = int(rows[-1][0]) + 1
     
-    # Match 99 players (Norway (36) and England (45))
-    m99_players = [
-        # Norway
-        (911, 36, 1, "GK", 120),
-        (936, 36, 1, "FWD", 60),
-        (913, 36, 1, "DEF", 120),
-        (927, 36, 1, "DEF", 90),
-        (915, 36, 1, "DEF", 90),
-        (918, 36, 1, "MID", 120),
-        (920, 36, 1, "MID", 120),
-        (916, 36, 1, "MID", 120),
-        (917, 36, 1, "FWD", 68),
-        (919, 36, 1, "FWD", 105),
-        (931, 36, 1, "MID", 68),
-        (924, 36, 0, "MID", 60),
-        (930, 36, 0, "FWD", 52),
-        (932, 36, 0, "MID", 52),
-        (926, 36, 0, "DEF", 30),
-        (914, 36, 0, "DEF", 30),
-        (921, 36, 0, "FWD", 15),
-        (912, 36, 0, "MID", 0),
-        (922, 36, 0, "GK", 0),
-        (923, 36, 0, "GK", 0),
-        (925, 36, 0, "DEF", 0),
-        (928, 36, 0, "MID", 0),
-        (929, 36, 0, "MID", 0),
-        (933, 36, 0, "MID", 0),
-        (934, 36, 0, "DEF", 0),
-        (935, 36, 0, "DEF", 0),
-        # England
-        (1145, 45, 1, "GK", 120),
-        (1147, 45, 1, "DEF", 86),
-        (1150, 45, 1, "DEF", 120),
-        (1149, 45, 1, "DEF", 120),
-        (1146, 45, 1, "DEF", 89),
-        (1148, 45, 1, "MID", 45),
-        (1152, 45, 1, "MID", 120),
-        (1162, 45, 1, "FWD", 71),
-        (1154, 45, 1, "MID", 114),
-        (1164, 45, 1, "FWD", 45),
-        (1153, 45, 1, "FWD", 120),
-        (1151, 45, 0, "FWD", 75),
-        (1165, 45, 0, "MID", 75),
-        (1168, 45, 0, "DEF", 49),
-        (1169, 45, 0, "DEF", 34),
-        (1161, 45, 0, "MID", 31),
-        (1159, 45, 0, "DEF", 6),
-        (1155, 45, 0, "FWD", 0),
-        (1156, 45, 0, "DEF", 0),
-        (1157, 45, 0, "GK", 0),
-        (1158, 45, 0, "MID", 0),
-        (1160, 45, 0, "MID", 0),
-        (1163, 45, 0, "FWD", 0),
-        (1166, 45, 0, "FWD", 0),
-        (1167, 45, 0, "GK", 0),
-        (1170, 45, 0, "DEF", 0)
-    ]
-    
-    for pid, tid, is_start, pos, mins in m99_players:
-        rows.append([str(start_lineup_id), "99", str(pid), str(tid), str(is_start), pos, str(mins)])
-        start_lineup_id += 1
+    # Check if Match 101 lineups are already in rows
+    for row in rows:
+        if row[1] == "101":
+            print("Lineups for Match 101 already appended.")
+            return
 
-    # Match 100 players (Argentina (37) and Switzerland (8))
-    m100_players = [
-        # Argentina
-        (959, 37, 1, "GK", 120),
-        (962, 37, 1, "DEF", 85),
-        (949, 37, 1, "DEF", 105),
-        (942, 37, 1, "DEF", 120),
-        (939, 37, 1, "DEF", 78),
-        (941, 37, 1, "MID", 110),
-        (943, 37, 1, "MID", 85),
-        (960, 37, 1, "MID", 90),
-        (956, 37, 1, "MID", 120),
-        (946, 37, 1, "FWD", 120),
-        (945, 37, 1, "FWD", 120),
-        (951, 37, 0, "MID", 42),
-        (940, 37, 0, "DEF", 35),
-        (958, 37, 0, "FWD", 35),
-        (952, 37, 0, "FWD", 30),
-        (955, 37, 0, "DEF", 15),
-        (957, 37, 0, "FWD", 10),
-        (937, 37, 0, "GK", 0),
-        (938, 37, 0, "DEF", 0),
-        (944, 37, 0, "MID", 0),
-        (947, 37, 0, "MID", 0),
-        (948, 37, 0, "GK", 0),
-        (950, 37, 0, "MID", 0),
-        (953, 37, 0, "FWD", 0),
-        (954, 37, 0, "FWD", 0),
-        (961, 37, 0, "DEF", 0),
-        # Switzerland
-        (183, 8, 1, "GK", 120),
-        (195, 8, 1, "DEF", 90),
-        (187, 8, 1, "DEF", 120),
-        (186, 8, 1, "DEF", 120),
-        (188, 8, 1, "MID", 96),
-        (192, 8, 1, "MID", 120),
-        (190, 8, 1, "MID", 115),
-        (197, 8, 1, "MID", 86),
-        (204, 8, 1, "MID", 86),
-        (193, 8, 1, "FWD", 86),
-        (189, 8, 1, "FWD", 72),
-        (184, 8, 0, "DEF", 34),
-        (185, 8, 0, "DEF", 34),
-        (205, 8, 0, "FWD", 34),
-        (200, 8, 0, "DEF", 30),
-        (196, 8, 0, "MID", 24),
-        (199, 8, 0, "FWD", 5),
-        (194, 8, 0, "GK", 0),
-        (203, 8, 0, "GK", 0),
-        (191, 8, 0, "MID", 0),
-        (198, 8, 0, "FWD", 0),
-        (201, 8, 0, "FWD", 0),
-        (202, 8, 0, "MID", 0),
-        (206, 8, 0, "DEF", 0),
-        (207, 8, 0, "DEF", 0),
-        (208, 8, 0, "FWD", 0)
+    # Match 101 players (France (33) and Spain (29))
+    m101_players = [
+        # France
+        (848, 33, 1, "GK", 90),
+        (837, 33, 1, "DEF", 90),
+        (849, 33, 1, "DEF", 30),
+        (836, 33, 1, "DEF", 90),
+        (835, 33, 1, "DEF", 71),
+        (840, 33, 1, "MID", 90),
+        (846, 33, 1, "MID", 45),
+        (839, 33, 1, "FWD", 90),
+        (843, 33, 1, "FWD", 71),
+        (844, 33, 1, "FWD", 57),
+        (842, 33, 1, "FWD", 90),
+        (858, 33, 0, "DEF", 60),
+        (838, 33, 0, "MID", 45),
+        (851, 33, 0, "DEF", 19),
+        (856, 33, 0, "MID", 19),
+        (852, 33, 0, "FWD", 33),
+        (833, 33, 0, "GK", 0),
+        (834, 33, 0, "DEF", 0),
+        (841, 33, 0, "FWD", 0),
+        (845, 33, 0, "MID", 0),
+        (847, 33, 0, "DEF", 0),
+        (850, 33, 0, "MID", 0),
+        (853, 33, 0, "DEF", 0),
+        (854, 33, 0, "FWD", 0),
+        (855, 33, 0, "GK", 0),
+        (857, 33, 0, "MID", 0),
+        # Spain
+        (751, 29, 1, "GK", 90),
+        (740, 29, 1, "DEF", 84),
+        (750, 29, 1, "DEF", 90),
+        (742, 29, 1, "DEF", 90),
+        (752, 29, 1, "DEF", 90),
+        (744, 29, 1, "MID", 90),
+        (736, 29, 1, "MID", 78),
+        (738, 29, 1, "FWD", 78),
+        (747, 29, 1, "FWD", 90),
+        (749, 29, 1, "FWD", 74),
+        (743, 29, 1, "MID", 84),
+        (733, 29, 0, "DEF", 6),
+        (748, 29, 0, "MID", 12),
+        (734, 29, 0, "MID", 12),
+        (735, 29, 0, "FWD", 16),
+        (745, 29, 0, "FWD", 6),
+        (729, 29, 0, "GK", 0),
+        (730, 29, 0, "DEF", 0),
+        (731, 29, 0, "DEF", 0),
+        (732, 29, 0, "DEF", 0),
+        (737, 29, 0, "MID", 0),
+        (739, 29, 0, "FWD", 0),
+        (741, 29, 0, "GK", 0),
+        (746, 29, 0, "MID", 0),
+        (753, 29, 0, "FWD", 0),
+        (754, 29, 0, "FWD", 0),
     ]
     
-    for pid, tid, is_start, pos, mins in m100_players:
-        rows.append([str(start_lineup_id), "100", str(pid), str(tid), str(is_start), pos, str(mins)])
+    for pid, tid, is_start, pos, mins in m101_players:
+        rows.append([str(start_lineup_id), "101", str(pid), str(tid), str(is_start), pos, str(mins)])
         start_lineup_id += 1
 
     with open(lineups_path, "w", newline="", encoding="utf-8") as f:
@@ -302,12 +262,16 @@ def append_team_stats():
     headers = reader[0]
     rows = reader[1:]
     
+    # Check if Match 101 stats are already in rows
+    for row in rows:
+        if row[0] == "101":
+            print("Stats for Match 101 already appended.")
+            return
+
     new_stats = [
         # match_id,team_id,possession,shots,shots_on_target,corners,fouls,offsides,saves,potm_name,data_source,last_verified
-        ("99", "36", "47", "13", "5", "7", "10", "1", "6", "", "Sofascore", "2026-07-12"),
-        ("99", "45", "53", "14", "8", "4", "8", "5", "4", "Jude Victor William Bellingham", "Sofascore", "2026-07-12"),
-        ("100", "37", "59", "23", "7", "8", "14", "4", "4", "Julián Alvarez", "Sofascore", "2026-07-12"),
-        ("100", "8", "41", "13", "5", "2", "18", "3", "4", "", "Sofascore", "2026-07-12")
+        ("101", "33", "42", "10", "3", "2", "9", "4", "0", "", "Sofascore", "2026-07-14"),
+        ("101", "29", "58", "10", "2", "1", "9", "5", "3", "Pedro Antonio Porro", "Sofascore", "2026-07-14")
     ]
     
     for row in new_stats:
@@ -324,108 +288,22 @@ def update_real_match_details_json():
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     
-    # We want to check if France-Morocco (M97) and Spain-Belgium (M98) are already in there.
-    # Since len(data) was 96, they are not. Let's add them as well to keep the JSON fully up to date!
-    
-    m97 = {
-        "group": "Quarter-finals",
-        "date": "July 9, 2026",
+    m101 = {
+        "group": "Semi-finals",
+        "date": "July 14, 2026",
         "home_team": "France",
-        "away_team": "Morocco",
-        "score": "2–0",
-        "home_goals": [
-          {
-            "scorer": "Kylian Mbappé",
-            "minute": "60'",
-            "assist": "Ousmane Dembélé"
-          },
-          {
-            "scorer": "Bradley Barcola",
-            "minute": "66'",
-            "assist": "Kylian Mbappé"
-          }
-        ],
-        "away_goals": []
-    }
-    
-    m98 = {
-        "group": "Quarter-finals",
-        "date": "July 10, 2026",
-        "home_team": "Spain",
-        "away_team": "Belgium",
-        "score": "2–1",
-        "home_goals": [
-          {
-            "scorer": "Dani Olmo",
-            "minute": "30'"
-          },
-          {
-            "scorer": "Lamine Yamal",
-            "minute": "88'"
-          }
-        ],
+        "away_team": "Spain",
+        "score": "0–2",
+        "home_goals": [],
         "away_goals": [
           {
-            "scorer": "Charles De Ketelaere",
-            "minute": "41'",
-            "assist": "Loïs Openda"
-          }
-        ]
-    }
-    
-    m99 = {
-        "group": "Quarter-finals",
-        "date": "July 11, 2026",
-        "home_team": "Norway",
-        "away_team": "England",
-        "score": "1–2",
-        "home_goals": [
-          {
-            "scorer": "Andreas Schjelderup",
-            "minute": "36'",
-            "assist": "Martin Ødegaard"
-          }
-        ],
-        "away_goals": [
-          {
-            "scorer": "Jude Bellingham",
-            "minute": "45+2'",
-            "assist": "Anthony Gordon"
+            "scorer": "Mikel Oyarzabal",
+            "minute": "22' (pen.)"
           },
           {
-            "scorer": "Jude Bellingham",
-            "minute": "93'"
-          }
-        ]
-    }
-    
-    m100 = {
-        "group": "Quarter-finals",
-        "date": "July 12, 2026",
-        "home_team": "Argentina",
-        "away_team": "Switzerland",
-        "score": "3–1",
-        "home_goals": [
-          {
-            "scorer": "Alexis Mac Allister",
-            "minute": "10'",
-            "assist": "Lionel Messi"
-          },
-          {
-            "scorer": "Julián Alvarez",
-            "minute": "112'",
-            "assist": "José Manuel López"
-          },
-          {
-            "scorer": "Lautaro Martínez",
-            "minute": "120+1'"
-          }
-        ],
-        "away_goals": [
-          {
-            "scorer": "Dan Ndoye",
-            "minute": "67'",
-            "assist": "Ricardo Rodríguez"
+            "scorer": "Pedro Porro",
+            "minute": "58'",
+            "assist": "Dani Olmo"
           }
         ]
     }
@@ -433,18 +311,9 @@ def update_real_match_details_json():
     # Avoid duplicate appends if script is run twice
     match_keys = [(m['home_team'], m['away_team']) for m in data]
     
-    if ("France", "Morocco") not in match_keys:
-        data.append(m97)
-        print("Appended France vs Morocco to JSON")
-    if ("Spain", "Belgium") not in match_keys:
-        data.append(m98)
-        print("Appended Spain vs Belgium to JSON")
-    if ("Norway", "England") not in match_keys:
-        data.append(m99)
-        print("Appended Norway vs England to JSON")
-    if ("Argentina", "Switzerland") not in match_keys:
-        data.append(m100)
-        print("Appended Argentina vs Switzerland to JSON")
+    if ("France", "Spain") not in match_keys:
+        data.append(m101)
+        print("Appended France vs Spain to JSON")
         
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

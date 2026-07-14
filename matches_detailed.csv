@@ -99,7 +99,7 @@ match_id,date,kickoff_time_utc,stage_name,stadium_name,city,country,home_team_na
 98,2026-07-10,19:00,Quarter-finals,Los Angeles Stadium (SoFi Stadium),Inglewood,USA,Spain,ESP,Belgium,BEL,2,1,,,Completed,Regular,2.08,0.37,Unai Simon,Thibaut Nicolas Courtois,Lamine Yamal Yamal,Michael Oliver
 99,2026-07-11,21:00,Quarter-finals,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,Norway,NOR,England,ENG,1,2,,,Completed,AET,0.77,0.96,Ørjan Haskjold Nyland,Jordan Lee Pickford,Jude Victor William Bellingham,Clément Turpin
 100,2026-07-12,01:00,Quarter-finals,Kansas City Stadium (Arrowhead Stadium),Kansas City,USA,Argentina,ARG,Switzerland,SUI,3,1,,,Completed,AET,2.0,0.53,Damián Emiliano Martinez,Gregor Kobel,Julián Alvarez,João Pinheiro
-101,2026-07-14,20:00,Semi-finals,Dallas Stadium (AT&T Stadium),Arlington,USA,France,FRA,Spain,ESP,,,,,Scheduled,,,,,,,Clément Turpin
+101,2026-07-14,20:00,Semi-finals,Dallas Stadium (AT&T Stadium),Arlington,USA,France,FRA,Spain,ESP,0,2,,,Completed,Regular,0.3,1.63,Mike Peterson Maignan,Unai Simon,Pedro Antonio Porro,Ivan Barton
 102,2026-07-15,20:00,Semi-finals,Atlanta Stadium (Mercedes-Benz Stadium),Atlanta,USA,England,ENG,Argentina,ARG,,,,,Scheduled,,,,,,,Danny Makkelie
 103,2026-07-18,22:00,Third-place match,Miami Stadium (Hard Rock Stadium),Miami Gardens,USA,,,,,,,,,Scheduled,,,,,,,Jesús Valenzuela
 104,2026-07-19,20:00,Final,New York New Jersey Stadium (MetLife Stadium),East Rutherford,USA,,,,,,,,,Scheduled,,,,,,,Wilton Sampaio

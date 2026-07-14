@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Helper to resolve assets path depending on where the page is hosted
+  // Helper to resolve assets path relative to the page
   const getAssetPath = (filename) => {
-    const isDocsRoot = window.location.hostname.includes("github.io") || window.location.pathname.includes("/docs/");
-    return isDocsRoot ? "assets/" + filename : "docs/assets/" + filename;
+    return "assets/" + filename;
   };
 
   // Column name overrides / formatting helpers
