@@ -797,3 +797,12 @@ event_id,match_id,minute,event_type,team_id,player_id
 796,101,58,Assist,29,738
 797,101,61,VAR Review,29,747
 798,101,86,Yellow Card,33,842
+799,102,37,Yellow Card,45,1152
+800,102,42,Yellow Card,37,942
+801,102,51,Yellow Card,37,949
+802,102,55,Goal,45,1162
+803,102,55,Assist,45,1161
+804,102,85,Goal,37,960
+805,102,85,Assist,37,946
+806,102,90+2,Goal,37,958
+807,102,90+2,Assist,37,946

@@ -1,93 +1,93 @@
 {
-  "match_101": {
-    "match_id": 101,
-    "date": "2026-07-14",
-    "kickoff_time_utc": "20:00",
-    "venue": "Dallas Stadium (AT&T Stadium), Arlington",
-    "referee": "Ivan Barton",
+  "match_103": {
+    "match_id": 103,
+    "date": "2026-07-18",
+    "kickoff_time_utc": "22:00",
+    "venue": "Miami Stadium (Hard Rock Stadium), Miami Gardens",
+    "referee": "Jes\u00fas Valenzuela",
     "home_team": "France",
-    "away_team": "Spain",
+    "away_team": "England",
     "home_fifa_code": "FRA",
-    "away_fifa_code": "ESP",
+    "away_fifa_code": "ENG",
     "home_elo": 2100.0,
-    "away_elo": 2120.0,
+    "away_elo": 2050.0,
     "home_fifa_rank": 3,
-    "away_fifa_rank": 2,
-    "home_prob": 0.2939,
-    "draw_prob": 0.2577,
-    "away_prob": 0.4484,
-    "home_predicted_xg": 1.17,
-    "away_predicted_xg": 1.46,
+    "away_fifa_rank": 4,
+    "home_prob": 0.433,
+    "draw_prob": 0.2685,
+    "away_prob": 0.2985,
+    "home_predicted_xg": 1.36,
+    "away_predicted_xg": 1.09,
     "predicted_home_score": 1,
     "predicted_away_score": 1,
-    "advancing_team": "Spain",
-    "advancing_prob": 0.5798,
+    "advancing_team": "France",
+    "advancing_prob": 0.574,
     "most_likely_scores": [
       {
         "score": "1-1",
-        "prob": 0.1225
-      },
-      {
-        "score": "0-1",
-        "prob": 0.1065
-      },
-      {
-        "score": "1-2",
-        "prob": 0.0909
+        "prob": 0.1273
       },
       {
         "score": "1-0",
-        "prob": 0.0826
-      },
-      {
-        "score": "0-2",
-        "prob": 0.079
-      }
-    ]
-  },
-  "match_102": {
-    "match_id": 102,
-    "date": "2026-07-15",
-    "kickoff_time_utc": "20:00",
-    "venue": "Atlanta Stadium (Mercedes-Benz Stadium), Atlanta",
-    "referee": "Danny Makkelie",
-    "home_team": "England",
-    "away_team": "Argentina",
-    "home_fifa_code": "ENG",
-    "away_fifa_code": "ARG",
-    "home_elo": 2050.0,
-    "away_elo": 2150.0,
-    "home_fifa_rank": 4,
-    "away_fifa_rank": 1,
-    "home_prob": 0.3485,
-    "draw_prob": 0.2703,
-    "away_prob": 0.3813,
-    "home_predicted_xg": 1.21,
-    "away_predicted_xg": 1.29,
-    "predicted_home_score": 1,
-    "predicted_away_score": 1,
-    "advancing_team": "Argentina",
-    "advancing_prob": 0.5299,
-    "most_likely_scores": [
-      {
-        "score": "1-1",
-        "prob": 0.1283
+        "prob": 0.1162
       },
       {
         "score": "0-1",
-        "prob": 0.1059
+        "prob": 0.0924
       },
       {
-        "score": "1-0",
-        "prob": 0.1002
+        "score": "2-1",
+        "prob": 0.0876
       },
       {
         "score": "0-0",
-        "prob": 0.0826
+        "prob": 0.0844
+      }
+    ]
+  },
+  "match_104": {
+    "match_id": 104,
+    "date": "2026-07-19",
+    "kickoff_time_utc": "20:00",
+    "venue": "New York New Jersey Stadium (MetLife Stadium), East Rutherford",
+    "referee": "Wilton Sampaio",
+    "home_team": "Spain",
+    "away_team": "Argentina",
+    "home_fifa_code": "ESP",
+    "away_fifa_code": "ARG",
+    "home_elo": 2120.0,
+    "away_elo": 2150.0,
+    "home_fifa_rank": 2,
+    "away_fifa_rank": 1,
+    "home_prob": 0.4955,
+    "draw_prob": 0.2493,
+    "away_prob": 0.2552,
+    "home_predicted_xg": 1.52,
+    "away_predicted_xg": 1.1,
+    "predicted_home_score": 1,
+    "predicted_away_score": 1,
+    "advancing_team": "Spain",
+    "advancing_prob": 0.6164,
+    "most_likely_scores": [
+      {
+        "score": "1-1",
+        "prob": 0.1185
       },
       {
-        "score": "1-2",
-        "prob": 0.0822
+        "score": "1-0",
+        "prob": 0.1103
+      },
+      {
+        "score": "2-1",
+        "prob": 0.0948
+      },
+      {
+        "score": "2-0",
+        "prob": 0.0882
+      },
+      {
+        "score": "0-1",
+        "prob": 0.0741
       }
     ]
   }

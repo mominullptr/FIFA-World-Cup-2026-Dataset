@@ -116,14 +116,14 @@ def main():
     with open(features_csv_path, "r", encoding="utf-8") as f:
         reader = list(csv.DictReader(f))
 
-    # Split into completed training matches (match_id <= 100) and scheduled matches (101, 102)
+    # Split into completed training matches (match_id <= 102) and scheduled matches (103, 104)
     train_rows = []
     predict_rows = []
     for r in reader:
         mid = safe_int(r['match_id'])
-        if mid <= 100:
+        if mid <= 102:
             train_rows.append(r)
-        elif mid in [101, 102]:
+        elif mid in [103, 104]:
             predict_rows.append(r)
 
     print(f"Loaded {len(train_rows)} completed matches for training.")

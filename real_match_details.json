@@ -2426,5 +2426,31 @@
         "assist": "Dani Olmo"
       }
     ]
+  },
+  {
+    "group": "Semi-finals",
+    "date": "July 15, 2026",
+    "home_team": "England",
+    "away_team": "Argentina",
+    "score": "1–2",
+    "home_goals": [
+      {
+        "scorer": "Anthony Gordon",
+        "minute": "55'",
+        "assist": "Morgan Rogers"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Enzo Fernández",
+        "minute": "85'",
+        "assist": "Lionel Messi"
+      },
+      {
+        "scorer": "Lautaro Martínez",
+        "minute": "90+2'",
+        "assist": "Lionel Messi"
+      }
+    ]
   }
 ]
