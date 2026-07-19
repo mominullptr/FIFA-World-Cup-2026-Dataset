@@ -1,47 +1,93 @@
 {
-  "match_103": {
-    "match_id": 103,
-    "date": "2026-07-18",
-    "kickoff_time_utc": "22:00",
-    "venue": "Miami Stadium (Hard Rock Stadium), Miami Gardens",
-    "referee": "Jes\u00fas Valenzuela",
+  "match_101": {
+    "match_id": 101,
+    "date": "2026-07-14",
+    "kickoff_time_utc": "20:00",
+    "venue": "Dallas Stadium (AT&T Stadium), Arlington",
+    "referee": "Ivan Barton",
     "home_team": "France",
-    "away_team": "England",
+    "away_team": "Spain",
     "home_fifa_code": "FRA",
-    "away_fifa_code": "ENG",
+    "away_fifa_code": "ESP",
     "home_elo": 2100.0,
-    "away_elo": 2050.0,
+    "away_elo": 2120.0,
     "home_fifa_rank": 3,
-    "away_fifa_rank": 4,
-    "home_prob": 0.433,
-    "draw_prob": 0.2685,
-    "away_prob": 0.2985,
-    "home_predicted_xg": 1.36,
-    "away_predicted_xg": 1.09,
+    "away_fifa_rank": 2,
+    "home_prob": 0.3209,
+    "draw_prob": 0.2541,
+    "away_prob": 0.425,
+    "home_predicted_xg": 1.13,
+    "away_predicted_xg": 1.56,
     "predicted_home_score": 1,
     "predicted_away_score": 1,
-    "advancing_team": "France",
-    "advancing_prob": 0.574,
+    "advancing_team": "Spain",
+    "advancing_prob": 0.5567,
     "most_likely_scores": [
       {
         "score": "1-1",
-        "prob": 0.1273
-      },
-      {
-        "score": "1-0",
-        "prob": 0.1162
+        "prob": 0.1201
       },
       {
         "score": "0-1",
-        "prob": 0.0924
+        "prob": 0.0998
+      },
+      {
+        "score": "1-2",
+        "prob": 0.0881
+      },
+      {
+        "score": "1-0",
+        "prob": 0.087
       },
       {
         "score": "2-1",
-        "prob": 0.0876
+        "prob": 0.0779
+      }
+    ]
+  },
+  "match_102": {
+    "match_id": 102,
+    "date": "2026-07-15",
+    "kickoff_time_utc": "20:00",
+    "venue": "Atlanta Stadium (Mercedes-Benz Stadium), Atlanta",
+    "referee": "Danny Makkelie",
+    "home_team": "England",
+    "away_team": "Argentina",
+    "home_fifa_code": "ENG",
+    "away_fifa_code": "ARG",
+    "home_elo": 2050.0,
+    "away_elo": 2150.0,
+    "home_fifa_rank": 4,
+    "away_fifa_rank": 1,
+    "home_prob": 0.3558,
+    "draw_prob": 0.2717,
+    "away_prob": 0.3725,
+    "home_predicted_xg": 1.17,
+    "away_predicted_xg": 1.38,
+    "predicted_home_score": 1,
+    "predicted_away_score": 1,
+    "advancing_team": "Argentina",
+    "advancing_prob": 0.5194,
+    "most_likely_scores": [
+      {
+        "score": "1-1",
+        "prob": 0.1323
+      },
+      {
+        "score": "0-1",
+        "prob": 0.1038
+      },
+      {
+        "score": "1-0",
+        "prob": 0.0992
+      },
+      {
+        "score": "1-2",
+        "prob": 0.0842
       },
       {
         "score": "0-0",
-        "prob": 0.0844
+        "prob": 0.0782
       }
     ]
   },
@@ -59,35 +105,35 @@
     "away_elo": 2150.0,
     "home_fifa_rank": 2,
     "away_fifa_rank": 1,
-    "home_prob": 0.4955,
-    "draw_prob": 0.2493,
-    "away_prob": 0.2552,
-    "home_predicted_xg": 1.52,
-    "away_predicted_xg": 1.1,
+    "home_prob": 0.475,
+    "draw_prob": 0.2663,
+    "away_prob": 0.2587,
+    "home_predicted_xg": 1.65,
+    "away_predicted_xg": 1.07,
     "predicted_home_score": 1,
-    "predicted_away_score": 1,
+    "predicted_away_score": 0,
     "advancing_team": "Spain",
-    "advancing_prob": 0.6164,
+    "advancing_prob": 0.6106,
     "most_likely_scores": [
       {
-        "score": "1-1",
-        "prob": 0.1185
-      },
-      {
         "score": "1-0",
-        "prob": 0.1103
+        "prob": 0.1295
       },
       {
-        "score": "2-1",
-        "prob": 0.0948
+        "score": "1-1",
+        "prob": 0.1253
       },
       {
         "score": "2-0",
-        "prob": 0.0882
+        "prob": 0.0959
       },
       {
         "score": "0-1",
-        "prob": 0.0741
+        "prob": 0.0889
+      },
+      {
+        "score": "0-0",
+        "prob": 0.0879
       }
     ]
   }

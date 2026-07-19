@@ -221,9 +221,6 @@ document.addEventListener("DOMContentLoaded", () => {
         Object.values(data).forEach(pred => {
           const matchCard = document.createElement("div");
           matchCard.className = "glass-card prediction-match-card";
-          matchCard.style.padding = "2rem";
-          matchCard.style.position = "relative";
-          matchCard.style.overflow = "hidden";
           
           const homeProbPct = Math.round(pred.home_prob * 100);
           const drawProbPct = Math.round(pred.draw_prob * 100);
@@ -237,75 +234,75 @@ document.addEventListener("DOMContentLoaded", () => {
           const awayFlag = getFlagPath(pred.away_team);
 
           const homeFlagHTML = homeFlag 
-            ? `<img src="${homeFlag}" alt="${pred.home_team} Flag" style="width:50px; height:50px; border-radius:50%; object-fit:cover; border:1px solid rgba(255,255,255,0.15); margin:0 auto 0.75rem auto; display:block;">`
-            : `<div class="team-flag-placeholder" style="width:50px; height:50px; border-radius:50%; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); margin:0 auto 0.75rem auto; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:800; color:var(--text-primary);">${homeAbbr}</div>`;
+            ? `<img src="${homeFlag}" alt="${pred.home_team} Flag" class="team-flag">`
+            : `<div class="team-flag-placeholder">${homeAbbr}</div>`;
 
           const awayFlagHTML = awayFlag 
-            ? `<img src="${awayFlag}" alt="${pred.away_team} Flag" style="width:50px; height:50px; border-radius:50%; object-fit:cover; border:1px solid rgba(255,255,255,0.15); margin:0 auto 0.75rem auto; display:block;">`
-            : `<div class="team-flag-placeholder" style="width:50px; height:50px; border-radius:50%; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); margin:0 auto 0.75rem auto; display:flex; align-items:center; justify-content:center; font-size:1.5rem; font-weight:800; color:var(--text-primary);">${awayAbbr}</div>`;
+            ? `<img src="${awayFlag}" alt="${pred.away_team} Flag" class="team-flag">`
+            : `<div class="team-flag-placeholder">${awayAbbr}</div>`;
 
           matchCard.innerHTML = `
-            <div class="match-meta" style="display:flex; justify-content:space-between; align-items:center; font-size:0.8rem; color:var(--text-secondary); margin-bottom:1.5rem; border-bottom:1px solid rgba(255,255,255,0.06); padding-bottom:1rem;">
+            <div class="match-meta">
               <span>Match ${pred.match_id} • ${pred.date}</span>
-              <span class="venue-badge" style="background:rgba(255,255,255,0.05); padding:2px 8px; border-radius:10px;">${pred.venue.split(",")[0]}</span>
+              <span class="venue-badge">${pred.venue.split(",")[0]}</span>
             </div>
             
-            <div class="matchup-container" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem; gap:1rem;">
-              <div class="team-side home" style="flex:1; text-align:center;">
+            <div class="matchup-container">
+              <div class="team-side home">
                 ${homeFlagHTML}
-                <h4 style="font-family:var(--font-title); font-size:1.15rem; font-weight:700; margin:0 0 0.25rem 0; color:#fff;">${pred.home_team}</h4>
-                <div class="team-meta" style="font-size:0.75rem; color:var(--text-secondary);">Rank: ${pred.home_fifa_rank} | Elo: ${Math.round(pred.home_elo)}</div>
+                <h4>${pred.home_team}</h4>
+                <div class="team-meta">Rank: ${pred.home_fifa_rank} | Elo: ${Math.round(pred.home_elo)}</div>
               </div>
               
-              <div class="score-center" style="text-align:center; padding:0 1rem;">
-                <div class="predicted-score" style="font-family:var(--font-title); font-size:2.25rem; font-weight:900; color:var(--primary-gold); letter-spacing:4px; margin-bottom:0.25rem;">
+              <div class="score-center">
+                <div class="predicted-score">
                   ${pred.predicted_home_score} - ${pred.predicted_away_score}
                 </div>
-                <div class="predicted-score-label" style="font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); font-weight:700;">Predicted Score</div>
-                <div class="predicted-xg" style="font-size:0.8rem; color:var(--text-secondary); margin-top:0.5rem;">
-                  <span style="color:var(--text-primary); font-weight:600;">${pred.home_predicted_xg.toFixed(2)}</span> vs <span style="color:var(--text-primary); font-weight:600;">${pred.away_predicted_xg.toFixed(2)}</span> xG
+                <div class="predicted-score-label">Predicted Score</div>
+                <div class="predicted-xg">
+                  <span class="xg-val">${pred.home_predicted_xg.toFixed(2)}</span> vs <span class="xg-val">${pred.away_predicted_xg.toFixed(2)}</span> xG
                 </div>
               </div>
               
-              <div class="team-side away" style="flex:1; text-align:center;">
+              <div class="team-side away">
                 ${awayFlagHTML}
-                <h4 style="font-family:var(--font-title); font-size:1.15rem; font-weight:700; margin:0 0 0.25rem 0; color:#fff;">${pred.away_team}</h4>
-                <div class="team-meta" style="font-size:0.75rem; color:var(--text-secondary);">Rank: ${pred.away_fifa_rank} | Elo: ${Math.round(pred.away_elo)}</div>
+                <h4>${pred.away_team}</h4>
+                <div class="team-meta">Rank: ${pred.away_fifa_rank} | Elo: ${Math.round(pred.away_elo)}</div>
               </div>
             </div>
             
-            <div class="probabilities-container" style="margin-bottom:2rem;">
-              <div class="prob-labels" style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.5rem; font-weight:600;">
+            <div class="probabilities-container">
+              <div class="prob-labels">
                 <span>${pred.home_team}: ${homeProbPct}%</span>
                 <span>Draw: ${drawProbPct}%</span>
                 <span>${pred.away_team}: ${awayProbPct}%</span>
               </div>
-              <div class="multi-progress" style="height:10px; border-radius:5px; background:rgba(255,255,255,0.05); display:flex; overflow:hidden;">
-                <div class="prog-segment home" style="width:${homeProbPct}%; background:linear-gradient(to right, var(--theme-blue, #3a86ff), #00d2ff);"></div>
-                <div class="prog-segment draw" style="width:${drawProbPct}%; background:rgba(255,255,255,0.25);"></div>
-                <div class="prog-segment away" style="width:${awayProbPct}%; background:linear-gradient(to right, #ff007f, var(--theme-red, #ff4d4d));"></div>
+              <div class="multi-progress">
+                <div class="prog-segment home" style="width:${homeProbPct}%;"></div>
+                <div class="prog-segment draw" style="width:${drawProbPct}%;"></div>
+                <div class="prog-segment away" style="width:${awayProbPct}%;"></div>
               </div>
             </div>
             
-            <div class="advanced-grid" style="display:grid; grid-template-columns:1.2fr 1fr; gap:1.5rem; border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; font-size:0.85rem;">
+            <div class="advanced-grid">
               <div class="adv-left">
-                <div style="margin-bottom:0.75rem;">
-                  <span style="color:var(--text-secondary);">Advancing Team:</span>
-                  <strong style="color:var(--theme-green); margin-left:4px;">${pred.advancing_team}</strong> 
-                  <span style="color:var(--text-muted); font-size:0.8rem;">(${advProbPct}% prob)</span>
+                <div class="adv-row">
+                  <span class="adv-label">Advancing Team:</span>
+                  <strong class="advancing-team">${pred.advancing_team}</strong> 
+                  <span class="adv-prob-val">(${advProbPct}% prob)</span>
                 </div>
-                <div>
-                  <span style="color:var(--text-secondary);">Referee:</span>
-                  <span style="color:var(--text-primary); margin-left:4px;">${pred.referee}</span>
+                <div class="adv-row">
+                  <span class="adv-label">Referee:</span>
+                  <span class="referee-val">${pred.referee}</span>
                 </div>
               </div>
               <div class="adv-right">
-                <div style="font-weight:700; color:var(--text-primary); margin-bottom:0.5rem; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.5px;">Most Likely Scores:</div>
-                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:4px;">
+                <div class="scores-title">Most Likely Scores:</div>
+                <ul>
                   ${pred.most_likely_scores.slice(0, 3).map(scoreItem => {
                     const pct = Math.round(scoreItem.prob * 100);
                     return `
-                      <li style="display:flex; justify-content:space-between; color:var(--text-secondary);">
+                      <li>
                         <code>${scoreItem.score}</code>
                         <span>${pct}%</span>
                       </li>

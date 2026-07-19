@@ -2452,5 +2452,63 @@
         "assist": "Lionel Messi"
       }
     ]
+  },
+  {
+    "group": "Third-place match",
+    "date": "July 18, 2026",
+    "home_team": "France",
+    "away_team": "England",
+    "score": "4–6",
+    "home_goals": [
+      {
+        "scorer": "Kylian Mbappé",
+        "minute": "48'",
+        "assist": "Michael Olise"
+      },
+      {
+        "scorer": "Bradley Barcola",
+        "minute": "54'",
+        "assist": "Kylian Mbappé"
+      },
+      {
+        "scorer": "Kylian Mbappé",
+        "minute": "66'",
+        "assist": "Michael Olise"
+      },
+      {
+        "scorer": "Ousmane Dembélé",
+        "minute": "90+6'",
+        "assist": "Dayot Upamecano"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Declan Rice",
+        "minute": "3'"
+      },
+      {
+        "scorer": "Ezri Konsa",
+        "minute": "18'",
+        "assist": "Declan Rice"
+      },
+      {
+        "scorer": "Bukayo Saka",
+        "minute": "37'",
+        "assist": "Marcus Rashford"
+      },
+      {
+        "scorer": "Bukayo Saka",
+        "minute": "45+1'",
+        "assist": "Eberechi Eze"
+      },
+      {
+        "scorer": "Bukayo Saka",
+        "minute": "87' (pen.)"
+      },
+      {
+        "scorer": "Jude Bellingham",
+        "minute": "90+8'"
+      }
+    ]
   }
 ]
