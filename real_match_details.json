@@ -2510,5 +2510,20 @@
         "minute": "90+8'"
       }
     ]
+  },
+  {
+    "group": "Final",
+    "date": "July 19, 2026",
+    "home_team": "Spain",
+    "away_team": "Argentina",
+    "score": "1–0",
+    "home_goals": [
+      {
+        "scorer": "Ferran Torres",
+        "minute": "106'",
+        "assist": "Nico Williams"
+      }
+    ],
+    "away_goals": []
   }
 ]

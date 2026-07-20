@@ -823,3 +823,13 @@ event_id,match_id,minute,event_type,team_id,player_id
 822,103,96,Goal,33,839
 823,103,96,Assist,33,836
 824,103,98,Goal,45,1154
+825,104,40,Yellow Card,37,942
+826,104,52,Yellow Card,37,941
+827,104,83,Yellow Card,37,960
+828,104,92,Yellow Card,37,949
+829,104,93,Yellow Card,37,960
+830,104,93,Red Card,37,960
+831,104,106,Goal,29,735
+832,104,106,Assist,29,745
+833,104,111,Yellow Card,37,956
+834,104,120,Red Card,37,941

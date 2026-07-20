@@ -102,4 +102,4 @@ match_id,date,kickoff_time_utc,stage_id,venue_id,home_team_id,away_team_id,home_
 101,2026-07-14,20:00,5,4,33,29,0,2,,,Completed,Regular,0.3,1.63,10,740
 102,2026-07-15,20:00,5,9,45,37,1,2,,,Completed,Regular,0.54,1.80,6,946
 103,2026-07-18,22:00,6,13,33,45,4,6,,,Completed,Regular,2.88,2.88,7,1151
-104,2026-07-19,20:00,7,2,29,37,,,,,Scheduled,,,,8,
+104,2026-07-19,20:00,7,2,29,37,1,0,,,Completed,AET,0.52,0.09,20,735
