@@ -2,6 +2,7 @@
 
 ## 🔗 Dataset Links
 * **Kaggle:** [FIFA World Cup 2026 Dataset](https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset)
+* **Zenodo DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21592427.svg)](https://doi.org/10.5281/zenodo.21592427)
 * **GitHub:** [FIFA-World-Cup-2026-Dataset](https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset)
 * **Hugging Face:** [fifa-world-cup-2026-dataset](https://huggingface.co/datasets/Mominullptr/fifa-world-cup-2026-dataset)
 
