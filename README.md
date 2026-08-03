@@ -278,11 +278,14 @@ python generate_sqlite.py
 If you use this dataset in your research, publications, or projects, please cite it using the academic metadata provided in [CITATION.cff](file:///c:/Users/ASUS/.gemini/antigravity/scratch/fifa-wc2026-dataset/CITATION.cff) or using the format below:
 
 ```bibtex
-@dataset{fifa_world_cup_2026,
-  author = {MD Mominul Islam},
-  title = {FIFA World Cup 2026 Dataset- Live & Updated Stats},
-  year = {2026},
-  publisher = {Kaggle}
+@dataset{fifa_world_cup_2026_master_dataset,
+  author    = {MD Mominul Islam},
+  title     = {The FIFA World Cup 2026 Master Dataset: A Normalized 3NF Relational Benchmark of the Expanded 48-Team International Football Tournament},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.0.0},
+  doi       = {10.5281/zenodo.21592427},
+  url       = {https://doi.org/10.5281/zenodo.21592427}
 }
 ```
 

@@ -3,6 +3,10 @@ import csv
 import math
 import json
 import random
+import sys
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 workspace_dir = os.path.dirname(os.path.abspath(__file__))
 

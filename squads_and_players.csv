@@ -288,10 +288,10 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 287,12,Angus Fraser James Gunn,GK,Nottingham Forest FC,1000000,23,1996-01-22,196,0
 288,12,Aaron Buchanan Hickey,DEF,Brentford FC,16000000,22,2002-06-10,185,0
 289,12,Andrew Henry Robertson,DEF,Liverpool FC,7000000,95,1994-03-11,178,4
-290,12,Mc,MID,SSC Napoli,7004649,71,1996-12-08,193,15
+290,12,Mc,MID,SSC Napoli,7865734,71,1996-12-08,193,15
 291,12,Grant Campbell Hanley,DEF,Hibernian FC,200000,69,1991-11-20,188,2
 292,12,Kieran Tierney,DEF,Celtic FC,8000000,56,1997-06-05,180,2
-293,12,Mc,MID,Aston Villa FC,6483977,87,1994-10-18,178,21
+293,12,Mc,MID,Aston Villa FC,7865734,87,1994-10-18,178,21
 294,12,Tyler Robert Fletcher,MID,Manchester United FC,1000000,2,2007-03-19,183,0
 295,12,Lyndon John Dykes,FWD,Charlton Athletic FC,800000,52,1995-10-07,188,10
 296,12,Che Sac Everton Fred Adams,FWD,Torino FC,5000000,48,1996-07-13,175,13
@@ -307,7 +307,7 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 306,12,Lawrence Shankland,FWD,Heart Of Midlothian FC,3000000,21,1995-08-10,185,7
 307,12,Craig Sinclair Gordon,GK,Heart Of Midlothian FC,50000,84,1982-12-31,193,0
 308,12,Nathan Kenneth Patterson,DEF,Everton FC,10000000,27,2001-10-16,183,1
-309,12,Mc,MID,Norwich City FC,3172623,59,1992-01-08,183,3
+309,12,Mc,MID,Norwich City FC,7865734,59,1992-01-08,183,3
 310,12,Anthony Ralston,DEF,Celtic FC,1500000,27,1998-11-16,178,1
 311,12,Findlay Kenneth Curtis,FWD,Kilmarnock FC,2000000,4,2006-06-09,180,1
 312,12,Mc,DEF,GNK Dinamo Zagreb,7865734,50,1996-11-12,189,1
@@ -318,7 +318,7 @@ player_id,team_id,player_name,position,club_team,market_value_eur,caps,date_of_b
 317,13,Antonee Robinson,DEF,Fulham FC,22000000,55,1997-08-08,183,5
 318,13,Auston Levi-Jesaiah Trusty,DEF,Celtic FC,6000000,8,1998-08-12,190,0
 319,13,Giovanni Alejandro Reyna,MID,Borussia Mönchengladbach,4000000,39,2002-11-13,187,10
-320,13,Mc,MID,Juventus FC,12613979,67,1998-08-28,180,12
+320,13,Mc,MID,Juventus FC,20375657,67,1998-08-28,180,12
 321,13,Ricardo Daniel Pepi,FWD,PSV Eindhoven,30000000,38,2003-01-09,185,13
 322,13,Christian Mate Pulisic,FWD,AC Milan,40000000,87,1998-09-18,177,33
 323,13,Brenden Russell Aaronson,FWD,Leeds United FC,22000000,58,2000-10-22,177,9
