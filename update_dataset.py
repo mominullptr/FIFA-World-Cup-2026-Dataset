@@ -24,7 +24,7 @@ def update_matches():
             row[12] = "AET"
             row[13] = "0.77" # home_xg
             row[14] = "0.96" # away_xg
-            row[15] = "5"    # referee_id
+            row[15] = "10"   # referee_id (Ivan Barton)
             row[16] = "1154" # potm_player_id
         elif match_id == "100":
             # 100,2026-07-12,01:00,4,12,37,8,3,1,,,Completed,AET,2.0,0.53,17,945
@@ -36,7 +36,7 @@ def update_matches():
             row[12] = "AET"
             row[13] = "2.0"  # home_xg
             row[14] = "0.53" # away_xg
-            row[15] = "17"   # referee_id
+            row[15] = "17"   # referee_id (João Pinheiro)
             row[16] = "945"  # potm_player_id
         elif match_id == "101":
             # 101,2026-07-14,20:00,5,4,33,29,0,2,,,Completed,Regular,0.3,1.63,10,740
@@ -104,7 +104,7 @@ def update_matches_detailed():
             row[19] = "Ørjan Haskjold Nyland"
             row[20] = "Jordan Lee Pickford"
             row[21] = "Jude Victor William Bellingham"
-            row[22] = "Clément Turpin"
+            row[22] = "Ivan Barton"
         elif match_id == "100":
             # Argentina vs Switzerland
             row[11] = "3"     # home_score
