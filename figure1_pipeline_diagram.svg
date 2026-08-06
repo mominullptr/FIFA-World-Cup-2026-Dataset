@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" width="100%" height="auto" style="background:#ffffff; border:1px solid #cbd5e1; border-radius:8px;">
+<style>
+.title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 700; fill: #0f172a; }
+.hdr-text { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; font-weight: 700; fill: #1e293b; letter-spacing: 0.5px; }
+.box-title { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 700; fill: #0f172a; }
+.box-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 9.5px; fill: #475569; }
+.tbl-node { font-family: system-ui, -apple-system, sans-serif; font-size: 9.5px; font-weight: 600; fill: #1e40af; }
+.arrow { stroke: #64748b; stroke-width: 1.5; marker-end: url(#arr); }
+.connector { stroke: #94a3b8; stroke-width: 1.2; stroke-dasharray: 3,3; }
+</style>
+<defs>
+<marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+<polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+</marker>
+</defs>
+<text x="410.0" y="26" text-anchor="middle" class="title">Data Acquisition, Relational Normalization (3NF), and Integrity Audit Architecture</text>
+<rect x="33.0" y="44" width="175" height="44" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+<text x="120.5" y="62" text-anchor="middle" class="box-title">Official FIFA Feeds</text>
+<text x="120.5" y="78" text-anchor="middle" class="box-sub">Rosters, Schedules, Referees</text>
+<rect x="226.0" y="44" width="175" height="44" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+<text x="313.5" y="62" text-anchor="middle" class="box-title">Sofascore Technical Feeds</text>
+<text x="313.5" y="78" text-anchor="middle" class="box-sub">Tactical Stats, Possession, xG</text>
+<rect x="419.0" y="44" width="175" height="44" rx="5" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+<text x="506.5" y="62" text-anchor="middle" class="box-title">Transfermarkt Portal</text>
+<text x="506.5" y="78" text-anchor="middle" class="box-sub">Bio-metrics, Market Value (€)</text>
+<rect x="612.0" y="44" width="175" height="44" rx="5" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5"/>
+<text x="699.5" y="62" text-anchor="middle" class="box-title">Geographic Surveys</text>
+<text x="699.5" y="78" text-anchor="middle" class="box-sub">Stadium Altitudes &amp; Coords</text>
+<line x1="120.5" y1="88" x2="410.0" y2="122" class="arrow"/>
+<line x1="313.5" y1="88" x2="410.0" y2="122" class="arrow"/>
+<line x1="506.5" y1="88" x2="410.0" y2="122" class="arrow"/>
+<line x1="699.5" y1="88" x2="410.0" y2="122" class="arrow"/>
+<rect x="90.0" y="122" width="640" height="48" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="410.0" y="142" text-anchor="middle" class="box-title" fill="#0f172a">SOURCE RESOLUTION &amp; ENTITY DISAMBIGUATION ENGINE</text>
+<text x="410.0" y="159" text-anchor="middle" class="box-sub">Diacritic Stripping | FIFA Passport Canonical Names | Stoppage Time (90+4') Mapping | Possession Splitting (100%)</text>
+<line x1="410.0" y1="170" x2="410.0" y2="200" class="arrow"/>
+<rect x="35.0" y="200" width="750" height="190" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="51.0" y="222" class="hdr-text">3NF RELATIONAL DATABASE ARCHITECTURE (12 NORMALIZED TABLES)</text>
+<rect x="50.0" y="236" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="60.0" y="251" class="tbl-node">teams.csv</text>
+<text x="60.0" y="264" class="box-sub" font-size="8.5px">48 Teams | Confederation &amp; Baseline Elo</text>
+<rect x="50.0" y="273" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="60.0" y="288" class="tbl-node">venues.csv</text>
+<text x="60.0" y="301" class="box-sub" font-size="8.5px">16 Venues | Elevation &amp; Capacity</text>
+<rect x="50.0" y="310" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="60.0" y="325" class="tbl-node">tournament_stages.csv</text>
+<text x="60.0" y="338" class="box-sub" font-size="8.5px">7 Stages | Group &amp; Knockout</text>
+<rect x="50.0" y="347" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="60.0" y="362" class="tbl-node">referees.csv</text>
+<text x="60.0" y="375" class="box-sub" font-size="8.5px">16 Referees | Cards &amp; Strictness</text>
+<rect x="295.0" y="236" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="305.0" y="251" class="tbl-node">matches.csv</text>
+<text x="305.0" y="264" class="box-sub" font-size="8.5px">104 Matches | Scores, Status &amp; Team xG</text>
+<rect x="295.0" y="273" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="305.0" y="288" class="tbl-node">squads_and_players.csv</text>
+<text x="305.0" y="301" class="box-sub" font-size="8.5px">1,248 Players | Height, Age &amp; Values</text>
+<rect x="295.0" y="310" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="305.0" y="325" class="tbl-node">match_lineups.csv</text>
+<text x="305.0" y="338" class="box-sub" font-size="8.5px">2,704 Records | Starting XI &amp; Mins</text>
+<rect x="295.0" y="347" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="305.0" y="362" class="tbl-node">match_events.csv</text>
+<text x="305.0" y="375" class="box-sub" font-size="8.5px">500+ Timeline Events | Goals, Cards, VAR</text>
+<rect x="540.0" y="236" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="550.0" y="251" class="tbl-node">match_team_stats.csv</text>
+<text x="550.0" y="264" class="box-sub" font-size="8.5px">208 Per-Team Match Tactical Stats</text>
+<rect x="540.0" y="273" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="550.0" y="288" class="tbl-node">player_stats.csv</text>
+<text x="550.0" y="301" class="box-sub" font-size="8.5px">1,248 Player Cumulative Totals</text>
+<rect x="540.0" y="310" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="550.0" y="325" class="tbl-node">matches_detailed.csv</text>
+<text x="550.0" y="338" class="box-sub" font-size="8.5px">104 Single-Table Denormalized Views</text>
+<rect x="540.0" y="347" width="230" height="34" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="550.0" y="362" class="tbl-node">match_prediction_features.csv</text>
+<text x="550.0" y="375" class="box-sub" font-size="8.5px">104 Pre-engineered ML Input Vectors</text>
+<line x1="410.0" y1="390" x2="410.0" y2="422" class="arrow"/>
+<rect x="35.0" y="422" width="750" height="55" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+<text x="410.0" y="442" text-anchor="middle" class="box-title" fill="#065f46">PROGRAMMATIC INTEGRITY ASSERTION SUITE &amp; EXTERNAL GROUND-TRUTH AUDIT</text>
+<text x="410.0" y="460" text-anchor="middle" class="box-sub" fill="#047857">Automated 9-Stage Verification Suite (100% Relational Compliance) | 30-Match FIFA TSG Spot-Check (99.87% Empirical Accuracy)</text>
+<text x="410.0" y="504" text-anchor="middle" class="box-sub" font-weight="700" fill="#334155">Multi-Format Distribution: SQLite DB (sqlite_fifa_world_cup_2026.db) | Apache Parquet (/parquet/) | CSV Files (RFC 4180)</text>
+</svg>

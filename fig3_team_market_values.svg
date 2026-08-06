@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="100%" height="auto" style="background:#fcfdfd; border:1px solid #e2e8f0; border-radius:8px;">
+<style>
+.grid { stroke: #f1f5f9; stroke-width: 1; }
+.label { font-family: system-ui, sans-serif; font-size: 11px; fill: #334155; }
+.title { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 700; fill: #0f172a; }
+.bar { rx: 3; ry: 3; }
+</style>
+<text x="410.0" y="24" text-anchor="middle" class="title">Top 15 Squad Market Valuations (€ Millions)</text>
+<g transform="translate(130, 34)">
+<rect x="0" y="0" width="12" height="12" rx="2" fill="#2563eb"/>
+<text x="16" y="10" class="label" font-size="10px" font-weight="600">UEFA</text>
+<rect x="95" y="0" width="12" height="12" rx="2" fill="#059669"/>
+<text x="111" y="10" class="label" font-size="10px" font-weight="600">CONMEBOL</text>
+<rect x="190" y="0" width="12" height="12" rx="2" fill="#d97706"/>
+<text x="206" y="10" class="label" font-size="10px" font-weight="600">CONCACAF</text>
+<rect x="285" y="0" width="12" height="12" rx="2" fill="#dc2626"/>
+<text x="301" y="10" class="label" font-size="10px" font-weight="600">CAF</text>
+<rect x="380" y="0" width="12" height="12" rx="2" fill="#7c3aed"/>
+<text x="396" y="10" class="label" font-size="10px" font-weight="600">AFC</text>
+</g>
+<line x1="130.0" y1="55" x2="130.0" y2="385" class="grid"/>
+<text x="130.0" y="401" text-anchor="middle" class="label">€0M</text>
+<line x1="221.66666666666666" y1="55" x2="221.66666666666666" y2="385" class="grid"/>
+<text x="221.66666666666666" y="401" text-anchor="middle" class="label">€500M</text>
+<line x1="313.3333333333333" y1="55" x2="313.3333333333333" y2="385" class="grid"/>
+<text x="313.3333333333333" y="401" text-anchor="middle" class="label">€1000M</text>
+<line x1="405.0" y1="55" x2="405.0" y2="385" class="grid"/>
+<text x="405.0" y="401" text-anchor="middle" class="label">€1500M</text>
+<line x1="496.66666666666663" y1="55" x2="496.66666666666663" y2="385" class="grid"/>
+<text x="496.66666666666663" y="401" text-anchor="middle" class="label">€2000M</text>
+<line x1="588.3333333333334" y1="55" x2="588.3333333333334" y2="385" class="grid"/>
+<text x="588.3333333333334" y="401" text-anchor="middle" class="label">€2500M</text>
+<line x1="680.0" y1="55" x2="680.0" y2="385" class="grid"/>
+<text x="680.0" y="401" text-anchor="middle" class="label">€3000M</text>
+<text x="122" y="66.92" text-anchor="end" class="label" font-weight="600">Spain</text>
+<rect x="130" y="55.0" width="391.3" height="15.8" fill="#2563eb" class="bar"/>
+<text x="527.2650553166667" y="66.92" class="label" font-weight="bold" fill="#2563eb">€2134M</text>
+<text x="122" y="88.92" text-anchor="end" class="label" font-weight="600">France</text>
+<rect x="130" y="77.0" width="283.5" height="15.8" fill="#2563eb" class="bar"/>
+<text x="419.4708193166667" y="88.92" class="label" font-weight="bold" fill="#2563eb">€1546M</text>
+<text x="122" y="110.92" text-anchor="end" class="label" font-weight="600">England</text>
+<rect x="130" y="99.0" width="242.3" height="15.8" fill="#2563eb" class="bar"/>
+<text x="378.3334642666667" y="110.92" class="label" font-weight="bold" fill="#2563eb">€1322M</text>
+<text x="122" y="132.92" text-anchor="end" class="label" font-weight="600">Portugal</text>
+<rect x="130" y="121.0" width="210.1" height="15.8" fill="#2563eb" class="bar"/>
+<text x="346.08327358333327" y="132.92" class="label" font-weight="bold" fill="#2563eb">€1146M</text>
+<text x="122" y="154.92" text-anchor="end" class="label" font-weight="600">Argentina</text>
+<rect x="130" y="143.0" width="187.9" height="15.8" fill="#059669" class="bar"/>
+<text x="323.92389806666665" y="154.92" class="label" font-weight="bold" fill="#059669">€1025M</text>
+<text x="122" y="176.92" text-anchor="end" class="label" font-weight="600">Germany</text>
+<rect x="130" y="165.0" width="181.3" height="15.8" fill="#2563eb" class="bar"/>
+<text x="317.26929865" y="176.92" class="label" font-weight="bold" fill="#2563eb">€989M</text>
+<text x="122" y="198.92" text-anchor="end" class="label" font-weight="600">Brazil</text>
+<rect x="130" y="187.0" width="163.8" height="15.8" fill="#059669" class="bar"/>
+<text x="299.75927571666665" y="198.92" class="label" font-weight="bold" fill="#059669">€893M</text>
+<text x="122" y="220.92" text-anchor="end" class="label" font-weight="600">Netherlands</text>
+<rect x="130" y="209.0" width="140.3" height="15.8" fill="#2563eb" class="bar"/>
+<text x="276.28988343333333" y="220.92" class="label" font-weight="bold" fill="#2563eb">€765M</text>
+<text x="122" y="242.92" text-anchor="end" class="label" font-weight="600">Belgium</text>
+<rect x="130" y="231.0" width="116.2" height="15.8" fill="#2563eb" class="bar"/>
+<text x="252.24542801666666" y="242.92" class="label" font-weight="bold" fill="#2563eb">€634M</text>
+<text x="122" y="264.92" text-anchor="end" class="label" font-weight="600">Côte d'Ivoire</text>
+<rect x="130" y="253.0" width="90.7" height="15.8" fill="#dc2626" class="bar"/>
+<text x="226.7071627" y="264.92" class="label" font-weight="bold" fill="#dc2626">€495M</text>
+<text x="122" y="286.92" text-anchor="end" class="label" font-weight="600">Norway</text>
+<rect x="130" y="275.0" width="85.3" height="15.8" fill="#2563eb" class="bar"/>
+<text x="221.27746736666666" y="286.92" class="label" font-weight="bold" fill="#2563eb">€465M</text>
+<text x="122" y="308.92" text-anchor="end" class="label" font-weight="600">Türkiye</text>
+<rect x="130" y="297.0" width="84.5" height="15.8" fill="#2563eb" class="bar"/>
+<text x="220.54808541666665" y="308.92" class="label" font-weight="bold" fill="#2563eb">€461M</text>
+<text x="122" y="330.92" text-anchor="end" class="label" font-weight="600">Colombia</text>
+<rect x="130" y="319.0" width="84.5" height="15.8" fill="#059669" class="bar"/>
+<text x="220.50628248333334" y="330.92" class="label" font-weight="bold" fill="#059669">€461M</text>
+<text x="122" y="352.92" text-anchor="end" class="label" font-weight="600">Morocco</text>
+<rect x="130" y="341.0" width="83.7" height="15.8" fill="#dc2626" class="bar"/>
+<text x="219.73826156666667" y="352.92" class="label" font-weight="bold" fill="#dc2626">€457M</text>
+<text x="122" y="374.92" text-anchor="end" class="label" font-weight="600">Senegal</text>
+<rect x="130" y="363.0" width="83.7" height="15.8" fill="#dc2626" class="bar"/>
+<text x="219.66327145000002" y="374.92" class="label" font-weight="bold" fill="#dc2626">€456M</text>
+</svg>

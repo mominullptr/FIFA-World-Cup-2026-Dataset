@@ -8,7 +8,7 @@
 
 **The most complete and actively updated FIFA World Cup 2026 dataset on Kaggle.** A clean, authentic, relational dataset covering the entire tournament (June 11 – July 19, 2026) with the first-ever 48-team format. Includes real match results updated daily, 1,248 players across all 48 squads, expected goals (xG), minute-by-minute match events, and per-team match statistics sourced from FIFA.com and verified providers.
 
-> **Why this dataset?** Unlike other World Cup datasets, this one is (1) updated daily with real match results as games are played, (2) fully relational with normalized foreign keys for SQL/database modeling, (3) contains zero synthetic data — every stat is sourced and traceable, and (4) includes advanced metrics like xG, match team stats, and VAR events.
+> **Why this dataset?** Unlike other World Cup datasets, this one is (1) updated daily with real match results as games are played, (2) fully relational with normalized foreign keys for SQL/database modeling, (3) 100% authentic for all match results, events, lineups, and team stats (with player market valuations combining verified Transfermarkt values for star players with rank-calibrated heuristic estimates for remaining roster members), and (4) includes advanced metrics like xG, match team stats, and VAR events.
 
 ---
 
@@ -16,8 +16,8 @@
 
 - **Tournament:** FIFA World Cup 2026
 - **Format:** 48 Teams
-- **Current Stage:** Quarter-finals
-- **Matches Completed:** 96
+- **Current Stage:** Final (Completed)
+- **Matches Completed:** 104
 - **Updated After:** Every Completed Match
 - **Validation:** Relational integrity verified before every release
 
@@ -74,11 +74,11 @@ from xgboost import XGBClassifier
 # Load dataset
 df = pd.read_csv("match_prediction_features.csv")
 
-# Train on completed matches (1 to 100), predict upcoming (101+)
-train_df = df[df["match_id"] <= 100]
-predict_df = df[df["match_id"] > 100]
+# Train on Group Stage matches (1 to 72), evaluate on Knockout Stage (73 to 104)
+train_df = df[df["match_id"] <= 72]
+test_df = df[df["match_id"] > 72]
 
-# Features: Elo differences, Squad value ratio, Rolling form xG
+# Features: Elo ratings, FIFA rankings, Squad total market values, Rolling form xG
 features = ["home_elo", "away_elo", "home_fifa_rank", "away_fifa_rank", 
             "home_squad_total_value_eur", "home_prev_avg_xg_scored", "away_prev_avg_xg_scored"]
 
@@ -86,8 +86,8 @@ features = ["home_elo", "away_elo", "home_fifa_rank", "away_fifa_rank",
 clf = XGBClassifier()
 clf.fit(train_df[features], train_df["match_result"])
 
-# Predict upcoming knockout stages (Semi-Finals & Final)
-predictions = clf.predict(predict_df[features])
+# Evaluate predictions on Knockout Stage
+predictions = clf.predict(test_df[features])
 print("Forecasted outcomes:", predictions)
 ```
 

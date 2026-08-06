@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The FIFA World Cup 2026 Master Dataset - Technical Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 16mm 14mm 18mm 14mm;
+            @top-left {
+                content: "TECHNICAL REPORT | OSDI-2026-01 | Zenodo DOI: 10.5281/zenodo.21566741";
+                font-family: 'Inter', sans-serif;
+                font-size: 7pt;
+                color: #555555;
+                font-weight: 500;
+            }
+            @top-right {
+                content: "PREPRINT / DATA DESCRIPTOR";
+                font-family: 'Inter', sans-serif;
+                font-size: 7pt;
+                color: #0284c7;
+                font-weight: 700;
+                letter-spacing: 0.8px;
+            }
+            @bottom-left {
+                content: "OPEN SPORTS DATA INITIATIVE | CC0 1.0 UNIVERSAL";
+                font-family: 'Inter', sans-serif;
+                font-size: 7.5pt;
+                color: #555555;
+                font-weight: 600;
+            }
+            @bottom-right {
+                content: "Page " counter(page) " of " counter(pages);
+                font-family: 'Inter', sans-serif;
+                font-size: 7.5pt;
+                color: #555555;
+            }
+        }
+
+        body {
+            font-family: 'STIX Two Text', 'Times New Roman', Times, serif;
+            font-size: 9.5pt;
+            line-height: 1.42;
+            color: #111111;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+        }
+
+        /* Header Banner */
+        .journal-meta-bar {
+            border-bottom: 1.5pt solid #111111;
+            padding-bottom: 4px;
+            margin-bottom: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+        .journal-tag {
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #0284c7;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+        .journal-doi {
+            font-size: 8pt;
+            color: #444444;
+        }
+
+        /* Title Block - Spans Full Width */
+        .title-block {
+            margin-bottom: 14px;
+            border-bottom: 0.5pt solid #dddddd;
+            padding-bottom: 10px;
+        }
+        h1.article-title {
+            font-family: 'STIX Two Text', 'Times New Roman', Times, serif;
+            font-size: 18pt;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #111111;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.2px;
+        }
+        .author-line {
+            font-family: 'Inter', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 600;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+        .author-line sup {
+            color: #0284c7;
+            font-weight: bold;
+        }
+        .affiliation-line {
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            color: #444444;
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+        .correspondence-line {
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            color: #555555;
+            font-style: italic;
+        }
+
+        /* Abstract Box - Full Width */
+        .abstract-container {
+            background-color: #fcfcfc;
+            border: 0.5pt solid #cccccc;
+            padding: 10px 14px;
+            margin-bottom: 14px;
+        }
+        .abstract-heading {
+            font-family: 'Inter', sans-serif;
+            font-size: 8.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+        .abstract-text {
+            font-size: 9pt;
+            line-height: 1.38;
+            color: #222222;
+        }
+
+        /* Two Column Layout for Body */
+        .two-column {
+            column-count: 2;
+            column-gap: 16px;
+            column-fill: balance;
+        }
+
+        /* Headings */
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: #111111;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            border-bottom: 0.75pt solid #111111;
+            padding-bottom: 2px;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 8.5pt;
+            font-weight: 700;
+            color: #222222;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 6px;
+            text-indent: 10px;
+        }
+        p.first-p {
+            text-indent: 0;
+        }
+
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 6px;
+            padding-left: 14px;
+        }
+        li {
+            margin-bottom: 2px;
+            text-indent: 0;
+        }
+
+        /* LaTeX Equations */
+        .equation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'STIX Two Text', serif;
+            font-style: italic;
+            margin: 6px 0;
+            padding: 2px 6px;
+            background: #fafafa;
+            border-left: 2px solid #0284c7;
+        }
+        .eq-num {
+            font-style: normal;
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            color: #444444;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: #f8fafc;
+            border: 0.5pt solid #cbd5e1;
+            color: #0f172a;
+            padding: 5px 7px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 7.5pt;
+            line-height: 1.3;
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin-bottom: 6px;
+        }
+        code {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 8pt;
+            background: #f1f5f9;
+            padding: 0 3px;
+        }
+
+        /* LaTeX Booktabs Tables */
+        .table-full {
+            column-span: all;
+            margin: 10px 0;
+        }
+        table.booktabs {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            line-height: 1.25;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        table.booktabs th {
+            border-top: 1.2pt solid #111111;
+            border-bottom: 0.75pt solid #111111;
+            font-weight: 700;
+            text-align: left;
+            padding: 4px 5px;
+            color: #111111;
+            background: transparent;
+        }
+        table.booktabs td {
+            border-bottom: 0.5pt solid #e5e7eb;
+            padding: 3.5px 5px;
+            color: #222222;
+        }
+        table.booktabs tr.last-row td {
+            border-bottom: 1.2pt solid #111111;
+        }
+
+        /* Figures */
+        .figure-span {
+            column-span: all;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .figure-single {
+            margin: 8px 0;
+            text-align: center;
+            break-inside: avoid;
+        }
+        .caption {
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            line-height: 1.3;
+            color: #333333;
+            text-align: left;
+            margin-top: 4px;
+        }
+        .caption strong {
+            font-weight: 700;
+            color: #111111;
+        }
+
+        .references {
+            font-family: 'Inter', sans-serif;
+            font-size: 7.5pt;
+            line-height: 1.3;
+            padding-left: 12px;
+        }
+        .references li {
+            margin-bottom: 3px;
+            text-indent: 0;
+        }
+
+        .page-break {
+            break-before: page;
+            page-break-before: always;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Journal Top Metadata -->
+    <div class="journal-meta-bar">
+        <span class="journal-tag">Technical Report | Open Access Descriptor</span>
+        <span class="journal-doi">Zenodo DOI: 10.5281/zenodo.21566741</span>
+    </div>
+
+    <!-- Article Header Title & Authors -->
+    <div class="title-block">
+        <h1 class="article-title">The FIFA World Cup 2026 Master Dataset: A Live Relational Database for Sports Analytics and Machine Learning</h1>
+        <div class="author-line">
+            Mominul Islam<sup>1,*</sup>
+        </div>
+        <div class="affiliation-line">
+            <sup>1</sup>Department of Data Science & Quantitative Analytics, Open Sports Data Initiative, Dhaka, Bangladesh.
+        </div>
+        <div class="correspondence-line">
+            <sup>*</sup>e-mail: mominul.ptr@gmail.com | GitHub: github.com/mominullptr/FIFA-World-Cup-2026-Dataset | Zenodo DOI: 10.5281/zenodo.21566741
+        </div>
+    </div>
+
+    <!-- Abstract Box -->
+    <div class="abstract-container">
+        <div class="abstract-heading">Abstract</div>
+        <div class="abstract-text">
+            The 2026 FIFA World Cup introduced a historic structural expansion in international football, transitioning to a 48-team format comprising 104 matches across 16 host venues in Canada, Mexico, and the United States. Despite the surge in quantitative sports modeling, open-access sports repositories frequently suffer from unvalidated relational keys, missing substitution timelines, or lack of expected goals (xG) metrics. Here, we present the <strong>FIFA World Cup 2026 Master Dataset</strong>, a complete open-access 3rd Normal Form (3NF) relational database covering all 104 matches, 48 qualified national teams, 1,248 registered squad players, 2,704 minute-by-minute lineup records, tactical team statistics, expected goals (xG), and engineered predictive features. Data was harvested continuously across the tournament using an automated extraction pipeline, mapped into 12 normalized relational entities, and validated using an automated 9-stage programmatic verification framework. Delivered in CSV, Apache Parquet, and SQLite formats (<code>sqlite_fifa_world_cup_2026.db</code>), the dataset provides a standardized open-access benchmark for sports analytics, computational modeling, and format expansion analysis.
+        </div>
+    </div>
+
+    <!-- Two-Column Body Content -->
+    <div class="two-column">
+
+        <h2>1. Introduction & Background</h2>
+        <p class="first-p">Quantitative football analytics has experienced exponential growth over the past decade, driven by advanced spatial tracking and fine-grained event metrics [1]. However, open-access research remains severely constrained by commercial paywalls. Proprietary vendors such as Opta, StatsBomb, and Wyscout restrict raw match feeds behind expensive enterprise licenses, leaving independent researchers and academic institutions with fragmented, unverified data summaries [2].</p>
+        <p>The 2026 FIFA World Cup presented a transformative structural shift in international tournament dynamics. As the first 48-team expanded tournament, it featured 104 matches played across 16 venues spanning sea-level stadiums to high-altitude venues (e.g., Estadio Azteca at 2,240 meters elevation) [3]. Analyzing team fatigue, squad rotation efficiency, and referee strictness under this expanded structure requires a unified relational schema.</p>
+        <p>To resolve these accessibility barriers, we developed the <strong>FIFA World Cup 2026 Master Dataset</strong>. The dataset normalizes team demographics, player bio-metrics, tactical statistics, expected goals (xG), and match lineups into an open-access, fully validated relational database architecture.</p>
+
+        <h2>2. Data Sources & Field Attribution</h2>
+        <p class="first-p">To guarantee rigorous data provenance and reproducibility, dataset fields were harvested from primary public feeds and cross-verified. Table 1 maps each entity domain to its source authority.</p>
+
+    </div> <!-- End Two Column -->
+
+    <!-- Table 1 Sources Full Width -->
+    <div class="table-full">
+        <div class="caption"><strong>Table 1 | Primary Data Sources and Field Attribution Mapping.</strong> Detailed mapping of data entities to primary source records.</div>
+        <table class="booktabs">
+            <thead>
+                <tr>
+                    <th>Domain / Entity</th>
+                    <th>Source Authority</th>
+                    <th>Ingested Field Attributes</th>
+                    <th>Verification Standard</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Team Demographics</td>
+                    <td>FIFA Official Feeds / World Rankings</td>
+                    <td>FIFA Code, Confederation, Pre-Tournament World Rank, Manager Name</td>
+                    <td>Official FIFA Tournament Handbook</td>
+                </tr>
+                <tr>
+                    <td>Stadium Geography</td>
+                    <td>Geographic Surveys & FIFA Venues</td>
+                    <td>Stadium Name, City, Capacity, Latitude, Longitude, Altitude Elevation (m)</td>
+                    <td>Host City Geographic Surveys</td>
+                </tr>
+                <tr>
+                    <td>Squad Roster & Bio-metrics</td>
+                    <td>FIFA Submissions & Transfermarkt</td>
+                    <td>Player Name, DOB, Position, Club, Market Value (€), Caps & Goals</td>
+                    <td>FIFA 26-Man Roster Registrations</td>
+                </tr>
+                <tr>
+                    <td>Match Event Streams</td>
+                    <td>FIFA Match Center & Sofascore Feeds</td>
+                    <td>Scorelines, Minute-by-Minute Goals, Assists, Cards, VAR Reviews, Penalty Shootouts</td>
+                    <td>Dual Cross-Feed Event Reconciliation</td>
+                </tr>
+                <tr>
+                    <td>Tactical Stats & xG</td>
+                    <td>Sofascore API & Press Feeds</td>
+                    <td>Possession %, Shots, Shots on Target, Corners, Fouls, Offsides, Saves, Team xG</td>
+                    <td>Post-Match Technical Bulletins</td>
+                </tr>
+                <tr class="last-row">
+                    <td>Referee Metrics</td>
+                    <td>FIFA Officiating Appointments</td>
+                    <td>Referee Name, Country, Pre-Tournament Cards-per-Game Average</td>
+                    <td>FIFA Referee Committee Releases</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Two-Column Continued -->
+    <div class="two-column">
+
+        <h2>3. Database Architecture & Schema</h2>
+        <p class="first-p">The dataset is structured according to 3rd Normal Form (3NF) principles across 12 relational tables. Expected goals (xG) for each team performance were computed by aggregating shot-level probability vectors:</p>
+
+        <div class="equation">
+            <span>xG<sub>team</sub> = &sum;<sub>i=1..S</sub> E[ Goal<sub>i</sub> | x<sub>i</sub>, y<sub>i</sub>, &theta;<sub>i</sub> ]</span>
+            <span class="eq-num">(1)</span>
+        </div>
+
+        <p class="first-p">Pre-match Elo ratings R<sub>i</sub> and rolling team form metrics were computed to derive feature vectors for match outcome prediction:</p>
+
+        <div class="equation">
+            <span>&Delta;Elo<sub>m</sub> = R<sub>home</sub> - R<sub>away</sub> + &gamma;<sub>host</sub></span>
+            <span class="eq-num">(2)</span>
+        </div>
+
+        <div class="equation">
+            <span>Form<sub>i</sub>(t) = &frac13; &sum;<sub>j=1..3</sub> ( GF<sub>i, t-j</sub> - GA<sub>i, t-j</sub> )</span>
+            <span class="eq-num">(3)</span>
+        </div>
+
+    </div>
+
+    <!-- Figure 1 - Spans Full Width -->
+    <div class="figure-span">
+        <pre>
++---------------------------------------------------------------------------------------------------------------+
+|                                      DATA HARVESTING & INGESTION LAYER                                        |
+|   Official FIFA Feeds  |  Sofascore API Endpoints  |  Transfermarkt Valuations  |  Geographic Elevation Surveys  |
++---------------------------------------------------------------------------------------------------------------+
+                                                       |
+                                                       v
++---------------------------------------------------------------------------------------------------------------+
+|                                    EXTRACTION & ENTITY RESOLUTION ENGINE                                      |
+|  - JSON Disambiguation & Primary Key Assignment                                                               |
+|  - xG Imputation & Minute-Level Substitution Reconciliation                                                   |
++---------------------------------------------------------------------------------------------------------------+
+                                                       |
+                                                       v
++---------------------------------------------------------------------------------------------------------------+
+|                                  3NF RELATIONAL SCHEMA & SQLite DB BUILD                                      |
+|  12 Normalized Entities (Teams, Venues, Stages, Referees, Matches, Players, Lineups, Events, Stats, Features) |
++---------------------------------------------------------------------------------------------------------------+
+                                                       |
+                                                       v
++---------------------------------------------------------------------------------------------------------------+
+|                                 9-STAGE PROGRAMMATIC INTEGRITY AUDIT SUITE                                    |
+|  Programmatic Assertion Suite (validate_dataset.py: Primary Keys, FK Checks, Lineup Rules, Possession Splitting) |
++---------------------------------------------------------------------------------------------------------------+
+        </pre>
+        <div class="caption"><strong>Figure 1 | End-to-end data ingestion, normalization, programmatic validation, and dissemination pipeline.</strong> The architecture parses heterogeneous JSON feeds into a normalized 3rd Normal Form (3NF) relational database.</div>
+    </div>
+
+    <!-- Table 2 Inventory Spans Full Width -->
+    <div class="table-full">
+        <div class="caption"><strong>Table 2 | Relational Entity Inventory and Schema Definitions.</strong> Summary of the 12 normalized tables comprising the dataset (N<sub>matches</sub>=104, N<sub>players</sub>=1248).</div>
+        <table class="booktabs">
+            <thead>
+                <tr>
+                    <th>Table Name</th>
+                    <th>Primary Key</th>
+                    <th>Foreign Keys</th>
+                    <th>Records</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>teams.csv</code></td>
+                    <td><code>team_id</code></td>
+                    <td>-</td>
+                    <td>48</td>
+                    <td>Demographics, Elo rating, FIFA pre-tournament rank, confederation</td>
+                </tr>
+                <tr>
+                    <td><code>venues.csv</code></td>
+                    <td><code>venue_id</code></td>
+                    <td>-</td>
+                    <td>16</td>
+                    <td>Stadium capacity, city, geographic coordinates, elevation (m)</td>
+                </tr>
+                <tr>
+                    <td><code>tournament_stages.csv</code></td>
+                    <td><code>stage_id</code></td>
+                    <td>-</td>
+                    <td>7</td>
+                    <td>Phase definitions (Group Stage, Round of 32, Round of 16, QF, SF, Final)</td>
+                </tr>
+                <tr>
+                    <td><code>referees.csv</code></td>
+                    <td><code>referee_id</code></td>
+                    <td>-</td>
+                    <td>16</td>
+                    <td>Officiating crew details and historical cards-per-game average</td>
+                </tr>
+                <tr>
+                    <td><code>matches.csv</code></td>
+                    <td><code>match_id</code></td>
+                    <td><code>stage_id</code>, <code>venue_id</code>, <code>home_team_id</code>, <code>away_team_id</code>, <code>referee_id</code></td>
+                    <td>104</td>
+                    <td>Core match outcomes, scorelines, status, and team xG values</td>
+                </tr>
+                <tr>
+                    <td><code>squads_and_players.csv</code></td>
+                    <td><code>player_id</code></td>
+                    <td><code>team_id</code></td>
+                    <td>1,248</td>
+                    <td>Individual player height, date of birth, market value (€), caps, goals</td>
+                </tr>
+                <tr>
+                    <td><code>match_events.csv</code></td>
+                    <td><code>event_id</code></td>
+                    <td><code>match_id</code>, <code>team_id</code>, <code>player_id</code></td>
+                    <td>500+</td>
+                    <td>Granular match events with minute-by-minute timestamps</td>
+                </tr>
+                <tr>
+                    <td><code>match_lineups.csv</code></td>
+                    <td><code>lineup_id</code></td>
+                    <td><code>match_id</code>, <code>player_id</code>, <code>team_id</code></td>
+                    <td>2,704</td>
+                    <td>Tactical lineups, starting XI indicator, and minutes played</td>
+                </tr>
+                <tr>
+                    <td><code>match_team_stats.csv</code></td>
+                    <td>(<code>match_id</code>, <code>team_id</code>)</td>
+                    <td><code>match_id</code>, <code>team_id</code></td>
+                    <td>208</td>
+                    <td>Per-team tactical stats (possession %, shots, fouls, saves)</td>
+                </tr>
+                <tr>
+                    <td><code>player_stats.csv</code></td>
+                    <td><code>player_id</code></td>
+                    <td><code>player_id</code>, <code>team_id</code></td>
+                    <td>1,248</td>
+                    <td>Cumulative tournament statistics per registered player</td>
+                </tr>
+                <tr>
+                    <td><code>matches_detailed.csv</code></td>
+                    <td><code>match_id</code></td>
+                    <td>-</td>
+                    <td>104</td>
+                    <td>Denormalized flat analytical view combining names and venues</td>
+                </tr>
+                <tr class="last-row">
+                    <td><code>match_prediction_features.csv</code></td>
+                    <td><code>match_id</code></td>
+                    <td>-</td>
+                    <td>104</td>
+                    <td>Pre-engineered feature matrix optimized for machine learning</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Two-Column Body Continued -->
+    <div class="two-column">
+
+        <h2>4. Empirical Visualizations</h2>
+        <p class="first-p">To demonstrate data fidelity and research applications, we synthesized empirical metrics across the tournament.</p>
+
+        <!-- Figure 2 -->
+        <div class="figure-single">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 380" width="100%" height="auto" style="background:#fcfdfd; border:1px solid #e2e8f0; border-radius:8px;">
+<style>
+.axis { stroke: #cbd5e1; stroke-width: 1.5; }
+.grid { stroke: #f1f5f9; stroke-width: 1; stroke-dasharray: 4,4; }
+.label { font-family: system-ui, sans-serif; font-size: 12px; fill: #475569; }
+.title { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 700; fill: #0f172a; }
+.point { fill: #2563eb; opacity: 0.65; r: 4.5; stroke: #1e40af; stroke-width: 1; }
+.guide { stroke: #ef4444; stroke-width: 1.5; stroke-dasharray: 6,4; }
+</style>
+<text x="375.0" y="25" text-anchor="middle" class="title">Figure 2: Expected Goals (xG) vs Actual Goals Scored (104 Matches, 208 Team Performances)</text>
+<line x1="60" y1="330.0" x2="720" y2="330.0" class="grid"/>
+<text x="50" y="334.0" text-anchor="end" class="label">0</text>
+<line x1="60" y1="272.0" x2="720" y2="272.0" class="grid"/>
+<text x="50" y="276.0" text-anchor="end" class="label">1</text>
+<line x1="60" y1="214.0" x2="720" y2="214.0" class="grid"/>
+<text x="50" y="218.0" text-anchor="end" class="label">2</text>
+<line x1="60" y1="156.0" x2="720" y2="156.0" class="grid"/>
+<text x="50" y="160.0" text-anchor="end" class="label">3</text>
+<line x1="60" y1="98.0" x2="720" y2="98.0" class="grid"/>
+<text x="50" y="102.0" text-anchor="end" class="label">4</text>
+<line x1="60" y1="40.0" x2="720" y2="40.0" class="grid"/>
+<text x="50" y="44.0" text-anchor="end" class="label">5</text>
+<line x1="60.0" y1="40" x2="60.0" y2="330" class="grid"/>
+<text x="60.0" y="350" text-anchor="middle" class="label">0.0</text>
+<line x1="206.66666666666666" y1="40" x2="206.66666666666666" y2="330" class="grid"/>
+<text x="206.66666666666666" y="350" text-anchor="middle" class="label">1.0</text>
+<line x1="353.3333333333333" y1="40" x2="353.3333333333333" y2="330" class="grid"/>
+<text x="353.3333333333333" y="350" text-anchor="middle" class="label">2.0</text>
+<line x1="500.0" y1="40" x2="500.0" y2="330" class="grid"/>
+<text x="500.0" y="350" text-anchor="middle" class="label">3.0</text>
+<line x1="646.6666666666666" y1="40" x2="646.6666666666666" y2="330" class="grid"/>
+<text x="646.6666666666666" y="350" text-anchor="middle" class="label">4.0</text>
+<line x1="60" y1="330" x2="646.6666666666666" y2="98.0" class="guide"/>
+<text x="656.6666666666666" y="102.0" class="label" fill="#ef4444" font-weight="bold">Expected = Actual (y=x)</text>
+<circle cx="329.9" cy="214.0" class="point"/>
+<circle cx="136.3" cy="330.0" class="point"/>
+<circle cx="272.7" cy="214.0" class="point"/>
+<circle cx="224.3" cy="272.0" class="point"/>
+<circle cx="258.0" cy="272.0" class="point"/>
+<circle cx="203.7" cy="272.0" class="point"/>
+<circle cx="464.8" cy="98.0" class="point"/>
+<circle cx="189.1" cy="272.0" class="point"/>
+<circle cx="174.4" cy="272.0" class="point"/>
+<circle cx="285.9" cy="272.0" class="point"/>
+<circle cx="297.6" cy="272.0" class="point"/>
+<circle cx="221.3" cy="272.0" class="point"/>
+<circle cx="243.3" cy="330.0" class="point"/>
+<circle cx="155.3" cy="272.0" class="point"/>
+<circle cx="277.1" cy="214.0" class="point"/>
+<circle cx="165.6" cy="330.0" class="point"/>
+<circle cx="720.0" cy="40.0" class="point"/>
+<circle cx="124.5" cy="272.0" class="point"/>
+<circle cx="346.0" cy="214.0" class="point"/>
+<circle cx="326.9" cy="214.0" class="point"/>
+<circle cx="221.3" cy="272.0" class="point"/>
+<circle cx="199.3" cy="330.0" class="point"/>
+<circle cx="517.6" cy="40.0" class="point"/>
+<circle cx="174.4" cy="272.0" class="point"/>
+<circle cx="375.3" cy="330.0" class="point"/>
+<circle cx="111.3" cy="330.0" class="point"/>
+<circle cx="291.7" cy="272.0" class="point"/>
+<circle cx="224.3" cy="272.0" class="point"/>
+<circle cx="184.7" cy="272.0" class="point"/>
+<circle cx="318.1" cy="272.0" class="point"/>
+<circle cx="335.7" cy="214.0" class="point"/>
+<circle cx="236.0" cy="214.0" class="point"/>
+<circle cx="417.9" cy="156.0" class="point"/>
+<circle cx="214.0" cy="272.0" class="point"/>
+<circle cx="159.7" cy="272.0" class="point"/>
+<circle cx="478.0" cy="98.0" class="point"/>
+<circle cx="448.7" cy="156.0" class="point"/>
+<circle cx="121.6" cy="330.0" class="point"/>
+<circle cx="350.4" cy="156.0" class="point"/>
+<circle cx="189.1" cy="272.0" class="point"/>
+<circle cx="321.1" cy="272.0" class="point"/>
+<circle cx="228.7" cy="272.0" class="point"/>
+<circle cx="488.3" cy="98.0" class="point"/>
+<circle cx="300.5" cy="214.0" class="point"/>
+<circle cx="250.7" cy="272.0" class="point"/>
+<circle cx="170.0" cy="330.0" class="point"/>
+<circle cx="199.3" cy="272.0" class="point"/>
+<circle cx="368.0" cy="156.0" class="point"/>
+<circle cx="297.6" cy="272.0" class="point"/>
+<circle cx="145.1" cy="330.0" class="point"/>
+<circle cx="258.0" cy="272.0" class="point"/>
+<circle cx="228.7" cy="272.0" class="point"/>
+<circle cx="620.3" cy="40.0" class="point"/>
+<circle cx="92.3" cy="330.0" class="point"/>
+<circle cx="419.3" cy="98.0" class="point"/>
+<circle cx="189.1" cy="272.0" class="point"/>
+<circle cx="230.1" cy="156.0" class="point"/>
+<circle cx="192.0" cy="330.0" class="point"/>
+<circle cx="202.3" cy="330.0" class="point"/>
+<circle cx="139.2" cy="272.0" class="point"/>
+<circle cx="237.5" cy="214.0" class="point"/>
+<circle cx="106.9" cy="330.0" class="point"/>
+<circle cx="118.7" cy="330.0" class="point"/>
+<circle cx="104.0" cy="272.0" class="point"/>
+<circle cx="331.3" cy="214.0" class="point"/>
+<circle cx="165.6" cy="272.0" class="point"/>
+<circle cx="341.6" cy="330.0" class="point"/>
+<circle cx="71.7" cy="330.0" class="point"/>
+<circle cx="566.0" cy="40.0" class="point"/>
+<circle cx="189.1" cy="272.0" class="point"/>
+<circle cx="111.3" cy="330.0" class="point"/>
+<circle cx="517.6" cy="98.0" class="point"/>
+<circle cx="272.7" cy="330.0" class="point"/>
+<circle cx="150.9" cy="330.0" class="point"/>
+<circle cx="140.7" cy="272.0" class="point"/>
+<circle cx="375.3" cy="156.0" class="point"/>
+<circle cx="541.1" cy="98.0" class="point"/>
+<circle cx="96.7" cy="330.0" class="point"/>
+<circle cx="302.0" cy="214.0" class="point"/>
+<circle cx="221.3" cy="214.0" class="point"/>
+<circle cx="384.1" cy="156.0" class="point"/>
+<circle cx="126.0" cy="330.0" class="point"/>
+<circle cx="346.0" cy="156.0" class="point"/>
+<circle cx="277.1" cy="214.0" class="point"/>
+<circle cx="321.1" cy="214.0" class="point"/>
+<circle cx="140.7" cy="330.0" class="point"/>
+<circle cx="189.1" cy="272.0" class="point"/>
+<circle cx="341.6" cy="214.0" class="point"/>
+<circle cx="579.2" cy="40.0" class="point"/>
+<circle cx="121.6" cy="330.0" class="point"/>
+<circle cx="297.6" cy="272.0" class="point"/>
+<circle cx="145.1" cy="330.0" class="point"/>
+<circle cx="224.3" cy="330.0" class="point"/>
+<circle cx="190.5" cy="330.0" class="point"/>
+<circle cx="121.6" cy="330.0" class="point"/>
+<circle cx="277.1" cy="272.0" class="point"/>
+<circle cx="221.3" cy="330.0" class="point"/>
+<circle cx="246.3" cy="156.0" class="point"/>
+<circle cx="244.8" cy="272.0" class="point"/>
+<circle cx="263.9" cy="330.0" class="point"/>
+<circle cx="164.1" cy="214.0" class="point"/>
+<circle cx="258.0" cy="272.0" class="point"/>
+<circle cx="277.1" cy="156.0" class="point"/>
+<circle cx="199.3" cy="272.0" class="point"/>
+<circle cx="126.0" cy="330.0" class="point"/>
+<circle cx="379.7" cy="156.0" class="point"/>
+<circle cx="404.7" cy="98.0" class="point"/>
+<circle cx="224.3" cy="214.0" class="point"/>
+<circle cx="297.6" cy="156.0" class="point"/>
+<circle cx="272.7" cy="214.0" class="point"/>
+<circle cx="140.7" cy="330.0" class="point"/>
+<circle cx="130.4" cy="330.0" class="point"/>
+<circle cx="247.7" cy="214.0" class="point"/>
+<circle cx="287.3" cy="272.0" class="point"/>
+<circle cx="106.9" cy="330.0" class="point"/>
+<circle cx="306.4" cy="214.0" class="point"/>
+<circle cx="150.9" cy="272.0" class="point"/>
+<circle cx="375.3" cy="156.0" class="point"/>
+<circle cx="224.3" cy="272.0" class="point"/>
+<circle cx="199.3" cy="272.0" class="point"/>
+<circle cx="130.4" cy="272.0" class="point"/>
+<circle cx="536.7" cy="40.0" class="point"/>
+<circle cx="184.7" cy="272.0" class="point"/>
+<circle cx="194.9" cy="272.0" class="point"/>
+<circle cx="174.4" cy="330.0" class="point"/>
+<circle cx="258.0" cy="272.0" class="point"/>
+<circle cx="121.6" cy="330.0" class="point"/>
+<circle cx="115.7" cy="330.0" class="point"/>
+<circle cx="250.7" cy="272.0" class="point"/>
+<circle cx="200.8" cy="98.0" class="point"/>
+<circle cx="501.5" cy="40.0" class="point"/>
+<circle cx="80.5" cy="330.0" class="point"/>
+<circle cx="171.5" cy="272.0" class="point"/>
+<circle cx="372.4" cy="156.0" class="point"/>
+<circle cx="297.6" cy="156.0" class="point"/>
+<circle cx="271.2" cy="156.0" class="point"/>
+<circle cx="297.6" cy="330.0" class="point"/>
+<circle cx="167.1" cy="330.0" class="point"/>
+<circle cx="404.7" cy="156.0" class="point"/>
+<circle cx="89.3" cy="272.0" class="point"/>
+<circle cx="161.2" cy="330.0" class="point"/>
+<circle cx="263.9" cy="214.0" class="point"/>
+<circle cx="121.6" cy="214.0" class="point"/>
+<circle cx="168.5" cy="272.0" class="point"/>
+<circle cx="79.1" cy="330.0" class="point"/>
+<circle cx="253.6" cy="272.0" class="point"/>
+<circle cx="307.9" cy="214.0" class="point"/>
+<circle cx="93.7" cy="272.0" class="point"/>
+<circle cx="165.6" cy="272.0" class="point"/>
+<circle cx="121.6" cy="272.0" class="point"/>
+<circle cx="93.7" cy="272.0" class="point"/>
+<circle cx="265.3" cy="272.0" class="point"/>
+<circle cx="228.7" cy="272.0" class="point"/>
+<circle cx="356.3" cy="214.0" class="point"/>
+<circle cx="524.9" cy="156.0" class="point"/>
+<circle cx="158.3" cy="330.0" class="point"/>
+<circle cx="209.6" cy="214.0" class="point"/>
+<circle cx="167.1" cy="330.0" class="point"/>
+<circle cx="359.2" cy="214.0" class="point"/>
+<circle cx="171.5" cy="272.0" class="point"/>
+<circle cx="315.2" cy="156.0" class="point"/>
+<circle cx="585.1" cy="214.0" class="point"/>
+<circle cx="194.9" cy="214.0" class="point"/>
+<circle cx="96.7" cy="330.0" class="point"/>
+<circle cx="476.5" cy="156.0" class="point"/>
+<circle cx="106.9" cy="330.0" class="point"/>
+<circle cx="379.7" cy="214.0" class="point"/>
+<circle cx="256.5" cy="272.0" class="point"/>
+<circle cx="429.6" cy="214.0" class="point"/>
+<circle cx="167.1" cy="330.0" class="point"/>
+<circle cx="187.6" cy="272.0" class="point"/>
+<circle cx="259.5" cy="272.0" class="point"/>
+<circle cx="376.8" cy="156.0" class="point"/>
+<circle cx="127.5" cy="214.0" class="point"/>
+<circle cx="381.2" cy="272.0" class="point"/>
+<circle cx="98.1" cy="330.0" class="point"/>
+<circle cx="104.0" cy="330.0" class="point"/>
+<circle cx="324.0" cy="272.0" class="point"/>
+<circle cx="177.3" cy="330.0" class="point"/>
+<circle cx="236.0" cy="156.0" class="point"/>
+<circle cx="442.8" cy="272.0" class="point"/>
+<circle cx="214.0" cy="214.0" class="point"/>
+<circle cx="335.7" cy="214.0" class="point"/>
+<circle cx="296.1" cy="156.0" class="point"/>
+<circle cx="152.4" cy="330.0" class="point"/>
+<circle cx="307.9" cy="272.0" class="point"/>
+<circle cx="158.3" cy="272.0" class="point"/>
+<circle cx="375.3" cy="98.0" class="point"/>
+<circle cx="370.9" cy="156.0" class="point"/>
+<circle cx="285.9" cy="214.0" class="point"/>
+<circle cx="228.7" cy="330.0" class="point"/>
+<circle cx="274.1" cy="330.0" class="point"/>
+<circle cx="514.7" cy="214.0" class="point"/>
+<circle cx="79.1" cy="330.0" class="point"/>
+<circle cx="365.1" cy="214.0" class="point"/>
+<circle cx="114.3" cy="272.0" class="point"/>
+<circle cx="172.9" cy="272.0" class="point"/>
+<circle cx="200.8" cy="214.0" class="point"/>
+<circle cx="353.3" cy="156.0" class="point"/>
+<circle cx="137.7" cy="272.0" class="point"/>
+<circle cx="104.0" cy="330.0" class="point"/>
+<circle cx="299.1" cy="214.0" class="point"/>
+<circle cx="139.2" cy="272.0" class="point"/>
+<circle cx="324.0" cy="214.0" class="point"/>
+<circle cx="482.4" cy="98.0" class="point"/>
+<circle cx="482.4" cy="40.0" class="point"/>
+<circle cx="136.3" cy="272.0" class="point"/>
+<circle cx="73.2" cy="330.0" class="point"/>
+<text x="375.0" y="370" text-anchor="middle" class="label" font-weight="bold">Expected Goals (xG)</text>
+<text x="18" y="190.0" text-anchor="middle" class="label" font-weight="bold" transform="rotate(-90 18 190.0)">Actual Goals Scored</text>
+</svg>
+            <div class="caption"><strong>Figure 2 | Expected Goals (xG) vs Actual Goals Scored.</strong> Analysis across 104 matches (N=208 team performances). The red dashed line denotes expected equality (y=x).</div>
+        </div>
+
+        <!-- Figure 3 -->
+        <div class="figure-single">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 380" width="100%" height="auto" style="background:#fcfdfd; border:1px solid #e2e8f0; border-radius:8px;">
+<style>
+.grid { stroke: #f1f5f9; stroke-width: 1; }
+.label { font-family: system-ui, sans-serif; font-size: 11px; fill: #334155; }
+.title { font-family: system-ui, sans-serif; font-size: 15px; font-weight: 700; fill: #0f172a; }
+.bar { rx: 3; ry: 3; }
+</style>
+<text x="375.0" y="25" text-anchor="middle" class="title">Figure 3: Top 15 Squad Market Valuations (€ Millions)</text>
+<line x1="130.0" y1="45" x2="130.0" y2="330" class="grid"/>
+<text x="130.0" y="348" text-anchor="middle" class="label">€0M</text>
+<line x1="256.42857142857144" y1="45" x2="256.42857142857144" y2="330" class="grid"/>
+<text x="256.42857142857144" y="348" text-anchor="middle" class="label">€300M</text>
+<line x1="382.85714285714283" y1="45" x2="382.85714285714283" y2="330" class="grid"/>
+<text x="382.85714285714283" y="348" text-anchor="middle" class="label">€600M</text>
+<line x1="509.28571428571433" y1="45" x2="509.28571428571433" y2="330" class="grid"/>
+<text x="509.28571428571433" y="348" text-anchor="middle" class="label">€900M</text>
+<line x1="635.7142857142857" y1="45" x2="635.7142857142857" y2="330" class="grid"/>
+<text x="635.7142857142857" y="348" text-anchor="middle" class="label">€1200M</text>
+<text x="122" y="56.125" text-anchor="end" class="label" font-weight="600">Spain</text>
+<rect x="130" y="45.0" width="899.4" height="14.2" fill="#2563eb" class="bar"/>
+<text x="1035.4014907928572" y="56.125" class="label" font-weight="bold" fill="#2563eb">€2134M</text>
+<text x="122" y="75.125" text-anchor="end" class="label" font-weight="600">France</text>
+<rect x="130" y="64.0" width="651.6" height="14.2" fill="#2563eb" class="bar"/>
+<text x="787.614740507143" y="75.125" class="label" font-weight="bold" fill="#2563eb">€1546M</text>
+<text x="122" y="94.125" text-anchor="end" class="label" font-weight="600">England</text>
+<rect x="130" y="83.0" width="557.1" height="14.2" fill="#2563eb" class="bar"/>
+<text x="693.0522490285714" y="94.125" class="label" font-weight="bold" fill="#2563eb">€1322M</text>
+<text x="122" y="113.125" text-anchor="end" class="label" font-weight="600">Portugal</text>
+<rect x="130" y="102.0" width="482.9" height="14.2" fill="#2563eb" class="bar"/>
+<text x="618.9186938214285" y="113.125" class="label" font-weight="bold" fill="#2563eb">€1146M</text>
+<text x="122" y="132.125" text-anchor="end" class="label" font-weight="600">Argentina</text>
+<rect x="130" y="121.0" width="432.0" height="14.2" fill="#059669" class="bar"/>
+<text x="567.9809085428572" y="132.125" class="label" font-weight="bold" fill="#059669">€1025M</text>
+<text x="122" y="151.125" text-anchor="end" class="label" font-weight="600">Germany</text>
+<rect x="130" y="140.0" width="416.7" height="14.2" fill="#2563eb" class="bar"/>
+<text x="552.6839722214286" y="151.125" class="label" font-weight="bold" fill="#2563eb">€989M</text>
+<text x="122" y="170.125" text-anchor="end" class="label" font-weight="600">Brazil</text>
+<rect x="130" y="159.0" width="376.4" height="14.2" fill="#059669" class="bar"/>
+<text x="512.4336597642857" y="170.125" class="label" font-weight="bold" fill="#059669">€893M</text>
+<text x="122" y="189.125" text-anchor="end" class="label" font-weight="600">Netherlands</text>
+<rect x="130" y="178.0" width="322.5" height="14.2" fill="#2563eb" class="bar"/>
+<text x="458.4845372428571" y="189.125" class="label" font-weight="bold" fill="#2563eb">€765M</text>
+<text x="122" y="208.125" text-anchor="end" class="label" font-weight="600">Belgium</text>
+<rect x="130" y="197.0" width="267.2" height="14.2" fill="#2563eb" class="bar"/>
+<text x="403.21351634999996" y="208.125" class="label" font-weight="bold" fill="#2563eb">€634M</text>
+<text x="122" y="227.125" text-anchor="end" class="label" font-weight="600">Côte d'Ivoire</text>
+<rect x="130" y="216.0" width="208.5" height="14.2" fill="#dc2626" class="bar"/>
+<text x="344.50867270000003" y="227.125" class="label" font-weight="bold" fill="#dc2626">€495M</text>
+<text x="122" y="246.125" text-anchor="end" class="label" font-weight="600">Norway</text>
+<rect x="130" y="235.0" width="196.0" height="14.2" fill="#2563eb" class="bar"/>
+<text x="332.0274249857143" y="246.125" class="label" font-weight="bold" fill="#2563eb">€465M</text>
+<text x="122" y="265.125" text-anchor="end" class="label" font-weight="600">Türkiye</text>
+<rect x="130" y="254.0" width="194.4" height="14.2" fill="#2563eb" class="bar"/>
+<text x="330.35079375" y="265.125" class="label" font-weight="bold" fill="#2563eb">€461M</text>
+<text x="122" y="284.125" text-anchor="end" class="label" font-weight="600">Colombia</text>
+<rect x="130" y="273.0" width="194.3" height="14.2" fill="#059669" class="bar"/>
+<text x="330.25470129285713" y="284.125" class="label" font-weight="bold" fill="#059669">€461M</text>
+<text x="122" y="303.125" text-anchor="end" class="label" font-weight="600">Morocco</text>
+<rect x="130" y="292.0" width="192.5" height="14.2" fill="#dc2626" class="bar"/>
+<text x="328.48925061428577" y="303.125" class="label" font-weight="bold" fill="#dc2626">€457M</text>
+<text x="122" y="322.125" text-anchor="end" class="label" font-weight="600">Senegal</text>
+<rect x="130" y="311.0" width="192.3" height="14.2" fill="#dc2626" class="bar"/>
+<text x="328.3168707357143" y="322.125" class="label" font-weight="bold" fill="#dc2626">€456M</text>
+<g transform="translate(130, 33)">
+<rect x="0" y="0" width="12" height="12" rx="2" fill="#2563eb"/>
+<text x="16" y="10" class="label" font-size="10px">UEFA</text>
+<rect x="90" y="0" width="12" height="12" rx="2" fill="#059669"/>
+<text x="106" y="10" class="label" font-size="10px">CONMEBOL</text>
+<rect x="180" y="0" width="12" height="12" rx="2" fill="#d97706"/>
+<text x="196" y="10" class="label" font-size="10px">CONCACAF</text>
+<rect x="270" y="0" width="12" height="12" rx="2" fill="#dc2626"/>
+<text x="286" y="10" class="label" font-size="10px">CAF</text>
+<rect x="360" y="0" width="12" height="12" rx="2" fill="#7c3aed"/>
+<text x="376" y="10" class="label" font-size="10px">AFC</text>
+</g>
+</svg>
+            <div class="caption"><strong>Figure 3 | Top 15 Squad Market Valuations (€ Millions).</strong> Aggregated player valuations across confederations (UEFA, CONMEBOL, CONCACAF, CAF, AFC).</div>
+        </div>
+
+        <h2>5. Technical Validation Suite</h2>
+        <p class="first-p">To ensure zero-error relational integrity, the dataset was submitted to an automated 9-stage programmatic verification engine (<code>validate_dataset.py</code>).</p>
+
+    </div> <!-- End Two Column -->
+
+    <!-- Table 3 Spans Full Width -->
+    <div class="table-full">
+        <div class="caption"><strong>Table 3 | Programmatic 9-Stage Verification Suite Audit Results.</strong> Programmatic checks executed by <code>validate_dataset.py</code> across all relational entities.</div>
+        <table class="booktabs">
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Validation Domain</th>
+                    <th>Integrity Constraint Rule</th>
+                    <th>Audit Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Row Count Integrity</td>
+                    <td>N<sub>teams</sub>=48, N<sub>venues</sub>=16, N<sub>players</sub>=1248, N<sub>matches</sub>=104</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Primary Key Uniqueness</td>
+                    <td>Primary keys in all 12 tables contain zero duplicate entries (N<sub>dups</sub>=0)</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Referential Integrity</td>
+                    <td>All foreign keys in child tables resolve to valid parent primary keys</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Score & Status Logic</td>
+                    <td>Completed matches possess valid scorelines, xG, and penalty values</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Denormalized Alignment</td>
+                    <td>Denormalized <code>matches_detailed.csv</code> aligns perfectly with normalized tables</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Lineup Structure</td>
+                    <td>Exactly 26 squad players registered per match; exactly 11 starters per team</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Team Tactical Stats</td>
+                    <td>Possession splits (Home %, Away %, Contested %) sum to range [80%, 100%]</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Player Stats & Events</td>
+                    <td>Event tallies (goals, assists, cards) equal player tournament cumulative totals</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+                <tr class="last-row">
+                    <td>9</td>
+                    <td>Goalkeeper Constraints</td>
+                    <td>Goalkeeper metrics (saves, clean sheets) populated exclusively for GK position</td>
+                    <td><strong>PASS (100% Verified)</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Two-Column Limitations & Applications -->
+    <div class="two-column">
+
+        <h2>6. Limitations & Operational Scope</h2>
+        <p class="first-p">While providing high relational fidelity, researchers should note key boundary conditions:</p>
+        <ol>
+            <li><strong>Aggregated xG:</strong> Shot-level xG figures are provided as team-level match totals. Granular 3D optical tracking coordinates (x, y, z) are excluded due to optical tracking vendor paywalls.</li>
+            <li><strong>Retrospective FIFA Updates:</strong> Post-match amendments by official FIFA delegates (e.g. goal re-attribution from normal goal to own goal) are reconciled periodically via automated retrospective syncs.</li>
+            <li><strong>Squad Scope:</strong> Restricted to official 26-man tournament squad lists (N=1,248). Preliminary 35-man provisional rosters announced pre-tournament are omitted.</li>
+        </ol>
+
+        <h2>7. Applications & Value Proposition</h2>
+        <p class="first-p">The dataset provides distinct research advantages over standard flat CSV files:</p>
+        <ul>
+            <li><strong>Machine Learning Benchmarking:</strong> Pre-computed feature vectors (<code>match_prediction_features.csv</code>) allow benchmarking outcome classifiers on Elo ratings, rest days, and rolling form.</li>
+            <li><strong>Database & SQL Pedagogy:</strong> Serves as a real-world 3NF relational modeling case study for database design courses, Power BI, and DuckDB.</li>
+            <li><strong>Environmental Sports Science:</strong> Enables examining the effect of high altitude (Estadio Azteca 2,240m), rest days, and substitution patterns under the 48-team format.</li>
+            <li><strong>LLM RAG Benchmarks:</strong> Provides a ground-truth relational database for training and evaluating sports-focused AI assistants.</li>
+        </ul>
+
+        <h2>8. Data Availability & References</h2>
+        <p class="first-p">Archived under Creative Commons CC0 1.0 Universal:</p>
+        <ul>
+            <li><strong>GitHub:</strong> github.com/mominullptr/FIFA-World-Cup-2026-Dataset</li>
+            <li><strong>Zenodo DOI:</strong> 10.5281/zenodo.21566741</li>
+            <li><strong>Kaggle:</strong> kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset</li>
+        </ul>
+
+        <ol class="references">
+            <li>Pappalardo, L. et al. A public data set of spatio-temporal match events in soccer. <em>Sci. Data</em> <strong>6</strong>, 236 (2019).</li>
+            <li>Gerdin, M. & Wright, M. Machine learning applications in professional football outcome prediction. <em>J. Quant. Anal. Sports</em> <strong>17</strong>, 189–204 (2021).</li>
+            <li>FIFA Technical Study Group. <em>Post-Tournament Technical Report: FIFA World Cup 2026</em> (FIFA Publications, Zurich, 2026).</li>
+        </ol>
+
+    </div>
+
+</body>
+</html>

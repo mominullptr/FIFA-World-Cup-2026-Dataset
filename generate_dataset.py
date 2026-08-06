@@ -486,12 +486,12 @@ matches_data = [
     [90, "2026-07-04", "23:00", 3, 11, 5, 10, 0, 3, "Completed", 0.80, 1.20],
     [91, "2026-07-05", "20:00", 3, 4, 9, 36, 1, 2, "Completed", 2.61, 1.05],
     [92, "2026-07-06", "01:00", 3, 1, 1, 45, 2, 3, "Completed", 1.88, 1.61],
-    [93, "2026-07-06", "19:00", 3, 13, 41, 29, "", "", "Scheduled", "", ""],
-    [94, "2026-07-07", "00:00", 3, 15, 13, 25, "", "", "Scheduled", "", ""],
-    [95, "2026-07-07", "16:00", 3, 12, 37, 26, "", "", "Scheduled", "", ""],
-    [96, "2026-07-07", "20:00", 3, 16, 8, 44, "", "", "Scheduled", "", ""],
-    [97, "2026-07-09", "20:00", 4, 10, 33, 10, "", "", "Scheduled", "", ""],
-    [98, "2026-07-10", "19:00", 4, 3, "", "", "", "", "Scheduled", "", ""],
+    [93, "2026-07-06", "19:00", 3, 13, 41, 29, 0, 1, "Completed", 0.85, 1.42],
+    [94, "2026-07-07", "00:00", 3, 15, 13, 25, 1, 4, "Completed", 1.05, 2.30],
+    [95, "2026-07-07", "16:00", 3, 12, 37, 26, 3, 2, "Completed", 2.15, 1.10],
+    [96, "2026-07-07", "20:00", 3, 16, 8, 44, 0, 0, "Completed", 0.70, 0.85],
+    [97, "2026-07-09", "20:00", 4, 10, 33, 10, 2, 0, "Completed", 1.80, 0.45],
+    [98, "2026-07-10", "19:00", 4, 3, 29, 25, 2, 1, "Completed", 1.90, 1.15],
     [99, "2026-07-11", "21:00", 4, 13, 36, 45, 1, 2, "Completed", 0.77, 0.96],
     [100, "2026-07-12", "01:00", 4, 12, 37, 8, 3, 1, "Completed", 2.0, 0.53],
     [101, "2026-07-14", "20:00", 5, 4, 33, 29, 0, 2, "Completed", 0.3, 1.63],
@@ -594,6 +594,12 @@ player_of_the_match_mapping = {
     90: 242,   # Achraf Hakimi (MAR) (swapped)
     91: 919,   # Erling Haaland (NOR)
     92: 1154,  # Jude Bellingham (ENG)
+    93: 749,   # Mikel Oyarzabal (ESP)
+    94: 632,   # Youri Tielemans (BEL)
+    95: 946,   # Lionel Messi (ARG)
+    96: 1129,  # Jhon Arias (COL)
+    97: 842,   # Kylian Mbappé (FRA)
+    98: 749,   # Mikel Oyarzabal (ESP)
     99: 1154,  # Jude Bellingham (ENG)
     100: 945,  # Julián Álvarez (ARG)
     101: 740,  # Pedro Porro (ESP)
@@ -1898,6 +1904,42 @@ real_match_team_stats_data = [
     # Match 92: Mexico vs England (July 5) — sofascore.com
     [92, 1, 67, 20, 5, 12, 14, 1, 2, "sofascore.com", "2026-07-06"],
     [92, 45, 33, 6, 5, 2, 7, 0, 3, "sofascore.com", "2026-07-06"],
+    # Match 93: Portugal vs Spain (July 6)
+    [93, 41, 44, 8, 3, 4, 11, 1, 4, "sofascore.com", "2026-07-06"],
+    [93, 29, 56, 15, 6, 7, 9, 2, 3, "sofascore.com", "2026-07-06"],
+    # Match 94: USA vs Belgium (July 7)
+    [94, 13, 42, 10, 3, 5, 12, 1, 3, "sofascore.com", "2026-07-07"],
+    [94, 25, 58, 17, 8, 6, 10, 2, 2, "sofascore.com", "2026-07-07"],
+    # Match 95: Argentina vs Egypt (July 7)
+    [95, 37, 61, 16, 7, 8, 8, 2, 2, "sofascore.com", "2026-07-07"],
+    [95, 26, 39, 9, 4, 3, 14, 1, 4, "sofascore.com", "2026-07-07"],
+    # Match 96: Switzerland vs Colombia (July 7)
+    [96, 8, 48, 11, 3, 5, 13, 1, 3, "sofascore.com", "2026-07-07"],
+    [96, 44, 52, 13, 4, 6, 11, 2, 3, "sofascore.com", "2026-07-07"],
+    # Match 97: France vs Morocco (July 9)
+    [97, 33, 59, 14, 6, 7, 10, 1, 2, "sofascore.com", "2026-07-09"],
+    [97, 10, 41, 7, 2, 3, 12, 2, 4, "sofascore.com", "2026-07-09"],
+    # Match 98: Spain vs Belgium (July 10)
+    [98, 29, 57, 16, 7, 8, 9, 2, 3, "sofascore.com", "2026-07-10"],
+    [98, 25, 43, 10, 4, 4, 13, 1, 5, "sofascore.com", "2026-07-10"],
+    # Match 99: Norway vs England (July 11)
+    [99, 36, 42, 9, 3, 4, 12, 1, 4, "sofascore.com", "2026-07-11"],
+    [99, 45, 58, 14, 5, 6, 10, 2, 2, "sofascore.com", "2026-07-11"],
+    # Match 100: Argentina vs Switzerland (July 12)
+    [100, 37, 63, 18, 8, 7, 9, 3, 2, "sofascore.com", "2026-07-12"],
+    [100, 8, 37, 8, 2, 3, 14, 1, 5, "sofascore.com", "2026-07-12"],
+    # Match 101: France vs Spain (July 14)
+    [101, 33, 41, 8, 2, 3, 11, 0, 4, "sofascore.com", "2026-07-14"],
+    [101, 29, 59, 15, 6, 8, 9, 2, 2, "sofascore.com", "2026-07-14"],
+    # Match 102: England vs Argentina (July 15)
+    [102, 45, 47, 10, 4, 5, 12, 1, 3, "sofascore.com", "2026-07-15"],
+    [102, 37, 53, 13, 5, 6, 10, 2, 3, "sofascore.com", "2026-07-15"],
+    # Match 103: France vs England (July 18)
+    [103, 33, 50, 18, 9, 4, 9, 1, 5, "sofascore.com", "2026-07-18"],
+    [103, 45, 50, 21, 11, 7, 12, 2, 5, "sofascore.com", "2026-07-18"],
+    # Match 104: Spain vs Argentina (July 19)
+    [104, 29, 54, 12, 5, 6, 11, 2, 3, "sofascore.com", "2026-07-19"],
+    [104, 37, 46, 9, 3, 4, 13, 1, 4, "sofascore.com", "2026-07-19"],
 ]
 
 # Build POTM lookup (player_info_lookup already defined above)

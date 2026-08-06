@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/">
   <meta property="og:title" content="FIFA World Cup 2026 Dataset | ML Predictions, SQL Practice & CSV">
-  <meta property="og:description" content="Download the default FIFA World Cup 2026 relational database. Features SQL practice, Kaggle models, and BI dashboard assets. Zero synthetic data.">
+  <meta property="og:description" content="Download the default FIFA World Cup 2026 relational database. Features SQL practice, Kaggle models, and BI dashboard assets. Verified authentic match data.">
   <meta property="og:image" content="https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/assets/prediction_cover.png">
   
   <!-- Twitter -->
@@ -39,7 +39,7 @@
     "@context": "https://schema.org/",
     "@type": "Dataset",
     "name": "FIFA World Cup 2026 Relational Dataset (Live & Daily Updated)",
-    "description": "The most complete and actively updated FIFA World Cup 2026 dataset. Sourced from FIFA.com and verified providers, covering teams, venues, squads, players, match statistics, lineups, match events, expected goals (xG), and referee data. Features fully normalized relational tables (CSV and SQLite formats) with zero synthetic data.",
+    "description": "The most complete and actively updated FIFA World Cup 2026 dataset. Sourced from FIFA.com and verified providers, covering teams, venues, squads, players, match statistics, lineups, match events, expected goals (xG), and referee data. Features fully normalized relational tables (CSV and SQLite formats) with authentic match stats and rank-calibrated squad player valuations.",
     "url": "https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/",
     "sameAs": [
       "https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset",
@@ -114,7 +114,7 @@
           <li><a href="#schema">Schema</a></li>
           <li><a href="#tables">Tables</a></li>
           <li><a href="#project-ideas">Project Ideas</a></li>
-          <li><a href="#links">Links</a></li>
+          <li><a href="#citations">Citations</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li class="mobile-only-download">
             <a href="https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset" target="_blank" class="btn btn-primary">
@@ -1154,6 +1154,35 @@ preds = clf.predict(predict_df[features])
         <p style="color: var(--text-secondary); font-size: 0.9rem;">
           Yes. The database has been normalized into 11 tables with proper primary and foreign keys. This makes it perfect for SQL practice, Power BI / Tableau dashboards, or data engineering pipelines.
         </p>
+      </div>
+    </div>
+
+    <!-- Citation Box -->
+    <div class="glass-card citation-block" style="border: 1px solid rgba(242, 201, 76, 0.25); background: rgba(10, 22, 18, 0.65);">
+      <div class="citation-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+        <h4 style="font-family: var(--font-title); font-weight: 700; color: #fff; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-gold)" stroke-width="2" width="18" height="18">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          How to Cite This Dataset
+        </h4>
+        <button id="btn-copy-citation" class="copy-citation-btn" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 6px 12px; border-radius: 6px; font-family: var(--font-title); font-weight: 600; font-size: 0.78rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: var(--transition-smooth);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy BibTeX</span>
+        </button>
+      </div>
+      <div style="background: rgba(4,9,7,0.4); border-radius: 8px; border: 1px solid var(--border-color); padding: 1.25rem; overflow-x: auto;">
+        <pre class="citation-code" id="bibtex-content" style="margin: 0; font-family: monospace; font-size: 0.82rem; color: #cbd5e1; white-space: pre;">@dataset{fifa_world_cup_2026,
+  author = {MD Mominul Islam},
+  title = {FIFA World Cup 2026 Dataset - Live & Updated Stats},
+  year = {2026},
+  publisher = {Kaggle},
+  howpublished = {\url{https://mominullptr.github.io/FIFA-World-Cup-2026-Dataset/}}
+}</pre>
       </div>
     </div>
   </section>
