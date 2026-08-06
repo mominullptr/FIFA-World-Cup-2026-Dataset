@@ -1,0 +1,16 @@
+# Dependencies for FIFA World Cup 2026 Master Dataset
+# Python 3.9+ required
+
+# Core Data Science & Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning Baseline Modeling
+xgboost>=1.7.0
+scikit-learn>=1.2.0
+
+# Document & Visualization Generation
+matplotlib>=3.7.0
+reportlab>=3.6.0
+python-docx>=0.8.11
+cairosvg>=2.7.0
