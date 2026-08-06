@@ -352,16 +352,37 @@ def main():
                 'offsides': a_stats['offsides']
             })
 
-    # Write output prediction features dataset
-    out_path = os.path.join(workspace_dir, "match_prediction_features.csv")
-    with open(out_path, "w", newline="", encoding="utf-8") as f:
+    # Write output prediction features datasets
+    out_path_merged = os.path.join(workspace_dir, "match_prediction_features.csv")
+    out_path_x = os.path.join(workspace_dir, "match_prediction_features_X.csv")
+    out_path_y = os.path.join(workspace_dir, "match_prediction_targets_y.csv")
+
+    # 1. Merged dataset
+    with open(out_path_merged, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(feature_headers)
         writer.writerows(feature_rows)
 
-    print(f"Successfully generated prediction feature dataset at: {out_path}")
-    print(f"Total rows (matches): {len(feature_rows)}")
-    print(f"Features computed per match: {len(feature_headers) - 6}")
+    # 2. Features matrix X (first 60 columns)
+    x_headers = feature_headers[:60]
+    x_rows = [row[:60] for row in feature_rows]
+    with open(out_path_x, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(x_headers)
+        writer.writerows(x_rows)
+
+    # 3. Targets matrix y (match_id + last 6 columns)
+    y_headers = ["match_id"] + feature_headers[60:]
+    y_rows = [[row[0]] + row[60:] for row in feature_rows]
+    with open(out_path_y, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(y_headers)
+        writer.writerows(y_rows)
+
+    print(f"Successfully generated ML prediction datasets:")
+    print(f"  - Merged dataset: {out_path_merged}")
+    print(f"  - Features Matrix (X): {out_path_x} ({len(x_headers)} feature columns)")
+    print(f"  - Targets Matrix (y): {out_path_y} ({len(y_headers)} target columns)")
 
 if __name__ == "__main__":
     main()

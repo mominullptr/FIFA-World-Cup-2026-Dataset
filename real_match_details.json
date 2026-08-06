@@ -1,0 +1,2527 @@
+[
+  {
+    "match_id": 1,
+    "home_team": "Mexico",
+    "away_team": "South Africa",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Julián Andrés Quinones",
+        "minute": "9'",
+        "assist": "Erik Antonio Lira"
+      },
+      {
+        "scorer": "Raúl Alonso Jimenez",
+        "minute": "67'",
+        "assist": "Roberto Carlos Alvarado"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 2,
+    "home_team": "South Korea",
+    "away_team": "Czechia",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Inbeom Hwang",
+        "minute": "67'",
+        "assist": "Kangin Lee"
+      },
+      {
+        "scorer": "Hyeongyu Oh",
+        "minute": "80'",
+        "assist": "Inbeom Hwang"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ladislav Krejci",
+        "minute": "59'",
+        "assist": "Vladimír Coufal"
+      }
+    ]
+  },
+  {
+    "match_id": 3,
+    "home_team": "Canada",
+    "away_team": "Bosnia and Herzegovina",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Cyle Christopher Larin",
+        "minute": "78'",
+        "assist": "Promise Oluwatobi Emmanuel David"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Jovo Lukic",
+        "minute": "21'",
+        "assist": "Sead Kolasinac"
+      }
+    ]
+  },
+  {
+    "match_id": 4,
+    "home_team": "USA",
+    "away_team": "Paraguay",
+    "home_score": 4,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Matthew Charles Turner",
+        "minute": "7'"
+      },
+      {
+        "scorer": "Folarin Jolaoluwa Balogun",
+        "minute": "31'",
+        "assist": "Christian Mate Pulisic"
+      },
+      {
+        "scorer": "Folarin Jolaoluwa Balogun",
+        "minute": "45'",
+        "assist": "Malik Leon Tillman"
+      },
+      {
+        "scorer": "Giovanni Alejandro Reyna",
+        "minute": "90'",
+        "assist": "Alexander Michael Freeman"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Mauricio Mauricio",
+        "minute": "73'",
+        "assist": "Julio Cesar Enciso"
+      }
+    ]
+  },
+  {
+    "match_id": 5,
+    "home_team": "Qatar",
+    "away_team": "Switzerland",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Ibrahim Mahmoud Abunada",
+        "minute": "90'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Breel Donald Embolo",
+        "minute": "17'"
+      }
+    ]
+  },
+  {
+    "match_id": 6,
+    "home_team": "Brazil",
+    "away_team": "Morocco",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "José Vinicius",
+        "minute": "32'",
+        "assist": "GUIMARAESBruno Bruno"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ismael Saibari",
+        "minute": "21'",
+        "assist": "Brahim Diaz"
+      }
+    ]
+  },
+  {
+    "match_id": 7,
+    "home_team": "Haiti",
+    "away_team": "Scotland",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Mc",
+        "minute": "28'"
+      }
+    ]
+  },
+  {
+    "match_id": 8,
+    "home_team": "Australia",
+    "away_team": "Türkiye",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Nestory Irankunda",
+        "minute": "27'",
+        "assist": "Paul Michael Junior Okon-Engstler"
+      },
+      {
+        "scorer": "Connor Isaac Metcalfe",
+        "minute": "75'"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 9,
+    "home_team": "Germany",
+    "away_team": "Curaçao",
+    "home_score": 7,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Felix Kalu Nmecha",
+        "minute": "6'",
+        "assist": "Florian Richard Wirtz"
+      },
+      {
+        "scorer": "Nico Cédric Schlotterbeck",
+        "minute": "38'",
+        "assist": "Nathaniel Christopher Brown"
+      },
+      {
+        "scorer": "Kai Lukas Havertz",
+        "minute": "45'"
+      },
+      {
+        "scorer": "Jamal Musiala",
+        "minute": "47'",
+        "assist": "Joshua Walter Kimmich"
+      },
+      {
+        "scorer": "Nathaniel Christopher Brown",
+        "minute": "68'",
+        "assist": "Deniz Undav"
+      },
+      {
+        "scorer": "Deniz Undav",
+        "minute": "78'",
+        "assist": "Joshua Walter Kimmich"
+      },
+      {
+        "scorer": "Kai Lukas Havertz",
+        "minute": "88'",
+        "assist": "Deniz Undav"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Livano Shyron Liomar Comenencia",
+        "minute": "21'"
+      }
+    ]
+  },
+  {
+    "match_id": 10,
+    "home_team": "Netherlands",
+    "away_team": "Japan",
+    "home_score": 2,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Virgil Van Dijk",
+        "minute": "50'",
+        "assist": "Ryan Jiro Gravenberch"
+      },
+      {
+        "scorer": "Crysencio Jilbert Sylverio Cir Summerville",
+        "minute": "64'",
+        "assist": "Ryan Jiro Gravenberch"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Keito Nakamura",
+        "minute": "57'",
+        "assist": "Takefusa Kubo"
+      },
+      {
+        "scorer": "Daichi Kamada",
+        "minute": "88'",
+        "assist": "Koki Ogawa"
+      }
+    ]
+  },
+  {
+    "match_id": 11,
+    "home_team": "Côte d'Ivoire",
+    "away_team": "Ecuador",
+    "home_score": 1,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Amad Diallo",
+        "minute": "90'",
+        "assist": "Wilfried Stephane Singo"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 12,
+    "home_team": "Sweden",
+    "away_team": "Tunisia",
+    "home_score": 5,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Yasin Ayari",
+        "minute": "7'"
+      },
+      {
+        "scorer": "Alexander Isak",
+        "minute": "30'",
+        "assist": "Viktor Einar Gyokeres"
+      },
+      {
+        "scorer": "Viktor Einar Gyokeres",
+        "minute": "59'",
+        "assist": "Alexander Isak"
+      },
+      {
+        "scorer": "Mattias Olof Svanberg",
+        "minute": "84'",
+        "assist": "Alexander Isak"
+      },
+      {
+        "scorer": "Yasin Ayari",
+        "minute": "90'",
+        "assist": "Lucas Erik Holger Bergvall"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Omar Rekik",
+        "minute": "43'",
+        "assist": "Hannibal Mejbri"
+      }
+    ]
+  },
+  {
+    "match_id": 13,
+    "home_team": "Spain",
+    "away_team": "Cabo Verde",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 14,
+    "home_team": "Belgium",
+    "away_team": "Egypt",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Thibaut Nicolas Courtois",
+        "minute": "66'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ashour Metwaly Emam",
+        "minute": "19'",
+        "assist": "Hamed Mahrous Mohamed Salah"
+      }
+    ]
+  },
+  {
+    "match_id": 15,
+    "home_team": "Saudi Arabia",
+    "away_team": "Uruguay",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Ali Abdulelah Alamri",
+        "minute": "41'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Maximiliano Javier Araujo",
+        "minute": "80'"
+      }
+    ]
+  },
+  {
+    "match_id": 16,
+    "home_team": "IR Iran",
+    "away_team": "New Zealand",
+    "home_score": 2,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Ramin Rezaeian",
+        "minute": "32'"
+      },
+      {
+        "scorer": "Mohammad Mohebbi",
+        "minute": "64'",
+        "assist": "Ramin Rezaeian"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Elijah Henry Just",
+        "minute": "7'",
+        "assist": "Christopher Grant Wood"
+      },
+      {
+        "scorer": "Elijah Henry Just",
+        "minute": "54'",
+        "assist": "Christopher Grant Wood"
+      }
+    ]
+  },
+  {
+    "match_id": 17,
+    "home_team": "France",
+    "away_team": "Senegal",
+    "home_score": 3,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "66'",
+        "assist": "Michael Akpovie Olise"
+      },
+      {
+        "scorer": "Bradley Jean-Manuel Essolisa Barcola",
+        "minute": "82'",
+        "assist": "Adrien Thibault Marie Rabiot"
+      },
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "90'",
+        "assist": "Michael Akpovie Olise"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ibrahim Mbaye",
+        "minute": "90'",
+        "assist": "Iliman Cheikh Baroy Ndiaye"
+      }
+    ]
+  },
+  {
+    "match_id": 18,
+    "home_team": "Iraq",
+    "away_team": "Norway",
+    "home_score": 1,
+    "away_score": 4,
+    "home_goals": [
+      {
+        "scorer": "Hussein Ghadhban Aymen",
+        "minute": "39'",
+        "assist": "Fouad Aboud Amir Alammari"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "29'",
+        "assist": "David Møller Moller Wolfe"
+      },
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "43'"
+      },
+      {
+        "scorer": "Leo Skiri Ostigard",
+        "minute": "76'",
+        "assist": "Martín Odegaard"
+      },
+      {
+        "scorer": "Ørjan Haskjold Nyland",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 19,
+    "home_team": "Argentina",
+    "away_team": "Algeria",
+    "home_score": 3,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "17'",
+        "assist": "Rodrigo Javier De Paul"
+      },
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "60'"
+      },
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "76'",
+        "assist": "Nicolas Ivan Gonzalez"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 20,
+    "home_team": "Austria",
+    "away_team": "Jordan",
+    "home_score": 3,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Romano Schmid",
+        "minute": "20'",
+        "assist": "Xaver Schlager"
+      },
+      {
+        "scorer": "Alexander Schlager",
+        "minute": "76'"
+      },
+      {
+        "scorer": "Marko Arnautovic",
+        "minute": "90'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Iyad Ali Ali Olwan",
+        "minute": "50'",
+        "assist": "Mahmoud Ali Noor Alrawabdeh"
+      }
+    ]
+  },
+  {
+    "match_id": 21,
+    "home_team": "Portugal",
+    "away_team": "Congo DR",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Pedro Joao Neves",
+        "minute": "6'",
+        "assist": "Pedro Pedro Neto"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Yoane Wissa",
+        "minute": "45'",
+        "assist": "Arthur Fuka Masuaku"
+      }
+    ]
+  },
+  {
+    "match_id": 22,
+    "home_team": "England",
+    "away_team": "Croatia",
+    "home_score": 4,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Harry Edward Kane",
+        "minute": "12'"
+      },
+      {
+        "scorer": "Harry Edward Kane",
+        "minute": "42'",
+        "assist": "Declan Rice"
+      },
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "47'",
+        "assist": "Elliot Junior Anderson"
+      },
+      {
+        "scorer": "Marcus Rashford",
+        "minute": "85'",
+        "assist": "Bukayo Ayoyinka Saka"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Martin Baturina",
+        "minute": "36'",
+        "assist": "Petar Sucic"
+      },
+      {
+        "scorer": "Petar Musa",
+        "minute": "45'",
+        "assist": "Ivan Perisic"
+      }
+    ]
+  },
+  {
+    "match_id": 23,
+    "home_team": "Ghana",
+    "away_team": "Panama",
+    "home_score": 1,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Caleb Marfo Yirenkyi",
+        "minute": "90'",
+        "assist": "Antoine Serlom Semenyo"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 24,
+    "home_team": "Uzbekistan",
+    "away_team": "Colombia",
+    "home_score": 1,
+    "away_score": 3,
+    "home_goals": [
+      {
+        "scorer": "Abbosbek Fayzullaev",
+        "minute": "60'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Daniel Munoz",
+        "minute": "40'",
+        "assist": "Luis Fernando Diaz"
+      },
+      {
+        "scorer": "Luis Fernando Diaz",
+        "minute": "65'",
+        "assist": "Gustavo Adolfo Puerta"
+      },
+      {
+        "scorer": "Jaminton Leandro Campaz",
+        "minute": "90'",
+        "assist": "Juan Camilo Hernandez"
+      }
+    ]
+  },
+  {
+    "match_id": 25,
+    "home_team": "Mexico",
+    "away_team": "South Korea",
+    "home_score": 1,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Luis Francisco Romo",
+        "minute": "50'"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 26,
+    "home_team": "Czechia",
+    "away_team": "South Africa",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Michal Sadilek",
+        "minute": "6'",
+        "assist": "Alexandr Sojka"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Teboho Mokoena",
+        "minute": "83'"
+      }
+    ]
+  },
+  {
+    "match_id": 27,
+    "home_team": "Canada",
+    "away_team": "Qatar",
+    "home_score": 6,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Cyle Christopher Larin",
+        "minute": "16'"
+      },
+      {
+        "scorer": "Jonathan Christian David",
+        "minute": "29'"
+      },
+      {
+        "scorer": "Jonathan Christian David",
+        "minute": "45'"
+      },
+      {
+        "scorer": "Nathan-Dylan Saliba",
+        "minute": "64'"
+      },
+      {
+        "scorer": "Dayne Tristan St. Clair",
+        "minute": "75'"
+      },
+      {
+        "scorer": "Jonathan Christian David",
+        "minute": "90'",
+        "assist": "Nathan-Dylan Saliba"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 28,
+    "home_team": "Switzerland",
+    "away_team": "Bosnia and Herzegovina",
+    "home_score": 4,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Johan Kula Manzambi",
+        "minute": "74'",
+        "assist": "Granit Xhaka"
+      },
+      {
+        "scorer": "Ruben Estephan Vargas",
+        "minute": "84'",
+        "assist": "Breel Donald Embolo"
+      },
+      {
+        "scorer": "Johan Kula Manzambi",
+        "minute": "90'",
+        "assist": "Ruben Estephan Vargas"
+      },
+      {
+        "scorer": "Granit Xhaka",
+        "minute": "90'",
+        "assist": "Ruben Estephan Vargas"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ermin Mahmic",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 29,
+    "home_team": "Brazil",
+    "away_team": "Haiti",
+    "home_score": 3,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Matheus Matheus Cunha",
+        "minute": "23'"
+      },
+      {
+        "scorer": "Matheus Matheus Cunha",
+        "minute": "36'",
+        "assist": "José Vinicius"
+      },
+      {
+        "scorer": "José Vinicius",
+        "minute": "45'",
+        "assist": "Lucas Lucas Paqueta"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 30,
+    "home_team": "Scotland",
+    "away_team": "Morocco",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Ismael Saibari",
+        "minute": "2'",
+        "assist": "Brahim Diaz"
+      }
+    ]
+  },
+  {
+    "match_id": 31,
+    "home_team": "USA",
+    "away_team": "Australia",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Matthew Charles Turner",
+        "minute": "11'"
+      },
+      {
+        "scorer": "Alexander Michael Freeman",
+        "minute": "43'",
+        "assist": "Sergiño Gianni Dest"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 32,
+    "home_team": "Türkiye",
+    "away_team": "Paraguay",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Matias Galarza",
+        "minute": "2'",
+        "assist": "Julio Cesar Enciso"
+      }
+    ]
+  },
+  {
+    "match_id": 33,
+    "home_team": "Germany",
+    "away_team": "Côte d'Ivoire",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Deniz Undav",
+        "minute": "68'",
+        "assist": "Nadiem Amiri"
+      },
+      {
+        "scorer": "Deniz Undav",
+        "minute": "90'",
+        "assist": "Felix Kalu Nmecha"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Franck Yannick Kessie",
+        "minute": "30'",
+        "assist": "Yan Diomande"
+      }
+    ]
+  },
+  {
+    "match_id": 34,
+    "home_team": "Ecuador",
+    "away_team": "Curaçao",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 35,
+    "home_team": "Netherlands",
+    "away_team": "Sweden",
+    "home_score": 5,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Brian Ebenezer Adjei Brobbey",
+        "minute": "5'",
+        "assist": "Cody Mathès Gakpo"
+      },
+      {
+        "scorer": "Brian Ebenezer Adjei Brobbey",
+        "minute": "17'",
+        "assist": "Denzel Justus Morris Dumfries"
+      },
+      {
+        "scorer": "Cody Mathès Gakpo",
+        "minute": "47'",
+        "assist": "Denzel Justus Morris Dumfries"
+      },
+      {
+        "scorer": "Cody Mathès Gakpo",
+        "minute": "54'",
+        "assist": "Crysencio Jilbert Sylverio Cir Summerville"
+      },
+      {
+        "scorer": "Crysencio Jilbert Sylverio Cir Summerville",
+        "minute": "89'",
+        "assist": "Memphis Depay"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Anthony David Junior Elanga",
+        "minute": "59'",
+        "assist": "Alexander Isak"
+      }
+    ]
+  },
+  {
+    "match_id": 36,
+    "home_team": "Tunisia",
+    "away_team": "Japan",
+    "home_score": 0,
+    "away_score": 4,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Daichi Kamada",
+        "minute": "4'",
+        "assist": "Keito Nakamura"
+      },
+      {
+        "scorer": "Ayase Ueda",
+        "minute": "31'",
+        "assist": "Keito Nakamura"
+      },
+      {
+        "scorer": "Junya Ito",
+        "minute": "69'",
+        "assist": "Ayase Ueda"
+      },
+      {
+        "scorer": "Ayase Ueda",
+        "minute": "83'",
+        "assist": "Kaishu Sano"
+      }
+    ]
+  },
+  {
+    "match_id": 37,
+    "home_team": "Belgium",
+    "away_team": "IR Iran",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 38,
+    "home_team": "New Zealand",
+    "away_team": "Egypt",
+    "home_score": 1,
+    "away_score": 3,
+    "home_goals": [
+      {
+        "scorer": "Finn Surman",
+        "minute": "15'",
+        "assist": "Timothy John Payne"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Mohamed Zaky Mostafa Zico",
+        "minute": "58'",
+        "assist": "Hany Gamal Mohamed Hany"
+      },
+      {
+        "scorer": "Hamed Mahrous Mohamed Salah",
+        "minute": "67'",
+        "assist": "Mohamed Zaky Mostafa Zico"
+      },
+      {
+        "scorer": "Ahmed Ibrahim Trezeguet",
+        "minute": "82'",
+        "assist": "Hamed Mahrous Mohamed Salah"
+      }
+    ]
+  },
+  {
+    "match_id": 39,
+    "home_team": "Spain",
+    "away_team": "Saudi Arabia",
+    "home_score": 4,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Lamine Yamal Yamal",
+        "minute": "10'",
+        "assist": "Mikel Oyarzabal"
+      },
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "21'",
+        "assist": "Aymeric Laporte"
+      },
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "24'",
+        "assist": "Daniel Olmo"
+      },
+      {
+        "scorer": "David Raya",
+        "minute": "49'"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 40,
+    "home_team": "Uruguay",
+    "away_team": "Cabo Verde",
+    "home_score": 2,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Maximiliano Javier Araujo",
+        "minute": "44'",
+        "assist": "Federico Santiago Valverde"
+      },
+      {
+        "scorer": "Agustin Canobbio",
+        "minute": "45'",
+        "assist": "Maximiliano Javier Araujo"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Lenini Kevin Pina",
+        "minute": "21'"
+      },
+      {
+        "scorer": "Sandro Helio Varela",
+        "minute": "61'"
+      }
+    ]
+  },
+  {
+    "match_id": 41,
+    "home_team": "France",
+    "away_team": "Iraq",
+    "home_score": 3,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "14'",
+        "assist": "Michael Akpovie Olise"
+      },
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "54'",
+        "assist": "Masour Ousmane Dembele"
+      },
+      {
+        "scorer": "Masour Ousmane Dembele",
+        "minute": "66'",
+        "assist": "Michael Akpovie Olise"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 42,
+    "home_team": "Norway",
+    "away_team": "Senegal",
+    "home_score": 3,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Marcus Holmgren Holmgren Pedersen",
+        "minute": "43'"
+      },
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "48'",
+        "assist": "Martín Odegaard"
+      },
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "58'",
+        "assist": "Patrick Berg"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ismaila Sarr",
+        "minute": "53'",
+        "assist": "Sadio Mane"
+      },
+      {
+        "scorer": "Ismaila Sarr",
+        "minute": "90'",
+        "assist": "Nicolas Jackson"
+      }
+    ]
+  },
+  {
+    "match_id": 43,
+    "home_team": "Argentina",
+    "away_team": "Austria",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "38'",
+        "assist": "Facundo Axel Medina"
+      },
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "90'"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 44,
+    "home_team": "Jordan",
+    "away_team": "Algeria",
+    "home_score": 1,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Mahmoud Ahmed Nizar Alrashdan",
+        "minute": "36'",
+        "assist": "Mohammad Mousa Mousa Altamari"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ahmed Nadhir Benbouali",
+        "minute": "69'",
+        "assist": "Riyad Karim Mahrez"
+      },
+      {
+        "scorer": "Amine Ferid Gouiri",
+        "minute": "82'"
+      }
+    ]
+  },
+  {
+    "match_id": 45,
+    "home_team": "Portugal",
+    "away_team": "Uzbekistan",
+    "home_score": 5,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Ronaldo Cristiano Ronaldo",
+        "minute": "6'",
+        "assist": "Pedro Joao Cancelo"
+      },
+      {
+        "scorer": "Alexandre Nuno",
+        "minute": "17'"
+      },
+      {
+        "scorer": "Ronaldo Cristiano Ronaldo",
+        "minute": "39'",
+        "assist": "Miguel Bruno"
+      },
+      {
+        "scorer": "Diogo Diogo Costa",
+        "minute": "60'"
+      },
+      {
+        "scorer": "Alexandre Rafael Leao",
+        "minute": "87'",
+        "assist": "Vitor Vitinha"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 46,
+    "home_team": "Colombia",
+    "away_team": "Congo DR",
+    "home_score": 1,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Daniel Munoz",
+        "minute": "76'",
+        "assist": "Juan Fernando Quintero"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 47,
+    "home_team": "England",
+    "away_team": "Ghana",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 48,
+    "home_team": "Panama",
+    "away_team": "Croatia",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Ante Budimir",
+        "minute": "54'",
+        "assist": "Josip Stanisic"
+      }
+    ]
+  },
+  {
+    "match_id": 49,
+    "home_team": "Czechia",
+    "away_team": "Mexico",
+    "home_score": 0,
+    "away_score": 3,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Mateo Chavez",
+        "minute": "55'",
+        "assist": "Luis Francisco Romo"
+      },
+      {
+        "scorer": "Julián Andrés Quinones",
+        "minute": "61'",
+        "assist": "Jorge Eduardo Sanchez"
+      },
+      {
+        "scorer": "Álvaro Fidalgo",
+        "minute": "90'",
+        "assist": "Roberto Carlos Alvarado"
+      }
+    ]
+  },
+  {
+    "match_id": 50,
+    "home_team": "South Africa",
+    "away_team": "South Korea",
+    "home_score": 1,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Thapelo Maseko",
+        "minute": "63'",
+        "assist": "Tshepang Moremi"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 51,
+    "home_team": "Switzerland",
+    "away_team": "Canada",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Ruben Estephan Vargas",
+        "minute": "46'",
+        "assist": "Johan Kula Manzambi"
+      },
+      {
+        "scorer": "Johan Kula Manzambi",
+        "minute": "57'",
+        "assist": "Breel Donald Embolo"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Promise Oluwatobi Emmanuel David",
+        "minute": "76'",
+        "assist": "Nathan-Dylan Saliba"
+      }
+    ]
+  },
+  {
+    "match_id": 52,
+    "home_team": "Bosnia and Herzegovina",
+    "away_team": "Qatar",
+    "home_score": 3,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Kerim Alajbegovic",
+        "minute": "29'",
+        "assist": "Ivan Basic"
+      },
+      {
+        "scorer": "Nikola Vasilj",
+        "minute": "34'"
+      },
+      {
+        "scorer": "Ermin Mahmic",
+        "minute": "82'",
+        "assist": "Dennis Hadzikadunic"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Khalid Hassan Alhaydos",
+        "minute": "42'",
+        "assist": "Junior Edmilson"
+      }
+    ]
+  },
+  {
+    "match_id": 53,
+    "home_team": "Scotland",
+    "away_team": "Brazil",
+    "home_score": 0,
+    "away_score": 3,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "José Vinicius",
+        "minute": "7'",
+        "assist": "Vitor Rayan"
+      },
+      {
+        "scorer": "José Vinicius",
+        "minute": "45'",
+        "assist": "GUIMARAESBruno Bruno"
+      },
+      {
+        "scorer": "Matheus Matheus Cunha",
+        "minute": "60'",
+        "assist": "GUIMARAESBruno Bruno"
+      }
+    ]
+  },
+  {
+    "match_id": 54,
+    "home_team": "Morocco",
+    "away_team": "Haiti",
+    "home_score": 4,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Achraf Hakimi",
+        "minute": "39'"
+      },
+      {
+        "scorer": "Ismael Saibari",
+        "minute": "45'"
+      },
+      {
+        "scorer": "Soufiane Rahimi",
+        "minute": "78'"
+      },
+      {
+        "scorer": "Gessime Ben Youssef Mustapha Yassine",
+        "minute": "89'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Yassine Bounou",
+        "minute": "10'"
+      },
+      {
+        "scorer": "Wilson Isidor",
+        "minute": "43'"
+      }
+    ]
+  },
+  {
+    "match_id": 55,
+    "home_team": "Türkiye",
+    "away_team": "USA",
+    "home_score": 3,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Arda Guler",
+        "minute": "10'",
+        "assist": "Can Yılmaz Uzun"
+      },
+      {
+        "scorer": "Orkun Kokcu",
+        "minute": "31'",
+        "assist": "Evren Eren Elmali"
+      },
+      {
+        "scorer": "Kaan Ayhan",
+        "minute": "90'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Auston Levi-Jesaiah Trusty",
+        "minute": "3'",
+        "assist": "Sebastian Matthew Berhalter"
+      },
+      {
+        "scorer": "Sebastian Matthew Berhalter",
+        "minute": "49'"
+      }
+    ]
+  },
+  {
+    "match_id": 56,
+    "home_team": "Paraguay",
+    "away_team": "Australia",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 57,
+    "home_team": "Ecuador",
+    "away_team": "Germany",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Nilson David Angulo",
+        "minute": "9'",
+        "assist": "Pedro Jeampierre Vite"
+      },
+      {
+        "scorer": "Gonzalo Jordy Plata",
+        "minute": "77'",
+        "assist": "Moisés Isaac Caicedo"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Leroy Aziz Sane",
+        "minute": "2'",
+        "assist": "Florian Richard Wirtz"
+      }
+    ]
+  },
+  {
+    "match_id": 58,
+    "home_team": "Curaçao",
+    "away_team": "Côte d'Ivoire",
+    "home_score": 0,
+    "away_score": 2,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Nicolas Pepe",
+        "minute": "7'"
+      },
+      {
+        "scorer": "Nicolas Pepe",
+        "minute": "64'"
+      }
+    ]
+  },
+  {
+    "match_id": 59,
+    "home_team": "Tunisia",
+    "away_team": "Netherlands",
+    "home_score": 1,
+    "away_score": 3,
+    "home_goals": [
+      {
+        "scorer": "Hazem Mastouri",
+        "minute": "54'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Bart Verbruggen",
+        "minute": "3'"
+      },
+      {
+        "scorer": "Brian Ebenezer Adjei Brobbey",
+        "minute": "7'"
+      },
+      {
+        "scorer": "Paul Jan-Paul Van Hecke",
+        "minute": "62'"
+      }
+    ]
+  },
+  {
+    "match_id": 60,
+    "home_team": "Japan",
+    "away_team": "Sweden",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Daizen Maeda",
+        "minute": "56'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Anthony David Junior Elanga",
+        "minute": "62'"
+      }
+    ]
+  },
+  {
+    "match_id": 61,
+    "home_team": "New Zealand",
+    "away_team": "Belgium",
+    "home_score": 1,
+    "away_score": 5,
+    "home_goals": [
+      {
+        "scorer": "Elijah Henry Just",
+        "minute": "84'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Leandro Trossard",
+        "minute": "28'"
+      },
+      {
+        "scorer": "Leandro Trossard",
+        "minute": "50'"
+      },
+      {
+        "scorer": "Kevin De Bruyne",
+        "minute": "66'"
+      },
+      {
+        "scorer": "Romelu Lukaku",
+        "minute": "86'"
+      },
+      {
+        "scorer": "Alexis Jesse Saelemaekers",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 62,
+    "home_team": "Egypt",
+    "away_team": "IR Iran",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Saber Abdelmohsen Mahmoud",
+        "minute": "5'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ramin Rezaeian",
+        "minute": "14'"
+      }
+    ]
+  },
+  {
+    "match_id": 63,
+    "home_team": "Uruguay",
+    "away_team": "Spain",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Alejandro Baena",
+        "minute": "42'",
+        "assist": "Marcos Llorente"
+      }
+    ]
+  },
+  {
+    "match_id": 64,
+    "home_team": "Cabo Verde",
+    "away_team": "Saudi Arabia",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 65,
+    "home_team": "Norway",
+    "away_team": "France",
+    "home_score": 1,
+    "away_score": 4,
+    "home_goals": [
+      {
+        "scorer": "Thelonious Gerard Aasgaard",
+        "minute": "21'",
+        "assist": "Andreas Rædergård Schjelderup"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Masour Ousmane Dembele",
+        "minute": "7'",
+        "assist": "Kylian Mbappe"
+      },
+      {
+        "scorer": "Masour Ousmane Dembele",
+        "minute": "20'",
+        "assist": "Kylian Mbappe"
+      },
+      {
+        "scorer": "Masour Ousmane Dembele",
+        "minute": "32'",
+        "assist": "Aurélien Djani Tchouameni"
+      },
+      {
+        "scorer": "Désiré Nonka-Maho Doue",
+        "minute": "90'",
+        "assist": "Bradley Jean-Manuel Essolisa Barcola"
+      }
+    ]
+  },
+  {
+    "match_id": 66,
+    "home_team": "Senegal",
+    "away_team": "Iraq",
+    "home_score": 5,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Habib Mbacke Diarra",
+        "minute": "4'",
+        "assist": "Abdoulaye Seck"
+      },
+      {
+        "scorer": "Ismaila Sarr",
+        "minute": "56'",
+        "assist": "Lamine Camara"
+      },
+      {
+        "scorer": "Pape Alassane Gueye",
+        "minute": "59'",
+        "assist": "Ismaila Sarr"
+      },
+      {
+        "scorer": "Pape Alassane Gueye",
+        "minute": "71'",
+        "assist": "Iliman Cheikh Baroy Ndiaye"
+      },
+      {
+        "scorer": "Iliman Cheikh Baroy Ndiaye",
+        "minute": "82'",
+        "assist": "Pape Alassane Gueye"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 67,
+    "home_team": "Jordan",
+    "away_team": "Argentina",
+    "home_score": 1,
+    "away_score": 3,
+    "home_goals": [
+      {
+        "scorer": "Mohammad Mousa Mousa Altamari",
+        "minute": "55'",
+        "assist": "Manel Farhan Ehsan Haddad"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Giovani Lo Celso",
+        "minute": "19'"
+      },
+      {
+        "scorer": "Lautaro Javier Martinez",
+        "minute": "31'"
+      },
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "80'"
+      }
+    ]
+  },
+  {
+    "match_id": 68,
+    "home_team": "Algeria",
+    "away_team": "Austria",
+    "home_score": 3,
+    "away_score": 3,
+    "home_goals": [
+      {
+        "scorer": "Rafik Belghali",
+        "minute": "45'",
+        "assist": "Riyad Karim Mahrez"
+      },
+      {
+        "scorer": "Riyad Karim Mahrez",
+        "minute": "60'",
+        "assist": "Houssem-Eddine Chaabane Aouar"
+      },
+      {
+        "scorer": "Riyad Karim Mahrez",
+        "minute": "90'",
+        "assist": "Houssem-Eddine Chaabane Aouar"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Marko Arnautovic",
+        "minute": "28'",
+        "assist": "David Alaba"
+      },
+      {
+        "scorer": "Marcel Sabitzer",
+        "minute": "55'",
+        "assist": "Nicolas Seiwald"
+      },
+      {
+        "scorer": "Saša Kalajdzic",
+        "minute": "90'",
+        "assist": "Michael Gregoritsch"
+      }
+    ]
+  },
+  {
+    "match_id": 69,
+    "home_team": "Colombia",
+    "away_team": "Portugal",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 70,
+    "home_team": "Congo DR",
+    "away_team": "Uzbekistan",
+    "home_score": 3,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Yoane Wissa",
+        "minute": "68'"
+      },
+      {
+        "scorer": "Mayele Fiston Mayele",
+        "minute": "78'"
+      },
+      {
+        "scorer": "Yoane Wissa",
+        "minute": "90'",
+        "assist": "Meschack Lina Elia"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Eldor Shomurodov",
+        "minute": "10'",
+        "assist": "Akmal Mozgovoy"
+      }
+    ]
+  },
+  {
+    "match_id": 71,
+    "home_team": "Panama",
+    "away_team": "England",
+    "home_score": 0,
+    "away_score": 2,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "62'",
+        "assist": "Bukayo Ayoyinka Saka"
+      },
+      {
+        "scorer": "Harry Edward Kane",
+        "minute": "67'",
+        "assist": "Jude Victor William Bellingham"
+      }
+    ]
+  },
+  {
+    "match_id": 72,
+    "home_team": "Croatia",
+    "away_team": "Ghana",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Petar Sucic",
+        "minute": "31'"
+      },
+      {
+        "scorer": "Nikola Vlasic",
+        "minute": "83'",
+        "assist": "Luka Modric"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Derrick Luckassen",
+        "minute": "73'",
+        "assist": "Ernest Nuamah Nuamah"
+      }
+    ]
+  },
+  {
+    "match_id": 73,
+    "home_team": "South Africa",
+    "away_team": "Canada",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Stephen Eustaquio",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 74,
+    "home_team": "Brazil",
+    "away_team": "Japan",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Henrique",
+        "minute": "56'",
+        "assist": "Gabriel Gabriel Magalhaes"
+      },
+      {
+        "scorer": "MARTINELLIGabriel Gabriel",
+        "minute": "90'",
+        "assist": "GUIMARAESBruno Bruno"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Kaishu Sano",
+        "minute": "29'"
+      }
+    ]
+  },
+  {
+    "match_id": 75,
+    "home_team": "Germany",
+    "away_team": "Paraguay",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Kai Lukas Havertz",
+        "minute": "54'",
+        "assist": "Florian Richard Wirtz"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Julio Cesar Enciso",
+        "minute": "42'",
+        "assist": "Matias Galarza"
+      }
+    ]
+  },
+  {
+    "match_id": 76,
+    "home_team": "Netherlands",
+    "away_team": "Morocco",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Cody Mathès Gakpo",
+        "minute": "72'",
+        "assist": "Crysencio Jilbert Sylverio Cir Summerville"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Issa Laye Lucas Jean Diop",
+        "minute": "90'",
+        "assist": "Chemsdine Talbi"
+      }
+    ]
+  },
+  {
+    "match_id": 77,
+    "home_team": "Côte d'Ivoire",
+    "away_team": "Norway",
+    "home_score": 1,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Amad Diallo",
+        "minute": "74'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Antonio Eromonsele Nordby Nusa",
+        "minute": "39'"
+      },
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "86'",
+        "assist": "Patrick Berg"
+      }
+    ]
+  },
+  {
+    "match_id": 78,
+    "home_team": "France",
+    "away_team": "Sweden",
+    "home_score": 3,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "45'"
+      },
+      {
+        "scorer": "Bradley Jean-Manuel Essolisa Barcola",
+        "minute": "53'",
+        "assist": "Michael Akpovie Olise"
+      },
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "74'",
+        "assist": "Michael Akpovie Olise"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 79,
+    "home_team": "Mexico",
+    "away_team": "Ecuador",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Julián Andrés Quinones",
+        "minute": "22'",
+        "assist": "Roberto Carlos Alvarado"
+      },
+      {
+        "scorer": "Raúl Alonso Jimenez",
+        "minute": "31'",
+        "assist": "Julián Andrés Quinones"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 80,
+    "home_team": "England",
+    "away_team": "Congo DR",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Harry Edward Kane",
+        "minute": "75'",
+        "assist": "Anthony Michael Gordon"
+      },
+      {
+        "scorer": "Harry Edward Kane",
+        "minute": "86'",
+        "assist": "Anthony Michael Gordon"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Kibambe Brian Cipenga",
+        "minute": "7'"
+      }
+    ]
+  },
+  {
+    "match_id": 81,
+    "home_team": "Belgium",
+    "away_team": "Senegal",
+    "home_score": 3,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Romelu Lukaku",
+        "minute": "86'",
+        "assist": "Thomas Andre Meunier"
+      },
+      {
+        "scorer": "Youri Marion Tielemans",
+        "minute": "89'",
+        "assist": "Leandro Trossard"
+      },
+      {
+        "scorer": "Youri Marion Tielemans",
+        "minute": "120'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Habib Mbacke Diarra",
+        "minute": "25'"
+      },
+      {
+        "scorer": "Ismaila Sarr",
+        "minute": "51'",
+        "assist": "Moussa Niakhate"
+      }
+    ]
+  },
+  {
+    "match_id": 82,
+    "home_team": "USA",
+    "away_team": "Bosnia and Herzegovina",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Folarin Jolaoluwa Balogun",
+        "minute": "45'",
+        "assist": "Malik Leon Tillman"
+      },
+      {
+        "scorer": "Malik Leon Tillman",
+        "minute": "82'"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 83,
+    "home_team": "Spain",
+    "away_team": "Austria",
+    "home_score": 3,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "36'",
+        "assist": "Marc Cucurella"
+      },
+      {
+        "scorer": "Pedro Antonio Porro",
+        "minute": "66'",
+        "assist": "Alejandro Baena"
+      },
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "89'",
+        "assist": "Marc Cucurella"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 84,
+    "home_team": "Portugal",
+    "away_team": "Croatia",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Ronaldo Cristiano Ronaldo",
+        "minute": "68'"
+      },
+      {
+        "scorer": "RAMOSGonçalo Goncalo",
+        "minute": "90'",
+        "assist": "Alexandre Rafael Leao"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ivan Perisic",
+        "minute": "53'",
+        "assist": "Josip Stanisic"
+      }
+    ]
+  },
+  {
+    "match_id": 85,
+    "home_team": "Switzerland",
+    "away_team": "Algeria",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Breel Donald Embolo",
+        "minute": "10'",
+        "assist": "Johan Kula Manzambi"
+      },
+      {
+        "scorer": "Dan Ndoye",
+        "minute": "46'"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 86,
+    "home_team": "Australia",
+    "away_team": "Egypt",
+    "home_score": 1,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Mathew David Ryan",
+        "minute": "55'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ashour Metwaly Emam",
+        "minute": "13'"
+      }
+    ]
+  },
+  {
+    "match_id": 87,
+    "home_team": "Argentina",
+    "away_team": "Cabo Verde",
+    "home_score": 3,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "29'"
+      },
+      {
+        "scorer": "Lisandro Martinez",
+        "minute": "92'"
+      },
+      {
+        "scorer": "Juan Agustín Musso",
+        "minute": "111'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Deroy Deroy Duarte",
+        "minute": "59'"
+      },
+      {
+        "scorer": "CABRALSidny Sidny Lopes",
+        "minute": "103'"
+      }
+    ]
+  },
+  {
+    "match_id": 88,
+    "home_team": "Colombia",
+    "away_team": "Ghana",
+    "home_score": 1,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Jhon Adolfo Arias",
+        "minute": "14'",
+        "assist": "Luis Javier Suarez"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 89,
+    "home_team": "Paraguay",
+    "away_team": "France",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "70'"
+      }
+    ]
+  },
+  {
+    "match_id": 90,
+    "home_team": "Canada",
+    "away_team": "Morocco",
+    "home_score": 0,
+    "away_score": 3,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Azz-Eddine Ounahi",
+        "minute": "50'",
+        "assist": "Achraf Hakimi"
+      },
+      {
+        "scorer": "Azz-Eddine Ounahi",
+        "minute": "82'",
+        "assist": "Brahim Diaz"
+      },
+      {
+        "scorer": "Soufiane Rahimi",
+        "minute": "90'",
+        "assist": "Brahim Diaz"
+      }
+    ]
+  },
+  {
+    "match_id": 91,
+    "home_team": "Brazil",
+    "away_team": "Norway",
+    "home_score": 1,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Neymar Neymar Jr",
+        "minute": "90'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "79'",
+        "assist": "Andreas Rædergård Schjelderup"
+      },
+      {
+        "scorer": "Erling Braut Haaland",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 92,
+    "home_team": "Mexico",
+    "away_team": "England",
+    "home_score": 2,
+    "away_score": 3,
+    "home_goals": [
+      {
+        "scorer": "Julián Andrés Quinones",
+        "minute": "42'"
+      },
+      {
+        "scorer": "Raúl Alonso Jimenez",
+        "minute": "69'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "36'",
+        "assist": "Bukayo Ayoyinka Saka"
+      },
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "38'",
+        "assist": "Harry Edward Kane"
+      },
+      {
+        "scorer": "Harry Edward Kane",
+        "minute": "60'"
+      }
+    ]
+  },
+  {
+    "match_id": 93,
+    "home_team": "Portugal",
+    "away_team": "Spain",
+    "home_score": 0,
+    "away_score": 1,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Mikel Merino",
+        "minute": "90'",
+        "assist": "Ferran Torres"
+      }
+    ]
+  },
+  {
+    "match_id": 94,
+    "home_team": "USA",
+    "away_team": "Belgium",
+    "home_score": 1,
+    "away_score": 4,
+    "home_goals": [
+      {
+        "scorer": "Malik Leon Tillman",
+        "minute": "31'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Charles Marc De Ketelaere",
+        "minute": "9'",
+        "assist": "Nicolas Thierry Raskin"
+      },
+      {
+        "scorer": "Charles Marc De Ketelaere",
+        "minute": "33'",
+        "assist": "Leandro Trossard"
+      },
+      {
+        "scorer": "Hans Vanaken",
+        "minute": "57'"
+      },
+      {
+        "scorer": "Romelu Lukaku",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 95,
+    "home_team": "Argentina",
+    "away_team": "Egypt",
+    "home_score": 3,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Cristian Gabriel Romero",
+        "minute": "26'",
+        "assist": "Lionel Andrés Messi"
+      },
+      {
+        "scorer": "Lionel Andrés Messi",
+        "minute": "40'"
+      },
+      {
+        "scorer": "Julián Alvarez",
+        "minute": "55'",
+        "assist": "Alexis Mac Allister"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Ahmed Ibrahim Yasser",
+        "minute": "15'",
+        "assist": "Hamed Mahrous Mohamed Salah"
+      },
+      {
+        "scorer": "Mohamed Zaky Mostafa Zico",
+        "minute": "67'",
+        "assist": "Yousry Fouad Haissem Hassan"
+      }
+    ]
+  },
+  {
+    "match_id": 96,
+    "home_team": "Switzerland",
+    "away_team": "Colombia",
+    "home_score": 0,
+    "away_score": 0,
+    "home_goals": [],
+    "away_goals": []
+  },
+  {
+    "match_id": 97,
+    "home_team": "France",
+    "away_team": "Morocco",
+    "home_score": 2,
+    "away_score": 0,
+    "home_goals": [
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "60'",
+        "assist": "Masour Ousmane Dembele"
+      },
+      {
+        "scorer": "Bradley Jean-Manuel Essolisa Barcola",
+        "minute": "66'",
+        "assist": "Kylian Mbappe"
+      }
+    ],
+    "away_goals": []
+  },
+  {
+    "match_id": 98,
+    "home_team": "Spain",
+    "away_team": "Belgium",
+    "home_score": 2,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Daniel Olmo",
+        "minute": "30'"
+      },
+      {
+        "scorer": "Lamine Yamal Yamal",
+        "minute": "88'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Charles Marc De Ketelaere",
+        "minute": "41'",
+        "assist": "Thibaut Nicolas Courtois"
+      }
+    ]
+  },
+  {
+    "match_id": 99,
+    "home_team": "Norway",
+    "away_team": "England",
+    "home_score": 1,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Andreas Rædergård Schjelderup",
+        "minute": "36'",
+        "assist": "Martín Odegaard"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "45'",
+        "assist": "Anthony Michael Gordon"
+      },
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "93'"
+      }
+    ]
+  },
+  {
+    "match_id": 100,
+    "home_team": "Argentina",
+    "away_team": "Switzerland",
+    "home_score": 3,
+    "away_score": 1,
+    "home_goals": [
+      {
+        "scorer": "Alexis Mac Allister",
+        "minute": "10'",
+        "assist": "Lionel Andrés Messi"
+      },
+      {
+        "scorer": "Julián Alvarez",
+        "minute": "112'",
+        "assist": "Jose Manuel Alberto Lopez"
+      },
+      {
+        "scorer": "Lautaro Javier Martinez",
+        "minute": "120'"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Dan Ndoye",
+        "minute": "67'",
+        "assist": "Ricardo Ivan Rodriguez"
+      }
+    ]
+  },
+  {
+    "match_id": 101,
+    "home_team": "France",
+    "away_team": "Spain",
+    "home_score": 0,
+    "away_score": 2,
+    "home_goals": [],
+    "away_goals": [
+      {
+        "scorer": "Mikel Oyarzabal",
+        "minute": "22'"
+      },
+      {
+        "scorer": "Pedro Antonio Porro",
+        "minute": "58'",
+        "assist": "Daniel Olmo"
+      }
+    ]
+  },
+  {
+    "match_id": 102,
+    "home_team": "England",
+    "away_team": "Argentina",
+    "home_score": 1,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Anthony Michael Gordon",
+        "minute": "55'",
+        "assist": "Morgan Elliot Rogers"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Enzo Jeremías Fernandez",
+        "minute": "85'",
+        "assist": "Lionel Andrés Messi"
+      },
+      {
+        "scorer": "Lautaro Javier Martinez",
+        "minute": "90'",
+        "assist": "Lionel Andrés Messi"
+      }
+    ]
+  },
+  {
+    "match_id": 103,
+    "home_team": "France",
+    "away_team": "England",
+    "home_score": 4,
+    "away_score": 6,
+    "home_goals": [
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "48'",
+        "assist": "Michael Akpovie Olise"
+      },
+      {
+        "scorer": "Bradley Jean-Manuel Essolisa Barcola",
+        "minute": "54'",
+        "assist": "Kylian Mbappe"
+      },
+      {
+        "scorer": "Kylian Mbappe",
+        "minute": "66'",
+        "assist": "Michael Akpovie Olise"
+      },
+      {
+        "scorer": "Masour Ousmane Dembele",
+        "minute": "90'",
+        "assist": "Dayotchanculle Oswald Upamecano"
+      }
+    ],
+    "away_goals": [
+      {
+        "scorer": "Declan Rice",
+        "minute": "3'"
+      },
+      {
+        "scorer": "Ezri Ngoyo Konsa",
+        "minute": "18'",
+        "assist": "Declan Rice"
+      },
+      {
+        "scorer": "Bukayo Ayoyinka Saka",
+        "minute": "37'",
+        "assist": "Marcus Rashford"
+      },
+      {
+        "scorer": "Bukayo Ayoyinka Saka",
+        "minute": "45'",
+        "assist": "Eberechi Oluchi Eze"
+      },
+      {
+        "scorer": "Bukayo Ayoyinka Saka",
+        "minute": "87'"
+      },
+      {
+        "scorer": "Jude Victor William Bellingham",
+        "minute": "90'"
+      }
+    ]
+  },
+  {
+    "match_id": 104,
+    "home_team": "Spain",
+    "away_team": "Argentina",
+    "home_score": 1,
+    "away_score": 2,
+    "home_goals": [
+      {
+        "scorer": "Ferran Torres",
+        "minute": "106'",
+        "assist": "Nicholas Williams"
+      }
+    ],
+    "away_goals": []
+  }
+]

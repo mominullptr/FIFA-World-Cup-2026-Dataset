@@ -106,7 +106,9 @@ Table 2 provides the record counts, primary keys, foreign keys, and update frequ
 | `match_team_stats.csv` | (`match_id`, `team_id`) | `match_id`, `team_id` | 208 | Per match | Per-team tactical stats (possession %, shots, fouls, saves) |
 | `player_stats.csv` | `player_id` | `player_id`, `team_id` | 1,248 | Post-tournament| Cumulative tournament totals (goals, assists, cards, minutes) |
 | `matches_detailed.csv` | `match_id` | None (Denormalized) | 104 | Per match | Single-table analytical queries without SQL joins |
-| `match_prediction_features.csv` | `match_id` | None | 104 | Pre-match | Machine learning input vectors for match outcome prediction |
+| `match_prediction_features.csv` | `match_id` | None | 104 | Pre-match | Machine learning merged feature vector dataset |
+| `match_prediction_features_X.csv` | `match_id` | None | 104 | Pre-match | Isolated pre-match input feature matrix (60 features, 0 target leakage) |
+| `match_prediction_targets_y.csv` | `match_id` | `match_id` | 104 | Post-match | Machine learning target outcomes (`home_score`, `away_score`, `xG`, `result`) |
 
 ### 4.1 Representative Data Record Samples
 
@@ -137,18 +139,18 @@ To provide full transparency into schema implementation, Tables 4A–4C present 
 
 ## 5. Technical Validation
 
-Data quality was audited via an automated 9-stage programmatic test suite (`validate_dataset.py`) alongside a pre-cleaning error tracking log (27 raw ingestion anomalies resolved; 1.00% raw error rate) and an external ground-truth spot check of 30 matches against official FIFA Technical Study Group (TSG) post-match reports [13] (99.87% empirical accuracy).
+Data quality was audited via an automated 10-stage programmatic test suite (`validate_dataset.py`) alongside a pre-cleaning error tracking log (27 raw ingestion anomalies resolved; 1.00% raw error rate) and an external ground-truth spot check of 30 matches against official FIFA Technical Study Group (TSG) post-match reports [13] (99.87% empirical accuracy).
 
 ### 5.1 Programmatic Verification Suite
 
-Table 3 details the assertions executed across all 12 tables.
+Table 3 details the assertions executed across all database entities and the SQLite database engine.
 
-### Table 3: Programmatic 9-Stage Verification Suite Audit Results
+### Table 3: Programmatic 10-Stage Verification Suite Audit Results
 
 | Stage | Validation Domain | Mathematical Assertion / Integrity Rule | Executed Checks | Audit Result |
 | --- | --- | --- | --- | --- |
 | 1 | Row Count Integrity | N<sub>teams</sub>=48, N<sub>venues</sub>=16, N<sub>players</sub>=1248, N<sub>matches</sub>=104 | 4 | **PASS (100% Verified)** |
-| 2 | Primary Key Uniqueness | Count(PK<sub>t</sub>) = CountDistinct(PK<sub>t</sub>) across all 12 tables | 12 | **PASS (100% Verified)** |
+| 2 | Primary Key Uniqueness | Count(PK<sub>t</sub>) = CountDistinct(PK<sub>t</sub>) across all tables | 12 | **PASS (100% Verified)** |
 | 3 | Referential Integrity | Zero orphaned foreign key child rows (FK ∈ PK<sub>Parent</sub>) | 8 | **PASS (100% Verified)** |
 | 4 | Score & Status Logic | Status == 'Completed' ⇒ Score ≠ NULL and xG ≥ 0 | 3 | **PASS (100% Verified)** |
 | 5 | Denormalized Alignment | MatchesDetailed.HomeScore == Matches.HomeScore | 2 | **PASS (100% Verified)** |
@@ -156,6 +158,7 @@ Table 3 details the assertions executed across all 12 tables.
 | 7 | Tactical Stat Bounds | 80% ≤ P<sub>home</sub> + P<sub>away</sub> + P<sub>contested</sub> ≤ 100% | 3 | **PASS (100% Verified)** |
 | 8 | Event-Player Sum Consistency | ∑ Events<sub>goal</sub>(p) == PlayerStats.Goals(p) | 3 | **PASS (100% Verified)** |
 | 9 | Goalkeeper Constraints | Saves(p) > 0 ⇒ Position(p) == 'GK' | 2 | **PASS (100% Verified)** |
+| 10 | SQLite DB Engine DDL Audit | `PRAGMA foreign_key_check` = 0; View `vw_match_summaries` exists | 2 | **PASS (100% Verified)** |
 
 ### 5.2 Empirical Visualizations
 

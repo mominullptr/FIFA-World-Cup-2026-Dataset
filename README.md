@@ -65,30 +65,35 @@ The FIFA World Cup 2026 Dataset has started gaining traction within the data sci
 
 ## 🤖 ML-Ready Match Prediction Dataset
 
-Skip the tedious feature engineering. This repository includes `match_prediction_features.csv`, a dataset engineered specifically for sports analytics and machine learning:
+Skip tedious feature engineering. This repository provides pre-engineered machine learning matrices:
+- **`match_prediction_features_X.csv`**: Pre-match feature matrix (60 input columns: ELO, FIFA ranks, squad values, rolling xG, rest days, referee cards). Zero target leakage!
+- **`match_prediction_targets_y.csv`**: Match outcomes (`home_score`, `away_score`, `home_xg`, `away_xg`, `result_type`, `match_result`).
+- **`match_prediction_features.csv`**: Merged convenience dataset.
 
 ```python
 import pandas as pd
 from xgboost import XGBClassifier
 
-# Load dataset
-df = pd.read_csv("match_prediction_features.csv")
+# Load isolated features (X) and targets (y)
+X = pd.read_csv("match_prediction_features_X.csv")
+y = pd.read_csv("match_prediction_targets_y.csv")
 
 # Train on Group Stage matches (1 to 72), evaluate on Knockout Stage (73 to 104)
-train_df = df[df["match_id"] <= 72]
-test_df = df[df["match_id"] > 72]
+train_mask = X["match_id"] <= 72
+test_mask = X["match_id"] > 72
 
-# Features: Elo ratings, FIFA rankings, Squad total market values, Rolling form xG
-features = ["home_elo", "away_elo", "home_fifa_rank", "away_fifa_rank", 
-            "home_squad_total_value_eur", "home_prev_avg_xg_scored", "away_prev_avg_xg_scored"]
+feature_cols = [c for c in X.columns if c not in ["match_id", "date", "kickoff_time_utc"]]
 
-# Fit XGBoost Classifier to predict match result ('H', 'D', 'A')
+X_train, y_train = X.loc[train_mask, feature_cols], y.loc[train_mask, "match_result"]
+X_test, y_test = X.loc[test_mask, feature_cols], y.loc[test_mask, "match_result"]
+
+# Fit XGBoost Classifier
 clf = XGBClassifier()
-clf.fit(train_df[features], train_df["match_result"])
+clf.fit(X_train, y_train)
 
 # Evaluate predictions on Knockout Stage
-predictions = clf.predict(test_df[features])
-print("Forecasted outcomes:", predictions)
+accuracy = clf.score(X_test, y_test)
+print(f"Knockout Stage Outcome Accuracy: {accuracy * 100:.1f}%")
 ```
 
 ---

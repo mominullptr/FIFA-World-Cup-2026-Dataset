@@ -155,7 +155,7 @@ lineup_id,match_id,player_id,team_id,is_starting_xi,tactical_position,minutes_pl
 154,3,154,6,0,DEF,0
 155,3,155,6,1,FWD,62
 156,3,156,6,0,MID,0
-157,4,313,13,0,GK,0
+157,4,313,13,0,GK,30
 158,4,314,13,1,DEF,72
 159,4,315,13,1,DEF,90
 160,4,316,13,1,MID,90
@@ -1351,7 +1351,7 @@ lineup_id,match_id,player_id,team_id,is_starting_xi,tactical_position,minutes_pl
 1350,26,50,2,0,DEF,0
 1351,26,51,2,0,FWD,6
 1352,26,52,2,0,DEF,0
-1353,27,105,5,0,GK,0
+1353,27,105,5,0,GK,30
 1354,27,106,5,1,DEF,90
 1355,27,107,5,0,DEF,0
 1356,27,108,5,1,DEF,71
@@ -1559,7 +1559,7 @@ lineup_id,match_id,player_id,team_id,is_starting_xi,tactical_position,minutes_pl
 1558,30,258,10,1,MID,90
 1559,30,259,10,0,DEF,0
 1560,30,260,10,0,DEF,0
-1561,31,313,13,0,GK,0
+1561,31,313,13,0,GK,30
 1562,31,314,13,1,DEF,80
 1563,31,315,13,1,DEF,90
 1564,31,316,13,1,MID,90
@@ -1975,7 +1975,7 @@ lineup_id,match_id,player_id,team_id,is_starting_xi,tactical_position,minutes_pl
 1974,38,674,26,0,DEF,0
 1975,38,675,26,0,FWD,6
 1976,38,676,26,0,GK,0
-1977,39,729,29,0,GK,0
+1977,39,729,29,0,GK,30
 1978,39,730,29,0,DEF,0
 1979,39,731,29,0,DEF,0
 1980,39,732,29,0,DEF,0
@@ -4471,7 +4471,7 @@ lineup_id,match_id,player_id,team_id,is_starting_xi,tactical_position,minutes_pl
 4470,86,674,26,0,DEF,0
 4471,86,675,26,0,FWD,0
 4472,86,676,26,0,GK,0
-4473,87,937,37,0,GK,0
+4473,87,937,37,0,GK,30
 4474,87,938,37,0,DEF,0
 4475,87,939,37,0,DEF,35
 4476,87,940,37,0,DEF,16
