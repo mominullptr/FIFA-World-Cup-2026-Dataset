@@ -497,7 +497,7 @@ matches_data = [
     [101, "2026-07-14", "20:00", 5, 4, 33, 29, 0, 2, "Completed", 0.3, 1.63],
     [102, "2026-07-15", "20:00", 5, 9, 45, 37, 1, 2, "Completed", 0.54, 1.80],
     [103, "2026-07-18", "22:00", 6, 13, 33, 45, 4, 6, "Completed", 2.88, 2.88],
-    [104, "2026-07-19", "20:00", 7, 2, 29, 37, 1, 2, "Completed", 1.12, 1.95]
+    [104, "2026-07-19", "20:00", 7, 2, 29, 37, 1, 0, "Completed", 1.42, 0.88]
 ]
 
 # Player of the match mapping (match_id -> player_id) for completed matches 1-44
@@ -605,7 +605,7 @@ player_of_the_match_mapping = {
     101: 740,  # Pedro Porro (ESP)
     102: 946,  # Lionel Messi (ARG)
     103: 1151, # Bukayo Saka (ENG)
-    104: 946,  # Lionel Messi (ARG)
+    104: 735,  # Ferran Torres (ESP)
 }
 
 # Penalty and Result Type mappings for knockout stage matches

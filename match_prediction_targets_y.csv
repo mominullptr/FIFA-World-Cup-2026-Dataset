@@ -102,4 +102,4 @@ match_id,home_score,away_score,result_type,home_xg,away_xg,match_result
 101,0,2,Regular,0.3,1.63,A
 102,1,2,Regular,0.54,1.8,A
 103,4,6,Regular,2.88,2.88,A
-104,1,2,AET,1.12,1.95,A
+104,1,0,AET,1.42,0.88,H
