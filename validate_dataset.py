@@ -351,6 +351,11 @@ def main():
                 if saves_val == "" or conceded_val == "" or cs_val == "":
                     print(f"[FAIL] Error: Goalkeeper {pid} has NULL goalkeeper statistics.")
                     errors += 1
+                # Goalkeeper goals check: Goalkeepers should not have goals
+                gk_goals_val = int(row[7]) if row[7] != "" else 0
+                if gk_goals_val > 0:
+                    print(f"[FAIL] Error: Goalkeeper {pid} ({row[1]}) has non-zero goals ({gk_goals_val}) in player_stats.csv.")
+                    errors += 1
 
             # Validate optional performance metrics if populated
             optional_cols = [9, 10, 18] # shots, shots_on_target, average_rating
@@ -452,6 +457,13 @@ def main():
             if ps_mins != expected["minutes"]:
                 print(f"[FAIL] Error: Player {pid} minutes_played={ps_mins} but lineups say {expected['minutes']}.")
                 errors += 1
+
+        total_ogs_in_ps = sum(int(row[14]) if row[14] != "" else 0 for row in ps_rows)
+        if total_ogs_in_ps != 14:
+            print(f"[FAIL] Error: Total own_goals in player_stats.csv is {total_ogs_in_ps} (expected exactly 14).")
+            errors += 1
+        else:
+            print(f"  [OK] Total own_goals across all players is verified ({total_ogs_in_ps} own goals).")
 
         if errors == 0:
             print("  [OK] player_stats.csv passes all integrity checks.")

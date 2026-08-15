@@ -103,7 +103,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 102,Alexandr Sojka,4,MID,3,2,142,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 103,Hugo Sochurek,4,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 104,Denis Visinsky,4,FWD,1,1,56,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-105,Dayne Tristan St. Clair,5,GK,1,0,30,1,0,,,0,0,0,0,0,0,0,,sofascore.com,2026-07-19
+105,Dayne Tristan St. Clair,5,GK,1,0,30,0,0,,,0,0,0,0,0,0,0,,sofascore.com,2026-07-19
 106,Alistair William Johnston,5,DEF,5,5,450,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 107,Alfie Charles Jones,5,DEF,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 108,Luc De Fougerolles,5,DEF,4,3,282,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -129,7 +129,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 128,Promise Oluwatobi Emmanuel David,5,FWD,4,1,155,1,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 129,Nathan-Dylan Saliba,5,MID,4,3,273,1,2,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 130,Jayden Nelson,5,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
-131,Nikola Vasilj,6,GK,4,4,360,1,0,,,0,0,0,0,0,12,8,,sofascore.com,2026-07-19
+131,Nikola Vasilj,6,GK,4,4,360,0,0,,,0,0,0,0,0,12,8,,sofascore.com,2026-07-19
 132,Nihad Mujakic,6,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 133,Dennis Hadzikadunic,6,DEF,1,0,27,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 134,Tarik Muharemovic,6,DEF,3,3,270,0,0,,,0,1,0,0,,,,,sofascore.com,2026-07-19
@@ -155,7 +155,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 154,Arjan Malic,6,DEF,1,1,46,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 155,Jovo Lukic,6,FWD,2,1,67,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 156,Ermin Mahmic,6,MID,3,0,67,2,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-157,Ibrahim Mahmoud Abunada,7,GK,3,3,270,1,0,,,0,0,0,0,0,16,10,,sofascore.com,2026-07-19
+157,Ibrahim Mahmoud Abunada,7,GK,3,3,270,0,0,,,0,0,0,1,0,16,10,,sofascore.com,2026-07-19
 158,Miguel Pedro,7,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 159,Michel Lucas,7,DEF,1,0,3,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 160,Gueye Issa Laye,7,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -180,9 +180,9 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 179,Omer Assim Madibo,7,MID,2,2,169,0,0,,,0,1,0,0,,,,,sofascore.com,2026-07-19
 180,Mohammad Tahsin,7,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 181,Alhussein Alhashmi,7,DEF,1,0,31,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-182,Naceur Mohamed Manai,7,FWD,3,0,66,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+182,Naceur Mohamed Manai,7,FWD,3,0,66,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 183,Gregor Kobel,8,GK,6,6,540,0,0,,,0,0,0,0,2,19,6,,sofascore.com,2026-07-19
-184,Miro Max Maria Muheim,8,DEF,1,0,1,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+184,Miro Max Maria Muheim,8,DEF,1,0,1,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 185,Silvan Dominic Widmer,8,DEF,3,1,105,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 186,Nico Elvedi,8,DEF,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 187,Manuel Obafemi Akanji,8,DEF,6,6,540,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -233,7 +233,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 232,IBANEZRoger Roger,9,DEF,1,1,46,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 233,Thiago Igor Thiago,9,FWD,1,1,61,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 234,Vitor Rayan,9,FWD,4,3,289,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-235,Yassine Bounou,10,GK,6,6,570,1,0,,,0,0,0,0,2,17,6,,sofascore.com,2026-07-19
+235,Yassine Bounou,10,GK,6,6,570,0,0,,,0,0,0,1,2,17,6,,sofascore.com,2026-07-19
 236,Achraf Hakimi,10,DEF,6,6,570,1,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 237,Noussair Mazraoui,10,DEF,6,5,477,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 238,Sofyan Amrabat,10,MID,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -311,7 +311,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 310,Anthony Ralston,12,DEF,2,0,10,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 311,Findlay Kenneth Curtis,12,FWD,2,0,9,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 312,Mc,12,DEF,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-313,Matthew Charles Turner,13,GK,4,2,240,2,0,,,0,0,0,0,0,7,7,,sofascore.com,2026-07-19
+313,Matthew Charles Turner,13,GK,4,2,240,0,0,,,0,0,0,0,0,7,7,,sofascore.com,2026-07-19
 314,Sergiño Gianni Dest,13,DEF,5,4,343,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 315,Christopher Jeffrey Richards,13,DEF,4,4,360,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-19
 316,Tyler Shaan Adams,13,MID,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -352,7 +352,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 351,Jose Maria Canale,14,DEF,4,2,217,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 352,Adrián Andrés Cubas,14,MID,4,4,390,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 353,Gustavo Raul Gomez,14,DEF,4,4,390,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-354,Damián Josue Bobadilla,14,MID,4,2,190,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+354,Damián Josue Bobadilla,14,MID,4,2,190,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 355,Alejandro Sebastian Romero Gamarra,14,FWD,1,0,11,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 356,Alex Adrian Arce,14,FWD,3,1,141,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 357,Julio Cesar Enciso,14,FWD,4,4,327,1,2,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -363,7 +363,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 362,Gustavo Ruben Caballero,14,MID,2,1,155,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 363,Isidro Miguel Pitta,14,FWD,2,2,136,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 364,Alexandro Maidana,14,DEF,3,2,145,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-365,Mathew David Ryan,15,GK,1,0,1,1,0,,,0,0,0,0,0,0,0,,sofascore.com,2026-07-19
+365,Mathew David Ryan,15,GK,1,0,1,0,0,,,0,0,0,0,0,0,0,,sofascore.com,2026-07-19
 366,Milos Degenek,15,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 367,Alessandro Circati,15,DEF,4,4,390,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-19
 368,Jacob Michael Italiano,15,DEF,2,2,164,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-19
@@ -383,7 +383,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 382,Patrick Thomas Beach,15,GK,4,4,389,0,0,,,0,0,0,0,2,11,3,,sofascore.com,2026-07-19
 383,Harry James Souttar,15,DEF,4,4,390,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-19
 384,Cristian Volpato,15,FWD,3,2,161,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-385,Cameron Robert Burgess,15,DEF,2,2,136,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+385,Cameron Robert Burgess,15,DEF,2,2,136,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 386,Jackson Alexander Irvine,15,MID,4,2,223,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-19
 387,Nishan Matthew Velupillay,15,FWD,2,1,75,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 388,Paul Michael Junior Okon-Engstler,15,MID,4,2,196,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -519,7 +519,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 518,Jeremy Alberto Arevalo,20,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 519,Jackson Gabriel Porozo,20,DEF,1,0,28,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 520,Yaimar Abel Medina,20,DEF,1,0,44,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-521,Bart Verbruggen,21,GK,4,4,390,1,0,,,0,0,0,0,0,12,5,,sofascore.com,2026-07-19
+521,Bart Verbruggen,21,GK,4,4,390,0,0,,,0,0,0,0,0,12,5,,sofascore.com,2026-07-19
 522,Lutsharel Emiliano Geertruida,21,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 523,Marten Elco De Roon,21,MID,1,0,10,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 524,Virgil Van Dijk,21,DEF,4,4,390,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -613,7 +613,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 612,Khalil Ayari,24,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 613,Mohamed Hadj Mahmoud,24,MID,2,0,41,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 614,Aymen Dahmen,24,GK,2,2,180,0,0,,,0,0,0,0,0,7,7,,sofascore.com,2026-07-19
-615,Ellyes Joris Skhiri,24,MID,3,3,252,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+615,Ellyes Joris Skhiri,24,MID,3,3,252,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 616,Rayan Elloumi,24,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 617,Firas Chaouat,24,FWD,3,0,47,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 618,Yan Valery,24,DEF,3,3,252,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -623,7 +623,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 622,Raed Chikhaoui,24,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 623,Anis Slimane,24,MID,3,3,241,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 624,Sebastian Tounekti,24,MID,3,1,83,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-625,Thibaut Nicolas Courtois,25,GK,6,6,570,1,1,,,0,0,0,0,1,15,7,,sofascore.com,2026-07-19
+625,Thibaut Nicolas Courtois,25,GK,6,6,570,0,1,,,0,0,0,0,1,15,7,,sofascore.com,2026-07-19
 626,Zeno Koen Debast,25,DEF,2,2,180,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 627,Arthur Nicolas Theate,25,DEF,5,4,407,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 628,Brandon Erik Mechele,25,DEF,4,4,390,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -651,7 +651,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 650,Matias Fernandez-Pardo,25,FWD,5,2,221,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 651,Elsayed Mohamed Mohamed Elshenawy,26,GK,1,1,90,0,0,,,0,0,0,0,0,4,3,,sofascore.com,2026-07-19
 652,Ahmed Ibrahim Yasser,26,DEF,5,3,406,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-653,Hany Gamal Mohamed Hany,26,DEF,5,5,480,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+653,Hany Gamal Mohamed Hany,26,DEF,5,5,480,0,1,,,0,0,0,2,,,,,sofascore.com,2026-07-19
 654,Abdelmegeed Abdelsalam Hossam Abdelmaguid,26,DEF,2,0,59,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 655,Abdelaziz Moustafa Ramy Rabia,26,DEF,5,3,368,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 656,Abdelmoneim Elsayed Mohamed,26,DEF,3,2,105,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -727,7 +727,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 726,Callan Rennie Elliot,28,DEF,1,0,12,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 727,Lachlan Ryan Bayliss,28,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 728,Thomas Jefferson Smith,28,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
-729,David Raya,29,GK,4,3,300,1,0,,,0,0,0,0,2,8,1,,sofascore.com,2026-07-19
+729,David Raya,29,GK,4,3,300,0,0,,,0,0,0,0,2,8,1,,sofascore.com,2026-07-19
 730,Marc Pubill,29,DEF,1,0,1,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 731,Alejandro Grimaldo,29,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 732,Eric Garcia,29,DEF,4,3,291,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -755,7 +755,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 754,Borja Iglesias,29,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 755,José Vozinha,30,GK,4,4,390,0,0,,,0,0,0,0,2,23,5,,sofascore.com,2026-07-19
 756,Ianique Stopira,30,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
-757,Alberto Diney,30,DEF,4,4,390,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+757,Alberto Diney,30,DEF,4,4,390,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 758,Carlos Pico Lopes,30,DEF,4,4,390,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 759,Evans Logan Costa,30,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 760,Lenini Kevin Pina,30,MID,4,4,350,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -783,7 +783,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 782,Hassan Ali Majrashi,31,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 783,Mohammed Ali Lajami,31,DEF,3,1,148,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 784,Ali Abdulelah Alamri,31,DEF,3,3,240,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-785,Mohammed Hassan Altambakti,31,DEF,3,3,213,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+785,Mohammed Hassan Altambakti,31,DEF,3,3,213,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 786,Essa Nasser Aldawsari,31,MID,3,2,207,0,0,,,1,0,0,0,,,,,sofascore.com,2026-07-19
 787,Fahad Musab Aljuwayr,31,MID,3,2,153,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 788,Yahya Aiman Yahya,31,FWD,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
@@ -885,7 +885,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 884,Pape Alassane Gueye,34,MID,4,3,237,2,1,,,1,0,0,0,,,,,sofascore.com,2026-07-19
 885,Talib Raheem Fahad Talib,35,GK,0,0,0,0,0,,,0,0,0,0,0,0,0,,,2026-07-19
 886,Ghareeb Solaka Rebin Sulaka,35,DEF,2,1,120,0,0,,,0,1,0,0,,,,,sofascore.com,2026-07-19
-887,Haydar Hussein Hussein,35,DEF,2,2,163,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+887,Haydar Hussein Hussein,35,DEF,2,2,163,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 888,Tahseen Abd Zaid Zaid,35,DEF,2,2,150,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 889,Hashim Rahman Akam Hashim,35,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 890,Younus Hashim Munaf Younus,35,DEF,1,0,74,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -909,7 +909,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 908,Ismael Khaleel Zaid Ismael,35,MID,2,2,119,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 909,Saadoon Abbood Mustafa,35,DEF,1,0,17,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 910,Dhia Jirjis Frans,35,DEF,1,1,90,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-911,Ørjan Haskjold Nyland,36,GK,5,5,450,1,0,,,0,0,0,0,0,15,7,,sofascore.com,2026-07-19
+911,Ørjan Haskjold Nyland,36,GK,5,5,450,0,0,,,0,0,0,0,0,15,7,,sofascore.com,2026-07-19
 912,Morten Thorsby,36,MID,1,0,44,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 913,Kristoffer Vassbakk Köpp Ajer,36,DEF,5,5,450,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 914,Leo Skiri Ostigard,36,DEF,4,1,114,1,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -935,7 +935,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 934,Sondre Klingen Langas,36,DEF,1,0,24,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 935,Henrik Sælebakke Falchener,36,DEF,1,1,66,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 936,Julian Ryerson,36,FWD,3,3,166,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-937,Juan Agustín Musso,37,GK,3,2,210,1,0,,,0,0,0,0,0,4,3,,sofascore.com,2026-07-19
+937,Juan Agustín Musso,37,GK,3,2,210,0,0,,,0,0,0,0,0,4,3,,sofascore.com,2026-07-19
 938,Marcos Nicolás Senesi,37,DEF,4,3,289,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 939,Nicolás Alejandro Tagliafico,37,DEF,5,3,334,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 940,Gonzalo Ariel Montiel,37,DEF,4,2,137,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -987,7 +987,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 986,Yassine Titraoui,38,MID,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 987,Fares Ghedjemis,38,FWD,1,0,1,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 988,Samir Sophian Chergui,38,DEF,1,0,19,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-989,Alexander Schlager,39,GK,4,4,360,1,0,,,0,0,0,0,0,12,9,,sofascore.com,2026-07-19
+989,Alexander Schlager,39,GK,4,4,360,0,0,,,0,0,0,0,0,12,9,,sofascore.com,2026-07-19
 990,David Leopold Affengruber,39,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
 991,Kevin Danso,39,DEF,4,2,239,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 992,Xaver Schlager,39,MID,4,4,240,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -1017,7 +1017,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 1016,Ali Hasan Mohammad,40,DEF,1,0,5,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1017,Mousa Musallam Abdallah Nasib,40,DEF,3,3,261,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1018,Ali Mohammad Husam Abudahab,40,DEF,2,2,180,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
-1019,Mousa Mahmoud Yazan Alarab,40,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+1019,Mousa Mahmoud Yazan Alarab,40,DEF,3,3,270,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 1020,Rasem Adel Amer Jamous,40,MID,1,0,14,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1021,Faisal Yousef Mohammad,40,FWD,2,0,2,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1022,Mahmoud Ali Noor Alrawabdeh,40,MID,3,3,270,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -1039,7 +1039,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 1038,Ahmad Ali Ali Azaizeh,40,FWD,3,1,53,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1039,Ratib Mohammad Mohammad Aldaoud,40,MID,1,0,2,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1040,Said Ghazi Anas Badawi,40,DEF,0,0,0,0,0,,,0,0,0,0,,,,,,2026-07-19
-1041,Diogo Diogo Costa,41,GK,5,5,450,1,0,,,0,0,0,0,2,22,3,,sofascore.com,2026-07-19
+1041,Diogo Diogo Costa,41,GK,5,5,450,0,0,,,0,0,0,0,2,22,3,,sofascore.com,2026-07-19
 1042,SEMEDONélson Nelson,41,DEF,3,0,89,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1043,Rúben Ruben Dias,41,DEF,4,4,360,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1044,Tomás Tomas Araujo,41,DEF,2,2,180,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
@@ -1092,7 +1092,7 @@ player_id,player_name,team_id,position,matches_played,matches_started,minutes_pl
 1091,Edo Kayembe Kayembe,42,MID,3,2,159,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1092,Arthur Fuka Masuaku,42,DEF,4,4,317,0,1,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1093,Utkir Yusupov,43,GK,1,1,90,0,0,,,0,0,0,0,0,6,3,,sofascore.com,2026-07-19
-1094,Abdukodir Khusanov,43,DEF,3,3,270,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
+1094,Abdukodir Khusanov,43,DEF,3,3,270,0,0,,,0,0,0,1,,,,,sofascore.com,2026-07-19
 1095,Khojiakbar Alijonov,43,DEF,2,1,134,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1096,Farrukh Sayfiev,43,DEF,1,0,44,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
 1097,Rustamjon Ashurmatov,43,DEF,3,3,257,0,0,,,0,0,0,0,,,,,sofascore.com,2026-07-19
