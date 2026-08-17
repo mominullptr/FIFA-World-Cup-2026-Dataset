@@ -219,8 +219,8 @@ def build_db():
         else:
             print(f"  [SKIP] Optional or missing file: {csv_name}")
             
-    # Create analytical view
-    print("\nCreating analytical view 'vw_match_summaries'...")
+    # Create analytical views
+    print("\nCreating analytical views 'vw_match_summaries' and 'vw_team_goal_summary'...")
     try:
         cursor.execute("DROP VIEW IF EXISTS vw_match_summaries;")
         cursor.execute("""
@@ -246,8 +246,65 @@ def build_db():
             JOIN referees r ON m.referee_id = r.referee_id;
         """)
         print("  [OK] View 'vw_match_summaries' created successfully.")
+
+        cursor.execute("DROP VIEW IF EXISTS vw_team_goal_summary;")
+        cursor.execute("""
+            CREATE VIEW vw_team_goal_summary AS
+            SELECT 
+                t.team_id,
+                t.team_name,
+                t.confederation,
+                COUNT(DISTINCT m.match_id) AS matches_played,
+                COALESCE(pg.player_goals, 0) AS player_goals,
+                COALESCE(pog.own_goals_conceded, 0) AS own_goals_conceded,
+                COALESCE(oog.opponent_own_goals, 0) AS opponent_own_goals,
+                COALESCE(mg.total_goals_scored, 0) AS total_goals_scored,
+                COALESCE(mga.total_goals_conceded, 0) AS total_goals_conceded,
+                COALESCE(mg.total_goals_scored, 0) - COALESCE(mga.total_goals_conceded, 0) AS goal_difference
+            FROM teams t
+            LEFT JOIN matches m ON m.home_team_id = t.team_id OR m.away_team_id = t.team_id
+            LEFT JOIN (
+                SELECT team_id, SUM(goals) AS player_goals 
+                FROM player_stats 
+                GROUP BY team_id
+            ) pg ON t.team_id = pg.team_id
+            LEFT JOIN (
+                SELECT team_id, SUM(own_goals) AS own_goals_conceded 
+                FROM player_stats 
+                GROUP BY team_id
+            ) pog ON t.team_id = pog.team_id
+            LEFT JOIN (
+                SELECT 
+                    t_sub.team_id,
+                    SUM(CASE WHEN m_sub.home_team_id = t_sub.team_id THEN m_sub.home_score ELSE m_sub.away_score END) AS total_goals_scored
+                FROM teams t_sub
+                JOIN matches m_sub ON m_sub.home_team_id = t_sub.team_id OR m_sub.away_team_id = t_sub.team_id
+                WHERE m_sub.status = 'Completed'
+                GROUP BY t_sub.team_id
+            ) mg ON t.team_id = mg.team_id
+            LEFT JOIN (
+                SELECT 
+                    t_sub.team_id,
+                    SUM(CASE WHEN m_sub.home_team_id = t_sub.team_id THEN m_sub.away_score ELSE m_sub.home_score END) AS total_goals_conceded
+                FROM teams t_sub
+                JOIN matches m_sub ON m_sub.home_team_id = t_sub.team_id OR m_sub.away_team_id = t_sub.team_id
+                WHERE m_sub.status = 'Completed'
+                GROUP BY t_sub.team_id
+            ) mga ON t.team_id = mga.team_id
+            LEFT JOIN (
+                SELECT 
+                    CASE WHEN m_sub.home_team_id = me.team_id THEN m_sub.away_team_id ELSE m_sub.home_team_id END AS benefiting_team_id,
+                    COUNT(*) AS opponent_own_goals
+                FROM match_events me
+                JOIN matches m_sub ON me.match_id = m_sub.match_id
+                WHERE me.event_type = 'Own Goal'
+                GROUP BY benefiting_team_id
+            ) oog ON t.team_id = oog.benefiting_team_id
+            GROUP BY t.team_id;
+        """)
+        print("  [OK] View 'vw_team_goal_summary' created successfully.")
     except Exception as e:
-        print(f"  [ERROR] Failed to create view: {e}")
+        print(f"  [ERROR] Failed to create views: {e}")
 
     # Check foreign key integrity
     cursor.execute("PRAGMA foreign_key_check;")

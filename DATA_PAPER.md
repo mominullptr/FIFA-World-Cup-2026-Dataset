@@ -101,10 +101,10 @@ Table 2 provides the record counts, primary keys, foreign keys, and update frequ
 | `referees.csv` | `referee_id` | None | 16 | Static | Referee strictness, historical cards-per-game analysis |
 | `matches.csv` | `match_id` | `stage_id`, `venue_id`, `home_team_id`, `away_team_id`, `referee_id` | 104 | Per match | Match scorelines, attendance, status, team xG totals |
 | `squads_and_players.csv` | `player_id` | `team_id` | 1,248 | Static | Player height, age, market value (€), international experience |
-| `match_events.csv` | `event_id` | `match_id`, `team_id`, `player_id` | 500+ | Per match | Goal, card, substitution, VAR event timelines |
+| `match_events.csv` | `event_id` | `match_id`, `team_id`, `player_id` | 500+ | Per match | Chronological goal (294), own goal (14), assist, card, and VAR event timelines |
 | `match_lineups.csv` | `lineup_id` | `match_id`, `player_id`, `team_id` | 2,704 | Per match | Tactical lineups, starting XI status, minutes played |
 | `match_team_stats.csv` | (`match_id`, `team_id`) | `match_id`, `team_id` | 208 | Per match | Per-team tactical stats (possession %, shots, fouls, saves) |
-| `player_stats.csv` | `player_id` | `player_id`, `team_id` | 1,248 | Post-tournament| Cumulative tournament totals (goals, assists, cards, minutes) |
+| `player_stats.csv` | `player_id` | `player_id`, `team_id` | 1,248 | Post-tournament| Cumulative player totals (294 goals, 14 own goals, assists, cards, minutes) |
 | `matches_detailed.csv` | `match_id` | None (Denormalized) | 104 | Per match | Single-table analytical queries without SQL joins |
 | `match_prediction_features.csv` | `match_id` | None | 104 | Pre-match | Machine learning merged feature vector dataset |
 | `match_prediction_features_X.csv` | `match_id` | None | 104 | Pre-match | Isolated pre-match input feature matrix (60 features, 0 target leakage) |
@@ -156,9 +156,9 @@ Table 3 details the assertions executed across all database entities and the SQL
 | 5 | Denormalized Alignment | MatchesDetailed.HomeScore == Matches.HomeScore | 2 | **PASS (100% Verified)** |
 | 6 | Lineup Structure Rules | ∑ Squad = 26 per team; ∑ Starting_XI = 11 per team | 5 | **PASS (100% Verified)** |
 | 7 | Tactical Stat Bounds | 80% ≤ P<sub>home</sub> + P<sub>away</sub> + P<sub>contested</sub> ≤ 100% | 3 | **PASS (100% Verified)** |
-| 8 | Event-Player Sum Consistency | ∑ Events<sub>goal</sub>(p) == PlayerStats.Goals(p) | 3 | **PASS (100% Verified)** |
-| 9 | Goalkeeper Constraints | Saves(p) > 0 ⇒ Position(p) == 'GK' | 2 | **PASS (100% Verified)** |
-| 10 | SQLite DB Engine DDL Audit | `PRAGMA foreign_key_check` = 0; View `vw_match_summaries` exists | 2 | **PASS (100% Verified)** |
+| 8 | Goal & OG Reconciliation | ∑ Goals(p) + ∑ Opponent_OGs = 308; Team Match Scores 100% Reconciled | 5 | **PASS (100% Verified)** |
+| 9 | Referee Neutrality | Official nationality ≠ Home/Away team nationality | 104 | **PASS (100% Verified)** |
+| 10 | SQLite Engine DDL Audit | `PRAGMA foreign_key_check` = 0; Views `vw_match_summaries` & `vw_team_goal_summary` exist | 3 | **PASS (100% Verified)** |
 
 ### 5.2 Empirical Visualizations
 
@@ -176,22 +176,22 @@ Figure 4 presents the distribution of aggregated squad market valuations (€ Mi
 
 ## 6. Usage Notes & Computational Benchmarks
 
-The relational SQLite database (`sqlite_fifa_world_cup_2026.db`) allows SQL queries across normalized tables:
+The relational SQLite database (`sqlite_fifa_world_cup_2026.db`) allows SQL queries across normalized tables. Pre-compiled analytical views include `vw_match_summaries` for denormalized match summaries and `vw_team_goal_summary` for total goal accounting (reconciling individual player goals, opponent own goals, and official tournament standings):
 
 ```sql
+-- Query team goal accounting from analytical view vw_team_goal_summary
 SELECT 
-    p.player_name, 
-    t.team_name, 
-    ps.goals, 
-    ps.minutes_played,
-    ROUND(CAST(ps.minutes_played AS FLOAT) / ps.goals, 1) AS mins_per_goal,
-    ROUND((CAST(ps.goals AS FLOAT) / ps.minutes_played) * 90.0, 2) AS goals_per_90
-FROM player_stats ps
-JOIN squads_and_players p ON ps.player_id = p.player_id
-JOIN teams t ON ps.team_id = t.team_id
-WHERE ps.goals > 0 AND ps.minutes_played >= 90
-ORDER BY goals_per_90 DESC, ps.goals DESC
-LIMIT 10;
+    team_name,
+    confederation,
+    matches_played,
+    player_goals,
+    opponent_own_goals,
+    total_goals_scored,
+    total_goals_conceded,
+    goal_difference
+FROM vw_team_goal_summary
+WHERE opponent_own_goals > 0
+ORDER BY total_goals_scored DESC;
 ```
 
 ### Machine Learning Baseline Benchmark

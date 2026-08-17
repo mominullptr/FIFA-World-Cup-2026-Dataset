@@ -386,9 +386,11 @@ def main():
                         print(f"[FAIL] Error: Player {pid} has non-integer value '{val}' in numeric column index {col_idx}.")
                         errors += 1
 
-        # e. Alignment with match_events: goals, assists, yellow_cards, red_cards
+        # e. Alignment with match_events: goals, own_goals, assists, yellow_cards, red_cards
         ps_lookup = {row[0]: row for row in ps_rows}
         ev_counts = {}
+        total_ev_goals = 0
+        total_ev_ogs = 0
         for row in events:
             e_mid, e_pid, e_type = row[1], row[5], row[3]
             if e_mid not in completed_match_ids:
@@ -396,9 +398,26 @@ def main():
             # Skip penalty shootout events — they don't count toward player goal tallies
             if e_type in ('Penalty Shootout Goal', 'Penalty Shootout Miss'):
                 continue
-            ev_counts.setdefault(e_pid, {"Goal": 0, "Assist": 0, "Yellow Card": 0, "Red Card": 0})
+            if e_type == 'Goal':
+                total_ev_goals += 1
+            elif e_type == 'Own Goal':
+                total_ev_ogs += 1
+
+            ev_counts.setdefault(e_pid, {"Goal": 0, "Own Goal": 0, "Assist": 0, "Yellow Card": 0, "Red Card": 0})
             if e_type in ev_counts[e_pid]:
                 ev_counts[e_pid][e_type] += 1
+
+        if total_ev_goals != 294:
+            print(f"[FAIL] Error: Total 'Goal' events in match_events.csv is {total_ev_goals} (expected 294).")
+            errors += 1
+        else:
+            print(f"  [OK] Verified 294 individual player 'Goal' events in match_events.csv.")
+
+        if total_ev_ogs != 14:
+            print(f"[FAIL] Error: Total 'Own Goal' events in match_events.csv is {total_ev_ogs} (expected 14).")
+            errors += 1
+        else:
+            print(f"  [OK] Verified 14 authentic 'Own Goal' events in match_events.csv.")
 
         for pid, counts in ev_counts.items():
             ps_row = ps_lookup.get(pid)
@@ -413,9 +432,11 @@ def main():
             ps_reds = int(ps_row[12]) if ps_row[12] != "" else 0
             ps_ogs = int(ps_row[14]) if ps_row[14] != "" else 0
 
-            expected_goals = max(0, counts["Goal"] - ps_ogs)
-            if ps_goals != expected_goals:
-                print(f"[FAIL] Error: Player {pid} goals={ps_goals} but expected {expected_goals} (events={counts['Goal']}, ogs={ps_ogs}).")
+            if ps_goals != counts["Goal"]:
+                print(f"[FAIL] Error: Player {pid} goals={ps_goals} but expected {counts['Goal']}.")
+                errors += 1
+            if ps_ogs != counts["Own Goal"]:
+                print(f"[FAIL] Error: Player {pid} own_goals={ps_ogs} but expected {counts['Own Goal']}.")
                 errors += 1
             if ps_assists != counts["Assist"]:
                 print(f"[FAIL] Error: Player {pid} assists={ps_assists} but expected {counts['Assist']}.")
@@ -464,6 +485,45 @@ def main():
             errors += 1
         else:
             print(f"  [OK] Total own_goals across all players is verified ({total_ogs_in_ps} own goals).")
+
+        # g. Team-level Goal Reconciliation (Player Goals + Opponent Own Goals == Match Score Totals = 308)
+        match_map = {row[0]: row for row in matches}
+        team_match_gf = {}
+        for m_id in completed_match_ids:
+            m_row = match_map[m_id]
+            h_id, a_id = m_row[5], m_row[6]
+            h_score, a_score = int(m_row[7]), int(m_row[8])
+            team_match_gf[h_id] = team_match_gf.get(h_id, 0) + h_score
+            team_match_gf[a_id] = team_match_gf.get(a_id, 0) + a_score
+
+        team_ps_goals = {}
+        for row in ps_rows:
+            tid = row[2]
+            g_val = int(row[7]) if row[7] != "" else 0
+            team_ps_goals[tid] = team_ps_goals.get(tid, 0) + g_val
+
+        team_opp_ogs = {}
+        for row in events:
+            if row[3] == "Own Goal" and row[1] in completed_match_ids:
+                m_row = match_map[row[1]]
+                h_id, a_id = m_row[5], m_row[6]
+                p_tid = row[4]
+                # Benefiting team is opponent of player's team in this match
+                ben_tid = a_id if p_tid == h_id else h_id
+                team_opp_ogs[ben_tid] = team_opp_ogs.get(ben_tid, 0) + 1
+
+        team_reconcil_errors = 0
+        for tid in team_ids:
+            gf_match = team_match_gf.get(tid, 0)
+            gf_player = team_ps_goals.get(tid, 0)
+            gf_opp_og = team_opp_ogs.get(tid, 0)
+            if gf_player + gf_opp_og != gf_match:
+                print(f"[FAIL] Error: Team {tid} total goals mismatch: match scores={gf_match}, player_goals={gf_player}, opponent_ogs={gf_opp_og}.")
+                team_reconcil_errors += 1
+                errors += 1
+
+        if team_reconcil_errors == 0:
+            print("  [OK] Team-level Goal Reconciliation 100% verified across all 48 teams (294 player goals + 14 opponent own goals = 308 total FIFA goals).")
 
         if errors == 0:
             print("  [OK] player_stats.csv passes all integrity checks.")
@@ -531,6 +591,12 @@ def main():
                 errors += 1
             else:
                 print("  [OK] Analytical view 'vw_match_summaries' verified in SQLite database.")
+
+            if "vw_team_goal_summary" not in views:
+                print("[FAIL] Error: Missing analytical view 'vw_team_goal_summary' in SQLite database.")
+                errors += 1
+            else:
+                print("  [OK] Analytical view 'vw_team_goal_summary' verified in SQLite database.")
             conn.close()
         except Exception as e:
             print(f"[FAIL] Error auditing SQLite database engine: {e}")

@@ -988,9 +988,9 @@ for match in matches_data:
             m = int(min_str)
             is_og = "o.g." in g["minute"]
             scorer_team_id = away_id if is_og else home_id
-            benefiting_team_id = home_id
             player_id = match_player_to_id(scorer_team_id, scorer, players_data)
-            events_data.append([event_id_counter, match_id, m, "Goal", benefiting_team_id, player_id])
+            event_type = "Own Goal" if is_og else "Goal"
+            events_data.append([event_id_counter, match_id, m, event_type, scorer_team_id, player_id])
             event_id_counter += 1
             
             # If there is a verified assist in the json
@@ -1007,9 +1007,9 @@ for match in matches_data:
             m = int(min_str)
             is_og = "o.g." in g["minute"]
             scorer_team_id = home_id if is_og else away_id
-            benefiting_team_id = away_id
             player_id = match_player_to_id(scorer_team_id, scorer, players_data)
-            events_data.append([event_id_counter, match_id, m, "Goal", benefiting_team_id, player_id])
+            event_type = "Own Goal" if is_og else "Goal"
+            events_data.append([event_id_counter, match_id, m, event_type, scorer_team_id, player_id])
             event_id_counter += 1
             
             # If there is a verified assist in the json

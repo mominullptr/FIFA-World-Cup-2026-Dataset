@@ -278,10 +278,8 @@ def main():
         yellows = sum(1 for item in p_events if item[1] == "Yellow Card")
         reds = sum(1 for item in p_events if item[1] == "Red Card")
         assists = sum(1 for item in p_events if item[1] == "Assist")
-        goal_events = sum(1 for item in p_events if item[1] == "Goal")
-
-        ogs = own_goals_by_player.get(pid, 0)
-        goals = max(0, goal_events - ogs)
+        goals = sum(1 for item in p_events if item[1] == "Goal")
+        ogs = sum(1 for item in p_events if item[1] == "Own Goal")
         pens_scored = penalties_by_player.get(pid, 0)
 
         # Goalkeeper specific fields
