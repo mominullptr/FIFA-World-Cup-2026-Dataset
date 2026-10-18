@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this dataset in your research, please cite our Research Square Data Descriptor preprint (under review at Scientific Data) below so your citation is indexed on Google Scholar."
+title: "The FIFA World Cup 2026 Master Dataset: A Normalized 3NF Relational Benchmark of the Expanded 48-Team International Football Tournament"
+version: 1.0.0
+date-released: 2026-08-24
+authors:
+  - family-names: "Islam"
+    given-names: "MD Mominul"
+    orcid: "https://orcid.org/0009-0009-1572-4830"
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology, Sylhet 3114, Bangladesh"
+    email: "mominulcse11@gmail.com"
+doi: "10.21203/rs.3.rs-10487060/v1"
+url: "https://doi.org/10.21203/rs.3.rs-10487060/v1"
+repository-code: "https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset"
+license: "CC0-1.0"
+type: dataset
+keywords:
+  - FIFA World Cup 2026
+  - football analytics
+  - soccer dataset
+  - 3NF relational database
+  - sports data science
+  - machine learning
+  - expected goals xG
+identifiers:
+  - type: doi
+    value: "10.21203/rs.3.rs-10487060/v1"
+    description: "Research Square preprint DOI (Primary Citation, Under Review at Scientific Data)"
+  - type: doi
+    value: "10.5281/zenodo.21592427"
+    description: "Zenodo DOI (secondary data archive)"
+  - type: url
+    value: "https://doi.org/10.21203/rs.3.rs-10487060/v1"
+    description: "Research Square publication URL"
+  - type: url
+    value: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=F6LgH7gAAAAJ&citation_for_view=F6LgH7gAAAAJ:u5HHmVD_uO8C"
+    description: "Google Scholar citation profile"
+  - type: url
+    value: "https://zenodo.org/records/21592427"
+    description: "Zenodo record page"
+  - type: url
+    value: "https://www.kaggle.com/datasets/mominullptr/fifa-world-cup-2026-dataset"
+    description: "Kaggle dataset page"
+  - type: url
+    value: "https://huggingface.co/datasets/Mominullptr/fifa-world-cup-2026-dataset"
+    description: "Hugging Face dataset page"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Islam"
+      given-names: "MD Mominul"
+      orcid: "https://orcid.org/0009-0009-1572-4830"
+      affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology, Sylhet 3114, Bangladesh"
+      email: "mominulcse11@gmail.com"
+  title: "The FIFA World Cup 2026 Master Dataset: A Normalized 3NF Relational Benchmark of the Expanded 48-Team International Football Tournament"
+  journal: "Research Square"
+  year: 2026
+  month: 8
+  doi: "10.21203/rs.3.rs-10487060/v1"
+  url: "https://doi.org/10.21203/rs.3.rs-10487060/v1"
+  notes: "Preprint (Version 1), Under Review at Scientific Data. ORCID: 0009-0009-1572-4830"

@@ -41,7 +41,6 @@ prediction_cover.png
 # Site verification and security-sensitive files
 generate_prediction_features.py
 validate_dataset.py
-CITATION.cff
 schema_relationships.md
 .github/
 
