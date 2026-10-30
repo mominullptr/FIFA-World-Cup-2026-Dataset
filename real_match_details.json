@@ -942,7 +942,7 @@
     "away_score": 0,
     "home_goals": [
       {
-        "scorer": "Lamine Yamal Yamal",
+        "scorer": "Lamine Yamal",
         "minute": "10'",
         "assist": "Mikel Oyarzabal"
       },
@@ -2339,7 +2339,7 @@
         "minute": "30'"
       },
       {
-        "scorer": "Lamine Yamal Yamal",
+        "scorer": "Lamine Yamal",
         "minute": "88'"
       }
     ],

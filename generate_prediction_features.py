@@ -357,11 +357,14 @@ def main():
     out_path_x = os.path.join(workspace_dir, "match_prediction_features_X.csv")
     out_path_y = os.path.join(workspace_dir, "match_prediction_targets_y.csv")
 
-    # 1. Merged dataset
+    # 1. Merged ML dataset: 60 pre-match features + 1 target label (match_result) -> ZERO post-match score leakage!
+    clean_feature_headers = feature_headers[:60] + ["match_result"]
+    clean_feature_rows = [row[:60] + [row[65]] for row in feature_rows]
+
     with open(out_path_merged, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(feature_headers)
-        writer.writerows(feature_rows)
+        writer.writerow(clean_feature_headers)
+        writer.writerows(clean_feature_rows)
 
     # 2. Features matrix X (first 60 columns)
     x_headers = feature_headers[:60]
@@ -380,7 +383,7 @@ def main():
         writer.writerows(y_rows)
 
     print(f"Successfully generated ML prediction datasets:")
-    print(f"  - Merged dataset: {out_path_merged}")
+    print(f"  - Clean Merged dataset (Zero Leakage): {out_path_merged} ({len(clean_feature_headers)} columns: 60 features + 1 target)")
     print(f"  - Features Matrix (X): {out_path_x} ({len(x_headers)} feature columns)")
     print(f"  - Targets Matrix (y): {out_path_y} ({len(y_headers)} target columns)")
 
