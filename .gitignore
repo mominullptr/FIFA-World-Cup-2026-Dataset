@@ -18,6 +18,7 @@ dataset-metadata.json
 .kaggleignore
 hf_dist/
 kaggle_dist/
+zenodo_dist/
 .puku/
 
 # Internal validation, scraper and helper scripts
